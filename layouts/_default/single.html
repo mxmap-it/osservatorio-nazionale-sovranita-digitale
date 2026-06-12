@@ -1,24 +1,38 @@
 {{ define "main" }}
-<article class="article">
-  <div class="container">
-    <header class="article-header">
-      <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "date-it.html" .Date }}</time>
-      <h1 class="article-title">{{ .Title }}</h1>
-      {{ with .Params.subtitle }}<p class="article-subtitle">{{ . }}</p>{{ end }}
-    </header>
-    {{ with .Params.pdf }}
-    <div class="article-download">
-      <a href="{{ . | relURL }}" class="btn" download>Scarica il report in PDF</a>
+<div class="container-xxl section-spacing-lg">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <article>
+        <div class="category-top mb-3">
+          <span class="category">{{ .Section | humanize }}</span>
+          <span class="data">{{ partial "date-it.html" .Date }}</span>
+        </div>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p class="lead">{{ . }}</p>{{ end }}
+
+        {{ with .Params.pdf }}
+        <div class="my-4">
+          <a href="{{ . | relURL }}" class="btn btn-primary" download>
+            <svg class="icon icon-white icon-sm me-1"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-download"></use></svg>
+            Scarica il report in PDF
+          </a>
+        </div>
+        {{ end }}
+
+        <div class="article-content">
+          {{ .Content }}
+        </div>
+
+        {{ with .Params.pdf }}
+        <div class="my-4 py-4 border-top">
+          <a href="{{ . | relURL }}" class="btn btn-primary" download>
+            <svg class="icon icon-white icon-sm me-1"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-download"></use></svg>
+            Scarica il report in PDF
+          </a>
+        </div>
+        {{ end }}
+      </article>
     </div>
-    {{ end }}
-    <div class="article-content">
-      {{ .Content }}
-    </div>
-    {{ with .Params.pdf }}
-    <div class="article-download">
-      <a href="{{ . | relURL }}" class="btn" download>Scarica il report in PDF</a>
-    </div>
-    {{ end }}
   </div>
-</article>
+</div>
 {{ end }}

@@ -1,6 +1,18 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/css/bootstrap-italia.min.css">
 <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "index.xml" | absURL }}">
+<style>
+  .hero-custom { background: var(--bs-primary); color: #fff; padding: 4rem 0 3rem; }
+  .hero-custom h1 { font-size: 2.5rem; font-weight: 700; }
+  .hero-custom .lead { font-size: 1.2rem; opacity: .9; }
+  .card-wrapper .card { height: 100%; }
+  .section-spacing { padding: 3rem 0; }
+  .section-spacing-lg { padding: 4rem 0; }
+  .bg-section-alt { background: #f2f7fc; }
+  .article-content h2 { margin-top: 2rem; }
+  .article-content h3 { margin-top: 1.5rem; }
+  .info-box-custom { background: #f2f7fc; border-left: 4px solid var(--bs-primary); border-radius: .5rem; padding: 2rem; }
+</style>

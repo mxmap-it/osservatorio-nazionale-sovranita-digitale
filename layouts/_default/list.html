@@ -1,23 +1,37 @@
 {{ define "main" }}
-<section class="section">
-  <div class="container">
-    <h1 class="section-title">{{ .Title }}</h1>
-    {{ .Content }}
-    <div class="card-grid">
-      {{ range .Pages }}
-      <article class="card">
-        <div class="card-body">
-          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "date-it.html" .Date }}</time>
-          <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <p class="card-summary">{{ .Summary }}</p>
-          {{ with .Params.pdf }}
-          <a href="{{ . | relURL }}" class="btn btn-small" download>Scarica PDF</a>
-          {{ end }}
-        </div>
-      </article>
-      {{ end }}
+<div class="container-xxl section-spacing-lg">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}<div class="lead mb-4">{{ . }}</div>{{ end }}
     </div>
-    {{ template "_internal/pagination.html" . }}
   </div>
-</section>
+  <div class="row g-4 mt-2">
+    {{ range .Pages }}
+    <div class="col-lg-6 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card">
+          <div class="card-body">
+            <div class="category-top">
+              <span class="category">{{ .Section | humanize }}</span>
+              <span class="data">{{ partial "date-it.html" .Date }}</span>
+            </div>
+            <h2 class="card-title h5">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <p class="card-text">{{ .Summary | truncate 200 }}</p>
+            {{ with .Params.pdf }}
+            <a class="read-more" href="{{ . | relURL }}" download>
+              <span class="text">Scarica PDF</span>
+              <svg class="icon"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-download"></use></svg>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+</div>
 {{ end }}
