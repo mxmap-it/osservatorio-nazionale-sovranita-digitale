@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <h1>Osservatorio Nazionale<br>Sovranità Digitale</h1>
+    <p class="hero-subtitle">Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana</p>
+    <div class="hero-actions">
+      <a href="{{ "report/" | relURL }}" class="btn btn-primary">Consulta i Report</a>
+      <a href="{{ "metodologia/" | relURL }}" class="btn btn-outline">Metodologia</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Ultimi Report</h2>
+    <div class="card-grid">
+      {{ range first 3 (where site.RegularPages "Section" "report") }}
+      <article class="card">
+        <div class="card-body">
+          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "date-it.html" .Date }}</time>
+          <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="card-summary">{{ .Summary }}</p>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <p class="section-more"><a href="{{ "report/" | relURL }}">Tutti i report &rarr;</a></p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Ultime News</h2>
+    <div class="card-grid">
+      {{ range first 3 (where site.RegularPages "Section" "news") }}
+      <article class="card">
+        <div class="card-body">
+          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "date-it.html" .Date }}</time>
+          <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="card-summary">{{ .Summary }}</p>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <p class="section-more"><a href="{{ "news/" | relURL }}">Tutte le news &rarr;</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="info-box">
+      <h2>Dati da MxMap.it</h2>
+      <p>L'Osservatorio utilizza i dati raccolti dal progetto <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a> per analizzare la dipendenza della Pubblica Amministrazione italiana da provider di posta elettronica esteri e valutare lo stato della sovranità digitale.</p>
+      <a href="{{ "metodologia/" | relURL }}" class="btn btn-outline">Scopri la metodologia</a>
+    </div>
+  </div>
+</section>
+{{ end }}

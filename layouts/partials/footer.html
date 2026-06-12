@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>{{ site.Title }}</h3>
+        <p>{{ site.Params.description }}</p>
+      </div>
+      <div class="footer-links">
+        <h3>Link Utili</h3>
+        <ul>
+          <li><a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a></li>
+          <li><a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="{{ "index.xml" | relURL }}">Feed RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} {{ site.Params.author }}. Contenuti rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</p>
+    </div>
+  </div>
+</footer>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-list').classList.toggle('open');
+});
+</script>

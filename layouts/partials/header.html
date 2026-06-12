@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ "/" | relURL }}" class="site-logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">{{ site.Title }}</span>
+    </a>
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-list">
+        {{ range site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

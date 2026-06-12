@@ -1,0 +1,47 @@
+baseURL = 'https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/'
+locale = 'it'
+defaultContentLanguage = 'it'
+title = 'Osservatorio Nazionale Sovranità Digitale'
+
+[params]
+  description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
+  author = 'Fabio Pietrosanti'
+  mxmapURL = 'https://mxmap.it'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Report'
+    url = '/report/'
+    weight = 2
+  [[menu.main]]
+    name = 'Presentazioni'
+    url = '/presentazioni/'
+    weight = 3
+  [[menu.main]]
+    name = 'News'
+    url = '/news/'
+    weight = 4
+  [[menu.main]]
+    name = 'Metodologia'
+    url = '/metodologia/'
+    weight = 5
+  [[menu.main]]
+    name = 'Chi Siamo'
+    url = '/chi-siamo/'
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+
+[pagination]
+  pagerSize = 10

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="article">
+  <div class="container">
+    <header class="article-header">
+      <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "date-it.html" .Date }}</time>
+      <h1 class="article-title">{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="article-subtitle">{{ . }}</p>{{ end }}
+    </header>
+    {{ with .Params.pdf }}
+    <div class="article-download">
+      <a href="{{ . | relURL }}" class="btn" download>Scarica il report in PDF</a>
+    </div>
+    {{ end }}
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+    {{ with .Params.pdf }}
+    <div class="article-download">
+      <a href="{{ . | relURL }}" class="btn" download>Scarica il report in PDF</a>
+    </div>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
