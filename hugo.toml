@@ -30,9 +30,17 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
     url = '/metodologia/'
     weight = 5
   [[menu.main]]
+    name = 'FAQ'
+    url = '/faq/'
+    weight = 6
+  [[menu.main]]
+    name = 'Partecipa'
+    url = '/partecipa/'
+    weight = 7
+  [[menu.main]]
     name = 'Chi Siamo'
     url = '/chi-siamo/'
-    weight = 6
+    weight = 8
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,144 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">L'Osservatorio è un progetto aperto e collaborativo. Ci sono diversi modi per contribuire, indipendentemente dal tuo profilo professionale.</p>
+    </div>
+  </div>
+
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-software"></use></svg>
+            </div>
+            <h2 class="card-title h5">Contribuisci al codice</h2>
+            <p class="card-text">Sei uno sviluppatore? Il progetto è open source. Puoi contribuire al sito, agli strumenti di analisi o alla raccolta dati.</p>
+            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
+              <span class="text">Vai al repository</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-horn"></use></svg>
+            </div>
+            <h2 class="card-title h5">Segnala errori o inesattezze</h2>
+            <p class="card-text">Hai trovato dati incorretti su un ente? Apri una segnalazione su GitHub e aiutaci a mantenere i dati accurati.</p>
+            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
+              <span class="text">Apri una segnalazione</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-chart-line"></use></svg>
+            </div>
+            <h2 class="card-title h5">Analisi e ricerca</h2>
+            <p class="card-text">Sei un ricercatore o analista? I dati sono aperti. Puoi usarli per le tue ricerche, tesi di laurea o pubblicazioni accademiche.</p>
+            <a class="read-more" href="{{ "report/" | relURL }}">
+              <span class="text">Consulta i report</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 justify-content-center mt-2">
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-share"></use></svg>
+            </div>
+            <h2 class="card-title h5">Diffondi il messaggio</h2>
+            <p class="card-text">Condividi i report e le analisi con la tua rete. Più persone conoscono lo stato della sovranità digitale, più si può incidere sulle decisioni.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
+            </div>
+            <h2 class="card-title h5">Sei un ente PA?</h2>
+            <p class="card-text">Se lavori in una PA e vuoi approfondire i dati relativi al tuo ente, o hai informazioni aggiuntive da condividere, contattaci tramite GitHub.</p>
+            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
+              <span class="text">Contattaci</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-files"></use></svg>
+            </div>
+            <h2 class="card-title h5">Proponi nuove analisi</h2>
+            <p class="card-text">Hai un'idea per un nuovo report o un'analisi che vorresti vedere? Suggeriscila tramite una issue su GitHub.</p>
+            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
+              <span class="text">Proponi un'analisi</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-8">
+      <div class="callout">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Licenza e riuso</span>
+        </div>
+        <p>Tutti i contenuti dell'Osservatorio — report, dati, codice sorgente del sito — sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a>. Sei libero di riutilizzare, adattare e redistribuire i materiali, a condizione di citare la fonte e mantenere la stessa licenza.</p>
+      </div>
+
+      <div class="callout warning mt-4">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-help-circle"></use></svg>
+          <span>Come iniziare</span>
+        </div>
+        <ol>
+          <li>Fai un <strong>fork</strong> del <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">repository GitHub</a></li>
+          <li>Crea un <strong>branch</strong> per le tue modifiche</li>
+          <li>Apri una <strong>Pull Request</strong> descrivendo il tuo contributo</li>
+        </ol>
+        <p>Non sai usare GitHub? Nessun problema — puoi anche <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">aprire una issue</a> per suggerimenti e segnalazioni.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
