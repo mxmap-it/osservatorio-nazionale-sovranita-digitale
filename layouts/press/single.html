@@ -57,7 +57,7 @@
           </tbody>
         </table>
       </div>
-      {{ if $kpi.placeholder }}<p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>{{ else }}<p class="small text-muted mt-2">Ultimo aggiornamento: {{ $kpi.run_id }}. Fonte: MxMap.it su IndicePA.</p>{{ end }}
+      {{ if $kpi.placeholder }}<p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>{{ else }}<p class="small text-muted mt-2">Ultimo aggiornamento: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}. Fonte: MxMap.it su IndicePA.</p>{{ end }}
     </div>
   </div>
 

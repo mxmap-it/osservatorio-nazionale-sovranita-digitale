@@ -32,7 +32,7 @@
     <div class="col-lg-3 col-md-6">
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
-          <div class="h1 text-danger mb-1">{{ partial "kpi-pct.html" $kpi.sovereignty.extra_eu.pct }}</div>
+          <div class="h1 text-danger mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.extra_eu.pct "ready" (not $kpi.placeholder)) }}</div>
           <p class="card-text mb-0"><strong>PA su provider extra-UE</strong></p>
           <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider soggetti a giurisdizione extra-UE{{ end }}</p>
         </div>
@@ -41,7 +41,7 @@
     <div class="col-lg-3 col-md-6">
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
-          <div class="h1 text-warning mb-1">{{ partial "kpi-pct.html" $kpi.sovereignty.it.pct }}</div>
+          <div class="h1 text-warning mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.it.pct "ready" (not $kpi.placeholder)) }}</div>
           <p class="card-text mb-0"><strong>PA su provider italiani</strong></p>
           <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider con sede in Italia{{ end }}</p>
         </div>
@@ -50,16 +50,16 @@
     <div class="col-lg-3 col-md-6">
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
-          <div class="h1 text-success mb-1">{{ partial "kpi-pct.html" $kpi.sovereignty.eu_non_it.pct }}</div>
+          <div class="h1 text-success mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.eu_non_it.pct "ready" (not $kpi.placeholder)) }}</div>
           <p class="card-text mb-0"><strong>PA su provider UE</strong></p>
           <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider UE non italiani{{ end }}</p>
         </div>
       </div>
     </div>
   </div>
-  {{ if and $kpi.run_id (not $kpi.placeholder) }}
+  {{ if not $kpi.placeholder }}
   <div class="row justify-content-center mb-5"><div class="col-lg-10">
-    <p class="small text-muted">Ultimo aggiornamento dati: {{ $kpi.run_id }}{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}. Fonte: MxMap.it.</p>
+    <p class="small text-muted">Ultimo aggiornamento dati: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}. Fonte: MxMap.it.</p>
   </div></div>
   {{ end }}
 

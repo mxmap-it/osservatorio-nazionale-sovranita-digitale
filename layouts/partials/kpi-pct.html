@@ -1,2 +1,5 @@
-{{- /* Render a KPI percentage, or "—%" when the value is missing/zero (not yet available). */ -}}
-{{- with . -}}{{ printf "%.0f%%" . }}{{- else -}}—%{{- end -}}
+{{- /* Render a KPI percentage.
+       Arg: dict "v" <pct> "ready" <bool>.
+       When ready (real data loaded) show the value, including a genuine 0%.
+       When not ready (placeholder / not yet available) show "—%". */ -}}
+{{- if .ready -}}{{ printf "%.0f%%" (or .v 0.0) }}{{- else -}}—%{{- end -}}
