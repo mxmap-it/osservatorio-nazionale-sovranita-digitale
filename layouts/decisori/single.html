@@ -1,0 +1,283 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+
+  <!-- Intestazione -->
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">Questa pagina raccoglie i dati essenziali e le raccomandazioni per chi opera nelle istituzioni, nel governo e nel parlamento. L'obiettivo è fornire gli strumenti per decisioni informate sulla sovranità digitale della Pubblica Amministrazione.</p>
+    </div>
+  </div>
+
+  <!-- Numeri chiave -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">I numeri della sovranità digitale</h2>
+      <p class="text-muted mb-4">Dati aggiornati all'ultimo report disponibile. Fonte: <a href="https://mxmap.it" target="_blank" rel="noopener">MxMap.it</a> su dati <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a>.</p>
+    </div>
+  </div>
+
+  <div class="row g-4 justify-content-center mb-5">
+    <div class="col-lg-3 col-md-6">
+      <div class="card card-bg rounded shadow-sm text-center h-100">
+        <div class="card-body py-4">
+          <div class="h1 text-primary mb-1">~23.000</div>
+          <p class="card-text mb-0"><strong>Enti PA monitorati</strong></p>
+          <p class="small text-muted">Dall'Indice delle Pubbliche Amministrazioni</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card card-bg rounded shadow-sm text-center h-100">
+        <div class="card-body py-4">
+          <div class="h1 text-danger mb-1">—%</div>
+          <p class="card-text mb-0"><strong>PA su provider extra-UE</strong></p>
+          <p class="small text-muted">Dato in aggiornamento</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card card-bg rounded shadow-sm text-center h-100">
+        <div class="card-body py-4">
+          <div class="h1 text-warning mb-1">—%</div>
+          <p class="card-text mb-0"><strong>PA su provider italiani</strong></p>
+          <p class="small text-muted">Dato in aggiornamento</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card card-bg rounded shadow-sm text-center h-100">
+        <div class="card-body py-4">
+          <div class="h1 text-success mb-1">—%</div>
+          <p class="card-text mb-0"><strong>PA su provider UE</strong></p>
+          <p class="small text-muted">Dato in aggiornamento</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Il problema -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Il problema in sintesi</h2>
+
+      <div class="callout danger">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
+          <span>Rischio giurisdizionale</span>
+        </div>
+        <p>Quando una PA italiana utilizza un servizio email gestito da un provider soggetto a giurisdizione extra-UE (ad esempio statunitense), le comunicazioni istituzionali — incluse quelle contenenti dati personali dei cittadini — possono essere accessibili ad autorità straniere in virtù di leggi come il <strong>CLOUD Act</strong> (USA, 2018), anche senza il consenso o la notifica dell'ente italiano.</p>
+      </div>
+
+      <div class="callout warning mt-3">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
+          <span>Incompatibilità normativa</span>
+        </div>
+        <p>La Corte di Giustizia dell'UE ha invalidato due volte gli accordi di trasferimento dati verso gli USA (<strong>Schrems I</strong>, 2015 e <strong>Schrems II</strong>, 2020) per insufficiente protezione. Il nuovo EU-US Data Privacy Framework (2023) è già oggetto di contestazioni. Le PA che affidano i dati a provider USA operano in un contesto giuridico instabile.</p>
+      </div>
+
+      <div class="callout mt-3">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Dipendenza strategica</span>
+        </div>
+        <p>La concentrazione dei servizi digitali della PA su pochi grandi provider extra-europei crea una <strong>dipendenza strategica</strong> che espone il Paese a rischi in caso di tensioni geopolitiche, sanzioni, interruzioni di servizio o cambiamenti unilaterali delle condizioni contrattuali.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contesto normativo -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Quadro normativo di riferimento</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Norma / Atto</th>
+              <th scope="col">Rilevanza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>GDPR</strong> (Reg. UE 2016/679)</td>
+              <td>Vieta il trasferimento di dati personali verso paesi terzi senza garanzie adeguate (Capo V)</td>
+            </tr>
+            <tr>
+              <td><strong>Schrems II</strong> (CGUE C-311/18, 2020)</td>
+              <td>Ha invalidato il Privacy Shield UE-USA; impone valutazione caso per caso delle clausole contrattuali standard</td>
+            </tr>
+            <tr>
+              <td><strong>CLOUD Act</strong> (USA, 2018)</td>
+              <td>Consente alle autorità USA di richiedere dati a provider americani anche se archiviati in UE</td>
+            </tr>
+            <tr>
+              <td><strong>Strategia Cloud Italia</strong> (2021)</td>
+              <td>Classifica i dati della PA in strategici, critici e ordinari; prevede migrazione verso infrastrutture qualificate</td>
+            </tr>
+            <tr>
+              <td><strong>Regolamento ACN</strong> (cloud PA)</td>
+              <td>Definisce i requisiti per la qualificazione dei servizi cloud per la PA</td>
+            </tr>
+            <tr>
+              <td><strong>CAD</strong> (D.Lgs. 82/2005)</td>
+              <td>Codice dell'Amministrazione Digitale — disciplina l'uso delle tecnologie nella PA</td>
+            </tr>
+            <tr>
+              <td><strong>NIS2</strong> (Dir. UE 2022/2555)</td>
+              <td>Impone requisiti di cybersecurity per soggetti essenziali e importanti, incluse PA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Raccomandazioni -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Raccomandazioni di policy</h2>
+      <p>Sulla base dei dati raccolti, l'Osservatorio formula le seguenti raccomandazioni:</p>
+
+      <div class="accordion" id="raccomandazioni">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="racc1-head">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#racc1" aria-expanded="true" aria-controls="racc1">
+              1. Censimento obbligatorio dei servizi digitali della PA
+            </button>
+          </h3>
+          <div id="racc1" class="accordion-collapse collapse show" aria-labelledby="racc1-head" data-bs-parent="#raccomandazioni">
+            <div class="accordion-body">
+              <p>Rendere obbligatorio per ogni ente PA la dichiarazione dei servizi digitali utilizzati (email, cloud, collaborazione) e della relativa giurisdizione. Integrare questa informazione nell'IndicePA per renderla pubblica e monitorabile.</p>
+              <p><strong>Destinatari:</strong> AgID, Dipartimento Trasformazione Digitale</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="racc2-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc2" aria-expanded="false" aria-controls="racc2">
+              2. Requisiti di sovranità nelle convenzioni Consip
+            </button>
+          </h3>
+          <div id="racc2" class="accordion-collapse collapse" aria-labelledby="racc2-head" data-bs-parent="#raccomandazioni">
+            <div class="accordion-body">
+              <p>Inserire criteri di sovranità digitale (giurisdizione dei dati, localizzazione dei server, assenza di obblighi verso autorità extra-UE) come requisiti nelle convenzioni Consip per servizi email e cloud della PA.</p>
+              <p><strong>Destinatari:</strong> Consip, MEF, AgID</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="racc3-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc3" aria-expanded="false" aria-controls="racc3">
+              3. Piano nazionale di migrazione con timeline
+            </button>
+          </h3>
+          <div id="racc3" class="accordion-collapse collapse" aria-labelledby="racc3-head" data-bs-parent="#raccomandazioni">
+            <div class="accordion-body">
+              <p>Definire un piano nazionale con scadenze progressive per la migrazione dei servizi email della PA verso provider conformi ai requisiti di sovranità. Prevedere fondi dedicati — eventualmente dal PNRR o dai fondi per la cybersecurity — per supportare gli enti nella transizione.</p>
+              <p><strong>Destinatari:</strong> Presidenza del Consiglio, Parlamento, ACN</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="racc4-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc4" aria-expanded="false" aria-controls="racc4">
+              4. Monitoraggio continuo e trasparente
+            </button>
+          </h3>
+          <div id="racc4" class="accordion-collapse collapse" aria-labelledby="racc4-head" data-bs-parent="#raccomandazioni">
+            <div class="accordion-body">
+              <p>Istituzionalizzare il monitoraggio della sovranità digitale della PA, rendendo i dati pubblici e aggiornati periodicamente. L'Osservatorio fornisce già questa funzione come iniziativa civica; le istituzioni possono adottarla, integrarla o affiancarla con iniziative proprie.</p>
+              <p><strong>Destinatari:</strong> AgID, ACN, Parlamento</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="racc5-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc5" aria-expanded="false" aria-controls="racc5">
+              5. Promozione del modello a livello europeo
+            </button>
+          </h3>
+          <div id="racc5" class="accordion-collapse collapse" aria-labelledby="racc5-head" data-bs-parent="#raccomandazioni">
+            <div class="accordion-body">
+              <p>Proporre nelle sedi europee (Consiglio UE, Commissione) l'adozione di un framework comune per il monitoraggio della sovranità digitale delle PA in tutti gli stati membri, partendo dal modello italiano come caso studio.</p>
+              <p><strong>Destinatari:</strong> MAECI, Rappresentanza permanente presso l'UE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cosa puoi fare -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Cosa puoi fare</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Se sei un parlamentare</h3>
+              <ul class="mt-2">
+                <li>Presenta un'interrogazione citando i dati dell'Osservatorio</li>
+                <li>Proponi l'inserimento di requisiti di sovranità nella normativa</li>
+                <li>Richiedi un'audizione in commissione sul tema</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Se sei un dirigente PA</h3>
+              <ul class="mt-2">
+                <li>Verifica la posizione del tuo ente nei dati dell'Osservatorio</li>
+                <li>Avvia una valutazione interna sulla migrazione</li>
+                <li>Richiedi fondi dedicati per la transizione</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Se sei un regolatore</h3>
+              <ul class="mt-2">
+                <li>Utilizza i dati per aggiornare le linee guida</li>
+                <li>Avvia verifiche di conformità GDPR</li>
+                <li>Inserisci requisiti di sovranità nelle convenzioni</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
+          <span>Documenti scaricabili</span>
+        </div>
+        <p>Scarica i documenti di sintesi pensati per i decisori istituzionali:</p>
+        <ul>
+          <li><strong>Policy Brief</strong> — Sintesi di 2 pagine con numeri chiave e raccomandazioni <em>(disponibile a breve)</em></li>
+          <li><strong>Technical Brief</strong> — Metodologia e analisi dettagliata per uffici studi <em>(disponibile a breve)</em></li>
+        </ul>
+        <p class="mt-3">Per ricevere i documenti appena disponibili, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}

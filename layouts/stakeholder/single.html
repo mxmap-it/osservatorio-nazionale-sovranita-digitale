@@ -1,0 +1,294 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">L'Osservatorio è un progetto di monitoraggio civico al servizio di tutti. Ogni stakeholder ha un ruolo nel percorso verso la sovranità digitale della Pubblica Amministrazione italiana.</p>
+    </div>
+  </div>
+
+  <!-- Mappa visiva stakeholder -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Il monitoraggio civico è al servizio di tutti</span>
+        </div>
+        <p>La sovranità digitale non è un tema solo tecnico. Riguarda la sicurezza nazionale, i diritti dei cittadini, la competitività economica e l'autonomia strategica europea. Per questo l'Osservatorio si rivolge a una pluralità di soggetti, ciascuno con motivazioni e capacità di azione diverse.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stakeholder cards -->
+  <div class="row g-4 justify-content-center">
+
+    <!-- Decisori politici -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
+            </div>
+            <h2 class="card-title h5">Decisori politici nazionali</h2>
+            <p class="card-text"><strong>Chi:</strong> Parlamentari, Sottosegretari, Presidenza del Consiglio, Dipartimento per la Trasformazione Digitale.</p>
+            <p class="card-text"><strong>Perché:</strong> La sovranità digitale è un tema di sicurezza nazionale. I decisori hanno bisogno di dati concreti e verificabili per interrogazioni, emendamenti e proposte di legge.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Interrogazioni parlamentari, proposte legislative, audizioni in commissione, indirizzo strategico.</p>
+            <a class="read-more" href="{{ "decisori/" | relURL }}">
+              <span class="text">Per i Decisori</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Autorità e regolatori -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-shield"></use></svg>
+            </div>
+            <h2 class="card-title h5">Autorità e regolatori</h2>
+            <p class="card-text"><strong>Chi:</strong> AgID, ACN (Agenzia per la Cybersicurezza Nazionale), Garante Privacy, ANAC, Consip.</p>
+            <p class="card-text"><strong>Perché:</strong> L'Osservatorio misura l'efficacia delle policy esistenti. I dati evidenziano gap di conformità (GDPR, Schrems II) e rischi giurisdizionali (CLOUD Act).</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Aggiornare linee guida, inserire requisiti di sovranità nelle convenzioni, avviare verifiche di conformità.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dirigenti PA -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-settings"></use></svg>
+            </div>
+            <h2 class="card-title h5">Dirigenti e responsabili IT della PA</h2>
+            <p class="card-text"><strong>Chi:</strong> CIO e Responsabili Sistemi Informativi di Comuni, Regioni, ASL, Università, Ministeri — circa 23.000 enti.</p>
+            <p class="card-text"><strong>Perché:</strong> Molti enti non sanno di dipendere da provider extra-UE. L'Osservatorio fornisce uno specchio: ogni ente può verificare la propria posizione e confrontarsi con enti omologhi.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Pianificare la migrazione, richiedere fondi, giustificare investimenti IT con dati oggettivi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Provider -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-cloud"></use></svg>
+            </div>
+            <h2 class="card-title h5">Provider italiani ed europei</h2>
+            <p class="card-text"><strong>Chi:</strong> Aruba, Register.it, Infocert, TIM, OVHcloud, Proton, Infomaniak e altri fornitori europei di email e cloud.</p>
+            <p class="card-text"><strong>Perché:</strong> I dati quantificano il mercato potenziale della migrazione. Se la maggioranza delle PA usa provider extra-UE, c'è un mercato indirizzabile enorme.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Sviluppare offerte mirate per la PA, supportare il progetto, fare lobbying informata con dati concreti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giornalisti -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-note"></use></svg>
+            </div>
+            <h2 class="card-title h5">Giornalisti e media</h2>
+            <p class="card-text"><strong>Chi:</strong> Giornalisti di settore (Cybersecurity360, CorCom, Key4biz, Agenda Digitale) e generalisti (Sole 24 Ore, Wired, RAI).</p>
+            <p class="card-text"><strong>Perché:</strong> I dati generano titoli. Numeri verificabili e una fonte citabile sono ciò di cui un giornalista ha bisogno per scrivere un pezzo in due ore.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Articoli, inchieste, servizi. Ogni pubblicazione amplifica il progetto e mette pressione sui decisori.</p>
+            <a class="read-more" href="{{ "press/" | relURL }}">
+              <span class="text">Press Kit</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accademici -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-chart-line"></use></svg>
+            </div>
+            <h2 class="card-title h5">Mondo accademico e ricerca</h2>
+            <p class="card-text"><strong>Chi:</strong> Docenti e ricercatori di diritto dell'informatica, cybersecurity, scienze politiche. Studenti di dottorato e tesi di laurea.</p>
+            <p class="card-text"><strong>Perché:</strong> Dataset aperto, metodologia documentata, tema attuale. Per un ricercatore sono dati reali con cui pubblicare; per uno studente è una tesi pronta.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Pubblicazioni peer-reviewed, analisi approfondite, modelli predittivi, confronti internazionali.</p>
+            <a class="read-more" href="{{ "dati-aperti/" | relURL }}">
+              <span class="text">Dati Aperti</span>
+              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Società civile -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-user"></use></svg>
+            </div>
+            <h2 class="card-title h5">Società civile e attivismo</h2>
+            <p class="card-text"><strong>Chi:</strong> Hermes Center, Transparency International Italia, Italian Linux Society, reti civiche digitali, attivisti open source e privacy.</p>
+            <p class="card-text"><strong>Perché:</strong> La sovranità digitale è un tema di diritti fondamentali. L'Osservatorio trasforma un concetto astratto in dati concreti per campagne di advocacy.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Campagne pubbliche, petizioni informate, pressione su amministratori locali, partecipazione a consultazioni pubbliche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Istituzioni EU -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-star-outline"></use></svg>
+            </div>
+            <h2 class="card-title h5">Istituzioni europee</h2>
+            <p class="card-text"><strong>Chi:</strong> Commissione Europea (DG CONNECT, DG DIGIT), ENISA, Parlamento Europeo, EU Cybersecurity Competence Centre.</p>
+            <p class="card-text"><strong>Perché:</strong> L'Italia sarebbe il primo paese a misurare sistematicamente la sovranità digitale della PA in modo aperto. Il modello è replicabile in ogni stato membro dell'Unione.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Adottare il modello come best practice, finanziare l'estensione ad altri paesi, includere metriche analoghe nei criteri di valutazione.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amministratori locali -->
+    <div class="col-lg-5 col-md-6">
+      <div class="card-wrapper">
+        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
+          <div class="card-body">
+            <div class="categoryicon-top">
+              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-map-marker-circle"></use></svg>
+            </div>
+            <h2 class="card-title h5">Amministratori locali</h2>
+            <p class="card-text"><strong>Chi:</strong> Sindaci, Assessori all'innovazione, Presidenti di Regione, Direttori generali di enti locali.</p>
+            <p class="card-text"><strong>Perché:</strong> La competizione tra enti è una leva potente. Se il proprio Comune è in fondo alla classifica, qualcuno lo farà notare. Se è in cima, è un merito da comunicare.</p>
+            <p class="card-text"><strong>Cosa possono fare:</strong> Delibere per la migrazione, stanziamento fondi, adesione a convenzioni per servizi sovrani, comunicazione politica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Ambiti di rilevanza -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Ambiti pubblici e politici</h2>
+      <p>La sovranità digitale interseca molteplici ambiti di policy. L'Osservatorio fornisce dati rilevanti per ciascuno di essi.</p>
+
+      <div class="table-responsive mt-4">
+        <table class="table table-bordered">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Ambito</th>
+              <th scope="col">Perché è rilevante</th>
+              <th scope="col">Leva principale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sicurezza nazionale</strong></td>
+              <td>Email della PA su server esteri significa esposizione a intelligence di paesi terzi</td>
+              <td>Rischio geopolitico, CLOUD Act, sorveglianza</td>
+            </tr>
+            <tr>
+              <td><strong>Protezione dati personali</strong></td>
+              <td>Trasferimento extra-UE dei dati dei cittadini tramite email della PA</td>
+              <td>GDPR, sentenze Schrems I e II della CGUE</td>
+            </tr>
+            <tr>
+              <td><strong>Procurement pubblico</strong></td>
+              <td>Le convenzioni Consip orientano le scelte di migliaia di enti</td>
+              <td>Volume di spesa, alternative disponibili</td>
+            </tr>
+            <tr>
+              <td><strong>Trasformazione digitale</strong></td>
+              <td>Il PNRR investe miliardi nella digitalizzazione della PA — verso quali provider?</td>
+              <td>Destinazione fondi pubblici</td>
+            </tr>
+            <tr>
+              <td><strong>Politica industriale</strong></td>
+              <td>Il mercato cloud/email della PA è dominato da operatori extra-UE</td>
+              <td>Competitività, occupazione, economia locale</td>
+            </tr>
+            <tr>
+              <td><strong>Autonomia strategica UE</strong></td>
+              <td>Dipendenza da infrastrutture non-EU per funzioni statali critiche</td>
+              <td>Geopolitica, resilienza, sovranità europea</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impatto -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Impatto atteso</h2>
+      <p>L'Osservatorio si propone di generare impatto concreto e misurabile in ciascuno di questi ambiti:</p>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="callout">
+            <div class="callout-title">
+              <svg class="icon"><use href="{{ $spritesURL }}#it-hearing"></use></svg>
+              <span>Consapevolezza</span>
+            </div>
+            <p>Articoli di stampa, citazioni in documenti istituzionali, dibattito pubblico informato sui dati.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="callout">
+            <div class="callout-title">
+              <svg class="icon"><use href="{{ $spritesURL }}#it-exchange-circle"></use></svg>
+              <span>Policy</span>
+            </div>
+            <p>Interrogazioni parlamentari, aggiornamento linee guida, requisiti di sovranità nelle convenzioni.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="callout">
+            <div class="callout-title">
+              <svg class="icon"><use href="{{ $spritesURL }}#it-check-circle"></use></svg>
+              <span>Migrazione</span>
+            </div>
+            <p>Enti che avviano la transizione verso provider sovrani, riduzione misurabile della dipendenza extra-UE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="row justify-content-center mt-5 mb-3">
+    <div class="col-lg-8 text-center">
+      <h3>Vuoi contribuire?</h3>
+      <p>L'Osservatorio è un progetto aperto. Ogni stakeholder può partecipare nel proprio ambito di competenza.</p>
+      <a class="btn btn-primary btn-lg me-2" href="{{ "partecipa/" | relURL }}">Come partecipare</a>
+      <a class="btn btn-outline-primary btn-lg" href="{{ "decisori/" | relURL }}">Per i decisori</a>
+    </div>
+  </div>
+</div>
+{{ end }}

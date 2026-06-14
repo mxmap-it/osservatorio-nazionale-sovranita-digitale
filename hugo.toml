@@ -49,21 +49,37 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       url = '/news/'
       weight = 4
     [[languages.it.menus.main]]
+      name = 'Per i Decisori'
+      url = '/decisori/'
+      weight = 5
+    [[languages.it.menus.main]]
+      name = 'Stakeholder'
+      url = '/stakeholder/'
+      weight = 6
+    [[languages.it.menus.main]]
+      name = 'Press Kit'
+      url = '/press/'
+      weight = 7
+    [[languages.it.menus.main]]
+      name = 'Dati Aperti'
+      url = '/dati-aperti/'
+      weight = 8
+    [[languages.it.menus.main]]
       name = 'Metodologia'
       url = '/metodologia/'
-      weight = 5
+      weight = 9
     [[languages.it.menus.main]]
       name = 'FAQ'
       url = '/faq/'
-      weight = 6
+      weight = 10
     [[languages.it.menus.main]]
       name = 'Partecipa'
       url = '/partecipa/'
-      weight = 7
+      weight = 11
     [[languages.it.menus.main]]
       name = 'Chi Siamo'
       url = '/chi-siamo/'
-      weight = 8
+      weight = 12
 
   [languages.en]
     weight = 2
@@ -89,21 +105,37 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       url = '/news/'
       weight = 4
     [[languages.en.menus.main]]
+      name = 'For Decision Makers'
+      url = '/decisori/'
+      weight = 5
+    [[languages.en.menus.main]]
+      name = 'Stakeholders'
+      url = '/stakeholder/'
+      weight = 6
+    [[languages.en.menus.main]]
+      name = 'Press Kit'
+      url = '/press/'
+      weight = 7
+    [[languages.en.menus.main]]
+      name = 'Open Data'
+      url = '/dati-aperti/'
+      weight = 8
+    [[languages.en.menus.main]]
       name = 'Methodology'
       url = '/metodologia/'
-      weight = 5
+      weight = 9
     [[languages.en.menus.main]]
       name = 'FAQ'
       url = '/faq/'
-      weight = 6
+      weight = 10
     [[languages.en.menus.main]]
       name = 'Contribute'
       url = '/partecipa/'
-      weight = 7
+      weight = 11
     [[languages.en.menus.main]]
       name = 'About'
       url = '/chi-siamo/'
-      weight = 8
+      weight = 12
 
   [languages.bg]
     weight = 3

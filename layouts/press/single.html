@@ -1,0 +1,190 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">Materiali pronti all'uso per giornalisti, comunicatori e media. Tutti i contenuti sono rilasciati sotto licenza CC BY-SA 4.0 — liberi di essere citati e ripubblicati con attribuzione.</p>
+    </div>
+  </div>
+
+  <!-- Numeri chiave citabili -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Numeri chiave</h2>
+      <p class="text-muted">Dati citabili, con fonte verificabile. Aggiornati all'ultimo report disponibile.</p>
+
+      <div class="callout callout-highlight mt-3">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Come citare</span>
+        </div>
+        <p><em>Fonte: Osservatorio Nazionale Sovranità Digitale, su dati MxMap.it — analisi dei record MX di ~23.000 enti della PA italiana registrati nell'IndicePA.</em></p>
+      </div>
+
+      <div class="table-responsive mt-4">
+        <table class="table table-bordered">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Dato</th>
+              <th scope="col">Valore</th>
+              <th scope="col">Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Enti PA monitorati</td>
+              <td><strong>~23.000</strong></td>
+              <td>Tutti gli enti registrati nell'IndicePA</td>
+            </tr>
+            <tr>
+              <td>PA con email su provider extra-UE</td>
+              <td><strong>In aggiornamento</strong></td>
+              <td>Provider soggetti a giurisdizioni non europee</td>
+            </tr>
+            <tr>
+              <td>PA con email su provider italiani</td>
+              <td><strong>In aggiornamento</strong></td>
+              <td>Provider con sede legale e operativa in Italia</td>
+            </tr>
+            <tr>
+              <td>Provider più diffuso nella PA</td>
+              <td><strong>In aggiornamento</strong></td>
+              <td>Per numero di enti serviti</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>
+    </div>
+  </div>
+
+  <!-- Scheda progetto -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Scheda progetto</h2>
+
+      <div class="card card-bg rounded shadow-sm">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table mb-0">
+              <tbody>
+                <tr>
+                  <td class="fw-bold" style="width:35%">Progetto</td>
+                  <td>Osservatorio Nazionale Sovranità Digitale</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Tipo</td>
+                  <td>Monitoraggio civico indipendente, open source, open data</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Oggetto</td>
+                  <td>Misurare la dipendenza della PA italiana da infrastrutture digitali extra-UE</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Perimetro attuale</td>
+                  <td>Servizi email (~23.000 enti PA, fonte IndicePA)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Fonte dati</td>
+                  <td><a href="https://mxmap.it" target="_blank" rel="noopener">MxMap.it</a> — analisi record MX dei domini PA</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Fondatore</td>
+                  <td>Fabio Pietrosanti</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Licenza</td>
+                  <td>CC BY-SA 4.0 (dati, report, codice)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Sito web</td>
+                  <td><a href="https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/" target="_blank">osservatorio-nazionale-sovranita-digitale</a></td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Repository</td>
+                  <td><a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">GitHub</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Angoli giornalistici -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Angoli giornalistici suggeriti</h2>
+      <p>Spunti per articoli basati sui dati dell'Osservatorio:</p>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Sicurezza nazionale</h3>
+              <p class="card-text">Le email di migliaia di enti pubblici italiani transitano su server soggetti a giurisdizione straniera. Cosa significa per la sicurezza delle comunicazioni istituzionali?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Privacy dei cittadini</h3>
+              <p class="card-text">I dati personali che i cittadini affidano alla PA quando comunicano via email sono protetti dal GDPR? Cosa succede quando il provider è soggetto al CLOUD Act?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Il tuo Comune</h3>
+              <p class="card-text">Indagine locale: quale provider email usa il Comune di [nome]? Come si posiziona rispetto ad altri comuni della stessa regione?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Economia e industria IT</h3>
+              <p class="card-text">Il mercato dei servizi email della PA vale milioni di euro l'anno. Quanto di questo mercato va all'estero? Esistono alternative italiane ed europee competitive?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contatti stampa -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Contatto stampa</h2>
+      <div class="card card-bg rounded shadow-sm">
+        <div class="card-body">
+          <h3 class="h6">Fabio Pietrosanti</h3>
+          <p class="mb-1">Fondatore dell'Osservatorio Nazionale Sovranità Digitale e del progetto MxMap.it</p>
+          <p class="mb-1">Disponibile per interviste, commenti e approfondimenti.</p>
+          <p class="mb-0"><strong>Contatto:</strong> <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">tramite GitHub</a> oppure sul <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">canale Telegram</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comunicati -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Comunicati stampa</h2>
+      <div class="callout">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-note"></use></svg>
+          <span>Prossimamente</span>
+        </div>
+        <p>Il comunicato stampa di lancio del progetto sarà pubblicato in concomitanza con il primo report completo. Per essere informato, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}

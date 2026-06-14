@@ -1,0 +1,196 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">I dati dell'Osservatorio sono aperti. Ricercatori, analisti, sviluppatori e studenti possono accedere ai dataset, alla documentazione e agli strumenti per condurre analisi indipendenti.</p>
+    </div>
+  </div>
+
+  <!-- Principi open data -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-open-source"></use></svg>
+          <span>Open Data, Open Source, Open Science</span>
+        </div>
+        <p>Tutti i dati sono rilasciati sotto licenza <strong>CC BY-SA 4.0</strong>. Il codice sorgente è su GitHub. La metodologia è documentata e replicabile. Crediamo che la trasparenza dei dati sia il fondamento del monitoraggio civico.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dataset disponibili -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Dataset disponibili</h2>
+
+      <div class="card card-bg rounded shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="h5 text-primary">MxMap.it — Mappatura provider email PA</h3>
+          <p>Dataset completo dei record MX di tutti i domini della PA italiana registrati nell'IndicePA. Per ogni ente:</p>
+          <ul>
+            <li>Codice IPA e denominazione dell'ente</li>
+            <li>Dominio email istituzionale</li>
+            <li>Record MX (Mail Exchange) rilevati</li>
+            <li>Provider email identificato</li>
+            <li>Nazionalità e giurisdizione del provider</li>
+            <li>Classificazione di sovranità (italiano / UE / extra-UE)</li>
+          </ul>
+          <p><strong>Formato:</strong> CSV, JSON</p>
+          <p><strong>Fonte:</strong> <a href="https://mxmap.it" target="_blank" rel="noopener">MxMap.it</a></p>
+          <p><strong>Aggiornamento:</strong> Periodico</p>
+          <p><strong>Licenza:</strong> CC BY-SA 4.0</p>
+          <a class="btn btn-primary btn-sm" href="https://mxmap.it" target="_blank" rel="noopener">
+            <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
+            Accedi ai dati su MxMap.it
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dizionario dati -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Dizionario dati</h2>
+      <p>Descrizione dei campi principali presenti nel dataset:</p>
+
+      <div class="table-responsive mt-3">
+        <table class="table table-bordered">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Campo</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Descrizione</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cod_amm</code></td>
+              <td>string</td>
+              <td>Codice identificativo dell'ente nell'IndicePA</td>
+            </tr>
+            <tr>
+              <td><code>des_amm</code></td>
+              <td>string</td>
+              <td>Denominazione ufficiale dell'ente</td>
+            </tr>
+            <tr>
+              <td><code>dominio</code></td>
+              <td>string</td>
+              <td>Dominio email istituzionale dell'ente</td>
+            </tr>
+            <tr>
+              <td><code>mx_records</code></td>
+              <td>string[]</td>
+              <td>Record MX rilevati per il dominio</td>
+            </tr>
+            <tr>
+              <td><code>provider</code></td>
+              <td>string</td>
+              <td>Provider email identificato dall'analisi dei record MX</td>
+            </tr>
+            <tr>
+              <td><code>provider_country</code></td>
+              <td>string (ISO 3166)</td>
+              <td>Paese di sede legale del provider</td>
+            </tr>
+            <tr>
+              <td><code>sovereignty</code></td>
+              <td>enum</td>
+              <td><code>IT</code> (italiano), <code>EU</code> (europeo), <code>EXTRA_EU</code> (extra-europeo)</td>
+            </tr>
+            <tr>
+              <td><code>categoria_ente</code></td>
+              <td>string</td>
+              <td>Tipologia dell'ente (Comune, Regione, ASL, Università, ...)</td>
+            </tr>
+            <tr>
+              <td><code>regione</code></td>
+              <td>string</td>
+              <td>Regione di appartenenza dell'ente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-muted mt-2">Lo schema esatto può variare tra le versioni del dataset. Fare riferimento all'header del file scaricato.</p>
+    </div>
+  </div>
+
+  <!-- Per ricercatori -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Per ricercatori e accademici</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Citazione suggerita</h3>
+              <p class="card-text small" style="font-family: monospace; background: #f5f5f5; padding: 12px; border-radius: 4px;">Pietrosanti, F. (2025). Osservatorio Nazionale Sovranità Digitale: Stato della sovranità digitale nella PA italiana. Dati MxMap.it su IndicePA. CC BY-SA 4.0. https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Domande di ricerca suggerite</h3>
+              <ul class="card-text small">
+                <li>Correlazione tra dimensione dell'ente e scelta del provider email</li>
+                <li>Distribuzione geografica della dipendenza da provider extra-UE</li>
+                <li>Evoluzione temporale delle scelte di provider nella PA</li>
+                <li>Impatto delle policy AgID sulle scelte tecnologiche degli enti</li>
+                <li>Confronto tra tipologie di enti (Comuni vs ASL vs Università)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contribuire -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Contribuire ai dati</h2>
+
+      <div class="callout">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-github"></use></svg>
+          <span>Open Source</span>
+        </div>
+        <p>Il codice sorgente del sito, gli strumenti di analisi e la documentazione sono disponibili su <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">GitHub</a>. Contribuzioni benvenute:</p>
+        <ul>
+          <li>Segnalazione di errori nei dati</li>
+          <li>Miglioramento degli algoritmi di classificazione</li>
+          <li>Aggiunta di nuove fonti dati</li>
+          <li>Analisi e visualizzazioni indipendenti</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Licenza -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Licenza e condizioni d'uso</span>
+        </div>
+        <p>Tutti i dati e contenuti sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY-SA 4.0)</a>.</p>
+        <p>Sei libero di:</p>
+        <ul>
+          <li><strong>Condividere</strong> — riprodurre, distribuire, comunicare al pubblico</li>
+          <li><strong>Modificare</strong> — remixare, trasformare il materiale per qualsiasi fine, anche commerciale</li>
+        </ul>
+        <p>A condizione di citare la fonte e mantenere la stessa licenza.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}
