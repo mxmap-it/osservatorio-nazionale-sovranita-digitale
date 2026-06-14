@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+{{ $kpi := site.Data.kpi }}
 <div class="container-xxl section-spacing-lg">
 
   <div class="row justify-content-center">
@@ -35,28 +36,28 @@
           <tbody>
             <tr>
               <td>Enti PA monitorati</td>
-              <td><strong>~23.000</strong></td>
+              <td><strong>{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</strong></td>
               <td>Tutti gli enti registrati nell'IndicePA</td>
             </tr>
             <tr>
               <td>PA con email su provider extra-UE</td>
-              <td><strong>In aggiornamento</strong></td>
+              <td><strong>{{ with $kpi.sovereignty.extra_eu.pct }}{{ printf "%.0f%%" . }}{{ else }}In aggiornamento{{ end }}</strong></td>
               <td>Provider soggetti a giurisdizioni non europee</td>
             </tr>
             <tr>
               <td>PA con email su provider italiani</td>
-              <td><strong>In aggiornamento</strong></td>
+              <td><strong>{{ with $kpi.sovereignty.it.pct }}{{ printf "%.0f%%" . }}{{ else }}In aggiornamento{{ end }}</strong></td>
               <td>Provider con sede legale e operativa in Italia</td>
             </tr>
             <tr>
               <td>Provider più diffuso nella PA</td>
-              <td><strong>In aggiornamento</strong></td>
+              <td><strong>{{ with index $kpi.top_providers 0 }}{{ .name }}{{ else }}In aggiornamento{{ end }}</strong></td>
               <td>Per numero di enti serviti</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>
+      {{ if $kpi.placeholder }}<p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>{{ else }}<p class="small text-muted mt-2">Ultimo aggiornamento: {{ $kpi.run_id }}. Fonte: MxMap.it su IndicePA.</p>{{ end }}
     </div>
   </div>
 

@@ -1,0 +1,117 @@
+name: Update KPI from MxMap
+
+# Fetches the aggregated KPI JSON published by MxMap and, when it changed,
+# commits it to data/kpi.json and rebuilds + redeploys the site.
+#
+# The source URL can be overridden with a repository variable KPI_SOURCE_URL
+# (Settings > Secrets and variables > Actions > Variables). Defaults below.
+
+on:
+  schedule:
+    - cron: '20 5 * * *'   # every day at 05:20 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.fetch.outputs.changed }}
+    env:
+      KPI_SOURCE_URL: ${{ vars.KPI_SOURCE_URL || 'https://mxmap.it/data/kpi.json' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch and validate KPI JSON
+        id: fetch
+        run: |
+          set -uo pipefail
+          tmp="$(mktemp)"
+          code="$(curl -fsS -m 30 -w '%{http_code}' -o "$tmp" "$KPI_SOURCE_URL" || echo 000)"
+          if [ "$code" != "200" ]; then
+            echo "::warning::KPI fetch failed (HTTP $code) from $KPI_SOURCE_URL — keeping existing data/kpi.json"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Must be valid JSON with the expected top-level structure
+          if ! jq -e '.totals and .sovereignty and (.generated_at != null)' "$tmp" >/dev/null 2>&1; then
+            echo "::warning::Fetched payload is not valid KPI JSON — keeping existing data/kpi.json"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p data
+          # Normalise (pretty-print, drop any placeholder flag) for stable diffs
+          jq 'del(.placeholder)' "$tmp" > data/kpi.json
+          if git diff --quiet -- data/kpi.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "KPI data unchanged."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "KPI data updated."
+          fi
+
+      - name: Commit updated KPI
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/kpi.json
+          git commit -m "chore: update KPI data from MxMap [skip ci]"
+          git push
+
+  build:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.163.1
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          ref: main
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: Europe/Rome
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

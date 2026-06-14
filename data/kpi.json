@@ -1,0 +1,19 @@
+{
+  "generated_at": "",
+  "run_id": "",
+  "placeholder": true,
+  "totals": {
+    "n_entities": 0,
+    "n_with_mx": 0,
+    "coverage_pct": 0.0
+  },
+  "sovereignty": {
+    "extra_eu":  { "count": 0, "pct": 0.0, "label": "Extra-UE (CLOUD Act)" },
+    "eu_non_it": { "count": 0, "pct": 0.0, "label": "UE (non italiano)" },
+    "it":        { "count": 0, "pct": 0.0, "label": "Italiano" },
+    "unknown":   { "count": 0, "pct": 0.0, "label": "Sconosciuto" }
+  },
+  "top_providers": [],
+  "by_cluster": [],
+  "confidence": { "mean": 0.0, "high_pct": 0.0 }
+}
