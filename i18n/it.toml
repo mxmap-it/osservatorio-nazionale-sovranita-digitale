@@ -1,0 +1,41 @@
+[langSwitcher]
+other = "Lingua"
+
+[readMore]
+other = "Leggi di più"
+
+[downloadPdf]
+other = "Scarica il report in PDF"
+
+[allReports]
+other = "Tutti i report"
+
+[allNews]
+other = "Tutte le news"
+
+[latestReports]
+other = "Ultimi Report"
+
+[latestNews]
+other = "Ultime News"
+
+[mxmapData]
+other = "Dati da MxMap.it"
+
+[methodology]
+other = "Scopri la metodologia"
+
+[followUs]
+other = "Seguici su"
+
+[usefulLinks]
+other = "Link Utili"
+
+[relatedProject]
+other = "Progetto collegato"
+
+[information]
+other = "Informazioni"
+
+[license]
+other = "Licenza CC BY-SA 4.0"

@@ -21,6 +21,28 @@
               </nav>
             </div>
             <div class="it-header-slim-right-zone">
+              {{ if .Translations }}
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">{{ i18n "langSwitcher" }}: </span>
+                  <span>{{ .Language.Lang | upper }}</span>
+                  <svg class="icon d-none d-lg-block"><use href="{{ $spritesURL }}#it-expand"></use></svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          {{ range .Translations }}
+                          <li><a class="dropdown-item list-item" href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}"><span>{{ .Language.Lang | upper }} — {{ .Language.Label }}</span></a></li>
+                          {{ end }}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
               <a class="btn btn-primary btn-sm btn-icon" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
                 <span class="rounded-icon">
                   <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-github"></use></svg>

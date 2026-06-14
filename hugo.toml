@@ -1,46 +1,12 @@
 baseURL = 'https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/'
-locale = 'it'
 defaultContentLanguage = 'it'
+defaultContentLanguageInSubdir = false
 title = 'Osservatorio Nazionale Sovranità Digitale'
 
 [params]
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
   mxmapURL = 'https://mxmap.it'
-
-[menu]
-  [[menu.main]]
-    name = 'Home'
-    url = '/'
-    weight = 1
-  [[menu.main]]
-    name = 'Report'
-    url = '/report/'
-    weight = 2
-  [[menu.main]]
-    name = 'Presentazioni'
-    url = '/presentazioni/'
-    weight = 3
-  [[menu.main]]
-    name = 'News'
-    url = '/news/'
-    weight = 4
-  [[menu.main]]
-    name = 'Metodologia'
-    url = '/metodologia/'
-    weight = 5
-  [[menu.main]]
-    name = 'FAQ'
-    url = '/faq/'
-    weight = 6
-  [[menu.main]]
-    name = 'Partecipa'
-    url = '/partecipa/'
-    weight = 7
-  [[menu.main]]
-    name = 'Chi Siamo'
-    url = '/chi-siamo/'
-    weight = 8
 
 [markup]
   [markup.goldmark]
@@ -53,3 +19,264 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
 
 [pagination]
   pagerSize = 10
+
+# ─── Languages ───────────────────────────────────────────────────────
+# Italian is the default (content at root). Other EU languages serve
+# content from content/<lang>/ and appear under /<lang>/ URLs.
+# To activate a language: create content/<lang>/ with translated files.
+
+[languages]
+  [languages.it]
+    weight = 1
+    locale = 'it'
+    title = 'Osservatorio Nazionale Sovranità Digitale'
+    [languages.it.params]
+      description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
+    [[languages.it.menus.main]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.it.menus.main]]
+      name = 'Report'
+      url = '/report/'
+      weight = 2
+    [[languages.it.menus.main]]
+      name = 'Presentazioni'
+      url = '/presentazioni/'
+      weight = 3
+    [[languages.it.menus.main]]
+      name = 'News'
+      url = '/news/'
+      weight = 4
+    [[languages.it.menus.main]]
+      name = 'Metodologia'
+      url = '/metodologia/'
+      weight = 5
+    [[languages.it.menus.main]]
+      name = 'FAQ'
+      url = '/faq/'
+      weight = 6
+    [[languages.it.menus.main]]
+      name = 'Partecipa'
+      url = '/partecipa/'
+      weight = 7
+    [[languages.it.menus.main]]
+      name = 'Chi Siamo'
+      url = '/chi-siamo/'
+      weight = 8
+
+  [languages.en]
+    weight = 2
+    locale = 'en'
+    title = 'National Digital Sovereignty Observatory'
+    contentDir = 'content/en'
+    [languages.en.params]
+      description = 'Measuring and monitoring the state of digital sovereignty in the Italian Public Administration'
+    [[languages.en.menus.main]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.en.menus.main]]
+      name = 'Reports'
+      url = '/report/'
+      weight = 2
+    [[languages.en.menus.main]]
+      name = 'Presentations'
+      url = '/presentazioni/'
+      weight = 3
+    [[languages.en.menus.main]]
+      name = 'News'
+      url = '/news/'
+      weight = 4
+    [[languages.en.menus.main]]
+      name = 'Methodology'
+      url = '/metodologia/'
+      weight = 5
+    [[languages.en.menus.main]]
+      name = 'FAQ'
+      url = '/faq/'
+      weight = 6
+    [[languages.en.menus.main]]
+      name = 'Contribute'
+      url = '/partecipa/'
+      weight = 7
+    [[languages.en.menus.main]]
+      name = 'About'
+      url = '/chi-siamo/'
+      weight = 8
+
+  [languages.bg]
+    weight = 3
+    locale = 'bg'
+    title = 'Национална обсерватория за цифров суверенитет'
+    contentDir = 'content/bg'
+    [languages.bg.params]
+      description = 'Измерване и наблюдение на състоянието на цифровия суверенитет в италианската публична администрация'
+
+  [languages.cs]
+    weight = 4
+    locale = 'cs'
+    title = 'Národní observatoř digitální suverenity'
+    contentDir = 'content/cs'
+    [languages.cs.params]
+      description = 'Měření a monitorování stavu digitální suverenity v italské veřejné správě'
+
+  [languages.da]
+    weight = 5
+    locale = 'da'
+    title = 'Nationalt Observatorium for Digital Suverænitet'
+    contentDir = 'content/da'
+    [languages.da.params]
+      description = 'Måling og overvågning af den digitale suverænitet i den italienske offentlige forvaltning'
+
+  [languages.de]
+    weight = 6
+    locale = 'de'
+    title = 'Nationale Beobachtungsstelle für Digitale Souveränität'
+    contentDir = 'content/de'
+    [languages.de.params]
+      description = 'Messung und Überwachung der digitalen Souveränität in der italienischen öffentlichen Verwaltung'
+
+  [languages.el]
+    weight = 7
+    locale = 'el'
+    title = 'Εθνικό Παρατηρητήριο Ψηφιακής Κυριαρχίας'
+    contentDir = 'content/el'
+    [languages.el.params]
+      description = 'Μέτρηση και παρακολούθηση της ψηφιακής κυριαρχίας στην ιταλική δημόσια διοίκηση'
+
+  [languages.es]
+    weight = 8
+    locale = 'es'
+    title = 'Observatorio Nacional de Soberanía Digital'
+    contentDir = 'content/es'
+    [languages.es.params]
+      description = 'Medir y monitorear el estado de la soberanía digital en la Administración Pública italiana'
+
+  [languages.et]
+    weight = 9
+    locale = 'et'
+    title = 'Riiklik Digitaalse Suveräänsuse Vaatluskeskus'
+    contentDir = 'content/et'
+    [languages.et.params]
+      description = 'Itaalia avaliku halduse digitaalse suveräänsuse seisundi mõõtmine ja jälgimine'
+
+  [languages.fi]
+    weight = 10
+    locale = 'fi'
+    title = 'Kansallinen Digitaalisen Suvereniteetin Seurantakeskus'
+    contentDir = 'content/fi'
+    [languages.fi.params]
+      description = 'Italian julkishallinnon digitaalisen suvereniteetin mittaaminen ja seuranta'
+
+  [languages.fr]
+    weight = 11
+    locale = 'fr'
+    title = 'Observatoire National de la Souveraineté Numérique'
+    contentDir = 'content/fr'
+    [languages.fr.params]
+      description = "Mesurer et surveiller l'état de la souveraineté numérique dans l'Administration Publique italienne"
+
+  [languages.ga]
+    weight = 12
+    locale = 'ga'
+    title = 'Breathnóireacht Náisiúnta ar Cheannasacht Dhigiteach'
+    contentDir = 'content/ga'
+    [languages.ga.params]
+      description = 'Ceannasacht dhigiteach a thomhas agus a mhonatóireacht sa Riarachán Poiblí Iodálach'
+
+  [languages.hr]
+    weight = 13
+    locale = 'hr'
+    title = 'Nacionalni opservatorij za digitalni suverenitet'
+    contentDir = 'content/hr'
+    [languages.hr.params]
+      description = 'Mjerenje i praćenje stanja digitalnog suvereniteta u talijanskoj javnoj upravi'
+
+  [languages.hu]
+    weight = 14
+    locale = 'hu'
+    title = 'Nemzeti Digitális Szuverenitási Megfigyelőközpont'
+    contentDir = 'content/hu'
+    [languages.hu.params]
+      description = 'Az olasz közigazgatás digitális szuverenitásának mérése és monitorozása'
+
+  [languages.lt]
+    weight = 15
+    locale = 'lt'
+    title = 'Nacionalinė Skaitmeninio Suvereniteto Observatorija'
+    contentDir = 'content/lt'
+    [languages.lt.params]
+      description = 'Italijos viešojo administravimo skaitmeninio suvereniteto būklės matavimas ir stebėsena'
+
+  [languages.lv]
+    weight = 16
+    locale = 'lv'
+    title = 'Nacionālā Digitālās Suverenitātes Novērošanas Centrs'
+    contentDir = 'content/lv'
+    [languages.lv.params]
+      description = 'Itālijas publiskās pārvaldes digitālās suverenitātes stāvokļa mērīšana un uzraudzība'
+
+  [languages.mt]
+    weight = 17
+    locale = 'mt'
+    title = 'Osservatorju Nazzjonali tas-Sovranità Diġitali'
+    contentDir = 'content/mt'
+    [languages.mt.params]
+      description = "Kejl u monitoraġġ tal-istat tas-sovranità diġitali fl-Amministrazzjoni Pubblika Taljana"
+
+  [languages.nl]
+    weight = 18
+    locale = 'nl'
+    title = 'Nationaal Observatorium voor Digitale Soevereiniteit'
+    contentDir = 'content/nl'
+    [languages.nl.params]
+      description = 'Het meten en monitoren van de digitale soevereiniteit in het Italiaanse openbaar bestuur'
+
+  [languages.pl]
+    weight = 19
+    locale = 'pl'
+    title = 'Krajowe Obserwatorium Suwerenności Cyfrowej'
+    contentDir = 'content/pl'
+    [languages.pl.params]
+      description = 'Pomiar i monitorowanie stanu suwerenności cyfrowej we włoskiej administracji publicznej'
+
+  [languages.pt]
+    weight = 20
+    locale = 'pt'
+    title = 'Observatório Nacional de Soberania Digital'
+    contentDir = 'content/pt'
+    [languages.pt.params]
+      description = 'Medir e monitorar o estado da soberania digital na Administração Pública italiana'
+
+  [languages.ro]
+    weight = 21
+    locale = 'ro'
+    title = 'Observatorul Național al Suveranității Digitale'
+    contentDir = 'content/ro'
+    [languages.ro.params]
+      description = 'Măsurarea și monitorizarea stării suveranității digitale în administrația publică italiană'
+
+  [languages.sk]
+    weight = 22
+    locale = 'sk'
+    title = 'Národné observatórium digitálnej suverenity'
+    contentDir = 'content/sk'
+    [languages.sk.params]
+      description = 'Meranie a monitorovanie stavu digitálnej suverenity v talianskej verejnej správe'
+
+  [languages.sl]
+    weight = 23
+    locale = 'sl'
+    title = 'Nacionalni observatorij za digitalno suverenost'
+    contentDir = 'content/sl'
+    [languages.sl.params]
+      description = 'Merjenje in spremljanje stanja digitalne suverenosti v italijanski javni upravi'
+
+  [languages.sv]
+    weight = 24
+    locale = 'sv'
+    title = 'Nationellt Observatorium för Digital Suveränitet'
+    contentDir = 'content/sv'
+    [languages.sv.params]
+      description = 'Mätning och övervakning av den digitala suveräniteten i den italienska offentliga förvaltningen'
