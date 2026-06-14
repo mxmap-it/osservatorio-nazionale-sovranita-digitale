@@ -11,7 +11,7 @@ Questo report inaugurale analizza lo stato della sovranità digitale nella Pubbl
 
 ## Dati principali
 
-L'analisi è basata sui dati raccolti da [MxMap.it](https://mxmap.it) relativi ai domini email della PA italiana registrati nell'Indice delle Pubbliche Amministrazioni.
+L'analisi è basata sui dati raccolti da [MxMap.it](https://fpietrosanti.github.io/mxmap.it/) relativi ai domini email della PA italiana registrati nell'Indice delle Pubbliche Amministrazioni.
 
 ### Provider di posta nella PA
 

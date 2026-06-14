@@ -22,4 +22,4 @@ Con il lancio dell'Osservatorio pubblichiamo il primo report sullo stato della s
 
 ## Fonte dati
 
-L'Osservatorio si basa sui dati raccolti dal progetto [MxMap.it](https://mxmap.it), che mappa i record MX di tutti i domini della PA italiana.
+L'Osservatorio si basa sui dati raccolti dal progetto [MxMap.it](https://fpietrosanti.github.io/mxmap.it/), che mappa i record MX di tutti i domini della PA italiana.

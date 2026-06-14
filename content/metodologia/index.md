@@ -5,7 +5,7 @@ description: "Come vengono raccolti e analizzati i dati sulla sovranità digital
 
 ## Fonte dei dati
 
-L'Osservatorio si basa sui dati raccolti dal progetto [MxMap.it](https://mxmap.it), che mappa i record MX (Mail Exchange) di tutti i domini della Pubblica Amministrazione italiana registrati nell'Indice delle Pubbliche Amministrazioni (IndicePA).
+L'Osservatorio si basa sui dati raccolti dal progetto [MxMap.it](https://fpietrosanti.github.io/mxmap.it/), che mappa i record MX (Mail Exchange) di tutti i domini della Pubblica Amministrazione italiana registrati nell'Indice delle Pubbliche Amministrazioni (IndicePA).
 
 ## Cosa misuriamo
 

@@ -285,7 +285,7 @@ def build():
     refs = [
         "Osservatorio Nazionale Sovranità Digitale: "
         "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
-        "MxMap.it — Mappatura provider email PA: https://mxmap.it",
+        "MxMap.it — Mappatura provider email PA: https://fpietrosanti.github.io/mxmap.it/",
         "IndicePA — Indice delle Pubbliche Amministrazioni: https://indicepa.gov.it",
         "GDPR: Regolamento UE 2016/679",
         "Sentenza Schrems II: CGUE C-311/18",
