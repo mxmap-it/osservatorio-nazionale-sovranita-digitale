@@ -1,0 +1,126 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-5">I dati dell'Osservatorio sono aperti, documentati e replicabili. Questa scheda raccoglie tutto ciò che serve a ricercatori, accademici, studenti e analisti per condurre studi indipendenti.</p>
+    </div>
+  </div>
+
+  <!-- Callout -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-open-source"></use></svg>
+          <span>Dati aperti, metodologia trasparente</span>
+        </div>
+        <p>Dataset sotto licenza CC BY-SA 4.0, pipeline open source, metodologia pubblicata. La riproducibilità è un requisito, non un'aspirazione.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Risorse -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Risorse per la ricerca</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Dataset</h3>
+              <p class="card-text small">Record MX e classificazione di sovranità per tutti i domini PA. Formati CSV e JSON.</p>
+              <a class="read-more" href="{{ "dati-aperti/" | relURL }}">
+                <span class="text">Vai ai dati aperti</span>
+                <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Metodologia</h3>
+              <p class="card-text small">Descrizione completa del processo: dall'IndicePA alla classificazione di sovranità.</p>
+              <a class="read-more" href="{{ "metodologia/" | relURL }}">
+                <span class="text">Leggi la metodologia</span>
+                <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6 text-primary">Codice sorgente</h3>
+              <p class="card-text small">Pipeline di raccolta e analisi, sito e strumenti, su GitHub.</p>
+              <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
+                <span class="text">Vai al repository</span>
+                <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domande di ricerca -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Domande di ricerca suggerite</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">Domanda</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Geografia</td><td>Distribuzione territoriale della dipendenza da provider extra-UE</td></tr>
+            <tr><td>Dimensione ente</td><td>Correlazione tra dimensione/risorse dell'ente e scelta del provider</td></tr>
+            <tr><td>Tipologia</td><td>Confronto tra categorie di enti (Comuni, ASL, Università, Ministeri)</td></tr>
+            <tr><td>Policy</td><td>Impatto delle linee guida AgID sulle scelte tecnologiche nel tempo</td></tr>
+            <tr><td>Economia</td><td>Stima della spesa pubblica verso provider esteri vs nazionali</td></tr>
+            <tr><td>Comparazione UE</td><td>Replica della metodologia su altri Stati membri</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Citazione -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Come citare</h2>
+      <div class="card card-bg rounded shadow-sm">
+        <div class="card-body">
+          <p class="small mb-0" style="font-family: monospace; background: #f5f5f5; padding: 16px; border-radius: 4px;">Pietrosanti, F. (2025). Osservatorio Nazionale Sovranità Digitale: Stato della sovranità digitale nella PA italiana. Dati MxMap.it su IndicePA. CC BY-SA 4.0. https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download + collaborazione -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
+          <span>Scarica la scheda</span>
+        </div>
+        <p>Una sintesi di 2 pagine con dataset, dizionario dati, domande di ricerca e citazione.</p>
+        <a class="btn btn-primary btn-sm" href="{{ "pdf/scheda-ricercatori-sovranita-digitale.pdf" | relURL }}" download>
+          <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
+          Scarica Scheda Ricercatori (PDF)
+        </a>
+        <p class="mt-3 mb-0">Stai conducendo una ricerca e vuoi collaborare? <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Contattaci su GitHub</a>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}
