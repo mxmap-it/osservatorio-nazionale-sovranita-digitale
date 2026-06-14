@@ -30,7 +30,7 @@ jobs:
     outputs:
       changed: ${{ steps.fetch.outputs.changed }}
     env:
-      KPI_SOURCE_URL: ${{ vars.KPI_SOURCE_URL || 'https://mxmap.it/data/kpi.json' }}
+      KPI_SOURCE_URL: ${{ vars.KPI_SOURCE_URL || 'https://fpietrosanti.github.io/mxmap.it/kpi.json' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
