@@ -7,6 +7,12 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
   mxmapURL = 'https://mxmap.it'
+  # ─── Evento di rilascio report + presentazione alla Camera ───────────
+  # DATA DUMMY — da confermare. Aggiornare qui per propagare nel banner.
+  eventActive = true
+  eventDate = '15 ottobre 2026'
+  eventDateISO = '2026-10-15'
+  eventProvisional = true
 
 [markup]
   [markup.goldmark]
