@@ -13,13 +13,13 @@ Questo report inaugurale analizza lo stato della sovranità digitale nella Pubbl
 
 L'analisi è basata sui dati raccolti da [MxMap.it](https://fpietrosanti.github.io/mxmap.it/) relativi ai domini email della PA italiana registrati nell'Indice delle Pubbliche Amministrazioni.
 
-### Provider di posta nella PA
+### Sovranità dei provider di posta
 
-I dati evidenziano una significativa dipendenza da provider extra-europei per la gestione della posta elettronica istituzionale.
+L'analisi classifica ogni ente in base alla **sovranità giuridica** del provider che ne gestisce la posta elettronica — ossia sotto quale ordinamento (italiano, europeo o extra-UE) ricadono i dati delle comunicazioni. I dati evidenziano una significativa dipendenza da provider soggetti a giurisdizione extra-europea.
 
 ## Metodologia
 
-I dati sono stati raccolti tramite interrogazione dei record MX dei domini della PA italiana. Per maggiori dettagli, consultare la sezione [Metodologia](/metodologia/).
+A partire dai record DNS dei domini della PA italiana, per ciascun ente viene identificato il provider di posta e la **giurisdizione** a cui è soggetto. Il report misura la sovranità giuridica dei servizi. Per maggiori dettagli, consultare la sezione [Metodologia](/metodologia/).
 
 ## Conclusioni
 
