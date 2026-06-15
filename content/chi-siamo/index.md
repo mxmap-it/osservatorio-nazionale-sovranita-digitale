@@ -49,6 +49,8 @@ Le organizzazioni elencate di seguito sono citate **unicamente a titolo di esemp
 
 > Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). Solo le realtà che avranno confermato l'adesione verranno indicate come aderenti effettivi.
 
+L'Osservatorio fa parte di un più ampio **movimento europeo** di misurazione della sovranità digitale: scopri le [iniziative collegate in Europa](/iniziative/) — la famiglia MxMap e gli altri indici di sovranità.
+
 ## Principi
 
 - **Trasparenza**: dati aperti, metodologia documentata, codice open source
