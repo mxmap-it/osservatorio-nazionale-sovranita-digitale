@@ -159,7 +159,7 @@ data/kpi.json → site.Data.kpi → layout (homepage, decisori, press) → deplo
 | Chi Siamo | `/chi-siamo/` | missione, multi-stakeholder, principi |
 | Partecipa | `/partecipa/` | hub "scegli il tuo profilo" |
 | FAQ | `/faq/` | domande comuni |
-| Report / News / Presentazioni | `/report/` ecc. | pubblicazioni periodiche |
+| Report / News | `/report/`, `/news/` | pubblicazioni periodiche |
 
 ---
 

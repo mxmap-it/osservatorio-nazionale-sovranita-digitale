@@ -47,10 +47,6 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       url = '/report/'
       weight = 2
     [[languages.it.menus.main]]
-      name = 'Presentazioni'
-      url = '/presentazioni/'
-      weight = 3
-    [[languages.it.menus.main]]
       name = 'News'
       url = '/news/'
       weight = 4
@@ -102,10 +98,6 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       name = 'Reports'
       url = '/report/'
       weight = 2
-    [[languages.en.menus.main]]
-      name = 'Presentations'
-      url = '/presentazioni/'
-      weight = 3
     [[languages.en.menus.main]]
       name = 'News'
       url = '/news/'
