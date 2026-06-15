@@ -290,7 +290,7 @@ def build():
     story.append(Paragraph("Fonti", s_h2))
     for ref in [
         "Osservatorio Nazionale Sovranità Digitale — https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
-        "MxMap.it — Mappatura provider email PA — https://fpietrosanti.github.io/mxmap.it/",
+        "MxMap.it — Mappatura provider email PA — https://mxmap.it/",
         "IndicePA — https://indicepa.gov.it",
         "Strategia Cloud Italia (2021); Regolamento ACN n. 307/2022",
         "GDPR (Reg. UE 2016/679); Schrems II (CGUE C-311/18)",

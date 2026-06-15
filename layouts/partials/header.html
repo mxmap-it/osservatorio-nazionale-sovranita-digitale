@@ -5,20 +5,7 @@
       <div class="row">
         <div class="col-12">
           <div class="it-header-slim-wrapper-content">
-            <div class="d-none d-lg-block"></div>
-            <div class="nav-mobile">
-              <nav aria-label="Navigazione accessoria">
-                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#slimMenu" role="button" aria-expanded="false" aria-controls="slimMenu">
-                  <span>Collegamenti</span>
-                  <svg class="icon" aria-hidden="true"><use href="{{ $spritesURL }}#it-expand"></use></svg>
-                </a>
-                <div class="link-list-wrapper collapse" id="slimMenu">
-                  <ul class="link-list">
-                    <li><a class="dropdown-item list-item" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
+            <div></div>
             <div class="it-header-slim-right-zone">
               {{ if .Translations }}
               <div class="nav-item dropdown">
@@ -42,7 +29,7 @@
                 </div>
               </div>
               {{ end }}
-              <a class="nav-link d-none d-lg-flex align-items-center me-2" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">
+              <a class="nav-link d-inline-flex align-items-center me-2" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">
                 <svg class="icon icon-sm me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
                 <span>MxMap.it</span>
               </a>

@@ -185,7 +185,7 @@ def build():
     story.append(Paragraph("Sources and references", s_h1))
     for ref in [
         "National Digital Sovereignty Observatory — https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
-        "MxMap.it — Mapping of PA email providers — https://fpietrosanti.github.io/mxmap.it/",
+        "MxMap.it — Mapping of PA email providers — https://mxmap.it/",
         "IndicePA — Index of Italian Public Administrations — https://indicepa.gov.it",
         "GDPR — Regulation (EU) 2016/679",
         "Schrems II — CJEU, Case C-311/18 (16 July 2020)",

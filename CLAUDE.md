@@ -14,7 +14,7 @@ servizi di **posta elettronica** (~23.000 enti dell'IndicePA).
 
 - **Sito live:** https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/
 - **Repo:** https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale
-- **Fonte dati:** progetto **MxMap.it** → https://fpietrosanti.github.io/mxmap.it/
+- **Fonte dati:** progetto **MxMap.it** → https://mxmap.it/ (dominio pubblico)
 - **Fondatore:** Fabio Pietrosanti
 - **Licenza:** contenuti, dati e codice sotto **CC BY-SA 4.0**
 
@@ -132,8 +132,12 @@ data/kpi.json → site.Data.kpi → layout (homepage, decisori, press) → deplo
    `200 application/pdf` → commit di generatore + PDF + layout insieme.
 4. **Git su Windows/PowerShell:** usa il **tool Bash** per i commit, oppure
    here-string isolata; non concatenare il commit con `;` in PowerShell.
-5. **Link a MxMap:** sempre `https://fpietrosanti.github.io/mxmap.it/`
-   (il bare `mxmap.it` è l'istanza di sviluppo).
+5. **Link a MxMap:** i **link pubblici** (header, contenuti, footer, PDF) puntano
+   al dominio `https://mxmap.it/`. Il **dato** (`kpi.json`) e quindi
+   `KPI_SOURCE_URL` dell'Action restano su `https://fpietrosanti.github.io/mxmap.it/`
+   (endpoint dati verificato). NB: al momento `mxmap.it` può avere il custom
+   domain GitHub Pages non ancora configurato (errore certificato): i link
+   diventano validi quando il dominio è attivo.
 6. **Lingua dei contenuti:** italiano. EN/altre lingue solo quando si avviano le
    traduzioni vere.
 7. **Header:** nessun brand MxMap a sinistra; link MxMap + un solo link GitHub a

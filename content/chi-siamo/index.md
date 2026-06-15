@@ -61,7 +61,7 @@ L'Osservatorio fa parte di un più ampio **movimento europeo** di misurazione de
 
 ## Relazione con MxMap.it
 
-L'Osservatorio utilizza come fonte dati primaria il progetto [MxMap.it](https://fpietrosanti.github.io/mxmap.it/), che raccoglie e analizza i record MX di tutti i domini della PA italiana registrati nell'Indice delle Pubbliche Amministrazioni (IndicePA).
+L'Osservatorio utilizza come fonte dati primaria il progetto [MxMap.it](https://mxmap.it/), che raccoglie e analizza i record MX di tutti i domini della PA italiana registrati nell'Indice delle Pubbliche Amministrazioni (IndicePA).
 
 MxMap.it fornisce i dati grezzi; l'Osservatorio li contestualizza, li analizza e li pubblica sotto forma di report accessibili a un pubblico ampio.
 

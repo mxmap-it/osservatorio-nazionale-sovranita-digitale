@@ -755,7 +755,7 @@ def build():
         "CAD — D.Lgs. 82/2005, art. 6-ter (IndicePA)",
         "Regolamento ACN — Determinazione n. 307/2022 (qualificazione cloud PA)",
         "Perimetro di Sicurezza Nazionale Cibernetica — D.L. 105/2019, conv. L. 133/2019",
-        "MxMap.it — https://fpietrosanti.github.io/mxmap.it/",
+        "MxMap.it — https://mxmap.it/",
         "IndicePA — https://indicepa.gov.it",
         "Osservatorio Nazionale Sovranità Digitale — "
         "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",

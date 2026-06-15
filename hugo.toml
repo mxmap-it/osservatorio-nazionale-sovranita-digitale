@@ -6,7 +6,7 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
 [params]
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
-  mxmapURL = 'https://fpietrosanti.github.io/mxmap.it/'
+  mxmapURL = 'https://mxmap.it/'
   # ─── Evento di rilascio report + presentazione alla Camera ───────────
   # DATA DUMMY — da confermare. Aggiornare qui per propagare nel banner.
   eventActive = true

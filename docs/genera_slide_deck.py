@@ -273,7 +273,7 @@ def build():
     n += 1
     title_slide(c, "Partecipa",
                 "Il cambiamento parte dalla consapevolezza",
-                "osservatorio-nazionale-sovranita-digitale  •  fpietrosanti.github.io/mxmap.it  •  Telegram",
+                "osservatorio-nazionale-sovranita-digitale  •  mxmap.it  •  Telegram",
                 n, TOTAL)
     c.showPage()
 

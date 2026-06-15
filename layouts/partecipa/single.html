@@ -1,228 +1,178 @@
 {{ define "main" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
+
   <div class="row justify-content-center">
-    <div class="col-lg-8">
+    <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">L'Osservatorio è un progetto aperto e collaborativo. Ci sono diversi modi per contribuire, indipendentemente dal tuo profilo professionale.</p>
+      <p class="lead mb-4">L'Osservatorio è un progetto aperto e collaborativo. Qualunque sia il tuo profilo, c'è un modo per contribuire — dal partecipare alla community al migliorare i dati.</p>
     </div>
   </div>
 
-  <!-- Risorse per profilo -->
+  <!-- Telegram: community in evidenza -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Scegli il tuo profilo</h2>
-      <p>Abbiamo preparato risorse dedicate per i diversi pubblici dell'Osservatorio. Trova la tua:</p>
-      <div class="row g-3 mt-1">
-        <div class="col-md-4">
-          <a href="{{ "kit-attivisti/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-people"></use></svg>
+      <div class="rounded shadow-sm p-4 p-md-5 text-center" style="background:#0088cc;color:#fff;">
+        <svg class="icon icon-xl icon-white mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-telegram"></use></svg>
+        <h2 class="text-white mb-2">Unisciti alla community su Telegram</h2>
+        <p class="mb-4 fs-5 mx-auto" style="max-width:680px;">Il canale Telegram è il cuore della partecipazione: aggiornamenti su nuovi report e dati, discussione tra stakeholder, coordinamento delle attività e segnalazioni rapide. È il modo più diretto per esserci.</p>
+        <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener" class="btn btn-lg fw-bold" style="background:#fff;color:#0088cc;">
+          <svg class="icon icon-sm me-1" aria-hidden="true" style="fill:#0088cc;"><use href="{{ $spritesURL }}#it-telegram"></use></svg>
+          Entra nel canale
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partecipa per profilo -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <h2 class="mb-2">Partecipa secondo il tuo profilo</h2>
+      <p class="mb-4">Abbiamo raccolto, per ciascun pubblico, cosa puoi fare concretamente e la risorsa dedicata.</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-people"></use></svg></div>
               <h3 class="card-title h6 text-primary">Cittadini e attivisti</h3>
-              <p class="card-text small text-dark">Kit Attivisti: passi pratici, modello di accesso civico, messaggi chiave.</p>
+              <p class="card-text small flex-grow-1">Verifica il tuo Comune, chiedi conto con l'accesso civico, diffondi i dati sul territorio.</p>
+              <a class="read-more align-self-start" href="{{ "kit-attivisti/" | relURL }}"><span class="text">Kit Attivisti</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="{{ "ricercatori/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-chart-line"></use></svg>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-chart-line"></use></svg></div>
               <h3 class="card-title h6 text-primary">Ricercatori e accademici</h3>
-              <p class="card-text small text-dark">Scheda Ricercatori: dataset, dizionario dati, domande di ricerca, citazione.</p>
+              <p class="card-text small flex-grow-1">Usa il dataset aperto per studi, tesi e pubblicazioni; proponi nuove domande di ricerca.</p>
+              <a class="read-more align-self-start" href="{{ "ricercatori/" | relURL }}"><span class="text">Scheda Ricercatori</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="{{ "decisori/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg></div>
               <h3 class="card-title h6 text-primary">Decisori e dirigenti PA</h3>
-              <p class="card-text small text-dark">Per i Decisori: rischi, raccomandazioni, Policy Brief e Technical Brief.</p>
+              <p class="card-text small flex-grow-1">Usa dati e raccomandazioni per interrogazioni, policy e valutazioni interne di migrazione.</p>
+              <a class="read-more align-self-start" href="{{ "decisori/" | relURL }}"><span class="text">Per i Decisori</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="{{ "press/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-newspaper"></use></svg>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-newspaper"></use></svg></div>
               <h3 class="card-title h6 text-primary">Giornalisti</h3>
-              <p class="card-text small text-dark">Press Kit: numeri chiave, angoli di lettura, documenti e contatti stampa.</p>
+              <p class="card-text small flex-grow-1">Numeri citabili, angoli di lettura, materiali pronti e contatti stampa.</p>
+              <a class="read-more align-self-start" href="{{ "press/" | relURL }}"><span class="text">Press Kit</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="{{ "stakeholder/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-collaborative-economy"></use></svg>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-collaborative-economy"></use></svg></div>
               <h3 class="card-title h6 text-primary">Provider IT e mercato</h3>
-              <p class="card-text small text-dark">Stakeholder e Business Case: l'opportunità di mercato della migrazione.</p>
+              <p class="card-text small flex-grow-1">Dimensiona l'opportunità di mercato della migrazione verso provider sovrani.</p>
+              <a class="read-more align-self-start" href="{{ "stakeholder/" | relURL }}"><span class="text">Stakeholder & Business Case</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="{{ "dati-aperti/" | relURL }}" class="card card-bg rounded shadow-sm h-100 text-decoration-none">
-            <div class="card-body">
-              <svg class="icon icon-primary icon-sm mb-2" aria-hidden="true"><use href="{{ $spritesURL }}#it-download"></use></svg>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="categoryicon-top mb-1"><svg class="icon icon-primary" aria-hidden="true"><use href="{{ $spritesURL }}#it-code-circle"></use></svg></div>
               <h3 class="card-title h6 text-primary">Sviluppatori e analisti</h3>
-              <p class="card-text small text-dark">Dati Aperti: dataset, formati, licenza e indicazioni per il riuso.</p>
+              <p class="card-text small flex-grow-1">Accedi ai dataset aperti, ai formati e alla documentazione per riusarli.</p>
+              <a class="read-more align-self-start" href="{{ "dati-aperti/" | relURL }}"><span class="text">Dati Aperti</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-          </a>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
 
-  <div class="row justify-content-center"><div class="col-lg-10"><h2 class="mb-4">Modi per contribuire</h2></div></div>
-
-  <div class="row g-4 justify-content-center">
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-software"></use></svg>
+  <!-- Altri modi per contribuire -->
+  <div class="row justify-content-center mt-5 mb-3">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Altri modi per contribuire</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6"><svg class="icon icon-sm icon-primary me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-software"></use></svg> Codice</h3>
+              <p class="card-text small">Contribuisci al sito, agli strumenti di analisi o alla raccolta dati su GitHub.</p>
+              <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener"><span class="text">Repository</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-            <h2 class="card-title h5">Contribuisci al codice</h2>
-            <p class="card-text">Sei uno sviluppatore? Il progetto è open source. Puoi contribuire al sito, agli strumenti di analisi o alla raccolta dati.</p>
-            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
-              <span class="text">Vai al repository</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-horn"></use></svg>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6"><svg class="icon icon-sm icon-primary me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-horn"></use></svg> Segnala errori</h3>
+              <p class="card-text small">Dati incorretti su un ente? Apri una segnalazione e aiutaci a tenerli accurati.</p>
+              <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener"><span class="text">Apri una issue</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
             </div>
-            <h2 class="card-title h5">Segnala errori o inesattezze</h2>
-            <p class="card-text">Hai trovato dati incorretti su un ente? Apri una segnalazione su GitHub e aiutaci a mantenere i dati accurati.</p>
-            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
-              <span class="text">Apri una segnalazione</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-chart-line"></use></svg>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6"><svg class="icon icon-sm icon-primary me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-share"></use></svg> Diffondi</h3>
+              <p class="card-text small">Condividi report e analisi con la tua rete: la consapevolezza diffusa incide sulle decisioni.</p>
             </div>
-            <h2 class="card-title h5">Analisi e ricerca</h2>
-            <p class="card-text">Sei un ricercatore o analista? I dati sono aperti. Puoi usarli per le tue ricerche, tesi di laurea o pubblicazioni accademiche.</p>
-            <a class="read-more" href="{{ "report/" | relURL }}">
-              <span class="text">Consulta i report</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title h6"><svg class="icon icon-sm icon-primary me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-files"></use></svg> Proponi analisi</h3>
+              <p class="card-text small">Hai un'idea per un report o un'analisi? Suggeriscila tramite una issue.</p>
+              <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener"><span class="text">Proponi</span><svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row g-4 justify-content-center mt-2">
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-share"></use></svg>
-            </div>
-            <h2 class="card-title h5">Diffondi il messaggio</h2>
-            <p class="card-text">Condividi i report e le analisi con la tua rete. Più persone conoscono lo stato della sovranità digitale, più si può incidere sulle decisioni.</p>
+  <!-- Come iniziare + licenza -->
+  <div class="row justify-content-center mt-3">
+    <div class="col-lg-10">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="callout warning h-100">
+            <div class="callout-title"><svg class="icon"><use href="{{ $spritesURL }}#it-help-circle"></use></svg><span>Come iniziare su GitHub</span></div>
+            <ol class="mb-2">
+              <li><strong>Fork</strong> del <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">repository</a></li>
+              <li>Crea un <strong>branch</strong> per le tue modifiche</li>
+              <li>Apri una <strong>Pull Request</strong> descrivendo il contributo</li>
+            </ol>
+            <p class="mb-0">Non usi GitHub? Puoi <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">aprire una issue</a> per suggerimenti e segnalazioni.</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-telegram"></use></svg>
-            </div>
-            <h2 class="card-title h5">Canale Telegram</h2>
-            <p class="card-text">Unisciti al canale Telegram dell'Osservatorio per ricevere aggiornamenti in tempo reale su nuovi report, analisi e novità del progetto.</p>
-            <a class="read-more" href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">
-              <span class="text">Unisciti al canale</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
-            </div>
-            <h2 class="card-title h5">Sei un ente PA?</h2>
-            <p class="card-text">Se lavori in una PA e vuoi approfondire i dati relativi al tuo ente, o hai informazioni aggiuntive da condividere, contattaci tramite GitHub.</p>
-            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
-              <span class="text">Contattaci</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
-          <div class="card-body">
-            <div class="categoryicon-top">
-              <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-files"></use></svg>
-            </div>
-            <h2 class="card-title h5">Proponi nuove analisi</h2>
-            <p class="card-text">Hai un'idea per un nuovo report o un'analisi che vorresti vedere? Suggeriscila tramite una issue su GitHub.</p>
-            <a class="read-more" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">
-              <span class="text">Proponi un'analisi</span>
-              <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
-            </a>
+        <div class="col-md-6">
+          <div class="callout h-100">
+            <div class="callout-title"><svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg><span>Licenza e riuso</span></div>
+            <p class="mb-0">Tutti i contenuti — report, dati, codice — sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a>. Sei libero di riutilizzarli, adattarli e redistribuirli citando la fonte e mantenendo la stessa licenza.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row justify-content-center mt-5">
-    <div class="col-lg-8">
-      <div class="callout">
-        <div class="callout-title">
-          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
-          <span>Licenza e riuso</span>
-        </div>
-        <p>Tutti i contenuti dell'Osservatorio — report, dati, codice sorgente del sito — sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a>. Sei libero di riutilizzare, adattare e redistribuire i materiali, a condizione di citare la fonte e mantenere la stessa licenza.</p>
-      </div>
-
-      <div class="callout warning mt-4">
-        <div class="callout-title">
-          <svg class="icon"><use href="{{ $spritesURL }}#it-help-circle"></use></svg>
-          <span>Come iniziare</span>
-        </div>
-        <ol>
-          <li>Fai un <strong>fork</strong> del <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">repository GitHub</a></li>
-          <li>Crea un <strong>branch</strong> per le tue modifiche</li>
-          <li>Apri una <strong>Pull Request</strong> descrivendo il tuo contributo</li>
-        </ol>
-        <p>Non sai usare GitHub? Nessun problema — puoi anche <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">aprire una issue</a> per suggerimenti e segnalazioni.</p>
-      </div>
-    </div>
-  </div>
 </div>
 {{ end }}
