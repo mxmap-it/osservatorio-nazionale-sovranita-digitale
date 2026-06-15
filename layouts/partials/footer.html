@@ -7,7 +7,12 @@
           <div class="col-sm-12">
             <div class="it-brand-wrapper">
               <a href="{{ "/" | relURL }}" data-focus-mouse="false">
-                <svg class="icon" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
+                <svg class="icon" aria-hidden="true" viewBox="0 0 68 68" style="width:2.4rem;height:2.4rem;">
+                  <circle cx="34" cy="40" r="5" fill="#FFFFFF"/>
+                  <path d="M21 40 A13 13 0 0 0 47 40" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M13 40 A21 21 0 0 0 55 40" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" opacity="0.65"/>
+                  <path d="M5 40 A29 29 0 0 0 63 40" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" opacity="0.4"/>
+                </svg>
                 <div class="it-brand-text">
                   <h2>Osservatorio Nazionale Sovranità Digitale</h2>
                   <h3 class="d-none d-md-block">{{ site.Params.description }}</h3>
@@ -83,6 +88,7 @@
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         <li class="list-inline-item"><a href="{{ "chi-siamo/" | relURL }}">Chi Siamo</a></li>
         <li class="list-inline-item"><a href="{{ "metodologia/" | relURL }}">Metodologia</a></li>
+        <li class="list-inline-item"><a href="{{ "brand/" | relURL }}">Logo e Brand Kit</a></li>
         <li class="list-inline-item"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Licenza CC BY-SA 4.0</a></li>
       </ul>
     </div>

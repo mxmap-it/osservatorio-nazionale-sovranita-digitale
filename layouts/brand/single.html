@@ -1,0 +1,144 @@
+{{ define "main" }}
+{{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
+<div class="container-xxl section-spacing-lg">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1 class="mb-2">{{ .Title }}</h1>
+      <p class="lead mb-4">Il logo dell'Osservatorio e tutte le sue varianti, pronte da scaricare. Materiali rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>: liberi di riusarli citando la fonte.</p>
+    </div>
+  </div>
+
+  <!-- Anteprime -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Logo e varianti</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body text-center">
+              <div style="background:#fff;border-radius:8px;padding:24px;">
+                <img src="{{ "brand/osservatorio-logo-horizontal.svg" | relURL }}" alt="Logo orizzontale" style="max-width:100%;height:64px;">
+              </div>
+              <p class="small mt-2 mb-0 text-muted">Orizzontale (uso primario, header)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body text-center">
+              <div style="background:#fff;border-radius:8px;padding:16px;">
+                <img src="{{ "brand/osservatorio-logo-vertical.svg" | relURL }}" alt="Logo verticale" style="max-width:100%;height:120px;">
+              </div>
+              <p class="small mt-2 mb-0 text-muted">Verticale (stampa, social)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body text-center">
+              <div style="background:#fff;border-radius:8px;padding:24px;">
+                <img src="{{ "brand/osservatorio-symbol.svg" | relURL }}" alt="Solo simbolo" style="height:80px;">
+              </div>
+              <p class="small mt-2 mb-0 text-muted">Solo simbolo (icona, favicon)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body text-center">
+              <div style="background:#17324D;border-radius:8px;padding:24px;">
+                <img src="{{ "brand/osservatorio-logo-negative.svg" | relURL }}" alt="Versione negativa" style="max-width:100%;height:64px;">
+              </div>
+              <p class="small mt-2 mb-0 text-muted">Negativa (fondi scuri)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Download</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <thead class="table-primary"><tr><th scope="col">File</th><th scope="col">Formato</th><th scope="col">Uso</th><th scope="col"></th></tr></thead>
+          <tbody>
+            {{ $files := slice
+              (dict "f" "osservatorio-logo-horizontal.svg" "fmt" "SVG" "use" "Logo orizzontale")
+              (dict "f" "osservatorio-logo-vertical.svg" "fmt" "SVG" "use" "Logo verticale")
+              (dict "f" "osservatorio-symbol.svg" "fmt" "SVG" "use" "Solo simbolo")
+              (dict "f" "osservatorio-logo-negative.svg" "fmt" "SVG" "use" "Negativa (fondo scuro)")
+              (dict "f" "favicon.svg" "fmt" "SVG" "use" "Favicon")
+              (dict "f" "icon-512.png" "fmt" "PNG 512" "use" "Icona app / generica")
+              (dict "f" "apple-touch-icon.png" "fmt" "PNG 180" "use" "Apple touch icon")
+              (dict "f" "favicon-32.png" "fmt" "PNG 32" "use" "Favicon")
+              (dict "f" "social-avatar.png" "fmt" "PNG 400" "use" "Avatar social (quadrato)")
+              (dict "f" "og-image.png" "fmt" "PNG 1200×630" "use" "Anteprima social / OG")
+            }}
+            {{ range $files }}
+            <tr>
+              <td><code>{{ .f }}</code></td>
+              <td>{{ .fmt }}</td>
+              <td>{{ .use }}</td>
+              <td><a class="btn btn-primary btn-sm" href="{{ (printf "brand/%s" .f) | relURL }}" download><svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>Scarica</a></td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linee guida -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-4">Linee guida essenziali</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h6 text-primary">Colori</h3>
+              <ul class="list-unstyled small mb-0">
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#0066CC;border-radius:4px;display:inline-block;" class="me-2"></span> Blu Italia — <code>#0066CC</code></li>
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#17324D;border-radius:4px;display:inline-block;" class="me-2"></span> Inchiostro — <code>#17324D</code></li>
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#008758;border-radius:4px;display:inline-block;" class="me-2"></span> Verde — <code>#008758</code></li>
+                <li class="d-flex align-items-center mb-0"><span style="width:18px;height:18px;background:#CE2B37;border-radius:4px;display:inline-block;" class="me-2"></span> Rosso — <code>#CE2B37</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-bg rounded shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h6 text-primary">Tipografia e uso</h3>
+              <ul class="small mb-0">
+                <li>Font: <strong>Titillium Web</strong> (il font del design system PA)</li>
+                <li>Mantieni uno spazio di rispetto attorno al logo pari all'altezza del punto centrale</li>
+                <li>Non deformare, non ruotare, non cambiare i colori del simbolo</li>
+                <li>Su fondi scuri usa la versione <strong>negativa</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Per la famiglia MxMap -->
+  <div class="row justify-content-center mb-3">
+    <div class="col-lg-10">
+      <div class="callout callout-highlight">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
+          <span>Per MxMap e le altre istanze</span>
+        </div>
+        <p class="mb-0">Il marchio è pensato per essere adattabile: la stessa identità (simbolo radar + Titillium Web + blu Italia) può essere declinata per <a href="{{ "iniziative/" | relURL }}">MxMap e le altre istanze europee</a>. I file sorgente SVG sono modificabili e rilasciati sotto CC BY-SA 4.0.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}
