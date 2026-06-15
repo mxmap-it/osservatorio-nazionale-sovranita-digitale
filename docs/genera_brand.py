@@ -99,11 +99,23 @@ def avatar():
     print("wrote social-avatar.png", size)
 
 
+def telegram_avatar():
+    """512x512 full-bleed (no rounded corners) — looks clean cropped to a circle."""
+    size = 512
+    s = size * SS
+    img = Image.new("RGB", (s, s), BLUE)
+    d = ImageDraw.Draw(img)
+    radar(d, s / 2, s * 0.54, s * 0.34, WHITE, BLUE, ticks=True, n_arcs=3)
+    img.resize((size, size), Image.LANCZOS).save(os.path.join(OUT, "telegram-avatar.png"))
+    print("wrote telegram-avatar.png", size)
+
+
 if __name__ == "__main__":
     icon(16, "favicon-16.png", n_arcs=2)
     icon(32, "favicon-32.png", n_arcs=2)
     icon(180, "apple-touch-icon.png", n_arcs=2)
     icon(512, "icon-512.png", n_arcs=3, ticks=True)
     avatar()
+    telegram_avatar()
     og_image()
     print("done")
