@@ -34,6 +34,21 @@ L'Osservatorio è al servizio di tutti:
 - **Società civile** — per campagne di advocacy informate e partecipazione consapevole
 - **Istituzioni europee** — per replicare il modello in altri stati membri
 
+## Un progetto multi-stakeholder
+
+L'Osservatorio nasce con la volontà di essere un progetto **multi-stakeholder**: non l'iniziativa di un singolo soggetto, ma uno spazio comune in cui associazioni, gruppi civici, comunità tecniche e organizzazioni della società civile possano contribuire, validare i dati e amplificare il messaggio.
+
+Crediamo che la sovranità digitale della PA sia un tema trasversale, che tocca diritti dei cittadini, trasparenza, software libero, autonomia industriale ed europea. Per questo invitiamo a partecipare le realtà attive su questi fronti.
+
+Di seguito, a titolo di **esempio**, alcune tipologie di associazioni e gruppi civici attivi su questi temi che vorremmo coinvolgere. L'elenco non rappresenta adesioni già formalizzate, ma indica l'ecosistema con cui desideriamo costruire il progetto:
+
+- **Diritti digitali e privacy** — es. [Hermes Center for Transparency and Digital Human Rights](https://www.hermescenter.org/), [Privacy Network](https://www.privacy-network.it/), [The Good Lobby Italia](https://www.thegoodlobby.it/)
+- **Trasparenza e dati aperti** — es. [onData](https://www.ondata.it/), [Transparency International Italia](https://www.transparency.it/), [Copernicani](https://www.copernicani.it/)
+- **Software libero e conoscenza aperta** — es. [Wikimedia Italia](https://www.wikimedia.it/), [Free Software Foundation Europe (FSFE)](https://fsfe.org/)
+- **Dimensione europea** — es. [European Digital Rights (EDRi)](https://edri.org/) e le reti di organizzazioni civiche degli altri Stati membri
+
+> Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). L'elenco delle realtà aderenti crescerà nel tempo.
+
 ## Principi
 
 - **Trasparenza**: dati aperti, metodologia documentata, codice open source
