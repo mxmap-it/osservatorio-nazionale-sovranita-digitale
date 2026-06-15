@@ -5,17 +5,16 @@
       <div class="row">
         <div class="col-12">
           <div class="it-header-slim-wrapper-content">
-            <a class="d-none d-lg-block navbar-brand" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">Progetto MxMap.it</a>
+            <div class="d-none d-lg-block"></div>
             <div class="nav-mobile">
               <nav aria-label="Navigazione accessoria">
                 <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#slimMenu" role="button" aria-expanded="false" aria-controls="slimMenu">
-                  <span>Progetto MxMap.it</span>
+                  <span>Collegamenti</span>
                   <svg class="icon" aria-hidden="true"><use href="{{ $spritesURL }}#it-expand"></use></svg>
                 </a>
                 <div class="link-list-wrapper collapse" id="slimMenu">
                   <ul class="link-list">
                     <li><a class="dropdown-item list-item" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a></li>
-                    <li><a class="dropdown-item list-item" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">GitHub</a></li>
                   </ul>
                 </div>
               </nav>
@@ -43,6 +42,10 @@
                 </div>
               </div>
               {{ end }}
+              <a class="nav-link d-none d-lg-flex align-items-center me-2" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">
+                <svg class="icon icon-sm me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
+                <span>MxMap.it</span>
+              </a>
               <a class="btn btn-primary btn-sm btn-icon" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
                 <span class="rounded-icon">
                   <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-github"></use></svg>
@@ -71,18 +74,6 @@
                   <div class="it-brand-tagline d-none d-md-block">Sovranità Digitale</div>
                 </div>
               </a>
-            </div>
-            <div class="it-right-zone">
-              <div class="it-socials d-none d-md-flex">
-                <span>Seguici su</span>
-                <ul>
-                  <li>
-                    <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" aria-label="GitHub" target="_blank" rel="noopener">
-                      <svg class="icon"><use href="{{ $spritesURL }}#it-github"></use></svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
