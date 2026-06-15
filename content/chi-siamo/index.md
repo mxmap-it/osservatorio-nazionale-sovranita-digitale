@@ -40,14 +40,14 @@ L'Osservatorio nasce con la volontà di essere un progetto **multi-stakeholder**
 
 Crediamo che la sovranità digitale della PA sia un tema trasversale, che tocca diritti dei cittadini, trasparenza, software libero, autonomia industriale ed europea. Per questo invitiamo a partecipare le realtà attive su questi fronti.
 
-Di seguito, a titolo di **esempio**, alcune tipologie di associazioni e gruppi civici attivi su questi temi che vorremmo coinvolgere. L'elenco non rappresenta adesioni già formalizzate, ma indica l'ecosistema con cui desideriamo costruire il progetto:
+Le organizzazioni elencate di seguito sono citate **unicamente a titolo di esempio**, per illustrare il tipo di realtà attive su questi temi che vorremmo coinvolgere. **Non rappresentano adesioni, partnership o contribuzioni confermate**: nessuna di esse ha (ancora) aderito al progetto. L'elenco indica l'ecosistema con cui desideriamo costruire l'Osservatorio.
 
+- **Innovazione digitale e trasparenza** — es. [Associazione Copernicani](https://www.copernicani.it/), [onData](https://www.ondata.it/), [Transparency International Italia](https://www.transparency.it/)
 - **Diritti digitali e privacy** — es. [Hermes Center for Transparency and Digital Human Rights](https://www.hermescenter.org/), [Privacy Network](https://www.privacy-network.it/), [The Good Lobby Italia](https://www.thegoodlobby.it/)
-- **Trasparenza e dati aperti** — es. [onData](https://www.ondata.it/), [Transparency International Italia](https://www.transparency.it/), [Copernicani](https://www.copernicani.it/)
 - **Software libero e conoscenza aperta** — es. [Wikimedia Italia](https://www.wikimedia.it/), [Free Software Foundation Europe (FSFE)](https://fsfe.org/)
 - **Dimensione europea** — es. [European Digital Rights (EDRi)](https://edri.org/) e le reti di organizzazioni civiche degli altri Stati membri
 
-> Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). L'elenco delle realtà aderenti crescerà nel tempo.
+> Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). Solo le realtà che avranno confermato l'adesione verranno indicate come aderenti effettivi.
 
 ## Principi
 
