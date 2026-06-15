@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $kpi := site.Data.kpi }}
 <section class="hero-custom">
   <div class="container-xxl">
     <div class="row justify-content-center">
@@ -9,6 +10,67 @@
           <a href="{{ "report/" | relURL }}" class="btn btn-outline-light btn-lg me-2">Consulta i Report</a>
           <a href="{{ "metodologia/" | relURL }}" class="btn btn-light btn-lg">Metodologia</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-spacing-lg">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h2 class="mb-2">I numeri della sovranità digitale</h2>
+        <p class="text-muted mb-4">Fonte: <a href="https://fpietrosanti.github.io/mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> su dati <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a>.</p>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-bg rounded shadow-sm text-center h-100">
+          <div class="card-body py-4">
+            <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</div>
+            <p class="card-text mb-0"><strong>Enti PA monitorati</strong></p>
+            <p class="small text-muted">Dall'Indice delle Pubbliche Amministrazioni</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-bg rounded shadow-sm text-center h-100">
+          <div class="card-body py-4">
+            <div class="h1 text-danger mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.extra_eu.pct "ready" (not $kpi.placeholder)) }}</div>
+            <p class="card-text mb-0"><strong>PA su provider extra-UE</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider soggetti a giurisdizione extra-UE{{ end }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-bg rounded shadow-sm text-center h-100">
+          <div class="card-body py-4">
+            <div class="h1 text-warning mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.it.pct "ready" (not $kpi.placeholder)) }}</div>
+            <p class="card-text mb-0"><strong>PA su provider italiani</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider con sede in Italia{{ end }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-bg rounded shadow-sm text-center h-100">
+          <div class="card-body py-4">
+            <div class="h1 text-success mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.eu_non_it.pct "ready" (not $kpi.placeholder)) }}</div>
+            <p class="card-text mb-0"><strong>PA su provider UE</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider UE non italiani{{ end }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ if not $kpi.placeholder }}
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-10 text-center">
+        <p class="small text-muted mb-3">Ultimo aggiornamento dati: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}.</p>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <a href="{{ "decisori/" | relURL }}" class="btn btn-outline-primary">Approfondisci: Per i Decisori</a>
       </div>
     </div>
   </div>
