@@ -85,6 +85,35 @@
   </div>
   {{ end }}
 
+  <!-- Provider più diffusi -->
+  {{ with $kpi.top_providers }}
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-2">Provider più diffusi nella PA</h2>
+      <p class="text-muted mb-3">Per numero di enti serviti, con la relativa giurisdizione. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.</p>
+      <p class="small mb-4">
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#0066CC;border-radius:3px;vertical-align:middle;"></span> Italiano</span>
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#1D9E75;border-radius:3px;vertical-align:middle;"></span> UE</span>
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#D9364F;border-radius:3px;vertical-align:middle;"></span> Extra-UE</span>
+        <span class="d-inline-block"><span style="display:inline-block;width:12px;height:12px;background:#9AA6B2;border-radius:3px;vertical-align:middle;"></span> Sconosciuto</span>
+      </p>
+      {{ range . }}
+      {{ $c := "#9AA6B2" }}
+      {{ if eq .sovereignty "extra_eu" }}{{ $c = "#D9364F" }}{{ else if eq .sovereignty "it" }}{{ $c = "#0066CC" }}{{ else if eq .sovereignty "eu_non_it" }}{{ $c = "#1D9E75" }}{{ end }}
+      <div class="mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count "- , ." }} enti</span></span>
+          <span class="small fw-bold">{{ printf "%.1f%%" .pct }}</span>
+        </div>
+        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .name }}: {{ printf "%.1f%%" .pct }}">
+          <div class="rounded" style="height:10px;width:{{ .pct }}%;background:{{ $c }};"></div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   <!-- Il problema -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
