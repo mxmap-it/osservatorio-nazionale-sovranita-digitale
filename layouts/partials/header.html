@@ -29,14 +29,6 @@
                 </div>
               </div>
               {{ end }}
-              <a class="nav-link d-inline-flex align-items-center me-2" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">
-                <svg class="icon icon-sm me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
-                <span>MxMap.it</span>
-              </a>
-              <a class="nav-link d-inline-flex align-items-center" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
-                <svg class="icon icon-sm me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-github"></use></svg>
-                <span>GitHub</span>
-              </a>
             </div>
           </div>
         </div>
@@ -59,10 +51,22 @@
                   <rect x="20" y="52" width="9" height="3" fill="#5CB88A"/><rect x="29.5" y="52" width="9" height="3" fill="#FFFFFF"/><rect x="39" y="52" width="9" height="3" fill="#FF6B74"/>
                 </svg>
                 <div class="it-brand-text">
-                  <div class="it-brand-title">Osservatorio Nazionale</div>
+                  <div class="it-brand-title">Osservatorio Nazionale <span title="Progetto in versione beta" style="background:#E8A33D;color:#fff;font-size:10px;font-weight:700;letter-spacing:.5px;padding:2px 6px;border-radius:4px;vertical-align:middle;display:inline-block">BETA</span></div>
                   <div class="it-brand-tagline d-none d-md-block">Sovranità Digitale</div>
                 </div>
               </a>
+            </div>
+            <div class="it-right-zone">
+              <div class="d-flex align-items-center" style="gap:1rem;">
+                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener" title="Vai al progetto MxMap.it">
+                  <svg class="icon icon-sm icon-white me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
+                  <span class="d-none d-sm-inline">MxMap.it</span>
+                </a>
+                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener" title="Repository GitHub">
+                  <svg class="icon icon-sm icon-white me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-github"></use></svg>
+                  <span class="d-none d-sm-inline">GitHub</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

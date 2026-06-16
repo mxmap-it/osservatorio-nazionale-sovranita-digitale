@@ -15,5 +15,18 @@
     <span>Telegram</span>
   </a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+  <script>
+    (function () {
+      function initNav() {
+        if (window.bootstrap && window.bootstrap.NavBarCollapsible) {
+          document.querySelectorAll('.navbar-collapsable').forEach(function (el) {
+            window.bootstrap.NavBarCollapsible.getOrCreateInstance(el);
+          });
+        }
+      }
+      if (document.readyState !== 'loading') { initNav(); }
+      else { document.addEventListener('DOMContentLoaded', initNav); }
+    })();
+  </script>
 </body>
 </html>
