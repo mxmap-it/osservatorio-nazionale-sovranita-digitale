@@ -63,6 +63,28 @@
   </div></div>
   {{ end }}
 
+  <!-- Sovranità per categoria di ente -->
+  {{ with $kpi.by_cluster }}
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <h2 class="mb-2">Sovranità per categoria di ente</h2>
+      <p class="text-muted mb-4">Quota di enti su provider soggetti a giurisdizione <strong>extra-UE</strong> (es. CLOUD Act), per categoria. Ordinate dalla più dipendente. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.</p>
+      {{ range sort . "usa_pct" "desc" }}
+      <div class="mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities "- , ." }} enti · {{ .dominant_provider }}</span></span>
+          <span class="small fw-bold text-danger">{{ printf "%.0f%%" .usa_pct }}</span>
+        </div>
+        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .cluster }}: {{ printf "%.0f%%" .usa_pct }} su provider extra-UE">
+          <div class="rounded" style="height:10px;width:{{ .usa_pct }}%;background:#D9364F;"></div>
+        </div>
+      </div>
+      {{ end }}
+      <p class="small text-muted mt-3">"Extra-UE" indica enti la cui posta è gestita da provider soggetti a normative non europee. Dato aggregato per categoria IPA — fonte MxMap.it su IndicePA.</p>
+    </div>
+  </div>
+  {{ end }}
+
   <!-- Il problema -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
