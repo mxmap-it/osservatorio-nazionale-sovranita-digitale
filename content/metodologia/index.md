@@ -11,7 +11,7 @@ L'Osservatorio si basa sui dati raccolti dal progetto [MxMap.it](https://mxmap.i
 
 IndicePA è l'anagrafe ufficiale degli enti, ma **non è una base dati pulita da cui inferire in modo immediato e senza rielaborazioni il dominio di posta "normale" (non-PEC) di ciascun ente**: i domini email vi sono spesso incoerenti, incompleti o assenti. Per questo i dati di MxMap **non derivano da una lettura diretta di IndicePA**, ma da una rielaborazione strutturata — estrazione, correzione, validazione e arricchimento dei domini — documentata nella [metodologia di scoperta di MxMap](https://mxmap.it/methodology.html).
 
-Il miglioramento e la bonifica continua di IndicePA sono perciò una **dipendenza funzionale core** dell'Osservatorio, da affrontare con un progetto dedicato, tracciato in [mxmap.it#2 — *Software per un IndicePA ben manutenuto e bonificato*](https://github.com/fpietrosanti/mxmap.it/issues/2): misurare in modo autonomo la qualità del dato e attivare cicli di segnalazione (anche via PEC verso gli enti e AgID) per correggerlo alla fonte.
+Il miglioramento e la bonifica continua di IndicePA sono perciò una **dipendenza funzionale core** dell'Osservatorio, da affrontare con un progetto dedicato, tracciato in [mxmap.it#2 — *Software per un IndicePA ben manutenuto e bonificato*](https://github.com/mxmap-it/mxmap.it/issues/2): misurare in modo autonomo la qualità del dato e attivare cicli di segnalazione (anche via PEC verso gli enti e AgID) per correggerlo alla fonte.
 
 ## Cosa misuriamo
 

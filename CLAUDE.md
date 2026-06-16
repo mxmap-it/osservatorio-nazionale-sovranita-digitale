@@ -13,7 +13,7 @@ Sito statico di **monitoraggio civico** che misura e racconta lo stato della
 servizi di **posta elettronica** (~23.000 enti dell'IndicePA).
 
 - **Sito live:** https://osservatorio.mxmap.it/
-- **Repo:** https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale
+- **Repo:** https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale
 - **Fonte dati:** progetto **MxMap.it** → https://mxmap.it/ (dominio pubblico)
 - **Fondatore:** Fabio Pietrosanti
 - **Licenza:** contenuti, dati e codice sotto **CC BY-SA 4.0**
@@ -199,7 +199,7 @@ I PDF mantengono i **placeholder** finché il report definitivo non è pronto.
 
 Lo stato è "MVP completo": sito, sezioni, documenti, KPI live e Action di sync
 sono in produzione. La roadmap nasce dalle **issue di MxMap** (la fonte dati) e
-dagli item Osservatorio in sospeso. Issue: https://github.com/fpietrosanti/mxmap.it/issues
+dagli item Osservatorio in sospeso. Issue: https://github.com/mxmap-it/mxmap.it/issues
 
 ### Dipendenze dalla qualità del dato (MxMap)
 - **[MxMap #4]** Sistemare le ~700 PA in anomalia → 100% copertura con rendiconto.
@@ -230,6 +230,6 @@ dagli item Osservatorio in sospeso. Issue: https://github.com/fpietrosanti/mxmap
 
 ## 11. Repo e contatti collegati
 
-- **MxMap.it** (fonte dati): https://github.com/fpietrosanti/mxmap.it
+- **MxMap.it** (fonte dati): https://github.com/mxmap-it/mxmap.it
 - **Telegram** (aggiornamenti): https://t.me/+Ot-M_g0dkh1kMGI0
-- **Issue/contatti:** https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues
+- **Issue/contatti:** https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues

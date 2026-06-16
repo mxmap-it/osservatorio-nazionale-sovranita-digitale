@@ -195,7 +195,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
     story.append(HRFlowable(width="100%", thickness=0.5, color=HexColor("#DEE2E6"), spaceAfter=3, spaceBefore=2))
     story.append(Paragraph("Released under CC BY-SA 4.0. "
-                           "Contact: github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale", s_small))
+                           "Contact: github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale", s_small))
 
     doc.build(story, onFirstPage=footer_func, onLaterPages=footer_func)
     print(f"PDF generato: {OUTPUT}")

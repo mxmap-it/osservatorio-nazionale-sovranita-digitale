@@ -47,7 +47,7 @@ Le organizzazioni elencate di seguito sono citate **unicamente a titolo di esemp
 - **Software libero e conoscenza aperta** — es. [Wikimedia Italia](https://www.wikimedia.it/), [Free Software Foundation Europe (FSFE)](https://fsfe.org/)
 - **Dimensione europea** — es. [European Digital Rights (EDRi)](https://edri.org/) e le reti di organizzazioni civiche degli altri Stati membri
 
-> Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). Solo le realtà che avranno confermato l'adesione verranno indicate come aderenti effettivi.
+> Sei un'associazione o un gruppo civico e vuoi aderire o collaborare? [Contattaci su GitHub](https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new) o sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0). Solo le realtà che avranno confermato l'adesione verranno indicate come aderenti effettivi.
 
 L'Osservatorio fa parte di un più ampio **movimento europeo** di misurazione della sovranità digitale: scopri le [iniziative collegate in Europa](/iniziative/) — la famiglia MxMap e gli altri indici di sovranità.
 
@@ -73,5 +73,5 @@ Tutti i contenuti dell'Osservatorio — report, dati, codice sorgente — sono r
 
 Per informazioni, suggerimenti o collaborazioni:
 
-- [GitHub — Issues e discussioni](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues)
+- [GitHub — Issues e discussioni](https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues)
 - [Canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0)

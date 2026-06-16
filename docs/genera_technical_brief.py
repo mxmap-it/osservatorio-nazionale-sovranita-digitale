@@ -770,7 +770,7 @@ def build():
     ))
     story.append(Paragraph(
         "Questo documento è rilasciato sotto licenza CC BY-SA 4.0. "
-        "Contatti: github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale",
+        "Contatti: github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale",
         s_small
     ))
 

@@ -17,7 +17,7 @@ I dati pubblicati sono **preliminari**: la prima misurazione ufficiale, da cui p
 
 L'Osservatorio è un progetto **aperto e multi-stakeholder**. C'è bisogno del contributo di tutti per completare la roadmap, migliorare la qualità del dato e diffondere consapevolezza:
 
-- **Sviluppatori e tecnici** — contribuite al codice e alla pipeline su [GitHub](https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale) (e su [MxMap](https://github.com/fpietrosanti/mxmap.it)).
+- **Sviluppatori e tecnici** — contribuite al codice e alla pipeline su [GitHub](https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale) (e su [MxMap](https://github.com/mxmap-it/mxmap.it)).
 - **Ricercatori, giornalisti, attivisti, PA** — usate i dati aperti, segnalate errori, proponete analisi.
 - **Tutti** — unitevi alla community sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0) per seguire gli aggiornamenti e coordinarvi.
 
