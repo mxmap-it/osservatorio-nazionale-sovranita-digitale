@@ -1,6 +1,6 @@
 ---
 title: "Online la beta dell'Osservatorio e di MxMap"
-date: 2026-07-16
+date: 2026-06-16
 description: "Va online in versione beta l'Osservatorio Nazionale Sovranità Digitale, insieme al software tecnico MxMap. Un invito aperto a partecipare e contribuire."
 ---
 

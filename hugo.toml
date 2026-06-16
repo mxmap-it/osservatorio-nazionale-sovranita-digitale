@@ -2,7 +2,6 @@ baseURL = 'https://osservatorio.mxmap.it/'
 defaultContentLanguage = 'it'
 defaultContentLanguageInSubdir = false
 title = 'Osservatorio Nazionale Sovranità Digitale'
-buildFuture = true
 
 [params]
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
