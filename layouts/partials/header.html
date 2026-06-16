@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-12">
           <div class="it-header-center-content-wrapper">
-            <div class="it-brand-wrapper">
+            <div class="it-brand-wrapper d-flex align-items-center" style="gap:.6rem;">
               <a href="{{ "/" | relURL }}">
                 <svg class="icon" aria-hidden="true" viewBox="0 0 68 68" style="width:3rem;height:3rem;">
                   <circle cx="34" cy="40" r="5" fill="#FFFFFF"/>
@@ -51,10 +51,18 @@
                   <rect x="20" y="52" width="9" height="3" fill="#5CB88A"/><rect x="29.5" y="52" width="9" height="3" fill="#FFFFFF"/><rect x="39" y="52" width="9" height="3" fill="#FF6B74"/>
                 </svg>
                 <div class="it-brand-text">
-                  <div class="it-brand-title">Osservatorio Nazionale <span title="Progetto in versione beta" style="background:#E8A33D;color:#fff;font-size:10px;font-weight:700;letter-spacing:.5px;padding:2px 6px;border-radius:4px;vertical-align:middle;display:inline-block">BETA</span></div>
+                  <div class="it-brand-title">Osservatorio Nazionale</div>
                   <div class="it-brand-tagline d-none d-md-block">Sovranità Digitale</div>
                 </div>
               </a>
+              <span class="beta-wrap" tabindex="0" role="button" aria-expanded="false" aria-label="Stato del progetto: versione beta — tocca per i dettagli">
+                <span class="beta-badge">BETA</span>
+                <span class="beta-tip" role="tooltip">
+                  <span class="arr"></span>
+                  <strong>Progetto in evoluzione.</strong> L'Osservatorio è in <em>versione beta</em>: i dati provengono da MxMap.it e il report definitivo non è ancora stato pubblicato. Contenuti e funzionalità sono in continuo sviluppo.<br><br>
+                  Aiutaci a completare la roadmap: <a href="https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale/issues" target="_blank" rel="noopener">collabora su GitHub Issues</a> e <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.
+                </span>
+              </span>
             </div>
             <div class="it-right-zone">
               <div class="d-flex align-items-center" style="gap:1rem;">

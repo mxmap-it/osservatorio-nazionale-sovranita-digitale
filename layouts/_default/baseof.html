@@ -27,6 +27,16 @@
       if (document.readyState !== 'loading') { initNav(); }
       else { document.addEventListener('DOMContentLoaded', initNav); }
     })();
+    (function () {
+      var w = document.querySelector('.beta-wrap'); if (!w) return;
+      function set(o) { w.classList.toggle('open', o); w.setAttribute('aria-expanded', o ? 'true' : 'false'); }
+      w.addEventListener('click', function (e) { if (e.target.closest('a')) return; e.stopPropagation(); set(!w.classList.contains('open')); });
+      document.addEventListener('click', function (e) { if (!w.contains(e.target)) set(false); });
+      w.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { set(false); }
+        else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); set(!w.classList.contains('open')); }
+      });
+    })();
   </script>
 </body>
 </html>
