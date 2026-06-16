@@ -1,8 +1,8 @@
 ---
-title: "Stato della Sovranità Digitale nella PA - Giugno 2025"
-date: 2025-06-01
+title: "Stato della Sovranità Digitale nella PA - Giugno 2026 (BOZZA)"
+date: 2026-06-16
 description: "Primo report dell'Osservatorio sullo stato della sovranità digitale nella Pubblica Amministrazione italiana"
-pdf: "/pdf/report-2025-06-sovranita-digitale-pa.pdf"
+pdf: "/pdf/report-2026-06-sovranita-digitale-pa.pdf"
 ---
 
 ## Sommario
