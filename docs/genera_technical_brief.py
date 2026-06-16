@@ -758,7 +758,7 @@ def build():
         "MxMap.it — https://mxmap.it/",
         "IndicePA — https://indicepa.gov.it",
         "Osservatorio Nazionale Sovranità Digitale — "
-        "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
+        "https://osservatorio.mxmap.it/",
     ]
     for ref in refs:
         story.append(Paragraph(f"•  {ref}", s_ref))

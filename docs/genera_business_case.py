@@ -289,7 +289,7 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.5, color=BLUE, spaceAfter=4, spaceBefore=2))
     story.append(Paragraph("Fonti", s_h2))
     for ref in [
-        "Osservatorio Nazionale Sovranità Digitale — https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
+        "Osservatorio Nazionale Sovranità Digitale — https://osservatorio.mxmap.it/",
         "MxMap.it — Mappatura provider email PA — https://mxmap.it/",
         "IndicePA — https://indicepa.gov.it",
         "Strategia Cloud Italia (2021); Regolamento ACN n. 307/2022",

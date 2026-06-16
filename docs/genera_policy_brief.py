@@ -284,7 +284,7 @@ def build():
     story.append(Paragraph("Fonti e riferimenti", style_h2))
     refs = [
         "Osservatorio Nazionale Sovranità Digitale: "
-        "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
+        "https://osservatorio.mxmap.it/",
         "MxMap.it — Mappatura provider email PA: https://mxmap.it/",
         "IndicePA — Indice delle Pubbliche Amministrazioni: https://indicepa.gov.it",
         "GDPR: Regolamento UE 2016/679",

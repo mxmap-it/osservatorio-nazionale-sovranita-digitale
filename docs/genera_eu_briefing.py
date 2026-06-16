@@ -184,7 +184,7 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.5, color=BLUE, spaceAfter=4, spaceBefore=2))
     story.append(Paragraph("Sources and references", s_h1))
     for ref in [
-        "National Digital Sovereignty Observatory — https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/",
+        "National Digital Sovereignty Observatory — https://osservatorio.mxmap.it/",
         "MxMap.it — Mapping of PA email providers — https://mxmap.it/",
         "IndicePA — Index of Italian Public Administrations — https://indicepa.gov.it",
         "GDPR — Regulation (EU) 2016/679",

@@ -137,7 +137,7 @@ def build():
     story.append(Spacer(1, 4 * mm))
     story.append(HRFlowable(width="100%", thickness=0.5, color=HexColor("#DEE2E6"), spaceAfter=3, spaceBefore=2))
     story.append(Paragraph("Osservatorio Nazionale Sovranità Digitale — "
-                           "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/ — "
+                           "https://osservatorio.mxmap.it/ — "
                            "Documento CC BY-SA 4.0.", s_small))
 
     doc.build(story, onFirstPage=footer_func, onLaterPages=footer_func)

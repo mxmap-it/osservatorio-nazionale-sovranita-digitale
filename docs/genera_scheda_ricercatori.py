@@ -125,7 +125,7 @@ def build():
     cite = ("Pietrosanti, F. (2025). Osservatorio Nazionale Sovranita' Digitale:\n"
             "Stato della sovranita' digitale nella PA italiana.\n"
             "Dati MxMap.it su IndicePA. CC BY-SA 4.0.\n"
-            "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/")
+            "https://osservatorio.mxmap.it/")
     story.append(box([Preformatted(cite, s_mono)]))
 
     story.append(Spacer(1, 3 * mm))
@@ -146,7 +146,7 @@ def build():
     story.append(Spacer(1, 4 * mm))
     story.append(HRFlowable(width="100%", thickness=0.5, color=HexColor("#DEE2E6"), spaceAfter=3, spaceBefore=2))
     story.append(Paragraph("Osservatorio Nazionale Sovranità Digitale — "
-                           "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/ — "
+                           "https://osservatorio.mxmap.it/ — "
                            "Documento CC BY-SA 4.0.", s_small))
 
     doc.build(story, onFirstPage=footer_func, onLaterPages=footer_func)

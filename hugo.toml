@@ -1,18 +1,19 @@
-baseURL = 'https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/'
+baseURL = 'https://osservatorio.mxmap.it/'
 defaultContentLanguage = 'it'
 defaultContentLanguageInSubdir = false
 title = 'Osservatorio Nazionale Sovranità Digitale'
+buildFuture = true
 
 [params]
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
   mxmapURL = 'https://mxmap.it/'
-  # ─── Evento di rilascio report + presentazione alla Camera ───────────
-  # DATA DUMMY — da confermare. Aggiornare qui per propagare nel banner.
-  eventActive = true
-  eventDate = '15 ottobre 2026'
-  eventDateISO = '2026-10-15'
-  eventProvisional = true
+  # ─── Banner evento in homepage (disattivato) ────────────────────────
+  # Riattivare impostando eventActive = true e aggiornando data/testo.
+  eventActive = false
+  eventDate = ''
+  eventDateISO = ''
+  eventProvisional = false
 
 [markup]
   [markup.goldmark]

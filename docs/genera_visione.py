@@ -58,7 +58,7 @@ class VisionePDF(FPDF):
         self.set_text_color(*self.GRAY)
         self.cell(0, 8, "Versione 1.0 — Giugno 2025", align="C", new_x="LMARGIN", new_y="NEXT")
         self.cell(0, 8, "A cura di Fabio Pietrosanti", align="C", new_x="LMARGIN", new_y="NEXT")
-        self.cell(0, 8, "https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/", align="C", new_x="LMARGIN", new_y="NEXT")
+        self.cell(0, 8, "https://osservatorio.mxmap.it/", align="C", new_x="LMARGIN", new_y="NEXT")
 
     def section_title(self, n, title):
         self.add_page()

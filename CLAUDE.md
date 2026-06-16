@@ -12,7 +12,7 @@ Sito statico di **monitoraggio civico** che misura e racconta lo stato della
 **sovranità digitale nella Pubblica Amministrazione italiana**, partendo dai
 servizi di **posta elettronica** (~23.000 enti dell'IndicePA).
 
-- **Sito live:** https://fpietrosanti.github.io/osservatorio-nazionale-sovranita-digitale/
+- **Sito live:** https://osservatorio.mxmap.it/
 - **Repo:** https://github.com/fpietrosanti/osservatorio-nazionale-sovranita-digitale
 - **Fonte dati:** progetto **MxMap.it** → https://mxmap.it/ (dominio pubblico)
 - **Fondatore:** Fabio Pietrosanti
