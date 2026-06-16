@@ -48,8 +48,19 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       weight = 2
     [[languages.it.menus.main]]
       name = 'News'
+      identifier = 'news'
       url = '/news/'
-      weight = 4
+      weight = 13
+    [[languages.it.menus.main]]
+      name = 'Tutte le news'
+      parent = 'news'
+      url = '/news/'
+      weight = 1
+    [[languages.it.menus.main]]
+      name = 'Press Kit'
+      parent = 'news'
+      url = '/press/'
+      weight = 2
     [[languages.it.menus.main]]
       name = 'Per i Decisori'
       url = '/decisori/'
@@ -58,10 +69,6 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       name = 'Stakeholder'
       url = '/stakeholder/'
       weight = 6
-    [[languages.it.menus.main]]
-      name = 'Press Kit'
-      url = '/press/'
-      weight = 7
     [[languages.it.menus.main]]
       name = 'Dati Aperti'
       url = '/dati-aperti/'
@@ -100,8 +107,19 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       weight = 2
     [[languages.en.menus.main]]
       name = 'News'
+      identifier = 'news'
       url = '/news/'
-      weight = 4
+      weight = 13
+    [[languages.en.menus.main]]
+      name = 'All news'
+      parent = 'news'
+      url = '/news/'
+      weight = 1
+    [[languages.en.menus.main]]
+      name = 'Press Kit'
+      parent = 'news'
+      url = '/press/'
+      weight = 2
     [[languages.en.menus.main]]
       name = 'For Decision Makers'
       url = '/decisori/'
@@ -110,10 +128,6 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
       name = 'Stakeholders'
       url = '/stakeholder/'
       weight = 6
-    [[languages.en.menus.main]]
-      name = 'Press Kit'
-      url = '/press/'
-      weight = 7
     [[languages.en.menus.main]]
       name = 'Open Data'
       url = '/dati-aperti/'
