@@ -1,6 +1,11 @@
+{{- $desc := cond (ne .Description "") .Description site.Params.description -}}
+{{- if and .IsHome site.Data.kpi (not site.Data.kpi.placeholder) -}}
+  {{- $k := site.Data.kpi -}}
+  {{- $desc = printf "Sovranità digitale della PA italiana: il %.0f%% degli enti usa email su provider extra-UE (CLOUD Act), il %.0f%% su provider italiani. Analisi su %s enti — Osservatorio Nazionale Sovranità Digitale (MxMap Italia)." $k.sovereignty.extra_eu.pct $k.sovereignty.it.pct (lang.FormatNumberCustom 0 $k.totals.n_entities "- , .") -}}
+{{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="description" content="{{ $desc }}">
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 
 <meta name="author" content="{{ site.Params.author }}">
@@ -18,7 +23,7 @@
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 {{ $ogImage := "brand/og-image.png" }}
 {{ with .Params.ogImage }}{{ $ogImage = . }}{{ end }}
@@ -31,7 +36,7 @@
 <meta property="og:image:alt" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ $ogImageURL }}">
 <meta name="twitter:image:alt" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
 
@@ -67,7 +72,25 @@
       "inLanguage": "it-IT",
       "description": "{{ site.Params.description }}",
       "publisher": { "@id": "{{ absURL "" }}#organization" }
-    }
+    }{{ if and site.Data.kpi (not site.Data.kpi.placeholder) }},
+    {
+      "@type": "Dataset",
+      "name": "Sovranità digitale della posta elettronica della PA italiana",
+      "alternateName": "Osservatorio Nazionale Sovranità Digitale — dataset",
+      "description": "Quota di enti della Pubblica Amministrazione italiana per giurisdizione del provider di posta elettronica (italiano, UE, extra-UE/CLOUD Act). Analisi su {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} enti dell'IndicePA. Dati MxMap Italia.",
+      "url": "{{ absURL "" }}",
+      "creator": { "@id": "{{ absURL "" }}#organization" },
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isAccessibleForFree": true,
+      "inLanguage": "it-IT",
+      "keywords": ["sovranità digitale", "Pubblica Amministrazione", "posta elettronica", "CLOUD Act", "GDPR", "IndicePA", "Italia"],
+      "variableMeasured": [
+        { "@type": "PropertyValue", "name": "PA su provider extra-UE (CLOUD Act)", "value": {{ site.Data.kpi.sovereignty.extra_eu.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "PA su provider italiani", "value": {{ site.Data.kpi.sovereignty.it.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "PA su provider UE (non italiani)", "value": {{ site.Data.kpi.sovereignty.eu_non_it.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "Enti PA analizzati", "value": {{ site.Data.kpi.totals.n_entities }} }
+      ]
+    }{{ end }}
   ]
 }
 </script>

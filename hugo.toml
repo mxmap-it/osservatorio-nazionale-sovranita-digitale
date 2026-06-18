@@ -8,7 +8,7 @@ disableKinds = ['taxonomy', 'term']
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
   mxmapURL = 'https://mxmap.it/'
-  keywords = ['Osservatorio Nazionale Sovranità Digitale', 'MxMap Italia', 'MxMap', 'Osservatorio MxMap', 'sovranità digitale PA', 'posta elettronica PA italiana', 'provider email PA', 'CLOUD Act', 'GDPR PA', 'IndicePA', 'cloud sovrano', 'giurisdizione dei dati', 'dipendenza digitale PA']
+  keywords = ['Osservatorio Nazionale Sovranità Digitale', 'Sovranità Digitale Italia', 'sovranità digitale', 'sovranità digitale PA', 'MxMap Italia', 'MxMap', 'Osservatorio MxMap', 'posta elettronica PA italiana', 'email PA italiana', 'provider email PA', 'dipendenza digitale PA', 'CLOUD Act', 'GDPR PA', 'Schrems II', 'IndicePA', 'cloud sovrano', 'cloud nazionale PA', 'giurisdizione dei dati', 'autonomia digitale', 'dati aperti PA', 'Comuni email provider', 'Google Workspace PA', 'Microsoft 365 PA', 'monitoraggio civico']
   # ─── Banner evento in homepage (disattivato) ────────────────────────
   # Riattivare impostando eventActive = true e aggiornando data/testo.
   eventActive = false
@@ -29,8 +29,8 @@ disableKinds = ['taxonomy', 'term']
   pagerSize = 10
 
 [sitemap]
-  changefreq = 'weekly'
-  priority = 0.5
+  changefreq = 'daily'
+  priority = 0.7
   filename = 'sitemap.xml'
 
 # ─── Languages ───────────────────────────────────────────────────────
