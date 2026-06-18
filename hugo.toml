@@ -2,11 +2,13 @@ baseURL = 'https://osservatorio.mxmap.it/'
 defaultContentLanguage = 'it'
 defaultContentLanguageInSubdir = false
 title = 'Osservatorio Nazionale Sovranità Digitale'
+disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
   author = 'Fabio Pietrosanti'
   mxmapURL = 'https://mxmap.it/'
+  keywords = ['Osservatorio Nazionale Sovranità Digitale', 'MxMap Italia', 'MxMap', 'Osservatorio MxMap', 'sovranità digitale PA', 'posta elettronica PA italiana', 'provider email PA', 'CLOUD Act', 'GDPR PA', 'IndicePA', 'cloud sovrano', 'giurisdizione dei dati', 'dipendenza digitale PA']
   # ─── Banner evento in homepage (disattivato) ────────────────────────
   # Riattivare impostando eventActive = true e aggiornando data/testo.
   eventActive = false
@@ -25,6 +27,11 @@ title = 'Osservatorio Nazionale Sovranità Digitale'
 
 [pagination]
   pagerSize = 10
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
 
 # ─── Languages ───────────────────────────────────────────────────────
 # Italian is the default (content at root). Other EU languages serve
