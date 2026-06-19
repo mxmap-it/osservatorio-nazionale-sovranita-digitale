@@ -12,6 +12,14 @@ La questione della sovranità digitale viene spesso ridotta alla localizzazione 
 
 Il paradosso più citato è quello del **Polo Strategico Nazionale (PSN)**: l'infrastruttura nata per la sovranità cloud della PA si appoggia a sua volta a hyperscaler americani (Google, Microsoft, Oracle, Amazon) per i dati ordinari e critici, proteggendo per legge soltanto quelli classificati come "strategici". Entro **giugno 2026**, oltre **280 amministrazioni** devono completare la migrazione: sarà quel numero — non le dichiarazioni — a rivelare la strategia reale.
 
+## La domanda da un miliardo: i fondi del PNRR stanno finanziando la dipendenza?
+
+Qui si apre il paradosso più scomodo. Il **PNRR finanzia con denaro pubblico** la migrazione in cloud della PA — la Strategia Cloud Italia punta al **75% degli enti su cloud qualificato** — e il PSN è il veicolo di questa transizione. Ma se il PSN, per i dati ordinari e critici, si appoggia alle tecnologie di Google, Microsoft, Oracle e Amazon, allora **una parte di quei fondi — pensati per costruire sovranità — rischia di finire agli stessi operatori statunitensi** da cui si vorrebbe ridurre la dipendenza.
+
+Detto senza giri di parole: **stiamo usando soldi pubblici europei per pagare licenze e servizi a fornitori soggetti al CLOUD Act, invece di farne leva per far crescere operatori italiani ed europei?** È esattamente il bivio che, secondo [Nardini](https://avvocatonardini.it/rete-pubblica-sovranita-digitale-italiana/), la spesa pubblica dovrebbe affrontare apertamente: **autonomia industriale** (usare la domanda pubblica come leva per l'offerta nazionale, accettando costi iniziali più alti) oppure **dipendenza gestita** (continuare con gli hyperscaler — meno costoso oggi, più costoso domani, in denaro e in controllo).
+
+La posta elettronica è il banco di prova più semplice: ha requisiti molto meno complessi del cloud per i dati strategici, eppure **il 46% degli enti è già su provider extra-UE**. Se non si riesce a tenere sovrana nemmeno l'email — il servizio più basico — la domanda sul destino dei fondi PNRR diventa ancora più urgente. L'Osservatorio non offre una risposta ideologica: mette i **numeri sul tavolo**, perché la risposta sia verificabile e non solo dichiarata.
+
 ## I numeri della dipendenza
 
 L'Osservatorio parte da un dato concreto e verificabile: l'analisi della posta elettronica di **22.987 enti** della PA italiana registrati nell'IndicePA, condotta tramite il progetto [MxMap.it](https://mxmap.it/).
