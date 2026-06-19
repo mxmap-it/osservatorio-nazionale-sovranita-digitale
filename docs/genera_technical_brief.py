@@ -356,7 +356,12 @@ def build():
         "terzi a garanzie specifiche. L'utilizzo di un provider soggetto al CLOUD "
         "Act configura un potenziale trasferimento extra-UE indipendentemente dalla "
         "localizzazione fisica dei server, poiché l'autorità giudiziaria statunitense "
-        "può imporre la disclosure dei dati al provider.",
+        "può imporre la disclosure dei dati al provider. In particolare, gli "
+        "<b>artt. 48 e 115 del GDPR</b> vietano espressamente di dare seguito a "
+        "sentenze o decisioni di autorità di paesi terzi non basate su un accordo "
+        "internazionale: ne deriva, per un provider soggetto a entrambe le giurisdizioni, "
+        "un conflitto senza via d'uscita pulita. È inoltre la <b>nazionalità del fornitore</b>, "
+        "non la sede del dato, a determinare la giurisdizione applicabile.",
         s_body
     ))
 
@@ -422,7 +427,10 @@ def build():
         "La Strategia Cloud Italia (2021) classifica i dati della PA in tre livelli: "
         "ordinari, critici e strategici. Per i dati critici e strategici è prevista "
         "la migrazione verso il Polo Strategico Nazionale (PSN) o verso infrastrutture "
-        "qualificate da ACN (Agenzia per la Cybersicurezza Nazionale).",
+        "qualificate da ACN (Agenzia per la Cybersicurezza Nazionale). Va però rilevato "
+        "che lo stesso PSN si appoggia, per i dati ordinari e critici, a tecnologie di "
+        "hyperscaler statunitensi, tutelando per legge soltanto i dati “strategici”: "
+        "il divario tra l'obiettivo dichiarato e l'infrastruttura effettiva resta aperto.",
         s_body
     ))
     story.append(Paragraph(

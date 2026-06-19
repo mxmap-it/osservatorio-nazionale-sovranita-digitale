@@ -164,7 +164,10 @@ def build():
         "e i dati dei cittadini a rischi concreti di accesso da parte di autorità "
         "straniere, in particolare attraverso il <b>CLOUD Act</b> statunitense (2018), "
         "e si pone in potenziale contrasto con il <b>GDPR</b> e le sentenze della "
-        "Corte di Giustizia dell’UE (<b>Schrems I</b> e <b>II</b>).",
+        "Corte di Giustizia dell’UE (<b>Schrems I</b> e <b>II</b>). In particolare, gli "
+        "<b>artt. 48 e 115 del GDPR</b> vietano di dare seguito a ordini di autorità "
+        "extra-UE non fondati su accordi internazionali: a determinare la giurisdizione "
+        "è la <b>nazionalità del fornitore</b>, non la sede fisica del dato.",
         style_body
     ))
 
