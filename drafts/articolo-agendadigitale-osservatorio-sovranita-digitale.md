@@ -4,11 +4,11 @@ date: 2026-06-19
 description: "Articolo di lancio dell'Osservatorio Nazionale Sovranità Digitale: il divario tra le dichiarazioni e l'infrastruttura reale, i numeri della dipendenza della PA italiana, e un invito a collaborare."
 ---
 
-A novembre 2025 l'Italia ha firmato la **Dichiarazione europea sulla sovranità digitale**. Eppure le sue infrastrutture critiche continuano a dipendere da provider statunitensi. È la frattura che l'avvocato Christian Nardini riassume con una formula netta: *"[dichiarare è più facile che costruire](https://avvocatonardini.it/rete-pubblica-sovranita-digitale-italiana/)"*. L'Osservatorio Nazionale Sovranità Digitale nasce esattamente qui: per **misurare** quella distanza tra ciò che si dichiara e ciò che si costruisce, e renderla visibile a tutti.
+A novembre 2025 l'Italia ha firmato la **Dichiarazione europea sulla sovranità digitale**. Eppure le sue infrastrutture critiche continuano a dipendere da provider statunitensi. È la frattura tra il dichiarato e il costruito: **dichiarare è più facile che costruire**. L'Osservatorio Nazionale Sovranità Digitale nasce esattamente qui: per **misurare** quella distanza tra ciò che si dichiara e ciò che si costruisce, e renderla visibile a tutti.
 
 ## Il problema non è dove stanno i dati, ma chi li controlla
 
-La questione della sovranità digitale viene spesso ridotta alla localizzazione fisica dei server. È un equivoco. Come ricorda Nardini, ciò che determina la giurisdizione **non è dove risiede il dato, ma la nazionalità del fornitore**: il **CLOUD Act** statunitense (2018) consente alle autorità USA di accedere ai dati detenuti da aziende americane *ovunque* siano archiviati — anche in data center europei. Questo confligge frontalmente con il **GDPR**, che agli **articoli 48 e 115** vieta di dare seguito a normative extraterritoriali che aggirino le tutele europee. Per un provider soggetto a entrambe le giurisdizioni non esiste un'uscita pulita: obbedire al CLOUD Act significa violare il GDPR; rifiutare significa esporsi alle conseguenze statunitensi.
+La questione della sovranità digitale viene spesso ridotta alla localizzazione fisica dei server. È un equivoco: ciò che determina la giurisdizione **non è dove risiede il dato, ma la nazionalità del fornitore**: il **CLOUD Act** statunitense (2018) consente alle autorità USA di accedere ai dati detenuti da aziende americane *ovunque* siano archiviati — anche in data center europei. Questo confligge frontalmente con il **GDPR**, che agli **articoli 48 e 115** vieta di dare seguito a normative extraterritoriali che aggirino le tutele europee. Per un provider soggetto a entrambe le giurisdizioni non esiste un'uscita pulita: obbedire al CLOUD Act significa violare il GDPR; rifiutare significa esporsi alle conseguenze statunitensi.
 
 Il paradosso più citato è quello del **Polo Strategico Nazionale (PSN)**: l'infrastruttura nata per la sovranità cloud della PA si appoggia a sua volta a hyperscaler americani (Google, Microsoft, Oracle, Amazon) per i dati ordinari e critici, proteggendo per legge soltanto quelli classificati come "strategici". Entro **giugno 2026**, oltre **280 amministrazioni** devono completare la migrazione: sarà quel numero — non le dichiarazioni — a rivelare la strategia reale.
 
@@ -16,7 +16,7 @@ Il paradosso più citato è quello del **Polo Strategico Nazionale (PSN)**: l'in
 
 Qui si apre il paradosso più scomodo. Il **PNRR finanzia con denaro pubblico** la migrazione in cloud della PA — la Strategia Cloud Italia punta al **75% degli enti su cloud qualificato** — e il PSN è il veicolo di questa transizione. Ma se il PSN, per i dati ordinari e critici, si appoggia alle tecnologie di Google, Microsoft, Oracle e Amazon, allora **una parte di quei fondi — pensati per costruire sovranità — rischia di finire agli stessi operatori statunitensi** da cui si vorrebbe ridurre la dipendenza.
 
-Detto senza giri di parole: **stiamo usando soldi pubblici europei per pagare licenze e servizi a fornitori soggetti al CLOUD Act, invece di farne leva per far crescere operatori italiani ed europei?** È esattamente il bivio che, secondo [Nardini](https://avvocatonardini.it/rete-pubblica-sovranita-digitale-italiana/), la spesa pubblica dovrebbe affrontare apertamente: **autonomia industriale** (usare la domanda pubblica come leva per l'offerta nazionale, accettando costi iniziali più alti) oppure **dipendenza gestita** (continuare con gli hyperscaler — meno costoso oggi, più costoso domani, in denaro e in controllo).
+Detto senza giri di parole: **stiamo usando soldi pubblici europei per pagare licenze e servizi a fornitori soggetti al CLOUD Act, invece di farne leva per far crescere operatori italiani ed europei?** È esattamente il bivio che la spesa pubblica dovrebbe affrontare apertamente: **autonomia industriale** (usare la domanda pubblica come leva per l'offerta nazionale, accettando costi iniziali più alti) oppure **dipendenza gestita** (continuare con gli hyperscaler — meno costoso oggi, più costoso domani, in denaro e in controllo).
 
 La posta elettronica è il banco di prova più semplice: ha requisiti molto meno complessi del cloud per i dati strategici, eppure **il 46% degli enti è già su provider extra-UE**. Se non si riesce a tenere sovrana nemmeno l'email — il servizio più basico — la domanda sul destino dei fondi PNRR diventa ancora più urgente. L'Osservatorio non offre una risposta ideologica: mette i **numeri sul tavolo**, perché la risposta sia verificabile e non solo dichiarata.
 
@@ -32,7 +32,7 @@ Il dato diventa ancora più netto guardando i settori: l'**Istruzione** è al **
 
 ## L'Italia "attendista"
 
-Il confronto con l'Europa è impietoso. Mentre Francia, Germania, Danimarca e Paesi Bassi stanno [migrando attivamente fuori dal software statunitense](https://www.agendadigitale.eu/infrastrutture/sovranita-digitale-litalia-e-la-piu-attendista-dellue-i-fatti/) — la Francia con centinaia di migliaia di utenti su strumenti pubblici come Tchap e La Suite, la Germania con decine di migliaia di postazioni migrate a LibreOffice, la Danimarca che valuta l'abbandono di Microsoft 365 — l'Italia ha sulla carta strategie ambiziose ma ha migrato *quasi nulla*. La **Strategia Cloud Italia (2021)** fissa obiettivi chiari (autonomia tecnologica, controllo del dato, resilienza) e un target del **75% delle PA** su cloud qualificato, ma manca un'autorità con mandato e risorse adeguate per guidare la transizione.
+Il confronto con l'Europa è impietoso. Mentre Francia, Germania, Danimarca e Paesi Bassi stanno migrando attivamente fuori dal software statunitense — la Francia con centinaia di migliaia di utenti su strumenti pubblici come Tchap e La Suite, la Germania con decine di migliaia di postazioni migrate a LibreOffice, la Danimarca che valuta l'abbandono di Microsoft 365 — l'Italia ha sulla carta strategie ambiziose ma ha migrato *quasi nulla*. La **Strategia Cloud Italia (2021)** fissa obiettivi chiari (autonomia tecnologica, controllo del dato, resilienza) e un target del **75% delle PA** su cloud qualificato, ma manca un'autorità con mandato e risorse adeguate per guidare la transizione.
 
 E i costi non sono teorici: il solo governo federale tedesco spende circa **500 milioni di euro l'anno** in licenze Microsoft, e l'area euro importa oltre **200 miliardi di dollari l'anno** di servizi IP statunitensi. La dipendenza è anche una voce di spesa che esce dall'economia europea.
 
@@ -51,7 +51,7 @@ L'Osservatorio è un progetto **aperto e multi-stakeholder**, in **versione beta
 - **Associazioni e gruppi civici** → uniamo le forze per un movimento europeo della sovranità digitale.
 - **Tutti** → entrate nella community sul [canale Telegram](https://t.me/+Ot-M_g0dkh1kMGI0).
 
-Scopri come contribuire secondo il tuo profilo nella sezione [Partecipa](/partecipa/). Perché, come ci ricorda chi studia il tema, dichiarare è più facile che costruire — ma costruire è esattamente ciò che serve.
+Scopri come contribuire secondo il tuo profilo nella sezione [Partecipa](/partecipa/). Perché dichiarare è più facile che costruire — ma costruire è esattamente ciò che serve.
 
 ---
 
