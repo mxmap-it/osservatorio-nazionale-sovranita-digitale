@@ -4,11 +4,11 @@
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h1>Osservatorio Nazionale<br>Sovranità Digitale</h1>
+        <h1>{{ i18n "brandTitle" }}<br>{{ i18n "brandTagline" }}</h1>
         <p class="lead mt-3">{{ site.Params.description }}</p>
         <div class="mt-4">
-          <a href="{{ "report/" | relURL }}" class="btn btn-outline-light btn-lg me-2">Consulta i Report</a>
-          <a href="{{ "metodologia/" | relURL }}" class="btn btn-light btn-lg">Metodologia</a>
+          <a href="{{ "report/" | relLangURL }}" class="btn btn-outline-light btn-lg me-2">{{ i18n "heroBtnReports" }}</a>
+          <a href="{{ "metodologia/" | relLangURL }}" class="btn btn-light btn-lg">{{ i18n "footerMethodology" }}</a>
         </div>
       </div>
     </div>
@@ -19,8 +19,8 @@
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
-        <h2 class="mb-2">I numeri della sovranità digitale</h2>
-        <p class="text-muted mb-4">Fonte: <a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> su dati <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a>.</p>
+        <h2 class="mb-2">{{ i18n "numbersTitle" }}</h2>
+        <p class="text-muted mb-4">{{ i18n "numbersSource" | safeHTML }}</p>
       </div>
     </div>
     <div class="row g-4 justify-content-center">
@@ -28,8 +28,8 @@
         <div class="card card-bg rounded shadow-sm text-center h-100">
           <div class="card-body py-4">
             <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</div>
-            <p class="card-text mb-0"><strong>Enti PA monitorati</strong></p>
-            <p class="small text-muted">Dall'Indice delle Pubbliche Amministrazioni</p>
+            <p class="card-text mb-0"><strong>{{ i18n "kpiEntities" }}</strong></p>
+            <p class="small text-muted">{{ i18n "kpiEntitiesSub" }}</p>
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
         <div class="card card-bg rounded shadow-sm text-center h-100">
           <div class="card-body py-4">
             <div class="h1 text-danger mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.extra_eu.pct "ready" (not $kpi.placeholder)) }}</div>
-            <p class="card-text mb-0"><strong>PA su provider extra-UE</strong></p>
-            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider soggetti a giurisdizione extra-UE{{ end }}</p>
+            <p class="card-text mb-0"><strong>{{ i18n "kpiExtraEu" }}</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}{{ i18n "kpiUpdating" }}{{ else }}{{ i18n "kpiExtraEuSub" }}{{ end }}</p>
           </div>
         </div>
       </div>
@@ -46,8 +46,8 @@
         <div class="card card-bg rounded shadow-sm text-center h-100">
           <div class="card-body py-4">
             <div class="h1 text-warning mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.it.pct "ready" (not $kpi.placeholder)) }}</div>
-            <p class="card-text mb-0"><strong>PA su provider italiani</strong></p>
-            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider con sede in Italia{{ end }}</p>
+            <p class="card-text mb-0"><strong>{{ i18n "kpiIt" }}</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}{{ i18n "kpiUpdating" }}{{ else }}{{ i18n "kpiItSub" }}{{ end }}</p>
           </div>
         </div>
       </div>
@@ -55,8 +55,8 @@
         <div class="card card-bg rounded shadow-sm text-center h-100">
           <div class="card-body py-4">
             <div class="h1 text-success mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.eu_non_it.pct "ready" (not $kpi.placeholder)) }}</div>
-            <p class="card-text mb-0"><strong>PA su provider UE</strong></p>
-            <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider UE non italiani{{ end }}</p>
+            <p class="card-text mb-0"><strong>{{ i18n "kpiEu" }}</strong></p>
+            <p class="small text-muted">{{ if $kpi.placeholder }}{{ i18n "kpiUpdating" }}{{ else }}{{ i18n "kpiEuSub" }}{{ end }}</p>
           </div>
         </div>
       </div>
@@ -64,13 +64,13 @@
     {{ if not $kpi.placeholder }}
     <div class="row justify-content-center mt-4">
       <div class="col-lg-10 text-center">
-        <p class="small text-muted mb-3">Ultimo aggiornamento dati: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}.</p>
+        <p class="small text-muted mb-3">{{ i18n "kpiLastUpdate" }} {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — {{ i18n "kpiCoverage" }} {{ printf "%.0f%%" . }}{{ end }}.</p>
       </div>
     </div>
     {{ end }}
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
-        <a href="{{ "decisori/" | relURL }}" class="btn btn-outline-primary">Approfondisci: Per i Decisori</a>
+        <a href="{{ "decisori/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "ctaDecisori" }}</a>
       </div>
     </div>
   </div>
@@ -85,18 +85,16 @@
         <div class="callout callout-highlight important">
           <div class="callout-title">
             <svg class="icon"><use href="{{ $spritesURL }}#it-calendar"></use></svg>
-            <span>Prossimo appuntamento</span>
+            <span>{{ i18n "eventLabel" }}</span>
           </div>
-          <h2 class="h4 mt-2 mb-2">Presentazione del report alla Camera dei Deputati</h2>
+          <h2 class="h4 mt-2 mb-2">{{ i18n "eventTitle" }}</h2>
           <p class="mb-2">
-            Il <strong>{{ site.Params.eventDate }}</strong> l'Osservatorio pubblicherà il nuovo report
-            sullo stato della sovranità digitale della PA italiana. Nella stessa giornata i risultati
-            saranno presentati pubblicamente alla <strong>Camera dei Deputati</strong>.
-            {{ if site.Params.eventProvisional }}<em>(data da confermare)</em>{{ end }}
+            <strong>{{ site.Params.eventDate }}</strong> — {{ i18n "eventBody" | safeHTML }}
+            {{ if site.Params.eventProvisional }}<em>{{ i18n "eventProvisional" }}</em>{{ end }}
           </p>
           <p class="mb-0">
-            <a href="{{ "news/" | relURL }}" class="btn btn-primary btn-sm me-2">Dettagli e aggiornamenti</a>
-            <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Seguici su Telegram</a>
+            <a href="{{ "news/" | relLangURL }}" class="btn btn-primary btn-sm me-2">{{ i18n "eventBtnDetails" }}</a>
+            <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">{{ i18n "eventBtnTelegram" }}</a>
           </p>
         </div>
       </div>
@@ -107,7 +105,7 @@
 
 <section class="section-spacing-lg">
   <div class="container-xxl">
-    <h2 class="mb-4">Ultimi Report</h2>
+    <h2 class="mb-4">{{ i18n "latestReports" }}</h2>
     <div class="row g-4">
       {{ range first 3 (where site.RegularPages "Section" "report") }}
       <div class="col-lg-4 col-md-6">
@@ -115,7 +113,7 @@
           <div class="card card-bg rounded shadow-sm border-bottom-card">
             <div class="card-body">
               <div class="category-top">
-                <span class="category">Report</span>
+                <span class="category">{{ i18n "navReport" }}</span>
                 <span class="data">{{ partial "date-it.html" .Date }}</span>
               </div>
               <h3 class="card-title h5">
@@ -124,7 +122,7 @@
               <p class="card-text">{{ .Summary | truncate 150 }}</p>
               {{ with .Params.pdf }}
               <a class="read-more" href="{{ . | relURL }}" download>
-                <span class="text">Scarica PDF</span>
+                <span class="text">{{ i18n "downloadPdfShort" }}</span>
                 <svg class="icon"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-download"></use></svg>
               </a>
               {{ end }}
@@ -135,14 +133,14 @@
       {{ end }}
     </div>
     <p class="mt-4 text-center">
-      <a href="{{ "report/" | relURL }}" class="btn btn-outline-primary">Tutti i report</a>
+      <a href="{{ "report/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "allReports" }}</a>
     </p>
   </div>
 </section>
 
 <section class="section-spacing-lg bg-section-alt">
   <div class="container-xxl">
-    <h2 class="mb-4">Ultime News</h2>
+    <h2 class="mb-4">{{ i18n "latestNews" }}</h2>
     <div class="row g-4">
       {{ range first 3 (where site.RegularPages "Section" "news") }}
       <div class="col-lg-4 col-md-6">
@@ -150,7 +148,7 @@
           <div class="card card-bg rounded shadow-sm border-bottom-card">
             <div class="card-body">
               <div class="category-top">
-                <span class="category">News</span>
+                <span class="category">{{ i18n "navNews" }}</span>
                 <span class="data">{{ partial "date-it.html" .Date }}</span>
               </div>
               <h3 class="card-title h5">
@@ -158,7 +156,7 @@
               </h3>
               <p class="card-text">{{ .Summary | truncate 150 }}</p>
               <a class="read-more" href="{{ .RelPermalink }}">
-                <span class="text">Leggi di più</span>
+                <span class="text">{{ i18n "readMore" }}</span>
                 <svg class="icon"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-arrow-right"></use></svg>
               </a>
             </div>
@@ -168,7 +166,7 @@
       {{ end }}
     </div>
     <p class="mt-4 text-center">
-      <a href="{{ "news/" | relURL }}" class="btn btn-outline-primary">Tutte le news</a>
+      <a href="{{ "news/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "allNews" }}</a>
     </p>
   </div>
 </section>
@@ -178,11 +176,11 @@
     <div class="row justify-content-center text-center">
       <div class="col-lg-8 text-white">
         <svg class="icon icon-xl icon-white mb-2" aria-hidden="true"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-telegram"></use></svg>
-        <h2 class="text-white mb-2">Partecipa e contribuisci: unisciti su Telegram</h2>
-        <p class="mb-4 fs-5">Il canale Telegram è prima di tutto un invito a <strong>partecipare e contribuire</strong> al progetto: proponi idee, segnala, collabora con la community. Riceverai anche gli aggiornamenti su report e dati.</p>
+        <h2 class="text-white mb-2">{{ i18n "tgTitle" }}</h2>
+        <p class="mb-4 fs-5">{{ i18n "tgBody" | safeHTML }}</p>
         <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener" class="btn btn-lg fw-bold" style="background:#fff;color:#0088cc;">
           <svg class="icon icon-sm me-1" aria-hidden="true" style="fill:#0088cc;"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-telegram"></use></svg>
-          Unisciti e contribuisci
+          {{ i18n "tgBtn" }}
         </a>
       </div>
     </div>
@@ -194,9 +192,9 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="info-box-custom">
-          <h2 class="h4 mb-3">Dati da MxMap.it</h2>
-          <p>L'Osservatorio utilizza i dati raccolti dal progetto <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener"><strong>MxMap.it</strong></a> per analizzare la dipendenza della Pubblica Amministrazione italiana da provider di posta elettronica esteri e valutare lo stato della sovranità digitale.</p>
-          <a href="{{ "metodologia/" | relURL }}" class="btn btn-outline-primary mt-2">Scopri la metodologia</a>
+          <h2 class="h4 mb-3">{{ i18n "mxmapData" }}</h2>
+          <p>{{ i18n "mxmapBoxBody" | safeHTML }}</p>
+          <a href="{{ "metodologia/" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "methodology" }}</a>
         </div>
       </div>
     </div>

@@ -84,3 +84,64 @@ other = "Reports"
 
 [navNews]
 other = "News"
+
+# --- Homepage ---
+[heroBtnReports]
+other = "View the Reports"
+
+[numbersTitle]
+other = "The numbers of digital sovereignty"
+
+[numbersSource]
+other = "Source: <a href=\"https://mxmap.it/\" target=\"_blank\" rel=\"noopener\">MxMap.it</a> on <a href=\"https://indicepa.gov.it\" target=\"_blank\" rel=\"noopener\">IndicePA</a> data."
+
+[kpiEntities]
+other = "PA bodies monitored"
+[kpiEntitiesSub]
+other = "From the Index of Public Administrations"
+[kpiExtraEu]
+other = "PA on non-EU providers"
+[kpiExtraEuSub]
+other = "Providers subject to non-EU jurisdiction"
+[kpiIt]
+other = "PA on Italian providers"
+[kpiItSub]
+other = "Providers based in Italy"
+[kpiEu]
+other = "PA on EU providers"
+[kpiEuSub]
+other = "Non-Italian EU providers"
+[kpiUpdating]
+other = "Data being updated"
+[kpiLastUpdate]
+other = "Data last updated:"
+[kpiCoverage]
+other = "coverage"
+
+[ctaDecisori]
+other = "Learn more: For Decision-makers"
+[downloadPdfShort]
+other = "Download PDF"
+
+[eventLabel]
+other = "Upcoming event"
+[eventTitle]
+other = "Report presentation at the Chamber of Deputies"
+[eventBody]
+other = "the Observatory will publish its new report on the state of digital sovereignty in the Italian PA. On the same day the findings will be presented publicly at the <strong>Chamber of Deputies</strong>."
+[eventProvisional]
+other = "(date to be confirmed)"
+[eventBtnDetails]
+other = "Details and updates"
+[eventBtnTelegram]
+other = "Follow us on Telegram"
+
+[tgTitle]
+other = "Take part and contribute: join us on Telegram"
+[tgBody]
+other = "The Telegram channel is first of all an invitation to <strong>take part and contribute</strong> to the project: share ideas, report issues, collaborate with the community. You will also receive updates on reports and data."
+[tgBtn]
+other = "Join and contribute"
+
+[mxmapBoxBody]
+other = "The Observatory uses the data collected by the <a href=\"https://mxmap.it/\" target=\"_blank\" rel=\"noopener\"><strong>MxMap.it</strong></a> project to analyse the Italian Public Administration's dependence on foreign email providers and to assess the state of digital sovereignty."
