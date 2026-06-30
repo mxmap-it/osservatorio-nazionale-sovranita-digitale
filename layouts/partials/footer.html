@@ -14,7 +14,7 @@
                   <path d="M5 40 A29 29 0 0 0 63 40" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" opacity="0.4"/>
                 </svg>
                 <div class="it-brand-text">
-                  <h2 class="mb-0">Osservatorio Nazionale Sovranità Digitale</h2>
+                  <h2 class="mb-0">{{ site.Title }}</h2>
                 </div>
               </a>
             </div>
@@ -24,7 +24,7 @@
       <section>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-            <h4><a href="{{ "report/" | relURL }}" title="Vai alla pagina: Report">Report</a></h4>
+            <h4><a href="{{ "report/" | relURL }}">{{ i18n "navReport" }}</a></h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range first 5 (where site.RegularPages "Section" "report") }}
@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-            <h4><a href="{{ "news/" | relURL }}" title="Vai alla pagina: News">News</a></h4>
+            <h4><a href="{{ "news/" | relURL }}">{{ i18n "navNews" }}</a></h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range first 5 (where site.RegularPages "Section" "news") }}
@@ -44,13 +44,13 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-            <h4>Informazioni</h4>
+            <h4>{{ i18n "information" }}</h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
-                <li><a class="list-item" href="{{ "metodologia/" | relURL }}">Metodologia</a></li>
-                <li><a class="list-item" href="{{ "iniziative/" | relURL }}">Iniziative collegate</a></li>
-                <li><a class="list-item" href="{{ "chi-siamo/" | relURL }}">Chi Siamo</a></li>
-                <li><a class="list-item" href="{{ "index.xml" | relURL }}">Feed RSS</a></li>
+                <li><a class="list-item" href="{{ "metodologia/" | relURL }}">{{ i18n "footerMethodology" }}</a></li>
+                <li><a class="list-item" href="{{ "iniziative/" | relURL }}">{{ i18n "footerRelatedInitiatives" }}</a></li>
+                <li><a class="list-item" href="{{ "chi-siamo/" | relURL }}">{{ i18n "footerAbout" }}</a></li>
+                <li><a class="list-item" href="{{ "index.xml" | relURL }}">{{ i18n "footerRss" }}</a></li>
               </ul>
             </div>
           </div>
@@ -59,15 +59,15 @@
       <section class="py-4 border-white border-top">
         <div class="row">
           <div class="col-lg-6 col-md-6 pb-2">
-            <h4>Progetto collegato</h4>
+            <h4>{{ i18n "relatedProject" }}</h4>
             <p>
               <strong><a href="{{ site.Params.mxmapURL }}" class="text-white" target="_blank" rel="noopener">MxMap.it</a></strong> &mdash;
-              Mappatura dei provider email della Pubblica Amministrazione italiana
+              {{ i18n "footerMxmapDesc" }}
             </p>
           </div>
           <div class="col-lg-6 col-md-6 pb-2">
             <div class="pb-2">
-              <h4>Seguici su</h4>
+              <h4>{{ i18n "followUs" }}</h4>
               <ul class="list-inline text-left social">
                 <li class="list-inline-item">
                   <a class="p-2 text-white" href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">
@@ -90,12 +90,12 @@
   </div>
   <div class="it-footer-small-prints clearfix">
     <div class="container">
-      <h3 class="visually-hidden">Sezione Link Utili</h3>
+      <h3 class="visually-hidden">{{ i18n "usefulLinks" }}</h3>
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
-        <li class="list-inline-item">© {{ now.Year }} Osservatorio Nazionale Sovranità Digitale</li>
-        <li class="list-inline-item"><a href="{{ "brand/" | relURL }}">Logo e Brand Kit</a></li>
-        <li class="list-inline-item"><a href="{{ "dati-aperti/" | relURL }}">Dati Aperti</a></li>
-        <li class="list-inline-item"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Licenza CC BY-SA 4.0</a></li>
+        <li class="list-inline-item">© {{ now.Year }} {{ site.Title }}</li>
+        <li class="list-inline-item"><a href="{{ "brand/" | relURL }}">{{ i18n "footerBrandKit" }}</a></li>
+        <li class="list-inline-item"><a href="{{ "dati-aperti/" | relURL }}">{{ i18n "footerOpenData" }}</a></li>
+        <li class="list-inline-item"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">{{ i18n "license" }}</a></li>
       </ul>
     </div>
   </div>

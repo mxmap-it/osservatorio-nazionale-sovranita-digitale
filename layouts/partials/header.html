@@ -51,26 +51,25 @@
                   <rect x="20" y="52" width="9" height="3" fill="#5CB88A"/><rect x="29.5" y="52" width="9" height="3" fill="#FFFFFF"/><rect x="39" y="52" width="9" height="3" fill="#FF6B74"/>
                 </svg>
                 <div class="it-brand-text">
-                  <div class="it-brand-title">Osservatorio Nazionale</div>
-                  <div class="it-brand-tagline d-none d-md-block">Sovranità Digitale</div>
+                  <div class="it-brand-title">{{ i18n "brandTitle" }}</div>
+                  <div class="it-brand-tagline d-none d-md-block">{{ i18n "brandTagline" }}</div>
                 </div>
               </a>
-              <span class="beta-wrap" tabindex="0" role="button" aria-expanded="false" aria-label="Stato del progetto: versione beta — tocca per i dettagli">
+              <span class="beta-wrap" tabindex="0" role="button" aria-expanded="false" aria-label="{{ i18n "betaAria" }}">
                 <span class="beta-badge">BETA</span>
                 <span class="beta-tip" role="tooltip">
                   <span class="arr"></span>
-                  <strong>Progetto in evoluzione.</strong> L'Osservatorio è in <em>versione beta</em>: i dati provengono da MxMap.it e il report definitivo non è ancora stato pubblicato. Contenuti e funzionalità sono in continuo sviluppo.<br><br>
-                  Aiutaci a completare la roadmap: <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues" target="_blank" rel="noopener">collabora su GitHub Issues</a> e <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.
+                  {{ i18n "betaTip" | safeHTML }}
                 </span>
               </span>
             </div>
             <div class="it-right-zone">
               <div class="d-flex align-items-center" style="gap:1rem;">
-                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener" title="Vai al progetto MxMap.it">
+                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener" title="{{ i18n "mxmapLinkTitle" }}">
                   <svg class="icon icon-sm icon-white me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
                   <span class="d-none d-sm-inline">MxMap.it</span>
                 </a>
-                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener" title="Repository GitHub">
+                <a class="text-white text-decoration-none d-inline-flex align-items-center" href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener" title="{{ i18n "githubLinkTitle" }}">
                   <svg class="icon icon-sm icon-white me-1" aria-hidden="true"><use href="{{ $spritesURL }}#it-github"></use></svg>
                   <span class="d-none d-sm-inline">GitHub</span>
                 </a>

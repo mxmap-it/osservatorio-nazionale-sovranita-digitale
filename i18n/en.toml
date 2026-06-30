@@ -39,3 +39,48 @@ other = "Information"
 
 [license]
 other = "CC BY-SA 4.0 License"
+
+[brandTitle]
+other = "National Observatory"
+
+[brandTagline]
+other = "Digital Sovereignty"
+
+[betaAria]
+other = "Project status: beta version — tap for details"
+
+[betaTip]
+other = "<strong>Work in progress.</strong> The Observatory is in <em>beta</em>: the data comes from MxMap.it and the final report has not been published yet. Content and features are under active development.<br><br>Help us complete the roadmap: <a href=\"https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues\" target=\"_blank\" rel=\"noopener\">contribute on GitHub Issues</a> and <a href=\"https://t.me/+Ot-M_g0dkh1kMGI0\" target=\"_blank\" rel=\"noopener\">join the Telegram channel</a>."
+
+[mxmapLinkTitle]
+other = "Go to the MxMap.it project"
+
+[githubLinkTitle]
+other = "GitHub repository"
+
+[footerMethodology]
+other = "Methodology"
+
+[footerRelatedInitiatives]
+other = "Related initiatives"
+
+[footerAbout]
+other = "About"
+
+[footerRss]
+other = "RSS Feed"
+
+[footerMxmapDesc]
+other = "Mapping the email providers of the Italian Public Administration"
+
+[footerBrandKit]
+other = "Logo & Brand Kit"
+
+[footerOpenData]
+other = "Open Data"
+
+[navReport]
+other = "Reports"
+
+[navNews]
+other = "News"

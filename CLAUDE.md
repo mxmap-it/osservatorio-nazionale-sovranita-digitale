@@ -138,8 +138,14 @@ data/kpi.json → site.Data.kpi → layout (homepage, decisori, press) → deplo
    (endpoint dati verificato). NB: al momento `mxmap.it` può avere il custom
    domain GitHub Pages non ancora configurato (errore certificato): i link
    diventano validi quando il dominio è attivo.
-6. **Lingua dei contenuti:** italiano. EN/altre lingue solo quando si avviano le
-   traduzioni vere.
+6. **Bilingue IT + EN — tieni l'inglese sempre aggiornato.** L'italiano è la
+   lingua primaria; l'**inglese (`en`) è una traduzione di prima classe, da
+   mantenere sincronizzata**. Ogni modifica a testo/contenuto **deve aggiornare
+   anche la versione EN** nello stesso commit. Le stringhe dei layout passano per
+   `i18n/it.toml` + `i18n/en.toml` (funzione `{{ i18n "chiave" }}`); i contenuti
+   markdown hanno la copia in `content/en/`. Le altre 22 lingue UE restano
+   `noindex` finché non tradotte (vedi `head.html`). Non lasciare mai una pagina
+   EN con testo italiano residuo.
 7. **Header:** nessun brand MxMap a sinistra; link MxMap + un solo link GitHub a
    destra (vedi `layouts/partials/header.html`).
 8. **Tono:** civico, non ideologico, basato su dati verificabili. "Non siamo

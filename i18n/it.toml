@@ -39,3 +39,48 @@ other = "Informazioni"
 
 [license]
 other = "Licenza CC BY-SA 4.0"
+
+[brandTitle]
+other = "Osservatorio Nazionale"
+
+[brandTagline]
+other = "Sovranità Digitale"
+
+[betaAria]
+other = "Stato del progetto: versione beta — tocca per i dettagli"
+
+[betaTip]
+other = "<strong>Progetto in evoluzione.</strong> L'Osservatorio è in <em>versione beta</em>: i dati provengono da MxMap.it e il report definitivo non è ancora stato pubblicato. Contenuti e funzionalità sono in continuo sviluppo.<br><br>Aiutaci a completare la roadmap: <a href=\"https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues\" target=\"_blank\" rel=\"noopener\">collabora su GitHub Issues</a> e <a href=\"https://t.me/+Ot-M_g0dkh1kMGI0\" target=\"_blank\" rel=\"noopener\">unisciti al canale Telegram</a>."
+
+[mxmapLinkTitle]
+other = "Vai al progetto MxMap.it"
+
+[githubLinkTitle]
+other = "Repository GitHub"
+
+[footerMethodology]
+other = "Metodologia"
+
+[footerRelatedInitiatives]
+other = "Iniziative collegate"
+
+[footerAbout]
+other = "Chi Siamo"
+
+[footerRss]
+other = "Feed RSS"
+
+[footerMxmapDesc]
+other = "Mappatura dei provider email della Pubblica Amministrazione italiana"
+
+[footerBrandKit]
+other = "Logo e Brand Kit"
+
+[footerOpenData]
+other = "Dati Aperti"
+
+[navReport]
+other = "Report"
+
+[navNews]
+other = "News"
