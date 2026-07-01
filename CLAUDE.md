@@ -126,10 +126,14 @@ data/kpi.json → site.Data.kpi → layout (homepage, decisori, press) → deplo
    parte da `push` su `main`.
 2. **Verifica via DOM/HTTP, MAI screenshot.** Usa il dev server e controlla con
    fetch+DOMParser / richieste HTTP. Non catturare lo schermo dell'utente.
-3. **Workflow PDF:** ogni nuovo PDF → genera in `docs/` → copia in `static/pdf/`
-   con nome kebab-case → linka dalla pagina pertinente con
-   `{{ "pdf/<nome>.pdf" | relURL }}` + attributo `download` → verifica
-   `200 application/pdf` → commit di generatore + PDF + layout insieme.
+3. **Workflow PDF (bilingue):** ogni PDF ha un generatore IT `docs/genera_<x>.py`
+   e uno EN `docs/genera_<x>_en.py` (stessa struttura reportlab/fpdf, testo tradotto,
+   numeri in formato EN `{n:,}`, watermark "BOZZA"→"DRAFT", footer brand EN). Output
+   in `static/pdf/`: `<kebab>.pdf` (IT) e `<kebab>-en.pdf` (EN). Il link nelle pagine
+   è language-aware: `{{ printf "pdf/<kebab>%s.pdf" (cond $isEN "-en" "") | relURL }}`
+   + `download`. Eccezione: `eu-briefing-...pdf` è già in inglese → linkato uguale in
+   entrambe le lingue. Aggiornando un PDF IT, **rigenera anche l'EN** e committa insieme
+   generatori + PDF + layout. Verifica `200 application/pdf`.
 4. **Git su Windows/PowerShell:** usa il **tool Bash** per i commit, oppure
    here-string isolata; non concatenare il commit con `;` in PowerShell.
 5. **Link a MxMap:** i **link pubblici** (header, contenuti, footer, PDF) puntano

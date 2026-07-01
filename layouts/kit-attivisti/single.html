@@ -134,7 +134,7 @@ Distinti saluti, [nome, data]{{ end }}</p>
           <span>{{ if $isEN }}Download the kit{{ else }}Scarica il kit{{ end }}</span>
         </div>
         <p>{{ if $isEN }}Take the kit with you: a 2-page summary with the practical steps and the request template.{{ else }}Porta il kit con te: una sintesi di 2 pagine con i passi pratici e il modello di richiesta.{{ end }}</p>
-        <a class="btn btn-primary btn-sm" href="{{ "pdf/kit-attivisti-sovranita-digitale.pdf" | relURL }}" download>
+        <a class="btn btn-primary btn-sm" href="{{ printf "pdf/kit-attivisti-sovranita-digitale%s.pdf" (cond $isEN "-en" "") | relURL }}" download>
           <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
           {{ if $isEN }}Download Activist Kit (PDF){{ else }}Scarica Kit Attivisti (PDF){{ end }}
         </a>

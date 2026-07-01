@@ -114,7 +114,7 @@
           <span>{{ if $isEN }}Download the factsheet{{ else }}Scarica la scheda{{ end }}</span>
         </div>
         <p>{{ if $isEN }}A 2-page summary with dataset, data dictionary, research questions and citation.{{ else }}Una sintesi di 2 pagine con dataset, dizionario dati, domande di ricerca e citazione.{{ end }}</p>
-        <a class="btn btn-primary btn-sm" href="{{ "pdf/scheda-ricercatori-sovranita-digitale.pdf" | relURL }}" download>
+        <a class="btn btn-primary btn-sm" href="{{ printf "pdf/scheda-ricercatori-sovranita-digitale%s.pdf" (cond $isEN "-en" "") | relURL }}" download>
           <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
           {{ if $isEN }}Download Researchers Factsheet (PDF){{ else }}Scarica Scheda Ricercatori (PDF){{ end }}
         </a>

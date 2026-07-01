@@ -346,7 +346,7 @@
               <div class="card-body d-flex flex-column">
                 <h3 class="h6 text-primary">Policy Brief</h3>
                 <p class="small flex-grow-1">{{ if $isEN }}A 2-page summary with key figures and recommendations for political decision-makers.{{ else }}Sintesi di 2 pagine con numeri chiave e raccomandazioni per decisori politici.{{ end }}</p>
-                <a class="btn btn-primary btn-sm align-self-start" href="{{ "pdf/policy-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
+                <a class="btn btn-primary btn-sm align-self-start" href="{{ printf "pdf/policy-brief-sovranita-digitale-pa%s.pdf" (cond $isEN "-en" "") | relURL }}" download>
                   <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
                   {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
                 </a>
@@ -358,7 +358,7 @@
               <div class="card-body d-flex flex-column">
                 <h3 class="h6 text-primary">Technical Brief</h3>
                 <p class="small flex-grow-1">{{ if $isEN }}An in-depth technical and regulatory analysis for AgID, ACN, the Garante and research offices.{{ else }}Analisi tecnico-normativa approfondita per AgID, ACN, Garante e uffici studi.{{ end }}</p>
-                <a class="btn btn-primary btn-sm align-self-start" href="{{ "pdf/technical-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
+                <a class="btn btn-primary btn-sm align-self-start" href="{{ printf "pdf/technical-brief-sovranita-digitale-pa%s.pdf" (cond $isEN "-en" "") | relURL }}" download>
                   <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
                   {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
                 </a>

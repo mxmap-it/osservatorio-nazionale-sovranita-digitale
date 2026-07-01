@@ -291,7 +291,7 @@
           <span>{{ if $isEN }}For IT providers and central purchasing bodies{{ else }}Per provider IT e centrali di committenza{{ end }}</span>
         </div>
         <p>{{ if $isEN }}The Business Case sets out the market opportunity of migrating to sovereign providers and the lever of public procurement.{{ else }}Il Business Case illustra l'opportunità di mercato della migrazione verso provider sovrani e la leva del procurement pubblico.{{ end }}</p>
-        <a class="btn btn-primary btn-sm" href="{{ "pdf/business-case-migrazione-sovranita-pa.pdf" | relURL }}" download>
+        <a class="btn btn-primary btn-sm" href="{{ printf "pdf/business-case-migrazione-sovranita-pa%s.pdf" (cond $isEN "-en" "") | relURL }}" download>
           <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
           {{ if $isEN }}Download Business Case (PDF){{ else }}Scarica Business Case (PDF){{ end }}
         </a>

@@ -2,7 +2,7 @@
 title: "State of Digital Sovereignty in the PA - June 2026 (DRAFT)"
 date: 2026-06-16
 description: "The Observatory's first report on the state of digital sovereignty in the Italian Public Administration"
-pdf: "/pdf/report-2026-06-sovranita-digitale-pa.pdf"
+pdf: "/pdf/report-2026-06-sovranita-digitale-pa-en.pdf"
 ---
 
 ## Summary
