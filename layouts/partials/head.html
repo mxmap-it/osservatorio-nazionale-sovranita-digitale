@@ -2,7 +2,7 @@
 {{- $desc := cond (ne .Description "") .Description site.Params.description -}}
 {{- if and .IsHome site.Data.kpi (not site.Data.kpi.placeholder) -}}
   {{- $k := site.Data.kpi -}}
-  {{- $n := lang.FormatNumberCustom 0 $k.totals.n_entities "- , ." -}}
+  {{- $n := lang.FormatNumberCustom 0 $k.totals.n_entities (cond $isEN "- . ," "- , .") -}}
   {{- if $isEN -}}
     {{- $desc = printf "Digital sovereignty of the Italian PA: %.0f%% of public bodies use email on non-EU providers (CLOUD Act), %.0f%% on Italian providers. Analysis of %s bodies — National Digital Sovereignty Observatory (MxMap Italia)." $k.sovereignty.extra_eu.pct $k.sovereignty.it.pct $n -}}
   {{- else -}}
@@ -84,7 +84,7 @@
       "@type": "Dataset",
       "name": "{{ if $isEN }}Digital sovereignty of Italian public administration email{{ else }}Sovranità digitale della posta elettronica della PA italiana{{ end }}",
       "alternateName": "{{ site.Title }} — dataset",
-      "description": "{{ if $isEN }}Share of Italian Public Administration bodies by email provider jurisdiction (Italian, EU, non-EU/CLOUD Act). Analysis of {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} IndicePA bodies. MxMap Italia data.{{ else }}Quota di enti della Pubblica Amministrazione italiana per giurisdizione del provider di posta elettronica (italiano, UE, extra-UE/CLOUD Act). Analisi su {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} enti dell'IndicePA. Dati MxMap Italia.{{ end }}",
+      "description": "{{ if $isEN }}Share of Italian Public Administration bodies by email provider jurisdiction (Italian, EU, non-EU/CLOUD Act). Analysis of {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities (cond $isEN "- . ," "- , .") }} IndicePA bodies. MxMap Italia data.{{ else }}Quota di enti della Pubblica Amministrazione italiana per giurisdizione del provider di posta elettronica (italiano, UE, extra-UE/CLOUD Act). Analisi su {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities (cond $isEN "- . ," "- , .") }} enti dell'IndicePA. Dati MxMap Italia.{{ end }}",
       "url": "{{ absURL "" }}",
       "creator": { "@id": "{{ absURL "" }}#organization" },
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",

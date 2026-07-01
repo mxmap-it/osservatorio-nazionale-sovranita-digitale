@@ -1,22 +1,23 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">Risposte alle domande più comuni sull'Osservatorio e sulla sovranità digitale della PA italiana.</p>
+      <p class="lead mb-5">{{ if $isEN }}Answers to the most common questions about the Observatory and the digital sovereignty of the Italian Public Administration.{{ else }}Risposte alle domande più comuni sull'Osservatorio e sulla sovranità digitale della PA italiana.{{ end }}</p>
 
-      <h2 class="h4 mb-3">L'Osservatorio</h2>
+      <h2 class="h4 mb-3">{{ if $isEN }}The Observatory{{ else }}L'Osservatorio{{ end }}</h2>
       <div class="accordion" id="faq-osservatorio">
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h1">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
-              Cos'è l'Osservatorio Nazionale Sovranità Digitale?
+              {{ if $isEN }}What is the National Digital Sovereignty Observatory?{{ else }}Cos'è l'Osservatorio Nazionale Sovranità Digitale?{{ end }}
             </button>
           </h3>
           <div id="faq-1" class="accordion-collapse collapse show" aria-labelledby="faq-h1" data-bs-parent="#faq-osservatorio">
             <div class="accordion-body">
-              <p>L'Osservatorio è un progetto indipendente che misura e monitora lo stato della sovranità digitale nella Pubblica Amministrazione italiana. Analizza la dipendenza della PA da infrastrutture e servizi digitali esteri, con particolare attenzione ai provider di posta elettronica.</p>
+              <p>{{ if $isEN }}The Observatory is an independent project that measures and monitors the state of digital sovereignty in the Italian Public Administration. It analyses the PA's dependence on foreign digital infrastructure and services, with particular attention to email providers.{{ else }}L'Osservatorio è un progetto indipendente che misura e monitora lo stato della sovranità digitale nella Pubblica Amministrazione italiana. Analizza la dipendenza della PA da infrastrutture e servizi digitali esteri, con particolare attenzione ai provider di posta elettronica.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -24,12 +25,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h2">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
-              Qual è la relazione con MxMap.it?
+              {{ if $isEN }}What is the relationship with MxMap.it?{{ else }}Qual è la relazione con MxMap.it?{{ end }}
             </button>
           </h3>
           <div id="faq-2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#faq-osservatorio">
             <div class="accordion-body">
-              <p><a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> è il progetto tecnico che raccoglie i dati grezzi analizzando i record MX (Mail Exchange) dei domini della PA italiana. L'Osservatorio utilizza questi dati come fonte primaria, li contestualizza e li pubblica sotto forma di report accessibili e analisi periodiche.</p>
+              <p>{{ if $isEN }}<a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> is the technical project that collects the raw data by analysing the MX (Mail Exchange) records of Italian PA domains. The Observatory uses this data as a primary source, contextualises it and publishes it in the form of accessible reports and periodic analyses.{{ else }}<a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> è il progetto tecnico che raccoglie i dati grezzi analizzando i record MX (Mail Exchange) dei domini della PA italiana. L'Osservatorio utilizza questi dati come fonte primaria, li contestualizza e li pubblica sotto forma di report accessibili e analisi periodiche.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -37,17 +38,17 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h25">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-25" aria-expanded="false" aria-controls="faq-25">
-              Che differenza c'è con sovranita-digitale.it?
+              {{ if $isEN }}What is the difference with sovranita-digitale.it?{{ else }}Che differenza c'è con sovranita-digitale.it?{{ end }}
             </button>
           </h3>
           <div id="faq-25" class="accordion-collapse collapse" aria-labelledby="faq-h25" data-bs-parent="#faq-osservatorio">
             <div class="accordion-body">
-              <p><a href="https://sovranita-digitale.it/" target="_blank" rel="noopener">sovranita-digitale.it</a> è un'altra iniziativa civica indipendente italiana, con cui condividiamo l'obiettivo. La differenza è nell'<strong>ampiezza e nel taglio</strong>:</p>
+              <p>{{ if $isEN }}<a href="https://sovranita-digitale.it/" target="_blank" rel="noopener">sovranita-digitale.it</a> is another independent Italian civic initiative, with which we share the goal. The difference lies in the <strong>breadth and the angle</strong>:{{ else }}<a href="https://sovranita-digitale.it/" target="_blank" rel="noopener">sovranita-digitale.it</a> è un'altra iniziativa civica indipendente italiana, con cui condividiamo l'obiettivo. La differenza è nell'<strong>ampiezza e nel taglio</strong>:{{ end }}</p>
               <ul>
-                <li><strong>Osservatorio (con MxMap.it)</strong> — analisi <strong>focalizzata e in profondità</strong> sulla <strong>posta elettronica</strong> della PA: per ogni ente identifichiamo il provider email e la sua giurisdizione (sovranità giuridica), con metodologia aperta e replicabile e dati aggiornati quotidianamente.</li>
-                <li><strong>sovranita-digitale.it</strong> — analitica <strong>multidimensionale</strong>: raccoglie e incrocia plurime basi dati e fonti pubbliche (cloud, DNS, ASN, TLS, lock-in, interoperabilità) per un quadro più <strong>ampio</strong> della dipendenza tecnologica, con mappe e indici per ente.</li>
+                <li>{{ if $isEN }}<strong>Observatory (with MxMap.it)</strong> — a <strong>focused, in-depth</strong> analysis of the PA's <strong>email</strong>: for each public body we identify the email provider and its jurisdiction (legal sovereignty), with an open and reproducible methodology and data updated daily.{{ else }}<strong>Osservatorio (con MxMap.it)</strong> — analisi <strong>focalizzata e in profondità</strong> sulla <strong>posta elettronica</strong> della PA: per ogni ente identifichiamo il provider email e la sua giurisdizione (sovranità giuridica), con metodologia aperta e replicabile e dati aggiornati quotidianamente.{{ end }}</li>
+                <li>{{ if $isEN }}<strong>sovranita-digitale.it</strong> — a <strong>multidimensional</strong> analysis: it collects and cross-references multiple databases and public sources (cloud, DNS, ASN, TLS, lock-in, interoperability) for a <strong>broader</strong> picture of technological dependence, with maps and indices per body.{{ else }}<strong>sovranita-digitale.it</strong> — analitica <strong>multidimensionale</strong>: raccoglie e incrocia plurime basi dati e fonti pubbliche (cloud, DNS, ASN, TLS, lock-in, interoperabilità) per un quadro più <strong>ampio</strong> della dipendenza tecnologica, con mappe e indici per ente.{{ end }}</li>
               </ul>
-              <p class="mb-0">Le due iniziative sono <strong>complementari</strong>: noi andiamo a fondo su un singolo servizio critico (l'email), loro offrono una panoramica trasversale. Trovi entrambe, con altre iniziative europee, nella pagina <a href="{{ "iniziative/" | relURL }}">Iniziative collegate</a>.</p>
+              <p class="mb-0">{{ if $isEN }}The two initiatives are <strong>complementary</strong>: we go deep into a single critical service (email), they offer a cross-cutting overview. You can find both, along with other European initiatives, on the <a href="{{ "iniziative/" | relLangURL }}">Related initiatives</a> page.{{ else }}Le due iniziative sono <strong>complementari</strong>: noi andiamo a fondo su un singolo servizio critico (l'email), loro offrono una panoramica trasversale. Trovi entrambe, con altre iniziative europee, nella pagina <a href="{{ "iniziative/" | relLangURL }}">Iniziative collegate</a>.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -55,12 +56,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h3">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
-              Chi può consultare i report?
+              {{ if $isEN }}Who can consult the reports?{{ else }}Chi può consultare i report?{{ end }}
             </button>
           </h3>
           <div id="faq-3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faq-osservatorio">
             <div class="accordion-body">
-              <p>Tutti i report sono pubblici e liberamente consultabili. I contenuti sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a>, quindi possono essere riutilizzati citando la fonte.</p>
+              <p>{{ if $isEN }}All reports are public and freely available. The contents are released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a> licence, so they may be reused by citing the source.{{ else }}Tutti i report sono pubblici e liberamente consultabili. I contenuti sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a>, quindi possono essere riutilizzati citando la fonte.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -68,28 +69,28 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h4">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
-              Con quale frequenza vengono pubblicati i report?
+              {{ if $isEN }}How often are the reports published?{{ else }}Con quale frequenza vengono pubblicati i report?{{ end }}
             </button>
           </h3>
           <div id="faq-4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#faq-osservatorio">
             <div class="accordion-body">
-              <p>I dati vengono raccolti periodicamente e i report vengono pubblicati con cadenza regolare per monitorare l'evoluzione nel tempo. La frequenza esatta dipende dalla disponibilità di dati aggiornati e significativi.</p>
+              <p>{{ if $isEN }}The data is collected periodically and the reports are published at regular intervals to monitor the evolution over time. The exact frequency depends on the availability of updated and significant data.{{ else }}I dati vengono raccolti periodicamente e i report vengono pubblicati con cadenza regolare per monitorare l'evoluzione nel tempo. La frequenza esatta dipende dalla disponibilità di dati aggiornati e significativi.{{ end }}</p>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 class="h4 mb-3 mt-5">Sovranità Digitale</h2>
+      <h2 class="h4 mb-3 mt-5">{{ if $isEN }}Digital Sovereignty{{ else }}Sovranità Digitale{{ end }}</h2>
       <div class="accordion" id="faq-sovranita">
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h5">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
-              Cosa si intende per "sovranità digitale"?
+              {{ if $isEN }}What is meant by "digital sovereignty"?{{ else }}Cosa si intende per "sovranità digitale"?{{ end }}
             </button>
           </h3>
           <div id="faq-5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faq-sovranita">
             <div class="accordion-body">
-              <p>Per sovranità digitale intendiamo la capacità di un ente pubblico di mantenere il controllo effettivo sulle proprie infrastrutture digitali e sui dati dei cittadini. Questo include la giurisdizione sotto cui ricadono i dati, il controllo operativo sulle infrastrutture e l'indipendenza da fornitori tecnologici extra-europei.</p>
+              <p>{{ if $isEN }}By digital sovereignty we mean the ability of a public body to maintain effective control over its own digital infrastructure and over citizens' data. This includes the jurisdiction under which the data falls, operational control over the infrastructure and independence from non-European technology providers.{{ else }}Per sovranità digitale intendiamo la capacità di un ente pubblico di mantenere il controllo effettivo sulle proprie infrastrutture digitali e sui dati dei cittadini. Questo include la giurisdizione sotto cui ricadono i dati, il controllo operativo sulle infrastrutture e l'indipendenza da fornitori tecnologici extra-europei.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -97,12 +98,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h6">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">
-              Perché la posta elettronica è importante per la sovranità digitale?
+              {{ if $isEN }}Why is email important for digital sovereignty?{{ else }}Perché la posta elettronica è importante per la sovranità digitale?{{ end }}
             </button>
           </h3>
           <div id="faq-6" class="accordion-collapse collapse" aria-labelledby="faq-h6" data-bs-parent="#faq-sovranita">
             <div class="accordion-body">
-              <p>La posta elettronica è uno dei canali di comunicazione più utilizzati dalla PA. Quando un ente usa un provider estero, le comunicazioni istituzionali — spesso contenenti dati sensibili dei cittadini — transitano e vengono archiviate su infrastrutture soggette a giurisdizioni straniere, come il CLOUD Act statunitense.</p>
+              <p>{{ if $isEN }}Email is one of the most widely used communication channels in the PA. When a public body uses a foreign provider, institutional communications — often containing sensitive citizen data — transit through and are stored on infrastructure subject to foreign jurisdictions, such as the US CLOUD Act.{{ else }}La posta elettronica è uno dei canali di comunicazione più utilizzati dalla PA. Quando un ente usa un provider estero, le comunicazioni istituzionali — spesso contenenti dati sensibili dei cittadini — transitano e vengono archiviate su infrastrutture soggette a giurisdizioni straniere, come il CLOUD Act statunitense.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -110,12 +111,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h7">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">
-              Cosa sono i record MX?
+              {{ if $isEN }}What are MX records?{{ else }}Cosa sono i record MX?{{ end }}
             </button>
           </h3>
           <div id="faq-7" class="accordion-collapse collapse" aria-labelledby="faq-h7" data-bs-parent="#faq-sovranita">
             <div class="accordion-body">
-              <p>I record MX (Mail Exchange) sono record DNS che indicano quale server gestisce la posta elettronica per un determinato dominio. Analizzando i record MX dei domini della PA, possiamo determinare quale provider gestisce la posta di ciascun ente e se si tratta di un servizio italiano, europeo o extra-europeo.</p>
+              <p>{{ if $isEN }}MX (Mail Exchange) records are DNS records that indicate which server handles the email for a given domain. By analysing the MX records of PA domains, we can determine which provider handles each body's mail and whether it is an Italian, European or non-European service.{{ else }}I record MX (Mail Exchange) sono record DNS che indicano quale server gestisce la posta elettronica per un determinato dominio. Analizzando i record MX dei domini della PA, possiamo determinare quale provider gestisce la posta di ciascun ente e se si tratta di un servizio italiano, europeo o extra-europeo.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -123,28 +124,28 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h8">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-8" aria-expanded="false" aria-controls="faq-8">
-              Un ente che usa Google o Microsoft per la posta è meno sicuro?
+              {{ if $isEN }}Is a body that uses Google or Microsoft for email less secure?{{ else }}Un ente che usa Google o Microsoft per la posta è meno sicuro?{{ end }}
             </button>
           </h3>
           <div id="faq-8" class="accordion-collapse collapse" aria-labelledby="faq-h8" data-bs-parent="#faq-sovranita">
             <div class="accordion-body">
-              <p>Non si tratta di sicurezza tecnica — i grandi provider offrono generalmente elevati standard di sicurezza. La questione è la <strong>giurisdizione</strong>: i dati ospitati da provider statunitensi sono potenzialmente accessibili alle autorità USA tramite il CLOUD Act, anche se fisicamente in Europa. L'Osservatorio non giudica la qualità del servizio, ma documenta la dipendenza giurisdizionale.</p>
+              <p>{{ if $isEN }}It is not a question of technical security — the major providers generally offer high security standards. The issue is <strong>jurisdiction</strong>: data hosted by US providers is potentially accessible to US authorities through the CLOUD Act, even if physically located in Europe. The Observatory does not judge the quality of the service, but documents the jurisdictional dependence.{{ else }}Non si tratta di sicurezza tecnica — i grandi provider offrono generalmente elevati standard di sicurezza. La questione è la <strong>giurisdizione</strong>: i dati ospitati da provider statunitensi sono potenzialmente accessibili alle autorità USA tramite il CLOUD Act, anche se fisicamente in Europa. L'Osservatorio non giudica la qualità del servizio, ma documenta la dipendenza giurisdizionale.{{ end }}</p>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 class="h4 mb-3 mt-5">Perché dovrebbe interessarmi</h2>
+      <h2 class="h4 mb-3 mt-5">{{ if $isEN }}Why it should matter to me{{ else }}Perché dovrebbe interessarmi{{ end }}</h2>
       <div class="accordion" id="faq-perche">
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h20">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-20" aria-expanded="false" aria-controls="faq-20">
-              Sono un cittadino. Perché dovrebbe interessarmi?
+              {{ if $isEN }}I'm a citizen. Why should it matter to me?{{ else }}Sono un cittadino. Perché dovrebbe interessarmi?{{ end }}
             </button>
           </h3>
           <div id="faq-20" class="accordion-collapse collapse" aria-labelledby="faq-h20" data-bs-parent="#faq-perche">
             <div class="accordion-body">
-              <p>Quando comunichi con la tua ASL, il tuo Comune o la tua scuola via email, i tuoi dati personali transitano sui server del provider scelto da quell'ente. Se il provider è soggetto a giurisdizione straniera, i tuoi dati possono essere accessibili ad autorità di altri paesi — senza che tu lo sappia e senza le garanzie previste dal GDPR europeo.</p>
+              <p>{{ if $isEN }}When you communicate with your local health authority, your municipality or your school by email, your personal data transits through the servers of the provider chosen by that body. If the provider is subject to foreign jurisdiction, your data may be accessible to authorities of other countries — without you knowing and without the guarantees provided by the European GDPR.{{ else }}Quando comunichi con la tua ASL, il tuo Comune o la tua scuola via email, i tuoi dati personali transitano sui server del provider scelto da quell'ente. Se il provider è soggetto a giurisdizione straniera, i tuoi dati possono essere accessibili ad autorità di altri paesi — senza che tu lo sappia e senza le garanzie previste dal GDPR europeo.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -152,12 +153,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h21">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-21" aria-expanded="false" aria-controls="faq-21">
-              Lavoro in una PA. Come posso usare questi dati?
+              {{ if $isEN }}I work in a PA. How can I use this data?{{ else }}Lavoro in una PA. Come posso usare questi dati?{{ end }}
             </button>
           </h3>
           <div id="faq-21" class="accordion-collapse collapse" aria-labelledby="faq-h21" data-bs-parent="#faq-perche">
             <div class="accordion-body">
-              <p>Puoi verificare la posizione del tuo ente rispetto alla sovranità digitale e confrontarla con enti omologhi. I dati possono supportare una proposta interna di migrazione verso provider conformi, giustificare richieste di budget e dimostrare proattività nella gestione del rischio giurisdizionale.</p>
+              <p>{{ if $isEN }}You can check your body's position on digital sovereignty and compare it with comparable bodies. The data can support an internal proposal to migrate to compliant providers, justify budget requests and demonstrate a proactive approach to managing jurisdictional risk.{{ else }}Puoi verificare la posizione del tuo ente rispetto alla sovranità digitale e confrontarla con enti omologhi. I dati possono supportare una proposta interna di migrazione verso provider conformi, giustificare richieste di budget e dimostrare proattività nella gestione del rischio giurisdizionale.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -165,12 +166,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h22">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-22" aria-expanded="false" aria-controls="faq-22">
-              Sono un giornalista. Posso citare i dati?
+              {{ if $isEN }}I'm a journalist. Can I cite the data?{{ else }}Sono un giornalista. Posso citare i dati?{{ end }}
             </button>
           </h3>
           <div id="faq-22" class="accordion-collapse collapse" aria-labelledby="faq-h22" data-bs-parent="#faq-perche">
             <div class="accordion-body">
-              <p>Assolutamente sì. Tutti i dati sono pubblici e rilasciati sotto licenza CC BY-SA 4.0. Puoi citarli liberamente indicando come fonte "Osservatorio Nazionale Sovranità Digitale, su dati MxMap.it". Visita la sezione <a href="{{ "press/" | relURL }}">Press Kit</a> per materiali pronti all'uso e contatti stampa.</p>
+              <p>{{ if $isEN }}Absolutely. All data is public and released under the CC BY-SA 4.0 licence. You can cite it freely, indicating as the source "National Digital Sovereignty Observatory, based on MxMap.it data". Visit the <a href="{{ "press/" | relLangURL }}">Press Kit</a> section for ready-to-use materials and press contacts.{{ else }}Assolutamente sì. Tutti i dati sono pubblici e rilasciati sotto licenza CC BY-SA 4.0. Puoi citarli liberamente indicando come fonte "Osservatorio Nazionale Sovranità Digitale, su dati MxMap.it". Visita la sezione <a href="{{ "press/" | relLangURL }}">Press Kit</a> per materiali pronti all'uso e contatti stampa.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -178,12 +179,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h23">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-23" aria-expanded="false" aria-controls="faq-23">
-              Cosa posso fare concretamente per cambiare la situazione?
+              {{ if $isEN }}What can I concretely do to change the situation?{{ else }}Cosa posso fare concretamente per cambiare la situazione?{{ end }}
             </button>
           </h3>
           <div id="faq-23" class="accordion-collapse collapse" aria-labelledby="faq-h23" data-bs-parent="#faq-perche">
             <div class="accordion-body">
-              <p>Dipende dal tuo ruolo. Se sei un <strong>cittadino</strong>, condividi i report e chiedi al tuo Comune la posizione sulla sovranità digitale. Se <strong>lavori in una PA</strong>, verifica il tuo ente e proponi una valutazione interna. Se sei un <strong>politico</strong>, usa i dati per interrogazioni e proposte. Se sei un <strong>ricercatore</strong>, analizza i dati e pubblica. Consulta la sezione <a href="{{ "partecipa/" | relURL }}">Partecipa</a> per tutti i modi di contribuire.</p>
+              <p>{{ if $isEN }}It depends on your role. If you are a <strong>citizen</strong>, share the reports and ask your municipality about its position on digital sovereignty. If you <strong>work in a PA</strong>, check your body and propose an internal assessment. If you are a <strong>politician</strong>, use the data for formal questions and proposals. If you are a <strong>researcher</strong>, analyse the data and publish. See the <a href="{{ "partecipa/" | relLangURL }}">Get Involved</a> section for all the ways to contribute.{{ else }}Dipende dal tuo ruolo. Se sei un <strong>cittadino</strong>, condividi i report e chiedi al tuo Comune la posizione sulla sovranità digitale. Se <strong>lavori in una PA</strong>, verifica il tuo ente e proponi una valutazione interna. Se sei un <strong>politico</strong>, usa i dati per interrogazioni e proposte. Se sei un <strong>ricercatore</strong>, analizza i dati e pubblica. Consulta la sezione <a href="{{ "partecipa/" | relLangURL }}">Partecipa</a> per tutti i modi di contribuire.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -191,28 +192,28 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h24">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-24" aria-expanded="false" aria-controls="faq-24">
-              L'Osservatorio è contro i provider americani?
+              {{ if $isEN }}Is the Observatory against American providers?{{ else }}L'Osservatorio è contro i provider americani?{{ end }}
             </button>
           </h3>
           <div id="faq-24" class="accordion-collapse collapse" aria-labelledby="faq-h24" data-bs-parent="#faq-perche">
             <div class="accordion-body">
-              <p>No. L'Osservatorio non giudica la qualità dei servizi e non è contro nessun fornitore. Documenta un fatto: quando la PA affida i propri dati a un provider soggetto a giurisdizione extra-UE, si crea una <strong>dipendenza giurisdizionale</strong> che ha implicazioni concrete sulla protezione dei dati dei cittadini e sull'autonomia istituzionale. Il nostro lavoro è misurare e rendere visibile questa dipendenza con dati oggettivi.</p>
+              <p>{{ if $isEN }}No. The Observatory does not judge the quality of the services and is not against any provider. It documents a fact: when the PA entrusts its data to a provider subject to non-EU jurisdiction, a <strong>jurisdictional dependence</strong> is created that has concrete implications for the protection of citizens' data and for institutional autonomy. Our work is to measure and make this dependence visible with objective data.{{ else }}No. L'Osservatorio non giudica la qualità dei servizi e non è contro nessun fornitore. Documenta un fatto: quando la PA affida i propri dati a un provider soggetto a giurisdizione extra-UE, si crea una <strong>dipendenza giurisdizionale</strong> che ha implicazioni concrete sulla protezione dei dati dei cittadini e sull'autonomia istituzionale. Il nostro lavoro è misurare e rendere visibile questa dipendenza con dati oggettivi.{{ end }}</p>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 class="h4 mb-3 mt-5">Dati e Metodologia</h2>
+      <h2 class="h4 mb-3 mt-5">{{ if $isEN }}Data and Methodology{{ else }}Dati e Metodologia{{ end }}</h2>
       <div class="accordion" id="faq-dati">
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h9">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-9" aria-expanded="false" aria-controls="faq-9">
-              Da dove provengono i dati degli enti PA?
+              {{ if $isEN }}Where does the PA body data come from?{{ else }}Da dove provengono i dati degli enti PA?{{ end }}
             </button>
           </h3>
           <div id="faq-9" class="accordion-collapse collapse" aria-labelledby="faq-h9" data-bs-parent="#faq-dati">
             <div class="accordion-body">
-              <p>L'elenco degli enti e dei relativi domini proviene dall'<strong>Indice delle Pubbliche Amministrazioni</strong> (IndicePA), la banca dati ufficiale gestita da AgID che raccoglie le informazioni di tutte le PA italiane. I dati sui provider di posta vengono poi ottenuti analizzando i record MX di ciascun dominio.</p>
+              <p>{{ if $isEN }}The list of bodies and their domains comes from the <strong>Index of Public Administrations</strong> (IndicePA), the official database managed by AgID that gathers information on all Italian PAs. The data on email providers is then obtained by analysing the MX records of each domain.{{ else }}L'elenco degli enti e dei relativi domini proviene dall'<strong>Indice delle Pubbliche Amministrazioni</strong> (IndicePA), la banca dati ufficiale gestita da AgID che raccoglie le informazioni di tutte le PA italiane. I dati sui provider di posta vengono poi ottenuti analizzando i record MX di ciascun dominio.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -220,12 +221,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h10">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-10" aria-expanded="false" aria-controls="faq-10">
-              I dati sono pubblici e riutilizzabili?
+              {{ if $isEN }}Is the data public and reusable?{{ else }}I dati sono pubblici e riutilizzabili?{{ end }}
             </button>
           </h3>
           <div id="faq-10" class="accordion-collapse collapse" aria-labelledby="faq-h10" data-bs-parent="#faq-dati">
             <div class="accordion-body">
-              <p>Sì. Tutti i dati e i report sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Possono essere liberamente consultati, scaricati, riutilizzati e redistribuiti, a condizione di citare la fonte e mantenere la stessa licenza per i lavori derivati.</p>
+              <p>{{ if $isEN }}Yes. All data and reports are released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-SA 4.0</a> licence. They can be freely consulted, downloaded, reused and redistributed, provided that the source is cited and the same licence is maintained for derivative works.{{ else }}Sì. Tutti i dati e i report sono rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Possono essere liberamente consultati, scaricati, riutilizzati e redistribuiti, a condizione di citare la fonte e mantenere la stessa licenza per i lavori derivati.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -233,12 +234,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h11">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-11" aria-expanded="false" aria-controls="faq-11">
-              Come posso segnalare un errore nei dati?
+              {{ if $isEN }}How can I report an error in the data?{{ else }}Come posso segnalare un errore nei dati?{{ end }}
             </button>
           </h3>
           <div id="faq-11" class="accordion-collapse collapse" aria-labelledby="faq-h11" data-bs-parent="#faq-dati">
             <div class="accordion-body">
-              <p>Puoi aprire una segnalazione su <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues" target="_blank" rel="noopener">GitHub Issues</a>. Apprezziamo ogni contributo per migliorare la qualità e l'accuratezza dei dati.</p>
+              <p>{{ if $isEN }}You can open a report on <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues" target="_blank" rel="noopener">GitHub Issues</a>. We appreciate every contribution to improving the quality and accuracy of the data.{{ else }}Puoi aprire una segnalazione su <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues" target="_blank" rel="noopener">GitHub Issues</a>. Apprezziamo ogni contributo per migliorare la qualità e l'accuratezza dei dati.{{ end }}</p>
             </div>
           </div>
         </div>

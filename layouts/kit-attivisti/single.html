@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
 
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">Non serve essere esperti di tecnologia per agire. Questo kit raccoglie strumenti pratici per chiedere conto alla tua amministrazione e diffondere consapevolezza sulla sovranità digitale.</p>
+      <p class="lead mb-5">{{ if $isEN }}You don't need to be a technology expert to act. This kit gathers practical tools to hold your administration to account and spread awareness of digital sovereignty.{{ else }}Non serve essere esperti di tecnologia per agire. Questo kit raccoglie strumenti pratici per chiedere conto alla tua amministrazione e diffondere consapevolezza sulla sovranità digitale.{{ end }}</p>
     </div>
   </div>
 
@@ -15,9 +16,9 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-people"></use></svg>
-          <span>Il cambiamento parte dal basso</span>
+          <span>{{ if $isEN }}Change starts from the ground up{{ else }}Il cambiamento parte dal basso{{ end }}</span>
         </div>
-        <p>Quando un cittadino chiede al proprio Comune dove finiscono le sue email, l'amministrazione è costretta a porsi la domanda. La pressione civica, moltiplicata, diventa consapevolezza istituzionale e poi azione.</p>
+        <p>{{ if $isEN }}When a citizen asks their municipality where their emails end up, the administration is forced to ask itself the question. Civic pressure, multiplied, becomes institutional awareness and then action.{{ else }}Quando un cittadino chiede al proprio Comune dove finiscono le sue email, l'amministrazione è costretta a porsi la domanda. La pressione civica, moltiplicata, diventa consapevolezza istituzionale e poi azione.{{ end }}</p>
       </div>
     </div>
   </div>
@@ -25,7 +26,7 @@
   <!-- Cosa puoi fare -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Cosa puoi fare, concretamente</h2>
+      <h2 class="mb-4">{{ if $isEN }}What you can do, concretely{{ else }}Cosa puoi fare, concretamente{{ end }}</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
@@ -33,8 +34,8 @@
               <div class="categoryicon-top">
                 <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-search"></use></svg>
               </div>
-              <h3 class="card-title h6 text-primary">1. Verifica il tuo ente</h3>
-              <p class="card-text small">Cerca il tuo Comune, la tua ASL o la tua scuola nei dati dell'Osservatorio e scopri quale provider gestisce le loro email e sotto quale giurisdizione.</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}1. Check your public body{{ else }}1. Verifica il tuo ente{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Search for your municipality, your local health authority or your school in the Observatory's data and find out which provider handles their email and under which jurisdiction.{{ else }}Cerca il tuo Comune, la tua ASL o la tua scuola nei dati dell'Osservatorio e scopri quale provider gestisce le loro email e sotto quale giurisdizione.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -44,8 +45,8 @@
               <div class="categoryicon-top">
                 <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-comment"></use></svg>
               </div>
-              <h3 class="card-title h6 text-primary">2. Fai la domanda giusta</h3>
-              <p class="card-text small">Scrivi al tuo Comune (PEC, consiglio comunale, accesso civico) e chiedi quale provider email usa, dove sono archiviati i dati e se è stata fatta una valutazione del rischio giurisdizionale.</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}2. Ask the right question{{ else }}2. Fai la domanda giusta{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Write to your municipality (certified email, town council, civic access request) and ask which email provider it uses, where the data is stored and whether a jurisdictional risk assessment has been carried out.{{ else }}Scrivi al tuo Comune (PEC, consiglio comunale, accesso civico) e chiedi quale provider email usa, dove sono archiviati i dati e se è stata fatta una valutazione del rischio giurisdizionale.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -55,8 +56,8 @@
               <div class="categoryicon-top">
                 <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-share"></use></svg>
               </div>
-              <h3 class="card-title h6 text-primary">3. Diffondi i dati</h3>
-              <p class="card-text small">Condividi i risultati sui social e con la stampa locale. Una notizia su "dove finiscono le email del nostro Comune" ha forte impatto sul territorio.</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}3. Spread the data{{ else }}3. Diffondi i dati{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Share the results on social media and with the local press. A story about "where our municipality's emails end up" has a strong local impact.{{ else }}Condividi i risultati sui social e con la stampa locale. Una notizia su "dove finiscono le email del nostro Comune" ha forte impatto sul territorio.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -66,8 +67,8 @@
               <div class="categoryicon-top">
                 <svg class="icon icon-primary icon-sm" aria-hidden="true"><use href="{{ $spritesURL }}#it-pa"></use></svg>
               </div>
-              <h3 class="card-title h6 text-primary">4. Porta il tema in consiglio</h3>
-              <p class="card-text small">Proponi a un consigliere comunale di tua fiducia una mozione o un'interrogazione sulla sovranità digitale dell'ente, usando i dati come base.</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}4. Bring the issue to the council{{ else }}4. Porta il tema in consiglio{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Propose to a town councillor you trust a motion or a formal question on the public body's digital sovereignty, using the data as a basis.{{ else }}Proponi a un consigliere comunale di tua fiducia una mozione o un'interrogazione sulla sovranità digitale dell'ente, usando i dati come base.{{ end }}</p>
             </div>
           </div>
         </div>
@@ -78,11 +79,21 @@
   <!-- Accesso civico -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Modello di richiesta di accesso civico</h2>
-      <p>Puoi usare l'accesso civico (FOIA, D.Lgs. 33/2013) per ottenere informazioni dall'ente. Ecco un testo di esempio da adattare:</p>
+      <h2 class="mb-4">{{ if $isEN }}Civic access request template{{ else }}Modello di richiesta di accesso civico{{ end }}</h2>
+      <p>{{ if $isEN }}You can use civic access (FOIA, Legislative Decree 33/2013) to obtain information from the public body. Here is a sample text to adapt:{{ else }}Puoi usare l'accesso civico (FOIA, D.Lgs. 33/2013) per ottenere informazioni dall'ente. Ecco un testo di esempio da adattare:{{ end }}</p>
       <div class="card card-bg rounded shadow-sm">
         <div class="card-body">
-          <p class="small mb-0" style="font-family: monospace; white-space: pre-wrap; background: #f5f5f5; padding: 16px; border-radius: 4px;">Oggetto: Richiesta di accesso civico generalizzato (art. 5, c. 2, D.Lgs. 33/2013)
+          <p class="small mb-0" style="font-family: monospace; white-space: pre-wrap; background: #f5f5f5; padding: 16px; border-radius: 4px;">{{ if $isEN }}Subject: Generalised civic access request (art. 5, para. 2, Legislative Decree 33/2013)
+
+The undersigned [name] requests to know:
+1. which provider handles the public body's email service;
+2. in which country the email data is stored;
+3. whether the provider is subject to non-EU legislation that would allow
+   access by foreign authorities (e.g. the CLOUD Act);
+4. whether a data protection impact assessment (DPIA) has been carried out
+   in relation to that service.
+
+Yours faithfully, [name, date]{{ else }}Oggetto: Richiesta di accesso civico generalizzato (art. 5, c. 2, D.Lgs. 33/2013)
 
 Il/la sottoscritto/a [nome], chiede di conoscere:
 1. quale fornitore gestisce il servizio di posta elettronica dell'ente;
@@ -92,23 +103,23 @@ Il/la sottoscritto/a [nome], chiede di conoscere:
 4. se è stata effettuata una valutazione d'impatto sulla protezione
    dei dati (DPIA) relativa a tale servizio.
 
-Distinti saluti, [nome, data]</p>
+Distinti saluti, [nome, data]{{ end }}</p>
         </div>
       </div>
-      <p class="small text-muted mt-2">Questo modello è fornito a titolo informativo e va adattato al caso concreto. Non costituisce consulenza legale.</p>
+      <p class="small text-muted mt-2">{{ if $isEN }}This template is provided for informational purposes and must be adapted to the specific case. It does not constitute legal advice.{{ else }}Questo modello è fornito a titolo informativo e va adattato al caso concreto. Non costituisce consulenza legale.{{ end }}</p>
     </div>
   </div>
 
   <!-- Messaggi chiave -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Messaggi chiave (per social e conversazioni)</h2>
+      <h2 class="mb-4">{{ if $isEN }}Key messages (for social media and conversations){{ else }}Messaggi chiave (per social e conversazioni){{ end }}</h2>
       <div class="callout">
         <ul class="mb-0">
-          <li>"Quando scrivi al tuo Comune, i tuoi dati possono finire su server soggetti a leggi straniere."</li>
-          <li>"La sovranità digitale non è tecnicismo: è chi controlla i dati dei cittadini."</li>
-          <li>"Non è contro nessun fornitore: è a favore del controllo pubblico sui dati pubblici."</li>
-          <li>"Esistono alternative europee conformi. Serve la volontà di usarle."</li>
+          <li>{{ if $isEN }}"When you write to your municipality, your data may end up on servers subject to foreign laws."{{ else }}"Quando scrivi al tuo Comune, i tuoi dati possono finire su server soggetti a leggi straniere."{{ end }}</li>
+          <li>{{ if $isEN }}"Digital sovereignty is not a technicality: it's about who controls citizens' data."{{ else }}"La sovranità digitale non è tecnicismo: è chi controlla i dati dei cittadini."{{ end }}</li>
+          <li>{{ if $isEN }}"It's not against any provider: it's in favour of public control over public data."{{ else }}"Non è contro nessun fornitore: è a favore del controllo pubblico sui dati pubblici."{{ end }}</li>
+          <li>{{ if $isEN }}"Compliant European alternatives exist. What's needed is the will to use them."{{ else }}"Esistono alternative europee conformi. Serve la volontà di usarle."{{ end }}</li>
         </ul>
       </div>
     </div>
@@ -120,14 +131,14 @@ Distinti saluti, [nome, data]</p>
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
-          <span>Scarica il kit</span>
+          <span>{{ if $isEN }}Download the kit{{ else }}Scarica il kit{{ end }}</span>
         </div>
-        <p>Porta il kit con te: una sintesi di 2 pagine con i passi pratici e il modello di richiesta.</p>
+        <p>{{ if $isEN }}Take the kit with you: a 2-page summary with the practical steps and the request template.{{ else }}Porta il kit con te: una sintesi di 2 pagine con i passi pratici e il modello di richiesta.{{ end }}</p>
         <a class="btn btn-primary btn-sm" href="{{ "pdf/kit-attivisti-sovranita-digitale.pdf" | relURL }}" download>
           <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-          Scarica Kit Attivisti (PDF)
+          {{ if $isEN }}Download Activist Kit (PDF){{ else }}Scarica Kit Attivisti (PDF){{ end }}
         </a>
-        <p class="mt-3 mb-0">Vuoi coordinarti con altri? <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">Unisciti al canale Telegram</a>.</p>
+        <p class="mt-3 mb-0">{{ if $isEN }}Want to coordinate with others?{{ else }}Vuoi coordinarti con altri?{{ end }} <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">{{ if $isEN }}Join the Telegram channel{{ else }}Unisciti al canale Telegram{{ end }}</a>.</p>
       </div>
     </div>
   </div>

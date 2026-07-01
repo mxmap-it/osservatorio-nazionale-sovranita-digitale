@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 {{ $kpi := site.Data.kpi }}
 <div class="container-xxl section-spacing-lg">
@@ -7,15 +8,15 @@
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">Questa pagina raccoglie i dati essenziali e le raccomandazioni per chi opera nelle istituzioni, nel governo e nel parlamento. L'obiettivo è fornire gli strumenti per decisioni informate sulla sovranità digitale della Pubblica Amministrazione.</p>
+      <p class="lead mb-5">{{ if $isEN }}This page gathers the essential data and recommendations for those working in institutions, government and parliament. The aim is to provide the tools for informed decisions on the digital sovereignty of the Public Administration.{{ else }}Questa pagina raccoglie i dati essenziali e le raccomandazioni per chi opera nelle istituzioni, nel governo e nel parlamento. L'obiettivo è fornire gli strumenti per decisioni informate sulla sovranità digitale della Pubblica Amministrazione.{{ end }}</p>
     </div>
   </div>
 
   <!-- Numeri chiave -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">I numeri della sovranità digitale</h2>
-      <p class="text-muted mb-4">Dati aggiornati all'ultimo report disponibile. Fonte: <a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> su dati <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a>.</p>
+      <h2 class="mb-4">{{ if $isEN }}The figures of digital sovereignty{{ else }}I numeri della sovranità digitale{{ end }}</h2>
+      <p class="text-muted mb-4">{{ if $isEN }}Data updated to the latest available report. Source: <a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> on <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a> data.{{ else }}Dati aggiornati all'ultimo report disponibile. Fonte: <a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> su dati <a href="https://indicepa.gov.it" target="_blank" rel="noopener">IndicePA</a>.{{ end }}</p>
     </div>
   </div>
 
@@ -23,9 +24,9 @@
     <div class="col-lg-3 col-md-6">
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
-          <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</div>
-          <p class="card-text mb-0"><strong>Enti PA monitorati</strong></p>
-          <p class="small text-muted">Dall'Indice delle Pubbliche Amministrazioni</p>
+          <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . (cond $isEN "- . ," "- , .") }}{{ else }}~23.000{{ end }}</div>
+          <p class="card-text mb-0"><strong>{{ if $isEN }}PA bodies monitored{{ else }}Enti PA monitorati{{ end }}</strong></p>
+          <p class="small text-muted">{{ if $isEN }}From the Index of Public Administrations{{ else }}Dall'Indice delle Pubbliche Amministrazioni{{ end }}</p>
         </div>
       </div>
     </div>
@@ -33,8 +34,8 @@
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
           <div class="h1 text-danger mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.extra_eu.pct "ready" (not $kpi.placeholder)) }}</div>
-          <p class="card-text mb-0"><strong>PA su provider extra-UE</strong></p>
-          <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider soggetti a giurisdizione extra-UE{{ end }}</p>
+          <p class="card-text mb-0"><strong>{{ if $isEN }}PA on non-EU providers{{ else }}PA su provider extra-UE{{ end }}</strong></p>
+          <p class="small text-muted">{{ if $kpi.placeholder }}{{ if $isEN }}Data being updated{{ else }}Dato in aggiornamento{{ end }}{{ else }}{{ if $isEN }}Providers subject to non-EU jurisdiction{{ else }}Provider soggetti a giurisdizione extra-UE{{ end }}{{ end }}</p>
         </div>
       </div>
     </div>
@@ -42,8 +43,8 @@
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
           <div class="h1 text-warning mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.it.pct "ready" (not $kpi.placeholder)) }}</div>
-          <p class="card-text mb-0"><strong>PA su provider italiani</strong></p>
-          <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider con sede in Italia{{ end }}</p>
+          <p class="card-text mb-0"><strong>{{ if $isEN }}PA on Italian providers{{ else }}PA su provider italiani{{ end }}</strong></p>
+          <p class="small text-muted">{{ if $kpi.placeholder }}{{ if $isEN }}Data being updated{{ else }}Dato in aggiornamento{{ end }}{{ else }}{{ if $isEN }}Providers based in Italy{{ else }}Provider con sede in Italia{{ end }}{{ end }}</p>
         </div>
       </div>
     </div>
@@ -51,15 +52,15 @@
       <div class="card card-bg rounded shadow-sm text-center h-100">
         <div class="card-body py-4">
           <div class="h1 text-success mb-1">{{ partial "kpi-pct.html" (dict "v" $kpi.sovereignty.eu_non_it.pct "ready" (not $kpi.placeholder)) }}</div>
-          <p class="card-text mb-0"><strong>PA su provider UE</strong></p>
-          <p class="small text-muted">{{ if $kpi.placeholder }}Dato in aggiornamento{{ else }}Provider UE non italiani{{ end }}</p>
+          <p class="card-text mb-0"><strong>{{ if $isEN }}PA on EU providers{{ else }}PA su provider UE{{ end }}</strong></p>
+          <p class="small text-muted">{{ if $kpi.placeholder }}{{ if $isEN }}Data being updated{{ else }}Dato in aggiornamento{{ end }}{{ else }}{{ if $isEN }}Non-Italian EU providers{{ else }}Provider UE non italiani{{ end }}{{ end }}</p>
         </div>
       </div>
     </div>
   </div>
   {{ if not $kpi.placeholder }}
   <div class="row justify-content-center mb-5"><div class="col-lg-10">
-    <p class="small text-muted">Ultimo aggiornamento dati: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}. Fonte: MxMap.it.</p>
+    <p class="small text-muted">{{ if $isEN }}Data last updated{{ else }}Ultimo aggiornamento dati{{ end }}: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}{{ with $kpi.totals.coverage_pct }} — {{ if $isEN }}coverage{{ else }}copertura{{ end }} {{ printf "%.0f%%" . }}{{ end }}. {{ if $isEN }}Source{{ else }}Fonte{{ end }}: MxMap.it.</p>
   </div></div>
   {{ end }}
 
@@ -67,20 +68,20 @@
   {{ with $kpi.by_cluster }}
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-2">Sovranità per categoria di ente</h2>
-      <p class="text-muted mb-4">Quota di enti su provider soggetti a giurisdizione <strong>extra-UE</strong> (es. CLOUD Act), per categoria. Ordinate dalla più dipendente. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.</p>
+      <h2 class="mb-2">{{ if $isEN }}Sovereignty by category of body{{ else }}Sovranità per categoria di ente{{ end }}</h2>
+      <p class="text-muted mb-4">{{ if $isEN }}Share of bodies on providers subject to <strong>non-EU</strong> jurisdiction (e.g. CLOUD Act), by category. Ordered from the most dependent. Source: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.{{ else }}Quota di enti su provider soggetti a giurisdizione <strong>extra-UE</strong> (es. CLOUD Act), per categoria. Ordinate dalla più dipendente. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.{{ end }}</p>
       {{ range sort . "usa_pct" "desc" }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities "- , ." }} enti · {{ .dominant_provider }}</span></span>
+          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }} · {{ .dominant_provider }}</span></span>
           <span class="small fw-bold text-danger">{{ printf "%.0f%%" .usa_pct }}</span>
         </div>
-        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .cluster }}: {{ printf "%.0f%%" .usa_pct }} su provider extra-UE">
+        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .cluster }}: {{ printf "%.0f%%" .usa_pct }} {{ if $isEN }}on non-EU providers{{ else }}su provider extra-UE{{ end }}">
           <div class="rounded" style="height:10px;width:{{ .usa_pct }}%;background:#D9364F;"></div>
         </div>
       </div>
       {{ end }}
-      <p class="small text-muted mt-3">"Extra-UE" indica enti la cui posta è gestita da provider soggetti a normative non europee. Dato aggregato per categoria IPA — fonte MxMap.it su IndicePA.</p>
+      <p class="small text-muted mt-3">{{ if $isEN }}"Non-EU" indicates bodies whose email is managed by providers subject to non-European regulations. Figure aggregated by IPA category — source MxMap.it on IndicePA.{{ else }}"Extra-UE" indica enti la cui posta è gestita da provider soggetti a normative non europee. Dato aggregato per categoria IPA — fonte MxMap.it su IndicePA.{{ end }}</p>
     </div>
   </div>
   {{ end }}
@@ -89,20 +90,20 @@
   {{ with $kpi.top_providers }}
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-2">Provider più diffusi nella PA</h2>
-      <p class="text-muted mb-3">Per numero di enti serviti, con la relativa giurisdizione. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.</p>
+      <h2 class="mb-2">{{ if $isEN }}Most widespread providers in the PA{{ else }}Provider più diffusi nella PA{{ end }}</h2>
+      <p class="text-muted mb-3">{{ if $isEN }}By number of bodies served, with their jurisdiction. Source: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.{{ else }}Per numero di enti serviti, con la relativa giurisdizione. Fonte: <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>.{{ end }}</p>
       <p class="small mb-4">
-        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#0066CC;border-radius:3px;vertical-align:middle;"></span> Italiano</span>
-        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#1D9E75;border-radius:3px;vertical-align:middle;"></span> UE</span>
-        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#D9364F;border-radius:3px;vertical-align:middle;"></span> Extra-UE</span>
-        <span class="d-inline-block"><span style="display:inline-block;width:12px;height:12px;background:#9AA6B2;border-radius:3px;vertical-align:middle;"></span> Sconosciuto</span>
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#0066CC;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Italian{{ else }}Italiano{{ end }}</span>
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#1D9E75;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}EU{{ else }}UE{{ end }}</span>
+        <span class="d-inline-block me-3"><span style="display:inline-block;width:12px;height:12px;background:#D9364F;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Non-EU{{ else }}Extra-UE{{ end }}</span>
+        <span class="d-inline-block"><span style="display:inline-block;width:12px;height:12px;background:#9AA6B2;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Unknown{{ else }}Sconosciuto{{ end }}</span>
       </p>
       {{ range . }}
       {{ $c := "#9AA6B2" }}
       {{ if eq .sovereignty "extra_eu" }}{{ $c = "#D9364F" }}{{ else if eq .sovereignty "it" }}{{ $c = "#0066CC" }}{{ else if eq .sovereignty "eu_non_it" }}{{ $c = "#1D9E75" }}{{ end }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count "- , ." }} enti</span></span>
+          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
           <span class="small fw-bold">{{ printf "%.1f%%" .pct }}</span>
         </div>
         <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .name }}: {{ printf "%.1f%%" .pct }}">
@@ -117,38 +118,38 @@
   <!-- Il problema -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Il problema in sintesi</h2>
+      <h2 class="mb-4">{{ if $isEN }}The problem in brief{{ else }}Il problema in sintesi{{ end }}</h2>
 
       <div class="callout danger">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
-          <span>Rischio giurisdizionale</span>
+          <span>{{ if $isEN }}Jurisdictional risk{{ else }}Rischio giurisdizionale{{ end }}</span>
         </div>
-        <p>Quando una PA italiana utilizza un servizio email gestito da un provider soggetto a giurisdizione extra-UE (ad esempio statunitense), le comunicazioni istituzionali — incluse quelle contenenti dati personali dei cittadini — possono essere accessibili ad autorità straniere in virtù di leggi come il <strong>CLOUD Act</strong> (USA, 2018), anche senza il consenso o la notifica dell'ente italiano.</p>
+        <p>{{ if $isEN }}When an Italian PA uses an email service managed by a provider subject to non-EU jurisdiction (for example US), institutional communications — including those containing citizens' personal data — can be accessible to foreign authorities under laws such as the <strong>CLOUD Act</strong> (USA, 2018), even without the consent or notification of the Italian body.{{ else }}Quando una PA italiana utilizza un servizio email gestito da un provider soggetto a giurisdizione extra-UE (ad esempio statunitense), le comunicazioni istituzionali — incluse quelle contenenti dati personali dei cittadini — possono essere accessibili ad autorità straniere in virtù di leggi come il <strong>CLOUD Act</strong> (USA, 2018), anche senza il consenso o la notifica dell'ente italiano.{{ end }}</p>
       </div>
 
       <div class="callout warning mt-3">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
-          <span>Incompatibilità normativa</span>
+          <span>{{ if $isEN }}Regulatory incompatibility{{ else }}Incompatibilità normativa{{ end }}</span>
         </div>
-        <p>La Corte di Giustizia dell'UE ha invalidato due volte gli accordi di trasferimento dati verso gli USA (<strong>Schrems I</strong>, 2015 e <strong>Schrems II</strong>, 2020) per insufficiente protezione. Il nuovo EU-US Data Privacy Framework (2023) è già oggetto di contestazioni. Le PA che affidano i dati a provider USA operano in un contesto giuridico instabile.</p>
+        <p>{{ if $isEN }}The Court of Justice of the EU has twice invalidated the data transfer agreements to the USA (<strong>Schrems I</strong>, 2015 and <strong>Schrems II</strong>, 2020) for insufficient protection. The new EU-US Data Privacy Framework (2023) is already the subject of challenges. PAs that entrust data to US providers operate in an unstable legal context.{{ else }}La Corte di Giustizia dell'UE ha invalidato due volte gli accordi di trasferimento dati verso gli USA (<strong>Schrems I</strong>, 2015 e <strong>Schrems II</strong>, 2020) per insufficiente protezione. Il nuovo EU-US Data Privacy Framework (2023) è già oggetto di contestazioni. Le PA che affidano i dati a provider USA operano in un contesto giuridico instabile.{{ end }}</p>
       </div>
 
       <div class="callout mt-3">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
-          <span>Dipendenza strategica</span>
+          <span>{{ if $isEN }}Strategic dependence{{ else }}Dipendenza strategica{{ end }}</span>
         </div>
-        <p>La concentrazione dei servizi digitali della PA su pochi grandi provider extra-europei crea una <strong>dipendenza strategica</strong> che espone il Paese a rischi in caso di tensioni geopolitiche, sanzioni, interruzioni di servizio o cambiamenti unilaterali delle condizioni contrattuali.</p>
+        <p>{{ if $isEN }}The concentration of the PA's digital services on a few large non-European providers creates a <strong>strategic dependence</strong> that exposes the country to risks in the event of geopolitical tensions, sanctions, service interruptions or unilateral changes to contractual terms.{{ else }}La concentrazione dei servizi digitali della PA su pochi grandi provider extra-europei crea una <strong>dipendenza strategica</strong> che espone il Paese a rischi in caso di tensioni geopolitiche, sanzioni, interruzioni di servizio o cambiamenti unilaterali delle condizioni contrattuali.{{ end }}</p>
       </div>
 
       <div class="callout callout-highlight mt-3">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-pa"></use></svg>
-          <span>Dichiarare è più facile che costruire</span>
+          <span>{{ if $isEN }}Declaring is easier than building{{ else }}Dichiarare è più facile che costruire{{ end }}</span>
         </div>
-        <p>L'Italia ha firmato la Dichiarazione europea sulla sovranità digitale (2025) e si è dotata di una Strategia Cloud, ma la migrazione reale resta limitata: lo stesso <strong>Polo Strategico Nazionale</strong> si appoggia a hyperscaler statunitensi per i dati ordinari e critici, tutelando per legge solo quelli classificati "strategici". Inoltre è la <strong>nazionalità del fornitore</strong> — non la collocazione del dato — a determinare la giurisdizione. Il divario tra ciò che si dichiara e ciò che si costruisce è esattamente ciò che l'Osservatorio misura.</p>
+        <p>{{ if $isEN }}Italy signed the European Declaration on digital sovereignty (2025) and has adopted a Cloud Strategy, but real migration remains limited: the <strong>National Strategic Hub</strong> itself relies on US hyperscalers for ordinary and critical data, legally protecting only those classified as "strategic". Moreover, it is the <strong>nationality of the supplier</strong> — not the location of the data — that determines jurisdiction. The gap between what is declared and what is built is exactly what the Observatory measures.{{ else }}L'Italia ha firmato la Dichiarazione europea sulla sovranità digitale (2025) e si è dotata di una Strategia Cloud, ma la migrazione reale resta limitata: lo stesso <strong>Polo Strategico Nazionale</strong> si appoggia a hyperscaler statunitensi per i dati ordinari e critici, tutelando per legge solo quelli classificati "strategici". Inoltre è la <strong>nazionalità del fornitore</strong> — non la collocazione del dato — a determinare la giurisdizione. Il divario tra ciò che si dichiara e ciò che si costruisce è esattamente ciò che l'Osservatorio misura.{{ end }}</p>
       </div>
     </div>
   </div>
@@ -156,47 +157,47 @@
   <!-- Contesto normativo -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Quadro normativo di riferimento</h2>
+      <h2 class="mb-4">{{ if $isEN }}Reference regulatory framework{{ else }}Quadro normativo di riferimento{{ end }}</h2>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead class="table-primary">
             <tr>
-              <th scope="col">Norma / Atto</th>
-              <th scope="col">Rilevanza</th>
+              <th scope="col">{{ if $isEN }}Rule / Act{{ else }}Norma / Atto{{ end }}</th>
+              <th scope="col">{{ if $isEN }}Relevance{{ else }}Rilevanza{{ end }}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>GDPR</strong> (Reg. UE 2016/679)</td>
-              <td>Vieta il trasferimento di dati personali verso paesi terzi senza garanzie adeguate (Capo V)</td>
+              <td><strong>GDPR</strong> ({{ if $isEN }}EU Reg. 2016/679{{ else }}Reg. UE 2016/679{{ end }})</td>
+              <td>{{ if $isEN }}Prohibits the transfer of personal data to third countries without adequate safeguards (Chapter V){{ else }}Vieta il trasferimento di dati personali verso paesi terzi senza garanzie adeguate (Capo V){{ end }}</td>
             </tr>
             <tr>
-              <td><strong>GDPR — artt. 48 e 115</strong></td>
-              <td>Vietano di dare seguito a ordini di autorità di paesi terzi (es. CLOUD Act) non fondati su accordi internazionali: conflitto diretto con la giurisdizione extra-UE, senza una via d'uscita pulita per il provider</td>
+              <td><strong>{{ if $isEN }}GDPR — arts. 48 and 115{{ else }}GDPR — artt. 48 e 115{{ end }}</strong></td>
+              <td>{{ if $isEN }}Prohibit acting on orders from authorities of third countries (e.g. CLOUD Act) not based on international agreements: a direct conflict with non-EU jurisdiction, with no clean way out for the provider{{ else }}Vietano di dare seguito a ordini di autorità di paesi terzi (es. CLOUD Act) non fondati su accordi internazionali: conflitto diretto con la giurisdizione extra-UE, senza una via d'uscita pulita per il provider{{ end }}</td>
             </tr>
             <tr>
               <td><strong>Schrems II</strong> (CGUE C-311/18, 2020)</td>
-              <td>Ha invalidato il Privacy Shield UE-USA; impone valutazione caso per caso delle clausole contrattuali standard</td>
+              <td>{{ if $isEN }}Invalidated the EU-US Privacy Shield; requires case-by-case assessment of standard contractual clauses{{ else }}Ha invalidato il Privacy Shield UE-USA; impone valutazione caso per caso delle clausole contrattuali standard{{ end }}</td>
             </tr>
             <tr>
               <td><strong>CLOUD Act</strong> (USA, 2018)</td>
-              <td>Consente alle autorità USA di richiedere dati a provider americani anche se archiviati in UE</td>
+              <td>{{ if $isEN }}Allows US authorities to request data from American providers even if stored in the EU{{ else }}Consente alle autorità USA di richiedere dati a provider americani anche se archiviati in UE{{ end }}</td>
             </tr>
             <tr>
-              <td><strong>Strategia Cloud Italia</strong> (2021)</td>
-              <td>Classifica i dati della PA in strategici, critici e ordinari; prevede migrazione verso infrastrutture qualificate</td>
+              <td><strong>{{ if $isEN }}Italy's Cloud Strategy{{ else }}Strategia Cloud Italia{{ end }}</strong> (2021)</td>
+              <td>{{ if $isEN }}Classifies PA data as strategic, critical and ordinary; provides for migration to qualified infrastructure{{ else }}Classifica i dati della PA in strategici, critici e ordinari; prevede migrazione verso infrastrutture qualificate{{ end }}</td>
             </tr>
             <tr>
-              <td><strong>Regolamento ACN</strong> (cloud PA)</td>
-              <td>Definisce i requisiti per la qualificazione dei servizi cloud per la PA</td>
+              <td><strong>{{ if $isEN }}ACN Regulation{{ else }}Regolamento ACN{{ end }}</strong> ({{ if $isEN }}PA cloud{{ else }}cloud PA{{ end }})</td>
+              <td>{{ if $isEN }}Defines the requirements for the qualification of cloud services for the PA{{ else }}Definisce i requisiti per la qualificazione dei servizi cloud per la PA{{ end }}</td>
             </tr>
             <tr>
               <td><strong>CAD</strong> (D.Lgs. 82/2005)</td>
-              <td>Codice dell'Amministrazione Digitale — disciplina l'uso delle tecnologie nella PA</td>
+              <td>{{ if $isEN }}Digital Administration Code — governs the use of technologies in the PA{{ else }}Codice dell'Amministrazione Digitale — disciplina l'uso delle tecnologie nella PA{{ end }}</td>
             </tr>
             <tr>
-              <td><strong>NIS2</strong> (Dir. UE 2022/2555)</td>
-              <td>Impone requisiti di cybersecurity per soggetti essenziali e importanti, incluse PA</td>
+              <td><strong>NIS2</strong> ({{ if $isEN }}EU Dir. 2022/2555{{ else }}Dir. UE 2022/2555{{ end }})</td>
+              <td>{{ if $isEN }}Imposes cybersecurity requirements on essential and important entities, including PAs{{ else }}Impone requisiti di cybersecurity per soggetti essenziali e importanti, incluse PA{{ end }}</td>
             </tr>
           </tbody>
         </table>
@@ -207,20 +208,20 @@
   <!-- Raccomandazioni -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Raccomandazioni di policy</h2>
-      <p>Sulla base dei dati raccolti, l'Osservatorio formula le seguenti raccomandazioni:</p>
+      <h2 class="mb-4">{{ if $isEN }}Policy recommendations{{ else }}Raccomandazioni di policy{{ end }}</h2>
+      <p>{{ if $isEN }}On the basis of the data collected, the Observatory makes the following recommendations:{{ else }}Sulla base dei dati raccolti, l'Osservatorio formula le seguenti raccomandazioni:{{ end }}</p>
 
       <div class="accordion" id="raccomandazioni">
         <div class="accordion-item">
           <h3 class="accordion-header" id="racc1-head">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#racc1" aria-expanded="true" aria-controls="racc1">
-              1. Censimento obbligatorio dei servizi digitali della PA
+              {{ if $isEN }}1. Mandatory census of the PA's digital services{{ else }}1. Censimento obbligatorio dei servizi digitali della PA{{ end }}
             </button>
           </h3>
           <div id="racc1" class="accordion-collapse collapse show" aria-labelledby="racc1-head" data-bs-parent="#raccomandazioni">
             <div class="accordion-body">
-              <p>Rendere obbligatorio per ogni ente PA la dichiarazione dei servizi digitali utilizzati (email, cloud, collaborazione) e della relativa giurisdizione. Integrare questa informazione nell'IndicePA per renderla pubblica e monitorabile.</p>
-              <p><strong>Destinatari:</strong> AgID, Dipartimento Trasformazione Digitale</p>
+              <p>{{ if $isEN }}Make it mandatory for every PA body to declare the digital services used (email, cloud, collaboration) and their jurisdiction. Integrate this information into IndicePA to make it public and monitorable.{{ else }}Rendere obbligatorio per ogni ente PA la dichiarazione dei servizi digitali utilizzati (email, cloud, collaborazione) e della relativa giurisdizione. Integrare questa informazione nell'IndicePA per renderla pubblica e monitorabile.{{ end }}</p>
+              <p><strong>{{ if $isEN }}Recipients:{{ else }}Destinatari:{{ end }}</strong> AgID, {{ if $isEN }}Department for Digital Transformation{{ else }}Dipartimento Trasformazione Digitale{{ end }}</p>
             </div>
           </div>
         </div>
@@ -228,13 +229,13 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="racc2-head">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc2" aria-expanded="false" aria-controls="racc2">
-              2. Requisiti di sovranità nelle convenzioni Consip
+              {{ if $isEN }}2. Sovereignty requirements in Consip framework agreements{{ else }}2. Requisiti di sovranità nelle convenzioni Consip{{ end }}
             </button>
           </h3>
           <div id="racc2" class="accordion-collapse collapse" aria-labelledby="racc2-head" data-bs-parent="#raccomandazioni">
             <div class="accordion-body">
-              <p>Inserire criteri di sovranità digitale (giurisdizione dei dati, localizzazione dei server, assenza di obblighi verso autorità extra-UE) come requisiti nelle convenzioni Consip per servizi email e cloud della PA.</p>
-              <p><strong>Destinatari:</strong> Consip, MEF, AgID</p>
+              <p>{{ if $isEN }}Introduce digital sovereignty criteria (data jurisdiction, server localization, absence of obligations towards non-EU authorities) as requirements in Consip framework agreements for the PA's email and cloud services.{{ else }}Inserire criteri di sovranità digitale (giurisdizione dei dati, localizzazione dei server, assenza di obblighi verso autorità extra-UE) come requisiti nelle convenzioni Consip per servizi email e cloud della PA.{{ end }}</p>
+              <p><strong>{{ if $isEN }}Recipients:{{ else }}Destinatari:{{ end }}</strong> Consip, MEF, AgID</p>
             </div>
           </div>
         </div>
@@ -242,13 +243,13 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="racc3-head">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc3" aria-expanded="false" aria-controls="racc3">
-              3. Piano nazionale di migrazione con timeline
+              {{ if $isEN }}3. National migration plan with a timeline{{ else }}3. Piano nazionale di migrazione con timeline{{ end }}
             </button>
           </h3>
           <div id="racc3" class="accordion-collapse collapse" aria-labelledby="racc3-head" data-bs-parent="#raccomandazioni">
             <div class="accordion-body">
-              <p>Definire un piano nazionale con scadenze progressive per la migrazione dei servizi email della PA verso provider conformi ai requisiti di sovranità. Prevedere fondi dedicati — eventualmente dal PNRR o dai fondi per la cybersecurity — per supportare gli enti nella transizione.</p>
-              <p><strong>Destinatari:</strong> Presidenza del Consiglio, Parlamento, ACN</p>
+              <p>{{ if $isEN }}Define a national plan with progressive deadlines for the migration of the PA's email services to providers compliant with sovereignty requirements. Provide dedicated funds — possibly from the PNRR or from cybersecurity funds — to support bodies in the transition.{{ else }}Definire un piano nazionale con scadenze progressive per la migrazione dei servizi email della PA verso provider conformi ai requisiti di sovranità. Prevedere fondi dedicati — eventualmente dal PNRR o dai fondi per la cybersecurity — per supportare gli enti nella transizione.{{ end }}</p>
+              <p><strong>{{ if $isEN }}Recipients:{{ else }}Destinatari:{{ end }}</strong> {{ if $isEN }}Presidency of the Council of Ministers, Parliament, ACN{{ else }}Presidenza del Consiglio, Parlamento, ACN{{ end }}</p>
             </div>
           </div>
         </div>
@@ -256,13 +257,13 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="racc4-head">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc4" aria-expanded="false" aria-controls="racc4">
-              4. Monitoraggio continuo e trasparente
+              {{ if $isEN }}4. Continuous and transparent monitoring{{ else }}4. Monitoraggio continuo e trasparente{{ end }}
             </button>
           </h3>
           <div id="racc4" class="accordion-collapse collapse" aria-labelledby="racc4-head" data-bs-parent="#raccomandazioni">
             <div class="accordion-body">
-              <p>Istituzionalizzare il monitoraggio della sovranità digitale della PA, rendendo i dati pubblici e aggiornati periodicamente. L'Osservatorio fornisce già questa funzione come iniziativa civica; le istituzioni possono adottarla, integrarla o affiancarla con iniziative proprie.</p>
-              <p><strong>Destinatari:</strong> AgID, ACN, Parlamento</p>
+              <p>{{ if $isEN }}Institutionalize the monitoring of the PA's digital sovereignty, making the data public and updated periodically. The Observatory already provides this function as a civic initiative; institutions can adopt it, integrate it or flank it with their own initiatives.{{ else }}Istituzionalizzare il monitoraggio della sovranità digitale della PA, rendendo i dati pubblici e aggiornati periodicamente. L'Osservatorio fornisce già questa funzione come iniziativa civica; le istituzioni possono adottarla, integrarla o affiancarla con iniziative proprie.{{ end }}</p>
+              <p><strong>{{ if $isEN }}Recipients:{{ else }}Destinatari:{{ end }}</strong> AgID, ACN, {{ if $isEN }}Parliament{{ else }}Parlamento{{ end }}</p>
             </div>
           </div>
         </div>
@@ -270,13 +271,13 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="racc5-head">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#racc5" aria-expanded="false" aria-controls="racc5">
-              5. Promozione del modello a livello europeo
+              {{ if $isEN }}5. Promotion of the model at European level{{ else }}5. Promozione del modello a livello europeo{{ end }}
             </button>
           </h3>
           <div id="racc5" class="accordion-collapse collapse" aria-labelledby="racc5-head" data-bs-parent="#raccomandazioni">
             <div class="accordion-body">
-              <p>Proporre nelle sedi europee (Consiglio UE, Commissione) l'adozione di un framework comune per il monitoraggio della sovranità digitale delle PA in tutti gli stati membri, partendo dal modello italiano come caso studio.</p>
-              <p><strong>Destinatari:</strong> MAECI, Rappresentanza permanente presso l'UE</p>
+              <p>{{ if $isEN }}Propose, in European fora (Council of the EU, Commission), the adoption of a common framework for monitoring the digital sovereignty of PAs in all member states, starting from the Italian model as a case study.{{ else }}Proporre nelle sedi europee (Consiglio UE, Commissione) l'adozione di un framework comune per il monitoraggio della sovranità digitale delle PA in tutti gli stati membri, partendo dal modello italiano come caso studio.{{ end }}</p>
+              <p><strong>{{ if $isEN }}Recipients:{{ else }}Destinatari:{{ end }}</strong> {{ if $isEN }}MAECI, Permanent Representation to the EU{{ else }}MAECI, Rappresentanza permanente presso l'UE{{ end }}</p>
             </div>
           </div>
         </div>
@@ -287,17 +288,17 @@
   <!-- Cosa puoi fare -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Cosa puoi fare</h2>
+      <h2 class="mb-4">{{ if $isEN }}What you can do{{ else }}Cosa puoi fare{{ end }}</h2>
 
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Se sei un parlamentare</h3>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}If you are a member of parliament{{ else }}Se sei un parlamentare{{ end }}</h3>
               <ul class="mt-2">
-                <li>Presenta un'interrogazione citando i dati dell'Osservatorio</li>
-                <li>Proponi l'inserimento di requisiti di sovranità nella normativa</li>
-                <li>Richiedi un'audizione in commissione sul tema</li>
+                <li>{{ if $isEN }}Table a parliamentary question citing the Observatory's data{{ else }}Presenta un'interrogazione citando i dati dell'Osservatorio{{ end }}</li>
+                <li>{{ if $isEN }}Propose the inclusion of sovereignty requirements in legislation{{ else }}Proponi l'inserimento di requisiti di sovranità nella normativa{{ end }}</li>
+                <li>{{ if $isEN }}Request a committee hearing on the subject{{ else }}Richiedi un'audizione in commissione sul tema{{ end }}</li>
               </ul>
             </div>
           </div>
@@ -305,11 +306,11 @@
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Se sei un dirigente PA</h3>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}If you are a PA manager{{ else }}Se sei un dirigente PA{{ end }}</h3>
               <ul class="mt-2">
-                <li>Verifica la posizione del tuo ente nei dati dell'Osservatorio</li>
-                <li>Avvia una valutazione interna sulla migrazione</li>
-                <li>Richiedi fondi dedicati per la transizione</li>
+                <li>{{ if $isEN }}Check your body's position in the Observatory's data{{ else }}Verifica la posizione del tuo ente nei dati dell'Osservatorio{{ end }}</li>
+                <li>{{ if $isEN }}Start an internal assessment on migration{{ else }}Avvia una valutazione interna sulla migrazione{{ end }}</li>
+                <li>{{ if $isEN }}Request dedicated funds for the transition{{ else }}Richiedi fondi dedicati per la transizione{{ end }}</li>
               </ul>
             </div>
           </div>
@@ -317,11 +318,11 @@
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Se sei un regolatore</h3>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}If you are a regulator{{ else }}Se sei un regolatore{{ end }}</h3>
               <ul class="mt-2">
-                <li>Utilizza i dati per aggiornare le linee guida</li>
-                <li>Avvia verifiche di conformità GDPR</li>
-                <li>Inserisci requisiti di sovranità nelle convenzioni</li>
+                <li>{{ if $isEN }}Use the data to update guidelines{{ else }}Utilizza i dati per aggiornare le linee guida{{ end }}</li>
+                <li>{{ if $isEN }}Launch GDPR compliance checks{{ else }}Avvia verifiche di conformità GDPR{{ end }}</li>
+                <li>{{ if $isEN }}Include sovereignty requirements in framework agreements{{ else }}Inserisci requisiti di sovranità nelle convenzioni{{ end }}</li>
               </ul>
             </div>
           </div>
@@ -336,18 +337,18 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
-          <span>Documenti scaricabili</span>
+          <span>{{ if $isEN }}Downloadable documents{{ else }}Documenti scaricabili{{ end }}</span>
         </div>
-        <p>Scarica i documenti di sintesi pensati per i decisori istituzionali:</p>
+        <p>{{ if $isEN }}Download the summary documents designed for institutional decision-makers:{{ else }}Scarica i documenti di sintesi pensati per i decisori istituzionali:{{ end }}</p>
         <div class="row g-3 mt-1">
           <div class="col-md-6">
             <div class="card card-bg rounded shadow-sm h-100">
               <div class="card-body d-flex flex-column">
                 <h3 class="h6 text-primary">Policy Brief</h3>
-                <p class="small flex-grow-1">Sintesi di 2 pagine con numeri chiave e raccomandazioni per decisori politici.</p>
+                <p class="small flex-grow-1">{{ if $isEN }}A 2-page summary with key figures and recommendations for political decision-makers.{{ else }}Sintesi di 2 pagine con numeri chiave e raccomandazioni per decisori politici.{{ end }}</p>
                 <a class="btn btn-primary btn-sm align-self-start" href="{{ "pdf/policy-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
                   <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                  Scarica PDF
+                  {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
                 </a>
               </div>
             </div>
@@ -356,16 +357,16 @@
             <div class="card card-bg rounded shadow-sm h-100">
               <div class="card-body d-flex flex-column">
                 <h3 class="h6 text-primary">Technical Brief</h3>
-                <p class="small flex-grow-1">Analisi tecnico-normativa approfondita per AgID, ACN, Garante e uffici studi.</p>
+                <p class="small flex-grow-1">{{ if $isEN }}An in-depth technical and regulatory analysis for AgID, ACN, the Garante and research offices.{{ else }}Analisi tecnico-normativa approfondita per AgID, ACN, Garante e uffici studi.{{ end }}</p>
                 <a class="btn btn-primary btn-sm align-self-start" href="{{ "pdf/technical-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
                   <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                  Scarica PDF
+                  {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <p class="mt-3 mb-0">Per ricevere i nuovi documenti appena disponibili, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.</p>
+        <p class="mt-3 mb-0">{{ if $isEN }}To receive new documents as soon as they are available, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">join the Telegram channel</a>.{{ else }}Per ricevere i nuovi documenti appena disponibili, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.{{ end }}</p>
       </div>
     </div>
   </div>

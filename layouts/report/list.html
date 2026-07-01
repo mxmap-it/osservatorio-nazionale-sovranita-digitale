@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 {{ $kpi := site.Data.kpi }}
 {{ $sovColors := dict "extra_eu" "#D9364F" "it" "#0066CC" "eu_non_it" "#1D9E75" "unknown" "#9AA6B2" }}
@@ -10,9 +11,9 @@
       <div class="p-4 rounded" style="background:#FBF1DF;border:1px solid #E8A33D;">
         <div class="d-flex align-items-center flex-wrap mb-2" style="gap:.7rem;">
           <span style="background:#E8A33D;color:#fff;font-size:13px;font-weight:700;letter-spacing:.5px;padding:4px 12px;border-radius:6px;">REPORT BETA</span>
-          <h1 class="mb-0 h2">Stato della Sovranità Digitale della PA italiana</h1>
+          <h1 class="mb-0 h2">{{ if $isEN }}State of Digital Sovereignty of the Italian PA{{ else }}Stato della Sovranità Digitale della PA italiana{{ end }}</h1>
         </div>
-        <p class="mb-0">Report in <strong>versione beta</strong>: i dati provengono da <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a> e la prima misurazione ufficiale non è ancora consolidata. I valori sono <strong>preliminari</strong> e in continuo aggiornamento.{{ if and (not $kpi.placeholder) $kpi.generated_at }} Ultimo aggiornamento dati: <strong>{{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}</strong>{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}.{{ end }}</p>
+        <p class="mb-0">{{ if $isEN }}Report in <strong>beta version</strong>: the data comes from <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a> and the first official measurement is not yet consolidated. The values are <strong>preliminary</strong> and continuously updated.{{ if and (not $kpi.placeholder) $kpi.generated_at }} Data last updated: <strong>{{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}</strong>{{ with $kpi.totals.coverage_pct }} — coverage {{ printf "%.0f%%" . }}{{ end }}.{{ end }}{{ else }}Report in <strong>versione beta</strong>: i dati provengono da <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a> e la prima misurazione ufficiale non è ancora consolidata. I valori sono <strong>preliminari</strong> e in continuo aggiornamento.{{ if and (not $kpi.placeholder) $kpi.generated_at }} Ultimo aggiornamento dati: <strong>{{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}</strong>{{ with $kpi.totals.coverage_pct }} — copertura {{ printf "%.0f%%" . }}{{ end }}.{{ end }}{{ end }}</p>
       </div>
     </div>
   </div>
@@ -22,25 +23,33 @@
   <!-- Sintesi -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">In sintesi</h2>
-      <p>Sono stati analizzati <strong>{{ lang.FormatNumberCustom 0 $kpi.totals.n_entities "- , ." }}</strong> enti della Pubblica Amministrazione italiana registrati nell'IndicePA. Per ciascuno è stato identificato il provider di posta elettronica e la giurisdizione a cui è soggetto.</p>
+      <h2 class="mb-3">{{ if $isEN }}In summary{{ else }}In sintesi{{ end }}</h2>
+      {{ if $isEN }}
+      <p><strong>{{ lang.FormatNumberCustom 0 $kpi.totals.n_entities (cond $isEN "- . ," "- , .") }}</strong> bodies of the Italian Public Administration registered in IndicePA were analysed. For each, the email provider and the jurisdiction to which it is subject were identified.</p>
+      <p class="mb-0">
+        <strong class="text-danger">{{ printf "%.0f%%" $kpi.sovereignty.extra_eu.pct }}</strong> of bodies rely on providers subject to <strong>non-EU</strong> jurisdiction (e.g. CLOUD Act),
+        against <strong style="color:#0066CC">{{ printf "%.0f%%" $kpi.sovereignty.it.pct }}</strong> on Italian providers{{ with $kpi.sovereignty.eu_non_it.pct }} and {{ printf "%.0f%%" . }} on other EU providers{{ end }}.
+      </p>
+      {{ else }}
+      <p>Sono stati analizzati <strong>{{ lang.FormatNumberCustom 0 $kpi.totals.n_entities (cond $isEN "- . ," "- , .") }}</strong> enti della Pubblica Amministrazione italiana registrati nell'IndicePA. Per ciascuno è stato identificato il provider di posta elettronica e la giurisdizione a cui è soggetto.</p>
       <p class="mb-0">
         Il <strong class="text-danger">{{ printf "%.0f%%" $kpi.sovereignty.extra_eu.pct }}</strong> degli enti si affida a provider soggetti a giurisdizione <strong>extra-UE</strong> (es. CLOUD Act),
         contro il <strong style="color:#0066CC">{{ printf "%.0f%%" $kpi.sovereignty.it.pct }}</strong> su provider italiani{{ with $kpi.sovereignty.eu_non_it.pct }} e il {{ printf "%.0f%%" . }} su altri provider UE{{ end }}.
       </p>
+      {{ end }}
     </div>
   </div>
 
   <!-- Foto del momento — Sovranità -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">La fotografia: sovranità dei provider</h2>
+      <h2 class="mb-3">{{ if $isEN }}The snapshot: provider sovereignty{{ else }}La fotografia: sovranità dei provider{{ end }}</h2>
       {{ range slice "extra_eu" "it" "eu_non_it" "unknown" }}
       {{ $s := index $kpi.sovereignty . }}
       {{ $c := index $sovColors . }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ $s.label }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 $s.count "- , ." }} enti</span></span>
+          <span class="small"><strong>{{ $s.label }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 $s.count (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
           <span class="small fw-bold" style="color:{{ $c }}">{{ printf "%.1f%%" $s.pct }}</span>
         </div>
         <div class="rounded" style="height:12px;background:#e9ecef;">
@@ -55,18 +64,18 @@
   {{ with $kpi.top_providers }}
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">Provider più diffusi</h2>
+      <h2 class="mb-3">{{ if $isEN }}Most common providers{{ else }}Provider più diffusi{{ end }}</h2>
       <p class="small mb-3">
-        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#0066CC;border-radius:3px;vertical-align:middle;"></span> Italiano</span>
-        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#1D9E75;border-radius:3px;vertical-align:middle;"></span> UE</span>
-        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#D9364F;border-radius:3px;vertical-align:middle;"></span> Extra-UE</span>
-        <span><span style="display:inline-block;width:12px;height:12px;background:#9AA6B2;border-radius:3px;vertical-align:middle;"></span> Sconosciuto</span>
+        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#0066CC;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Italian{{ else }}Italiano{{ end }}</span>
+        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#1D9E75;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}EU{{ else }}UE{{ end }}</span>
+        <span class="me-3"><span style="display:inline-block;width:12px;height:12px;background:#D9364F;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Non-EU{{ else }}Extra-UE{{ end }}</span>
+        <span><span style="display:inline-block;width:12px;height:12px;background:#9AA6B2;border-radius:3px;vertical-align:middle;"></span> {{ if $isEN }}Unknown{{ else }}Sconosciuto{{ end }}</span>
       </p>
       {{ range . }}
       {{ $c := index $sovColors .sovereignty }}{{ if not $c }}{{ $c = "#9AA6B2" }}{{ end }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count "- , ." }} enti</span></span>
+          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
           <span class="small fw-bold">{{ printf "%.1f%%" .pct }}</span>
         </div>
         <div class="rounded" style="height:10px;background:#e9ecef;">
@@ -82,12 +91,12 @@
   {{ with $kpi.by_cluster }}
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">Per categoria di ente</h2>
-      <p class="text-muted mb-4">Quota di enti su provider <strong>extra-UE</strong>, per categoria. Ordinate dalla più dipendente.</p>
+      <h2 class="mb-3">{{ if $isEN }}By category of body{{ else }}Per categoria di ente{{ end }}</h2>
+      <p class="text-muted mb-4">{{ if $isEN }}Share of bodies on <strong>non-EU</strong> providers, by category. Sorted from the most dependent.{{ else }}Quota di enti su provider <strong>extra-UE</strong>, per categoria. Ordinate dalla più dipendente.{{ end }}</p>
       {{ range sort . "usa_pct" "desc" }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities "- , ." }} enti · {{ .dominant_provider }}</span></span>
+          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }} · {{ .dominant_provider }}</span></span>
           <span class="small fw-bold text-danger">{{ printf "%.0f%%" .usa_pct }}</span>
         </div>
         <div class="rounded" style="height:10px;background:#e9ecef;">
@@ -106,9 +115,9 @@
       <div class="callout">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
-          <span>Affidabilità del dato</span>
+          <span>{{ if $isEN }}Data reliability{{ else }}Affidabilità del dato{{ end }}</span>
         </div>
-        <p class="mb-0">Confidenza media della classificazione: <strong>{{ printf "%.0f%%" (mul .mean 100) }}</strong>{{ with .high_pct }} · enti con classificazione ad alta affidabilità: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}{{ with $kpi.totals.coverage_pct }} · copertura: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}. La metodologia è documentata e replicabile.</p>
+        <p class="mb-0">{{ if $isEN }}Average classification confidence: <strong>{{ printf "%.0f%%" (mul .mean 100) }}</strong>{{ with .high_pct }} · bodies with high-reliability classification: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}{{ with $kpi.totals.coverage_pct }} · coverage: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}. The methodology is documented and replicable.{{ else }}Confidenza media della classificazione: <strong>{{ printf "%.0f%%" (mul .mean 100) }}</strong>{{ with .high_pct }} · enti con classificazione ad alta affidabilità: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}{{ with $kpi.totals.coverage_pct }} · copertura: <strong>{{ printf "%.0f%%" . }}</strong>{{ end }}. La metodologia è documentata e replicabile.{{ end }}</p>
       </div>
     </div>
   </div>
@@ -119,7 +128,7 @@
   <!-- Note metodologiche -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <p class="text-muted small mb-0">Metodologia: identificazione del provider e della giurisdizione dai record DNS dei domini PA (IndicePA). Dettagli nella sezione <a href="{{ "metodologia/" | relURL }}">Metodologia</a>. I dati grezzi sono di <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>, rilasciati sotto licenza CC BY-SA 4.0.</p>
+      <p class="text-muted small mb-0">{{ if $isEN }}Methodology: identification of the provider and jurisdiction from the DNS records of the PA domains (IndicePA). Details in the <a href="{{ "metodologia/" | relLangURL }}">Methodology</a> section. The raw data is from <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>, released under the CC BY-SA 4.0 licence.{{ else }}Metodologia: identificazione del provider e della giurisdizione dai record DNS dei domini PA (IndicePA). Dettagli nella sezione <a href="{{ "metodologia/" | relLangURL }}">Metodologia</a>. I dati grezzi sono di <a href="{{ site.Params.mxmapURL }}" target="_blank" rel="noopener">MxMap.it</a>, rilasciati sotto licenza CC BY-SA 4.0.{{ end }}</p>
     </div>
   </div>
 
@@ -127,7 +136,7 @@
   {{ with .Pages }}
   <div class="row justify-content-center">
     <div class="col-lg-10">
-      <h2 class="mb-4">Report pubblicati</h2>
+      <h2 class="mb-4">{{ if $isEN }}Published reports{{ else }}Report pubblicati{{ end }}</h2>
       <div class="row g-4">
         {{ range . }}
         <div class="col-md-6">
@@ -135,14 +144,14 @@
             <div class="card card-bg rounded shadow-sm border-bottom-card h-100">
               <div class="card-body">
                 <div class="category-top">
-                  <span class="category">Report</span>
+                  <span class="category">{{ if $isEN }}Report{{ else }}Report{{ end }}</span>
                   <span class="data">{{ partial "date-it.html" .Date }}</span>
                 </div>
                 <h3 class="card-title h5"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                 <p class="card-text">{{ .Summary | plainify | truncate 160 }}</p>
                 {{ with .Params.pdf }}
                 <a class="read-more" href="{{ . | relURL }}" download>
-                  <span class="text">Scarica PDF</span>
+                  <span class="text">{{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}</span>
                   <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
                 </a>
                 {{ end }}

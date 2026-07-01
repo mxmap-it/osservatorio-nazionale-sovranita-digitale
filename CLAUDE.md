@@ -141,10 +141,17 @@ data/kpi.json → site.Data.kpi → layout (homepage, decisori, press) → deplo
 6. **Bilingue IT + EN — tieni l'inglese sempre aggiornato.** L'italiano è la
    lingua primaria; l'**inglese (`en`) è una traduzione di prima classe, da
    mantenere sincronizzata**. Ogni modifica a testo/contenuto **deve aggiornare
-   anche la versione EN** nello stesso commit. Le stringhe dei layout passano per
-   `i18n/it.toml` + `i18n/en.toml` (funzione `{{ i18n "chiave" }}`); i contenuti
-   markdown hanno la copia in `content/en/`. Le altre 22 lingue UE restano
-   `noindex` finché non tradotte (vedi `head.html`). Non lasciare mai una pagina
+   anche la versione EN** nello stesso commit. Due meccanismi:
+   (a) **chrome + homepage + stringhe UI brevi/ripetute** → chiavi in
+   `i18n/it.toml` + `i18n/en.toml` (`{{ i18n "chiave" }}`);
+   (b) **layout di sezione con prosa lunga** → condizionale inline
+   `{{ if $isEN }}EN{{ else }}IT{{ end }}` (`{{ $isEN := eq site.Language.Lang "en" }}`
+   subito dopo `{{ define "main" }}`), IT ed EN nello stesso file.
+   I **contenuti markdown** hanno la copia in `content/en/<path>` (layout custom →
+   solo frontmatter tradotto; pagine rese da `_default/single|list` → anche il
+   corpo). Numeri: `(cond $isEN "- . ," "- , .")`. `head.html` è già bilingue
+   (description con statistiche, robots index it+en, hreflang, JSON-LD). Le altre
+   22 lingue UE restano `noindex` finché non tradotte. Non lasciare mai una pagina
    EN con testo italiano residuo.
 7. **Header:** nessun brand MxMap a sinistra; link MxMap + un solo link GitHub a
    destra (vedi `layouts/partials/header.html`).

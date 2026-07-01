@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 {{ $kpi := site.Data.kpi }}
 <div class="container-xxl section-spacing-lg">
@@ -6,65 +7,65 @@
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">Materiali pronti all'uso per giornalisti, comunicatori e media. Tutti i contenuti sono rilasciati sotto licenza CC BY-SA 4.0 — liberi di essere citati e ripubblicati con attribuzione.</p>
+      <p class="lead mb-5">{{ if $isEN }}Ready-to-use materials for journalists, communicators and media. All content is released under the CC BY-SA 4.0 licence — free to be cited and republished with attribution.{{ else }}Materiali pronti all'uso per giornalisti, comunicatori e media. Tutti i contenuti sono rilasciati sotto licenza CC BY-SA 4.0 — liberi di essere citati e ripubblicati con attribuzione.{{ end }}</p>
     </div>
   </div>
 
   <!-- Numeri chiave citabili -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Numeri chiave</h2>
-      <p class="text-muted">Dati citabili, con fonte verificabile. Aggiornati all'ultimo report disponibile.</p>
+      <h2 class="mb-4">{{ if $isEN }}Key figures{{ else }}Numeri chiave{{ end }}</h2>
+      <p class="text-muted">{{ if $isEN }}Citable data, with a verifiable source. Updated to the latest available report.{{ else }}Dati citabili, con fonte verificabile. Aggiornati all'ultimo report disponibile.{{ end }}</p>
 
       <div class="callout callout-highlight mt-3">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
-          <span>Come citare</span>
+          <span>{{ if $isEN }}How to cite{{ else }}Come citare{{ end }}</span>
         </div>
-        <p><em>Fonte: Osservatorio Nazionale Sovranità Digitale, su dati MxMap.it — analisi dei record MX di ~23.000 enti della PA italiana registrati nell'IndicePA.</em></p>
+        <p><em>{{ if $isEN }}Source: National Digital Sovereignty Observatory, on MxMap.it data — analysis of the MX records of ~23,000 Italian PA bodies registered in IndicePA.{{ else }}Fonte: Osservatorio Nazionale Sovranità Digitale, su dati MxMap.it — analisi dei record MX di ~23.000 enti della PA italiana registrati nell'IndicePA.{{ end }}</em></p>
       </div>
 
       <div class="table-responsive mt-4">
         <table class="table table-bordered">
           <thead class="table-primary">
             <tr>
-              <th scope="col">Dato</th>
-              <th scope="col">Valore</th>
-              <th scope="col">Nota</th>
+              <th scope="col">{{ if $isEN }}Figure{{ else }}Dato{{ end }}</th>
+              <th scope="col">{{ if $isEN }}Value{{ else }}Valore{{ end }}</th>
+              <th scope="col">{{ if $isEN }}Note{{ else }}Nota{{ end }}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Enti PA monitorati</td>
-              <td><strong>{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</strong></td>
-              <td>Tutti gli enti registrati nell'IndicePA</td>
+              <td>{{ if $isEN }}PA bodies monitored{{ else }}Enti PA monitorati{{ end }}</td>
+              <td><strong>{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . (cond $isEN "- . ," "- , .") }}{{ else }}~23.000{{ end }}</strong></td>
+              <td>{{ if $isEN }}All bodies registered in IndicePA{{ else }}Tutti gli enti registrati nell'IndicePA{{ end }}</td>
             </tr>
             <tr>
-              <td>PA con email su provider extra-UE</td>
-              <td><strong>{{ with $kpi.sovereignty.extra_eu.pct }}{{ printf "%.0f%%" . }}{{ else }}In aggiornamento{{ end }}</strong></td>
-              <td>Provider soggetti a giurisdizioni non europee</td>
+              <td>{{ if $isEN }}PA with email on non-EU providers{{ else }}PA con email su provider extra-UE{{ end }}</td>
+              <td><strong>{{ with $kpi.sovereignty.extra_eu.pct }}{{ printf "%.0f%%" . }}{{ else }}{{ if $isEN }}Updating{{ else }}In aggiornamento{{ end }}{{ end }}</strong></td>
+              <td>{{ if $isEN }}Providers subject to non-European jurisdictions{{ else }}Provider soggetti a giurisdizioni non europee{{ end }}</td>
             </tr>
             <tr>
-              <td>PA con email su provider italiani</td>
-              <td><strong>{{ with $kpi.sovereignty.it.pct }}{{ printf "%.0f%%" . }}{{ else }}In aggiornamento{{ end }}</strong></td>
-              <td>Provider con sede legale e operativa in Italia</td>
+              <td>{{ if $isEN }}PA with email on Italian providers{{ else }}PA con email su provider italiani{{ end }}</td>
+              <td><strong>{{ with $kpi.sovereignty.it.pct }}{{ printf "%.0f%%" . }}{{ else }}{{ if $isEN }}Updating{{ else }}In aggiornamento{{ end }}{{ end }}</strong></td>
+              <td>{{ if $isEN }}Providers with legal and operational headquarters in Italy{{ else }}Provider con sede legale e operativa in Italia{{ end }}</td>
             </tr>
             <tr>
-              <td>Provider più diffuso nella PA</td>
-              <td><strong>{{ with index $kpi.top_providers 0 }}{{ .name }}{{ else }}In aggiornamento{{ end }}</strong></td>
-              <td>Per numero di enti serviti</td>
+              <td>{{ if $isEN }}Most widespread provider in the PA{{ else }}Provider più diffuso nella PA{{ end }}</td>
+              <td><strong>{{ with index $kpi.top_providers 0 }}{{ .name }}{{ else }}{{ if $isEN }}Updating{{ else }}In aggiornamento{{ end }}{{ end }}</strong></td>
+              <td>{{ if $isEN }}By number of bodies served{{ else }}Per numero di enti serviti{{ end }}</td>
             </tr>
           </tbody>
         </table>
       </div>
-      {{ if $kpi.placeholder }}<p class="small text-muted mt-2">I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.</p>{{ else }}<p class="small text-muted mt-2">Ultimo aggiornamento: {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}. Fonte: MxMap.it su IndicePA.</p>{{ end }}
+      {{ if $kpi.placeholder }}<p class="small text-muted mt-2">{{ if $isEN }}The exact numerical data will be available with the publication of the next full report.{{ else }}I dati numerici esatti saranno disponibili con la pubblicazione del prossimo report completo.{{ end }}</p>{{ else }}<p class="small text-muted mt-2">{{ if $isEN }}Last update:{{ else }}Ultimo aggiornamento:{{ end }} {{ or $kpi.run_id (substr $kpi.generated_at 0 10) }}. {{ if $isEN }}Source: MxMap.it on IndicePA.{{ else }}Fonte: MxMap.it su IndicePA.{{ end }}</p>{{ end }}
     </div>
   </div>
 
   <!-- Scheda progetto -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Scheda progetto</h2>
+      <h2 class="mb-4">{{ if $isEN }}Project fact sheet{{ else }}Scheda progetto{{ end }}</h2>
 
       <div class="card card-bg rounded shadow-sm">
         <div class="card-body">
@@ -72,39 +73,39 @@
             <table class="table mb-0">
               <tbody>
                 <tr>
-                  <td class="fw-bold" style="width:35%">Progetto</td>
-                  <td>Osservatorio Nazionale Sovranità Digitale</td>
+                  <td class="fw-bold" style="width:35%">{{ if $isEN }}Project{{ else }}Progetto{{ end }}</td>
+                  <td>{{ if $isEN }}National Digital Sovereignty Observatory{{ else }}Osservatorio Nazionale Sovranità Digitale{{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Tipo</td>
-                  <td>Monitoraggio civico indipendente, open source, open data</td>
+                  <td class="fw-bold">{{ if $isEN }}Type{{ else }}Tipo{{ end }}</td>
+                  <td>{{ if $isEN }}Independent civic monitoring, open source, open data{{ else }}Monitoraggio civico indipendente, open source, open data{{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Oggetto</td>
-                  <td>Misurare la dipendenza della PA italiana da infrastrutture digitali extra-UE</td>
+                  <td class="fw-bold">{{ if $isEN }}Object{{ else }}Oggetto{{ end }}</td>
+                  <td>{{ if $isEN }}Measuring the Italian PA's dependence on non-EU digital infrastructure{{ else }}Misurare la dipendenza della PA italiana da infrastrutture digitali extra-UE{{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Perimetro attuale</td>
-                  <td>Servizi email (~23.000 enti PA, fonte IndicePA)</td>
+                  <td class="fw-bold">{{ if $isEN }}Current scope{{ else }}Perimetro attuale{{ end }}</td>
+                  <td>{{ if $isEN }}Email services (~23,000 PA bodies, source IndicePA){{ else }}Servizi email (~23.000 enti PA, fonte IndicePA){{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Fonte dati</td>
-                  <td><a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> — analisi record MX dei domini PA</td>
+                  <td class="fw-bold">{{ if $isEN }}Data source{{ else }}Fonte dati{{ end }}</td>
+                  <td><a href="https://mxmap.it/" target="_blank" rel="noopener">MxMap.it</a> — {{ if $isEN }}analysis of the MX records of PA domains{{ else }}analisi record MX dei domini PA{{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Fondatore</td>
+                  <td class="fw-bold">{{ if $isEN }}Founder{{ else }}Fondatore{{ end }}</td>
                   <td>Fabio Pietrosanti</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Licenza</td>
-                  <td>CC BY-SA 4.0 (dati, report, codice)</td>
+                  <td class="fw-bold">{{ if $isEN }}Licence{{ else }}Licenza{{ end }}</td>
+                  <td>{{ if $isEN }}CC BY-SA 4.0 (data, reports, code){{ else }}CC BY-SA 4.0 (dati, report, codice){{ end }}</td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Sito web</td>
+                  <td class="fw-bold">{{ if $isEN }}Website{{ else }}Sito web{{ end }}</td>
                   <td><a href="https://osservatorio.mxmap.it/" target="_blank">osservatorio-nazionale-sovranita-digitale</a></td>
                 </tr>
                 <tr>
-                  <td class="fw-bold">Repository</td>
+                  <td class="fw-bold">{{ if $isEN }}Repository{{ else }}Repository{{ end }}</td>
                   <td><a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">GitHub</a></td>
                 </tr>
               </tbody>
@@ -118,39 +119,39 @@
   <!-- Angoli giornalistici -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Angoli giornalistici suggeriti</h2>
-      <p>Spunti per articoli basati sui dati dell'Osservatorio:</p>
+      <h2 class="mb-4">{{ if $isEN }}Suggested story angles{{ else }}Angoli giornalistici suggeriti{{ end }}</h2>
+      <p>{{ if $isEN }}Ideas for articles based on the Observatory's data:{{ else }}Spunti per articoli basati sui dati dell'Osservatorio:{{ end }}</p>
 
       <div class="row g-4 mt-2">
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Sicurezza nazionale</h3>
-              <p class="card-text">Le email di migliaia di enti pubblici italiani transitano su server soggetti a giurisdizione straniera. Cosa significa per la sicurezza delle comunicazioni istituzionali?</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}National security{{ else }}Sicurezza nazionale{{ end }}</h3>
+              <p class="card-text">{{ if $isEN }}The email of thousands of Italian public bodies transits through servers subject to foreign jurisdiction. What does this mean for the security of institutional communications?{{ else }}Le email di migliaia di enti pubblici italiani transitano su server soggetti a giurisdizione straniera. Cosa significa per la sicurezza delle comunicazioni istituzionali?{{ end }}</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Privacy dei cittadini</h3>
-              <p class="card-text">I dati personali che i cittadini affidano alla PA quando comunicano via email sono protetti dal GDPR? Cosa succede quando il provider è soggetto al CLOUD Act?</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}Citizens' privacy{{ else }}Privacy dei cittadini{{ end }}</h3>
+              <p class="card-text">{{ if $isEN }}Is the personal data that citizens entrust to the PA when communicating by email protected by the GDPR? What happens when the provider is subject to the CLOUD Act?{{ else }}I dati personali che i cittadini affidano alla PA quando comunicano via email sono protetti dal GDPR? Cosa succede quando il provider è soggetto al CLOUD Act?{{ end }}</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Il tuo Comune</h3>
-              <p class="card-text">Indagine locale: quale provider email usa il Comune di [nome]? Come si posiziona rispetto ad altri comuni della stessa regione?</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}Your municipality{{ else }}Il tuo Comune{{ end }}</h3>
+              <p class="card-text">{{ if $isEN }}Local investigation: which email provider does the Municipality of [name] use? How does it compare with other municipalities in the same region?{{ else }}Indagine locale: quale provider email usa il Comune di [nome]? Come si posiziona rispetto ad altri comuni della stessa regione?{{ end }}</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Economia e industria IT</h3>
-              <p class="card-text">Il mercato dei servizi email della PA vale milioni di euro l'anno. Quanto di questo mercato va all'estero? Esistono alternative italiane ed europee competitive?</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}Economy and the IT industry{{ else }}Economia e industria IT{{ end }}</h3>
+              <p class="card-text">{{ if $isEN }}The market for PA email services is worth millions of euros a year. How much of this market goes abroad? Are there competitive Italian and European alternatives?{{ else }}Il mercato dei servizi email della PA vale milioni di euro l'anno. Quanto di questo mercato va all'estero? Esistono alternative italiane ed europee competitive?{{ end }}</p>
             </div>
           </div>
         </div>
@@ -161,16 +162,16 @@
   <!-- Documenti scaricabili -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Documenti scaricabili</h2>
+      <h2 class="mb-4">{{ if $isEN }}Downloadable documents{{ else }}Documenti scaricabili{{ end }}</h2>
       <div class="row g-3">
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="h6 text-primary">Policy Brief</h3>
-              <p class="small flex-grow-1">2 pagine: il problema, i numeri, le raccomandazioni.</p>
+              <p class="small flex-grow-1">{{ if $isEN }}2 pages: the problem, the figures, the recommendations.{{ else }}2 pagine: il problema, i numeri, le raccomandazioni.{{ end }}</p>
               <a class="btn btn-outline-primary btn-sm align-self-start" href="{{ "pdf/policy-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
                 <svg class="icon icon-primary icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                Scarica PDF
+                {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
               </a>
             </div>
           </div>
@@ -179,10 +180,10 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="h6 text-primary">Technical Brief</h3>
-              <p class="small flex-grow-1">Metodologia, quadro normativo, analisi dei rischi.</p>
+              <p class="small flex-grow-1">{{ if $isEN }}Methodology, regulatory framework, risk analysis.{{ else }}Metodologia, quadro normativo, analisi dei rischi.{{ end }}</p>
               <a class="btn btn-outline-primary btn-sm align-self-start" href="{{ "pdf/technical-brief-sovranita-digitale-pa.pdf" | relURL }}" download>
                 <svg class="icon icon-primary icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                Scarica PDF
+                {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
               </a>
             </div>
           </div>
@@ -190,11 +191,11 @@
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="h6 text-primary">Visione Strategica</h3>
-              <p class="small flex-grow-1">Il documento di visione completo dell'Osservatorio.</p>
+              <h3 class="h6 text-primary">{{ if $isEN }}Strategic Vision{{ else }}Visione Strategica{{ end }}</h3>
+              <p class="small flex-grow-1">{{ if $isEN }}The Observatory's complete vision document.{{ else }}Il documento di visione completo dell'Osservatorio.{{ end }}</p>
               <a class="btn btn-outline-primary btn-sm align-self-start" href="{{ "pdf/visione-strategica-osservatorio.pdf" | relURL }}" download>
                 <svg class="icon icon-primary icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                Scarica PDF
+                {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
               </a>
             </div>
           </div>
@@ -215,10 +216,10 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="h6 text-primary">Slide Deck</h3>
-              <p class="small flex-grow-1">16 slide di presentazione del progetto, pronte all'uso.</p>
+              <p class="small flex-grow-1">{{ if $isEN }}16 project presentation slides, ready to use.{{ else }}16 slide di presentazione del progetto, pronte all'uso.{{ end }}</p>
               <a class="btn btn-outline-primary btn-sm align-self-start" href="{{ "pdf/slide-deck-osservatorio-sovranita-digitale.pdf" | relURL }}" download>
                 <svg class="icon icon-primary icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-                Scarica PDF
+                {{ if $isEN }}Download PDF{{ else }}Scarica PDF{{ end }}
               </a>
             </div>
           </div>
@@ -230,13 +231,13 @@
   <!-- Contatti stampa -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Contatto stampa</h2>
+      <h2 class="mb-4">{{ if $isEN }}Press contact{{ else }}Contatto stampa{{ end }}</h2>
       <div class="card card-bg rounded shadow-sm">
         <div class="card-body">
           <h3 class="h6">Fabio Pietrosanti</h3>
-          <p class="mb-1">Fondatore dell'Osservatorio Nazionale Sovranità Digitale e del progetto MxMap.it</p>
-          <p class="mb-1">Disponibile per interviste, commenti e approfondimenti.</p>
-          <p class="mb-0"><strong>Contatto:</strong> <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">tramite GitHub</a> oppure sul <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">canale Telegram</a></p>
+          <p class="mb-1">{{ if $isEN }}Founder of the National Digital Sovereignty Observatory and of the MxMap.it project{{ else }}Fondatore dell'Osservatorio Nazionale Sovranità Digitale e del progetto MxMap.it{{ end }}</p>
+          <p class="mb-1">{{ if $isEN }}Available for interviews, comments and in-depth discussion.{{ else }}Disponibile per interviste, commenti e approfondimenti.{{ end }}</p>
+          <p class="mb-0"><strong>{{ if $isEN }}Contact:{{ else }}Contatto:{{ end }}</strong> <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">{{ if $isEN }}via GitHub{{ else }}tramite GitHub{{ end }}</a> {{ if $isEN }}or on the{{ else }}oppure sul{{ end }} <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">{{ if $isEN }}Telegram channel{{ else }}canale Telegram{{ end }}</a></p>
         </div>
       </div>
     </div>
@@ -245,13 +246,13 @@
   <!-- Comunicati -->
   <div class="row justify-content-center mb-3">
     <div class="col-lg-10">
-      <h2 class="mb-4">Comunicati stampa</h2>
+      <h2 class="mb-4">{{ if $isEN }}Press releases{{ else }}Comunicati stampa{{ end }}</h2>
       <div class="callout">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-note"></use></svg>
-          <span>Prossimamente</span>
+          <span>{{ if $isEN }}Coming soon{{ else }}Prossimamente{{ end }}</span>
         </div>
-        <p>Il comunicato stampa di lancio del progetto sarà pubblicato in concomitanza con il primo report completo. Per essere informato, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.</p>
+        <p>{{ if $isEN }}The project launch press release will be published together with the first full report. To be kept informed, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">join the Telegram channel</a>.{{ else }}Il comunicato stampa di lancio del progetto sarà pubblicato in concomitanza con il primo report completo. Per essere informato, <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.{{ end }}</p>
       </div>
     </div>
   </div>

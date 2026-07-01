@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
 
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">I dati dell'Osservatorio sono aperti, documentati e replicabili. Questa scheda raccoglie tutto ciò che serve a ricercatori, accademici, studenti e analisti per condurre studi indipendenti.</p>
+      <p class="lead mb-5">{{ if $isEN }}The Observatory's data is open, documented and reproducible. This factsheet gathers everything researchers, academics, students and analysts need to carry out independent studies.{{ else }}I dati dell'Osservatorio sono aperti, documentati e replicabili. Questa scheda raccoglie tutto ciò che serve a ricercatori, accademici, studenti e analisti per condurre studi indipendenti.{{ end }}</p>
     </div>
   </div>
 
@@ -15,9 +16,9 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-open-source"></use></svg>
-          <span>Dati aperti, metodologia trasparente</span>
+          <span>{{ if $isEN }}Open data, transparent methodology{{ else }}Dati aperti, metodologia trasparente{{ end }}</span>
         </div>
-        <p>Dataset sotto licenza CC BY-SA 4.0, pipeline open source, metodologia pubblicata. La riproducibilità è un requisito, non un'aspirazione.</p>
+        <p>{{ if $isEN }}Dataset under CC BY-SA 4.0 licence, open source pipeline, published methodology. Reproducibility is a requirement, not an aspiration.{{ else }}Dataset sotto licenza CC BY-SA 4.0, pipeline open source, metodologia pubblicata. La riproducibilità è un requisito, non un'aspirazione.{{ end }}</p>
       </div>
     </div>
   </div>
@@ -25,15 +26,15 @@
   <!-- Risorse -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Risorse per la ricerca</h2>
+      <h2 class="mb-4">{{ if $isEN }}Research resources{{ else }}Risorse per la ricerca{{ end }}</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
               <h3 class="card-title h6 text-primary">Dataset</h3>
-              <p class="card-text small">Record MX e classificazione di sovranità per tutti i domini PA. Formati CSV e JSON.</p>
-              <a class="read-more" href="{{ "dati-aperti/" | relURL }}">
-                <span class="text">Vai ai dati aperti</span>
+              <p class="card-text small">{{ if $isEN }}MX records and sovereignty classification for all PA domains. CSV and JSON formats.{{ else }}Record MX e classificazione di sovranità per tutti i domini PA. Formati CSV e JSON.{{ end }}</p>
+              <a class="read-more" href="{{ "dati-aperti/" | relLangURL }}">
+                <span class="text">{{ if $isEN }}Go to open data{{ else }}Vai ai dati aperti{{ end }}</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
               </a>
             </div>
@@ -42,10 +43,10 @@
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Metodologia</h3>
-              <p class="card-text small">Descrizione completa del processo: dall'IndicePA alla classificazione di sovranità.</p>
-              <a class="read-more" href="{{ "metodologia/" | relURL }}">
-                <span class="text">Leggi la metodologia</span>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}Methodology{{ else }}Metodologia{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Full description of the process: from IndicePA to sovereignty classification.{{ else }}Descrizione completa del processo: dall'IndicePA alla classificazione di sovranità.{{ end }}</p>
+              <a class="read-more" href="{{ "metodologia/" | relLangURL }}">
+                <span class="text">{{ if $isEN }}Read the methodology{{ else }}Leggi la metodologia{{ end }}</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
               </a>
             </div>
@@ -54,10 +55,10 @@
         <div class="col-md-4">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="card-title h6 text-primary">Codice sorgente</h3>
-              <p class="card-text small">Pipeline di raccolta e analisi, sito e strumenti, su GitHub.</p>
+              <h3 class="card-title h6 text-primary">{{ if $isEN }}Source code{{ else }}Codice sorgente{{ end }}</h3>
+              <p class="card-text small">{{ if $isEN }}Collection and analysis pipeline, site and tools, on GitHub.{{ else }}Pipeline di raccolta e analisi, sito e strumenti, su GitHub.{{ end }}</p>
               <a class="read-more" href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale" target="_blank" rel="noopener">
-                <span class="text">Vai al repository</span>
+                <span class="text">{{ if $isEN }}Go to the repository{{ else }}Vai al repository{{ end }}</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-arrow-right"></use></svg>
               </a>
             </div>
@@ -70,22 +71,22 @@
   <!-- Domande di ricerca -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Domande di ricerca suggerite</h2>
+      <h2 class="mb-4">{{ if $isEN }}Suggested research questions{{ else }}Domande di ricerca suggerite{{ end }}</h2>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead class="table-primary">
             <tr>
-              <th scope="col">Area</th>
-              <th scope="col">Domanda</th>
+              <th scope="col">{{ if $isEN }}Area{{ else }}Area{{ end }}</th>
+              <th scope="col">{{ if $isEN }}Question{{ else }}Domanda{{ end }}</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Geografia</td><td>Distribuzione territoriale della dipendenza da provider extra-UE</td></tr>
-            <tr><td>Dimensione ente</td><td>Correlazione tra dimensione/risorse dell'ente e scelta del provider</td></tr>
-            <tr><td>Tipologia</td><td>Confronto tra categorie di enti (Comuni, ASL, Università, Ministeri)</td></tr>
-            <tr><td>Policy</td><td>Impatto delle linee guida AgID sulle scelte tecnologiche nel tempo</td></tr>
-            <tr><td>Economia</td><td>Stima della spesa pubblica verso provider esteri vs nazionali</td></tr>
-            <tr><td>Comparazione UE</td><td>Replica della metodologia su altri Stati membri</td></tr>
+            <tr><td>{{ if $isEN }}Geography{{ else }}Geografia{{ end }}</td><td>{{ if $isEN }}Territorial distribution of dependence on non-EU providers{{ else }}Distribuzione territoriale della dipendenza da provider extra-UE{{ end }}</td></tr>
+            <tr><td>{{ if $isEN }}Body size{{ else }}Dimensione ente{{ end }}</td><td>{{ if $isEN }}Correlation between the size/resources of a body and its choice of provider{{ else }}Correlazione tra dimensione/risorse dell'ente e scelta del provider{{ end }}</td></tr>
+            <tr><td>{{ if $isEN }}Type{{ else }}Tipologia{{ end }}</td><td>{{ if $isEN }}Comparison between categories of bodies (Municipalities, ASL, Universities, Ministries){{ else }}Confronto tra categorie di enti (Comuni, ASL, Università, Ministeri){{ end }}</td></tr>
+            <tr><td>{{ if $isEN }}Policy{{ else }}Policy{{ end }}</td><td>{{ if $isEN }}Impact of AgID guidelines on technological choices over time{{ else }}Impatto delle linee guida AgID sulle scelte tecnologiche nel tempo{{ end }}</td></tr>
+            <tr><td>{{ if $isEN }}Economics{{ else }}Economia{{ end }}</td><td>{{ if $isEN }}Estimate of public spending towards foreign vs domestic providers{{ else }}Stima della spesa pubblica verso provider esteri vs nazionali{{ end }}</td></tr>
+            <tr><td>{{ if $isEN }}EU comparison{{ else }}Comparazione UE{{ end }}</td><td>{{ if $isEN }}Replication of the methodology on other Member States{{ else }}Replica della metodologia su altri Stati membri{{ end }}</td></tr>
           </tbody>
         </table>
       </div>
@@ -95,7 +96,7 @@
   <!-- Citazione -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Come citare</h2>
+      <h2 class="mb-4">{{ if $isEN }}How to cite{{ else }}Come citare{{ end }}</h2>
       <div class="card card-bg rounded shadow-sm">
         <div class="card-body">
           <p class="small mb-0" style="font-family: monospace; background: #f5f5f5; padding: 16px; border-radius: 4px;">Pietrosanti, F. (2025). Osservatorio Nazionale Sovranità Digitale: Stato della sovranità digitale nella PA italiana. Dati MxMap.it su IndicePA. CC BY-SA 4.0. https://osservatorio.mxmap.it/</p>
@@ -110,14 +111,14 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-download"></use></svg>
-          <span>Scarica la scheda</span>
+          <span>{{ if $isEN }}Download the factsheet{{ else }}Scarica la scheda{{ end }}</span>
         </div>
-        <p>Una sintesi di 2 pagine con dataset, dizionario dati, domande di ricerca e citazione.</p>
+        <p>{{ if $isEN }}A 2-page summary with dataset, data dictionary, research questions and citation.{{ else }}Una sintesi di 2 pagine con dataset, dizionario dati, domande di ricerca e citazione.{{ end }}</p>
         <a class="btn btn-primary btn-sm" href="{{ "pdf/scheda-ricercatori-sovranita-digitale.pdf" | relURL }}" download>
           <svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>
-          Scarica Scheda Ricercatori (PDF)
+          {{ if $isEN }}Download Researchers Factsheet (PDF){{ else }}Scarica Scheda Ricercatori (PDF){{ end }}
         </a>
-        <p class="mt-3 mb-0">Stai conducendo una ricerca e vuoi collaborare? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Contattaci su GitHub</a>.</p>
+        <p class="mt-3 mb-0">{{ if $isEN }}Are you conducting research and want to collaborate? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Contact us on GitHub</a>.{{ else }}Stai conducendo una ricerca e vuoi collaborare? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Contattaci su GitHub</a>.{{ end }}</p>
       </div>
     </div>
   </div>

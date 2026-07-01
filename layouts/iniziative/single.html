@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
 
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-5">L'Osservatorio non è un caso isolato: fa parte di un più ampio movimento europeo che misura, con metodi aperti e verificabili, la dipendenza delle istituzioni da infrastrutture digitali estere. Qui raccogliamo le iniziative affini.</p>
+      <p class="lead mb-5">{{ if $isEN }}The Observatory is not an isolated case: it is part of a broader European movement that measures, with open and verifiable methods, institutions' dependence on foreign digital infrastructure. Here we gather kindred initiatives.{{ else }}L'Osservatorio non è un caso isolato: fa parte di un più ampio movimento europeo che misura, con metodi aperti e verificabili, la dipendenza delle istituzioni da infrastrutture digitali estere. Qui raccogliamo le iniziative affini.{{ end }}</p>
     </div>
   </div>
 
@@ -15,9 +16,9 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-map-marker-circle"></use></svg>
-          <span>Un metodo che si replica</span>
+          <span>{{ if $isEN }}A method that replicates{{ else }}Un metodo che si replica{{ end }}</span>
         </div>
-        <p>La forza del monitoraggio civico sta nella replicabilità: la stessa metodologia, applicata in più paesi, permette confronti e rafforza il dibattito europeo sulla sovranità digitale. L'Osservatorio italiano nasce da questo approccio condiviso.</p>
+        <p>{{ if $isEN }}The strength of civic monitoring lies in its replicability: the same methodology, applied across several countries, enables comparisons and reinforces the European debate on digital sovereignty. The Italian Observatory stems from this shared approach.{{ else }}La forza del monitoraggio civico sta nella replicabilità: la stessa metodologia, applicata in più paesi, permette confronti e rafforza il dibattito europeo sulla sovranità digitale. L'Osservatorio italiano nasce da questo approccio condiviso.{{ end }}</p>
       </div>
     </div>
   </div>
@@ -25,74 +26,74 @@
   <!-- Famiglia MxMap -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">La famiglia MxMap in Europa</h2>
-      <p>Progetti che usano la stessa metodologia dell'Osservatorio — l'analisi dei record MX dei domini delle amministrazioni pubbliche — per mappare i provider email e la loro giurisdizione. Il progetto originale è <a href="https://mxmap.ch/" target="_blank" rel="noopener">MxMap.ch</a>, creato da David Huser per i comuni svizzeri; l'elenco aggiornato delle istanze è mantenuto sul <a href="https://github.com/davidhuser/mxmap" target="_blank" rel="noopener">repository GitHub del progetto</a>.</p>
+      <h2 class="mb-3">{{ if $isEN }}The MxMap family in Europe{{ else }}La famiglia MxMap in Europa{{ end }}</h2>
+      <p>{{ if $isEN }}Projects that use the same methodology as the Observatory — the analysis of the MX records of public administrations' domains — to map email providers and their jurisdiction. The original project is <a href="https://mxmap.ch/" target="_blank" rel="noopener">MxMap.ch</a>, created by David Huser for Swiss municipalities; the up-to-date list of instances is maintained on the <a href="https://github.com/davidhuser/mxmap" target="_blank" rel="noopener">project's GitHub repository</a>.{{ else }}Progetti che usano la stessa metodologia dell'Osservatorio — l'analisi dei record MX dei domini delle amministrazioni pubbliche — per mappare i provider email e la loro giurisdizione. Il progetto originale è <a href="https://mxmap.ch/" target="_blank" rel="noopener">MxMap.ch</a>, creato da David Huser per i comuni svizzeri; l'elenco aggiornato delle istanze è mantenuto sul <a href="https://github.com/davidhuser/mxmap" target="_blank" rel="noopener">repository GitHub del progetto</a>.{{ end }}</p>
 
       <div class="table-responsive mt-3">
         <table class="table table-bordered align-middle">
           <thead class="table-primary">
             <tr>
-              <th scope="col">Paese</th>
-              <th scope="col">Istanza</th>
+              <th scope="col">{{ if $isEN }}Country{{ else }}Paese{{ end }}</th>
+              <th scope="col">{{ if $isEN }}Instance{{ else }}Istanza{{ end }}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>🇮🇹 Italia <span class="badge bg-primary ms-1">Osservatorio</span></td>
+              <td>🇮🇹 {{ if $isEN }}Italy{{ else }}Italia{{ end }} <span class="badge bg-primary ms-1">{{ if $isEN }}Observatory{{ else }}Osservatorio{{ end }}</span></td>
               <td><a href="https://mxmap.it/" target="_blank" rel="noopener">mxmap.it</a></td>
             </tr>
             <tr>
-              <td>🇨🇭 Svizzera <span class="text-muted small">(progetto originale)</span></td>
+              <td>🇨🇭 {{ if $isEN }}Switzerland{{ else }}Svizzera{{ end }} <span class="text-muted small">{{ if $isEN }}(original project){{ else }}(progetto originale){{ end }}</span></td>
               <td><a href="https://mxmap.ch/" target="_blank" rel="noopener">mxmap.ch</a></td>
             </tr>
             <tr>
-              <td>🇧🇪 Belgio</td>
+              <td>🇧🇪 {{ if $isEN }}Belgium{{ else }}Belgio{{ end }}</td>
               <td><a href="https://mxmap.be/" target="_blank" rel="noopener">mxmap.be</a></td>
             </tr>
             <tr>
-              <td>🇩🇪 Germania</td>
+              <td>🇩🇪 {{ if $isEN }}Germany{{ else }}Germania{{ end }}</td>
               <td><a href="https://mx-map.de/" target="_blank" rel="noopener">mx-map.de</a> · <a href="https://b42labs.github.io/mxmap/" target="_blank" rel="noopener">b42labs.github.io/mxmap</a></td>
             </tr>
             <tr>
-              <td>🇫🇷 Francia</td>
+              <td>🇫🇷 {{ if $isEN }}France{{ else }}Francia{{ end }}</td>
               <td><a href="https://mxmairies.fr/" target="_blank" rel="noopener">mxmairies.fr</a></td>
             </tr>
             <tr>
-              <td>🇳🇱 Paesi Bassi</td>
+              <td>🇳🇱 {{ if $isEN }}Netherlands{{ else }}Paesi Bassi{{ end }}</td>
               <td><a href="https://mxmap.nl/" target="_blank" rel="noopener">mxmap.nl</a></td>
             </tr>
             <tr>
-              <td>🇵🇹 Portogallo</td>
+              <td>🇵🇹 {{ if $isEN }}Portugal{{ else }}Portogallo{{ end }}</td>
               <td><a href="https://mxmap.pt/" target="_blank" rel="noopener">mxmap.pt</a></td>
             </tr>
             <tr>
-              <td>🇱🇻 Lettonia</td>
+              <td>🇱🇻 {{ if $isEN }}Latvia{{ else }}Lettonia{{ end }}</td>
               <td><a href="https://securit.lv/mxmap" target="_blank" rel="noopener">securit.lv/mxmap</a></td>
             </tr>
             <tr>
-              <td>🇳🇴 Norvegia</td>
+              <td>🇳🇴 {{ if $isEN }}Norway{{ else }}Norvegia{{ end }}</td>
               <td><a href="https://kommune-epost-norge.netlify.app/" target="_blank" rel="noopener">kommune-epost-norge.netlify.app</a></td>
             </tr>
             <tr>
-              <td>🇸🇪 Svezia</td>
+              <td>🇸🇪 {{ if $isEN }}Sweden{{ else }}Svezia{{ end }}</td>
               <td><a href="https://swedish-mail-dependency.netlify.app/" target="_blank" rel="noopener">swedish-mail-dependency.netlify.app</a></td>
             </tr>
             <tr>
-              <td>🇬🇧 Regno Unito</td>
+              <td>🇬🇧 {{ if $isEN }}United Kingdom{{ else }}Regno Unito{{ end }}</td>
               <td><a href="https://mxmap.uk/" target="_blank" rel="noopener">mxmap.uk</a></td>
             </tr>
             <tr>
-              <td>🇪🇺 Aggregato UE / mondo</td>
+              <td>🇪🇺 {{ if $isEN }}EU / world aggregate{{ else }}Aggregato UE / mondo{{ end }}</td>
               <td><a href="https://livenson.github.io/mxmap/" target="_blank" rel="noopener">livenson.github.io/mxmap</a></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="small text-muted mt-2">Fonte dell'elenco: <a href="https://github.com/davidhuser/mxmap" target="_blank" rel="noopener">README di davidhuser/mxmap</a>. L'elenco evolve nel tempo: l'istanza italiana è gestita nell'ambito dell'Osservatorio.</p>
+      <p class="small text-muted mt-2">{{ if $isEN }}List source:{{ else }}Fonte dell'elenco:{{ end }} <a href="https://github.com/davidhuser/mxmap" target="_blank" rel="noopener">{{ if $isEN }}README of davidhuser/mxmap{{ else }}README di davidhuser/mxmap{{ end }}</a>. {{ if $isEN }}The list evolves over time: the Italian instance is managed within the Observatory.{{ else }}L'elenco evolve nel tempo: l'istanza italiana è gestita nell'ambito dell'Osservatorio.{{ end }}</p>
 
       <div class="mt-3">
-        <h3 class="h6 text-primary">Progetto affine</h3>
-        <p class="mb-0"><strong>CAmap (Nordic &amp; Baltic)</strong> — applica un approccio analogo alle <em>Certificate Authority</em> TLS invece che alla posta elettronica: <a href="https://koldex.github.io/ca-sovereignty-map/" target="_blank" rel="noopener">koldex.github.io/ca-sovereignty-map</a></p>
+        <h3 class="h6 text-primary">{{ if $isEN }}Related project{{ else }}Progetto affine{{ end }}</h3>
+        <p class="mb-0"><strong>CAmap (Nordic &amp; Baltic)</strong> — {{ if $isEN }}applies a similar approach to TLS <em>Certificate Authorities</em> instead of email:{{ else }}applica un approccio analogo alle <em>Certificate Authority</em> TLS invece che alla posta elettronica:{{ end }} <a href="https://koldex.github.io/ca-sovereignty-map/" target="_blank" rel="noopener">koldex.github.io/ca-sovereignty-map</a></p>
       </div>
     </div>
   </div>
@@ -100,15 +101,15 @@
   <!-- Altre iniziative di misurazione -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-3">Altre iniziative di misurazione della sovranità digitale</h2>
-      <p>Iniziative che misurano la sovranità digitale da angolazioni diverse e complementari rispetto all'Osservatorio.</p>
+      <h2 class="mb-3">{{ if $isEN }}Other digital sovereignty measurement initiatives{{ else }}Altre iniziative di misurazione della sovranità digitale{{ end }}</h2>
+      <p>{{ if $isEN }}Initiatives that measure digital sovereignty from angles that are different from, and complementary to, the Observatory.{{ else }}Iniziative che misurano la sovranità digitale da angolazioni diverse e complementari rispetto all'Osservatorio.{{ end }}</p>
 
       <div class="row g-4 mt-1">
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="card-title h6 text-primary">sovranita-digitale.it <span class="badge bg-primary ms-1">Italia</span></h3>
-              <p class="card-text small flex-grow-1">Iniziativa civica indipendente italiana che raccoglie e analizza <strong>plurime basi dati e fonti pubbliche</strong> (cloud, DNS, ASN, TLS, lock-in, interoperabilità) per produrre un'analitica di sovranità <strong>multidimensionale</strong> della PA — con mappe e indici per ente. Approccio più ampio rispetto al focus dell'Osservatorio sulla posta elettronica, e complementare.</p>
+              <h3 class="card-title h6 text-primary">sovranita-digitale.it <span class="badge bg-primary ms-1">{{ if $isEN }}Italy{{ else }}Italia{{ end }}</span></h3>
+              <p class="card-text small flex-grow-1">{{ if $isEN }}An independent Italian civic initiative that collects and analyses <strong>multiple databases and public sources</strong> (cloud, DNS, ASN, TLS, lock-in, interoperability) to produce a <strong>multidimensional</strong> sovereignty analysis of the PA — with maps and indices per body. A broader approach than the Observatory's focus on email, and complementary.{{ else }}Iniziativa civica indipendente italiana che raccoglie e analizza <strong>plurime basi dati e fonti pubbliche</strong> (cloud, DNS, ASN, TLS, lock-in, interoperabilità) per produrre un'analitica di sovranità <strong>multidimensionale</strong> della PA — con mappe e indici per ente. Approccio più ampio rispetto al focus dell'Osservatorio sulla posta elettronica, e complementare.{{ end }}</p>
               <a class="read-more align-self-start" href="https://sovranita-digitale.it/" target="_blank" rel="noopener">
                 <span class="text">sovranita-digitale.it</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
@@ -119,8 +120,8 @@
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="card-title h6 text-primary">pa.zerozone.it <span class="badge bg-primary ms-1">Italia</span></h3>
-              <p class="card-text small flex-grow-1">Iniziativa italiana che cataloga e monitora i <strong>siti web</strong> delle PA registrate nell'IndicePA, con screenshot, analisi dei domini e dei record MX (incluso l'uso di provider come Google). Una fotografia complementare dell'infrastruttura digitale pubblica, sul versante web oltre che email.</p>
+              <h3 class="card-title h6 text-primary">pa.zerozone.it <span class="badge bg-primary ms-1">{{ if $isEN }}Italy{{ else }}Italia{{ end }}</span></h3>
+              <p class="card-text small flex-grow-1">{{ if $isEN }}An Italian initiative that catalogues and monitors the <strong>websites</strong> of the PA bodies registered in IndicePA, with screenshots, domain analysis and MX record analysis (including the use of providers such as Google). A complementary snapshot of public digital infrastructure, on the web side as well as email.{{ else }}Iniziativa italiana che cataloga e monitora i <strong>siti web</strong> delle PA registrate nell'IndicePA, con screenshot, analisi dei domini e dei record MX (incluso l'uso di provider come Google). Una fotografia complementare dell'infrastruttura digitale pubblica, sul versante web oltre che email.{{ end }}</p>
               <a class="read-more align-self-start" href="https://pa.zerozone.it/" target="_blank" rel="noopener">
                 <span class="text">pa.zerozone.it</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
@@ -132,7 +133,7 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="card-title h6 text-primary">EDRIX — European Digital Resilience Index</h3>
-              <p class="card-text small flex-grow-1">Indice 0–10 sulla dipendenza digitale dei 27 Stati membri UE, articolato in 4 pilastri — tra cui la <strong>sovranità dell'hosting del settore pubblico</strong>, l'ambito più vicino al nostro. Dati da fonti pubbliche e scriptabili.</p>
+              <p class="card-text small flex-grow-1">{{ if $isEN }}A 0–10 index of the digital dependence of the 27 EU member states, broken down into 4 pillars — including <strong>public-sector hosting sovereignty</strong>, the area closest to ours. Data from public and scriptable sources.{{ else }}Indice 0–10 sulla dipendenza digitale dei 27 Stati membri UE, articolato in 4 pilastri — tra cui la <strong>sovranità dell'hosting del settore pubblico</strong>, l'ambito più vicino al nostro. Dati da fonti pubbliche e scriptabili.{{ end }}</p>
               <a class="read-more align-self-start" href="https://edrix.eu/" target="_blank" rel="noopener">
                 <span class="text">edrix.eu</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
@@ -144,7 +145,7 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="card-title h6 text-primary">Nextcloud — Digital Sovereignty Index (DSI)</h3>
-              <p class="card-text small flex-grow-1">Misura l'adozione di strumenti collaborativi <em>self-hosted</em> (file, videoconferenza, groupware) in circa 60 paesi, come indicatore di indipendenza digitale.</p>
+              <p class="card-text small flex-grow-1">{{ if $isEN }}Measures the adoption of <em>self-hosted</em> collaboration tools (files, video conferencing, groupware) in around 60 countries, as an indicator of digital independence.{{ else }}Misura l'adozione di strumenti collaborativi <em>self-hosted</em> (file, videoconferenza, groupware) in circa 60 paesi, come indicatore di indipendenza digitale.{{ end }}</p>
               <a class="read-more align-self-start" href="https://nextcloud.com/blog/digital-sovereignty-index-how-countries-compare-in-digital-independence/" target="_blank" rel="noopener">
                 <span class="text">nextcloud.com</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
@@ -156,7 +157,7 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body d-flex flex-column">
               <h3 class="card-title h6 text-primary">EU Cloud Sovereignty Framework (SEAL)</h3>
-              <p class="card-text small flex-grow-1">Quadro ufficiale della Commissione Europea per valutare la sovranità dei servizi cloud nel procurement pubblico, con livelli di assurance <strong>SEAL 1–4</strong> (dalla sovranità dei dati all'autonomia tecnologica piena).</p>
+              <p class="card-text small flex-grow-1">{{ if $isEN }}The European Commission's official framework for assessing the sovereignty of cloud services in public procurement, with <strong>SEAL 1–4</strong> assurance levels (from data sovereignty to full technological autonomy).{{ else }}Quadro ufficiale della Commissione Europea per valutare la sovranità dei servizi cloud nel procurement pubblico, con livelli di assurance <strong>SEAL 1–4</strong> (dalla sovranità dei dati all'autonomia tecnologica piena).{{ end }}</p>
               <a class="read-more align-self-start" href="https://commission.europa.eu/news-and-media/news/sovereign-cloud-framework-explained-2026-06-01_en" target="_blank" rel="noopener">
                 <span class="text">commission.europa.eu</span>
                 <svg class="icon"><use href="{{ $spritesURL }}#it-external-link"></use></svg>
@@ -165,7 +166,7 @@
           </div>
         </div>
       </div>
-      <p class="small text-muted mt-3">Conosci un'altra iniziativa di misurazione della sovranità digitale? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Segnalacela su GitHub</a> e la aggiungeremo.</p>
+      <p class="small text-muted mt-3">{{ if $isEN }}Do you know another digital sovereignty measurement initiative? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Report it to us on GitHub</a> and we will add it.{{ else }}Conosci un'altra iniziativa di misurazione della sovranità digitale? <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues/new" target="_blank" rel="noopener">Segnalacela su GitHub</a> e la aggiungeremo.{{ end }}</p>
     </div>
   </div>
 

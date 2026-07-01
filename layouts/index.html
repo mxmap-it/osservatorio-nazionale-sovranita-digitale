@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $kpi := site.Data.kpi }}
+{{ $isEN := eq site.Language.Lang "en" }}
 <section class="hero-custom">
   <div class="container-xxl">
     <div class="row justify-content-center">
@@ -27,7 +28,7 @@
       <div class="col-lg-3 col-md-6">
         <div class="card card-bg rounded shadow-sm text-center h-100">
           <div class="card-body py-4">
-            <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . "- , ." }}{{ else }}~23.000{{ end }}</div>
+            <div class="h1 text-primary mb-1">{{ with $kpi.totals.n_entities }}{{ lang.FormatNumberCustom 0 . (cond $isEN "- . ," "- , .") }}{{ else }}~23.000{{ end }}</div>
             <p class="card-text mb-0"><strong>{{ i18n "kpiEntities" }}</strong></p>
             <p class="small text-muted">{{ i18n "kpiEntitiesSub" }}</p>
           </div>

@@ -1,26 +1,27 @@
 {{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
 {{ $spritesURL := "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg" }}
 <div class="container-xxl section-spacing-lg">
 
   <div class="row justify-content-center">
     <div class="col-lg-10">
       <h1 class="mb-2">{{ .Title }}</h1>
-      <p class="lead mb-4">Il logo dell'Osservatorio e tutte le sue varianti, pronte da scaricare. Materiali rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>: liberi di riusarli citando la fonte.</p>
+      <p class="lead mb-4">{{ if $isEN }}The Observatory's logo and all its variants, ready to download. Materials released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a> licence: free to reuse with attribution.{{ else }}Il logo dell'Osservatorio e tutte le sue varianti, pronte da scaricare. Materiali rilasciati sotto licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>: liberi di riusarli citando la fonte.{{ end }}</p>
     </div>
   </div>
 
   <!-- Anteprime -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Logo e varianti</h2>
+      <h2 class="mb-4">{{ if $isEN }}Logo and variants{{ else }}Logo e varianti{{ end }}</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body text-center">
               <div style="background:#fff;border-radius:8px;padding:24px;">
-                <img src="{{ "brand/osservatorio-logo-horizontal.svg" | relURL }}" alt="Logo orizzontale" style="max-width:100%;height:64px;">
+                <img src="{{ "brand/osservatorio-logo-horizontal.svg" | relURL }}" alt="{{ if $isEN }}Horizontal logo{{ else }}Logo orizzontale{{ end }}" style="max-width:100%;height:64px;">
               </div>
-              <p class="small mt-2 mb-0 text-muted">Orizzontale (uso primario, header)</p>
+              <p class="small mt-2 mb-0 text-muted">{{ if $isEN }}Horizontal (primary use, header){{ else }}Orizzontale (uso primario, header){{ end }}</p>
             </div>
           </div>
         </div>
@@ -28,9 +29,9 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body text-center">
               <div style="background:#fff;border-radius:8px;padding:16px;">
-                <img src="{{ "brand/osservatorio-logo-vertical.svg" | relURL }}" alt="Logo verticale" style="max-width:100%;height:120px;">
+                <img src="{{ "brand/osservatorio-logo-vertical.svg" | relURL }}" alt="{{ if $isEN }}Vertical logo{{ else }}Logo verticale{{ end }}" style="max-width:100%;height:120px;">
               </div>
-              <p class="small mt-2 mb-0 text-muted">Verticale (stampa, social)</p>
+              <p class="small mt-2 mb-0 text-muted">{{ if $isEN }}Vertical (print, social){{ else }}Verticale (stampa, social){{ end }}</p>
             </div>
           </div>
         </div>
@@ -38,9 +39,9 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body text-center">
               <div style="background:#fff;border-radius:8px;padding:24px;">
-                <img src="{{ "brand/osservatorio-symbol.svg" | relURL }}" alt="Solo simbolo" style="height:80px;">
+                <img src="{{ "brand/osservatorio-symbol.svg" | relURL }}" alt="{{ if $isEN }}Symbol only{{ else }}Solo simbolo{{ end }}" style="height:80px;">
               </div>
-              <p class="small mt-2 mb-0 text-muted">Solo simbolo (icona, favicon)</p>
+              <p class="small mt-2 mb-0 text-muted">{{ if $isEN }}Symbol only (icon, favicon){{ else }}Solo simbolo (icona, favicon){{ end }}</p>
             </div>
           </div>
         </div>
@@ -48,9 +49,9 @@
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body text-center">
               <div style="background:#17324D;border-radius:8px;padding:24px;">
-                <img src="{{ "brand/osservatorio-logo-negative.svg" | relURL }}" alt="Versione negativa" style="max-width:100%;height:64px;">
+                <img src="{{ "brand/osservatorio-logo-negative.svg" | relURL }}" alt="{{ if $isEN }}Negative version{{ else }}Versione negativa{{ end }}" style="max-width:100%;height:64px;">
               </div>
-              <p class="small mt-2 mb-0 text-muted">Negativa (fondi scuri)</p>
+              <p class="small mt-2 mb-0 text-muted">{{ if $isEN }}Negative (dark backgrounds){{ else }}Negativa (fondi scuri){{ end }}</p>
             </div>
           </div>
         </div>
@@ -64,26 +65,26 @@
       <h2 class="mb-4">Download</h2>
       <div class="table-responsive">
         <table class="table table-bordered align-middle">
-          <thead class="table-primary"><tr><th scope="col">File</th><th scope="col">Formato</th><th scope="col">Uso</th><th scope="col"></th></tr></thead>
+          <thead class="table-primary"><tr><th scope="col">File</th><th scope="col">{{ if $isEN }}Format{{ else }}Formato{{ end }}</th><th scope="col">{{ if $isEN }}Use{{ else }}Uso{{ end }}</th><th scope="col"></th></tr></thead>
           <tbody>
             {{ $files := slice
-              (dict "f" "osservatorio-logo-horizontal.svg" "fmt" "SVG" "use" "Logo orizzontale")
-              (dict "f" "osservatorio-logo-vertical.svg" "fmt" "SVG" "use" "Logo verticale")
-              (dict "f" "osservatorio-symbol.svg" "fmt" "SVG" "use" "Solo simbolo")
-              (dict "f" "osservatorio-logo-negative.svg" "fmt" "SVG" "use" "Negativa (fondo scuro)")
+              (dict "f" "osservatorio-logo-horizontal.svg" "fmt" "SVG" "use" (cond $isEN "Horizontal logo" "Logo orizzontale"))
+              (dict "f" "osservatorio-logo-vertical.svg" "fmt" "SVG" "use" (cond $isEN "Vertical logo" "Logo verticale"))
+              (dict "f" "osservatorio-symbol.svg" "fmt" "SVG" "use" (cond $isEN "Symbol only" "Solo simbolo"))
+              (dict "f" "osservatorio-logo-negative.svg" "fmt" "SVG" "use" (cond $isEN "Negative (dark background)" "Negativa (fondo scuro)"))
               (dict "f" "favicon.svg" "fmt" "SVG" "use" "Favicon")
-              (dict "f" "icon-512.png" "fmt" "PNG 512" "use" "Icona app / generica")
+              (dict "f" "icon-512.png" "fmt" "PNG 512" "use" (cond $isEN "App / generic icon" "Icona app / generica"))
               (dict "f" "apple-touch-icon.png" "fmt" "PNG 180" "use" "Apple touch icon")
               (dict "f" "favicon-32.png" "fmt" "PNG 32" "use" "Favicon")
-              (dict "f" "social-avatar.png" "fmt" "PNG 400" "use" "Avatar social (quadrato)")
-              (dict "f" "og-image.png" "fmt" "PNG 1200×630" "use" "Anteprima social / OG")
+              (dict "f" "social-avatar.png" "fmt" "PNG 400" "use" (cond $isEN "Social avatar (square)" "Avatar social (quadrato)"))
+              (dict "f" "og-image.png" "fmt" "PNG 1200×630" "use" (cond $isEN "Social preview / OG" "Anteprima social / OG"))
             }}
             {{ range $files }}
             <tr>
               <td><code>{{ .f }}</code></td>
               <td>{{ .fmt }}</td>
               <td>{{ .use }}</td>
-              <td><a class="btn btn-primary btn-sm" href="{{ (printf "brand/%s" .f) | relURL }}" download><svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>Scarica</a></td>
+              <td><a class="btn btn-primary btn-sm" href="{{ (printf "brand/%s" .f) | relURL }}" download><svg class="icon icon-white icon-sm me-1"><use href="{{ $spritesURL }}#it-download"></use></svg>{{ if $isEN }}Download{{ else }}Scarica{{ end }}</a></td>
             </tr>
             {{ end }}
           </tbody>
@@ -95,17 +96,17 @@
   <!-- Linee guida -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10">
-      <h2 class="mb-4">Linee guida essenziali</h2>
+      <h2 class="mb-4">{{ if $isEN }}Essential guidelines{{ else }}Linee guida essenziali{{ end }}</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="h6 text-primary">Colori</h3>
+              <h3 class="h6 text-primary">{{ if $isEN }}Colours{{ else }}Colori{{ end }}</h3>
               <ul class="list-unstyled small mb-0">
-                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#0066CC;border-radius:4px;display:inline-block;" class="me-2"></span> Blu Italia — <code>#0066CC</code></li>
-                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#17324D;border-radius:4px;display:inline-block;" class="me-2"></span> Inchiostro — <code>#17324D</code></li>
-                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#008758;border-radius:4px;display:inline-block;" class="me-2"></span> Verde — <code>#008758</code></li>
-                <li class="d-flex align-items-center mb-0"><span style="width:18px;height:18px;background:#CE2B37;border-radius:4px;display:inline-block;" class="me-2"></span> Rosso — <code>#CE2B37</code></li>
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#0066CC;border-radius:4px;display:inline-block;" class="me-2"></span> {{ if $isEN }}Italy Blue{{ else }}Blu Italia{{ end }} — <code>#0066CC</code></li>
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#17324D;border-radius:4px;display:inline-block;" class="me-2"></span> {{ if $isEN }}Ink{{ else }}Inchiostro{{ end }} — <code>#17324D</code></li>
+                <li class="d-flex align-items-center mb-2"><span style="width:18px;height:18px;background:#008758;border-radius:4px;display:inline-block;" class="me-2"></span> {{ if $isEN }}Green{{ else }}Verde{{ end }} — <code>#008758</code></li>
+                <li class="d-flex align-items-center mb-0"><span style="width:18px;height:18px;background:#CE2B37;border-radius:4px;display:inline-block;" class="me-2"></span> {{ if $isEN }}Red{{ else }}Rosso{{ end }} — <code>#CE2B37</code></li>
               </ul>
             </div>
           </div>
@@ -113,12 +114,12 @@
         <div class="col-md-6">
           <div class="card card-bg rounded shadow-sm h-100">
             <div class="card-body">
-              <h3 class="h6 text-primary">Tipografia e uso</h3>
+              <h3 class="h6 text-primary">{{ if $isEN }}Typography and usage{{ else }}Tipografia e uso{{ end }}</h3>
               <ul class="small mb-0">
-                <li>Font: <strong>Titillium Web</strong> (il font del design system PA)</li>
-                <li>Mantieni uno spazio di rispetto attorno al logo pari all'altezza del punto centrale</li>
-                <li>Non deformare, non ruotare, non cambiare i colori del simbolo</li>
-                <li>Su fondi scuri usa la versione <strong>negativa</strong></li>
+                <li>Font: <strong>Titillium Web</strong> ({{ if $isEN }}the font of the PA design system{{ else }}il font del design system PA{{ end }})</li>
+                <li>{{ if $isEN }}Keep clear space around the logo equal to the height of the central dot{{ else }}Mantieni uno spazio di rispetto attorno al logo pari all'altezza del punto centrale{{ end }}</li>
+                <li>{{ if $isEN }}Do not distort, rotate or change the colours of the symbol{{ else }}Non deformare, non ruotare, non cambiare i colori del simbolo{{ end }}</li>
+                <li>{{ if $isEN }}On dark backgrounds use the <strong>negative</strong> version{{ else }}Su fondi scuri usa la versione <strong>negativa</strong>{{ end }}</li>
               </ul>
             </div>
           </div>
@@ -133,9 +134,9 @@
       <div class="callout callout-highlight">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-info-circle"></use></svg>
-          <span>Per MxMap e le altre istanze</span>
+          <span>{{ if $isEN }}For MxMap and the other instances{{ else }}Per MxMap e le altre istanze{{ end }}</span>
         </div>
-        <p class="mb-0">Il marchio è pensato per essere adattabile: la stessa identità (simbolo radar + Titillium Web + blu Italia) può essere declinata per <a href="{{ "iniziative/" | relURL }}">MxMap e le altre istanze europee</a>. I file sorgente SVG sono modificabili e rilasciati sotto CC BY-SA 4.0.</p>
+        <p class="mb-0">{{ if $isEN }}The brand is designed to be adaptable: the same identity (radar symbol + Titillium Web + Italy blue) can be adapted for <a href="{{ "iniziative/" | relURL }}">MxMap and the other European instances</a>. The SVG source files are editable and released under CC BY-SA 4.0.{{ else }}Il marchio è pensato per essere adattabile: la stessa identità (simbolo radar + Titillium Web + blu Italia) può essere declinata per <a href="{{ "iniziative/" | relURL }}">MxMap e le altre istanze europee</a>. I file sorgente SVG sono modificabili e rilasciati sotto CC BY-SA 4.0.{{ end }}</p>
       </div>
     </div>
   </div>

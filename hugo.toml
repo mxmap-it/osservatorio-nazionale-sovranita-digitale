@@ -104,6 +104,7 @@ disableKinds = ['taxonomy', 'term']
     contentDir = 'content/en'
     [languages.en.params]
       description = 'Measuring and monitoring the state of digital sovereignty in the Italian Public Administration'
+      keywords = ['National Digital Sovereignty Observatory', 'Digital Sovereignty Italy', 'MxMap Italia', 'MxMap', 'MxMap Observatory', 'Italian PA email', 'Italian public administration email providers', 'digital dependency PA', 'CLOUD Act', 'GDPR public administration', 'Schrems II', 'IndicePA', 'sovereign cloud', 'national cloud PA', 'data jurisdiction', 'digital autonomy', 'open data PA', 'Google Workspace PA', 'Microsoft 365 PA', 'civic monitoring']
     [[languages.en.menus.main]]
       name = 'Home'
       url = '/'
