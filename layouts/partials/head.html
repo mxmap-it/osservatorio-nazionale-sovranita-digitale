@@ -1,7 +1,13 @@
+{{- $isEN := eq site.Language.Lang "en" -}}
 {{- $desc := cond (ne .Description "") .Description site.Params.description -}}
 {{- if and .IsHome site.Data.kpi (not site.Data.kpi.placeholder) -}}
   {{- $k := site.Data.kpi -}}
-  {{- $desc = printf "Sovranità digitale della PA italiana: il %.0f%% degli enti usa email su provider extra-UE (CLOUD Act), il %.0f%% su provider italiani. Analisi su %s enti — Osservatorio Nazionale Sovranità Digitale (MxMap Italia)." $k.sovereignty.extra_eu.pct $k.sovereignty.it.pct (lang.FormatNumberCustom 0 $k.totals.n_entities "- , .") -}}
+  {{- $n := lang.FormatNumberCustom 0 $k.totals.n_entities "- , ." -}}
+  {{- if $isEN -}}
+    {{- $desc = printf "Digital sovereignty of the Italian PA: %.0f%% of public bodies use email on non-EU providers (CLOUD Act), %.0f%% on Italian providers. Analysis of %s bodies — National Digital Sovereignty Observatory (MxMap Italia)." $k.sovereignty.extra_eu.pct $k.sovereignty.it.pct $n -}}
+  {{- else -}}
+    {{- $desc = printf "Sovranità digitale della PA italiana: il %.0f%% degli enti usa email su provider extra-UE (CLOUD Act), il %.0f%% su provider italiani. Analisi su %s enti — Osservatorio Nazionale Sovranità Digitale (MxMap Italia)." $k.sovereignty.extra_eu.pct $k.sovereignty.it.pct $n -}}
+  {{- end -}}
 {{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,11 +15,12 @@
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 
 <meta name="author" content="{{ site.Params.author }}">
-{{ if eq site.Language.Lang "it" }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{{ else }}<meta name="robots" content="noindex, follow">{{ end }}
+{{ if or (eq site.Language.Lang "it") (eq site.Language.Lang "en") }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{{ else }}<meta name="robots" content="noindex, follow">{{ end }}
 <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ else }}{{ delimit site.Params.keywords ", " }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="theme-color" content="#0066CC">
-<meta property="og:locale" content="it_IT">
+{{ range .AllTranslations }}{{ if or (eq .Language.Lang "it") (eq .Language.Lang "en") }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}{{ end }}<meta name="theme-color" content="#0066CC">
+<meta property="og:locale" content="{{ if $isEN }}en_GB{{ else }}it_IT{{ end }}">
 
 <link rel="icon" type="image/svg+xml" href="{{ "brand/favicon.svg" | relURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "brand/favicon-32.png" | relURL }}">
@@ -69,26 +76,26 @@
       "name": "{{ site.Title }}",
       "alternateName": "MxMap Italia",
       "url": "{{ absURL "" }}",
-      "inLanguage": "it-IT",
+      "inLanguage": "{{ if $isEN }}en-GB{{ else }}it-IT{{ end }}",
       "description": "{{ site.Params.description }}",
       "publisher": { "@id": "{{ absURL "" }}#organization" }
     }{{ if and site.Data.kpi (not site.Data.kpi.placeholder) }},
     {
       "@type": "Dataset",
-      "name": "Sovranità digitale della posta elettronica della PA italiana",
-      "alternateName": "Osservatorio Nazionale Sovranità Digitale — dataset",
-      "description": "Quota di enti della Pubblica Amministrazione italiana per giurisdizione del provider di posta elettronica (italiano, UE, extra-UE/CLOUD Act). Analisi su {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} enti dell'IndicePA. Dati MxMap Italia.",
+      "name": "{{ if $isEN }}Digital sovereignty of Italian public administration email{{ else }}Sovranità digitale della posta elettronica della PA italiana{{ end }}",
+      "alternateName": "{{ site.Title }} — dataset",
+      "description": "{{ if $isEN }}Share of Italian Public Administration bodies by email provider jurisdiction (Italian, EU, non-EU/CLOUD Act). Analysis of {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} IndicePA bodies. MxMap Italia data.{{ else }}Quota di enti della Pubblica Amministrazione italiana per giurisdizione del provider di posta elettronica (italiano, UE, extra-UE/CLOUD Act). Analisi su {{ lang.FormatNumberCustom 0 site.Data.kpi.totals.n_entities "- , ." }} enti dell'IndicePA. Dati MxMap Italia.{{ end }}",
       "url": "{{ absURL "" }}",
       "creator": { "@id": "{{ absURL "" }}#organization" },
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "isAccessibleForFree": true,
-      "inLanguage": "it-IT",
-      "keywords": ["sovranità digitale", "Pubblica Amministrazione", "posta elettronica", "CLOUD Act", "GDPR", "IndicePA", "Italia"],
+      "inLanguage": "{{ if $isEN }}en-GB{{ else }}it-IT{{ end }}",
+      "keywords": [{{ if $isEN }}"digital sovereignty", "Public Administration", "email", "CLOUD Act", "GDPR", "IndicePA", "Italy"{{ else }}"sovranità digitale", "Pubblica Amministrazione", "posta elettronica", "CLOUD Act", "GDPR", "IndicePA", "Italia"{{ end }}],
       "variableMeasured": [
-        { "@type": "PropertyValue", "name": "PA su provider extra-UE (CLOUD Act)", "value": {{ site.Data.kpi.sovereignty.extra_eu.pct }}, "unitText": "PERCENT" },
-        { "@type": "PropertyValue", "name": "PA su provider italiani", "value": {{ site.Data.kpi.sovereignty.it.pct }}, "unitText": "PERCENT" },
-        { "@type": "PropertyValue", "name": "PA su provider UE (non italiani)", "value": {{ site.Data.kpi.sovereignty.eu_non_it.pct }}, "unitText": "PERCENT" },
-        { "@type": "PropertyValue", "name": "Enti PA analizzati", "value": {{ site.Data.kpi.totals.n_entities }} }
+        { "@type": "PropertyValue", "name": "{{ if $isEN }}PA on non-EU providers (CLOUD Act){{ else }}PA su provider extra-UE (CLOUD Act){{ end }}", "value": {{ site.Data.kpi.sovereignty.extra_eu.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "{{ if $isEN }}PA on Italian providers{{ else }}PA su provider italiani{{ end }}", "value": {{ site.Data.kpi.sovereignty.it.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "{{ if $isEN }}PA on EU providers (non-Italian){{ else }}PA su provider UE (non italiani){{ end }}", "value": {{ site.Data.kpi.sovereignty.eu_non_it.pct }}, "unitText": "PERCENT" },
+        { "@type": "PropertyValue", "name": "{{ if $isEN }}PA bodies analysed{{ else }}Enti PA analizzati{{ end }}", "value": {{ site.Data.kpi.totals.n_entities }} }
       ]
     }{{ end }}
   ]

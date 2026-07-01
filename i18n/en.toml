@@ -143,5 +143,8 @@ other = "The Telegram channel is first of all an invitation to <strong>take part
 [tgBtn]
 other = "Join and contribute"
 
+[tgFab]
+other = "Join the Observatory's Telegram channel"
+
 [mxmapBoxBody]
 other = "The Observatory uses the data collected by the <a href=\"https://mxmap.it/\" target=\"_blank\" rel=\"noopener\"><strong>MxMap.it</strong></a> project to analyse the Italian Public Administration's dependence on foreign email providers and to assess the state of digital sovereignty."

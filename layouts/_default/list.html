@@ -22,7 +22,7 @@
             <p class="card-text">{{ .Summary | truncate 200 }}</p>
             {{ with .Params.pdf }}
             <a class="read-more" href="{{ . | relURL }}" download>
-              <span class="text">Scarica PDF</span>
+              <span class="text">{{ i18n "downloadPdfShort" }}</span>
               <svg class="icon"><use href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist/svg/sprites.svg#it-download"></use></svg>
             </a>
             {{ end }}
