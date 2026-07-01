@@ -52,7 +52,7 @@
             </tr>
             <tr>
               <td>{{ if $isEN }}Most widespread provider in the PA{{ else }}Provider più diffuso nella PA{{ end }}</td>
-              <td><strong>{{ with index $kpi.top_providers 0 }}{{ .name }}{{ else }}{{ if $isEN }}Updating{{ else }}In aggiornamento{{ end }}{{ end }}</strong></td>
+              <td><strong>{{ with index $kpi.top_providers 0 }}{{ partial "tlabel.html" (dict "s" .name "en" $isEN) }}{{ else }}{{ if $isEN }}Updating{{ else }}In aggiornamento{{ end }}{{ end }}</strong></td>
               <td>{{ if $isEN }}By number of bodies served{{ else }}Per numero di enti serviti{{ end }}</td>
             </tr>
           </tbody>

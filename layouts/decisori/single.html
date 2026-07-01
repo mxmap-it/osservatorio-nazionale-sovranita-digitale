@@ -73,10 +73,10 @@
       {{ range sort . "usa_pct" "desc" }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .cluster }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }} · {{ .dominant_provider }}</span></span>
+          <span class="small"><strong>{{ partial "tlabel.html" (dict "s" .cluster "en" $isEN) }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .n_entities (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }} · {{ partial "tlabel.html" (dict "s" .dominant_provider "en" $isEN) }}</span></span>
           <span class="small fw-bold text-danger">{{ printf "%.0f%%" .usa_pct }}</span>
         </div>
-        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .cluster }}: {{ printf "%.0f%%" .usa_pct }} {{ if $isEN }}on non-EU providers{{ else }}su provider extra-UE{{ end }}">
+        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ partial "tlabel.html" (dict "s" .cluster "en" $isEN) }}: {{ printf "%.0f%%" .usa_pct }} {{ if $isEN }}on non-EU providers{{ else }}su provider extra-UE{{ end }}">
           <div class="rounded" style="height:10px;width:{{ .usa_pct }}%;background:#D9364F;"></div>
         </div>
       </div>
@@ -103,10 +103,10 @@
       {{ if eq .sovereignty "extra_eu" }}{{ $c = "#D9364F" }}{{ else if eq .sovereignty "it" }}{{ $c = "#0066CC" }}{{ else if eq .sovereignty "eu_non_it" }}{{ $c = "#1D9E75" }}{{ end }}
       <div class="mb-3">
         <div class="d-flex justify-content-between mb-1">
-          <span class="small"><strong>{{ .name }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
+          <span class="small"><strong>{{ partial "tlabel.html" (dict "s" .name "en" $isEN) }}</strong> <span class="text-muted">· {{ lang.FormatNumberCustom 0 .count (cond $isEN "- . ," "- , .") }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
           <span class="small fw-bold">{{ printf "%.1f%%" .pct }}</span>
         </div>
-        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ .name }}: {{ printf "%.1f%%" .pct }}">
+        <div class="rounded" style="height:10px;background:#e9ecef;" role="img" aria-label="{{ partial "tlabel.html" (dict "s" .name "en" $isEN) }}: {{ printf "%.1f%%" .pct }}">
           <div class="rounded" style="height:10px;width:{{ .pct }}%;background:{{ $c }};"></div>
         </div>
       </div>

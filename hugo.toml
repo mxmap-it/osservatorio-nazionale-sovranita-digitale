@@ -43,6 +43,7 @@ disableKinds = ['taxonomy', 'term']
     weight = 1
     locale = 'it'
     title = 'Osservatorio Nazionale Sovranità Digitale'
+    contentDir = 'content/it'
     [languages.it.params]
       description = 'Misurare e monitorare lo stato della sovranità digitale nella Pubblica Amministrazione italiana'
     [[languages.it.menus.main]]
