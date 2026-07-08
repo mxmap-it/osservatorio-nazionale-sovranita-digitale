@@ -415,6 +415,43 @@ def build():
         ),
     ], RED_LIGHT, RED_BORDER))
 
+    # Microsoft admission quote box
+    s_quote_eyebrow = ParagraphStyle(
+        "QuoteEyebrow", fontName="Arial-Bold", fontSize=8.5, textColor=RED_BORDER,
+        spaceAfter=4, leading=11, letterSpacing=1.5
+    )
+    s_quote_big = ParagraphStyle(
+        "QuoteBig", fontName="Arial-BoldItalic", fontSize=15, textColor=DARK,
+        spaceAfter=5, leading=19
+    )
+    s_quote_context = ParagraphStyle(
+        "QuoteContext", fontName="Arial", fontSize=8.5, textColor=DARK,
+        spaceAfter=4, leading=11.5, alignment=TA_JUSTIFY
+    )
+    s_quote_attr = ParagraphStyle(
+        "QuoteAttr", fontName="Arial-Italic", fontSize=7.5, textColor=GRAY_TEXT,
+        spaceAfter=0, leading=10
+    )
+    story.append(Spacer(1, 3 * mm))
+    story.append(colored_box([
+        Paragraph("MICROSOFT'S OWN ADMISSION", s_quote_eyebrow),
+        Paragraph("“No, I cannot guarantee it.”", s_quote_big),
+        Paragraph(
+            "Microsoft France's Director of Public and Legal Affairs, asked at a "
+            "hearing whether he could guarantee that European citizens' data would "
+            "never be transferred to the US government under a CLOUD Act order "
+            "— without the national authorities' agreement. Microsoft itself "
+            "admits it cannot rule out the transfer of European data to US authorities.",
+            s_quote_context
+        ),
+        Paragraph(
+            "Anton Carniaux, Director of Public and Legal Affairs, Microsoft France "
+            "— hearing before the French Senate committee of inquiry, "
+            "10 June 2025. Sources: French Senate (senat.fr) · heise.de",
+            s_quote_attr
+        ),
+    ], GRAY_BG, RED_BORDER))
+
     # 2.3 Italy's Cloud Strategy and ACN
     story.append(Spacer(1, 3 * mm))
     story.append(Paragraph("2.3 Italy's Cloud Strategy and ACN qualification", s_h2))

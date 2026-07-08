@@ -46,6 +46,32 @@ s_leg = ParagraphStyle("Leg", fontName="Arial", fontSize=9, textColor=DARK, lead
 s_leg_b = ParagraphStyle("LegB", fontName="Arial-Bold", fontSize=9, textColor=DARK, leading=14)
 s_bar_l = ParagraphStyle("BarL", fontName="Arial", fontSize=8.5, textColor=DARK, leading=10)
 s_bar_lb = ParagraphStyle("BarLB", fontName="Arial-Bold", fontSize=8.5, textColor=DARK, leading=10)
+s_q_eyebrow = ParagraphStyle("QE", fontName="Arial-Bold", fontSize=8.5, textColor=RED, leading=11, spaceAfter=4)
+s_q_big = ParagraphStyle("QB", fontName="Arial-Italic", fontSize=15, textColor=INK, leading=19, spaceAfter=5)
+s_q_ctx = ParagraphStyle("QC", fontName="Arial", fontSize=9, textColor=DARK, leading=12.5, alignment=TA_JUSTIFY, spaceAfter=5)
+s_q_attr = ParagraphStyle("QA", fontName="Arial", fontSize=7.5, textColor=GRAY_TEXT, leading=10)
+
+
+def quote_box(eyebrow, quote, context, attribution):
+    """Highlighted-evidence callout: solid tint background + coloured left border,
+    so it stays legible over the diagonal watermark."""
+    inner = [
+        Paragraph(eyebrow, s_q_eyebrow),
+        Paragraph(quote, s_q_big),
+        Paragraph(context, s_q_ctx),
+        Paragraph(attribution, s_q_attr),
+    ]
+    t = Table([[inner]], colWidths=[170 * mm])
+    t.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), GRAY_BG),
+        ("LINEBEFORE", (0, 0), (0, -1), 3, RED),
+        ("LEFTPADDING", (0, 0), (-1, -1), 8 * mm),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6 * mm),
+        ("TOPPADDING", (0, 0), (-1, -1), 5 * mm),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 5 * mm),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ]))
+    return t
 
 
 def load():
@@ -189,6 +215,22 @@ def build():
         f"degli enti si affida a provider soggetti a giurisdizione <b>extra-UE</b> (es. CLOUD Act), contro il "
         f"<b><font color='#0066CC'>{it:.1f}%</font></b> su provider italiani"
         + (f" e il {eu:.1f}% su altri provider UE" if eu else "") + ".", s_body))
+
+    # Quote box — l'ammissione di Microsoft
+    story.append(Spacer(1, 3 * mm))
+    story.append(quote_box(
+        "L&#39;AMMISSIONE DI MICROSOFT",
+        "«No, non posso garantirlo.»",
+        "Il Direttore degli Affari Pubblici e Legali di Microsoft France, richiesto in "
+        "audizione se potesse garantire che i dati dei cittadini europei non venissero "
+        "trasferiti al governo statunitense in virtù di un ordine emesso ai sensi del "
+        "CLOUD Act &mdash; senza l&#39;accordo delle autorità nazionali. È Microsoft "
+        "stessa ad ammettere di non poter escludere il trasferimento dei dati europei "
+        "alle autorità USA.",
+        "Anton Carniaux, Direttore Affari Pubblici e Legali, Microsoft France &mdash; "
+        "Audizione, Commissione d&#39;inchiesta del Senato francese, 10 giugno 2025. "
+        "Fonti: Senato francese (senat.fr) &middot; heise.de"))
+    story.append(Spacer(1, 3 * mm))
 
     # Sovranità — donut + legend
     story.append(Paragraph("La fotografia: sovranità dei provider", s_h2))

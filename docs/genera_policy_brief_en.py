@@ -95,6 +95,22 @@ style_box_title = ParagraphStyle(
     "BoxTitle", fontName="Arial-Bold", fontSize=9.5, textColor=BLUE,
     spaceAfter=4, spaceBefore=0, leading=12
 )
+style_quote_eyebrow = ParagraphStyle(
+    "QuoteEyebrow", fontName="Arial-Bold", fontSize=8.5, textColor=BLUE,
+    spaceAfter=4, spaceBefore=0, leading=11, letterSpacing=1
+)
+style_quote = ParagraphStyle(
+    "Quote", fontName="Arial-Italic", fontSize=14, textColor=DARK,
+    spaceAfter=5, spaceBefore=0, leading=17, alignment=TA_LEFT
+)
+style_quote_context = ParagraphStyle(
+    "QuoteContext", fontName="Arial", fontSize=8.5, textColor=DARK,
+    spaceAfter=4, spaceBefore=0, leading=11.5, alignment=TA_LEFT
+)
+style_quote_attr = ParagraphStyle(
+    "QuoteAttr", fontName="Arial", fontSize=7.5, textColor=GRAY_TEXT,
+    spaceAfter=0, spaceBefore=0, leading=10, alignment=TA_LEFT
+)
 
 
 def footer(canvas, doc):
@@ -125,6 +141,26 @@ def gray_box(content_elements):
         ("TOPPADDING", (0, 0), (-1, -1), 8),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
         ("ROUNDEDCORNERS", [3, 3, 3, 3]),
+    ]))
+    return t
+
+
+def quote_box(eyebrow, quote, context, attribution):
+    """Highlighted callout with a tinted background and a coloured left border."""
+    inner = [
+        Paragraph(eyebrow, style_quote_eyebrow),
+        Paragraph(quote, style_quote),
+        Paragraph(context, style_quote_context),
+        Paragraph(attribution, style_quote_attr),
+    ]
+    t = Table([[inner]], colWidths=[170 * mm])
+    t.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), LIGHT_BLUE),
+        ("LINEBEFORE", (0, 0), (0, -1), 3, BLUE),
+        ("LEFTPADDING", (0, 0), (-1, -1), 12),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
     ]))
     return t
 
@@ -169,6 +205,21 @@ def build():
         "non-EU authorities not grounded in international agreements: jurisdiction is "
         "determined by the <b>provider's nationality</b>, not the physical location of the data.",
         style_body
+    ))
+
+    # Microsoft's own admission (quote box)
+    story.append(Spacer(1, 2 * mm))
+    story.append(quote_box(
+        "MICROSOFT'S OWN ADMISSION",
+        "“No, I cannot guarantee it.”",
+        "Microsoft France's Director of Public and Legal Affairs, asked at a "
+        "hearing whether he could guarantee that European citizens' data would "
+        "never be transferred to the US government under a CLOUD Act order — "
+        "without the national authorities' agreement. Microsoft itself admits it "
+        "cannot rule out the transfer of European data to US authorities.",
+        "Anton Carniaux, Director of Public and Legal Affairs, Microsoft France — "
+        "hearing before the French Senate committee of inquiry, 10 June 2025. "
+        "Sources: French Senate (senat.fr) · heise.de"
     ))
 
     # The numbers (gray box)

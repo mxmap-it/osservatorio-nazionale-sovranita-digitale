@@ -415,6 +415,44 @@ def build():
         ),
     ], RED_LIGHT, RED_BORDER))
 
+    # Microsoft admission quote box
+    s_quote_eyebrow = ParagraphStyle(
+        "QuoteEyebrow", fontName="Arial-Bold", fontSize=8.5, textColor=RED_BORDER,
+        spaceAfter=4, leading=11, letterSpacing=1.5
+    )
+    s_quote_big = ParagraphStyle(
+        "QuoteBig", fontName="Arial-BoldItalic", fontSize=15, textColor=DARK,
+        spaceAfter=5, leading=19
+    )
+    s_quote_context = ParagraphStyle(
+        "QuoteContext", fontName="Arial", fontSize=8.5, textColor=DARK,
+        spaceAfter=4, leading=11.5, alignment=TA_JUSTIFY
+    )
+    s_quote_attr = ParagraphStyle(
+        "QuoteAttr", fontName="Arial-Italic", fontSize=7.5, textColor=GRAY_TEXT,
+        spaceAfter=0, leading=10
+    )
+    story.append(Spacer(1, 3 * mm))
+    story.append(colored_box([
+        Paragraph("L'AMMISSIONE DI MICROSOFT", s_quote_eyebrow),
+        Paragraph("«No, non posso garantirlo.»", s_quote_big),
+        Paragraph(
+            "Il Direttore degli Affari Pubblici e Legali di Microsoft France, "
+            "richiesto in audizione se potesse garantire che i dati dei cittadini "
+            "europei non venissero trasferiti al governo statunitense in virtù di "
+            "un ordine emesso ai sensi del CLOUD Act — senza l'accordo delle "
+            "autorità nazionali. È Microsoft stessa ad ammettere di non poter "
+            "escludere il trasferimento dei dati europei alle autorità USA.",
+            s_quote_context
+        ),
+        Paragraph(
+            "Anton Carniaux, Direttore Affari Pubblici e Legali, Microsoft France "
+            "— Audizione, Commissione d'inchiesta del Senato francese, "
+            "10 giugno 2025. Fonti: Senato francese (senat.fr) · heise.de",
+            s_quote_attr
+        ),
+    ], GRAY_BG, RED_BORDER))
+
     # 2.3 Strategia Cloud Italia e ACN
     story.append(Spacer(1, 3 * mm))
     story.append(Paragraph("2.3 Strategia Cloud Italia e qualificazione ACN", s_h2))
