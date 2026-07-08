@@ -120,6 +120,22 @@
     <div class="col-lg-10">
       <h2 class="mb-4">{{ if $isEN }}The problem in brief{{ else }}Il problema in sintesi{{ end }}</h2>
 
+      <div class="callout callout-highlight important">
+        <div class="callout-title">
+          <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
+          <span>{{ if $isEN }}Microsoft's own admission{{ else }}L'ammissione della stessa Microsoft{{ end }}</span>
+        </div>
+        <blockquote class="blockquote mb-2" style="font-size:1.1rem;font-style:italic;">
+          {{ if $isEN }}&ldquo;No, I cannot guarantee it.&rdquo;{{ else }}«No, non posso garantirlo.»{{ end }}
+        </blockquote>
+        <p class="mb-2">{{ if $isEN }}This is how Microsoft's Director of Public and Legal Affairs replied when a French senator asked whether he could guarantee that European citizens' data would never be handed to the US government under a <strong>CLOUD Act</strong> order, without the agreement of the national authorities. Microsoft itself confirms it cannot rule out the transfer of European data to US authorities.{{ else }}È la risposta del Direttore degli Affari Pubblici e Legali di Microsoft France quando un senatore gli ha chiesto se potesse garantire che i dati dei cittadini europei non finissero mai al governo statunitense in virtù di un ordine emesso ai sensi del <strong>CLOUD Act</strong>, senza l'accordo delle autorità nazionali. È Microsoft stessa a confermare di non poter escludere il trasferimento dei dati europei alle autorità statunitensi.{{ end }}</p>
+        <p class="small mb-0 text-muted">
+          {{ if $isEN }}Anton Carniaux, Director of Public and Legal Affairs, Microsoft France &mdash; hearing before the French Senate committee of inquiry, 10 June 2025.{{ else }}Anton Carniaux, Direttore degli Affari Pubblici e Legali di Microsoft France &mdash; audizione alla Commissione d'inchiesta del Senato francese, 10 giugno 2025.{{ end }}
+          <a href="https://www.senat.fr/compte-rendu-commissions/20250609/ce_commande_publique.html" target="_blank" rel="noopener">{{ if $isEN }}Senate record{{ else }}Resoconto del Senato{{ end }}</a> ·
+          <a href="https://www.heise.de/en/news/Not-sovereign-Microsoft-cannot-guarantee-the-security-of-EU-data-10494789.html" target="_blank" rel="noopener">heise (EN)</a>
+        </p>
+      </div>
+
       <div class="callout danger">
         <div class="callout-title">
           <svg class="icon"><use href="{{ $spritesURL }}#it-warning-circle"></use></svg>
@@ -182,6 +198,10 @@
             <tr>
               <td><strong>CLOUD Act</strong> (USA, 2018)</td>
               <td>{{ if $isEN }}Allows US authorities to request data from American providers even if stored in the EU{{ else }}Consente alle autorità USA di richiedere dati a provider americani anche se archiviati in UE{{ end }}</td>
+            </tr>
+            <tr>
+              <td><strong>{{ if $isEN }}French Senate hearing{{ else }}Audizione Senato francese{{ end }}</strong> (2025)</td>
+              <td>{{ if $isEN }}Microsoft (A. Carniaux) admits under questioning it cannot guarantee that European data will not be handed to the US government under the CLOUD Act — <a href="https://www.senat.fr/compte-rendu-commissions/20250609/ce_commande_publique.html" target="_blank" rel="noopener">Senate record</a>, <a href="https://www.heise.de/en/news/Not-sovereign-Microsoft-cannot-guarantee-the-security-of-EU-data-10494789.html" target="_blank" rel="noopener">heise</a>{{ else }}Microsoft (A. Carniaux) ammette in audizione di non poter garantire che i dati europei non vengano trasferiti al governo USA ai sensi del CLOUD Act — <a href="https://www.senat.fr/compte-rendu-commissions/20250609/ce_commande_publique.html" target="_blank" rel="noopener">resoconto Senato</a>, <a href="https://www.heise.de/en/news/Not-sovereign-Microsoft-cannot-guarantee-the-security-of-EU-data-10494789.html" target="_blank" rel="noopener">heise</a>{{ end }}</td>
             </tr>
             <tr>
               <td><strong>{{ if $isEN }}Italy's Cloud Strategy{{ else }}Strategia Cloud Italia{{ end }}</strong> (2021)</td>

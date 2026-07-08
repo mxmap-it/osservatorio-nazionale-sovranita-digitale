@@ -146,5 +146,13 @@ other = "Join and contribute"
 [tgFab]
 other = "Join the Observatory's Telegram channel"
 
+# --- Fixed banner: Microsoft's admission at the French Senate (CLOUD Act) ---
+[cloudActQuote]
+other = "\"I cannot guarantee it\": Microsoft admits it cannot guarantee that European data won't be handed to the US government (CLOUD Act)."
+[cloudActSource]
+other = "Hearing, French Senate committee — Jun 2025"
+[cloudActAria]
+other = "Source: hearing before the French Senate committee of inquiry, 10 June 2025 (opens in a new tab)"
+
 [mxmapBoxBody]
 other = "The Observatory uses the data collected by the <a href=\"https://mxmap.it/\" target=\"_blank\" rel=\"noopener\"><strong>MxMap.it</strong></a> project to analyse the Italian Public Administration's dependence on foreign email providers and to assess the state of digital sovereignty."

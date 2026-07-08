@@ -146,5 +146,13 @@ other = "Unisciti e contribuisci"
 [tgFab]
 other = "Unisciti al canale Telegram dell'Osservatorio"
 
+# --- Banner fisso: ammissione Microsoft al Senato francese (CLOUD Act) ---
+[cloudActQuote]
+other = "«Non posso garantirlo»: Microsoft ammette di non poter garantire che i dati europei non finiscano al governo USA (CLOUD Act)."
+[cloudActSource]
+other = "Audizione, Commissione Senato francese — giu 2025"
+[cloudActAria]
+other = "Fonte: audizione alla Commissione d'inchiesta del Senato francese, 10 giugno 2025 (apre in una nuova scheda)"
+
 [mxmapBoxBody]
 other = "L'Osservatorio utilizza i dati raccolti dal progetto <a href=\"https://mxmap.it/\" target=\"_blank\" rel=\"noopener\"><strong>MxMap.it</strong></a> per analizzare la dipendenza della Pubblica Amministrazione italiana da provider di posta elettronica esteri e valutare lo stato della sovranità digitale."

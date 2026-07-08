@@ -109,6 +109,20 @@
         </div>
 
         <div class="accordion-item">
+          <h3 class="accordion-header" id="faq-h26">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-26" aria-expanded="false" aria-controls="faq-26">
+              {{ if $isEN }}Can a US provider refuse to hand European data to the US government?{{ else }}Un provider USA può rifiutarsi di consegnare i dati europei al governo statunitense?{{ end }}
+            </button>
+          </h3>
+          <div id="faq-26" class="accordion-collapse collapse" aria-labelledby="faq-h26" data-bs-parent="#faq-sovranita">
+            <div class="accordion-body">
+              <p>{{ if $isEN }}Not with certainty. Heard before the French Senate committee of inquiry on 10 June 2025, Microsoft France's Director of Public and Legal Affairs, Anton Carniaux, was asked whether he could guarantee that European citizens' data would never be transferred to the US government under a CLOUD Act order without the national authorities' agreement. His answer: <em>&ldquo;No, I cannot guarantee it.&rdquo;</em> The provider itself therefore admits it cannot rule out such a transfer.{{ else }}Non con certezza. Sentito dalla Commissione d'inchiesta del Senato francese il 10 giugno 2025, il Direttore degli Affari Pubblici e Legali di Microsoft France, Anton Carniaux, alla domanda se potesse garantire che i dati dei cittadini europei non venissero mai trasferiti al governo USA in virtù di un ordine CLOUD Act senza l'accordo delle autorità nazionali, ha risposto: <em>«No, non posso garantirlo.»</em> È lo stesso fornitore, quindi, ad ammettere di non poter escludere tale trasferimento.{{ end }}</p>
+              <p class="small mb-0">{{ if $isEN }}Sources:{{ else }}Fonti:{{ end }} <a href="https://www.senat.fr/compte-rendu-commissions/20250609/ce_commande_publique.html" target="_blank" rel="noopener">{{ if $isEN }}French Senate record{{ else }}resoconto del Senato francese{{ end }}</a> · <a href="https://www.heise.de/en/news/Not-sovereign-Microsoft-cannot-guarantee-the-security-of-EU-data-10494789.html" target="_blank" rel="noopener">heise (EN)</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
           <h3 class="accordion-header" id="faq-h7">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">
               {{ if $isEN }}What are MX records?{{ else }}Cosa sono i record MX?{{ end }}
