@@ -15,10 +15,10 @@
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 
 <meta name="author" content="{{ site.Params.author }}">
-{{ if .Params.noindex }}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">{{ else if or (eq site.Language.Lang "it") (eq site.Language.Lang "en") }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{{ else }}<meta name="robots" content="noindex, follow">{{ end }}
+{{ if partial "is-indexable.html" . }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{{ else if .Params.noindex }}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">{{ else }}<meta name="robots" content="noindex, follow">{{ end }}
 <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ else }}{{ delimit site.Params.keywords ", " }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-{{ range .AllTranslations }}{{ if or (eq .Language.Lang "it") (eq .Language.Lang "en") }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ range .AllTranslations }}{{ if partial "is-indexable.html" . }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}{{ end }}<meta name="theme-color" content="#0066CC">
 <meta property="og:locale" content="{{ if $isEN }}en_GB{{ else }}it_IT{{ end }}">
 
