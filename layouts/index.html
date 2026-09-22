@@ -77,6 +77,43 @@
   </div>
 </section>
 
+{{/* Deep-link regionali verso il motore dati (mxmap.it): distribuiscono
+     autorità alle pagine /aree/ e da lì alle ~23k schede per ente. */}}
+<section class="section-spacing">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h2 class="mb-2">{{ i18n "regionsTitle" }}</h2>
+        <p class="text-muted mb-4">{{ i18n "regionsLede" }}</p>
+        <p class="mb-3">
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/abruzzo/">Abruzzo</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/basilicata/">Basilicata</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/calabria/">Calabria</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/campania/">Campania</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/emilia-romagna/">Emilia-Romagna</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/friuli-venezia-giulia/">Friuli-Venezia Giulia</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/lazio/">Lazio</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/liguria/">Liguria</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/lombardia/">Lombardia</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/marche/">Marche</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/molise/">Molise</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/piemonte/">Piemonte</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/puglia/">Puglia</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/sardegna/">Sardegna</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/sicilia/">Sicilia</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/toscana/">Toscana</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/trentino-alto-adige/">Trentino-Alto Adige</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/umbria/">Umbria</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/valle-daosta/">Valle d'Aosta</a>
+          <a class="btn btn-outline-primary btn-sm m-1" href="https://mxmap.it/aree/veneto/">Veneto</a>
+        </p>
+        <a href="https://mxmap.it/aree/" class="btn btn-primary btn-sm me-2">{{ i18n "regionsAllLink" }}</a>
+        <a href="https://mxmap.it/categoria/" class="btn btn-outline-primary btn-sm">{{ i18n "regionsByCategory" }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ if site.Params.eventActive }}
 {{ $spritesURL := (printf "%s" ("vendor/bootstrap-italia/svg/sprites.svg" | relURL)) }}
 <section class="section-spacing">
