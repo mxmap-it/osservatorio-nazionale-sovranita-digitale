@@ -36,7 +36,7 @@ Tutte le licenze e le date di attività sono verificate il 2026-09-23.
 | Validazione metadati DCAT | **`ISAITB/shacl-validator`** | EUPL-1.2 | Servizio Docker con REST API, self-hostabile. Shapes canoniche da `SEMICeu/DCAT-AP` (CC BY 4.0, release 3.0.1) |
 | Qualità del contenuto tabellare | **`frictionless-py`** | MIT | Libreria pura: schema, tipi, valori nulli, unicità. Il grosso delle nostre metriche di contenuto |
 | Qualità avanzata, integrità referenziale | **Great Expectations** | Apache-2.0 | Solo se frictionless non basta. Nota: il repo è ora sotto `fivetran/` |
-| Scarico Pubblicità a Valore Legale ANAC | **`aborruso/anac-pl-pp-cli`** | Apache-2.0 | Binario Go invocabile. È l'unico strumento al mondo su quella fonte |
+| Pubblicità a Valore Legale ANAC, e molto altro | **`aborruso/anac-pl-pp-cli`** | Apache-2.0 | Unico strumento al mondo su quella fonte, e fa più di quanto sembri: store SQLite locale con `sync`, ricerca offline, export CSV/JSON, filtro CPV vero via ricerca avanzata, vocabolario dei 9.454 CPV, validazione del CIG con cifra di controllo, e un classificatore di giurisdizione del fornitore (vedi §4bis). Server MCP incluso |
 | Scoperta BDAP e IndicePA | **`aborruso/openbdap-pp-cli`**, **`openipa`** | Apache-2.0 | Per la scoperta; l'ingestione resta in toolkit |
 | Manipolazione OCDS | **`ocdskit`** | BSD-3 | Priorità bassa finché l'OCDS di ANAC resta fermo |
 | Convenzione di provenienza | **source-spec di DoveVannoINostriSoldi** | — | Riusiamo la **convenzione** (hash, byte, data di acquisizione, limiti dichiarati), non il codice. Un formato di metadati si può adottare senza vincoli di licenza |
@@ -104,6 +104,36 @@ dell'attribuzione e la data, più l'arricchimento automatico da GLEIF dove esist
 dichiarata come "l'85% del valore, il 3% dei fornitori" è un risultato solido; una copertura
 finta del 100% sarebbe l'errore che abbiamo criticato negli altri.
 
+## 4bis. Il seme del registro esiste già, ed è di Borruso
+
+`anac-pl-pp-cli` contiene il package `internal/giurisdizione` (Apache-2.0, con test), che
+classifica un fornitore in **IT / UE / EXTRA-UE** partendo dalla denominazione, e porta con sé il
+gruppo di appartenenza. La definizione che usa è **la nostra**: giurisdizione del fornitore e del
+gruppo, non collocazione del dato, con il CLOUD Act citato esplicitamente nel commento al codice.
+La lista è dichiarata come punto di partenza estendibile e copre una cinquantina di provider
+email, cloud e collaboration.
+
+Due scelte metodologiche sue che vale la pena conservare:
+
+- chi non è riconosciuto resta **`?`**, non diventa italiano per difetto. È l'errore opposto a
+  quello del default "italiano" visto altrove, ed è la scelta giusta;
+- il comando `affidamenti` produce già la tabella committente → aggiudicatario → importo → CIG →
+  CPV → **giurisdizione**, con filtro `--jurisdiction`.
+
+I limiti sono quelli attesi: match per sottostringa sulla denominazione, nessun aggancio al codice
+fiscale, nessuna capogruppo oltre il primo livello, e qualche pattern fragile.
+
+**Conseguenza per il nostro registro**: non si parte da zero e non si parte in concorrenza. La cosa
+sensata è **estrarre quella lista dal codice Go e portarla in un file dati** — una riga per
+soggetto, con pattern, codice fiscale dove noto, giurisdizione, gruppo, fonte dell'attribuzione e
+data — che noi manteniamo e pubblichiamo in CC BY-SA, e che la sua CLI può consumare come
+vocabolario esterno invece di tenerlo compilato dentro. Lui guadagna una lista mantenuta da altri,
+noi guadagniamo distribuzione e un utilizzatore reale dal primo giorno.
+
+Dallo stesso repository sono riusabili come idee, e se serve come codice: la **validazione del CIG
+con cifra di controllo** (`internal/cig`), che è una delle nostre metriche di qualità, e il
+**vocabolario CPV** completo (`internal/cpvdata`), che serve al perimetro ICT.
+
 ## 5. Un progetto software o più d'uno?
 
 **Uno solo di codice, più un repository di dati.**
@@ -168,6 +198,9 @@ Il punto 1 va fatto per primo perché è l'unico con una scadenza imposta da alt
    La prima è più utile a tutti, la seconda è più veloce.
 2. Contattare DataCivicLab prima di costruire il livello qualità, per evitare che lo stiano già
    facendo, e semmai costruirlo insieme.
-3. Quanto sollevare da `AgID/cruscotto-italia`: i moduli `siope.py`, `bdap.py`, `anac.py` e
+3. Proporre ad aborruso di esternalizzare la lista di `internal/giurisdizione` in un file dati
+   che manteniamo noi: è il modo piu' rapido per far nascere il registro con un utilizzatore gia'
+   pronto.
+4. Quanto sollevare da `AgID/cruscotto-italia`: i moduli `siope.py`, `bdap.py`, `anac.py` e
    `pnrr_progetti.py` coprono quattro delle nostre fonti e sono già scritti. Vanno letti prima
    di decidere, ma se reggono è lavoro risparmiato.
