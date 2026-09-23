@@ -8,12 +8,20 @@ Riusiamo tutto ciò che è **libreria o servizio invocabile**. Non riusiamo ciò
 **applicazione**: un'applicazione altrui si adotta intera o non si adotta, e adottarla intera
 significa ereditare il suo perimetro, che non è il nostro.
 
-Secondo criterio, altrettanto vincolante: **la licenza deve permettere che il nostro lavoro
-torni indietro a tutti**. Il nostro codice deve poter essere riusato sia da chi sta in MIT
-(DataCivicLab) sia da chi sta in AGPL (AgID, DoveVannoINostriSoldi). Quindi il nostro codice
-esce in **Apache-2.0**, i nostri dati in **CC BY-SA 4.0**. Per la stessa ragione **non
-costruiamo sopra basi AGPL**: ci vincolerebbe e impedirebbe il riuso a valle da parte di chi
-sta in permissiva.
+Sulle licenze la posizione del progetto è che **va bene qualunque licenza libera**: rilasciamo
+tutto comunque, quindi il copyleft non è un ostacolo e possiamo riusare anche AGPL. Restano però
+tre vincoli che non dipendono dalle nostre preferenze:
+
+1. **"Nessuna licenza" non vuol dire libero.** Un repo senza licenza dichiarata è di fatto tutti
+   i diritti riservati e non è riusabile, per quanto sembri aperto.
+2. **Alcune licenze non sono libere**, e restano fuori a prescindere: la Elastic License, che
+   vieta di offrire il software come servizio gestito, e le clausole non commerciali come il
+   CC BY-NC.
+3. **I contributi verso l'esterno seguono la licenza del repo che li ospita.** Se vogliamo che il
+   nostro livello di qualità finisca dentro `source-observatory`, quel codice deve essere MIT.
+   È l'unico vincolo che ci obbliga a tenere separate due parti del nostro lavoro (§5).
+
+I nostri dati escono in **CC BY-SA 4.0** in ogni caso.
 
 ## 2. Matrice di riuso
 
@@ -35,18 +43,18 @@ Tutte le licenze e le date di attività sono verificate il 2026-09-23.
 | Anagrafe imprese e LEI | **GLEIF golden copy** | CC0 | Bulk giornaliero, nessuna registrazione |
 | Motore di entity resolution | **`opensanctions/nomenklatura`** | MIT | Libreria agnostica rispetto alla fonte, si usa sui nostri dati. Il *dataset* OpenSanctions è invece CC BY-NC e non ci serve |
 | Pubblicazione | **Sito Hugo dell'Osservatorio** | — | Consuma già `kpi.json`: stesso schema per la dashboard qualità |
+| **Moduli di ingestione già scritti** | **`AgID/cruscotto-italia`**, `etl/sources/` | AGPL-3.0 | Un modulo per fonte, già pronti su quelle che ci servono: `siope.py` (34 KB), `pnrr_progetti.py` (20 KB), `bdap.py` (18 KB), `anac.py` (13 KB). Da leggere e, dove conviene, sollevare di peso: è codice pubblico di un'amministrazione, scritto sulle stesse fonti |
+| Ingestione ANAC tabellare e ledger sorgenti | **DoveVannoINostriSoldi**, `scripts/etl/` | AGPL-3.0 | Stessa logica: gli script ANAC e le loro spec sorgente sono la cosa più vicina a quello che ci serve |
 
 ### Da non riusare, e perché
 
 | Software | Licenza | Perché no |
 |---|---|---|
-| **Cruscotto Italia** (AgID) | AGPL-3.0 | È un'applicazione completa, non una libreria, e l'AGPL bloccherebbe il riuso a valle del nostro lavoro |
-| **DoveVannoINostriSoldi** | AGPL-3.0 + licenza commerciale | Stesso motivo. Resta l'interlocutore principale sui *dati*, non una base di codice |
 | **`cardinal-rs`** (OCP) | MIT | Misura red flag corruttivi, non sovranità. Fuori perimetro, non fuori qualità |
-| **Backend gare PA di P. Biase** | CC BY-NC-SA | La clausola non commerciale è incompatibile con il nostro CC BY-SA, e il metodo di classificazione si retro-alimenta |
+| **Backend gare PA di P. Biase** | CC BY-NC-SA | La clausola non commerciale non è software libero, e il metodo di classificazione si retro-alimenta |
 | **`soda-core`** | Elastic License 2.0 | Non è open source secondo OSI e vieta l'offerta come servizio gestito |
 | **piveau / MQA di data.europa.eu** | Apache-2.0 | Il codice vivo è su GitLab, non su GitHub, ed è uno stack a microservizi che ha senso solo se gestisci un portale. Riusiamo la *metodologia* (405 punti su cinque dimensioni), non il software |
-| **`piersoft/mqa-monitor`** | nessuna | È l'unico monitoraggio MQA italiano esistente, ma senza licenza dichiarata non è legalmente riusabile. Da contattare, semmai |
+| **`piersoft/mqa-monitor`**, **`SEMICeu/semic-shacl-validator`** | nessuna | Sembrano aperti ma non dichiarano licenza: tutti i diritti riservati. Da contattare, semmai, chiedendo di aggiungerne una |
 | **Open Data Certificate**, **OpenDataMonitor** | MIT / — | Morti: 2021 e dominio spento |
 
 ## 3. Cosa costruiamo noi
@@ -111,10 +119,18 @@ La pubblicazione non richiede un terzo progetto: il sito Hugo dell'Osservatorio 
 JSON di KPI, e la dashboard qualità segue lo stesso schema.
 
 ```
-osservatorio-dati-spesa          (Apache-2.0)  archivio + monitor qualità + perimetro ICT
-registro-fornitori-sovranita     (CC BY-SA)    dataset curato + script di arricchimento GLEIF
+osservatorio-dati-spesa                        archivio + monitor qualità + perimetro ICT
+  pacchetto acquisizione   (AGPL-3.0)          può sollevare i moduli di AgID e DVINS
+  pacchetto qualità        (MIT)               libreria pura, contribuibile a monte
+registro-fornitori-sovranita     (CC BY-SA)    dataset curato + arricchimento GLEIF
 osservatorio-...-sovranita-digitale            pubblicazione: dashboard e report
 ```
+
+La divisione in due pacchetti dentro lo stesso repo non è formalismo: se il pacchetto qualità
+importasse quello di acquisizione, diventerebbe AGPL insieme a lui e non potrebbe più essere
+contribuito a `source-observatory`, che è MIT. Va quindi scritto come **libreria pura che lavora
+su file e tabelle**, senza dipendere dal livello che li ha scaricati. È una buona architettura
+anche a prescindere dalla licenza.
 
 Più tre contributi verso l'esterno, che valgono più di un quarto repo nostro:
 
@@ -152,5 +168,6 @@ Il punto 1 va fatto per primo perché è l'unico con una scadenza imposta da alt
    La prima è più utile a tutti, la seconda è più veloce.
 2. Contattare DataCivicLab prima di costruire il livello qualità, per evitare che lo stiano già
    facendo, e semmai costruirlo insieme.
-3. Licenza del nostro codice: Apache-2.0 come proposto qui, oppure MIT per uniformarci
-   all'ecosistema DataCivicLab.
+3. Quanto sollevare da `AgID/cruscotto-italia`: i moduli `siope.py`, `bdap.py`, `anac.py` e
+   `pnrr_progetti.py` coprono quattro delle nostre fonti e sono già scritti. Vanno letti prima
+   di decidere, ma se reggono è lavoro risparmiato.
