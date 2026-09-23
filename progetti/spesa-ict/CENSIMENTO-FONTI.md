@@ -35,7 +35,7 @@ ricontrollate prima dell'uso.
 |---|---|---|---|---|
 | **OpenCoesione** | Costo, impegni e **pagamenti** per progetto | CUP | CC BY 4.0 | *verificato.* Pubblicato anche in Parquet. Bimestrale |
 | **ItaliaDomani / ReGiS** | Progetti PNRR con finanziamento | CUP, CLP | CC BY 4.0 | *verificato.* I path dei file cambiano a ogni rilascio |
-| **openpnrr.it** (Openpolis, non ufficiale) | Progetti PNRR più `cig_gare-pnrr.csv` | CUP, CIG | ODbL 1.0 | **L'unico ponte pubblico CUP → CIG** |
+| **openpnrr.it** (Openpolis, non ufficiale) | Progetti PNRR più `cig_gare-pnrr.csv` | CUP, CIG | ODbL 1.0 | Ponte CUP → CIG limitato al PNRR. Per il resto usare il dataset `cup` di ANAC |
 | **OpenCUP** | Costo e finanziamento dei progetti d'investimento | CUP, CF soggetto | CC BY | Bulk libero da 2,2 GB. L'API documentata **non è aperta**: risponde 401 |
 | **IndicePA** `indicepa.gov.it/ipa-dati` | 28 dataset: enti, unità organizzative, domicili digitali, **responsabili della transizione al digitale** | codice IPA, CF | CC BY 4.0 | *verificato.* Aggiornamento giornaliero |
 | **EU Financial Transparency System** | Beneficiari del bilancio UE 2007-2025 | **partita IVA** | riuso UE | Bulk libero. Sottoutilizzato in Italia |
@@ -68,7 +68,15 @@ Tre avvertenze verificate su dati reali:
 
 - **CIG**: lega tutti i dataset ANAC, e Consip solo tramite `gare-asp` e `bandi-e-gare`.
 - **CUP**: lega OpenCUP, OpenCoesione, ReGiS e il monitoraggio opere pubbliche.
-- **CUP → CIG**: nei dati ufficiali non c'è. L'unico ponte pubblico pronto è il file di openpnrr.it.
+- **CUP → CIG**: il ponte ufficiale **esiste** ed è il dataset `cup` di ANAC (CSV 196 MB, CC BY-SA,
+  misurato il 2026-09-23: **7.167.369 righe, 7.045.847 CIG distinti**, lo 0,6% con più di un CUP,
+  quindi il join è uno-a-molti). Nessuno dei progetti mappati lo usa. **La copertura però non è né
+  totale né completabile**: sul nostro perimetro ICT solo il **20,2% dei CIG** ha un CUP, pari al
+  **18,9% del valore**. Sale con l'importo — 30,8% sopra il milione, 19,4% sotto i 40.000 euro —
+  ma resta minoritaria. Il motivo è giuridico: il CUP identifica un **progetto di investimento
+  pubblico**, mentre la spesa ICT corrente (licenze, canoni, manutenzione, assistenza) non lo è e
+  quindi legittimamente non ne ha uno. Il CUP serve a marcare la fonte di finanziamento di una
+  quota di contratti, non è una chiave su cui costruire l'analisi.
 - **Codice fiscale ente / codice IPA**: il collante lato amministrazione. Attenzione: il codice AUSA
   identifica la stazione appaltante in ANAC e non coincide con il codice IPA.
 - **Capitolo di bilancio e codice gestionale SIOPE**: vivono solo nel mondo RGS e **non hanno un
