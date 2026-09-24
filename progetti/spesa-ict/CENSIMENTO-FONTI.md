@@ -24,7 +24,8 @@ ricontrollate prima dell'uso.
 | Fonte | Cosa misura | Chiavi | Licenza | Note |
 |---|---|---|---|---|
 | **BDAP Open Data** `bdap-opendata.rgs.mef.gov.it` | Circa 3.700 dataset: bilancio dello Stato, gestione delle spese, SIOPE, opere pubbliche, bilanci degli enti, debito | CF ente, capitolo, piano dei conti | CC BY | *verificato.* API CKAN funzionante |
-| **SIOPE** (via BDAP) | **Pagamenti e incassi di cassa** per codice gestionale | CF ente, codice gestionale | riuso libero | *verificato.* È la via per la spesa ICT bottom-up |
+| **SIOPE** — bulk diretto su `siope.it/documenti/siope2/open/last` | **Pagamenti e incassi di cassa** per codice gestionale | CF ente, codice gestionale | CC BY 4.0 | *verificato 2026-09-24*: `SIOPE_USCITE.<anno>.zip` (77 MB per il 2025), `SIOPE_ENTRATE.<anno>.zip`, `SIOPE_ANAGRAFICHE.zip`, con `Last-Modified` e `Accept-Ranges`. Un CSV nazionale senza intestazione, importi **in centesimi** e **mensili puri, non cumulati**. È la via per la spesa ICT bottom-up |
+| **SIOPE via BDAP** | Stesso dato, ripubblicato per regione e anno | CF ente, codice gestionale | CC BY | **Da preferire il bulk diretto**: AgID documenta che BDAP genera i dump a richiesta, con 503 ricorrenti, e che il 2025 era troncato a marzo per 1.717 comuni e assente per 84 comuni di Trento |
 | **soldipubblici.gov.it** | — | — | — | *verificato.* **Dismesso**, reindirizza alla manutenzione AgID |
 | **CPT — Conti Pubblici Territoriali** | Spesa consolidata del Settore Pubblico Allargato, società partecipate incluse | regione, settore | aperta | Serie 2000-2023, annuale |
 | **Eurostat `gov_10a_exp`** | Spesa per funzione COFOG | paese, COFOG | riuso UE | *verificato.* La vecchia bulk facility è stata dismessa nel 2023: si usa l'API SDMX |
