@@ -168,3 +168,21 @@ other = "All areas and entities"
 
 [regionsByCategory]
 other = "By entity category"
+
+[analysesTitle]
+other = "The analyses"
+
+[analysesLead]
+other = "Two documented studies: what Italy's public cloud promises, and which European certification actually protects."
+
+[analysisLabel]
+other = "Analysis"
+
+[analysisRead]
+other = "Read the analysis"
+
+[footerPsn]
+other = "PSN"
+
+[footerCertifications]
+other = "Certifications"

@@ -176,6 +176,38 @@
   </div>
 </section>
 
+{{/* Le analisi di fondo: titolo e descrizione vengono dal front matter delle
+     pagine stesse, così le schede non possono divergere dai contenuti. */}}
+<section class="section-spacing-lg">
+  <div class="container-xxl">
+    <h2 class="mb-2">{{ i18n "analysesTitle" }}</h2>
+    <p class="mb-4">{{ i18n "analysesLead" }}</p>
+    <div class="row g-4">
+      {{ range slice (site.GetPage "/psn") (site.GetPage "/certificazioni") }}
+      {{ with . }}
+      <div class="col-lg-6">
+        <div class="card-wrapper">
+          <div class="card card-bg rounded shadow-sm border-bottom-card">
+            <div class="card-body">
+              <div class="category-top">
+                <span class="category">{{ i18n "analysisLabel" }}</span>
+              </div>
+              <h3 class="card-title h5"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p class="card-text">{{ .Description | truncate 190 }}</p>
+              <a class="read-more" href="{{ .RelPermalink }}">
+                <span class="text">{{ i18n "analysisRead" }}</span>
+                <svg class="icon"><use href="{{ "vendor/bootstrap-italia/svg/sprites.svg" | relURL }}#it-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
 <section class="section-spacing-lg bg-section-alt">
   <div class="container-xxl">
     <h2 class="mb-4">{{ i18n "latestNews" }}</h2>

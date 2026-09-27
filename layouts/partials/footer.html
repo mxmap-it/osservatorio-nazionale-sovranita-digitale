@@ -6,7 +6,7 @@
         <div class="row clearfix">
           <div class="col-sm-12">
             <div class="it-brand-wrapper">
-              <a href="{{ "/" | relURL }}" data-focus-mouse="false">
+              <a href="{{ "/" | relLangURL }}" data-focus-mouse="false">
                 <svg class="icon" aria-hidden="true" viewBox="0 0 68 68" style="width:2.4rem;height:2.4rem;">
                   <circle cx="34" cy="40" r="5" fill="#FFFFFF"/>
                   <path d="M21 40 A13 13 0 0 0 47 40" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round"/>
@@ -24,7 +24,7 @@
       <section>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-            <h4><a href="{{ "report/" | relURL }}">{{ i18n "navReport" }}</a></h4>
+            <h4><a href="{{ "report/" | relLangURL }}">{{ i18n "navReport" }}</a></h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range first 5 (where site.RegularPages "Section" "report") }}
@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-            <h4><a href="{{ "news/" | relURL }}">{{ i18n "navNews" }}</a></h4>
+            <h4><a href="{{ "news/" | relLangURL }}">{{ i18n "navNews" }}</a></h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range first 5 (where site.RegularPages "Section" "news") }}
@@ -47,10 +47,12 @@
             <h4>{{ i18n "information" }}</h4>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
-                <li><a class="list-item" href="{{ "metodologia/" | relURL }}">{{ i18n "footerMethodology" }}</a></li>
-                <li><a class="list-item" href="{{ "iniziative/" | relURL }}">{{ i18n "footerRelatedInitiatives" }}</a></li>
-                <li><a class="list-item" href="{{ "chi-siamo/" | relURL }}">{{ i18n "footerAbout" }}</a></li>
-                <li><a class="list-item" href="{{ "index.xml" | relURL }}">{{ i18n "footerRss" }}</a></li>
+                <li><a class="list-item" href="{{ "psn/" | relLangURL }}">{{ i18n "footerPsn" }}</a></li>
+                <li><a class="list-item" href="{{ "certificazioni/" | relLangURL }}">{{ i18n "footerCertifications" }}</a></li>
+                <li><a class="list-item" href="{{ "metodologia/" | relLangURL }}">{{ i18n "footerMethodology" }}</a></li>
+                <li><a class="list-item" href="{{ "iniziative/" | relLangURL }}">{{ i18n "footerRelatedInitiatives" }}</a></li>
+                <li><a class="list-item" href="{{ "chi-siamo/" | relLangURL }}">{{ i18n "footerAbout" }}</a></li>
+                <li><a class="list-item" href="{{ "index.xml" | relLangURL }}">{{ i18n "footerRss" }}</a></li>
               </ul>
             </div>
           </div>
@@ -93,8 +95,8 @@
       <h3 class="visually-hidden">{{ i18n "usefulLinks" }}</h3>
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         <li class="list-inline-item">© {{ now.Year }} {{ site.Title }}</li>
-        <li class="list-inline-item"><a href="{{ "brand/" | relURL }}">{{ i18n "footerBrandKit" }}</a></li>
-        <li class="list-inline-item"><a href="{{ "dati-aperti/" | relURL }}">{{ i18n "footerOpenData" }}</a></li>
+        <li class="list-inline-item"><a href="{{ "brand/" | relLangURL }}">{{ i18n "footerBrandKit" }}</a></li>
+        <li class="list-inline-item"><a href="{{ "dati-aperti/" | relLangURL }}">{{ i18n "footerOpenData" }}</a></li>
         <li class="list-inline-item"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">{{ i18n "license" }}</a></li>
       </ul>
     </div>

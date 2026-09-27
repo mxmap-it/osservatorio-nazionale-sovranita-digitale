@@ -168,3 +168,21 @@ other = "Tutte le aree ed enti"
 
 [regionsByCategory]
 other = "Per categoria di ente"
+
+[analysesTitle]
+other = "Le analisi"
+
+[analysesLead]
+other = "Due approfondimenti documentati: che cosa promette il cloud pubblico italiano, e quale certificazione europea protegge davvero."
+
+[analysisLabel]
+other = "Analisi"
+
+[analysisRead]
+other = "Leggi l'analisi"
+
+[footerPsn]
+other = "PSN"
+
+[footerCertifications]
+other = "Certificazioni"

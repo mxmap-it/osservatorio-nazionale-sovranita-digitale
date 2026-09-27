@@ -58,7 +58,7 @@ disableKinds = ['taxonomy', 'term']
       name = 'News'
       identifier = 'news'
       url = '/news/'
-      weight = 13
+      weight = 14
     [[languages.it.menus.main]]
       name = 'Tutte le news'
       parent = 'news'
@@ -88,23 +88,23 @@ disableKinds = ['taxonomy', 'term']
     [[languages.it.menus.main]]
       name = 'Dati Aperti'
       url = '/dati-aperti/'
-      weight = 8
+      weight = 9
     [[languages.it.menus.main]]
       name = 'Metodologia'
       url = '/metodologia/'
-      weight = 9
+      weight = 10
     [[languages.it.menus.main]]
       name = 'FAQ'
       url = '/faq/'
-      weight = 10
+      weight = 11
     [[languages.it.menus.main]]
       name = 'Partecipa'
       url = '/partecipa/'
-      weight = 11
+      weight = 12
     [[languages.it.menus.main]]
       name = 'Chi Siamo'
       url = '/chi-siamo/'
-      weight = 12
+      weight = 13
 
   [languages.en]
     weight = 2
@@ -126,7 +126,7 @@ disableKinds = ['taxonomy', 'term']
       name = 'News'
       identifier = 'news'
       url = '/news/'
-      weight = 13
+      weight = 14
     [[languages.en.menus.main]]
       name = 'All news'
       parent = 'news'
@@ -156,23 +156,23 @@ disableKinds = ['taxonomy', 'term']
     [[languages.en.menus.main]]
       name = 'Open Data'
       url = '/dati-aperti/'
-      weight = 8
+      weight = 9
     [[languages.en.menus.main]]
       name = 'Methodology'
       url = '/metodologia/'
-      weight = 9
+      weight = 10
     [[languages.en.menus.main]]
       name = 'FAQ'
       url = '/faq/'
-      weight = 10
+      weight = 11
     [[languages.en.menus.main]]
       name = 'Contribute'
       url = '/partecipa/'
-      weight = 11
+      weight = 12
     [[languages.en.menus.main]]
       name = 'About'
       url = '/chi-siamo/'
-      weight = 12
+      weight = 13
 
   [languages.bg]
     weight = 3
