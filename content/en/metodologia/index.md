@@ -37,3 +37,7 @@ Data is collected periodically and reports are published at regular intervals to
 ## Related methodologies and initiatives
 
 The Observatory's methodology is shared with the **MxMap** family of projects, active in several European countries, and stands alongside other initiatives that measure digital sovereignty with complementary approaches. The full list is on the [Related initiatives in Europe](/iniziative/) page.
+
+## What we do not measure yet
+
+This page describes what the Observatory measures today. What is still missing — first of all the measurement of public spending on cloud services, year by year — is set out in the [roadmap](/en/roadmap/), together with the state of progress of each piece.

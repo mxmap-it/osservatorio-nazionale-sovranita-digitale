@@ -1,0 +1,1498 @@
+ 
+ 
+ 
+ 
+ 
+de la dépendance technologique à 
+la captation économique : ce que 
+les hausses tarifaires du cloud-
+logiciel coûtent à l’Europe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Étude économique 
+Mai 2026 
+ 
+ 
+ 
+ 
+ 
+
+2 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+SOMMAIRE 
+ 
+1. Champ de l’étude  : l’impact économique des hausses tarifaires du 
+cloud-logiciel ............................................................................................................................................................................................................8 
+1.1 Objectif : estimer l’impact économique des hausses tarifaires du cloud -logiciel à horizon 
+2030 ………………………………………………………………………………………………8 
+1.2 Méthode générale : une revue de littérature, une enquête et une modélisation économique . 8 
+2. Littérature : le manque de concurrence est à l’origine d’une sur -
+inflation sur le marché du cloud-Logiciel ........................................................................................... 9 
+2.1 Causes : un marché structurellement peu concurrentiel ......................................................... 9 
+2.2    Conséquences : des hausses de prix bien supérieures à l’inflation de référence .................... 9 
+3. Enquête : des pratiques toujours d’actualité et peu soutenables à 
+moyen terme ................................................................................................................................................................................................................. 12 
+3.1 Méthode : une enquête auprès d’une cinquantaine d’adhérents et de partenaires du Cigref 12 
+3.2 Hausses tarifaires : une inflation qui se confirme et s’accélère, depuis plusieurs années .... 13 
+3.3 Impact sur les dépenses : un effet d’éviction sur les consommations intermédiaires, 
+investissements et salaires ............................................................................................................. 14 
+3.4 Impact sur la productivité : les bénéfices des outils d’IA restent théoriques pour la majorité 
+des répondants ............................................................................................................................... 15 
+4. Extrapolation : Une perte nette de 107 Mds€ de valeur ajoutée et 1,4 
+million d’emplois pour l’économie européenne .............................................................................. 16 
+4.1 Hausses tarifaires : un surcoût de 140 Mds€ par an en moyenne ........................................ 16 
+4.2 Effet d’éviction : 65 Mds€ de dépenses En Europe sacrifiées ............................................. 19 
+4.3 Impact économique : une perte de 107 Mds€ de VA par an et de 1,4 million d’emplois pour 
+l’économie européenne .................................................................................................................. 21 
+5. Conclusion : un transfert massif de richesses dont l’effet reste 
+incertain ............................................................................................................................................................................................................................. 23 
+5.1 Synthèse : les hausses tarifaires pourraient entraîner des répercussions sur l’ensemble de 
+l’économie européenne .................................................................................................................. 23 
+5.2 Analyse : ces hausses reflètent le basculement vers un modèle de mutualisation des 
+infrastructures numériques ............................................................................................................ 24 
+5.3 Ouverture : plusieurs scénarios de mitigation du coût des hausses tarifaires à horizon 
+2030 ……………………………………………………………………………………………..24 
+ 
+ 
+ 
+3 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+résumé exécutif 
+Dans une étude publiée en avril 2025 pour le Cigref, Asterès évaluait les dépenses des organisations 
+européennes, en services de cloud et de logiciel, à environ 400 Mds€ par an, pour l’année 2024. Dans 
+ces dépenses, 330 Mds€ étaient adressés à des entreprises américaines, c’est à dire 83% de parts de 
+marché qui sont détenues par un nombre restreint d’acteurs d’une seule et même nationalité. 80% de la 
+valeur créée par ces dépenses (264 Mds€) était estimée bénéficier à l’économie américaine, entretenant 
+ainsi près de 1,9 million d’emplois directs, indirects et induits. L’ordre de grandeur  qui a été 
+principalement retenu, 264 Mds€ d’achats annuels de services de cloud et de logiciel effectués par des 
+organisations européennes et bénéficiant à l’économie américaine, représentait alors la part de valeur 
+ajoutée créée outre-atlantique, soit la fuite de valeur directe pour l’économie européenne. L’étude avait 
+montré que , à l’horizon 2035, réallouer 15% de ces dépenses  vers une production européen ne 
+représenterait pour l’Union européenne une empreinte économique positive de l’ordre de 463 000 
+emplois, 37 Mds€ de valeur ajoutée et 16 Mds€ de recettes publiques.  
+Dans ce nouve au volet, Asterès approfondit la première étude 1 en abordant les conséquences de ces 
+dépendances technologiques sous l’angle des hausses tarifaires des services de cloud-logiciel, estimant 
+que celles-ci pourraient représenter, à volume de dépenses constantes (400 Mds€), un surcoût lissé sur 
+la période 2026-2030 de 140 Mds€ par an, en moyenne. Ce phénomène de sur-inflation pourrait avoir 
+un impact négatif pour l’économie européenne en la privant d’environ 107 Mds€ de valeur ajoutée par 
+an, soit 0,6 point de PIB, et 1,4 million d’emplois, à horizon 2030. Cette perspective inflationniste est 
+d'autant plus préocupante qu’elle s’inscrit dans un contexte où l'économie européenne accuse un retard 
+de productivité significatif. Le rapport Draghi chiffre en effet à 750 -800 Mds€ par an le besoin 
+d'investissement supplémentaire nécessaire pour numériser, décarboner et défendre l'économie 
+européenne – un effort que les hausses tarifaires viennent directement compromettre. 
+Décomposition des dépenses projetées de cloud-logiciel des organisations européennes de 2025 à 
+2030 (en milliards d’euros). 
+ 
+Note : sur cinq ans, l’ inflation s'élève en moyenne à 140 milliards d'euros. 
+ 
+1 Sylvain Bersinger et Charles-Antoine Schwerer, La dépendance technologique aux softwares & cloud services 
+américains : une estimation des conséquences économiques en Europe  (Asterès, Cigref, 2025), « 4.2.3 
+Approfondissement N°3 : L’impact des hausses de prix des services de cloud-logiciel sur la santé des entreprises » 
+400 400 400 400 400 400
+10 19 30 40 5038
+82
+133
+190
+255
+2025 2026 2027 2028 2029 2030
+Volume de dépenses constant Inflation de référence Sur-inflation
+4 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Champ de l’étude : les hausses de prix du cloud-logiciel 
+L’objectif de cette étude est d’évaluer l'impact économique des évolutions tarifaires des services 
+de cloud-logiciel sur l'économie européenne à horizon 2030. Dans sa première étude, Asterès 
+estimait quels seraient les bénéfices économiques d’une hypothétique spécialisation européenne dans 
+le secteur du cloud-logiciel. Aujourd’hui, Asterès aborde la question sous un angle complémentaire, en 
+évaluant le coût des évolutions  tarifaires de ce secteur , un enjeu d'autant plus important que la plus 
+grande partie  des hausses est captée par des fournisseurs extra- européens, sans nourrir le tissu 
+économique européen. Pour établir ce scénario, Asterès a procédé en trois étapes : un état des lieux de 
+la littérature existante sur le sujet  ; la conduite d’une nouvelle enquête auprès de 54 D irecteurs du 
+numérique (DSI) européens, membres ou partenaires du Cigref, afin de recueillir de nouvelles données ; 
+et une modélisation des conséquences économiques de ces évolutions pour l'économie européenne à 
+horizon 2030, basée sur  l’extrapolation de ces données . En ouverture, trois scénarios plausibles qui 
+pourraient venir mitiger la trajectoire tendancielle modélisée sont évoqués. 
+ 
+Littérature : des pratiques tarifaires documentées depuis 2021 
+Les hausses tarifaires sur le marché du cloud-logiciel sont documentées depuis 2021 par les travaux 
+respectifs du Pr. Jenny, d’Asterès et du cabinet Elée2. En 2022, l’enquête réalisée par Vanson Bourne 
+en partenariat avec Asterès révélait notamment que 70% des entreprises françaises s’étaient vu proposer 
+une offre groupée , impliquant un surcoût  de 26% en cas de refus.  Près de 90  % d’entre elles étaient 
+touchées, lors du renouvellement, par des hausses de prix facial de l’ordre de 6% par an en moyenne , 
+dans le cadre d’un renouvellement tous les trois ans . Plus récemment, le cabinet Elée a constaté des 
+hausses annuelles de 10% à 15% de la facture logicielle . Ces hausses, qui dépassent largement 
+l'inflation de référence des logiciels, de l’ordre de 2% annuel en France, sont rendues possibles par les 
+coûts élevés de sortie du cloud et le manque d'alternatives crédibles sur certains sous- segments qui 
+maintiennent les organisations dans une situation de dépendance vis-à-vis de leurs fournisseurs.  
+ 
+Enquête : des hausses tarifaires confirmées, des outils IA qui se 
+répandent et un modèle jugé non soutenable 
+L’enquête conduite par Asterès auprès de 54 Directeurs du numérique  d’entreprises et 
+administrations publiques européennes confirme l’ampleur des hausses tarifaires, quatre ans après 
+la première étude réalisée avec Vanson Bourne à ce sujet. Afin de garantir la représentativité sectorielle 
+de l'échantillon, les résultats de l’enquête ont été corrigés en fonction du poids de chaque secteur dans 
+l'économie européenne en termes de chiffre d’affaires. Les répondants déclarent une hausse moyenne 
+ 
+2 Frédéric Jenny, Cloud Infrastructure Services : An analysis of potentially anti -competitive practices (CISPE, 
+2021), https://1c0189d5- 591c-4879-8e77-
+9042791e1e52.filesusr.com/ugd/159979_acbf93e9b2164250a0ca93e753616650.pdf?utm_source=btn; Frédéric 
+Jenny, Potential Market Distorsions in the Cloud Infrastructure Services Market  (2023); Guillaume Moukala 
+Moukala Same et Charles -Antoine Schwerer, Cloud computing : préserver la concurrence pour supporter 
+l’économie de la connaissance  (Asterès, 2023), https://asteres.fr/etude/cloud -computing-preserver-la-
+concurrence-pour-supporter-leconomie-de-la-connaissance/; Charles -Antoine Schwerer et Guillaume Moukala 
+Same, « Le cloud computing: entre contribution à la croissance et pratiques anti -concurrentielles », ASTERÈS, 
+19 octobre 2022, https://asteres.fr/etude/le-cloud-computing-entre-contribution-a-la-croissance-et-pratiques-anti-
+concurrentielles/; Explosion des coûts logiciels : Comment reprendre la main sur vos budgets ? (Elée, s.  d.), 
+consulté le 1 avril 2026, https://elee.com/fr/publications/explosion- des-couts-logiciels-comment-reprendre-la-
+main-sur-vos-budgets. 
+5 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+du coût des services de cloud-logiciel de 8,7% par an sur les trois dernières années, la hausse la plus 
+importante par fournisseur atteignant en moyenne 51% . Les perspectives sont d’autant plus 
+préoccupantes que les entreprises anticipent une hausse de +12% par an sur les cinq prochaines années 
+– une accélération cohérente avec les hausses observées ces six dernières années. Le prix facial 
+constitue le premier mécanisme de hausse, devant le volume et la structure de coût. Au -delà du défi 
+strictement financier de cette inflation tarifaire, la qualification par les utilisateurs des pratiques 
+abusives lors des renouvellements de contrats placent en tête les mécanismes de vendor lock-in, devant 
+l’IA by-design, l’obsolescence programmée et la bundlisation. Pour absorber ces surcoûts, les 
+organisations réduisent en priorité leurs autres dépenses numériques  (47% des répondants ) ou 
+augmentent leur budget numérique global (33%), au détriment de leurs prestations externes, achats de 
+matériel, dépenses de R&D, recrutements et salaires. Pour 71% d’entre elles, la trajectoire inflationniste 
+à 5 ans est jugée non soutenable. Enfin, les fonctionnalités d’intelligence artificielle, avancées par les 
+fournisseurs comme justification des hausses, ne génèrent de gains de productivité mesurables que pour 
+23% des répondants  ; 52% perçoivent un potentiel qu'ils ne parviennent pas à quantifier, et 25% 
+constatent des effets négatifs ou redondants. La grande majorité des répondants (93%) considère ces 
+hausses comme injustifiées au regard des gains constatés. 
+ 
+ESTIMATION : 140 Mds€ de surcoût, un manque à gagner de 107 Mds€ de 
+valeur ajoutée, et 1,4 million d’ emplois non créés pour l’économie 
+européenne à horizon 2030 
+En extrapolant l es données de l’enquête, Asterès évalue le coût de cette inflation des prix des 
+services de cloud-logiciels pour l’économie européenne à 0, 6 point de PIB par an et 1,4 million 
+d’emplois à horizon 2030 . La hausse des dépenses de services de cloud -logiciel représenterait un 
+surcoût de 140 Mds€ par an  en moyenne , dont 93 Mds€ sortiraient définitivement de l'économie 
+européenne. Ce surcoût implique  un effet d’éviction vis-à-vis d’autres dépenses réalisées auprès de 
+fournisseurs européens, notamment auprès des entreprises de services numériques (ESN), ou au sein 
+même des entreprises, notamment sur les investissements productifs et la R&D. En modélisant les effets 
+en cascade de cette baisse de demande, Asterès évalue les pertes totales à 205 Mds€ de chiffre d'affaires, 
+107 Mds€ de valeur ajoutée et 1,4 million d’emplois. À titre de comparaison, le coût annuel moyen en 
+termes de chiffre d’affaires sur 5 ans des hausses tarifaires serait donc supérieur au budget annuel de 
+l’UE3 et représenterait, sur une seule année, plus du double des montants investis pour l’innovation et 
+la recherche par Horizon Europe sur 7 ans4. Ce coût des hausses tarifaires correspondrait également au 
+double de celui du choc pétrolier causé par la blocus du détroit d’Ormuz, si la hausse du prix du baril 
+se maintenait sur un an5. Toutefois, à la différence du choc pétrolier qui est ponctuel, brutal et visible, 
+ces hausses s'installent de manière progressive, silencieuse et récurrente, années  après année s, et 
+suscitent pour l’heure une moindre mobilisation malgré une ampleur économique bien supérieure.  
+ 
+ 
+ 
+3 Le budget annuel de l’Union européenne en 2026 s’élève à 193 Mds€ 
+4 « Horizon Europe », Consilium, consulté le 17 avril 2026, https://www.consilium.europa.eu/fr/policies/horizon-
+europe/. Le budget total du programme s’élève à 95,5 Mds€, sur 7 ans, soit 14 Mds€ par an. 
+5 Hypothèses de calcul  : importations de pétrole de l’UE de 435 Mt soit 3,1 milliards de barils  (données 2025), 
+hausse du prix du baril dû à la fermeture du détroit d’Ormuz de 32€ (61€ le 27 février vs. 93€ le 6 avril, au pic de 
+la crise).  
+6 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Coût annuel des hausses tarifaires pour l’économie européenne, en chiffre d’affaires et valeur ajoutée, 
+comparé aux dépenses publiques et à un choc pétrolier (en milliards d’euros) 
+ 
+Conclusion : un transfert massif de richesses, dont l’effet reste 
+incertain 
+Cette inflation tarifaire marque  un changement de paradigme pour l’innovation, dont les 
+conséquences dépassent la simple fuite de valeur et les effets d’éviction. Les dépenses numériques 
+basculent comptablement d'une logique d'investissement (CAPEX) vers une logique de coût (OPEX), 
+transférant de fait l'initiative de l'innovation des entreprises à leurs fournisseurs de cloud-logiciel. Les 
+hausses de prix s’apparentent ainsi à une forme d ’impôt, servant à financer de façon mutualisée le 
+déploiement d’une infrastructure à grande échelle, censé favoriser par la suite l’innovation et les gains 
+de productivité. Au niveau macroéconomique, les effets dépendront des gains de productivité 
+réellement engendrés et de la capacité de l’économie européenne à capter une part de la valeur.  Au 
+niveau microéconomique, les entreprises doivent innover en termes d’organisation et d’intégration, et 
+donc conserver des capacités d’investissement,  pour transformer ces nouveaux outils en avantage 
+concurrentiel.  
+Dans cette étude, Asterès n’a approfondi que la trajectoire tendancielle dans laquelle l’inflation 
+continue d’accélérer au rythme observé sur les six dernières années, en étant faiblement 
+compensée par des gains de productivité, mais d’autres trajectoires sont possibles. Sans prétendre 
+à l’exhaustivité, Asterès distingue au moins trois autres scénarios plausibles qui pourraient venir mitiger 
+cette trajectoire pour l’avenir du marché du cloud -logiciel à horizon 2030 : un scénario de « levier de 
+productivité », dans lequel un gain de productivité permis par l’IA de 0,8% par an (soit 2 jours de 
+travail), compenserait les hausses tarifaires ; un scénario de « rupture concurrentielle  », dans lequel 
+l'émergence de nouveaux acteurs ou la diffusion de l'IA générative exercerait une pression 
+déflationniste sur le marché du cloud- logiciel, à l'image de ce qui a eu lieu dans le  secteur des 
+télécommunications après l'arrivée de Free, entrainant une baisse de 45% des prix en cinq ans ; et enfin 
+un scénario de « levier de compétitivité », dans lequel une politique européenne volontariste de soutien 
+à l’industrie numérique limiterait les effets d'éviction sur l'économie européenne ( par exemple, une 
+hausse de 15 points de la part de marché des fournisseurs européens, permettrait de préserver 120 000 
+emplois et 9 Mds€ de valeur ajoutée par an). 
+Coût net en CA Budget de l’UE Coût net en VA Choc pétrolier
+Ormuz (sur 1 an)
+Budget Horizon
+Europe (sur 1 an)
+            
+            
+205
+193
+107 99
+14
+7 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+préambule 
+ 
+Le cabinet Asterès a été mandaté par le Cigref 
+pour travailler sur le coût des hausses tarifaires 
+des services cloud -logiciel, à l’échelle 
+européenne.   
+Les économistes d’Asterès ont bénéficié d’une 
+totale indépendance dans la conduite de cette 
+étude. Les sources de l’ensemble des données 
+utilisées sont disponibles dans l’étude. 
+Les propos tenus ici n’engagent que leurs 
+auteurs. Le document a été rédigé par 
+Guillaume Moukala Same et Charles-Antoine 
+Schwerer, économistes chez Asterès. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+1. Champ de l’étude : l’impact 
+économique des hausses 
+tarifaires du cloud-logiciel  
+1.1 Objectif : estimer l’impact économique des hausses tarifaires 
+du cloud-logiciel à horizon 2030 
+Cette étude évalue l'impact économique des hausses tarifaires du cloud- logiciel sur l'économie 
+européenne à horizon 2030. Les services de cloud-logiciel comprennent tous les services cloud (Iaas, 
+Paas, Saas), et les logiciels sur site (« on premise ») ou hébergés dans le cloud . Les fortes hausses de 
+prix de ces services constituent un fait connu des entreprises utilisatrices qui commence à être 
+documenté par la littérature économique.  
+La course à l'intelligence artificielle accentue cette dynamique d’inflation pour au moins deux 
+raisons. Sur le plan technique, les technologies d’IA exigent des capacités de calcul, de stockage et de 
+réseau, que seuls une poignée d’acteurs en position dominante sont en mesure de fournir. Sur le plan 
+économique, les investissements massifs consentis par ces mêmes acteurs dans les GPU, les datacenters 
+et les infrastructures énergétiques doivent être amortis, ce qui se répercute sur les prix. Pour autant, les 
+conséquences économiques de ces pratiques tarifaires n’ont, à la connaissance d’Asterès, pas encore 
+fait l’objet d’une analyse complète à l’échelle européenne – un angle mort d'autant plus préoccupant 
+qu'une majeure partie des surcoûts est captée par des fournisseurs extra-européens et sort de l'économie 
+européenne. Cette étude vise à combler ce manque et complète ainsi les travaux d'Asterès et du Cigref 
+sur l es dépendances technologiques de l'Union européenne aux services de cloud et de logiciel 
+américains.
+6 
+ 
+1.2 Méthode générale : une revue de littérature, une enquête et 
+une modélisation économique 
+L'étude procède en trois temps : un état des lieux de la littérature, une enquête auprès de 
+directeurs du numérique européens, et une modélisation des conséquences économiques à 
+horizon 2030. Asterès commence par rappeler les éléments déjà identifiés par la littérature, à savoir la 
+situation de dépendance des organisations vis-à-vis de leurs fournisseurs, notamment en raison de coûts 
+de sortie élevés et d ’alternatives réduites, et les hausses de prix observées lors des derniers 
+renouvellements. Asterès actualise et complète ensuite ces données par le biais d’une nouvelle enquête 
+menée auprès des adhérents du Cigref et de leurs partenaires européens. L’objectif de cette enquête est 
+triple : confirmer l’actualité des évolutions tarifaires, collecter des données sur les impacts budgétaires 
+de ces évolutions, et recueillir  la perception des DSI sur l'apport des fonctionnalités d'intelligence 
+artificielle – l’impact économique des hausses tarifaires n’étant pas le même si celles- ci sont la 
+contrepartie de gain s de productivité significatifs. Enfin, Asterès estime le coût que ces hausses 
+tarifaires risquent de représenter pour les entreprises et administrations publiques européennes et pour 
+l’économie européenne à horizon 2030, en extrapolant les données de l’enquête et en modélisant les 
+effets en chaîne.  
+ 
+6 Sylvain Bersinger et Charles-Antoine Schwerer, La dépendance technologique aux softwares & cloud services 
+américains : une estimation des conséquences économiques en Europe  (Asterès, Cigref, 2025), 
+https://asteres.fr/etude/la-dependance-technologique-aux-softwares-cloud-services-americains-une-estimation-
+des-consequences-economiques-en-europe/. 
+9 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+2. Littérature : le manque de 
+concurrence est à l’origine d’une 
+sur-inflation sur le marché du 
+cloud-Logiciel 
+2.1 Causes : un marché structurellement peu concurrentiel 
+La concurrence sur le marché du cloud- logiciel est limitée, maintenant les utilisateurs dans une 
+situation de dépendance vis -à-vis de leurs fournisseurs. Ce manque de concurrence , qui a attiré 
+l’attention des autorités françaises et britanniques en 2023 et 20257,  s’explique principalement par des 
+coûts de sortie du cloud élevés, mais aussi, sur certains sous-segments, par le manque d’alternatives à 
+l’échelle crédibles. Les « coûts de sortie » élevés limitent ainsi la capacité des utilisateurs à changer de 
+fournisseur8. Ces coûts sont à la fois techniques (complexité de la migration des données, problèmes 
+d'interopérabilité), commerciaux (double facturation pendant la transition) et organisationnels 
+(réapprentissage des outils par les collaborateurs). Ils sont amplifiés par l'intégration verticale des 
+principaux fournisseurs, qui lient logiciels, infrastructure s et plateformes entre eux. Dans l’enquête 
+Asterès – Vanson Bourne conduite en février 2022, les DSI interrogés avaient évalué ce coût de sortie 
+à 15% de leur budget IT9. En outre, sur certains sous-segments, il existe peu de fournisseurs alternatifs 
+crédibles. Le logiciel se confond alors avec le marché et  les coûts de sortie deviennent presque 
+théoriques : il n'y a parfois pas d'alternative de qualité équivalente vers laquelle migrer.  Les coûts de 
+redéveloppement en interne ou d’intégration de briques open source  ne font pas partie du périmètre 
+d’analyse. 
+  
+2.2 Conséquences : des hausses de prix bien supérieures à 
+l’inflation de référence 
+Ce déficit de concurrence confère aux fournisseurs un pouvoir de marché tel qu’ils peuvent 
+imposer une inflation des prix supérieure à la normale sur le marché du cloud-logiciel. Les hausses 
+de prix sur le marché du cloud- logiciel ont été documentées par le Pr. Jenny en 2021 et 2023 10, par 
+Asterès entre 2022 et 2023 11 et récemment par le cabinet Elée12. Ces hausses de prix prennent le plus 
+ 
+7 « Informatique en nuage (« cloud ») : L’Autorité de la concurrence rend son avis sur le fonctionnement 
+concurrentiel du secteur du cloud », Autorité de la concurrence, 29 juin 2023, 
+https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/informatique-en-nuage-cloud-lautorite-de-la-
+concurrence-rend-son-avis-sur-le; Cloud Services Market Investigation (Competition & Market Authority, 2025), 
+https://www.gov.uk/cma-cases/cloud-services-market-investigation. 
+8 Paul Klemperer, « Markets with Consumer Switching Costs  », The Quarterly Journal of Economics  102, no 2 
+(1987): 375, https://doi.org/10.2307/1885068. 
+9 Guillaume Moukala Same et Charles -Antoine Schwerer, Cloud computing : préserver la concurrence pour 
+supporter l’économie de la connaissance  (Asterès, 2023), https://asteres.fr/etude/cloud -computing-preserver-la-
+concurrence-pour-supporter-leconomie-de-la-connaissance/. 
+10 Jenny, Cloud Infrastructure Services : An analysis of potentially anti -competitive practices; Jenny, Potential 
+Market Distorsions in the Cloud Infrastructure Services Market. 
+11 Schwerer et Moukala Same, « Le cloud computing »; Moukala Same et Schwerer, Cloud computing : préserver 
+la concurrence pour supporter l’économie de la connaissance. 
+12 Explosion des coûts logiciels. 
+10 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+souvent la forme de hausses de prix facial ou de ventes groupées et se traduisent, selon le cabinet Elée, 
+par une augmentation de la facture logicielle de 10% à 15% par an, « uniquement par effet d’inertie »13. 
+Par conséquen t, le segment des logiciels est  le premier contributeur à l’explosion des dépenses 
+numériques mondiales depuis 2020 (voir graphique ci-dessous).   
+− Concernant les hausses de prix facial , l’enquête Vanson Bourne – Asterès, conduite en 
+2022, a révélé que près de 90% des entreprises  françaises étaient t ouchées, avec des 
+hausses de 3% à 6% par an, selon l’hypothèse de durée du contrat, soit supérieures de plusieurs 
+points à l’inflation14. Ces résultats corroboraient les témoignages recueillis par le Pr. Jenny, 
+selon lesquels les prix des licences des logiciels sont « initialement compétitifs » mais presque 
+systématiquement augmentés au moment du renouvellement 15 (stratégie de «  vendor lock -
+in »)16. En 2023, Asterès avait estimé le coût des hausses tarifaires pour les entreprises 
+françaises entre 250 M€ et 540 M€ , selon les hypothèses 17. Depuis, le cabinet Elée note que 
+l’irruption de l’intelligence artificielle agit comme une « nouvelle frontière commerciale  », 
+chaque innovation justifiant un coût additionnel18. 
+− Concernant les ventes groupées, l’enquête Vanson Bourne – Asterès, conduite en 2022, a 
+révélé que 70% des entreprises françaises s’étaient déjà vu proposer une offre groupée , 
+avec un différentiel de coût de 26% en moyenne et pouvant atteindre jusqu’à 80% pour certains 
+répondants19. Ces résultats sont confortés par l’analyse du Pr. Jenny qui, en analysant les 
+politiques de licence de certains fournisseurs, a quantifié des majorations pouvant atteindre 
+90% pour Office 365 et 300% pour SQL Server
+20, ainsi que par celle du cabinet Elée, qui 
+illustre ce type de pratique avec l’exemple de VMWare :  « la fusion de milliers de références 
+en une centaine de packs a provoqué des hausses brutales, régulièrement supérieures à 40 %, 
+et parfois jusqu’au double  »21. En 2023, Asterès évaluait  le surcoût découlant du refus de 
+souscrire à ces offres groupées à 146 M€ par an pour les entreprises françaises22. 
+ 
+ 
+ 
+ 
+ 
+ 
+13 Explosion des coûts logiciels. 
+14 Schwerer et Moukala Same, « Le cloud computing ». 
+15 Jenny, Cloud Infrastructure Services : An analysis of potentially anti-competitive practices. 
+16 Justice Opara-Martins et al., « Critical analysis of vendor lock-in and its impact on cloud computing migration: 
+a business perspective  », Journal of Cloud Computing 5, n o 1 (2016): 4, https://doi.org/10.1186/s13677- 016-
+0054-z. 
+17 Moukala Same et Schwerer, Cloud computing : préserver la concurrence pour supporter l’économie de la 
+connaissance. 
+18 Explosion des coûts logiciels. 
+19 Guillaume Moukala Same et Charles-Antoine Schwerer, Le cloud computing: entre contribution à la croissance 
+et pratiques anti-concurrentielles (Asterès, 2022), https://asteres.fr/etude/le-cloud-computing-entre-contribution-
+a-la-croissance-et-pratiques-anti-concurrentielles/. 
+20 Jenny, Cloud Infrastructure Services : An analysis of potentially anti-competitive practices. 
+21 Explosion des coûts logiciels. 
+22 Moukala Same et Schwerer, Cloud computing : préserver la concurrence pour supporter l’économie de la 
+connaissance. 
+11 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Dépenses numériques mondiales (en milliards de dollars). 
+ 
+Sources : Gartner, février 2026, synthèse Elée23. 
+ 
+ 
+Contribution des différents segments à la hausse des dépenses numériques mondiales entre 2020 et 
+2026. 
+ 
+Source : Gartner, février 2026, synthèse Elée24 et calculs Asterès. 
+ 
+ 
+ 
+23 Note stratégique -  Tendances du marché logiciels & Cloud | Elée  (Elée, 2026), 
+https://elee.com/fr/publications/note-strategique-tendances-du-marche-logiciels-cloud. 
+24 Note stratégique - Tendances du marché logiciels & Cloud | Elée. 
+3352 3215 3401
+3661 3618 3663 3710 3509 3414 3527 3716 3740 3872
+4396 4533 4687
+5039
+5555
+6155
+2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026p
+40%
+34%
+21%
+6%
+-2%
+Software Services IT Hardware Appareils Communication et
+services
+12 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+3. Enquête : des pratiques toujours 
+d’actualité et peu soutenables à 
+moyen terme 
+3.1 Méthode : une enquête auprès d’une cinquantaine 
+d’adhérents et de partenaires du Cigref 
+Asterès a conduit une enquête auprès des  Directeurs du numérique de 54 entreprises et 
+administrations publiques européennes, membres ou partenaires du Cigref . Le questionnaire 
+comporte 22 questions couvrant la structure des budgets numériques et cloud, les dynamiques tarifaires 
+par types de logiciel, les conséquences de ces hausses et la perception des risques à moyen terme. Les 
+répondants sont issus de 1 4 secteurs d'activité ( voir graphique ci-dessous) et trois pays (France, 
+Belgique et Pays -Bas). Afin de corriger les biais de représentativité sectorielle de l'échantillon, les 
+résultats ont été pondérés par le poids économique de chaque secteur dans l'économie européenne. Pour 
+les questions à choix multiples, les résultats ont été normalisés à 100 afin de refléter la répartition entre 
+les différentes réponses. L’enquête présente plusieurs limites méthodologiques :   
+• Premièrement, la taille de l'échantillon implique que certains secteurs ne comptent qu’un, voire 
+aucun répondant. Le secteur des télécommunications notamment n’a recueilli aucun répondant 
+et son poids a été redistribué aux secteurs représentés. 
+• Deuxièmement, l’échantillon est exclusivement composé d ’entreprises françaises, belges et 
+néerlandaises. Asterès fait l’hypothèse que les réponses peuvent être interprétées  comme 
+pertinentes au niveau de l'Union européenne.  
+• Enfin, l'enquête est également sujette à un biais d'auto -sélection : les entreprises les plus 
+concernées par les hausses tarifaires sont vraisemblablement les plus enclines à répondre, ce 
+qui peut conduire à une surestimation de l'ampleur des hausses observées. La concordance avec 
+d’autres enquêtes et d’autres données conforte alors l’analyse du questionnaire. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+3.2 Hausses tarifaires : une inflation qui se confirme et 
+s’accélère, depuis plusieurs années 
+Les répondants déclarent une hausse moyenne du coût de leurs services de cloud-logiciel de 8,7% 
+par an  sur les trois dernières années, et anticipent une hausse de 12% par an sur les cinq 
+prochaines années. La hausse la plus importante lors d'un renouvellement atteint 51% en moyenne, 
+avec des cas extrêmes déclarés à 100%, voire 200 à 300% pour certains répondants . Ces données 
+confirment l'accélération de l'inflation tarifaire depuis la première enquête Asterès – Vanson Bourne de 
+février 2022, qui évaluait alors les hausses à 5,8% par an 25. Le rythme d'inflation a ainsi progressé de 
+près de trois points en quatre ans, et les anticipations des DSI pour les cinq prochaines années 
+s'inscrivent dans la continuité de cette trajectoire26. Cette inflation n’est jugée soutenable que par 21% 
+des répondants, et difficilement ou non soutenable pa r 71% d’entre eux. Une minorité de répondants 
+apparaît plus nuancée (« cela dépend  ») ou ne parvient pas à se prononcer. Les  hausses les plus 
+importantes concernent en premier lieu les logiciels de productivité et de collaboration et les logiciels 
+de socle technique et sécurité. Concernant les mécanismes de hausse , l’effet prix facial est le plus 
+courant (rang moyen de 2,0), devant l ’effet volume (3,0), l ’effet structure de coût (3,6), l ’effet 
+périmètre, notamment via l’IA by-design (3,6), l’effet baisses de remise (4,6) et l’effet changement de 
+métriques (4,9). Ces hausses s’appuient sur des pratiques commerciales potentiellement abusives (voir 
+annexes) : vendor lock-in (40% des répondants s’en disent victimes au cours des trois dernières années), 
+l’IA by-design (32%), l’obsolescence programmée (30%), la bundlisation (26%) ou encore la réduction 
+de métriques (21%). 
+ 
+Soutenabilité financière des hausses tarifaires à horizon 5 ans. 
+ 
+n=52 
+ 
+ 
+25 Dans l'hypothèse la plus plausible  d'un renouvellement tous les trois  ans. Schwerer et Moukala Same, «  Le 
+cloud computing ». 
+26 Si l'accélération moyenne du taux d'inflation observée entre les deux enquêtes Asterès (12,3 % par an) se 
+prolongeait sur la période 2026- 2030, le taux d'inflation atteindrait 15,5 % en 2030 et s'établirait à 12,4 % en 
+moyenne sur la période — un niveau cohérent avec l'anticipation moyenne des DSI (12,0 % par an). 
+52%
+21%
+19%
+8%
+Non
+Oui
+Difficilement
+Autre/Nuancé
+14 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+3.3 Impact sur les dépenses : un effet d’éviction sur les 
+consommations intermédiaires, investissements et salaires 
+Les hausses tarifaires se traduisent dans la grande majorité des ca s par une réduction d'autres 
+postes de dépenses. Le budget numérique  représente 4,1% du chiffre d'affaires  des organisations 
+privées interrogées (ou de leur contribution au Produit National Brut , pour les administrations). 28% 
+de ce budget est consacré au cloud-logiciel, et selon la trajectoire inflationniste tendancielle actuelle, 
+cette proportion pourrait monter à 42% à l’horizon 2030. Cette dépense est fortement concentrée : les 
+cinq premiers fournisseurs captent à eux seuls 53% du budget cloud-logiciel des répondants, Microsoft 
+étant cité par la quasi -totalité d’entre eux.  Les hausses tarifaires du cloud -logiciel modifient 
+profondément la structure des budgets numériques des organisations sur les cinq dernières années, avec 
+la part moyenne des OPEX portée à 50% , ce qui constitue une « forte augmentation » selon les 
+répondants. Pour absorber ces hauss es, 47% des répondants déclarent réduire leurs autres dépenses 
+numériques, 33% augmentent leur budget numérique global, 14% réalisent des gains de productivité et 
+6% en répercutent le coût sur les  clients. Pour les organisations réduisant leur budget numérique , les 
+dépenses diminuées en priorité sont les prestations externes auprès d’entreprises de services numériques 
+(57%), devant les achats de matériel (27%) et les ressources humaines IT (13%). Pour les organisations 
+augmentant leur budget numérique, les autres dépenses  réduites en priorité sont la R&D et 
+l'investissement productif (32% ), la trésorerie et les marges (26%), le recrutement (21%) et les 
+augmentations de salaires (12 %). L’enquête met en lumière que les hausses tarifaires, qui 
+s’accompagnent d’un glissement des investissements vers les consommations intermédiaires, ont un 
+effet d’éviction notable sur d’autres dépenses, et donc un effet économique en cascade. 
+ 
+Financement des hausses tarifaires. 
+ 
+n = 54 
+ 
+ 
+ 
+ 
+ 
+47%
+33%
+14%
+6%
+0%
+Réduction des autres dépenses IT
+Augmentation du budget IT
+Nouvelles activités / productivité
+Répercussion sur les clients
+Autre
+15 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+3.4 Impact sur la productivité : les bénéfices des outils d’IA 
+restent théoriques pour la majorité des répondants 
+Pour l a grande majorité des répondants , les gains réalisés grâce aux outils d’intelligence 
+artificielle ne justifient pas les hausses. Les fonctionnalités d’IA proposées par les fournisseurs de 
+cloud-logiciel constituent une surcouche déployée sur les infrastructures cloud existantes, dont 
+les dynamiques tarifaires s'inscrivent dans la continuité de celles documentées sur le cloud -
+logiciel depuis 2021. À ce stade, les gains de productivité générés par ces outils, imposés dans près de 
+40% des cas, restent théoriques pour la grande majorité des répondants : 52% n’arrivent pas à mesurer 
+les gains actuels ou potentiels (qu’ils soient déjà ressentis aujourd’hui localement, ou pressentis pour 
+demain), en raison de leur caractère diffus (33%) ou faute de réorganisation profonde des modes de 
+travail (19%) ; 25% constatent des effets négatifs sur la productivité ou une redondance avec d’autres 
+outils ; et seulement 2 3% observent des effets immédiats et mesurables sur la productivité . In fine, 
+parmi les 56% de répondants percevant d’ores et déjà un gain (mesurable ou non), et 11% considèrent 
+les gains globaux suffisants pour justifier les hausses tarifaires. Ces conclusions ne sont pas définitives 
+: les perceptions pourraient s'affiner à mesure que l'intégration de l'IA dans les processus métiers gagne 
+en maturité et que les outils de mesure de la valeur se perfectionnent. 
+ 
+Perception de l’utilité des cas d’usage de l’IA. 
+ 
+n=38 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33%
+23%
+19%
+15%
+10%
+Gains de productivité ressentis mais non mesurables
+Gains de productivité mesurables
+Gains de productivités potentiels avec réorganisation
+Effet négatif sur la productivité
+Outil redondant
+16 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+4 Extrapolation : Une perte nette 
+de 107 Mds€ de valeur ajoutée et 
+1,4 million d’emplois pour 
+l’économie européenne 
+4.1 Hausses tarifaires : un surcoût de 140 Mds€ par an en 
+moyenne 
+4.1.1 Méthode : projeter le surcoût net d’inflation moyen sur cinq ans, à partir des 400 Mds€ 
+de dépenses européennes annuelles en services de cloud et de logiciel 
+Asterès estime le surcoût à deux échelles : celle des entreprises et administrations publiques 
+européennes, et celle de l'économie européenne dans son ensemble. Ces deux estimations diffèrent 
+car les hausses tarifaires, qui constituent un coût net pour les organisations qui les subissent, ne le sont 
+pas intégralement pour l'économie européenne : une partie revient à des fournisseurs européens et une 
+autre est réinvestie en Europe par les fournisseurs extra-européens.  
+• Dans un premier temps,  Asterès estime le surcoût des hausses tarifaires pour les 
+entreprises et administrations publiques européennes, sur les cinq prochaines années. 
+Pour les dépenses de cloud -logiciel des entreprises et administrations européennes, Asterès 
+reprend le chiffre de 400 Mds€, estimé lors de la première étude Asterès – Cigref à partir 
+de données publiques et d’entretiens, et confirmé par l’enquête réalisée dans le cadre de cette 
+deuxième étude27. Le volume de dépenses en cloud-logiciel est ensuite projeté sur cinq ans, à 
+périmètre constant, en appliquant les hausses tarifaires anticipées par les adhérents sur les cinq 
+prochaines années (voir encadré ci-dessous), déduction faite de l'inflation de référence des 
+logiciels28. Asterès retient ensuite le surcoût net annuel moyen sur la période.  
+• Dans un deuxième temps, Asterès isole la part du surcoût qui constitue une fuite nette de 
+valeur pour l'économie européenne. Les hausses de coût pour les entreprises et 
+administrations publiques européennes correspondent symétriquement à une hausse de revenu 
+pour les fournisseurs de cloud- logiciel. Asterès fait l’hypothèse que 34% de ces hausses de 
+revenu sont réinvesties par les fournisseurs dans l’économie européenne. En effet, la première 
+étude Asterès – Cigref avait permis d’établir que sur 1€ de dépenses dans le cloud-logiciel, 17 
+centimes reviennent directement à des fournisseurs européens, et 17 centimes supplémentaires 
+sont réinvestis en Europe par les fournisseurs extra-européens29.  
+ 
+27 Lors de la première étude, ce chiffre estimé à partir d’entretiens semblait cohérent avec les sources ex istantes 
+pour la marché du cloud- logiciel européen (entre 300 Mds€ et 550 Mds€) et le marché mondial (1  000 Mds€, 
+dont le marché européen représenterait un tiers). En outre, en appliquant les réponses du questionnaire aux grandes 
+entreprises et administrations européennes, Asterès obtient un budget cloud-logiciel de 206 Mds€. Ce résultat est 
+cohérent avec le chiffre retenu, s achant que les grandes entreprises représentent 49% de la valeur ajoutée 
+européenne (Source Eurostat). 
+28 Cette inflation est mesurée par l'indice des prix de production des services logiciels (CPF 58.2) publié par 
+l'Insee. La moyenne  sur les trois dernières années est de  2,4 % par an.  Eurostat publie un indice équivalent au 
+niveau européen (SPPI, NACE J58), mais celui -ci agrège l'édition de logiciels avec l'édition de livres et de 
+périodiques, ce qui le rend moins pertinent pour notre analyse. L'indice français a été retenu au motif que  les 
+principaux éditeurs de cloud -logiciel opèrent avec des grilles tarifaires largement uniformes à l'échelle 
+européenne, ce qui en fait un proxy raisonnable pour l'ensemble de l'UE. 
+29 Bersinger et Schwerer, La dépendance technologique aux softwares & cloud services américains . 
+17 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Encadré. La tendance inflationniste va-t-elle accélérer les cinq prochaines années ? 
+Le choix de retenir une trajectoire d'accélération de l'inflation cloud -logiciel sur les cinq prochaines 
+années (+12,0 %/an, contre +8,7 %/an observés sur les trois dernières) se justifie par deux raisons.  
+Premièrement, cette accélération est déjà engagée : le taux d'inflation est passé de 5,8 %/an dans 
+l'enquête Vanson Bourne – Asterès de 2022 à 8,7 %/an dans la présente enquête, soit une progression 
+de près de trois points en quatre ans, ou +12 % par an du taux d'inflation lui-même. Prolonger cette 
+dynamique conduit mécaniquement à une inflation moyenne de 12,0 %/an sur 2026- 2030, niveau 
+cohérent avec les anticipations spontanées des Directeurs du numérique interrogés.  
+Deuxièmement, l'IA constitue un nouveau relais de hausse des prix, dans la continuité des relais 
+précédents (passage au cloud, ventes groupées, refontes de licensing ). Plusieurs annonces récentes 
+confirment cette dynamique : GitHub a annoncé en avril 2026 que son modèle de facturation de Copilot 
+basculerait vers une tarification à la consommation de jetons (ou « tokens ») , de facto indexée sur la 
+facturation à l’usage pur des fournisseurs d’IA et susceptible de tripler les coûts30 comme en témoigne 
+la consommation totale du budget annuel dédié à l’IA chez Uber en l’espace de 4 mois ; Anthropic a 
+également privilégié ce modèle de facturation pour sa version Entreprise et modifié son tokenizer sur 
+Opus 4.7, augmentant de 35% le volume de tokens facturés31. 
+À cela s’ajoute l’hypothèse d’une augmentation tarifaire qui pourrait être amenée à s’accélérer sans que 
+l’on puisse pour autant s’avancer aujourd’hui sur le sujet, tant les modèles d’affaires des fournisseurs 
+d’IA sont encore instables ou peu lisibles. À date, et sans pouvoir aller plus loin, trois constats peuvent 
+seulement être formulés pour nourrir la réflexion :  
+1. Sur la seule année 2025, près de 1000 Mds$ ont été investis sur le marché de l’IA  (principalement 
+dans les infrastructures et l’énergie) ; 
+2. La facturation des prix des services d’IA ne reflète pas leurs coûts réels ; 
+3. Les KPI de leurs fournisseurs se concentrent plus sur les enjeux de capitalisation boursière – par la 
+pénétration du marché que sur les marges opérationnelles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+30 Selon l’analyse du « do tank » Cast x Cigref. 
+31 « Claude Opus 4.7 Pricing 2026: The Real Cost Story Behind the “Unchanged” Price Tag », 
+https://www.finout.io/blog/claude-opus-4.7-pricing-the-real-cost-story-behind-the-unchanged-price-tag 
+18 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+4.1.2 Résultats : une hausse de coût de 140 Mds€, dont 93 Mds€ de fuite de valeur 
+D’après les calculs d’Asterès, les hausses de prix coûteraient aux entreprises et administrations 
+publiques européennes 140 Mds€ par an en moyenne , sur les cinq prochaines années,  dont 93 
+Mds€ de pertes nettes à l’échelle de l’économie européenne . Le reste du surcoût, soit 47 Mds€, 
+constitue un gain de revenu pour les fournisseurs de cloud -logiciel européen ou sont réinvestis en 
+Europe par les fournisseurs américains. 
+Décomposition des dépenses projetées de cloud-logiciel des organisations européennes de 2025 à 
+2030 (en milliards d’euros). 
+ 
+Note : sur cinq ans, l’ inflation s'élève en moyenne à 140 milliards d'euros. 
+ 
+Décomposition du surcoût du cloud-logiciel entre la part qui sort de l’UE et la part qui revient dans 
+l’UE. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+400 400 400 400 400 400
+10 19 30 40 5038 82
+133
+190
+255
+2025 2026 2027 2028 2029 2030
+Volume de dépenses constant Inflation de référence Sur-inflation
+Surcoût annuel en cloud-logiciel  
+(moyenne lissée sur 5 ans) 
+140 Mds€ 
+ 
+Montant qui sort 
+définitivement de l’économie 
+européenne 
+93 Mds€ 
+ 
+Montant qui revient dans 
+l’économie européenne via 
+les dépenses des fournisseurs 
+47 Mds€ 
+ 
+19 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+4.2 Effet d’éviction : 65 Mds€ de dépenses En Europe sacrifiées  
+4.2.1 Méthode : évaluer l’effet d’éviction pour l’économie européenne 
+Asterès évalue l’effet d’éviction pour l’économie européenne en répartissant les hausses de coût 
+par mode de financement  et en  y intégrant la part des importations . Dans cette étude, l'effet 
+d'éviction désigne l'ensemble des dépenses et investissements auxquels les entreprises renoncent pour 
+financer les hausses tarifaires de leurs services de cloud-logiciel.  
+Cet effet d’éviction concerne les hausses financées par la réduction d’autres postes de dépenses 
+numériques ou la hausse du budget numérique lorsque celle-ci se substitue à une autre dépense. 
+Pour les prestations externes et les achats de matériel, la part importée est déduite sur la base des taux 
+d’import sectoriels , afin de ne comptabiliser que la part de ces dépenses qui aurait effectivement 
+bénéficié à des acteurs européens32. Les autres modes de financement, notamment la répercussion sur 
+les clients, sont minoritaires et leurs effets ne sont pas évalués dans cette étude. 
+ 
+4.2.2 Résultats : un effet d’éviction de 65 Mds€ pour l’économie européenne 
+L’effet d’éviction sur les dépenses et investissements en Europe s’élève à 65 Mds€ par an en 
+moyenne. Sur les 140 Mds€ de hausses de coûts que subiraient les organisations européennes, 108 
+Mds€ seraient financés par réallocation ou hausse du budget IT, 20 Mds€ par des gains de productivité, 
+8 Mds€ par répercussion sur les clients et 4 Mds€ par d’« autres » moyens.  
+Asterès estime que 60% de ces dépenses non-réalisées auraient été effectuées auprès de fournisseurs 
+européens ou en interne . Cette proportion globale de 60% traduit l’effet d’éviction en Europe ( 65 
+Mds€), à partir de l’effet d’éviction total des dépenses des organisations européennes (108 Mds€).  
+À noter qu’Asterès ne quantifie pas l’effet des hausses de prix en cascade sur les clients. Dans le détail, 
+les dépenses non réalisées se répartissent entre :  
+• 37 Mds€ de dépenses de prestations aux entreprises de services numériques, dont 23 Mds€ qui 
+auraient été dépensés en Europe. 
+• 26 Mds€ de dépenses RH, dont plus de 8 Mds€ de dépenses de recrutement et plus de 8 Mds€ 
+de revalorisation salariale en Europe. 
+• 24 Mds€ de dépenses de R&D, dont 16 Mds€ auraient été dépensés en Europe. 
+• 18 Mds€ d’achats de matériel, dont 7 Mds€ qui auraient été dépensés en Europe. 
+• 3 Mds€ de dépenses de formation, dont 2 Mds€ auraient été dépensé en Europe.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+32 Source : tableau des emplois Eurostat 
+20 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Financement du surcoût par les organisations européennes.  
+ 
+ 
+ 
+ 
+             
+                  
+ 
+   + 
+ 
+ 
+   = 
+ 
+ 
+Pertes pour l’économie européenne, liées aux seules dépenses des organisations européennes.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dépenses non réalisées par les entreprises et administration 
+publiques européennes 
+108 Mds€, dont :  
+      ESN                RH              R&D          Matériel    Formation 
+ 37 Mds€        26 Mds€      24 Mds€        18 Mds€     3 Mds€ 
+ 
+ 
+ 
+ 
+Gains de 
+productivité 
+20 Mds€ 
+ 
+Répercussion sur 
+les clients 
+8 Mds€ 
+ 
+Autre mode de 
+financement 
+4 Mds€ 
+ 
+ 
+65 Mds€, dont :  
+      ESN                RH              R&D          Matériel    Formation 
+ 23 Mds€        17 Mds€      16 Mds€        7 Mds€       2 Mds€ 
+ 
+ 
+ 
+ 
+ 
+140 Mds€ de surcoût  
+ 
+ 
+ 
+21 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+4.3 Impact économique : une perte de 107 Mds€ de VA par an et de 
+1,4 million d’emplois pour l’économie européenne  
+4.3.1 Méthode : évaluer l’impact économique total de l’effet d’éviction en Europe 
+Asterès modélise les conséquences directes, indirectes et en chaîne de l’effet d’éviction sur 
+l’économie européenne. Asterès distingue l a perte d’activité pour les entreprises et administrations 
+publiques françaises (effet direct), la perte d’activité pour leurs fournisseurs de rang 1 (effet indirect) , 
+et la perte d’activité pour le reste de l’économie européenne (effet d’entraînement). Chacun de ces effets 
+est traduit en chiffre d’affaires, valeur ajoutée et emplois :  
+• Les recrutements non réalisés correspondent à  une moindre activité  directe pour les 
+entreprises et administrations publiques européennes . En s’appuyant sur les comptes 
+nationaux d’Eurostat, les dépenses RH non réalisées (recrutement uniquement) sont traduites 
+en emplois à partir du salaire moyen dans l’économie européenne, puis en valeur ajoutée via la 
+productivité du travail et enfin en chiffre d'affaires via le taux de valeur ajoutée.  
+• Les dépenses externes non réalisées induisent une perte d’activité chez les fournisseurs de 
+rang 1. Les dépenses non réalisées par les entreprises et administrations publiques européennes 
+correspondent à une perte de chiffre d'affaires pour leurs fournisseurs, qui est ensuite traduite 
+en valeur ajoutée et emplois via les ratios sectoriels issus des comptes nationaux.  
+• Ces dépenses non réalisées et salaires non payés ont ensuite des effets d’entraînement sur 
+l’ensemble de l’économie européenne.  L’activité non réalisée se propage en cascade dans 
+l'ensemble de la chaîne de fournisseurs, c ’est l’effet en chaîne.  La baisse d’activité des 
+entreprises du numérique, par exemple, se répercute sur leurs sous-traitants, qui la répercutent 
+à leur tour sur leurs sous -traitants, et ainsi de suite. À chaque tour, une partie de la valeur est 
+taxée ou part à l’étranger, jusqu’à épuisement de l’effet.  De même, une partie du salaire qui 
+n’est pas versé n’est pas consommé e, ce qui a pour effet de réduire la demande globale dans 
+l’économie, c’est l’effet induit . Le modèle d’Impact d’Asterès (MIA), basé sur les tableaux 
+entrée-sortie de l’OCDE, permet de suivre l’ensemble de ces flux économiques sur une durée 
+totale de cinq ans. 
+ 
+4.3.2 Résultats : une perte de 107 Mds€ de valeur ajoutée et 1,4 million d’emplois  
+D’après la modélisation d’Asterès, les hausses tarifaires du cloud-logiciel pourraient coûter à 
+l’économie européenne 107 Mds€ de valeur ajoutée par an , soit  0,6 point de PIB , et 1,4 
+million d’emplois à horizon 2030.  
+Concernant le chiffre d’affaires, l’effet total se répartit entre 44 Mds€ de pertes chez les entreprises et 
+administrations publiques elles-mêmes (pertes directes), 48 Mds€ de pertes chez leurs fournisseurs de 
+rang 1 (pertes indirectes) , et 113 Mds€ de pertes dans le reste de l’économie européenne (pertes en 
+chaîne).  
+Concernant la valeur ajoutée , l’effet se répartit entre 22 Mds€ de pertes directes, 27 Mds€ de pertes 
+indirectes et 58 Mds€ de pertes en chaîne. Enfin, concernant l’emploi, l’effet se répartit entre 311 000 
+emplois directs, 318 000 emplois indirects et 737 000 emplois en chaîne.  
+ 
+ 
+22 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Conséquences économiques de l’effet d’éviction. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Effet d’éviction pour l’économie 
+européenne 
+65 Mds€ 
+ 
+Pertes directes 
+44 Mds€ de CA 
+22 Mds€ de VA 
+311 000 emplois 
+ 
+Pertes indirectes 
+48 Mds€ de CA 
+27 Mds€ de VA 
+318 000 emplois 
+ 
+Pertes en chaîne 
+113 Mds€ de CA 
+58 Mds€ de VA 
+737 000 emplois 
+ 
+Pertes totales 
+205 Mds€ de CA 
+107 Mds€ de VA 
+1 366 000 emplois 
+ 
+23 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+5 Conclusion : un transfert massif 
+de richesses dont l’effet reste 
+incertain 
+5.1 Synthèse : les hausses tarifaires pourraient entraîner des 
+répercussions sur l’ensemble de l’économie européenne 
+Les organisations européennes paient chaque année davantage pour accéder aux services cloud-
+logiciel dont les prix augmentent bien au-delà de l'inflation, entraînant des pertes pour l’ensemble 
+de l’économie européenne. L'enquête conduite par Asterès auprès de 54 Directeurs du numérique  
+d’entreprises et administrations publiques européennes confirme une hausse moyenne de 8,7% par an  
+sur les trois dernières années, soit plus de trois fois l'inflation de référence des logiciels (2,4%)  et 
+confirme l’accélération de cette inflation (+12% par an en moyenne  sur les cinq prochaines années ). 
+Pour absorber ces surcoûts, les organisations  réduisent en priorité leurs dépenses numériques – soit 
+directement via la réduction du budget numérique , soit indirectement via  la hausse du budget IT, au 
+détriment d’autres enveloppes, notamment la R&D et l’investissement productif . Parallèlement, les 
+fonctionnalités d'IA proposées ou imposées par les fournisseurs ne génèrent de gains de productivité 
+mesurables que pour 23% des répondants (tandis que 25% constatent des effets négatifs ou redondants) 
+et 14% annoncent financer les hausses de prix par des gains de productivité. En extrapolant ces données, 
+Asterès estime le surcoût de ces hausses à 140 Mds€ par an dont 93 Mds€ sortiraient définitivement de 
+l'économie européenne. Parmi ces 93 Mds€ , 65 Mds€ correspondraient à des dépenses non réalisées 
+auprès d’acteurs européens (prestations numériques, matériel R&D, recrutements, formation). En 
+modélisant les effets en cascade de cette baisse de demande sur l’économie européenne, Asterès évalue 
+l’impact net des hausses tarifaires à 205 Mds€ de CA, 107 Mds€ de valeur ajoutée, soit 0,6 point de 
+PIB, et 1,4 million d’emplois. À titre de comparaison, le coût annuel moyen des hausses tarifaires en 
+termes de chiffre d’affaires est donc supérieur au budget annuel de l’UE 33 et représente, sur une seule 
+année, plus du double des montants investis pour l’innovation et la recherche par Horizon Europe sur 
+7 ans34. Le coût des hausses tarifaires équivaut à deux fois l’impact économique du choc pétrolier causé 
+par la blocus du détroit d’Ormuz, si la hausse du prix du baril se maintenait sur un an35.  
+ 
+ 
+ 
+ 
+ 
+ 
+33 Le budget annuel de l’Union européenne en 2026 s’élève à 193 Mds€ 
+34 Consilium, « Horizon Europe ». Le budget total du programme s’élève à 95,5 Mds€, sur 7 ans, soit 14 Mds€ 
+par an. 
+35 Hypothèses de calcul : importations de pétrole de l’UE de 435 Mt soit 3,1 milliards de barils (données 2025), 
+hausse du prix du baril dû à la fermeture du détroit d’Ormuz de 32€ (61€ le 27 février vs. 93€ le 6 avril, au pic de 
+la crise).  
+24 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Coût annuel des hausses tarifaires pour l’économie européenne, en chiffre d’affaires et valeur ajoutée, 
+comparé aux dépenses publiques et à un choc pétrolier (en milliards d’euros) 
+ 
+5.2 Analyse : ces hausses reflètent le basculement vers un modèle 
+de mutualisation des infrastructures numériques 
+Au-delà du chiffrage, ces hausses tarifaires traduisent un changement de modèle économique plus 
+profond, dont les implications demeurent incertaines. Dans le modèle traditionnel, les entreprises 
+investissaient directement dans la technologie (développement logiciel interne, R&D, recrutement 
+d'ingénieurs, formation) pour se doter d'outils adaptés à leurs besoins spécifiques et se différencier de 
+leurs concurrents. Le modèle qui se met en place est fondamentalement différent : les entreprises voient 
+les prix augmenter pour qu'une infrastructure innovante soit développée et mise à leur disposition par 
+un nombre restreint de fournisseurs. Cette logique s'apparente à celle de l'impôt, dans laquelle les 
+entreprises cotisent collectivement, via la hausse des prix, au financement mutualisé d'une infrastructure 
+innovante. L'investissement technologique ne disparaît pas mais change de main  et ce basculement 
+modifie la dynamique concurrentielle entre entreprises. Lorsque les mêmes briques technologiques 
+(modèles de langage, outils de productivité augmentés par l'IA, capacités de calcul ) sont mises à 
+disposition de l'ensemble des acteurs, par effet égalisateur, l'avantage compétitif ne réside plus dans 
+l'accès à la technologie mais dans la capacité à mieux l'exploiter que ses concurrents : intégration aux 
+processus métier, formation des équipes, développements propriétaires construits sur ces infrastructures 
+mutualisées.  
+Les variables d’arbitrage des débuts du «  move-to-cloud » sont d’une grande actualité et il est difficile 
+de prédire lequel des deux modèles est le plus efficace sur le long -terme, entre l’investissement direct 
+dans la technologie avec différenciation des outils ou le financement mutualisé avec différenciation des 
+usages : la mutualisation par les fournisseurs génère des économies d'échelle considérables et permet 
+des investissements qu'aucune entreprise isolée ne pourrait consentir, mais elle réduit la diversité des 
+approches technologiques sans garantir, a priori, une allocation des ressources plus optimale. 
+5.3 Ouverture : plusieurs scénarios de mitigation du coût des 
+hausses tarifaires à horizon 2030 
+Asterès a modélisé ici une unique trajectoire dans laquelle l’inflation continue d’accélérer au 
+rythme observé sur les six dernières années, en étant faiblement  compensée par des gains de 
+productivité. Sans prétendre à l’exhaustivité, Asterès distingue au moi ns trois autres scénarios 
+Coût net en CA Budget de l’UE Coût net en VA Choc pétrolier
+Ormuz (sur 1 an)
+Budget Horizon
+Europe (sur 1 an)
+            
+            
+205
+193
+107 99
+14
+25 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+plausibles qui pourraient venir mitiger cette trajectoire  pour l’avenir du marché du cloud- logiciel à 
+horizon 2030 : 
+• Dans un scénario de « levier de productivité », les gains permis par l'IA compenseraient voire 
+surcompenseraient les coûts. Ce scénario n'est pas improbable : si 23% des répondants mesurent 
+déjà des gains de productivité immédiats, 52% n’arrivent pas à mesurer un potentiel de gains (qu’ils 
+soient ressentis aujourd’hui localement ou pressentis pour demain) , faute de métriques adaptées ou 
+d'intégration suffisante aux processus métier. Pour que les gains de productivité permis par les outils 
+d'IA compensent intégralement le surcoût annuel de 140 Mds€, il suffirait que ces outils génèrent un 
+gain de productivité de 0,8%  par an, ce qui représente 2 jours de travail 36. Ce seuil correspond à la 
+borne haute des estimations académiques, qui varie nt de moins de 0,1% de gain de productivité par 
+an pour Acemoglu 37, à 1,3%  par an pour Aghion et Bunel 38. Seul le scénario le plus optimiste 
+permettrait donc aux hausses tarifaires d'être neutres pour les utilisateurs. 
+• Dans un scénario de « rupture concurrentielle », l'émergence de nouveaux acteurs exercerait  
+une pression déflationniste sur le marché des logiciels. Cette pression déflationniste pourrait 
+résulter de la diffusion  de l’IA générative , désormais capable de répliquer n’importe quel logiciel 
+d’entreprise en un temps record (le « SaaSpocalypse »), ou de l’arrivée sur le marché d’un concurrent 
+ayant la ferme intention de casser les prix . La première variante s’apparente à un scénario de 
+destruction créatrice classique dans lequel des secteurs se développent, au détriment d’autres :  les 
+organisations utilisatrices bénéficieraient certes de baisses de coûts et pourraient réinvestir ces gains, 
+mais le secteur des logiciels, qui représente entre 150 Mds€ et 300 Mds€ en Europe39, se contracterait 
+fortement. Dans la deuxième variante, le secteur devenu une infrastructure incontournable se 
+recomposerait, à la manière par exemple du secteur des télécommunications avec l’arrivée de Free , 
+qui a entraîné une baisse de 45% des prix en cinq ans40.    
+• Enfin, dans un scénario « levier de compétitivité », la réallocation des dépenses à destination 
+d’acteurs européens créant de la valeur en Europe, permettrait de limiter les effets d'éviction 
+sur l'économie européenne. Dans l’étude Asterès – Cigref de 2025, une des hypothèses prospectives 
+analysait les bénéfices pour l’Europe que représenterait l’ augmentation de la part de marché des 
+fournisseurs européens à hauteur de 15 points de pourcentage, à horizon 2035. À volume de dépenses 
+constant (400Mds€ par an) , augmentation des prix constante (140 Mds€ par an) 41, et isopérimètre 
+fonctionnel, la réalisation de cette hypothèse permettrait de préserver 120 000 emplois et 9 Mds€ de 
+valeur ajoutée par an par rapport au scénario central. Un tel bond de compétitivité exigerait toutefois 
+des mesures volontaristes, dont certaines ne seraient pas neutres budgétairement. 
+  
+ 
+36 Le PIB de l’Union Européenne s’élève environ à  18 000  Mds€. Un gain de 0,8% sur  cette valeur ajoutée 
+correspond donc à un gain de 140 Mds€.  
+37 Acemoglu, D. (2025). The simple macroeconomics of AI. Economic Policy, 40(121), 13-58. 
+38 Aghion, P., & Bunel, S. (2024). AI and growth: Where do we stand? Policy note. 
+39 Sources citées dans Bersinger et Schwerer, La dépendance technologique aux softwares & cloud services 
+américains. 
+40 Dozias, A. (2023). La concurrence dans le marché français des communications électroniques. Trésor- Éco n° 
+321. 
+41 Le prix des solutions européennes est en moyenne 10% plus élevé, mais dans ce scénario Asterès fait 
+l’hypothèse qu’en gagnant en compétitivité, les acteurs européens seraient en mesure d’aligner  leurs prix sur les 
+concurrents américains.  
+26 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+ANNEXES 
+ 
+ 
+Répartition des répondants par secteur. 
+ 
+Enquête : n=54, données pré-pondération sectorielle. 
+Économie européenne : données Eurostat. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+19%
+17%
+15%
+11%
+9%
+6%
+6%
+4%
+4%
+4%
+4%
+2%
+2%
+0%
+8%
+8%
+5%
+8%
+4%
+1%
+27%
+4%
+22%
+1%
+2%
+2%
+1,9%
+6%
+Banque, finance, assurance
+Administration publique, services publics
+Transport
+Energie et eau
+Services
+Culture, Média, Loisirs
+Industrie (hors IAS)
+Agroalimentaire
+Commerce et Distribution
+Industrie aéronautique et spatiale
+Services sociaux et santé
+BTP, Construction
+Recherche
+Télécommunications
+Représentation dans l'enquête Représentation dans l'économie européenne
+27 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Quels sont vos 5 principaux fournisseurs de cloud-logiciel ? 
+n = 54 
+ 
+Question : Vos fournisseurs principaux de cloud-logiciel ont-ils intégré pour vos usages directs des 
+fonctionnalités d'Intelligence Artificielle (Générative ou autre) dans les solutions que vous utilisez 
+déjà ? 
+Répartition normalisée à 100%. n = 43 
+ 
+ 
+95%
+55%
+38%
+35%
+31%
+26%
+24%
+24%
+23%
+18%
+14%
+10%
+9%
+5%
+Microsoft Azure
+SAP
+Adobe
+Salesforce
+Snowflake
+ServiceNow
+AWS
+Autre
+Palo Alto Networks
+Oracle
+Google
+Atlassian
+IBM
+Workday
+Top fournisseurs cloud/logiciel
+35%
+24%
+21%
+19%
+2%
+Option payante choisie
+Option payante refusée
+Native imposée, avec surcoût
+Native imposée, sans surcoût
+Autre
+Mode de proposition des fonctionnalités IA
+28 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Selon vous, quelles dépenses de votre fournisseur votre budget cloud-logiciel contribue-t-il 
+à financer ? Classer par ordre d’importance. 
+Note : Le score correspond au rang moyen, un score plus faible indique donc un meilleur classement.  
+n = 54 
+ 
+ 
+ 
+Question : Selon vous, ces hausses de prix vous semblent-elles justifiées par une hausse de qualité ? 
+n = 54 
+Légitimité des hausses 
+  
+4,16
+3,93
+2,40
+2,39
+2,12
+Service client et accompagnement
+Cybersécurité et conformité
+Nouvelles fonctionnalités / qualité
+Augmentation marges fournisseurs
+Investissements infra (DC, GPU)
+Destination perçue du budget cloud (rang moyen)
+54%
+39%
+7%
+Non, gain insuffisant
+Non, aucun gain constaté
+Oui, justifiées
+29 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Sur quels types de cloud-logiciels avez-vous observé les trois hausses les plus 
+importantes ?  
+Note : cette question a été posée de manière différente aux anglophones (jusqu’à deux choix 
+possibles) et en français (classement).  
+ 
+ 
+n = 21 
+ 
+ 
+n = 33 
+ 
+ 
+ 
+ 
+ 
+5%
+5%
+14%
+48%
+67%
+Management & opérations
+Autres
+Relation client et ventes
+Infra. techniques & sécurité
+Productivité et collaboration
+Type de logiciels (anglais)
+3,2
+2,7
+2,5
+1,6
+Management et opérations
+Relation client et ventes
+Infastructures techniques et sécurité
+Productivité et collaboration
+Type de logiciels (français)
+30 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Quels sont les mécanismes techniques ou contractuels qui ont le plus contribué à 
+l'augmentation de vos dépenses de cloud et de logiciels sur les 3 dernières années ? Classer par 
+ordre d’importance. 
+Note : Le score correspond au rang moyen, un score faible indique donc un meilleur classement.  
+n = 54 
+ 
+ 
+Question : Au cours de ces 3 dernières années, quelle part (%) de vos renouvellements de contrats a 
+été marquée selon vous par les pratiques abusives suivantes ? 
+n = 54 
+ 
+2,0
+3,0
+3,6
+3,6
+4,6
+4,9
+6,3
+Prix facial
+Volume
+Périmètre
+Structure de coût (→SaaS)
+Baisse de remise
+Métrique
+Conformité et sécurité
+Mécanismes de hausse (rang moyen)
+40%
+32%
+30%
+26%
+21%
+0%
+Vendor lock-in
+IA by-design
+Obsolescence programmée
+Bundlisation
+Réduction métriques
+Autre
+Pratiques abusives
+31 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Comment financez-vous ces hausses tarifaires ? Répartition normalisée à 100%. 
+n = 54 
+ 
+A. Selon vous, au détriment de quelles autres dépenses la hausse du budget IT s'opère-t-elle ? 
+(Pour les organisations ayant déclaré augmenter les dépenses IT par substitution d’autres 
+ressources de l’organisation). Répartition normalisée à 100%. 
+ 
+B. Quelles dépenses d’IT sacrifiez-vous pour financer ces hausses tarifaires ? (Pour les 
+entreprises ayant déclaré réduire les autres dépenses IT). Répartition normalisée à 100%. 
+n = 19 
+ 
+47%
+33%
+14%
+6%
+0%
+Réduction autres dépenses IT
+Augmentation budget IT
+Nouvelles activités / productivité
+Répercussion sur clients
+Autre
+Financement des hausses
+32%
+26%
+21%
+12%
+6%
+3%
+Investissement productif (R&D)
+Trésorerie / marges
+Recrutement
+Augmentation des salaires
+Formation des équipes
+Autre
+Investissements sacrifiés
+57%
+27%
+13%
+3%
+Prestations externes (ESN)
+Achat de matériel
+Ressources humaines IT
+Autre
+Dépenses numériques sacrifiées
+32 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+Question : Quelle est la tendance d'évolution de la part des OPEX (dépenses d'exploitation) par 
+rapport aux CAPEX (investissements) dans votre budget numérique sur les 5 dernières années ? 
+n = 50 
+ 
+Question : Diriez-vous que le modèle économique actuel du Cloud (OPEX, augmentation 
+imprévisible) met en risque la capacité d'investissement à long terme de votre DSI ? 
+n = 54 
+ 
+Question : Ces hausses tarifaires vous semblent-elles financièrement soutenables pour votre 
+organisation sur les 5 prochaines années ? 
+n = 54 
+ 
+29%
+27%
+22%
+22%
+0%
+Augmentation modérée (10-25%)
+Très forte augmentation (51-75%)
+Transfert quasi-complet (76-100%)
+Forte augmentation (26-50%)
+Stable
+Tendance CAPEX → OPEX 
+66%
+32%
+2%
+Risque majeur
+Contrainte forte mais gérable
+Modèle viable
+Mise en risque de la capacité d'investissement
+52%
+21%
+19%
+8%
+Non
+Oui
+Difficilement
+Autre/Nuancé
+Soutenabilité financière à 5 ans
+33 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+34 
+Asterès – De la dépendance technologique à la captation économique : ce que les hausses tarifaires du 
+cloud-logiciel coûtent à l’Europe – mai 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ASTERES ETUDES & CONSEIL 
+ 
+81 rue Réaumur, 
+ 
+75002 PARIS 01 44 76 89 16  
+ 
+contact@asteres.fr 
+ 

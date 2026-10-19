@@ -8,8 +8,8 @@
         <h1>{{ i18n "brandTitle" }}<br>{{ i18n "brandTagline" }}</h1>
         <p class="lead mt-3">{{ site.Params.description }}</p>
         <div class="mt-4">
-          <a href="{{ "report/" | relLangURL }}" class="btn btn-outline-light btn-lg me-2">{{ i18n "heroBtnReports" }}</a>
-          <a href="{{ "metodologia/" | relLangURL }}" class="btn btn-light btn-lg">{{ i18n "footerMethodology" }}</a>
+          <a href="{{ partial "url-lingua.html" "report/" }}" class="btn btn-outline-light btn-lg me-2">{{ i18n "heroBtnReports" }}</a>
+          <a href="{{ partial "url-lingua.html" "metodologia/" }}" class="btn btn-light btn-lg">{{ i18n "footerMethodology" }}</a>
         </div>
       </div>
     </div>
@@ -21,7 +21,10 @@
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
         <h2 class="mb-2">{{ i18n "numbersTitle" }}</h2>
-        <p class="text-muted mb-4">{{ i18n "numbersSource" | safeHTML }}</p>
+        <p class="text-muted mb-2">{{ i18n "numbersSource" | safeHTML }}</p>
+        {{/* Secondo occhiello: accosta il nostro dato misurato all'ordine di
+             grandezza economico europeo, per rendere politico un dato tecnico. */}}
+        <p class="mb-4"><a class="text-decoration-none" href="{{ partial "url-lingua.html" "news/2026-10-19-bolletta-digitale-europa/" }}">{{ i18n "numbersEconomic" | safeHTML }}</a></p>
       </div>
     </div>
     <div class="row g-4 justify-content-center">
@@ -71,7 +74,7 @@
     {{ end }}
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
-        <a href="{{ "decisori/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "ctaDecisori" }}</a>
+        <a href="{{ partial "url-lingua.html" "decisori/" }}" class="btn btn-outline-primary">{{ i18n "ctaDecisori" }}</a>
       </div>
     </div>
   </div>
@@ -131,7 +134,7 @@
             {{ if site.Params.eventProvisional }}<em>{{ i18n "eventProvisional" }}</em>{{ end }}
           </p>
           <p class="mb-0">
-            <a href="{{ "news/" | relLangURL }}" class="btn btn-primary btn-sm me-2">{{ i18n "eventBtnDetails" }}</a>
+            <a href="{{ partial "url-lingua.html" "news/" }}" class="btn btn-primary btn-sm me-2">{{ i18n "eventBtnDetails" }}</a>
             <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">{{ i18n "eventBtnTelegram" }}</a>
           </p>
         </div>
@@ -171,7 +174,7 @@
       {{ end }}
     </div>
     <p class="mt-4 text-center">
-      <a href="{{ "report/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "allReports" }}</a>
+      <a href="{{ partial "url-lingua.html" "report/" }}" class="btn btn-outline-primary">{{ i18n "allReports" }}</a>
     </p>
   </div>
 </section>
@@ -236,7 +239,7 @@
       {{ end }}
     </div>
     <p class="mt-4 text-center">
-      <a href="{{ "news/" | relLangURL }}" class="btn btn-outline-primary">{{ i18n "allNews" }}</a>
+      <a href="{{ partial "url-lingua.html" "news/" }}" class="btn btn-outline-primary">{{ i18n "allNews" }}</a>
     </p>
   </div>
 </section>
@@ -264,7 +267,7 @@
         <div class="info-box-custom">
           <h2 class="h4 mb-3">{{ i18n "mxmapData" }}</h2>
           <p>{{ i18n "mxmapBoxBody" | safeHTML }}</p>
-          <a href="{{ "metodologia/" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "methodology" }}</a>
+          <a href="{{ partial "url-lingua.html" "metodologia/" }}" class="btn btn-outline-primary mt-2">{{ i18n "methodology" }}</a>
         </div>
       </div>
     </div>

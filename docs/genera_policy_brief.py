@@ -276,6 +276,44 @@ def build():
     story.append(t)
 
     # ── PAGE 2 ──
+    # Il costo economico della dipendenza
+    story.append(Paragraph("Il costo economico della dipendenza", style_h2))
+    story.append(Paragraph(
+        "Alla questione giuridica se ne affianca una economica, finora assente "
+        "dal dibattito italiano. Due studi della società <b>Asterès</b>, commissionati "
+        "dal <b>Cigref</b>, provano a quantificarla a scala europea. Le imprese "
+        "dell’Unione acquistano ogni anno <b>264 miliardi di euro</b> di servizi "
+        "cloud e software a beneficio dell’economia americana — circa <b>l’1,5% del "
+        "PIL dell’Unione</b> e <b>una volta e mezza il bilancio europeo</b>. I fornitori "
+        "statunitensi valgono l’<b>83%</b> del mercato europeo del settore. Poiché le "
+        "importazioni europee di energia sono valse 360 miliardi nel 2024, la "
+        "<b>bolletta digitale dell’Europa è ormai comparabile alla sua bolletta "
+        "energetica</b>.",
+        style_body
+    ))
+    story.append(Paragraph(
+        "Il secondo studio misura la dinamica dei prezzi: <b>+8,7% annuo</b> negli "
+        "ultimi tre anni, <b>+12% atteso</b> nei prossimi cinque, con un aumento "
+        "medio del <b>51% al rinnovo di contratto</b> e casi estremi dichiarati fino "
+        "al 200-300%. Il sovrapprezzo stimato è di <b>140 miliardi l’anno</b> al 2030, "
+        "dei quali <b>93 uscirebbero definitivamente dal continente</b>. Gli aumenti "
+        "sono giustificati con funzionalità di intelligenza artificiale <b>imposte "
+        "nel 40% dei casi</b>, mentre circa il <b>60%</b> degli intervistati giudica "
+        "teorici i relativi guadagni di produttività.",
+        style_body
+    ))
+    story.append(Paragraph(
+        "<b>Come vanno letti questi numeri.</b> Non sono misurazioni ma stime "
+        "estrapolate da interviste a sei <i>Chief Information Officer</i>, perché i "
+        "dati commerciali sono distorti dal peso dell’Irlanda nei flussi; e il "
+        "Cigref è parte interessata. Lo studio dichiara metodo e limiti, e vanno "
+        "citati per quello che sono. Restano, allo stato, <b>il solo ordine di "
+        "grandezza disponibile</b> — e indicano che la dipendenza non è soltanto un "
+        "rischio giuridico, ma una <b>voce di spesa crescente e non negoziata</b>.",
+        style_body
+    ))
+    story.append(Spacer(1, 2 * mm))
+
     story.append(PageBreak())
 
     # La via d'uscita: certificare l'immunità

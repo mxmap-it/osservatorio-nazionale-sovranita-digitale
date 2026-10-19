@@ -50,7 +50,7 @@ other = "Sovranità Digitale"
 other = "Stato del progetto: versione beta — tocca per i dettagli"
 
 [betaTip]
-other = "<strong>Progetto in evoluzione.</strong> L'Osservatorio è in <em>versione beta</em>: i dati provengono da MxMap.it e il report definitivo non è ancora stato pubblicato. Contenuti e funzionalità sono in continuo sviluppo.<br><br>Aiutaci a completare la roadmap: <a href=\"https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues\" target=\"_blank\" rel=\"noopener\">collabora su GitHub Issues</a> e <a href=\"https://t.me/+Ot-M_g0dkh1kMGI0\" target=\"_blank\" rel=\"noopener\">unisciti al canale Telegram</a>."
+other = "<strong>Progetto in evoluzione.</strong> L'Osservatorio è in <em>versione beta</em>: i dati provengono da MxMap.it e il report definitivo non è ancora stato pubblicato. Contenuti e funzionalità sono in continuo sviluppo.<br><br>Aiutaci a completare la <a href=\"/roadmap/\">roadmap</a>: <a href=\"https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/issues\" target=\"_blank\" rel=\"noopener\">collabora su GitHub Issues</a> e <a href=\"https://t.me/+Ot-M_g0dkh1kMGI0\" target=\"_blank\" rel=\"noopener\">unisciti al canale Telegram</a>."
 
 [mxmapLinkTitle]
 other = "Vai al progetto MxMap.it"
@@ -186,3 +186,9 @@ other = "PSN"
 
 [footerCertifications]
 other = "Certificazioni"
+
+[footerRoadmap]
+other = "Roadmap"
+
+[numbersEconomic]
+other = "E ogni anno <strong>264 miliardi di euro</strong> lasciano le imprese europee per l'economia americana in servizi cloud e software: quanto la bolletta energetica del continente."

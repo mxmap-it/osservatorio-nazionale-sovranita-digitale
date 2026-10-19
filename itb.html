@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+            <title>SEMIC SHACL validator</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet" href="/shacl/webjars/font-awesome/5.13.0/css/all.min.css"/>
+            <link rel="stylesheet" href="/shacl/webjars/bootstrap/3.4.1/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="/shacl/webjars/codemirror/5.62.2/lib/codemirror.css"/>
+            <link rel="stylesheet" href="/shacl/css/style-min.css"/>
+            <script src="/shacl/webjars/jquery/3.7.1/jquery.min.js"></script>
+            <script src="/shacl/webjars/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script src="/shacl/webjars/codemirror/5.62.2/lib/codemirror.js"></script>
+            <script src="/shacl/js/lib/handlebars.runtime.min.js"></script>
+            <script src="/shacl/js/itb-upload-min.js"></script>
+            <script nonce="5wHTfy8Ybhg5cCZMhJf1BRRpwfP7279LlVipCX7kyzI=">
+                var validatingInputMessage = "Validating input";
+                var validationTypeOptions = {};
+                
+                    validationTypeOptions["dcatap"] = [];
+                    
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_base0",
+                            label: "3.0.1 Base Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_range0",
+                            label: "3.0.1 Ranges Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_base",
+                            label: "3.0.1 Base (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_range",
+                            label: "3.0.1 Ranges (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_codelists",
+                            label: "3.0.1 Controlled Vocabularies"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_rec",
+                            label: "3.0.1 Recommendations (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_full",
+                            label: "3.0.1 Full (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_1_full1",
+                            label: "3.0.1 Full (individual constraints)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_base0",
+                            label: "3.0.0 Base Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_range0",
+                            label: "3.0.0 Ranges Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_base",
+                            label: "3.0.0 Base (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_range",
+                            label: "3.0.0 Ranges (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_rec",
+                            label: "3.0.0 Recommendations (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_full",
+                            label: "3.0.0 Full (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "3_0_0_full1",
+                            label: "3.0.0 Full (individual constraints)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_base0",
+                            label: "2.1.1 Base Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_range0",
+                            label: "2.1.1 Ranges Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_base",
+                            label: "2.1.1 Base (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_range",
+                            label: "2.1.1 Ranges (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_rec",
+                            label: "2.1.1 Recommendations (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_full",
+                            label: "2.1.1 Full (with background knowledge)"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_1_1_codelists",
+                            label: "2.1.1 Controlled vocabularies"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "2_0_0",
+                            label: "2.0.0"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "1_2",
+                            label: "1.2"
+                        });
+                        validationTypeOptions["dcatap"].push({
+                            option: "vTest",
+                            label: "vTest"
+                        });
+                    
+                    validationTypeOptions["dcatap_hvd"] = [];
+                    
+                        validationTypeOptions["dcatap_hvd"].push({
+                            option: "3_0_0_base0",
+                            label: "3.0.0 Base Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap_hvd"].push({
+                            option: "3_0_0_range0",
+                            label: "3.0.0 Ranges Zero (no background knowledge)"
+                        });
+                        validationTypeOptions["dcatap_hvd"].push({
+                            option: "3_0_0_usagenotes",
+                            label: "3.0.0 Full (individual constraints)"
+                        });
+                        validationTypeOptions["dcatap_hvd"].push({
+                            option: "3_0_0_full",
+                            label: "3.0.0 Full (with background knowledge)"
+                        });
+                    
+                    validationTypeOptions["mldcatap"] = [];
+                    
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_1_0",
+                            label: "3.1.0"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_1_0_cop_aio",
+                            label: "3.1.0 for AI Office"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_1_0_cop_dp",
+                            label: "3.1.0 for Downstream Providers"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_1_0_cop_nca",
+                            label: "3.1.0 for National Competent Authorities"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_1_0_codelists",
+                            label: "3.1.0 Code Lists"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_0_0",
+                            label: "3.0.0"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_0_0_cop_aio",
+                            label: "3.0.0 for AI Office"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_0_0_cop_dp",
+                            label: "3.0.0 for Downstream Providers"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_0_0_cop_nca",
+                            label: "3.0.0 for National Competent Authorities"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "3_0_0_codelists",
+                            label: "3.0.0 Code Lists"
+                        });
+                        validationTypeOptions["mldcatap"].push({
+                            option: "2_1_0",
+                            label: "2.1.0"
+                        });
+                    
+                    validationTypeOptions["cpsvap"] = [];
+                    
+                        validationTypeOptions["cpsvap"].push({
+                            option: "3_2_0",
+                            label: "3.2.0"
+                        });
+                        validationTypeOptions["cpsvap"].push({
+                            option: "3_1_0",
+                            label: "3.1.0"
+                        });
+                        validationTypeOptions["cpsvap"].push({
+                            option: "3_0_0",
+                            label: "3.0.0"
+                        });
+                        validationTypeOptions["cpsvap"].push({
+                            option: "2_2_1",
+                            label: "2.2.1"
+                        });
+                    
+                    validationTypeOptions["bregdcatap"] = [];
+                    
+                        validationTypeOptions["bregdcatap"].push({
+                            option: "2_1_0",
+                            label: "2.1.0"
+                        });
+                        validationTypeOptions["bregdcatap"].push({
+                            option: "2_0_0",
+                            label: "2.0.0"
+                        });
+                    
+                    validationTypeOptions["owl"] = [];
+                    
+                    validationTypeOptions["shacl"] = [];
+                    
+                
+                var preconfiguredArtifacts = {}
+                
+                    preconfiguredArtifacts["mldcatap.3_0_0"] = true;
+                    preconfiguredArtifacts["dcatap.1_2"] = false;
+                    preconfiguredArtifacts["owl"] = true;
+                    preconfiguredArtifacts["dcatap.vTest"] = false;
+                    preconfiguredArtifacts["mldcatap.3_0_0_codelists"] = true;
+                    preconfiguredArtifacts["mldcatap.3_1_0_codelists"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_range0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_rec"] = true;
+                    preconfiguredArtifacts["mldcatap.3_1_0"] = true;
+                    preconfiguredArtifacts["shacl"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_full1"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_range"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_base0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_codelists"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_base"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_full"] = true;
+                    preconfiguredArtifacts["mldcatap.3_1_0_cop_nca"] = true;
+                    preconfiguredArtifacts["mldcatap.3_1_0_cop_aio"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_range"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_rec"] = true;
+                    preconfiguredArtifacts["bregdcatap.2_1_0"] = true;
+                    preconfiguredArtifacts["mldcatap.3_0_0_cop_dp"] = true;
+                    preconfiguredArtifacts["bregdcatap.2_0_0"] = true;
+                    preconfiguredArtifacts["dcatap.2_0_0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_range0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_range0"] = true;
+                    preconfiguredArtifacts["cpsvap.3_2_0"] = true;
+                    preconfiguredArtifacts["cpsvap.3_1_0"] = true;
+                    preconfiguredArtifacts["cpsvap.3_0_0"] = true;
+                    preconfiguredArtifacts["cpsvap.2_2_1"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_base"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_full"] = true;
+                    preconfiguredArtifacts["dcatap_hvd.3_0_0_usagenotes"] = true;
+                    preconfiguredArtifacts["mldcatap.3_0_0_cop_nca"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_base0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_base"] = true;
+                    preconfiguredArtifacts["dcatap_hvd.3_0_0_base0"] = true;
+                    preconfiguredArtifacts["dcatap_hvd.3_0_0_range0"] = true;
+                    preconfiguredArtifacts["mldcatap.3_1_0_cop_dp"] = true;
+                    preconfiguredArtifacts["dcatap_hvd.3_0_0_full"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_full"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_range"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_full1"] = true;
+                    preconfiguredArtifacts["mldcatap.3_0_0_cop_aio"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_0_base0"] = true;
+                    preconfiguredArtifacts["dcatap.3_0_1_rec"] = true;
+                    preconfiguredArtifacts["dcatap.2_1_1_codelists"] = true;
+                    preconfiguredArtifacts["mldcatap.2_1_0"] = true;
+                
+            </script>
+            
+        
+    <link rel="stylesheet" href="/shacl/css/style-shacl-min.css"/>
+    <script src="/shacl/webjars/codemirror/5.62.2/mode/xml/xml.js"></script>
+    <script src="/shacl/js/lib/FileSaver.min.js"></script>
+    <script src="/shacl/js/itb-upload-shacl-min.js"></script>
+    <script nonce="5wHTfy8Ybhg5cCZMhJf1BRRpwfP7279LlVipCX7kyzI=">
+		var supportQuery = false;
+		var supportQueryEndpoint = false;
+		var queryCredentialsMandatory = false;
+		var supportQueryCredentials = false;
+		var labelOptionContentQuery = "Query";
+		var labelQueryEndpointInputPlaceholder = "SPARQL endpoint URL";
+		var labelQueryUsernameInputPlaceholder = "Username";
+		var labelQueryPasswordInputPlaceholder = "Password";
+		var labelQueryAuthenticateLabel = "Authenticate?";
+        var labelDownloadErrorMessage = "An error occurred while downloading the requested data.";
+        var labelContextSyntaxDefault = "Based on the file extension";
+        var labelContextSyntaxDefaultForUri = "Based on the file extension or response type";
+		var externalArtifacts = {};
+		
+			externalArtifacts["dcatap.1_2"] = {}
+			
+				externalArtifacts["dcatap.1_2"]["default"] = "required";
+			
+			externalArtifacts["dcatap.vTest"] = {}
+			
+				externalArtifacts["dcatap.vTest"]["default"] = "required";
+			
+		
+		var loadImportsChoice = {};
+		
+			loadImportsChoice["mldcatap.3_0_0"] = {}
+			loadImportsChoice["mldcatap.3_0_0"] = "NONE";
+			loadImportsChoice["dcatap.1_2"] = {}
+			loadImportsChoice["dcatap.1_2"] = "NONE";
+			loadImportsChoice["owl"] = {}
+			loadImportsChoice["owl"] = "NONE";
+			loadImportsChoice["dcatap.vTest"] = {}
+			loadImportsChoice["dcatap.vTest"] = "NONE";
+			loadImportsChoice["mldcatap.3_0_0_codelists"] = {}
+			loadImportsChoice["mldcatap.3_0_0_codelists"] = "NONE";
+			loadImportsChoice["mldcatap.3_1_0_codelists"] = {}
+			loadImportsChoice["mldcatap.3_1_0_codelists"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_range0"] = {}
+			loadImportsChoice["dcatap.2_1_1_range0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_rec"] = {}
+			loadImportsChoice["dcatap.3_0_0_rec"] = "NONE";
+			loadImportsChoice["mldcatap.3_1_0"] = {}
+			loadImportsChoice["mldcatap.3_1_0"] = "NONE";
+			loadImportsChoice["shacl"] = {}
+			loadImportsChoice["shacl"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_full1"] = {}
+			loadImportsChoice["dcatap.3_0_1_full1"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_range"] = {}
+			loadImportsChoice["dcatap.3_0_0_range"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_base0"] = {}
+			loadImportsChoice["dcatap.3_0_1_base0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_codelists"] = {}
+			loadImportsChoice["dcatap.3_0_1_codelists"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_base"] = {}
+			loadImportsChoice["dcatap.3_0_1_base"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_full"] = {}
+			loadImportsChoice["dcatap.3_0_1_full"] = "NONE";
+			loadImportsChoice["mldcatap.3_1_0_cop_nca"] = {}
+			loadImportsChoice["mldcatap.3_1_0_cop_nca"] = "NONE";
+			loadImportsChoice["mldcatap.3_1_0_cop_aio"] = {}
+			loadImportsChoice["mldcatap.3_1_0_cop_aio"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_range"] = {}
+			loadImportsChoice["dcatap.2_1_1_range"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_rec"] = {}
+			loadImportsChoice["dcatap.2_1_1_rec"] = "NONE";
+			loadImportsChoice["bregdcatap.2_1_0"] = {}
+			loadImportsChoice["bregdcatap.2_1_0"] = "NONE";
+			loadImportsChoice["mldcatap.3_0_0_cop_dp"] = {}
+			loadImportsChoice["mldcatap.3_0_0_cop_dp"] = "NONE";
+			loadImportsChoice["bregdcatap.2_0_0"] = {}
+			loadImportsChoice["bregdcatap.2_0_0"] = "NONE";
+			loadImportsChoice["dcatap.2_0_0"] = {}
+			loadImportsChoice["dcatap.2_0_0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_range0"] = {}
+			loadImportsChoice["dcatap.3_0_0_range0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_range0"] = {}
+			loadImportsChoice["dcatap.3_0_1_range0"] = "NONE";
+			loadImportsChoice["cpsvap.3_2_0"] = {}
+			loadImportsChoice["cpsvap.3_2_0"] = "NONE";
+			loadImportsChoice["cpsvap.3_1_0"] = {}
+			loadImportsChoice["cpsvap.3_1_0"] = "NONE";
+			loadImportsChoice["cpsvap.3_0_0"] = {}
+			loadImportsChoice["cpsvap.3_0_0"] = "NONE";
+			loadImportsChoice["cpsvap.2_2_1"] = {}
+			loadImportsChoice["cpsvap.2_2_1"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_base"] = {}
+			loadImportsChoice["dcatap.2_1_1_base"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_full"] = {}
+			loadImportsChoice["dcatap.2_1_1_full"] = "NONE";
+			loadImportsChoice["dcatap_hvd.3_0_0_usagenotes"] = {}
+			loadImportsChoice["dcatap_hvd.3_0_0_usagenotes"] = "NONE";
+			loadImportsChoice["mldcatap.3_0_0_cop_nca"] = {}
+			loadImportsChoice["mldcatap.3_0_0_cop_nca"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_base0"] = {}
+			loadImportsChoice["dcatap.2_1_1_base0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_base"] = {}
+			loadImportsChoice["dcatap.3_0_0_base"] = "NONE";
+			loadImportsChoice["dcatap_hvd.3_0_0_base0"] = {}
+			loadImportsChoice["dcatap_hvd.3_0_0_base0"] = "NONE";
+			loadImportsChoice["dcatap_hvd.3_0_0_range0"] = {}
+			loadImportsChoice["dcatap_hvd.3_0_0_range0"] = "NONE";
+			loadImportsChoice["mldcatap.3_1_0_cop_dp"] = {}
+			loadImportsChoice["mldcatap.3_1_0_cop_dp"] = "NONE";
+			loadImportsChoice["dcatap_hvd.3_0_0_full"] = {}
+			loadImportsChoice["dcatap_hvd.3_0_0_full"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_full"] = {}
+			loadImportsChoice["dcatap.3_0_0_full"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_range"] = {}
+			loadImportsChoice["dcatap.3_0_1_range"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_full1"] = {}
+			loadImportsChoice["dcatap.3_0_0_full1"] = "NONE";
+			loadImportsChoice["mldcatap.3_0_0_cop_aio"] = {}
+			loadImportsChoice["mldcatap.3_0_0_cop_aio"] = "NONE";
+			loadImportsChoice["dcatap.3_0_0_base0"] = {}
+			loadImportsChoice["dcatap.3_0_0_base0"] = "NONE";
+			loadImportsChoice["dcatap.3_0_1_rec"] = {}
+			loadImportsChoice["dcatap.3_0_1_rec"] = "NONE";
+			loadImportsChoice["dcatap.2_1_1_codelists"] = {}
+			loadImportsChoice["dcatap.2_1_1_codelists"] = "NONE";
+			loadImportsChoice["mldcatap.2_1_0"] = {}
+			loadImportsChoice["mldcatap.2_1_0"] = "NONE";
+		
+		var defaultLoadImports = {};
+		
+			defaultLoadImports["mldcatap.3_0_0"] = {}
+			defaultLoadImports["mldcatap.3_0_0"] = false;
+			defaultLoadImports["dcatap.1_2"] = {}
+			defaultLoadImports["dcatap.1_2"] = false;
+			defaultLoadImports["owl"] = {}
+			defaultLoadImports["owl"] = false;
+			defaultLoadImports["dcatap.vTest"] = {}
+			defaultLoadImports["dcatap.vTest"] = false;
+			defaultLoadImports["mldcatap.3_0_0_codelists"] = {}
+			defaultLoadImports["mldcatap.3_0_0_codelists"] = false;
+			defaultLoadImports["mldcatap.3_1_0_codelists"] = {}
+			defaultLoadImports["mldcatap.3_1_0_codelists"] = false;
+			defaultLoadImports["dcatap.2_1_1_range0"] = {}
+			defaultLoadImports["dcatap.2_1_1_range0"] = false;
+			defaultLoadImports["dcatap.3_0_0_rec"] = {}
+			defaultLoadImports["dcatap.3_0_0_rec"] = false;
+			defaultLoadImports["mldcatap.3_1_0"] = {}
+			defaultLoadImports["mldcatap.3_1_0"] = false;
+			defaultLoadImports["shacl"] = {}
+			defaultLoadImports["shacl"] = false;
+			defaultLoadImports["dcatap.3_0_1_full1"] = {}
+			defaultLoadImports["dcatap.3_0_1_full1"] = false;
+			defaultLoadImports["dcatap.3_0_0_range"] = {}
+			defaultLoadImports["dcatap.3_0_0_range"] = false;
+			defaultLoadImports["dcatap.3_0_1_base0"] = {}
+			defaultLoadImports["dcatap.3_0_1_base0"] = false;
+			defaultLoadImports["dcatap.3_0_1_codelists"] = {}
+			defaultLoadImports["dcatap.3_0_1_codelists"] = false;
+			defaultLoadImports["dcatap.3_0_1_base"] = {}
+			defaultLoadImports["dcatap.3_0_1_base"] = false;
+			defaultLoadImports["dcatap.3_0_1_full"] = {}
+			defaultLoadImports["dcatap.3_0_1_full"] = false;
+			defaultLoadImports["mldcatap.3_1_0_cop_nca"] = {}
+			defaultLoadImports["mldcatap.3_1_0_cop_nca"] = false;
+			defaultLoadImports["mldcatap.3_1_0_cop_aio"] = {}
+			defaultLoadImports["mldcatap.3_1_0_cop_aio"] = false;
+			defaultLoadImports["dcatap.2_1_1_range"] = {}
+			defaultLoadImports["dcatap.2_1_1_range"] = false;
+			defaultLoadImports["dcatap.2_1_1_rec"] = {}
+			defaultLoadImports["dcatap.2_1_1_rec"] = false;
+			defaultLoadImports["bregdcatap.2_1_0"] = {}
+			defaultLoadImports["bregdcatap.2_1_0"] = false;
+			defaultLoadImports["mldcatap.3_0_0_cop_dp"] = {}
+			defaultLoadImports["mldcatap.3_0_0_cop_dp"] = false;
+			defaultLoadImports["bregdcatap.2_0_0"] = {}
+			defaultLoadImports["bregdcatap.2_0_0"] = false;
+			defaultLoadImports["dcatap.2_0_0"] = {}
+			defaultLoadImports["dcatap.2_0_0"] = false;
+			defaultLoadImports["dcatap.3_0_0_range0"] = {}
+			defaultLoadImports["dcatap.3_0_0_range0"] = false;
+			defaultLoadImports["dcatap.3_0_1_range0"] = {}
+			defaultLoadImports["dcatap.3_0_1_range0"] = false;
+			defaultLoadImports["cpsvap.3_2_0"] = {}
+			defaultLoadImports["cpsvap.3_2_0"] = false;
+			defaultLoadImports["cpsvap.3_1_0"] = {}
+			defaultLoadImports["cpsvap.3_1_0"] = false;
+			defaultLoadImports["cpsvap.3_0_0"] = {}
+			defaultLoadImports["cpsvap.3_0_0"] = false;
+			defaultLoadImports["cpsvap.2_2_1"] = {}
+			defaultLoadImports["cpsvap.2_2_1"] = false;
+			defaultLoadImports["dcatap.2_1_1_base"] = {}
+			defaultLoadImports["dcatap.2_1_1_base"] = false;
+			defaultLoadImports["dcatap.2_1_1_full"] = {}
+			defaultLoadImports["dcatap.2_1_1_full"] = false;
+			defaultLoadImports["dcatap_hvd.3_0_0_usagenotes"] = {}
+			defaultLoadImports["dcatap_hvd.3_0_0_usagenotes"] = false;
+			defaultLoadImports["mldcatap.3_0_0_cop_nca"] = {}
+			defaultLoadImports["mldcatap.3_0_0_cop_nca"] = false;
+			defaultLoadImports["dcatap.2_1_1_base0"] = {}
+			defaultLoadImports["dcatap.2_1_1_base0"] = false;
+			defaultLoadImports["dcatap.3_0_0_base"] = {}
+			defaultLoadImports["dcatap.3_0_0_base"] = false;
+			defaultLoadImports["dcatap_hvd.3_0_0_base0"] = {}
+			defaultLoadImports["dcatap_hvd.3_0_0_base0"] = false;
+			defaultLoadImports["dcatap_hvd.3_0_0_range0"] = {}
+			defaultLoadImports["dcatap_hvd.3_0_0_range0"] = false;
+			defaultLoadImports["mldcatap.3_1_0_cop_dp"] = {}
+			defaultLoadImports["mldcatap.3_1_0_cop_dp"] = false;
+			defaultLoadImports["dcatap_hvd.3_0_0_full"] = {}
+			defaultLoadImports["dcatap_hvd.3_0_0_full"] = false;
+			defaultLoadImports["dcatap.3_0_0_full"] = {}
+			defaultLoadImports["dcatap.3_0_0_full"] = false;
+			defaultLoadImports["dcatap.3_0_1_range"] = {}
+			defaultLoadImports["dcatap.3_0_1_range"] = false;
+			defaultLoadImports["dcatap.3_0_0_full1"] = {}
+			defaultLoadImports["dcatap.3_0_0_full1"] = false;
+			defaultLoadImports["mldcatap.3_0_0_cop_aio"] = {}
+			defaultLoadImports["mldcatap.3_0_0_cop_aio"] = false;
+			defaultLoadImports["dcatap.3_0_0_base0"] = {}
+			defaultLoadImports["dcatap.3_0_0_base0"] = false;
+			defaultLoadImports["dcatap.3_0_1_rec"] = {}
+			defaultLoadImports["dcatap.3_0_1_rec"] = false;
+			defaultLoadImports["dcatap.2_1_1_codelists"] = {}
+			defaultLoadImports["dcatap.2_1_1_codelists"] = false;
+			defaultLoadImports["mldcatap.2_1_0"] = {}
+			defaultLoadImports["mldcatap.2_1_0"] = false;
+		
+		var mergeModelsChoice = {};
+		
+			mergeModelsChoice["mldcatap.3_0_0"] = {}
+			mergeModelsChoice["mldcatap.3_0_0"] = "NONE";
+			mergeModelsChoice["dcatap.1_2"] = {}
+			mergeModelsChoice["dcatap.1_2"] = "NONE";
+			mergeModelsChoice["owl"] = {}
+			mergeModelsChoice["owl"] = "NONE";
+			mergeModelsChoice["dcatap.vTest"] = {}
+			mergeModelsChoice["dcatap.vTest"] = "NONE";
+			mergeModelsChoice["mldcatap.3_0_0_codelists"] = {}
+			mergeModelsChoice["mldcatap.3_0_0_codelists"] = "NONE";
+			mergeModelsChoice["mldcatap.3_1_0_codelists"] = {}
+			mergeModelsChoice["mldcatap.3_1_0_codelists"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_range0"] = {}
+			mergeModelsChoice["dcatap.2_1_1_range0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_rec"] = {}
+			mergeModelsChoice["dcatap.3_0_0_rec"] = "NONE";
+			mergeModelsChoice["mldcatap.3_1_0"] = {}
+			mergeModelsChoice["mldcatap.3_1_0"] = "NONE";
+			mergeModelsChoice["shacl"] = {}
+			mergeModelsChoice["shacl"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_full1"] = {}
+			mergeModelsChoice["dcatap.3_0_1_full1"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_range"] = {}
+			mergeModelsChoice["dcatap.3_0_0_range"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_base0"] = {}
+			mergeModelsChoice["dcatap.3_0_1_base0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_codelists"] = {}
+			mergeModelsChoice["dcatap.3_0_1_codelists"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_base"] = {}
+			mergeModelsChoice["dcatap.3_0_1_base"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_full"] = {}
+			mergeModelsChoice["dcatap.3_0_1_full"] = "NONE";
+			mergeModelsChoice["mldcatap.3_1_0_cop_nca"] = {}
+			mergeModelsChoice["mldcatap.3_1_0_cop_nca"] = "NONE";
+			mergeModelsChoice["mldcatap.3_1_0_cop_aio"] = {}
+			mergeModelsChoice["mldcatap.3_1_0_cop_aio"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_range"] = {}
+			mergeModelsChoice["dcatap.2_1_1_range"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_rec"] = {}
+			mergeModelsChoice["dcatap.2_1_1_rec"] = "NONE";
+			mergeModelsChoice["bregdcatap.2_1_0"] = {}
+			mergeModelsChoice["bregdcatap.2_1_0"] = "NONE";
+			mergeModelsChoice["mldcatap.3_0_0_cop_dp"] = {}
+			mergeModelsChoice["mldcatap.3_0_0_cop_dp"] = "NONE";
+			mergeModelsChoice["bregdcatap.2_0_0"] = {}
+			mergeModelsChoice["bregdcatap.2_0_0"] = "NONE";
+			mergeModelsChoice["dcatap.2_0_0"] = {}
+			mergeModelsChoice["dcatap.2_0_0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_range0"] = {}
+			mergeModelsChoice["dcatap.3_0_0_range0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_range0"] = {}
+			mergeModelsChoice["dcatap.3_0_1_range0"] = "NONE";
+			mergeModelsChoice["cpsvap.3_2_0"] = {}
+			mergeModelsChoice["cpsvap.3_2_0"] = "NONE";
+			mergeModelsChoice["cpsvap.3_1_0"] = {}
+			mergeModelsChoice["cpsvap.3_1_0"] = "NONE";
+			mergeModelsChoice["cpsvap.3_0_0"] = {}
+			mergeModelsChoice["cpsvap.3_0_0"] = "NONE";
+			mergeModelsChoice["cpsvap.2_2_1"] = {}
+			mergeModelsChoice["cpsvap.2_2_1"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_base"] = {}
+			mergeModelsChoice["dcatap.2_1_1_base"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_full"] = {}
+			mergeModelsChoice["dcatap.2_1_1_full"] = "NONE";
+			mergeModelsChoice["dcatap_hvd.3_0_0_usagenotes"] = {}
+			mergeModelsChoice["dcatap_hvd.3_0_0_usagenotes"] = "NONE";
+			mergeModelsChoice["mldcatap.3_0_0_cop_nca"] = {}
+			mergeModelsChoice["mldcatap.3_0_0_cop_nca"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_base0"] = {}
+			mergeModelsChoice["dcatap.2_1_1_base0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_base"] = {}
+			mergeModelsChoice["dcatap.3_0_0_base"] = "NONE";
+			mergeModelsChoice["dcatap_hvd.3_0_0_base0"] = {}
+			mergeModelsChoice["dcatap_hvd.3_0_0_base0"] = "NONE";
+			mergeModelsChoice["dcatap_hvd.3_0_0_range0"] = {}
+			mergeModelsChoice["dcatap_hvd.3_0_0_range0"] = "NONE";
+			mergeModelsChoice["mldcatap.3_1_0_cop_dp"] = {}
+			mergeModelsChoice["mldcatap.3_1_0_cop_dp"] = "NONE";
+			mergeModelsChoice["dcatap_hvd.3_0_0_full"] = {}
+			mergeModelsChoice["dcatap_hvd.3_0_0_full"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_full"] = {}
+			mergeModelsChoice["dcatap.3_0_0_full"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_range"] = {}
+			mergeModelsChoice["dcatap.3_0_1_range"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_full1"] = {}
+			mergeModelsChoice["dcatap.3_0_0_full1"] = "NONE";
+			mergeModelsChoice["mldcatap.3_0_0_cop_aio"] = {}
+			mergeModelsChoice["mldcatap.3_0_0_cop_aio"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_0_base0"] = {}
+			mergeModelsChoice["dcatap.3_0_0_base0"] = "NONE";
+			mergeModelsChoice["dcatap.3_0_1_rec"] = {}
+			mergeModelsChoice["dcatap.3_0_1_rec"] = "NONE";
+			mergeModelsChoice["dcatap.2_1_1_codelists"] = {}
+			mergeModelsChoice["dcatap.2_1_1_codelists"] = "NONE";
+			mergeModelsChoice["mldcatap.2_1_0"] = {}
+			mergeModelsChoice["mldcatap.2_1_0"] = "NONE";
+		
+		var defaultMergeModels = {};
+		
+			defaultMergeModels["mldcatap.3_0_0"] = {}
+			defaultMergeModels["mldcatap.3_0_0"] = true;
+			defaultMergeModels["dcatap.1_2"] = {}
+			defaultMergeModels["dcatap.1_2"] = true;
+			defaultMergeModels["owl"] = {}
+			defaultMergeModels["owl"] = false;
+			defaultMergeModels["dcatap.vTest"] = {}
+			defaultMergeModels["dcatap.vTest"] = true;
+			defaultMergeModels["mldcatap.3_0_0_codelists"] = {}
+			defaultMergeModels["mldcatap.3_0_0_codelists"] = true;
+			defaultMergeModels["mldcatap.3_1_0_codelists"] = {}
+			defaultMergeModels["mldcatap.3_1_0_codelists"] = true;
+			defaultMergeModels["dcatap.2_1_1_range0"] = {}
+			defaultMergeModels["dcatap.2_1_1_range0"] = true;
+			defaultMergeModels["dcatap.3_0_0_rec"] = {}
+			defaultMergeModels["dcatap.3_0_0_rec"] = true;
+			defaultMergeModels["mldcatap.3_1_0"] = {}
+			defaultMergeModels["mldcatap.3_1_0"] = true;
+			defaultMergeModels["shacl"] = {}
+			defaultMergeModels["shacl"] = false;
+			defaultMergeModels["dcatap.3_0_1_full1"] = {}
+			defaultMergeModels["dcatap.3_0_1_full1"] = true;
+			defaultMergeModels["dcatap.3_0_0_range"] = {}
+			defaultMergeModels["dcatap.3_0_0_range"] = true;
+			defaultMergeModels["dcatap.3_0_1_base0"] = {}
+			defaultMergeModels["dcatap.3_0_1_base0"] = true;
+			defaultMergeModels["dcatap.3_0_1_codelists"] = {}
+			defaultMergeModels["dcatap.3_0_1_codelists"] = true;
+			defaultMergeModels["dcatap.3_0_1_base"] = {}
+			defaultMergeModels["dcatap.3_0_1_base"] = true;
+			defaultMergeModels["dcatap.3_0_1_full"] = {}
+			defaultMergeModels["dcatap.3_0_1_full"] = true;
+			defaultMergeModels["mldcatap.3_1_0_cop_nca"] = {}
+			defaultMergeModels["mldcatap.3_1_0_cop_nca"] = true;
+			defaultMergeModels["mldcatap.3_1_0_cop_aio"] = {}
+			defaultMergeModels["mldcatap.3_1_0_cop_aio"] = true;
+			defaultMergeModels["dcatap.2_1_1_range"] = {}
+			defaultMergeModels["dcatap.2_1_1_range"] = true;
+			defaultMergeModels["dcatap.2_1_1_rec"] = {}
+			defaultMergeModels["dcatap.2_1_1_rec"] = true;
+			defaultMergeModels["bregdcatap.2_1_0"] = {}
+			defaultMergeModels["bregdcatap.2_1_0"] = true;
+			defaultMergeModels["mldcatap.3_0_0_cop_dp"] = {}
+			defaultMergeModels["mldcatap.3_0_0_cop_dp"] = true;
+			defaultMergeModels["bregdcatap.2_0_0"] = {}
+			defaultMergeModels["bregdcatap.2_0_0"] = true;
+			defaultMergeModels["dcatap.2_0_0"] = {}
+			defaultMergeModels["dcatap.2_0_0"] = true;
+			defaultMergeModels["dcatap.3_0_0_range0"] = {}
+			defaultMergeModels["dcatap.3_0_0_range0"] = true;
+			defaultMergeModels["dcatap.3_0_1_range0"] = {}
+			defaultMergeModels["dcatap.3_0_1_range0"] = true;
+			defaultMergeModels["cpsvap.3_2_0"] = {}
+			defaultMergeModels["cpsvap.3_2_0"] = true;
+			defaultMergeModels["cpsvap.3_1_0"] = {}
+			defaultMergeModels["cpsvap.3_1_0"] = true;
+			defaultMergeModels["cpsvap.3_0_0"] = {}
+			defaultMergeModels["cpsvap.3_0_0"] = true;
+			defaultMergeModels["cpsvap.2_2_1"] = {}
+			defaultMergeModels["cpsvap.2_2_1"] = true;
+			defaultMergeModels["dcatap.2_1_1_base"] = {}
+			defaultMergeModels["dcatap.2_1_1_base"] = true;
+			defaultMergeModels["dcatap.2_1_1_full"] = {}
+			defaultMergeModels["dcatap.2_1_1_full"] = true;
+			defaultMergeModels["dcatap_hvd.3_0_0_usagenotes"] = {}
+			defaultMergeModels["dcatap_hvd.3_0_0_usagenotes"] = true;
+			defaultMergeModels["mldcatap.3_0_0_cop_nca"] = {}
+			defaultMergeModels["mldcatap.3_0_0_cop_nca"] = true;
+			defaultMergeModels["dcatap.2_1_1_base0"] = {}
+			defaultMergeModels["dcatap.2_1_1_base0"] = true;
+			defaultMergeModels["dcatap.3_0_0_base"] = {}
+			defaultMergeModels["dcatap.3_0_0_base"] = true;
+			defaultMergeModels["dcatap_hvd.3_0_0_base0"] = {}
+			defaultMergeModels["dcatap_hvd.3_0_0_base0"] = true;
+			defaultMergeModels["dcatap_hvd.3_0_0_range0"] = {}
+			defaultMergeModels["dcatap_hvd.3_0_0_range0"] = true;
+			defaultMergeModels["mldcatap.3_1_0_cop_dp"] = {}
+			defaultMergeModels["mldcatap.3_1_0_cop_dp"] = true;
+			defaultMergeModels["dcatap_hvd.3_0_0_full"] = {}
+			defaultMergeModels["dcatap_hvd.3_0_0_full"] = true;
+			defaultMergeModels["dcatap.3_0_0_full"] = {}
+			defaultMergeModels["dcatap.3_0_0_full"] = true;
+			defaultMergeModels["dcatap.3_0_1_range"] = {}
+			defaultMergeModels["dcatap.3_0_1_range"] = true;
+			defaultMergeModels["dcatap.3_0_0_full1"] = {}
+			defaultMergeModels["dcatap.3_0_0_full1"] = true;
+			defaultMergeModels["mldcatap.3_0_0_cop_aio"] = {}
+			defaultMergeModels["mldcatap.3_0_0_cop_aio"] = true;
+			defaultMergeModels["dcatap.3_0_0_base0"] = {}
+			defaultMergeModels["dcatap.3_0_0_base0"] = true;
+			defaultMergeModels["dcatap.3_0_1_rec"] = {}
+			defaultMergeModels["dcatap.3_0_1_rec"] = true;
+			defaultMergeModels["dcatap.2_1_1_codelists"] = {}
+			defaultMergeModels["dcatap.2_1_1_codelists"] = true;
+			defaultMergeModels["mldcatap.2_1_0"] = {}
+			defaultMergeModels["mldcatap.2_1_0"] = true;
+		
+		configure({
+			externalArtifactFileLabel: "File",
+			externalArtifactURILabel: "URI",
+            externalArtifactTextLabel: "Direct input",
+			codeTypeObj: "xml",
+			isMinimalUI: false,
+			artifactTypes: ['default'],
+			externalArtifacts: externalArtifacts,
+            labels: {"option":"Release","externalIncludeText":"Include external shapes","externalIncludeTooltip":"Additional shapes that will be considered for the validation","external.default.label":"External shapes","external.default.placeholder":"Select file..."},
+			reportTemplate: 'reportShacl.hbs',
+			reportMinimalTemplate: 'reportMinimalShacl.hbs',
+            allowUriInputs: false
+		});
+    </script>
+    
+</head>
+<body class="body-ui">
+    <div class="container view-section view-section-ui">
+        <div class="view-section-input normal-ui">
+            
+            
+            <div id="bannerSection" class="view-section-input">
+                <div><div><div style="display:table;width:100%;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #eee"><div style="display:table-row"><div style="display:table-cell;width:240px;cursor:pointer;vertical-align:middle" class="validatorReload"><div style="background-image:url(https://www.itb.ec.europa.eu/files/ec_banner_logo.svg);background-size:cover;height:66px" aria-label="European Commission logo" role="img"></div></div><div style="cursor:pointer;display:table-cell;vertical-align:middle;padding-left:8px;padding-top:15px;width:270px" class="validatorReload"><div><span style="font-size:x-large">SEMIC</span></div><div style="margin-top:-5px"><span style="font-size:smaller;font-weight:700">Semantic Interoperability across Europe</span></div></div><div style="display:table-cell;vertical-align:middle;padding-top:20px;text-align:center"><div><span style="font-size:xx-large;cursor:pointer" class="validatorReload">SEMIC SHACL Validator</span></div></div></div></div><div class="row" style="margin-bottom:20px"><div class="col-xs-12 col-md-3 col-sm-4"><ul class="list-group"><a href="https://github.com/SEMICeu" class="list-group-item"><span style="height:24px;width:24px;float:left;margin-right:1em"><img alt="Github" src="https://github.com/fluidicon.png" class="img-responsive"></span>GitHub</a><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre" class="list-group-item"><span style="height:24px;width:24px;float:left;margin-right:1em"><img alt="SEMIC Support Centre logo" src="https://raw.githubusercontent.com/SEMICeu/semic-shacl-validator/refs/heads/main/images/semic-logo.png" class="img-responsive"></span>SEMIC Support Centre</a></ul><ul class="list-group"><a href="https://www.itb.ec.europa.eu/shacl/semic-shacl/upload" class="list-group-item"><span style="height:24px;width:24px;float:left;margin-right:1em"><img alt="SEMIC SHACL Validator Logo" src="https://raw.githubusercontent.com/SEMICeu/semic-shacl-validator/refs/heads/main/images/SHACL%20Validator.png" class="img-responsive"></span>SEMIC SHACL Validator</a><a href="https://www.itb.ec.europa.eu/model2owl/upload" class="list-group-item"><span style="height:24px;width:24px;float:left;margin-right:1em"><img alt="UML Validator Logo" src="https://raw.githubusercontent.com/SEMICeu/semic-shacl-validator/refs/heads/main/images/UML%20Validator.png" class="img-responsive"></span>SEMIC XML Validator</a></ul></div><div class="col-xs-12 col-md-9 col-sm-8"><p>This service enables you to check whether your RDF graph or data model conforms to SEMIC specifications. For each specification, a set of rules is implemented to determine if the relevant SHACL conventions are followed. These rules define constraints on the structure, relationships, and properties within the models. Validation is also available via <a href="https://www.itb.ec.europa.eu/shacl/swagger-ui.html" target="_blank">REST </a>and <a href="https://www.itb.ec.europa.eu/shacl/soap/semic-shacl/validation?wsdl" target="_blank">SOAP </a>APIs to facilitate integration and conformance testing.</p><p>The content to validate can be provided as a file, URI, or direct input. Documentation on using the <a href="https://interoperable-europe.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed" target="_blank">Interoperability Test Bed's (ITB)</a> RDF validator is available <a href="https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/index.html#step-6-use-the-validator" target="_blank">here.</a></p><p>More information available on the <a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/specifications" target="_blank">SEMIC Support Centre</a> regarding the SEMIC specifications. If you would like to stay informed about SEMIC specifications and related tool developments, you can join the mailing list<a href="https://ec.europa.eu/eusurvey/runner/SEMICmailinglist" target="_blank"> here.</a></p></div></div></div></div>
+            </div>
+        
+            <form method="POST" enctype="multipart/form-data" action="upload" class="form-horizontal">
+                <div>
+                    
+                    <div>
+                        
+            
+            <div id="messagePlaceholder" class="alert alert-danger hidden"></div>
+        
+            <div class="form-group">
+            <label for="fileToValidate" class="col-sm-2 control-label">File to validate</label>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <select class="form-control contentTypeChanged" id="contentType" name="contentType">
+                            <option value="fileType">File</option>
+                            
+                            <option value="stringType">Direct input</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-12" id="fileToValidate">
+                                <div class='input-group'>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default triggerFileUpload" type="button"><i class="far fa-folder-open"></i></button>
+                                    </div>
+                                    <input type="text" id="inputFileName" class="form-control triggerFileUpload" placeholder="Select file..." readonly="readonly"/>
+                                </div>
+                            </div>
+                            <input type="file" class="inputFile fileInputChanged" id="inputFile" name="file"/>
+                            <div class="col-sm-12 hidden" id="uriToValidate">
+                                <input type="url" class="form-control fileInputChanged" id="uri" name="uri">
+                            </div>
+                            <div class="col-sm-12 hidden" id="stringToValidate">
+                                <textarea id="text-editor" class="form-control fileInputChanged"></textarea>
+                                <input type="hidden" id="text-editor-value" name="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <div class="form-group">
+                <label for="validationTypeGroup" class="col-sm-2 control-label">Group</label>
+                <div class="col-sm-10">
+                    <select class="form-control validationTypeGroupChanged" id="validationTypeGroup" name="validationTypeGroupInternal">
+                        <option value="" selected="true" disabled="true"></option>
+                        <option value="dcatap">DCAT-AP</option>
+                        <option value="cpsvap">CPSV-AP</option>
+                        <option value="styleguide">Style Guide</option>
+                    </select>
+                </div>
+            </div>
+            <div id="validationTypeDiv" class="form-group hidden">
+                <label for="validationType" class="col-sm-2 control-label">Validate for</label>
+                <div class="col-sm-5">
+                    <select class="form-control validationTypeChanged" id="validationType" name="validationTypeInternal">
+                        
+                        
+                            
+                            <option value="dcatap" data-group="dcatap">DCAT-AP</option>
+                            <option value="dcatap_hvd" data-group="dcatap">DCAT-AP HVD</option>
+                            <option value="mldcatap" data-group="dcatap">MLDCAT-AP</option>
+                            <option value="cpsvap" data-group="cpsvap">CPSV-AP</option>
+                            <option value="bregdcatap" data-group="dcatap">BRegDCAT-AP</option>
+                            <option value="owl" data-group="styleguide">OWL</option>
+                            <option value="shacl" data-group="styleguide">SHACL</option>
+                        
+                    </select>
+                </div>
+                <div id="validationTypeOptionDiv" class="col-sm-5 hidden">
+                    <div id="validationTypeOptionLabelDiv" style="float:left; width:auto; padding-right:30px;">
+                        <label id="validationTypeOptionLabelLabel" for="validationTypeOption" class="control-label">Release</label>
+                    </div>
+                    <div id="validationTypeOptionSelectDiv" style="overflow:hidden; width:auto;">
+                        <select class="form-control validationTypeOptionChanged" id="validationTypeOption" name="validationTypeOptionInternal">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+        
+                        <div id="contentSyntaxTypeDiv" class="form-group">
+                            <label for="contentSyntaxType" class="col-sm-2 control-label"><span>Content syntax</span><span data-toggle="tooltip" data-container="body" data-placement="right" title="Optional for content provided as a file or a URI if a known file extension is detected"> <i class="far fa-question-circle"></i></span></label>
+                            <div class="col-sm-5">
+                                <select class="form-control" id="contentSyntaxType" name="contentSyntaxType">
+                                    <option value="empty" selected="true">Based on the file extension</option>
+                                    <option value="text/turtle">Turtle</option>
+                                    <option value="application/ld+json">JSON-LD</option>
+                                    <option value="application/rdf+xml">RDF/XML</option>
+                                    <option value="application/n-triples">N-Triples</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group includeExternalArtefacts hidden">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="externalArtefactsCheck" class="toggleExternalArtefacts" name="addExternalArtefacts"> <span id="includeExternalArtifactCheckText">Include external shapes</span>
+                    </label>
+                    <span id="includeExternalArtifactCheckTooltip" data-toggle="tooltip" data-container="body" data-placement="right" title="Additional shapes that will be considered for the validation"><i class="far fa-question-circle"></i></span>
+                </div>
+            </div>
+        </div>
+                        <div class="form-group hidden externalClass_default">
+            <label id="externalLabel_default" class="col-sm-2 control-label" for="externalAddButton_default">External shapes</label>
+            <div class="col-sm-10" id="externalDiv_default">
+                <button id="externalAddButton_default" class="btn btn-default addExternalArtifact" type="button" data-artifact-type="default"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+                        <div id="optionsDiv" class="form-group hidden">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <label id="loadImportsDiv" class="checkbox-inline hidden">
+                                    <input type="checkbox" id="loadImportsCheck" name="loadImportsCheck" /><span>Load imports defined in the input?</span>
+                                    <span data-toggle="tooltip" data-container="body" data-placement="right" title="Load imported resources defined via owl:imports when defining the data graph to validate."><i class="far fa-question-circle"></i></span>
+                                </label>
+                                <label id="mergeModelsDiv" class="checkbox-inline hidden">
+                                    <input type="checkbox" id="mergeModelsCheck" name="mergeModelsCheck" /><span>Merge shape and input models?</span>
+                                    <span data-toggle="tooltip" data-container="body" data-placement="right" title="Before validation takes place merge the shape model with the input. This is done to extend the input with contextual information that may be present in the shape model, ensuring that all applicable shapes are triggered. You may need to disable this if the report includes findings on merged shapes."><i class="far fa-question-circle"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" id="inputFileSubmit" class="btn btn-primary doSubmit" disabled="true">Validate</button>
+                <input type="hidden" id="validationTypeToUse" name="validationType"/>
+            </div>
+        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        
+            <div id="reportPlaceholder"></div>
+            
+            <div class="validator-ui-footer">
+                <div class="validator-ui-footer-contents">
+                    <div class="version-div">v1.13.0-SNAPSHOT</div>
+                    
+                </div>
+            </div>
+        
+        
+        <div>
+            
+        </div>
+    </div>
+    
+            <div class="container about-section">This service is powered by the Interoperability Test Bed, a conformance testing service offered by the European Commission's DG DIGIT for projects involved in the delivery of cross-border public services. Find out more <a href="https://joinup.ec.europa.eu/solution/interoperability-test-bed" target="_blank">here</a>.</div>
+        
+    
+            <div class="no-display">
+                <div id="build.version">1.13.0-SNAPSHOT</div>
+                <div id="build.timestamp">2026-09-16 15:28:06 (Z)</div>
+                <div id="startup.timestamp">2026-09-23 08:04:58 (Z)</div>
+                <div id="resource.timestamp">2026-09-23 08:04:13 (Z)</div>
+            </div>
+        
+</body>
+</html>

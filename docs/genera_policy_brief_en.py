@@ -275,6 +275,43 @@ def build():
     story.append(t)
 
     # ── PAGE 2 ──
+    # The economic cost of dependency
+    story.append(Paragraph("The economic cost of dependency", style_h2))
+    story.append(Paragraph(
+        "Alongside the legal question sits an economic one, so far absent from the "
+        "Italian debate. Two studies by <b>Asterès</b>, commissioned by <b>Cigref</b>, "
+        "attempt to quantify it at European scale. Companies in the Union buy "
+        "<b>€264 billion</b> a year of cloud and software services benefiting the "
+        "American economy — around <b>1.5% of EU GDP</b> and <b>one and a half times "
+        "the European budget</b>. American suppliers hold <b>83%</b> of the European "
+        "market. Since EU energy imports were €360 billion in 2024, <b>Europe’s "
+        "digital bill is now comparable to its energy bill</b>.",
+        style_body
+    ))
+    story.append(Paragraph(
+        "The second study measures price dynamics: <b>+8.7% a year</b> over the past "
+        "three years, <b>+12% expected</b> over the next five, with an average "
+        "increase of <b>51% at contract renewal</b> and extreme cases reported up to "
+        "200-300%. The estimated excess cost is <b>€140 billion a year</b> by 2030, "
+        "of which <b>€93 billion would leave the continent permanently</b>. The "
+        "increases are justified by artificial-intelligence features <b>imposed in "
+        "40% of cases</b>, while around <b>60%</b> of respondents judge the related "
+        "productivity gains to be theoretical.",
+        style_body
+    ))
+    story.append(Paragraph(
+        "<b>How these numbers should be read.</b> They are not measurements but "
+        "estimates extrapolated from interviews with six <i>Chief Information "
+        "Officers</i>, because trade data is distorted by Ireland’s weight in the "
+        "flows; and Cigref is an interested party. The study states its method and "
+        "its limits, and it should be cited for what it is. It remains, as things "
+        "stand, <b>the only available order of magnitude</b> — and it shows that "
+        "dependency is not only a legal risk but a <b>growing, unnegotiated item of "
+        "expenditure</b>.",
+        style_body
+    ))
+    story.append(Spacer(1, 2 * mm))
+
     story.append(PageBreak())
 
     # The way out: certifying immunity

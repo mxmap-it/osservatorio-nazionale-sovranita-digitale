@@ -37,3 +37,7 @@ I dati vengono raccolti periodicamente e i report vengono pubblicati con cadenza
 ## Metodologie e iniziative collegate
 
 La metodologia dell'Osservatorio è condivisa con la famiglia di progetti **MxMap**, attiva in diversi paesi europei, e si affianca ad altre iniziative che misurano la sovranità digitale con approcci complementari. L'elenco completo è nella pagina [Iniziative collegate in Europa](/iniziative/).
+
+## Che cosa non misuriamo ancora
+
+Questa pagina descrive ciò che l'Osservatorio misura oggi. Ciò che manca — in primo luogo la misurazione della spesa pubblica per i servizi cloud, anno per anno — è dichiarato nella [roadmap](/roadmap/), insieme allo stato di avanzamento di ogni pezzo.

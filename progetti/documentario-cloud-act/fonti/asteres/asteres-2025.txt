@@ -1,0 +1,1295 @@
+ 
+ 
+ 
+La Dépendance technologique 
+Aux softwares & cloud services 
+américains : une estimation des 
+conséquences économiques 
+en Europe 
+ 
+ 
+ 
+ 
+ 
+Étude économique 
+Avril 2025 
+ 
+ 
+ 
+ 
+ 
+2 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+résumé exécutif 
+ 
+La présente étude vise à quantifier l’impact économique des achats de services de cloud et de 
+logiciels des entreprises européennes aux États-Unis. L’avance prise par les États-Unis dans le 
+domaine du numérique implique que les entreprises européennes achètent de grandes quantités de 
+services de cloud- logiciel aux États-Unis. La présente étude vise d’une part à estimer les montants 
+concernés et d’autre part à analyser leurs impacts économiques tant aux États-Unis que dans l’Union 
+européenne. Sur ce sujet très spécifique, où les données macro-économiques sont rares et parcellaires, 
+Asterès a eu recours à des entretiens dont les conclusions ont été mises à l’épreuve en les comparant à la 
+taille du marché du cloud-logiciel à l’échelle européenne et mondiale. 
+ 
+Asterès estime que les achats annuels de services de cloud-logiciel des entreprises de l’Union 
+européenne qui bénéficient à l’économie américaine s’élèvent à 264 milliards d’euros. Les données 
+qui devraient théoriquement être mobilisées sont soit des données commerciales (importations de 
+services informatiques) soit des données financières issues des revenus d’investissements directs 
+étrangers (ou IDE, dans le cas où ces services sont produits localement par des filiales américaines et 
+leurs profits rapatriés ensuite dans le pays d’origine). Cependant, les données commerciales sont 
+difficiles à utiliser, notamment du fait du poids écrasant de l’Irlande dans les flux, et les données de profits 
+d’IDE sont trop imprécises et parcellaires pour être utilisables. Asterès a donc eu recours à des entretiens 
+avec six Chiefs Information Officers (CIO) de grandes entreprises pour estimer leurs dépenses de 
+services de cloud-logiciel (environ 2,2 % du chiffre d’affaires), la part adressée à des entreprises 
+américaines (83 %) et la part de la valeur créée sur le territoire américain (80 %). Le montant obtenu par 
+la méthode des entretiens est conforté par la taille du marché européen du secteur du cloud-logiciel. 
+Le poids des États-Unis dans les services de cloud-logiciel génère une empreinte économique 
+significative dans le pays, qui pourrait également bénéficier à l’Union européenne si elle parvenait 
+à accroître sa part de marché dans ce domaine. Les achats des entreprises européennes de services 
+de cloud-logiciel aux États-Unis génèrent une empreinte économique directe (l’activité des entreprises 
+informatiques produisant ces services de cloud-logiciel), mais également indirecte (l’activité générée 
+par leurs dépenses) et induite (l’activité générée par la consommation de leurs salariés), qui a été estimée 
+à l’aide du Modèle d’Impact d’Asterès (MIA). Les achats par les entreprises européennes de services de 
+cloud-logiciel aux États-Unis génèrent, pour l’économie américaine, une empreinte totale estimée à 1,9 
+million d’emplois. Si l’Union européenne parvenait, en 2035, à produire 15 % des services de cloud- 
+logiciel qu’elle achète actuellement aux États-Unis, il en résulterait 463 000 emplois supplémentaires 
+dans l’Union européenne. La hausse rapide des prix des services de cloud-logiciel pourrait conduire 
+dans 10 ans à une amélioration du solde de la balance courante des États-Unis de 421 milliards d’euros. 
+Le développement du secteur des services numériques en Europe pourrait conduire à un gain total 
+de productivité de 1,2 %. Si la productivité relative au reste de l’économie du secteur des services 
+numériques européen se rapprochait du niveau américain, il en résulterait un gain global de productivité 
+pour l’ensemble de l’économie européenne. Le sujet des gains de productivité liés au développement du 
+numérique appelle cependant à être creusé : le rapport Draghi conclut à une compétitivité de l’économie 
+américaine supérieure à celle de l’Union européenne du fait de l’excellence américaine dans le 
+numérique, mais d’autres statistiques tempèrent ce résultat. Plus largement, quatre principales questions 
+devraient faire l’objet de travaux approfondis : la nécessité d’obtenir des données plus fiables concernant 
+les échanges de services informatiques, les impacts géopolitiques de la dépendance européenne, l’impact 
+des hausses de prix des services de cloud-logiciel sur la santé des entreprises utilisatrices et les effets du 
+développement du secteur du numérique sur la compétitivité relative des économies. 
+3 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+préambule 
+ 
+Le cabinet ASTERES a été mandaté par le 
+Cigref pour estimer l’impact économique sur 
+l’Union européenne du poids des États-Unis 
+dans le domaine du numérique. 
+Les économistes d’ASTERES ont bénéficié 
+d’une totale indépendance dans la conduite de 
+cette étude. Les propos tenus ici n’engagent 
+que le cabinet ASTERES. La présente étude a 
+été rédigée par Sylvain Bersinger, chef 
+économiste chez ASTERES. 
+4 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+SOMMAIRE 
+1. Champ de l’étude : Estimer l’impact économique des 
+achats européens de services de cloud-logiciel 
+américains ................................................................................................................................................................................ 6 
+Objectif : estimer l’impact économique d’une spécialisation dans 
+le secteur du cloud-logiciel .....................................................................................................................................................................7 
+Périmètre  :  le  cloud-logiciel  acheté  par  les  entreprises 
+européennes.......................................................................................................................................................................................................................................7 
+Méthode : Combler les lacunes des données commerciales ................................ 8 
+2. Coût de la dépendance aux services numériques 
+américains : Un flux estimé à plusieurs centaines de 
+milliards d’euros par an ....................................................................... 10 
+2.1 Méthode : Croiser différentes données pour estimer les flux à 
+destination des États-Unis ............................................................................................................................................................................ 11 
+2.1.1 Flux commerciaux : Tenter d’estimer les achats européens de services de cloud-logiciel aux 
+États-Unis ...................................................................................................................................... 11 
+2.1.2 Flux de profits d’IDE : Une insuffisance de données qui ne permet pas d’estimer la part des 
+achats de services de cloud-logiciel américains par des entreprises européennes .......................... 11 
+2.1.3 Entretiens : Un moyen de pallier aux lacunes des données commerciales ............................ 12 
+2.1.4 Taille du marché : Des données pour appuyer les résultats des entretiens ............................ 13 
+2.2 Commerce de services informatiques : Le poids de l’Irlande 
+complique l’analyse ............................................................................................................... 14 
+2.2.1 Union européenne : Géant théorique du commerce des services informatiques ................... 14 
+2.2.2 Irlande : Une localisation depuis laquelle les exportations sont réalisées dans le monde entier 
+. ...................................................................................................................................................... 15 
+2.2.3 Importations françaises de services informatiques américains : Une estimation difficile ..... 16 
+2.3 Achats de services de cloud-logiciel de l’Europe aux États-Unis : Une 
+estimation à environ 260 milliards d’euros par an ........................................... 17 
+2.3.1 Dépenses moyennes des grandes entreprises européennes en cloud-logiciel : Environ 2,2 % 
+de leur chiffre d’affaires ................................................................................................................. 17 
+2.3.2 Part des acteurs américains dans les dépenses de cloud-logiciel : Environ 83 % ................. 18 
+2.3.3 Valeur créée aux États-Unis : Environ 260 milliards d’euros ............................................... 18 
+3. Impact macro-économique des exportations de 
+cloud-logiciel en Europe : près de 2 millions d’emplois aux 
+États-Unis............................................................................................................................................................................... 20 
+
+5 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+3.1 Méthode : calculer des effets indirects et induits à l’aide du Modèle 
+d’Impact d’Asterès (MIA) ......................................................................................................... 21 
+3.1.1 Empreinte économique totale du secteur du cloud-logiciel : Aller au-delà de la seule activité 
+des entreprises ................................................................................................................................ 21 
+3.1.2 Empreinte économique en Europe d’un développement du secteur du cloud-logiciel : Un 
+gain potentiel de plusieurs centaines de milliers d’emplois ........................................................... 22 
+3.1.3 Évolutions des prix des services de cloud-logiciel : un impact principalement sur la balance 
+des paiements ................................................................................................................................. 23 
+3.2 Empreinte totale des achats de cloud-logiciel de l’Union 
+européenne : Près de 2 millions d’emplois aux États-Unis............................................................ 23 
+3.3 Le développement du numérique : Un potentiel de plusieurs centaines 
+de milliers d’emplois pour l’Europe ............................................................................... 24 
+3.3.1 Réorienter 5 % des achats américains de cloud-logiciel vers l’Europe : Un gain de 178 000 
+emplois ........................................................................................................................................... 24 
+3.3.2 Réorienter 10 % des achats américains de cloud-logiciel vers l’Europe : Un gain de 331 000 
+emplois à échéance 2030 ............................................................................................................... 25 
+3.3.3 Réorienter 15 % des achats américains de cloud-logiciel vers l’Europe : Un gain de 463 000 
+emplois à échéance 2035 ............................................................................................................... 25 
+3.4 Hausse du prix des services de cloud-logiciel : Un impact croissant 
+sur la balance des paiements .................................................................................................................................................................. 26 
+3.4.1 États-Unis : Hausse de 421 milliards d’euros des exportations dans 10 ans ......................... 26 
+3.4.2 Union européenne : Un gain d’environ 100 milliards d’euros pour la balance des paiements 
+européenne dans 10 ans ................................................................................................................. 26 
+4. Impact du secteur cloud-logiciel sur la productivité 
+: Un sujet à approfondir ........................................................................................................................ 28 
+4.1 Numérique et productivité : Un lien probable mais à étayer.................................29 
+4.1.1 Méthode : Comparer la productivité relative des services numériques aux États-Unis et dans 
+l’Union européenne ....................................................................................................................... 29 
+4.1.2 Hausse de la productivité des services numériques européens : un gain global de productivité 
+potentiel de 1,2 % .......................................................................................................................... 29 
+4.2 Questions à approfondir : mieux cerner l’ampleur et les 
+répercussions économiques du secteur cloud-logiciel ............................................................ 31 
+4.2.1 Approfondissement N°1 : Mieux quantifier les échanges de services de cloud-logiciel ....... 31 
+4.2.2 Approfondissement N°2 : les dépendances numériques peuvent créer des dépendances 
+géopolitiques .................................................................................................................................. 31 
+4.2.3 Approfondissement N°3 : L’impact des hausses de prix des services de cloud-logiciel sur la 
+santé des entreprises ....................................................................................................................... 31 
+4.2.4 Approfondissement N°4 : Les conséquences du poids des services de cloud-logiciel sur la 
+compétitivité des économies.......................................................................................................... 32 
+ 
+ 
+ 
+ 
+1. Champ de l’étude : 
+Estimer l’impact 
+économique des 
+achats européens de 
+services de cloud- 
+logiciel américains 
+7 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+Objectif : estimer l’impact 
+économique d’une 
+spécialisation dans le secteur 
+du cloud-logiciel 
+ 
+La présente étude vise à estimer dans quelle mesure le poids des États-Unis dans le secteur des 
+services de cloud et de logiciel bénéficie à leur économie et à évaluer les gains que l’Union 
+européenne pourrait tirer d’un développement de ce secteur. L’industrie mondiale du cloud et du 
+logiciel est largement dominée par de grands acteurs américains, l’Union européenne étant en retard 
+dans ce secteur (aucune entreprise européenne ne figure dans les huit plus grosses sociétés du cloud 
+mondial par exemple)1. L’étude vise à quantifier l’impact que cette situation peut avoir sur les 
+importations européennes de services numériques, et plus largement sur l’ensemble de son économie. 
+- L’étude vise dans un premier temps à quantifier les flux de services de cloud-logiciel entre 
+les États-Unis et l’Union européenne. Les services de cloud-logiciel peuvent être produits 
+dans un pays et vendus dans un autre (exportation ou importation de services) ou produits par 
+des filiales implantées dans les différents pays (les flux identifiables seraient plutôt alors des 
+rapatriements de profits). La présente étude a pour premier objectif de quantifier les flux à 
+l’œuvre entre les États-Unis et l’Union européenne. 
+- L’étude vise dans un deuxième temps à quantifier l’impact économique de ces flux. La 
+présence ou non d’entreprises produisant des services de cloud-logiciel dans un pays se traduit 
+par des impacts économiques directs (activité de ces entreprises) et indirects (leurs 
+répercussions sur le reste de l’économie). Ce type d’activité peut également avoir des 
+conséquences sur la productivité moyenne des économies, comme l’a souligné le rapport 
+Draghi2. L’étude vise ainsi à traduire les flux résultant d’achats de services de cloud-logiciel 
+américains par les entreprises de l’Union européenne sur leurs économies respectives. 
+Périmètre : le cloud-logiciel 
+acheté par les entreprises 
+européennes 
+La présente étude se focalise sur les dépenses de cloud-logiciel effectuées par des entreprises 
+européennes auprès d’acteurs américains. Le secteur de l’informatique est large, il concerne une 
+multitude de prestations réalisées par des entreprises très diverses. Cette étude est centrée uniquement 
+sur les services de cloud-logiciel achetés par des entreprises européennes à des acteurs américains. 
+ 
+1 Statista, « Cloud : les géants de la tech se partagent le marché mondial », 2022 
+2 “The future of European competitiveness”, Part A | A competitiveness strategy for Europe, Septembre 2024 ; 
+https://commission.europa.eu/document/download/97e481fd-2dc3-412d-be4c- 
+f152a8232961_en?filename=The%20future%20of%20European%20competitiveness%20_%20A%20competiti 
+veness%20strategy%20for%20Europe.pdf 
+
+8 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+- Les dépenses informatiques retenues concernent uniquement le cloud et les logiciels. Une 
+multitude de dépenses sont réalisées pour l’équipement informatique : matériel, main-d’œuvre, 
+services de maintenance, logiciels, sauvegarde notamment. Cette étude focalise l’analyse sur 
+les services, plus précisément sur les achats de cloud-logiciel. 
+- Seules les dépenses des entreprises sont prises en compte. Il existe trois principaux types 
+d’agents économiques qui réalisent des achats de services de cloud et de logiciel : les 
+entreprises, les ménages et les administrations publiques. Dans la présente étude, seules les 
+dépenses des entreprises sont prises en compte. 
+- L’étude se concentre sur les achats de services de cloud-logiciel réalisés par des 
+entreprises européennes auprès d’entreprises américaines et produits aux États-Unis. 
+Géographiquement, l’analyse est resserrée sur les achats européens auprès d’acteurs 
+américains. Dans les données macro-économiques, ces achats peuvent se traduire soit par des 
+importations de services informatiques (si les services de cloud-logiciel sont réalisés sur le sol 
+américain), soit par des revenus d’IDE des entreprises du numérique américaines (si les services 
+sont produits en Europe par des filiales américaines). 
+Méthode : Combler les lacunes 
+des données commerciales 
+Pour estimer un impact économique des achats européens, Asterès a contourné la faiblesse des 
+données commerciales à l’aide d’entretiens et de données sur la taille du marché du cloud-logiciel. 
+Faute de données exhaustives concernant les échanges de services de cloud-logiciel, Asterès a eu 
+recours à d’autres types de données : des entretiens avec des professionnels et des données sur la taille 
+des différents marchés. L’impact économique des flux internationaux de services de cloud-logiciel ainsi 
+estimé a été réalisé à l’aide du Modèle d’Impact d’Asterès (MIA) et leur impact sur la productivité a 
+été analysé à partir de scénarios posés par Asterès et de la littérature existante. 
+- Les données de flux commerciaux de services de cloud-logiciel ne sont pas assez précises 
+pour construire une analyse robuste. Les données commerciales de services informatiques 
+souffrent notamment du poids prépondérant de l’Irlande qui fausse totalement les analyses du 
+commerce bilatéral. De plus, dans le cadre de cette étude, il conviendrait également de prendre 
+en compte les flux de rapatriement de profits, des données qui sont très parcellaires. 
+- Asterès a donc estimé les montants de services de cloud-logiciel achetés par l’Union 
+européenne aux États-Unis à l’aide d’entretiens. Du fait de l’insuffisance des données 
+commerciales, Asterès a eu recours à des entretiens avec des professionnels du secteur pour 
+estimer leurs achats de services de cloud-logiciel qui sont adressés à l’économie américaine. 
+Les résultats de ces entretiens ont été croisés avec les données commerciales disponibles et 
+avec des données concernant la taille du marché pour justifier de leur crédibilité. 
+- L’impact économique des flux d’achats de services de cloud-logiciel a été réalisé à l’aide 
+du modèle MIA. Le Modèle d’Impact d’Asterès (MIA) permet d’estimer l’impact économique 
+d’une dépense sur l’économie des États-Unis ou de l’Union européenne. Ainsi, les 
+conséquences économiques des achats européens de services américains de cloud-logiciel ont 
+pu être traduites en des montants de dépenses, et donc en un montant d’emplois ou de valeur 
+ajoutée dans les différentes économies. 
+
+9 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+- L’impact sur la productivité des flux d’achats de services de cloud-logiciel a été estimé à 
+l’aide de comparaisons entre les économies américaines et européennes et à l’aide de la 
+littérature existante. Asterès a estimé quelle serait la productivité moyenne de l’Union 
+européenne si le secteur du numérique y avait une productivité relative équivalente à celle des 
+États-Unis. La littérature existante, par exemple le rapport Draghi, a également été mobilisée 
+pour analyser les écarts de productivité résultant du poids et du développement différent du 
+secteur du numérique. 
+ 
+ 
+ 
+ 
+ 
+ 
+2. Coût de la dépendance 
+aux services numériques 
+américains : Un flux 
+estimé à plusieurs 
+centaines de milliards 
+d’euros par an 
+
+11 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+2.1 Méthode : Croiser différentes 
+données pour estimer les flux à 
+destination des États-Unis 
+2.1.1 Flux commerciaux : Tenter d’estimer les achats 
+européens de services de cloud-logiciel aux États-Unis 
+Les flux commerciaux sont la source la plus évidente pour mesurer les achats de services de cloud- 
+logiciel européens aux États-Unis. Asterès s’est basé sur les données de commerce bilatéral de l’OMC. 
+Les services de cloud-logiciel ne sont pas spécifiquement détaillés dans les données de l’OMC (la 
+décomposition « software », logiciels, et « other than software », autre que logiciel, présente par 
+exemple dans les données de l’ITC, n’est pas renseignée avec suffisamment de précision pour être 
+utilisable et n’a dont pas été retenue). Le poste retenu est « computer services », services informatiques. 
+La définition des « computer services » est donnée dans la sixième version du Manuel de Balance des 
+Paiements (BPM6) du FMI3. Le champ est plus large que les seuls achats de services de cloud-logiciel 
+puisque sont notamment compris les services de maintenance et d’installation. Il n’est cependant pas 
+possible d’obtenir plus de granularité dans les chiffres, ni de savoir quelle part de ces flux est destinée 
+aux ménages ou aux entreprises. Les données sur le commerce de services numériques, même quand 
+elles sont disponibles, doivent être considérées avec prudence au vu de la difficulté qui existe à les 
+enregistrer4. 
+2.1.2 Flux de profits d’IDE : Une insuffisance de données 
+qui ne permet pas d’estimer la part des achats de services 
+de cloud-logiciel américains par des entreprises 
+européennes 
+Les montants de services de cloud-logiciel achetés par des entreprises de l’Union européenne à 
+des acteurs du numérique américain pourraient être estimés par les revenus des investissements 
+directs étrangers (IDE) de ces derniers, mais les données disponibles sont insuffisamment précises 
+pour être utilisables. Un géant du numérique américain qui vend des services à des Européens peut 
+exporter ce service depuis les États-Unis (ou un autre pays) ou le produire localement via des filiales 
+présentes en Europe. Dans ce cas, les montants en jeu ne peuvent pas être retracés par le commerce de 
+services mais par les revenus générés par ces filiales, autrement dit par les revenus des investissements 
+directs à l’étranger des géants du numérique américains en Europe. Ces revenus peuvent être de trois 
+types : des dividendes (plus de la moitié des montants concernés tous secteurs confondus), des bénéfices 
+non-distribués (environ le tiers des montants concernés) ou des prêts intragroupes (environ 15 % des 
+montants)5. Des données concernant les revenus d’IDE existent sur plusieurs sources puisqu’elles 
+permettent, notamment à l’OCDE, de mesurer les interdépendances entre les économies, mais aucune 
+n’est suffisamment précise et exhaustive pour cibler à la fois le secteur et les pays concernés (les services 
+numériques entre la France ou l’Europe et les États-Unis). 
+ 
+3 FMI, “Balance of Payments and International Investment Position Manual, Sixth Edition (BPM6)” ; 
+https://www.imf.org/external/pubs/ft/bop/2007/pdf/bpm6.pdf 
+4 OCDE, “Handbook on Measuring Digital Trade, Second Edition”, 2023 (p. 20) 
+5 Laurence Nayman et Vincent Vicard, Cepii, « Profits des multinationales à l’étranger : mesure et impact sur leur 
+pays d’origine », mai 2018 
+12 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+- Les données du BEA n’offrent pas de décomposition sectorielle assez fine et montrent le 
+poids dominant de l’Irlande6. Le Bureau of Economic Analysis publie des données sur les 
+IDE des entreprises américaines et les revenus qu’ils génèrent. Cependant, la décomposition 
+sectorielle se limite à une douzaine de secteurs et ne permet pas de cibler les services 
+informatiques. De plus, comme pour les données commerciales, le poids de l’Irlande (et dans 
+une moindre mesure des Pays-Bas) dans les flux des revenus d’IDE rendrait toute analyse 
+précise difficile : les dividendes de filiales européennes d’entreprises américaines proviennent 
+pour 33 % d’Irlande et pour 22 % des Pays-Bas, soit une part nettement plus élevée que leur 
+poids économique. 
+- Les données de l’OCDE comportent trop de chiffres manquants pour être utilisables7. À 
+première vue, les données de l’OCDE semblent utiles à l’analyse des revenus des IDE d’acteurs 
+du numérique américains en Europe (détails pour le secteur « IT and others information 
+services » et « Computer programing, consultancy and related activities »). Cependant, au vu 
+du très faible nombre de données renseignées par secteur et par pays, cette source n’est pas 
+exploitable. 
+- Les données d’Eurostat sur les IDE ne correspondent pas exactement aux besoins de la 
+présente étude8. Eurostat est une source exhaustive concernant l’économie européenne, qui 
+publie entre autres des données sur les IDE en Europe. Cependant, ces données ne sont pas 
+centrées sur le sujet de la présente étude (les revenus de ces IDE) et n’offrent pas de granularité 
+sectorielle. 
+- Les données du FMI et de la Banque Mondiale détaillent les flux d’IDE mais pas les 
+revenus qu’ils génèrent par secteur9. La « Coordinated Direct Investment Survey » (CDIS) 
+menée conjointement par le FMI et la Banque mondiale renseigne sur les flux d’IDE, mais les 
+données utiles à l’étude (les revenus de ces IDE par secteur) n’y sont pas renseignées. 
+2.1.3 Entretiens : Un moyen de pallier aux lacunes des 
+données commerciales 
+Du fait de l’absence de données macro-économiques exhaustives couvrant le champ de l’étude, 
+Asterès a obtenu des évaluations auprès de professionnels afin de réaliser son estimation des 
+achats de services de cloud-logiciel par des entreprises européennes aux États-Unis. Avec l’aide 
+du Cigref, Asterès a réalisé des entretiens avec six Chiefs Information Officers (CIO) de grandes 
+entreprises françaises présentes dans l’ensemble des secteurs de l’économie. Les résultats obtenus 
+auprès d’entreprises françaises ont été extrapolés pour l’Union européenne en considérant que le poids 
+des dépenses de cloud-logiciel est proportionnel au PIB d’un pays : les dépenses de cloud-logiciel 
+françaises représenteraient ainsi 16 % de celles de l’Union européenne10, une part cohérente avec la 
+part de la France dans les dépenses européennes de services cloud (17 %11) et de logiciels (14 %12). 
+L’objectif de ces échanges est d’obtenir la vision générale des professionnels sur la dépendance 
+ 
+6 Bureau of Economic Analysis, “Direct Investment by Country and Industry”, https://www.bea.gov/data/intl- 
+trade-investment/direct-investment-country-and-industry 
+7 OCDE, https://www.oecd.org/en/data/datasets/activity-of-multinational-enterprises.html 
+8 Eurostat, https://ec.europa.eu/eurostat/web/globalisation-businesses/database 
+9 Banque Mondiale (CDIS), https://prosperitydata360.worldbank.org/en/dataset/IMF+CDIS 
+10 FMI 
+11 Estimation Asterès d’après « stratégie nationale pour le cloud, Soutenir l’innovation dans le Cloud », dossier 
+de presse, 2 novembre 2021 
+12 Cognitive Market Research, Europe Software Market Report 2025 
+13 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+informatique de l’Europe aux États-Unis, ainsi que de chiffrer les montants importés des États-Unis à 
+partir d’estimations des éléments suivants. 
+- Le montant des dépenses de logiciel-cloud rapporté au chiffre d’affaires. Comme l’étude 
+est centrée sur les dépenses de logiciel et de cloud, il convient de connaître les montants en jeu 
+pour les entreprises françaises, ainsi que leur part dans le chiffre d’affaires afin de pouvoir 
+extrapoler les résultats à d’autres entreprises. Les dépenses de cloud-logiciel varient très 
+fortement selon les secteurs (elles sont particulièrement élevées dans la banque), un chiffre 
+moyen reflète donc des réalités très diverses. Pour les TPE-PME, il a été estimé par Asterès 
+que cette part est deux fois plus faible que pour les grandes entreprises (les seules avec 
+lesquelles des entretiens ont été réalisés), premièrement parce que ces entreprises sont moins 
+digitalisées que les grandes (moindre utilisation des dispositifs interconnectés et moindre part 
+des ventes en ligne par exemple13) et deuxièmement parce qu’elles sont peu présentes dans la 
+banque et l’assurance, les secteurs qui dépensent le plus en services de cloud-logiciel. Cette 
+proportion de dépenses a été traduite en euros à l’aide de données françaises de chiffre 
+d’affaires par taille d’entreprise14. 
+- La part des dépenses de cloud-logiciel auprès d’entreprises américaines. Sur le total des 
+dépenses de logiciel-cloud, il convient de connaître la proportion qui est adressée à des acteurs 
+américains afin d’estimer les sommes qui reviendraient in fine aux États-Unis. 
+- La part de l’activité des acteurs américains du numérique réalisée aux États-Unis. Si une 
+dépense est réalisée non pas auprès d’une entreprise américaine mais auprès d’une filiale 
+européenne, il ne s’agit pas directement d’un paiement à destination des États-Unis. Il est donc 
+important d’estimer, dans les services de cloud-logiciel vendus en Europe, quelle part de la 
+production est réalisée aux États-Unis. Ce résultat est celui dont l’estimation est la plus 
+incertaine, faute de données précises de la part des professionnels interrogés. Asterès a tenté, à 
+partir des données de tribunaux de commerce15, d’estimer la part de l’activité en France des 
+grandes entreprises informatiques américaines, mais la disponibilité parcellaire des données 
+pour les différentes filiales de ces entreprises a rendu l’exercice délicat. De plus, la part des 
+salariés des géants du numérique américains présents en France ou en Europe n’est pas 
+nécessairement représentative de la part de la valeur ajoutée créée aux États-Unis pour des 
+services vendus en Europe, puisque les salariés aux États-Unis peuvent travailler pour le monde 
+entier. 
+2.1.4 Taille du marché : Des données pour appuyer les 
+résultats des entretiens 
+Asterès a conforté les résultats tirés des entretiens à l’aide de données sur la taille estimée du 
+marché européen du cloud-logiciel. Deux types de données ont été utilisés : des données concernant 
+la taille estimée du marché européen du cloud-logiciel et des données concernant la part européenne du 
+marché mondial du cloud-logiciel. Ainsi, les résultats des entretiens ont pu être mis à l’épreuve avec 
+d’autres méthodologies. 
+ 
+ 
+ 
+ 
+13 Insee, « Les entreprises en France, TIC et commerce électronique » 
+14 Insee, « Les entreprises en France » 
+15 Base de données Diane 
+14 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+2.2 Commerce de services 
+informatiques : Le poids de 
+l’Irlande complique l’analyse 
+2.2.1 Union européenne : Géant théorique du commerce 
+des services informatiques 
+En apparence, l’Union européenne est un géant du commerce international de services 
+informatiques et les États-Unis un acteur secondaire, mais les chiffres sont distordus par la place 
+très spécifique de l’Irlande. En 2022, l’Union européenne a exporté pour 413 milliards de dollars de 
+services informatiques, contre 47 milliards de dollars pour les États-Unis, avec un excédent commercial 
+de 225 milliards de dollars contre un excédent de 4 milliards de dollars pour les États-Unis16. 
+Cependant, pour des raisons fiscales, une grande partie des activités de services informatiques sont 
+comptablement localisées en Irlande, ce qui fausse complètement les chiffres. Par exemple, sur les 225 
+milliards de dollars d’excédent commercial européen dans les services informatiques en 2022, 194 
+milliards de dollars sont le fait de l’Irlande (soit environ 35 % du PIB du pays). Concernant les Pays- 
+Bas, leur part dans le commerce de services informatiques semble légèrement supérieure à leur poids 
+économique, mais en aucun cas dans une proportion similaire à l’Irlande. 
+ 
+ 
+ 
+ 
+450 
+400 
+350 
+300 
+250 
+200 
+150 
+100 
+50 
+- 
+Exportations de services informatiques (Mds $, source 
+OMC) 
+ 
+ 
+ 
+Union Européenne France Irlande Pays-Bas Etats-Unis  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 Chiffres OMC pour l’ensemble de la partie 1.1. Les données de l’ITC et de l’UNCTAD, autres sources 
+exhaustives sur le commerce de services informatique, sont équivalentes à celles de l’OMC utilisées ici. 
+
+15 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+ 
+ 
+ 
+200 
+180 
+160 
+140 
+120 
+100 
+80 
+60 
+40 
+20 
+- 
+Importations de services informatiques (Mds $, source 
+OMC) 
+ 
+ 
+ 
+Union Européenne France Irlande Pays-Bas Etats-Unis  
+ 
+ 
+Solde commercial des services informatiques (Mds $, source 
+OMC) 
+250 
+200 
+150 
+100 
+50 
+- 
+- 50 
+ 
+UE France Irlande Pays-Bas Etats-Unis  
+ 
+ 
+2.2.2 Irlande : Une localisation depuis laquelle les 
+exportations sont réalisées dans le monde entier 
+L’Irlande n’est pas une simple plaque tournante d’import-export de services informatiques, ce 
+qui rend plus complexe de retracer l’origine précise des fournisseurs de services informatiques. 
+Il semblerait que les géants américains du numérique n’utilisent pas l’Irlande comme un intermédiaire 
+dans les flux de services informatique selon un circuit qui serait : exportation d’un service informatique 
+des États-Unis vers l’Irlande, puis de l’Irlande vers un autre pays. En effet, l’Irlande présente un 
+excédent commercial avec les États-Unis, ce qui indique que les géants du numérique américains 
+localisent comptablement en Irlande également des services informatiques destinés à leur marché 
+domestique. Il n’est donc pas possible « remonter » les flux commerciaux de services informatiques 
+pour tenter d’estimer le pays où ils ont initialement été produits. 
+
+16 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+Commerce de services informatiques de l'Irlande avec 
+différents pays en 2023 (Mds $, source OMC) 
+14 
+12 
+10 
+8 
+6 
+4 
+2 
+0 
+-2 
+-4 
+-6 
+-8 
+Etats-Unis France Japon  
+ Exportations   Importations  Solde 
+ 
+ 
+2.2.3 Importations françaises de services informatiques 
+américains : Une estimation difficile 
+Il n’est pas possible de savoir précisément combien la France (ou tout autre pays) importe de 
+services informatiques américains à partir des seules données de commerce de services 
+informatiques. Sur les 25,7 milliards d’euros de services informatiques importés par la France, seuls 
+2,4 milliards d’euros étaient directement importés des États-Unis. Ce chiffre est cependant trompeur au 
+vu des importations de services informatiques provenant d’Irlande (7,4 milliards d’euros, soit trois fois 
+plus que les importations depuis les États-Unis) ou des Pays-Bas (2,0 milliards d’euros) qui contiennent 
+probablement une large part de production américaine. Il n’est pas possible de décomposer l’origine 
+des entreprises qui exportent des services informatiques depuis un pays vers un autre, ce qui rend 
+périlleux de déterminer le montant réel des importations de services informatiques depuis un pays. 
+ 
+ 
+ 
+ 
+25 
+20 
+15 
+10 
+5 
+0 
+-5 
+-10 
+-15 
+-20 
+-25 
+-30 
+Commerce de services informatiques de la France avec 
+différents pays en 2023 (Mds $, source OMC) 
+ 
+ 
+ 
+Etats-Unis Irlande Total  
+ Exportations   Importations  Solde 
+
+17 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+2.3  Achats de services de cloud- 
+logiciel de l’Europe aux États- 
+Unis : Une estimation à environ 
+260 milliards d’euros par an 
+2.3.1 Dépenses moyennes des grandes entreprises 
+européennes en cloud-logiciel : Environ 2,2 % de leur 
+chiffre d’affaires 
+D’après les entretiens réalisés avec des CIO de groupes français, les dépenses de cloud-logiciel 
+représentent environ 2,2 % du chiffre d’affaires des grandes entreprises, soit une estimation de 
+66 milliards d’euros par an en France et 400 milliards d’euros pour l’Union européenne. Ce 
+résultat semble globalement cohérent (les différences de périmètre entre les différentes sources rendent 
+toute comparaison exacte impossible), tant avec la taille du marché européen qu’avec la part européenne 
+du marché mondial. 
+- Le marché européen du cloud-logiciel se situerait entre 300 et 550 milliards d’euros selon 
+les sources. Selon une estimation basse, le marché européen du cloud-logiciel serait d’environ 
+300 milliards d’euros : 150 milliards d’euros pour le cloud17 et 150 milliards d’euros pour le 
+logiciel18. Selon une estimation haute, le marché du cloud-logiciel en Europe serait plutôt de 
+550 milliards d’euros : environ 250 milliards d’euros pour le cloud19 et 300 milliards d’euros 
+pour le logiciel20. Une autre source estime pour sa part le marché européen du logiciel à environ 
+180 milliards d’euros21. 
+- Le marché européen du cloud-logiciel, estimé à partir de la taille du marché mondial, 
+serait d’environ 300 milliards d’euros, soit un montant légèrement inférieur à 
+l’estimation réalisée à partir des entretiens. Le marché européen du logiciel représente 
+environ 30 % du marché mondial22. Le marché mondial du logiciel serait d’environ 700 
+milliards d’euros23 et le marché mondial du cloud d’environ 300 milliards d’euros24. 
+ 
+ 
+ 
+ 
+ 
+17 F. Jenny (2023), “Unfair Software Licensing Practices: A quantification of the cost for cloud customers”, 
+CISPE, estimation Asterès des tendances données par l’auteur 
+18 Statista, Software Europe, 166 milliards de dollars en 2025 arrondis à 150 milliards d’euros par Asterès 
+19 KPMG, le cloud européen, 2021, estimation Asterès des tendances données par l’étude 
+20 EMR Claigh, « Europe Audit Software Market Report and Forecast 2025-2034 », 320 milliards de dollars 
+arrondis par Asterès en 300 milliards d’euros 
+21 Cognitive Market Research, Europe Software Market Report 2025, conversion en euros par Asterès 
+22 Calcul Asterès d’après Cognitive Market Research, Europe Software Market Report 2025 
+23 Statista, Software – Worldwide, conversion en euros par Asterès 
+24 Statista, “Amazon and Microsoft Stay Ahead in Global Cloud Market”, 27 février 2025, conversion en euros 
+par Asterès 
+18 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+2.3.2 Part des acteurs américains dans les dépenses de 
+cloud-logiciel : ENVIRON 83 % 
+Les entreprises américaines représentent environ 83 %25 du marché du cloud-logiciel européen 
+d’après les résultats des entretiens, soit 54 milliards d’euros pour la France et 330 milliards 
+d’euros pour l’Union européenne. Les professionnels interrogés ont été unanimes pour souligner la 
+force des acteurs américains. Cette proportion élevée des dépenses adressées à des entreprises 
+américaines est cohérente avec leur représentation parmi les plus grandes entreprises mondiales de 
+cloud26 et de logiciel27. 
+2.3.3 Valeur créée aux États-Unis : Environ 260 milliards 
+d’euros 
+Asterès a estimé que, sur les services cloud-logiciels américains vendus à des entreprises 
+européennes, 80 % de la valeur ajoutée est réalisée aux États-Unis, soit environ 43 milliards 
+d’euros de valeur créée aux États-Unis en ce qui concerne les dépenses des entreprises françaises 
+et environ 260 milliards d’euros en ce qui concerne les entreprises de toute l’UE. Les achats par 
+des entreprises européennes de services informatiques produits aux États-Unis équivalent à des 
+importations, soit environ 260 milliards d’euros en ce qui concerne les seuls achats de services cloud- 
+logiciel par des entreprises européennes. Si on considère que l’Union européenne représente le tiers du 
+marché mondial, le montant estimé à la suite des entretiens est cohérent avec un montant mondial des 
+échanges de services numériques nettement supérieur à 1 000 milliards d’euros28. Les importations 
+totales d’énergie de l’UE ont atteint 360 milliards d’euros en 202429. Ainsi, la « facture numérique » de 
+l’Europe est d’un montant comparable à sa facture énergétique. En 2024, la zone euro a enregistré un 
+excédent de sa balance courante de 419 milliards d’euros et un excédent de 162 milliards d’euros sur le 
+seul solde des services30. Les « importations » estimées dans cette étude de services cloud-logiciel des 
+entreprises européennes depuis les États-Unis représentent donc des montants significatifs d’un point 
+de vue macro-économique (environ 1,5 % du PIB de l’UE et 1,5 fois le budget de l’UE31), qui pèsent 
+fortement sur la balance des paiements. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25 83 % si on se réfère précisément aux seuls résultats des entretiens 
+26 Cloudzero, “13 Top Cloud Service Providers Globally In 2025”, 18 juillet 2024 
+27 Global ranking, « Largest software companies by market cap » 
+28 V Stojkoski, P Koch, E Coll et C Hidalgo, “Estimating digital product trade through corporate revenue data”, 
+mai 2024. Le périmètre des services digitaux analyses dans l’étude est plus large que les seuls services de cloud- 
+logiciel. Le dernier chiffre disponible des échanges mondiaux de services digitaux (956 milliards de dollars) 
+correspond à 2021 mais, au vu de la forte croissance de ces échanges (+ 24,6 % par an d’après l’étude) le chiffre 
+actuel est nettement plus élevé 
+29 Calcul Asterès d’après Eurostat 
+30 Banque de France, https://www.banque-france.fr/fr/node/146158 
+31 Toute l’Europe.eu, « Le budget de l'Union européenne », 19 juillet 2023 
+19 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+ 
+Flux internationaux des services de cloud-logiciel : la majorité transiterait par des 
+rapatriements de profits d’IDE 
+Les résultats découlant des entretiens et les données commerciales laissent supposer que la majorité 
+des flux de services de cloud-logiciel transitent par des rapatriements de profits plutôt que par des 
+flux commerciaux. La France a importé en 2022 pour 25,7 milliards d’euros de services 
+informatiques, dont 2,4 milliards d’euros des États-Unis et 7,4 milliards d’euros d’Irlande. Si l’on 
+fait l’hypothèse que les importations depuis l’Irlande sont en réalité le fait de grandes sociétés du 
+numérique américaines qui y font comptablement transiter leurs ventes, on arrive à des importations 
+de 9,8 milliards d’euros de services informatiques américains, soit nettement moins que les 43 
+milliards d’euros d’achats de services de cloud-logiciel par les entreprises françaises. Les échanges 
+de services numériques transiteraient donc principalement par des échanges entre filiales (écart 
+entre le lieu de facturation et d’enregistrement comptable de la production) plutôt que par des flux 
+commerciaux. 
+ 
+ 
+ 
+ 
+ 
+ 
+3. Impact macro- 
+économique des 
+exportations de cloud- 
+logiciel en Europe : près 
+de 2 millions d’emplois 
+aux États-Unis 
+21 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+3.1 Méthode : calculer des effets 
+indirects et induits à l’aide du 
+Modèle d’Impact d’Asterès (MIA) 
+3.1.1 Empreinte économique totale du secteur du cloud- 
+logiciel : Aller au-delà de la seule activité des 
+entreprises 
+Le secteur du cloud-logiciel fait vivre les entreprises qui produisent ces services, mais également 
+l’ensemble de l’écosystème qui bénéficie de leurs dépenses. Quand des entreprises fabriquent un bien 
+ou un service, elles réalisent des dépenses (achats de consommations intermédiaires, investissement, 
+paiement de salaires) qui stimulent l’activité économique d’autres entreprises. L’empreinte économique 
+totale d’un secteur ne se limite donc pas à l’activité directe des entreprises qui le composent, mais inclut 
+les effets d’entraînement sur le reste de l’économie. 
+Le Modèle d’Impact d’Asterès (MIA) permet d’estimer l’empreinte économique du secteur du 
+cloud-logiciel aux États-Unis. MIA (modèle d’impact d’Asterès) est basé sur les tableaux des entrées- 
+sorties de l’OCDE pour estimer les répercussions sectorielles d’une dépense initiale. La présente 
+modélisation n’estime que les effets indirects et induits, c’est-à-dire l’impact économique immédiat des 
+achats réalisés et des salaires versés par les entreprises informatiques américaines qui travaillent pour 
+le marché européen. Dans ce type de modélisation, il est également possible de prendre en compte les 
+effets en chaîne, c’est-à-dire les répercussions successives des effets indirects et induits (l’impact des 
+dépenses des fournisseurs des entreprises numériques américaines) mais, au vu de la taille du secteur 
+concerné, les montants des effets en chaîne seraient tels qu’ils auraient des répercussions macro- 
+économiques qui modifieraient la structure même de l’économie américaine, donc le fonctionnement 
+du modèle MIA. La modélisation totale se décompose en effets directs et effets d’entraînement. 
+- Les effets directs du secteur du cloud-logiciel aux États-Unis liés aux achats européens 
+ont été estimés en se basant sur les montants obtenus grâce aux entretiens, à savoir 264 
+milliards d’euros par an. Ces montants d’achats correspondent à une production, donc un 
+chiffre d’affaires, pour le secteur du cloud-logiciel américain32. Le nombre d’emplois directs 
+générés par le secteur du cloud-logiciel est estimé à partir de la production moyenne par emploi 
+(353 000 dollars par emploi33) dans le secteur informatique américain. Le calcul de la valeur 
+ajoutée générée directement par le secteur est basé sur la productivité moyenne des salariés du 
+numérique américain (230 000 dollars de valeur ajoutée par emploi34). Enfin, les impôts et 
+cotisations sociales payées par le secteur du cloud-logiciel aux États-Unis du fait des achats 
+européens sont estimés à partir de la part des prélèvements obligatoires dans la valeur ajoutée 
+aux États-Unis35. 
+- Les effets d’entraînement (effets indirects et induits) sont calculés à l’aide du modèle MIA 
+et de données OCDE. Grâce aux données de l’OCDE Asterès a pu estimer le montant moyen 
+ 
+32 Hypothèse de taux de change moyen de 1 € = 1,08 $ 
+33 Données OCDE pour le secteur « IT and other information services » 
+34 Données OCDE pour le secteur « IT and other information services » 
+35 Estimation Asterès d’après OCDE 
+22 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+de dépenses de consommations intermédiaires (et leur répartition sectorielle), d’investissement 
+et de salaires versés par emploi dans le secteur du numérique aux États-Unis36. Le montant total 
+d’impulsion à intégrer dans le modèle MIA a été obtenu en multipliant par le nombre d’emplois 
+directs les montants obtenus par salarié. 
+3.1.2 Empreinte économique en Europe d’un développement 
+du secteur du cloud-logiciel : Une démarche similaire à 
+celle suivie pour les États-Unis 
+Asterès a estimé le gain potentiel d’un développement du secteur du cloud-logiciel dans l’Union 
+européenne selon une méthode analogue à celle utilisée pour les États-Unis. Un modèle MIA 
+européen a été construit et utilisé pour estimer l’impact économique de trois scénarios. 
+- L’estimation du gain économique potentiel d’un développement du secteur du cloud- 
+logiciel dans l’Union européenne a été modélisée à l’aide du Modèle MIA, en suivant une 
+méthode analogue à celle utilisée pour les États-Unis. La logique de la modélisation 
+(distinction entre effets directs et effets indirects et induits), sa construction et ses sources sont 
+identiques à celles du travail réalisé pour les États-Unis. Le modèle MIA pour l’Union 
+européenne a été construit à partir d’un modèle développé pour l’économie italienne. Ce choix 
+a été fait parmi les pays de l’Union européenne pour lesquels Asterès dispose d’un modèle 
+(France, Italie, Espagne, Allemagne et Pologne) car le niveau moyen de productivité italien 
+correspond à celui de l’ensemble de l’Union européenne (les données de l’OCDE utilisées pour 
+le modèle MIA ne sont pas disponibles pour l’UE ou pour l’ensemble des pays ce qui empêche 
+de construire un modèle d’impact qui correspond exactement à l’Union européenne). Pour 
+pondérer la part des importations intra-européennes dans le modèle d’impact italien il a été 
+considéré qu’elles représentent 58 % des importations totales37. Les niveaux moyens d’épargne 
+et d’impôt ont été obtenus à partir de la moyenne des pays européens38. 
+- Trois scénarios ont été réalisés concernant le développement du secteur du cloud-logiciel 
+dans l’Union européenne. Il semble peu réaliste que, avant au moins plusieurs décennies, 
+l’Union européenne parvienne à acquérir une place dominante sur le marché du cloud-logiciel 
+(une hypothèse confortée par les entretiens). Trois scénarios hypothétiques ont donc été retenus 
+pour estimer l’impact économique d’un développement du secteur du cloud-logiciel en Europe 
+: la captation dès à présent par des entreprises européennes de 5 % des dépenses de cloud-
+logiciel actuellement adressées aux États-Unis, le passage de cette part à 10 % en 2030 et à 15 
+% en 2035. Pour réaliser ces projections il a été fait l’hypothèse que les gains de productivité 
+annuels seraient supérieurs d’environ 3 points dans le secteur du cloud-logiciel par rapport au 
+reste de l’économie39. L’ensemble des variables économiques des autres secteurs 
+progresseraient au même rythme40. Pour comparer l’empreinte future du secteur du cloud- 
+logiciel sur l’économie de l’Union européenne il a été fait l’hypothèse d’une croissance nominale 
+ 
+ 
+36 Secteur « IT and other information services » 
+37 Observatory of Economic Complexity 
+38 OCDE 
+39 1 % de gains de productivité annuelle moyenne dans l’économie et 4 % dans le secteur du cloud logiciel qui 
+réaliseraient des gains de productivité en se développant (voir partie 4) 
+40 L’estimation pour les trois scénarios est basée sur la structure actuelle de l’économie européenne, elle ne prend 
+pas en compte le fait que, si l’Union européenne produisait plus de services de cloud-logiciels, sa composition 
+sectorielle et sa productivité moyenne seraient affectées. 
+23 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+moyenne de 3 % par an et d’une stagnation du nombre total d’emplois. Les projections sont 
+réalisées en euros de 2025 afin de faciliter la comparabilité des résultats. 
+3.1.3 Évolutions des prix des services de cloud-logiciel : 
+un impact principalement sur la balance des paiements 
+La variation des prix des services de cloud-logiciel peut avoir un impact économique, notamment 
+sur la balance des paiements. D’après les entretiens réalisés par Asterès, le prix des services de cloud- 
+logiciel achetés par des entreprises européennes progresse d’environ 10 % par an du fait de la difficulté 
+à faire jouer la concurrence une fois qu’une entreprise utilise un type de services41. Cette hausse du prix 
+est parfois concomitante avec un accroissement des services inclus, mais ceux-ci ne sont souvent pas 
+demandés par le client et s’apparentent souvent à de la vente liée d’après les professionnels interrogés, 
+il s’agit donc avant tout d’un effet prix et non d’un effet qualité. Asterès a posé comme hypothèse que 
+les hausses de prix des services de cloud-logiciel se maintiendraient au rythme de 10 % par an. Il en 
+résulterait une hausse des flux commerciaux (théoriquement puisqu’ils ne sont pas mesurés avec 
+précision) entre l’Europe et les États-Unis qui impacterait la balance des paiements. Cependant, ce 
+simple effet prix n’aurait pas de conséquence directe sur l’emploi ou la croissance économique, qui 
+sont des variables en volume. Afin d’estimer l’impact des hausses de prix sur la balance des paiements, 
+Asterès a fait l’hypothèse que les prix des exportations et des importations américaines progresseraient 
+dans des proportions similaires, et que l’ouverture de l’économie américaine42 serait stable sur les dix 
+prochaines années (un sujet sur lequel l’incertitude est grande avec la guerre commerciale en cours). 
+ 
+ 
+3.2  Empreinte totale des achats de 
+cloud-logiciel de l’Union 
+européenne : Près de 2 millions 
+d’emplois aux États-Unis 
+L’empreinte économique des achats de services de cloud-logiciel des entreprises européennes aux 
+États-Unis représente près de 2 millions d’emplois. Cette empreinte économique totale se divise 
+entre un effet direct et des effets indirects et induits. 
+- D’après les estimations d’Asterès, les achats des entreprises européennes de services cloud-
+logiciel américains génèrent directement aux États-Unis 285 milliards de dollars de chiffre 
+d’affaires, plus de 800 000 emplois, 186 milliards de dollars de valeur ajoutée et 51 
+milliards de dollars de recettes sociales et fiscales. Ces montants représentent environ 0,6 
+% du PIB américain (le PIB étant la 
+ 
+ 
+ 
+41 Les variations de prix peuvent être très aléatoires. Par exemple, des hausses de 300 % ont déjà été observées 
+(F. Jenny (2023), “Unfair Software Licensing Practices: A quantification of the cost for cloud customers”, 
+CISPE). Le rapport de la Fondation Concorde « Le cloud computing, entre contribution à la croissance et pratiques 
+anti-concurrentielles », 2022 indique que, dans le cloud, 88 % des entreprises ont enregistré des hausses de prix de 
+18 %. 
+42 Part des exportations et des importations comparées au PIB. 
+24 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+somme des valeurs ajoutées des entreprises et administrations d’un pays) et 0,5 % de l’emploi 
+total aux États-Unis. 
+- Les effets indirects et induits des achats des entreprises européennes de services cloud- 
+logiciel américains génèrent dans l’économie américaine 244 milliards de dollars de 
+chiffre d’affaires, plus de 1,1 million d’emplois, 137 milliards de dollars de valeur ajoutée 
+et 38 milliards de dollars de recettes sociales et fiscales d’après le modèle MIA. Ces effets 
+indirects et induits s’ajoutent aux effets directs. Ainsi, l’empreinte économique des achats des 
+entreprises européennes de services cloud-logiciel américains représente 323 milliards de 
+dollars de valeur ajoutée, soit 1,1 % du PIB américain, et 1,9 million d’emplois, soit 1,2 % du 
+total de l’emploi aux États-Unis. 
+Synthèse des effets des achats de services cloud-logiciel des entreprises européennes aux États-Unis 
+d’après le Modèle d’Impact d’Asterès 
+ 
+Mds $ ou ETP  
+Effet direct (1) Effet indirect et 
+induit (2) 
+Effet total 
+(1 + 2) 
+Part de 
+l’économie 
+américaine 
+Chiffre d’affaires 285 224 530  
+Valeur ajoutée 186 137 323 1,1 % 
+Emploi 808 000 1 135 000 1 943 000 1,2 % 
+Recettes publiques 51 38 89  
+ 
+3.3 Le développement du numérique : 
+Un potentiel de plusieurs 
+centaines de milliers d’emplois 
+pour l’Europe 
+3.3.1 Réorienter 5 % des achats américains de cloud- 
+logiciel vers l’Europe : Un gain de 178 000 emplois 
+Si 5 % des achats de services de cloud-logiciel des entreprises européennes adressés à des 
+entreprises américaines étaient immédiatement réorientés vers une production européenne, il 
+pourrait en résulter la création d’environ 178 000 emplois d’après les estimations du modèle MIA. 
+L’empreinte économique totale de ce gain de part de marché du secteur du cloud-logiciel européen 
+générerait une empreinte de 25 milliards d’euros de chiffre d’affaires, 12 milliards d’euros de valeur 
+ajoutée (autrement dit de PIB), 178 000 emplois et 5 milliards d’euros de recettes publiques, soit environ 
+0,1 % du PIB et de l’emploi de l’Union européenne. 
+25 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+Synthèse des effets économiques si 5 % des achats de cloud-logiciel actuellement adressés à l’économie 
+américaine étaient réorientés vers une production européenne d’après le Modèle d’Impact d’Asterès 
+ 
+Mds € ou ETP  
+Effet direct (1) Effet indirect et 
+induit (2) 
+Effet total 
+(1 + 2) 
+Part de 
+l’économie 
+européenne 
+Chiffre d’affaires 13 12 25  
+Valeur ajoutée 7 5 12 0,1 % 
+Emploi 94 436 84 248 178 684 0,1 % 
+Recettes publiques 3 2 5  
+ 
+3.3.2 Réorienter 10 % des achats américains de cloud- 
+logiciel vers l’Europe : Un gain de 331 000 emplois à 
+échéance 2030 
+Si 10 % des achats de services de cloud-logiciel des entreprises européennes adressés à des 
+entreprises américaines étaient réorientés vers une production européenne en 2030, il pourrait 
+en résulter la création d’environ 331 000 emplois d’après les estimations du modèle MIA. 
+L’empreinte économique totale de ce gain de part de marché du secteur du cloud-logiciel européen 
+générerait une empreinte de 50 milliards d’euros de chiffre d’affaires, 25 milliards d’euros de valeur 
+ajoutée, 331 000 emplois et 11 milliards d’euros de recettes publiques, soit environ 0,1 % du PIB et 0,2 
+% de l’emploi de l’Union européenne. 
+Synthèse des effets économiques si 10 % des achats de cloud-logiciel actuellement adressés à 
+l’économie américaine étaient réorientés vers une production européenne en 2030, d’après le Modèle 
+d’Impact d’Asterès 
+ 
+Mds € ou ETP  
+Effet direct (1) Effet indirect et 
+induit (2) 
+Effet total 
+(1 + 2) 
+Part de 
+l’économie 
+européenne 
+Chiffre d’affaires 26 24 50  
+Valeur ajoutée 13 11 24 0,1 % 
+Emploi 162 922 168 496 331 418 0,2 % 
+Recettes publiques 6 5 11  
+ 
+3.3.3 Réorienter 15 % des achats américains de cloud- 
+logiciel vers l’Europe : Un gain de 463 000 emplois à 
+échéance 2035 
+Si 15 % des achats de services de cloud-logiciel des entreprises européennes adressés à des 
+entreprises américaines étaient immédiatement réorientés vers une production européenne en 
+2035, il pourrait en résulter la création d’environ 463 000 emplois d’après les estimations du 
+modèle MIA. L’empreinte économique totale de ce gain de part de marché du secteur du cloud-logiciel 
+européen générerait une empreinte de 75 milliards d’euros de chiffre d’affaires, 37 milliards d’euros de 
+valeur ajoutée, 463 000 emplois et 16 milliards d’euros de recettes publiques, soit environ 0,2 % du 
+PIB et de l’emploi de l’Union européenne. 
+26 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+Synthèse des effets économiques si 15 % des achats de cloud-logiciel actuellement adressés à 
+l’économie américaine étaient réorientés vers une production européenne en 2035, d’après le Modèle 
+d’Impact d’Asterès 
+ 
+Mds € ou ETP  
+Effet direct (1) Effet indirect et 
+induit (2) 
+Effet total 
+(1 + 2) 
+Part de 
+l’économie 
+européenne 
+Chiffre d’affaires 40 35 75  
+Valeur ajoutée 21 16 37 0,2 % 
+Emploi 210 807 252 744 463 551 0,2 % 
+Recettes publiques 9 7 16  
+ 
+3.4  Hausse du prix des services de 
+cloud-logiciel : Un impact 
+croissant sur la balance des 
+paiements 
+3.4.1 États-Unis : Hausse de 421 milliards d’euros des 
+exportations dans 10 ans 
+La hausse des exportations de services de cloud-logiciel américains liée à un effet prix aurait un 
+impact significatif sur la balance des paiements des États-Unis. En 2024, les États-Unis ont 
+enregistré un déficit du compte courant43 de 1 133 milliards de dollars44. La hausse des exportations 
+américaines de services de cloud-logiciel vers les entreprises européennes, du fait de l’augmentation 
+des prix de 10 % par an, serait de 421 milliards d’euros (environ 450 milliards de dollars) en 10 ans, 
+réduisant le déficit courant américain de plus du tiers toutes choses égales par ailleurs. Ces estimations 
+sont à considérer à titre illustratif puisque le commerce de services informatiques bilatéral n’est pas 
+comptabilisé précisément dans la balance des paiements. 
+3.4.2 Union européenne : Un gain d’environ 100 milliards 
+d’euros pour la balance des paiements européenne dans 
+10 ans 
+Si 15 % des achats de cloud-logiciel des entreprises européennes adressés à des entreprises 
+américaines étaient réorientés vers une production européenne à l’horizon 2035, il pourrait en 
+résulter une amélioration du solde du compte courant de l’Union européenne de 100 milliards 
+d’euros dans dix ans. En considérant une hausse moyenne des prix de 10 % par an sur les services de 
+cloud-logiciel (nous posons comme hypothèse que la hausse des prix n’est pas liée à la nationalité des 
+acteurs mais au fait qu’ils bénéficient de la difficulté à changer de prestataire), réorienter 15 % des 
+ 
+43 Échange de marchandises, de services et flux de revenus. Le solde courant détermine le besoin ou la capacité 
+de financement externe d’un pays. 
+44 Bureau of Economic Analysis 
+27 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+achats adressés aux États-Unis vers des producteurs européens (soit 40 milliards d’euros actuellement) 
+représenterait dans 10 ans un montant d’importations réduit de 100 milliards d’euros, soit 0,4 % du PIB 
+de l’Union européenne en 203545. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+45 Calcul Asterès en faisant l’hypothèse d’une croissance nominale européenne de 3 % par an au cours des 10 
+prochaines années 
+ 
+ 
+ 
+ 
+4. Impact du secteur 
+cloud-logiciel sur la 
+productivité : Un sujet à 
+approfondir 
+29 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+4.1 Numérique et productivité : Un 
+lien probable mais à étayer 
+4.1.1 Méthode : Comparer la productivité relative des 
+services numériques aux États-Unis et dans l’Union 
+européenne 
+Asterès a pris pour point de départ l’écart de productivité relative du secteur du numérique entre 
+les États-Unis et l’Union européenne pour estimer un gain de productivité potentiel. Les écarts de 
+productivité absolue sont difficiles à comparer entre les pays (comme expliqué en encadré), notamment 
+du fait de la mesure du taux de change retenue (taux de change nominal ou parité de pouvoir d’achat). 
+Ainsi, Asterès a basé son analyse sur les écarts de productivité relative entre secteurs : lorsqu’une 
+économie se spécialise dans un secteur, elle y développe des gains de productivité (la relation peut 
+également être inverse, une productivité plus importante pouvant conduire à une spécialisation 
+sectorielle). Le gain de productivité potentiel pour l’Union européenne si elle se spécialisait dans le 
+secteur du numérique46, à l’instar des États-Unis, a donc été estimé à partir de la variation de la 
+productivité du secteur numérique si celui-ci affichait un écart de productivité avec le reste de 
+l’économie similaire à celui observé aux États-Unis47. Le gain de productivité total a été calculé en 
+pondérant la part du secteur numérique dans l’économie totale de l’Union européenne. 
+4.1.2 Hausse de la productivité des services numériques 
+européens : un gain global de productivité potentiel de 
+1,2 % 
+Si la productivité relative dans le secteur du numérique en Europe atteignait le niveau de celle 
+des États-Unis, il en résulterait un gain de productivité total pour l’économie européenne estimé 
+par Asterès de 1,2 %. Aux États-Unis, la productivité dans le secteur du numérique est supérieure de 
+70 % à la moyenne de l’économie. En Europe en revanche, la productivité du secteur du numérique est 
+globalement équivalente à celle du reste de l’économie. Si, en se spécialisant dans le secteur des services 
+informatiques, celui-ci voyait sa productivité relative correspondre à celle des États-Unis, il en résulterait 
+une hausse de 70 % de sa productivité. Comme ce secteur pèse un peu moins de 2 % de l’emploi total 
+de l’Union européenne (une part globalement semblable à celle des États-Unis), Asterès a estimé le gain 
+de productivité attendu d’une spécialisation européenne vers les services numériques similaire à celle 
+des États-Unis. 
+ 
+ 
+ 
+ 
+ 
+ 
+46 Le secteur du numérique est considéré comme équivalent au secteur « IT and other information services » dans 
+la nomenclature de l’OCDE. La productivité est estimée par la production rapportée au nombre d’emplois du 
+secteur. 
+47 Il a été fait l’hypothèse que, aux États-Unis, l’écart entre la productivité du secteur numérique et le reste de 
+l’économie est lié à la forte productivité de ce dernier et non à une moindre productivité du reste de l’économie. 
+Cette hypothèse est conforme avec les conclusions du rapport Draghi, selon lequel la productivité moyenne de 
+l’économie américaine est similaire à celle de l’Union européenne, à l’exception du secteur du numérique. 
+30 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+Écarts de productivité Europe vs États-Unis : une conclusion incertaine 
+ 
+Le rapport Draghi48 a mis en avant le rôle joué par le numérique dans la dynamique générale 
+de productivité. Le rapport Draghi a pointé le décrochage de la productivité de l’Europe par rapport 
+aux États-Unis depuis le milieu des années 1990, alors que les décennies précédentes avaient été 
+marquées par un rattrapage européen : entre 1945 et 1995, la productivité du travail en Europe est 
+passée de 22 % du niveau américain à 95 %, puis elle a diminué à 80 % du niveau américain en 
+2022. D’après le rapport Draghi, en retirant les secteurs liés aux technologies de l’information et de 
+la communication, l’évolution de la productivité de l’économie américaine et européenne est à peu 
+près équivalente entre 2000 et 2019. C’est donc la présence, sur le territoire américain, des acteurs 
+du numérique les plus productifs qui dynamisent la productivité de l’économie américaine, plus que 
+la disponibilité des services qu’ils vendent. 
+ 
+Les résultats du rapport Draghi appellent à être nuancés sur certains points. La mesure de la 
+productivité est un exercice délicat, basé sur des données qui présentent certaines limites49. 
+Premièrement, l’avance technologique américaine dans le secteur du numérique ne date pas du 
+milieu des années 1990. D’après le rapport Draghi, le décrochage de productivité de l’Europe se 
+situe vers 1995 du fait des gains de productivité américains plus importants dans le secteur du 
+numérique depuis cette date. Cependant, les États-Unis avaient déjà pris une avance technologique 
+dans ce domaine bien avant, ce qui n’avait pas empêché l’Europe de se rapprocher du niveau de 
+productivité américain (IBM a été fondé en 1911, HP en 1939, Intel en 1968, Microsoft en 1975, 
+Apple en 1976, Oracle en 1977, Bloomberg en 1981 et Dell en 1984). Le rapport Draghi postule 
+donc, sans l’expliciter clairement, que le retard européen dans les services informatiques n’avait pas 
+d’impact sur la productivité avant 1995 mais qu’il en a eu un après. Deuxièmement, les données de 
+l’Organisation Internationale du Travail (OIT) n’indiquent pas de décrochage européen de 
+productivité : entre 2005 et 2024, la productivité du travail de l’Union européenne50 a progressé de 
+21 %, soit une évolution comparable aux États-Unis (+23 %). En 2025, d’après l’OIT la productivité 
+du travail serait globalement identique aux États-Unis, en France et en Allemagne51. Troisièmement, 
+l’analyse de l’Institut Bruegel conclut à la stagnation globale de l’écart de productivité entre les 
+États-Unis et l’Europe depuis une trentaine d’années52. Après un décrochage entre 1994 et 2010, la 
+productivité relative de l’Europe (que ce soit par salarié ou par heure travaillée) se serait rapprochée 
+de celle des États-Unis pour retrouver son niveau du milieu des années 1990. 
+ 
+ 
+ 
+ 
+ 
+48 “The future of European competitiveness”, Part A | A competitiveness strategy for Europe, Septembre 2024 ; 
+https://commission.europa.eu/document/download/97e481fd-2dc3-412d-be4c- 
+f152a8232961_en?filename=The%20future%20of%20European%20competitiveness%20_%20A%20competiti 
+veness%20strategy%20for%20Europe.pdf 
+49 J. Fernald, R. Inklaar et D. Ruzic (2022), « The productivity slowdown in advanced economies : common 
+shocks or common trends ? », Ruggles Lecture at the International Association for Research in Income and Wealth 
+conference in Luxembourg 
+50 Production par heure travaillée, PIB constant de 2017, $ PPA 
+51 https://ilostat.ilo.org/topics/labour-productivity/ 
+52 Zsolt Darvas, « The European Union’s remarkable growth performance relative to the United States », Bruegel, 
+octobre 2023 
+31 
+Asterès – La dépendance technologique au cloud-logiciel américain : une estimation des conséquences 
+économiques en Europe – avril 2025 
+ 
+4.2  Questions à approfondir : mieux 
+cerner l’ampleur et les 
+répercussions économiques du 
+secteur du cloud-logiciel 
+4.2.1 Approfondissement N°1 : Mieux quantifier les 
+échanges de services de cloud-logiciel 
+L’incertitude quant aux montants de services de cloud-logiciel échangés est un obstacle majeur à 
+toute étude économique sur le sujet. Les flux de marchandise sont retracés dans des données de 
+douanes, détaillées et exhaustives. En revanche, les flux de services sont plus difficiles à identifier, 
+donc à mesurer, à plus forte raison quand ils font l’objet d’une localisation comptable dans les différents 
+pays pour des raisons d’optimisation fiscale, comme c’est le cas pour les services de cloud-logiciel. Il 
+est indispensable de disposer de données solides, à la fois sur les flux commerciaux et sur les flux de 
+profits d’IDE, sans quoi toute analyse de l’impact économique du secteur du cloud-logiciel demeure 
+imprécise. 
+4.2.2 Approfondissement N°2 : les dépendances numériques 
+peuvent créer des dépendances géopolitiques 
+Les échanges de services de cloud-logiciel ont des conséquences économiques mais également 
+géopolitiques. La présente étude se focalise exclusivement sur les impacts économiques de la 
+spécialisation des différents pays dans les services de cloud-logiciel. Pourtant, le poids prépondérant 
+des États-Unis dans ce secteur pose des questions stratégiques et géopolitiques, à plus forte raison dans 
+le contexte actuel de tensions croissantes entre les États-Unis et l’Europe. La guerre commerciale 
+déclenchée par le président Trump se concentre à ce stade sur les échanges de marchandises, pour 
+lesquelles les États-Unis présentent un déficit commercial élevé. Pourtant, les tensions pourraient 
+s’étendre aux échanges de services numériques. Les États-Unis, en menaçant l’Europe de réduire la 
+fourniture de services de cloud-logiciel, disposeraient d’un levier puissant pour contraindre les 
+Européens à accepter leurs conditions commerciales. Ainsi, l’émergence d’un secteur du cloud-logiciel 
+en Europe autonome par rapport aux technologies américaines renforcerait l’indépendance du continent. 
+4.2.3 Approfondissement N°3 : L’impact des hausses de prix 
+des services de cloud-logiciel sur la santé des 
+entreprises 
+Les fortes hausses de prix des services de cloud-logiciel peuvent menacer la santé des entreprises 
+qui les supportent. La présente étude estime l’impact macro-économique des hausses de prix des 
+services de cloud-logiciel en partant du principe qu’elles sont soutenables pour les entreprises qui les 
+paient. Cependant, avec des hausses qui atteignent dans certains cas plus de 10 % à 20 % par an, les 
+répercussions financières pour les entreprises consommant massivement ces services (secteurs de la 
+ 
+finance ou du numérique notamment) peuvent être conséquentes. Il pourrait en résulter des hausses de prix 
+pour les consommateurs ou des baisses de dépenses sur d’autres postes, qui auraient des impacts 
+économiques négatifs. Cette analyse serait complexe à mener car elle suppose de disposer de données 
+comptables précises sur les secteurs les plus concernés (profitabilité, croissance, décomposition des achats 
+notamment) et sur leur attitude face à une hausse des prix des services de cloud-logiciel (possibilité de la 
+répercuter sur leurs clients, ralentissement de leur croissance, diminution d’autres postes de dépenses). 
+4.2.4 Approfondissement N°4 : Les conséquences du poids 
+des services de cloud-logiciel sur la compétitivité des 
+économies 
+Lier la productivité et la compétitivité est un exercice complexe car multifactoriel. La présente étude 
+est parvenue, quoiqu’avec de nombreuses limites, à estimer le gain de productivité que peut espérer l’Union 
+européenne si le secteur du cloud-logiciel se développait. Les conséquences sur la compétitivité sont plus 
+délicates à estimer. En effet, si la productivité se définit simplement (un niveau de production rapporté à une 
+quantité de facteurs de production, notamment de travail, utilisée pour l’obtenir), la compétitivité est 
+multifactorielle. Premièrement, la compétitivité s’analyse relativement à un autre pays. Ainsi, le 
+développement du secteur du numérique en Europe aurait des répercussions sur celui des États-Unis (qui 
+perdrait une partie de son marché), ces deux aspects devraient être analysés simultanément pour réaliser une 
+estimation en termes de compétitivité. Deuxièmement, un gain de productivité ne se matérialise pas 
+nécessairement en un gain de compétitivité du fait de l’évolution des salaires. Un pays plus productif est 
+généralement un pays où les salaires sont plus élevés, la compétitivité d’un pays n’est donc pas liée 
+uniquement au niveau de la productivité, mais plutôt au niveau de productivité relativement au niveau des 
+salaires. Enfin, la compétitivité est une variable multifactorielle qui ne fait pas l’objet d’une définition 
+unique, car elle intègre des variables difficilement quantifiables (compétitivité hors coût, image de marque 
+par exemple). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ASTERES ETUDES & CONSEILS 
+ 
+81 rue Réaumur, 
+ 
+75002 PARIS 01 44 76 89 16 
+ 
+contact@asteres.fr 

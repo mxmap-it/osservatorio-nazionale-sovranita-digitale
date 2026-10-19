@@ -28,7 +28,11 @@ from pptx.enum.text import PP_ALIGN
 from pptx.util import Emu, Inches, Pt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "static", "slide", "romhack-2026-mxmap-italia.pptx")
+# ATTENZIONE: non scrivere su static/slide/romhack-2026-mxmap-italia.pptx.
+# Quel file e' il deck DEFINITIVO rivisto a mano dall'autore (39 slide, con gli
+# screenshot): e' un artefatto che questo script non sa ricostruire. Qui si
+# genera solo la bozza di partenza, che va poi riportata a mano nel deck buono.
+OUT = os.path.join(ROOT, "static", "slide", "_bozza", "romhack-2026-mxmap-italia-bozza.pptx")
 TMP = os.path.join(ROOT, "static", "slide", "_assets")
 
 NAVY = RGBColor(0x17, 0x32, 0x4D)
@@ -305,6 +309,42 @@ slide("Ongoing: following the money, not just the machines",
        "state it is in."],
       occhiello="In progress — the missing half", size=16,
       nota="Every figure will ship with its method, as the DNS measurement does: reproducible or it does not count.")
+
+slide("What the money already looks like, at European scale",
+      ["Two studies by Asterès for Cigref put figures on the dependency — the only serious "
+       "attempt so far.",
+       "",
+       "**€264bn a year** leaves EU companies for the American economy. **83%** of the European "
+       "cloud-software market is American. That is **~1.5% of EU GDP**, and **1.5× the Union's "
+       "entire budget**.",
+       "",
+       "**Europe's digital bill now matches its energy bill**: EU energy imports in 2024 were "
+       "€360bn. On the other side: $323bn of value added and **1.94 million jobs** sustained in "
+       "the United States.",
+       "",
+       "And it is accelerating: **+8.7%/year** over three years, **+12%/year** expected. The "
+       "largest increase at contract renewal averages **51%** — extreme cases at 100%, some "
+       "reported at 200–300%."],
+      occhiello="Asterès / Cigref, 2025 and 2026", size=16,
+      nota="Sources: cigref.fr — studies of April 2025 and May 2026, both archived with their hashes.")
+
+slide("Read that number honestly — then see why ours is still needed",
+      ["**The €264bn is not a measurement.** It is extrapolated from interviews with **six CIOs**: "
+       "~2.2% of revenue spent on cloud-software, 83% of it American, French results scaled to the "
+       "EU by GDP. Asterès says so plainly — trade data is unusable because Ireland alone accounts "
+       "for $194bn of the EU's $225bn IT-services surplus.",
+       "",
+       "**And Cigref is an interested party** — the association of large French firms and public "
+       "institutions. Stated method, stated limits, declared interest. Cite it as what it is.",
+       "",
+       "**They measure from above. We measure from below.** Awarded public contracts, body by "
+       "body, year by year, open data, published method, reproducible by anyone. Never a European "
+       "figure — an Italian one that can be checked.",
+       "",
+       "**A continental number is unassailable because nobody feels named. A per-body number is "
+       "small, and very hard for the person who signs it to ignore.**"],
+      occhiello="Why a second instrument, when this one exists", size=15,
+      nota="Their weakness is a private-sector sample. Our perimeter is public administration, where the records are open.")
 
 slide_sezione("02", "The results", "22,987 Italian public bodies, 97% coverage")
 
