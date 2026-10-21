@@ -21,11 +21,12 @@ Uso:
 """
 import argparse
 import os
+import sys
 
 from PIL import Image, ImageDraw, ImageFont
-import os as _os, sys as _sys
-_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs'))
+
+# il risolutore dei font vive in docs/, accanto agli altri generatori
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
 from _font import percorso_sans
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
