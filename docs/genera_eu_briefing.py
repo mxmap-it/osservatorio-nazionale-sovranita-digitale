@@ -10,6 +10,10 @@ from reportlab.platypus import (
 )
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _font import registra_famiglia
+registra_famiglia()
 
 OUTPUT = os.path.join(os.path.dirname(__file__), "EU_Briefing_Digital_Sovereignty_Italian_PA.pdf")
 
@@ -21,9 +25,6 @@ WHITE = HexColor("#FFFFFF")
 AMBER_LIGHT = HexColor("#FFFBF0")
 AMBER_BORDER = HexColor("#F0AD4E")
 
-pdfmetrics.registerFont(TTFont("Arial", r"C:\Windows\Fonts\arial.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Bold", r"C:\Windows\Fonts\arialbd.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Italic", r"C:\Windows\Fonts\ariali.ttf"))
 
 s_label = ParagraphStyle("Label", fontName="Arial-Bold", fontSize=10, textColor=BLUE,
                          spaceAfter=2, leading=12, letterSpacing=2)

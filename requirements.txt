@@ -1,0 +1,17 @@
+# Dipendenze degli script che generano PDF, slide e immagini.
+# Il SITO non ne ha bisogno: per quello basta Hugo Extended (vedi CLAUDE.md).
+#
+#   python -m pip install -r requirements.txt
+#
+# Versioni minime: sono quelle con cui gli artefatti pubblicati sono stati
+# prodotti. Non sono bloccate esattamente perché i PDF vanno ripristinati da
+# git, non rigenerati; se però servisse riprodurli identici, fissare con «==».
+
+reportlab>=4.4.10        # policy brief, technical brief, report, PDF del PSN
+fpdf2>=2.8.7             # documento di visione strategica
+python-pptx>=1.0.2       # deck delle slide
+pillow>=12.2.0           # copertina LinkedIn, brand kit, anteprime
+pypdf>=6.13.1            # lettura e verifica dei PDF
+beautifulsoup4>=4.15.0   # PDF del PSN, generato dalla pagina costruita
+lxml>=6.1.1              # parser usato da BeautifulSoup
+segno>=1.6.6             # codici QR nelle slide

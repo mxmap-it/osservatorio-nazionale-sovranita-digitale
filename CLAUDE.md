@@ -6,6 +6,60 @@ possa contribuire in modo coerente. Leggilo prima di modificare il sito.
 
 ---
 
+## 0. Ripartire da zero su un altro computer
+
+Un `git clone` deve bastare. Se non basta, è un difetto da correggere: gli
+artefatti costosi stanno in git e si **ripristinano**, non si rigenerano.
+
+```bash
+git clone https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale.git
+cd osservatorio-nazionale-sovranita-digitale
+python tools/verifica-ambiente.py     # dice subito cosa manca
+hugo --quiet --gc                     # costruisce il sito in public/
+```
+
+**Per il solo sito serve unicamente [Hugo Extended](https://gohugo.io/installation/)**
+(≥ 0.163). Nessuna dipendenza Python, nessun passo di build aggiuntivo: il
+deploy su GitHub Pages fa esattamente questo.
+
+**Per rigenerare PDF, slide e immagini** servono anche le librerie Python:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Font
+
+I generatori **non** contengono più percorsi di sistema cablati (del tipo `C:/Windows/Fonts/arial.ttf`).
+La risoluzione sta in `docs/_font.py`, che cerca una famiglia utilizzabile su
+Windows, macOS e Linux:
+
+- `registra_famiglia()` registra in reportlab i nomi `Arial`, `Arial-Bold`,
+  `Arial-Italic`, `Arial-BoldItalic`, `Consolas`, `Mono` — **i nomi restano
+  quelli anche quando il font sottostante è un altro**, così il corpo dei
+  generatori non cambia;
+- `percorso_sans(stile)` restituisce un *percorso*, per le librerie che vogliono
+  un file e non un nome registrato (PIL, fpdf).
+
+Ordine di preferenza: **Arial** (è il font dei PDF pubblicati), poi Liberation
+Sans, DejaVu Sans, Arimo, Helvetica. Su Linux, dove Arial non c'è, i PDF
+rigenerati avranno un font diverso: `_font.py` lo segnala su stderr. Non è un
+problema, perché i PDF pubblicati si ripristinano da git.
+
+Chi vuole **Segoe UI** lo chiede esplicitamente con
+`percorso_sans(..., preferisci_segoe=True)`: lo usa solo la copertina LinkedIn,
+che è disegnata con quello. Metterlo per primo ovunque cambierebbe le
+interruzioni di riga di tutti i PDF.
+
+### Che cosa NON va rigenerato
+
+- `static/slide/romhack-2026-mxmap-italia.pptx` — il deck definitivo, rivisto a
+  mano, con gli screenshot. `tools/genera-slide-romhack.py` produce solo una
+  bozza in `static/slide/_bozza/` e **non deve** scrivere sul file pubblicato.
+- I PDF in `static/pdf/` — sono la versione pubblicata e citata all'esterno.
+
+---
+
 ## 1. Cos'è il progetto
 
 Sito statico di **monitoraggio civico** che misura e racconta lo stato della

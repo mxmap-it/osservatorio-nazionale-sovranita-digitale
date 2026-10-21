@@ -3,6 +3,9 @@ Generate the PDF: Strategic Vision of the National Digital Sovereignty Observato
 """
 from fpdf import FPDF
 import os
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _font import percorso_sans
 
 OUTPUT = os.path.join(os.path.dirname(__file__), "Visione_Strategica_Osservatorio_EN.pdf")
 
@@ -19,9 +22,9 @@ class VisionePDF(FPDF):
     def __init__(self):
         super().__init__(orientation="P", unit="mm", format="A4")
         self.set_auto_page_break(auto=True, margin=25)
-        self.add_font("DejaVu", "", r"C:\Windows\Fonts\arial.ttf")
-        self.add_font("DejaVu", "B", r"C:\Windows\Fonts\arialbd.ttf")
-        self.add_font("DejaVu", "I", r"C:\Windows\Fonts\ariali.ttf")
+        self.add_font("DejaVu", "", percorso_sans("regular"))
+        self.add_font("DejaVu", "B", percorso_sans("bold"))
+        self.add_font("DejaVu", "I", percorso_sans("italic"))
 
     def header(self):
         if self.page_no() == 1:

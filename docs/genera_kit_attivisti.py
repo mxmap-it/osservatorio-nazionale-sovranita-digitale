@@ -10,6 +10,10 @@ from reportlab.platypus import (
 )
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _font import registra_famiglia
+registra_famiglia()
 
 OUTPUT = os.path.join(os.path.dirname(__file__), "Kit_Attivisti_Sovranita_Digitale.pdf")
 
@@ -21,10 +25,6 @@ WHITE = HexColor("#FFFFFF")
 GREEN_LIGHT = HexColor("#F0FFF0")
 GREEN_BORDER = HexColor("#5CB85C")
 
-pdfmetrics.registerFont(TTFont("Arial", r"C:\Windows\Fonts\arial.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Bold", r"C:\Windows\Fonts\arialbd.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Italic", r"C:\Windows\Fonts\ariali.ttf"))
-pdfmetrics.registerFont(TTFont("Mono", r"C:\Windows\Fonts\consola.ttf"))
 
 s_label = ParagraphStyle("Label", fontName="Arial-Bold", fontSize=10, textColor=BLUE, spaceAfter=2, leading=12, letterSpacing=2)
 s_title = ParagraphStyle("Title", fontName="Arial-Bold", fontSize=18, textColor=DARK, spaceAfter=4, leading=22)

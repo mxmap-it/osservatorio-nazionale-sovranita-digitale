@@ -3,6 +3,9 @@ Pillow only (no SVG rasterizer available). Supersampled for smooth arcs.
 Outputs into static/brand/."""
 import os
 from PIL import Image, ImageDraw, ImageFont
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _font import percorso_sans
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "static", "brand")
 os.makedirs(OUT, exist_ok=True)
@@ -15,8 +18,6 @@ RED = (206, 43, 55)
 WHITE = (255, 255, 255)
 SS = 4  # supersample factor
 
-ARIAL = r"C:\Windows\Fonts\arial.ttf"
-ARIALBD = r"C:\Windows\Fonts\arialbd.ttf"
 
 
 def mix(fg, bg, t):
@@ -68,9 +69,9 @@ def og_image():
     d = ImageDraw.Draw(img)
     # symbol left-center
     radar(d, 250 * s, 300 * s, 150 * s, BLUE, WHITE, ticks=True, n_arcs=3)
-    fb = ImageFont.truetype(ARIALBD, 64 * s)
-    fb2 = ImageFont.truetype(ARIALBD, 64 * s)
-    fsub = ImageFont.truetype(ARIAL, 26 * s)
+    fb = ImageFont.truetype(percorso_sans("bold"), 64 * s)
+    fb2 = ImageFont.truetype(percorso_sans("bold"), 64 * s)
+    fsub = ImageFont.truetype(percorso_sans("regular"), 26 * s)
     d.text((430 * s, 232 * s), "Osservatorio Nazionale", font=fb, fill=INK)
     d.text((430 * s, 310 * s), "Sovranità Digitale", font=fb2, fill=BLUE)
     d.text((432 * s, 402 * s), "MONITORAGGIO CIVICO · PA ITALIANA",

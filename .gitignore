@@ -5,3 +5,5 @@
 Thumbs.db
 .claude/
 itb.html
+__pycache__/
+*.pyc

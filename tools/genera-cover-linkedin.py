@@ -23,6 +23,10 @@ import argparse
 import os
 
 from PIL import Image, ImageDraw, ImageFont
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs'))
+from _font import percorso_sans
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRAND = os.path.join(ROOT, "static", "brand")
@@ -36,9 +40,8 @@ BIANCO = (255, 255, 255)
 GRIGIO = (143, 163, 184)
 VERDE, GRIGIO_IT, ROSSO = (0, 135, 88), (154, 166, 178), (206, 43, 55)
 
-FONT_DIR = "C:/Windows/Fonts"
-F_BOLD = os.path.join(FONT_DIR, "segoeuib.ttf")
-F_REG = os.path.join(FONT_DIR, "segoeui.ttf")
+F_BOLD = percorso_sans("bold", preferisci_segoe=True)
+F_REG = percorso_sans("regular", preferisci_segoe=True)
 
 
 def mix(fg, bg, a):

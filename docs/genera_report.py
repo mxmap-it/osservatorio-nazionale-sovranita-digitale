@@ -14,6 +14,10 @@ from reportlab.graphics.shapes import Drawing, Circle
 from reportlab.graphics.charts.piecharts import Pie
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _font import registra_famiglia
+registra_famiglia()
 
 HERE = os.path.dirname(__file__)
 KPI = os.path.join(HERE, "..", "data", "kpi.json")
@@ -32,9 +36,6 @@ GRAY = HexColor("#9AA6B2")
 
 SOV = {"extra_eu": RED, "it": BLUE, "eu_non_it": GREEN, "unknown": GRAY}
 
-pdfmetrics.registerFont(TTFont("Arial", r"C:\Windows\Fonts\arial.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Bold", r"C:\Windows\Fonts\arialbd.ttf"))
-pdfmetrics.registerFont(TTFont("Arial-Italic", r"C:\Windows\Fonts\ariali.ttf"))
 
 s_label = ParagraphStyle("L", fontName="Arial-Bold", fontSize=10, textColor=BLUE, leading=12, letterSpacing=2, spaceAfter=2)
 s_title = ParagraphStyle("T", fontName="Arial-Bold", fontSize=18, textColor=INK, leading=22, spaceAfter=2)
