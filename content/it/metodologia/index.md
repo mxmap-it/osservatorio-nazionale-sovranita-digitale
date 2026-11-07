@@ -30,6 +30,24 @@ Ai fini di questo osservatorio, definiamo "sovranità digitale" come la capacit�
 2. **Controllo operativo**: l'ente mantiene il controllo sulle proprie infrastrutture
 3. **Indipendenza tecnologica**: assenza di dipendenza critica da fornitori extra-europei
 
+## Le quattro categorie di sovranità
+
+Ogni ente classificato ricade in una di quattro categorie, definite dalla **giurisdizione giuridica del provider** che gestisce la posta (non dalla collocazione fisica dei server):
+
+- **Italiano** (`it`): la posta è gestita da un operatore soggetto all'ordinamento italiano — cloud pubblico regionale, provider commerciale italiano o infrastruttura propria dell'ente.
+- **UE non italiano** (`eu_non_it`): operatore europeo non italiano (es. OVH, Hetzner, IONOS, Infomaniak).
+- **Extra-UE / CLOUD Act** (`extra_eu`): operatore soggetto a giurisdizioni extraeuropee, in pratica quasi sempre i cloud statunitensi (Microsoft 365, Google Workspace), raggiungibili dalle richieste del CLOUD Act statunitense ovunque si trovino i server.
+- **Sconosciuto** (`unknown`): l'evidenza tecnica disponibile **non consente di provare** chi gestisce la posta — vedi sotto.
+
+## Quando dichiariamo «Sconosciuto»
+
+«Sconosciuto» non è un errore: è il **non-verdetto onesto** del metodo. Succede in due casi:
+
+1. **Nessun record MX**: il dominio dell'ente non dichiara alcun server di posta (enti solo-PEC, domini vetrina, record IndicePA incoerenti).
+2. **Backend dietro gateway non determinabile**: la posta dell'ente passa per un *security gateway* (filtro antispam come Sophos, Libraesva, Proofpoint) che nasconde la destinazione finale, e nessun segnale primario (SPF corroborato, autodiscover, DKIM) prova chi ci sia dietro. In questi casi **non attribuiamo un provider per presunzione**: avere ad esempio una registrazione Microsoft/Google (tenant, token di verifica) prova l'uso di licenze cloud, non l'hosting della posta.
+
+Questa scelta — preferire un dichiarato «non lo sappiamo» a un'attribuzione non provata — segue il classificatore del paper accademico di riferimento della famiglia MxMap ed è il motivo per cui la quota di «Sconosciuto» non è zero. I criteri tecnici completi sono nella [metodologia di MxMap](https://mxmap.it/methodology.html#method-gateway_lookthrough); gli enti in questa condizione sono esposti pubblicamente nella [pagina anomalie](https://mxmap.it/anomalie.html) con una roadmap attiva di riduzione (incrocio con i dati di spesa ICT, verifica attiva, contatto diretto con gli enti).
+
 ## Frequenza di aggiornamento
 
 I dati vengono raccolti periodicamente e i report vengono pubblicati con cadenza regolare per monitorare l'evoluzione nel tempo.

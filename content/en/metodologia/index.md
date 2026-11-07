@@ -30,6 +30,24 @@ For the purposes of this observatory, we define "digital sovereignty" as the abi
 2. **Operational control**: the body maintains control over its own infrastructure
 3. **Technological independence**: absence of critical dependence on non-European suppliers
 
+## The four sovereignty categories
+
+Every classified body falls into one of four categories, defined by the **legal jurisdiction of the provider** that manages its email (not by the physical location of the servers):
+
+- **Italian** (`it`): email is managed by an operator subject to Italian law — regional public cloud, Italian commercial provider, or the body's own infrastructure.
+- **EU non-Italian** (`eu_non_it`): a European, non-Italian operator (e.g. OVH, Hetzner, IONOS, Infomaniak).
+- **Non-EU / CLOUD Act** (`extra_eu`): an operator subject to non-European jurisdictions — in practice almost always the US clouds (Microsoft 365, Google Workspace), reachable by US CLOUD Act requests wherever the servers are located.
+- **Unknown** (`unknown`): the available technical evidence **cannot prove** who manages the email — see below.
+
+## When we declare "Unknown"
+
+"Unknown" is not an error: it is the method's **honest non-verdict**. It happens in two cases:
+
+1. **No MX record**: the body's domain declares no mail server at all (certified-mail-only bodies, brochure domains, inconsistent IndicePA records).
+2. **Backend behind a gateway cannot be determined**: the body's mail flows through a *security gateway* (an antispam filter such as Sophos, Libraesva, Proofpoint) that hides the final destination, and no primary signal (corroborated SPF, autodiscover, DKIM) proves what sits behind it. In these cases **we do not attribute a provider by presumption**: having, say, a Microsoft/Google registration (tenant, verification token) proves the use of cloud licences, not mail hosting.
+
+This choice — preferring a declared "we don't know" over an unproven attribution — follows the classifier of the MxMap family's peer-reviewed reference paper, and is why the "Unknown" share is not zero. The full technical criteria are in the [MxMap methodology](https://mxmap.it/methodology.html#method-gateway_lookthrough); the bodies in this condition are publicly listed on the [anomalies page](https://mxmap.it/anomalie.html), with an active reduction roadmap (cross-checking ICT procurement data, active verification, direct outreach to the bodies).
+
 ## Update frequency
 
 Data is collected periodically and reports are published at regular intervals to monitor its evolution over time.
