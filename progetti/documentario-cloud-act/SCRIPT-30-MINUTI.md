@@ -324,10 +324,10 @@ Serve un'indagine. È la strada del CLOUD Act.
 > nella protezione dei dati della pubblica amministrazione»*.
 
 > Il Governo dichiara. **Noi abbiamo misurato.**
-> Su ventitremila enti pubblici italiani, **il 46% ha la posta elettronica su fornitori soggetti a una
+> Su ventitremila enti pubblici italiani, **il 43% ha la posta elettronica su fornitori soggetti a una
 > legge straniera.** Verificabile ente per ente, da chiunque, in cinque secondi.
 
-> ⚠️ **TRAPPOLA — mai dire «di quel 75%, il 46% è americano»**: sono due misurazioni diverse.
+> ⚠️ **TRAPPOLA — mai dire «di quel 75%, il 43% è americano»**: sono due misurazioni diverse.
 > La formula corretta è quella sopra: *il Governo dichiara, noi abbiamo misurato.*
 
 **COSA DICE IL REGOLAMENTO** `[A7]`
@@ -576,7 +576,7 @@ vuota una riga alla volta.
 > dipendenza da fornitori extra-europei **non è la Difesa, non è la Sanità, non è la presidenza del
 > Consiglio.**
 >
-> **È l'Istruzione. Ottomilaquattrocentotré istituti. Il 77,7%.**
+> **È l'Istruzione. Ottomilatrecentoventuno istituti. Il 77,2%.**
 > Più di tre scuole su quattro. Il fornitore dominante è **Google**.
 >
 > È il cluster più grande che misuriamo — **trentasette per cento di tutti gli enti** — ed è quello
@@ -605,7 +605,7 @@ vuota una riga alla volta.
 > 🇩🇪 **Germania** — procedimento cautelare chiuso da una transazione.
 > 🇮🇹 **Italia** — **nessun provvedimento.**
 
-> Ottomilaquattrocentotré istituti. **Nessun provvedimento.**
+> Ottomilatrecentoventuno istituti. **Nessun provvedimento.**
 
 > ⚖️ **E il caso olandese va detto per intero, perché è il contro-argomento più forte di Google**:
 > quando un'autorità europea ha posto condizioni precise, **l'azienda le ha accettate e ha cambiato il
@@ -617,7 +617,7 @@ vuota una riga alla volta.
 > Quante scuole italiane usano quale piattaforma, non lo dice il Ministero. E non lo dice nemmeno Google.
 > **Nessuno dei due pubblica quel dato.**
 >
-> La misurazione che avete visto — ottomilaquattrocentotré istituti, settantasette virgola sette per cento —
+> La misurazione che avete visto — ottomilatrecentoventuno istituti, settantasette virgola due per cento —
 > **è l'unica che esista.** L'ha fatta un osservatorio indipendente interrogando i registri pubblici.
 >
 > Un Paese che ha speso **un miliardo e nove** per portare la sua amministrazione nel cloud
@@ -790,7 +790,7 @@ l'infrastruttura; perché il CLOUD Act non è mai citato nella documentazione.
   (rischio residuo accettato: è un resoconto rivisto, non stenografico)
 - ~~Esito della causa Fastweb/Aruba~~ — vicenda esclusa dal film
 - ~~Conteggio FedRAMP~~ — **chiuso: zero fornitori cloud europei autorizzati** `[A16]`
-- ~~FOIA al Ministero sulle scuole~~ — non serve: il dato è nostro (Istruzione 77,7%)
+- ~~FOIA al Ministero sulle scuole~~ — non serve: il dato è nostro (Istruzione 77,2%)
 - ~~Comunicato primario del DTD~~ — si procede sul lancio d'agenzia; **attribuire all'agenzia**, non
   presentarlo come comunicato ufficiale
 

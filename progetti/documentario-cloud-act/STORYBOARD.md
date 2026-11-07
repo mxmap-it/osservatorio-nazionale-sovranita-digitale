@@ -60,7 +60,7 @@ aggiunta va compensata con un taglio dichiarato.
 - **Atto 8**: il conteggio FedRAMP è **chiuso** (`C9` → `[A16]`, zero fornitori cloud europei). Le
   inquadrature non sono più bloccate: si girano nomi e cifre definitivi.
 - **Atto 10 riscritto**: non più «il vuoto è la notizia», ma **il dato peggiore del dataset**
-  (Istruzione, 8.403 istituti, 77,7%) più l'ammissione **FISA 702** nel documento Google per le scuole.
+  (Istruzione, 8.321 istituti, 77,2%) più l'ammissione **FISA 702** nel documento Google per le scuole.
   `[A17]` `[A29]`. Cade la verifica `C10`.
 
 ---
@@ -341,7 +341,7 @@ dissolvenza non produrrebbe alcun effetto.
 |---|---|---|---|---|---|
 | **058** | 0:12 | `SCH-CAP` | Il lancio del 21 luglio 2026 a schermo. Si evidenziano i numeri: oltre 13.000 PA, 75%, 1,9 miliardi. | `21 luglio 2026 — lancio d'agenzia` `[B1]` | **VFC**: «Otto giorni fa il Governo ha annunciato il traguardo…» |
 | **059** | 0:09 | `GRAF` | La dichiarazione del Sottosegretario, testuale, a video su fondo bianco. | *«l'Italia si pone tra i Paesi europei più avanzati nella protezione dei dati della pubblica amministrazione»* | **VFC**: lettura integrale. |
-| **060** | 0:16 | `GRAF` | Due riquadri affiancati, deliberatamente **non** sovrapposti, separati da una linea verticale netta: a sinistra «IL GOVERNO DICHIARA — migrazione al cloud, 75%»; a destra «NOI ABBIAMO MISURATO — posta elettronica, 46% su fornitori soggetti a legge straniera». Sotto, a caratteri cubitali: `DUE MISURAZIONI DIVERSE`. | `23.000 enti · misurazione MX · riproducibile ente per ente` | **VFC**: «Il Governo dichiara. Noi abbiamo misurato. Su ventitremila enti pubblici italiani, il 46% ha la posta elettronica su fornitori soggetti a una legge straniera.» |
+| **060** | 0:16 | `GRAF` | Due riquadri affiancati, deliberatamente **non** sovrapposti, separati da una linea verticale netta: a sinistra «IL GOVERNO DICHIARA — migrazione al cloud, 75%»; a destra «NOI ABBIAMO MISURATO — posta elettronica, 43% su fornitori soggetti a legge straniera». Sotto, a caratteri cubitali: `DUE MISURAZIONI DIVERSE`. | `23.000 enti · misurazione MX · riproducibile ente per ente` | **VFC**: «Il Governo dichiara. Noi abbiamo misurato. Su ventitremila enti pubblici italiani, il 43% ha la posta elettronica su fornitori soggetti a una legge straniera.» |
 | **061** | 0:08 | `SCH-CAP` | Dimostrazione dal vivo: si sceglie un ente a caso dall'elenco e si rifà l'interrogazione MX in cinque secondi. | `Verificabile da chiunque` | Battitura reale. |
 | **062** | 0:10 | `SCH-CAP` | Il PDF `RegolamentoCloud.pdf` aperto. Si scorre visibilmente: 88 pagine, 27 articoli, quattro allegati. | `Regolamento cloud per la PA — 88 pagine, 4 allegati — testo integrale` | **VFC**: «Abbiamo letto per intero il regolamento… Abbiamo cercato le parole che contano.» |
 | **063** | 0:24 | `SCH-CAP` + `GRAF` | **Momento centrale dell'atto.** Ricerca full-text dal vivo, una parola per volta. Ogni parola compare a sinistra, il risultato **0** appare a destra e resta in colonna: `extraterritoriale` **0** · `CLOUD Act` **0** · `nazionalità` **0** · `sede legale` **0** · `capogruppo` **0** · `capitale` **0** · `paese terzo` **0**. La colonna di zeri riempie il quadro. | Ogni riga | Una nota secca per ogni zero. |
@@ -358,7 +358,7 @@ dissolvenza non produrrebbe alcun effetto.
 | **069** | 0:05 | `GRAF` | Contro-fatto onesto, obbligatorio: i nove servizi di livello massimo QC4 sono tutti e soli nativi PSN. | `Sulla fascia dei dati strategici la linea tiene.` `[A10]` | **VFC** (tono piano): la precisazione. |
 
 > ⚠️ **TRAPPOLA 1** — l'inquadratura 060 è progettata proprio per **impedire** la sovrapposizione fra
-> 75% e 46%: la linea verticale che separa i due riquadri è un requisito grafico, non un'estetica.
+> 75% e 43%: la linea verticale che separa i due riquadri è un requisito grafico, non un'estetica.
 > ⚠️ **TRAPPOLA 4** — mai far dire alla voce che «il Sottosegretario ha rivendicato la sovranità
 > digitale»: ha detto «protezione dei dati». L'inquadratura 059 riporta il virgolettato esatto.
 > ⚠️ **TRAPPOLA 10** — l'inquadratura 069 non è tagliabile.
@@ -476,15 +476,15 @@ dissolvenza non produrrebbe alcun effetto.
 | # | Durata | Tipo | Descrizione visiva | Sovrimpressione | Audio / voce |
 |---|---|---|---|---|---|
 | **088** | 0:07 | `REP` | Un'aula scolastica italiana. **Nessun volto di minore riconoscibile**: dettagli di banchi, schermi, tastiere, mani. | `Nelle oltre 13.000 amministrazioni migrate col PNRR ci sono anche le scuole` `[B1]` | Suono d'ambiente reale. |
-| **089** | 0:14 | `SCH-NEW` | **SCHEDA `08-istruzione-777.svg`.** La classifica dei cluster della PA entra ordinata, dal basso verso l'alto; le righe attese (Difesa, Sanità, PA Centrale) passano e non si fermano. Poi **la prima riga resta sola sullo schermo**: `Istruzione · 8.403 istituti · 77,7%`. | `Osservatorio — misurazione dei domini di posta istituzionale, IndicePA` `[A17]` | **VFC**: «Di tutte le categorie della Pubblica Amministrazione italiana, quella con la quota più alta di dipendenza da fornitori extra-europei non è la Difesa, non è la Sanità, non è la presidenza del Consiglio. **È l'Istruzione. Ottomilaquattrocentotré istituti. Il 77,7%.**» |
+| **089** | 0:14 | `SCH-NEW` | **SCHEDA `08-istruzione-772.svg`.** La classifica dei cluster della PA entra ordinata, dal basso verso l'alto; le righe attese (Difesa, Sanità, PA Centrale) passano e non si fermano. Poi **la prima riga resta sola sullo schermo**: `Istruzione · 8.321 istituti · 77,2%`. | `Osservatorio — misurazione dei domini di posta istituzionale, IndicePA` `[A17]` | **VFC**: «Di tutte le categorie della Pubblica Amministrazione italiana, quella con la quota più alta di dipendenza da fornitori extra-europei non è la Difesa, non è la Sanità, non è la presidenza del Consiglio. **È l'Istruzione. Ottomilatrecentoventuno istituti. Il 77,2%.**» |
 | **090** | 0:08 | `GRAF` | La riga si sdoppia in due dati: **più di tre scuole su quattro** · **37% di tutti gli enti misurati**. Sotto, il nome del fornitore dominante. | `Il fornitore dominante è Google Workspace` `[A17]` | **VFC**: «È il cluster più grande che misuriamo — trentasette per cento di tutti gli enti — ed è quello messo peggio.» |
 | **091** | 0:07 | `AST` | Testo su fondo neutro. Nessuna immagine di studenti. | `Non è un contratto. È un'abitudine che si forma a quattordici anni e dura vent'anni.` | **VFC**: la frase, e la successiva: «Quando quegli studenti saranno funzionari pubblici, sapranno usare bene una cosa sola.» |
 | **092** | 0:10 | `SCH-CAP` | Cattura dal vivo del white paper **Google, *Workspace for Education*, agosto 2021**. Si scorre e si evidenzia la riga sulla **Downstream 702**. URL in quadro. | `Google — Workspace for Education, agosto 2021` `[A29]` | **VFC**: «E nel documento che Google dedica proprio alle scuole, c'è una riga che vale la pena leggere.» |
 | **093** | 0:08 | `TXT` | Il verbatim a schermo pieno. Le parole «con attenzione» restano; sotto, in rosso, la chiosa. | «*Nella misura in cui Google LLC possa ricevere richieste mirate […] ai sensi della **Downstream 702**, esaminiamo **con attenzione** ciascuna richiesta.*» → `Esaminiamo con attenzione. Non: rifiutiamo.` | **VFC**: lettura integrale, poi la chiosa. Silenzio dopo. |
-| **093-BIS** | 0:22 | `GRAF` | Quattro righe, una alla volta, ciascuna con la bandiera del Paese. L'ultima resta sola sullo schermo. | `🇩🇰 Danimarca — ordine ai 53 comuni` · `🇳🇱 Paesi Bassi — l'azienda si è adeguata` · `🇩🇪 Germania — transazione` · **`🇮🇹 Italia — nessun provvedimento`** `[A29]` | **VFC**: «Su questo, in Europa, qualcuno si è mosso. E gli esiti sono tutti diversi.» Poi, sull'ultima riga: «Ottomilaquattrocentotré istituti. Nessun provvedimento.» |
+| **093-BIS** | 0:22 | `GRAF` | Quattro righe, una alla volta, ciascuna con la bandiera del Paese. L'ultima resta sola sullo schermo. | `🇩🇰 Danimarca — ordine ai 53 comuni` · `🇳🇱 Paesi Bassi — l'azienda si è adeguata` · `🇩🇪 Germania — transazione` · **`🇮🇹 Italia — nessun provvedimento`** `[A29]` | **VFC**: «Su questo, in Europa, qualcuno si è mosso. E gli esiti sono tutti diversi.» Poi, sull'ultima riga: «Ottomilatrecentoventuno istituti. Nessun provvedimento.» |
 | **093-TER** | 0:16 | `GRAF` | **Cartello di onestà obbligatorio**, fondo differente. È il contro-argomento più forte di Google e va dato per intero. | `Nei Paesi Bassi l'azienda ha accettato le condizioni e ha cambiato il prodotto. La regolazione ha funzionato.` | **VFC**: «È un punto a loro favore, e ometterlo ci renderebbe sleali. Ed è anche il punto a favore della nostra tesi: **funziona quando qualcuno la scrive**.» |
 | **093-QUATER** | 0:25 | `GRAF` | Due caselle affiancate, entrambe vuote, con un punto interrogativo che lampeggia una volta ciascuna: **Ministero dell'Istruzione** / **Google**. Restano vuote. Poi, sotto, si accende una terza casella, piena. | `Nessuno dei due pubblica quel dato.` | **VFC**: «Quante scuole italiane usano quale piattaforma non lo dice il Ministero. E non lo dice nemmeno Google.» |
-| **093-QUINQUIES** | 0:24 | `SCH` | Ritorno alla **SCHEDA `08-istruzione-777.svg`**, ora con la fonte in evidenza: la misurazione di un osservatorio indipendente sui registri pubblici. | `8.403 istituti · 77,7% — l'unica misurazione esistente` | **VFC**: «La misurazione che avete visto è l'unica che esista. L'ha fatta un osservatorio indipendente interrogando i registri pubblici.» |
+| **093-QUINQUIES** | 0:24 | `SCH` | Ritorno alla **SCHEDA `08-istruzione-772.svg`**, ora con la fonte in evidenza: la misurazione di un osservatorio indipendente sui registri pubblici. | `8.321 istituti · 77,2% — l'unica misurazione esistente` | **VFC**: «La misurazione che avete visto è l'unica che esista. L'ha fatta un osservatorio indipendente interrogando i registri pubblici.» |
 | **093-SEXIES** | 0:18 | `AST` | Testo pieno schermo, due tempi. La seconda metà arriva dopo una pausa lunga. | `Un Paese che ha speso 1,9 miliardi per portare la sua amministrazione nel cloud` → `non sa dire quale piattaforma usano le proprie scuole.` | **VFC**: le due righe. Poi, quasi sottovoce: «E deve chiederlo a chi se l'è misurato da solo.» |
 | **094** | 0:06 | `GRAF` | **Cartello di precisione obbligatorio**, fondo differente. Due righe. | `Il dato misura il dominio di posta istituzionale degli istituti registrati nell'IndicePA: è prova diretta della piattaforma adottata dalla scuola.` · `**Non** è una misura di quanti studenti usino quotidianamente un singolo applicativo.` `[A17]` | **VFC** (tono piano): la precisazione. |
 
@@ -729,7 +729,7 @@ su `065-BIS`. **Non serve rigirare nulla.**
 | 🆕 **Percentuale di Google in S3NS** (forchetta 0%–24%) | 098 | 🟡 aperta, non bloccante | SecNumCloud §19.6 fissa il tetto al 24%: la tesi regge in ogni caso. La grafica non deve indicare una percentuale |
 | ~~C5 — esito risarcitorio Fastweb/Aruba~~ | — | ✅ **DECADUTA** | Vicenda **tagliata dal film** |
 | ~~C9 — conteggio FedRAMP~~ | 073–075 | ✅ **CHIUSA** `[A16]` | **Zero fornitori cloud europei.** Le inquadrature si girano. Rifare comunque la ricerca dal vivo il giorno delle riprese e datare la sovrimpressione |
-| ~~C10 — infrastrutture delle scuole~~ | 089–091 | ✅ **CHIUSA** `[A17]` | **Il dato è nostro**: Istruzione 8.403 istituti, 77,7%. Il FOIA al Ministero non serve più |
+| ~~C10 — infrastrutture delle scuole~~ | 089–091 | ✅ **CHIUSA** `[A17]` | **Il dato è nostro**: Istruzione 8.321 istituti, 77,2%. Il FOIA al Ministero non serve più |
 | ~~Audio Senato francese vs resoconto~~ | 019–020 | ✅ **ACCETTATA** | Si procede sul resoconto ufficiale. **Non blocca più la messa in onda dell'Atto 2** |
 | ~~General License D-2 · verbale Business and Trade Committee~~ | — | ✅ **DECADUTE** | Riguardavano **soltanto** l'atto tagliato in v2.1. Nessuna inquadratura vi poggia più |
 
@@ -772,7 +772,7 @@ dimenticanza.)*
 | 🆕 `13-la-data-e-bianca.svg` | **12** / `107` · `109` | I due livelli già scritti, la parentesi mai compilata, e l'unica data certa. **È la scheda che regge l'atto finale.** |
 | 🆕 `14-airbus-cerchio.svg` | **9** / `086-QUATER` *(metà sinistra)* · **11** / `104-TER` *(intera)* | Chi ha chiesto la regola l'ha poi usata come committente. ⚠️ **Va mostrata a metà la prima volta**: il riconoscimento nell'Atto 11 dipende da questo. |
 | `07-280-contro-12700.svg` | — **non assegnata, confermato in v3.0** | Serviva l'Atto 10 della v1.0, che è stato riscritto. **Riusabile come alternativa grafica all'inquadratura 060** (Atto 7), dove i numeri della migrazione compaiono comunque. Non va prodotta di nuovo, non va buttata |
-| `08-istruzione-777.svg` | 10 / **089** | Il dato di punta: doppia dimensione, area = numero di enti e barra = quota extra-UE. Dice «il cluster più grande è anche quello messo peggio» |
+| `08-istruzione-772.svg` | 10 / **089** | Il dato di punta: doppia dimensione, area = numero di enti e barra = quota extra-UE. Dice «il cluster più grande è anche quello messo peggio» |
 | `09-quattro-voci.svg` | 2 / **026–027** · 4 / **046** | Le quattro audizioni al Senato francese. Colonna «ha garantito?» **vuota** per le tre del 2019, «NO» solo nel 2025 |
 | `10-denaro-contro-dati.svg` | — **non assegnata, confermato in v3.0** | Serviva l'atto tagliato in v2.1. Due colonne simmetriche: quattro voci piene per il denaro, quattro caselle vuote per i dati. **Non va prodotta di nuovo, non va buttata**: resta in `schede/` come materiale del dossier |
 | `11-limiti-audit-nitro.svg` | 4 / **047** | I quattro limiti che l'auditor dichiara da sé; la parola «imposte» al centro |
@@ -787,20 +787,20 @@ riferimento per ogni futura revisione — se una scheda viene rifatta, va rifatt
 
 ---
 
-#### `08-istruzione-777.svg` — «Il cluster più grande è quello messo peggio»
+#### `08-istruzione-772.svg` — «Il cluster più grande è quello messo peggio»
 **Atto 10, inquadratura 089** · fonte `[A17]` · **priorità 1: è il dato di punta del film**
 
 - **Struttura**: classifica orizzontale a barre, quattro righe, ordinata per quota extra-UE decrescente.
 - **Dati esatti, da non arrotondare**:
   | Cluster | Enti | Quota extra-UE | Provider dominante |
   |---|---|---|---|
-  | **Istruzione** | **8.403** | **77,7%** | Google Workspace |
-  | PA Centrale | 52 | 63,5% | Microsoft 365 |
-  | Sanità | 234 | 59,4% | Microsoft 365 |
+  | **Istruzione** | **8.321** | **77,2%** | Google Workspace |
+  | PA Centrale | 55 | 61,8% | Microsoft 365 |
+  | Sanità | 234 | 52,6% | Microsoft 365 |
 - **Seconda dimensione, obbligatoria**: accanto alla quota va rappresentata **anche la dimensione del
   cluster** (larghezza della riga proporzionale al numero di enti). Senza questa seconda dimensione la
   scheda dice «le scuole stanno peggio»; con essa dice **«il cluster più grande è anche quello messo
-  peggio»**, che è l'argomento. `8.403 = 37% di tutti gli enti misurati.`
+  peggio»**, che è l'argomento. `8.321 = 36% di tutti gli enti misurati.`
 - **Animazione**: le righe entrano dal basso; Sanità, PA Centrale e le altre passano e **non si fermano**;
   Istruzione resta sola in quadro con i due numeri ingranditi.
 - **Colori**: Istruzione in rosso `#D9364F` pieno; le altre in grigio `#6C757D`. Nessun verde in questa
@@ -902,7 +902,7 @@ la `07`, perché se un giorno la scheda torna utile va rifatta secondo questa sp
 **Due schede prodotte non hanno collocazione**: la `07-280-contro-12700` (dalla v2.0) e la
 `10-denaro-contro-dati` (dalla v2.1). **Nessuna delle due va prodotta di nuovo e nessuna delle due va
 buttata**: restano in `schede/` come materiale del dossier.
-Le **due di priorità 1** ancora in film sono `08-istruzione-777` e `09-quattro-voci`.
+Le **due di priorità 1** ancora in film sono `08-istruzione-772` e `09-quattro-voci`.
 **Nessuna scheda resta da produrre.**
 
 ### Indice completo delle schede
@@ -916,7 +916,7 @@ Le **due di priorità 1** ancora in film sono `08-istruzione-777` e `09-quattro-
 | `05-paradosso-segnalazione.svg` | 5 / 051 | ✅ prodotta |
 | `06-linea-bruxelles.svg` | 9 / 082 | ✅ prodotta |
 | `07-280-contro-12700.svg` | — (riusabile su 060) | ✅ prodotta, non assegnata |
-| `08-istruzione-777.svg` | 10 / 089 | ✅ prodotta — priorità 1 |
+| `08-istruzione-772.svg` | 10 / 089 | ✅ prodotta — priorità 1 |
 | `09-quattro-voci.svg` | 2 / 026–027 · 4 / 046 | ✅ prodotta — priorità 1 |
 | `10-denaro-contro-dati.svg` | — (nessuna) | ✅ prodotta, **non assegnata** |
 | `11-limiti-audit-nitro.svg` | 4 / 047 | ✅ prodotta |

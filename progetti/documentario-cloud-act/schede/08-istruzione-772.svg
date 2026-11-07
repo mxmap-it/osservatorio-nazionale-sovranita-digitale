@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t08 d08">
-  <title id="t08">Istruzione: 8.403 istituti, il 77,7% su fornitori extra-UE</title>
-  <desc id="d08">Confronto fra tre cluster della Pubblica Amministrazione italiana su due dimensioni contemporanee: l'area del quadrato indica il numero di enti misurati, la barra indica la quota di enti su fornitori extra-UE. Istruzione conta 8.403 istituti, il 37 per cento di tutti gli enti misurati, ed e il cluster con la quota extra-UE piu alta, il 77,7 per cento, con Google Workspace dominante. PA Centrale conta 52 enti al 63,5 per cento e Sanita 234 enti al 59,4 per cento, entrambi con Microsoft 365 dominante.</desc>
+  <title id="t08">Istruzione: 8.321 istituti, il 77,2% su fornitori extra-UE</title>
+  <desc id="d08">Confronto fra tre cluster della Pubblica Amministrazione italiana su due dimensioni contemporanee: l'area del quadrato indica il numero di enti misurati, la barra indica la quota di enti su fornitori extra-UE. Istruzione conta 8.321 istituti, il 36 per cento di tutti gli enti misurati, ed e il cluster con la quota extra-UE piu alta, il 77,2 per cento, con Google Workspace dominante. PA Centrale conta 55 enti al 61,8 per cento e Sanita 234 enti al 52,6 per cento, entrambi con Microsoft 365 dominante.</desc>
 
   <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
 
-  <text x="80" y="70" font-family="sans-serif" font-size="42" font-weight="700" fill="#111111">L'ISTRUZIONE: 8.403 ISTITUTI, 77,7% EXTRA-UE</text>
+  <text x="80" y="70" font-family="sans-serif" font-size="42" font-weight="700" fill="#111111">L'ISTRUZIONE: 8.321 ISTITUTI, 77,2% EXTRA-UE</text>
   <text x="80" y="108" font-family="sans-serif" font-size="23" fill="#6C757D">Il cluster piu grande della PA italiana e anche quello con la quota extra-UE piu alta</text>
   <line x1="80" y1="128" x2="1520" y2="128" stroke="#111111" stroke-width="3"/>
 
@@ -16,22 +16,22 @@
   <!-- RIGA 1 - ISTRUZIONE -->
   <rect x="100" y="186" width="180" height="180" fill="#D9364F" stroke="#111111" stroke-width="2"/>
   <text x="300" y="232" font-family="sans-serif" font-size="30" font-weight="700" fill="#D9364F">ISTRUZIONE</text>
-  <text x="300" y="266" font-family="sans-serif" font-size="22" font-weight="700" fill="#111111">8.403 enti</text>
-  <text x="300" y="298" font-family="sans-serif" font-size="15" fill="#6C757D">37% di tutti gli</text>
+  <text x="300" y="266" font-family="sans-serif" font-size="22" font-weight="700" fill="#111111">8.321 enti</text>
+  <text x="300" y="298" font-family="sans-serif" font-size="15" fill="#6C757D">36% di tutti gli</text>
   <text x="300" y="318" font-family="sans-serif" font-size="15" fill="#6C757D">enti misurati</text>
   <rect x="520" y="246" width="600" height="60" fill="#FFFFFF" stroke="#6C757D" stroke-width="2"/>
-  <rect x="520" y="246" width="466" height="60" fill="#D9364F"/>
-  <text x="1250" y="292" font-family="sans-serif" font-size="38" font-weight="700" fill="#D9364F" text-anchor="end">77,7%</text>
+  <rect x="520" y="246" width="463" height="60" fill="#D9364F"/>
+  <text x="1250" y="292" font-family="sans-serif" font-size="38" font-weight="700" fill="#D9364F" text-anchor="end">77,2%</text>
   <text x="1280" y="285" font-family="sans-serif" font-size="18" font-weight="700" fill="#111111">Google Workspace</text>
   <line x1="80" y1="396" x2="1520" y2="396" stroke="#6C757D" stroke-width="1"/>
 
   <!-- RIGA 2 - PA CENTRALE -->
   <rect x="100" y="448" width="14" height="14" fill="#6C757D" stroke="#111111" stroke-width="1"/>
   <text x="300" y="448" font-family="sans-serif" font-size="24" font-weight="700" fill="#6C757D">PA CENTRALE</text>
-  <text x="300" y="476" font-family="sans-serif" font-size="18" fill="#111111">52 enti</text>
+  <text x="300" y="476" font-family="sans-serif" font-size="18" fill="#111111">55 enti</text>
   <rect x="520" y="436" width="600" height="40" fill="#FFFFFF" stroke="#6C757D" stroke-width="2"/>
-  <rect x="520" y="436" width="381" height="40" fill="#6C757D"/>
-  <text x="1250" y="470" font-family="sans-serif" font-size="30" font-weight="700" fill="#6C757D" text-anchor="end">63,5%</text>
+  <rect x="520" y="436" width="371" height="40" fill="#6C757D"/>
+  <text x="1250" y="470" font-family="sans-serif" font-size="30" font-weight="700" fill="#6C757D" text-anchor="end">61,8%</text>
   <text x="1280" y="466" font-family="sans-serif" font-size="18" fill="#111111">Microsoft 365</text>
   <line x1="80" y1="496" x2="1520" y2="496" stroke="#6C757D" stroke-width="1"/>
 
@@ -40,16 +40,16 @@
   <text x="300" y="548" font-family="sans-serif" font-size="24" font-weight="700" fill="#6C757D">SANITA</text>
   <text x="300" y="576" font-family="sans-serif" font-size="18" fill="#111111">234 enti</text>
   <rect x="520" y="536" width="600" height="40" fill="#FFFFFF" stroke="#6C757D" stroke-width="2"/>
-  <rect x="520" y="536" width="356" height="40" fill="#6C757D"/>
-  <text x="1250" y="570" font-family="sans-serif" font-size="30" font-weight="700" fill="#6C757D" text-anchor="end">59,4%</text>
+  <rect x="520" y="536" width="316" height="40" fill="#6C757D"/>
+  <text x="1250" y="570" font-family="sans-serif" font-size="30" font-weight="700" fill="#6C757D" text-anchor="end">52,6%</text>
   <text x="1280" y="566" font-family="sans-serif" font-size="18" fill="#111111">Microsoft 365</text>
   <line x1="80" y1="596" x2="1520" y2="596" stroke="#6C757D" stroke-width="1"/>
 
   <!-- Seconda dimensione, esplicita: il peso del cluster sul totale -->
-  <text x="80" y="634" font-family="sans-serif" font-size="19" font-weight="700" fill="#111111">8.403 ISTITUTI = IL 37% DI TUTTI GLI ENTI MISURATI</text>
+  <text x="80" y="634" font-family="sans-serif" font-size="19" font-weight="700" fill="#111111">8.321 ISTITUTI = IL 36% DI TUTTI GLI ENTI MISURATI</text>
   <rect x="80" y="646" width="1440" height="34" fill="#FFFFFF" stroke="#6C757D" stroke-width="2"/>
-  <rect x="80" y="646" width="533" height="34" fill="#D9364F"/>
-  <text x="100" y="670" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">ISTRUZIONE 37%</text>
+  <rect x="80" y="646" width="523" height="34" fill="#D9364F"/>
+  <text x="100" y="670" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">ISTRUZIONE 36%</text>
   <text x="1500" y="670" font-family="sans-serif" font-size="16" fill="#6C757D" text-anchor="end">TUTTI GLI ALTRI CLUSTER 63%</text>
 
   <!-- Conclusione -->

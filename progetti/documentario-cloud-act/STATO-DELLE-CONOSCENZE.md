@@ -357,11 +357,11 @@ la Pubblica Amministrazione italiana**:
 
 | Cluster | Enti | Quota extra-UE | Provider dominante |
 |---|---|---|---|
-| **Istruzione** | **8.403** | **77,7%** | **Google Workspace** |
-| PA Centrale | 52 | 63,5% | Microsoft 365 |
-| Sanità | 234 | 59,4% | Microsoft 365 |
+| **Istruzione** | **8.321** | **77,2%** | **Google Workspace** |
+| PA Centrale | 55 | 61,8% | Microsoft 365 |
+| Sanità | 234 | 52,6% | Microsoft 365 |
 
-**8.403 istituti = il 37% di tutti gli enti misurati.** È il cluster più grande, ed è quello messo peggio.
+**8.321 istituti = il 36% di tutti gli enti misurati.** È il cluster più grande, ed è quello messo peggio.
 
 ⚠️ **Precisione obbligatoria**: il dato misura il **dominio di posta istituzionale** degli istituti
 registrati in IndicePA. È prova diretta della piattaforma adottata dalla scuola, **non** una misura di
@@ -598,7 +598,7 @@ parlava di Google in minoranza: **forchetta 0%-24% da chiudere**. Non intacca la
 
 **Scuola** — esiti effettivi, tutti diversi: **Danimarca** ordine ai 53 comuni (non sanzione a Google) ·
 **Paesi Bassi** adeguamento (**è il contro-argomento più forte di Google**) · **Germania** cautelare chiuso
-da transazione (OVG NRW 19 B 417/22) · **Italia: nessun provvedimento, a fronte di 8.403 istituti.**
+da transazione (OVG NRW 19 B 417/22) · **Italia: nessun provvedimento, a fronte di 8.321 istituti.**
 E **nemmeno Google pubblica dati di diffusione in Italia**: la misurazione dell'Osservatorio resta
 **l'unica fonte esistente**.
 
@@ -1419,7 +1419,7 @@ Non possono essere entrambe vere.
 | ~~C6~~ | ~~Tenuta del Data Privacy Framework?~~ | ✅ **RISOLTO — vedi A12. Il DPF non copre il CLOUD Act e lo dice per iscritto** | — |
 | ~~C7~~ | ~~Asimmetria USA/Cina/UE e scuola~~ | ✅ **RISOLTO — vedi A13, con tre assunti di partenza CORRETTI** | — |
 | ~~C9~~ | ~~Fornitori cloud europei autorizzati FedRAMP?~~ | ✅ **RISOLTO — vedi A16. Zero.** | — |
-| ~~C10~~ | ~~Dati delle scuole italiane?~~ | ✅ **RISOLTO — vedi A17. Istruzione 77,7%, il peggiore del dataset** | — |
+| ~~C10~~ | ~~Dati delle scuole italiane?~~ | ✅ **RISOLTO — vedi A17. Istruzione 77,2%, il peggiore del dataset** | — |
 | **C8** | **Aruba S.p.A.** è tra i firmatari EUCS High+? | Il link nell'elenco punta a HPE Aruba Networks | ✅ **parzialmente risolto in A15**: è firmataria certa della lettera del 10/04/2024; per quella del 10/06/2024 l'ambiguità resta |
 | **C11** | Testo originale del **DoD Cloud SRG** | È la riga più importante del blocco asimmetria e non è mai stata letta in originale | PDF su `dl.dod.cyber.mil` — apertura manuale |
 | **C12** | **Comune italiano** con videosorveglianza (o AI di riconoscimento) su AWS/Google/Microsoft | Servirebbe per il filone «Trump vede anche chi passa per strada». ⚠️ **Attenzione**: in Italia vige una moratoria sul riconoscimento facciale in luoghi pubblici — da verificare stato e portata prima di impostare la narrativa | Delibere comunali, bandi, provvedimenti del Garante |
@@ -1446,22 +1446,35 @@ piattaforme Microsoft, Amazon o Google (livello 4).
 
 | | Enti | Quota |
 |---|---|---|
-| Provider italiano | 7.722 | 33,6% |
-| Infrastruttura autonoma | 3.096 | 13,5% |
-| Cloud italiano | 954 | 4,2% |
-| **TOTALE ITALIANO** | **11.772** | **51,2%** |
-| Extra-UE | 10.586 | 46,1% |
+| Provider italiano | 9.842 | 42,9% |
+| Infrastruttura autonoma | 833 | 3,6% |
+| Cloud italiano | 904 | 3,9% |
+| **TOTALE ITALIANO** | **11.579** | **50,5%** |
+| Extra-UE | 9.915 | 43,3% |
 
-> **Gli enti italiani su fornitori italiani sono già PIÙ di quelli su fornitori extra-UE: 51,2% contro 46,1%.**
+> **Gli enti italiani su fornitori italiani sono già PIÙ di quelli su fornitori extra-UE: 50,5% contro 43,3%.**
 > L'alternativa non va inventata né importata: **è già la pratica maggioritaria della Pubblica
-> Amministrazione italiana.** Undicimilasettecento enti la usano oggi.
+> Amministrazione italiana.** Undicimilacinquecento enti la usano oggi.
+
+> 📅 **AGGIORNAMENTO 7 NOVEMBRE 2026 — metodologia irrobustita (mxmap.it#29, "scenario B").**
+> Tutte le cifre di questo registro sono state riallineate ai dati del 7/11/2026. Due cambi di
+> metodo, da conoscere per non farsi smontare in intervista:
+> 1. il classificatore ora attribuisce un cloud **solo con segnali primari** (routing MX, SPF
+>    corroborato, autodiscover, DKIM): le semplici registrazioni Microsoft/Google (tenant, token)
+>    non bastano più → centinaia di enti dietro filtri antispam sono passati da "Microsoft/Google
+>    presunto" a **Sconosciuto** (dal 2,7% al 5,7%) — per questo l'extra-UE scende da 46,1% a 43,3%:
+>    **la dipendenza è misurata senza sovrastime, il che rende il dato PIÙ difendibile in camera**;
+> 2. gli enti la cui posta è gestita dal **fornitore informatico** (Halley, farm Zimbra, ecc.) ora
+>    contano come "Provider italiano", non come "Infrastruttura autonoma": per questo l'autonoma
+>    crolla da 13,5% a 3,6% e i commerciali salgono — la lettura giusta è "gestita da un fornitore
+>    italiano", NON "il Comune ha i suoi server". Mai più dire "un ente su otto fa da sé".
 
 **Conseguenza narrativa**: il film non deve chiudere con «*ecco cosa si potrebbe fare*», ma con
 **«ecco cosa metà di voi già fa — perché non gli altri?»**. Si passa da un finale prescrittivo a un finale
 **fattuale**, che è più forte e non chiede al pubblico di fidarsi di una proposta.
 
 ### Da modificare quando si recepisce
-- [ ] **SCRIPT Atto 11** (`La via d'uscita`): due strade, non una. La seconda è la nativa, con il 51,2%.
+- [ ] **SCRIPT Atto 11** (`La via d'uscita`): due strade, non una. La seconda è la nativa, con il 50,5%.
 - [ ] **BOOKLET tavola 13**: idem — i tre precedenti (USA, Cina, Francia) illustrano il livello 3, ma la
       chiusura deve mostrare anche la via diretta.
 - [ ] **STORYBOARD Atto 11** (inquadrature 104-116) e relativa scheda grafica.
@@ -1469,7 +1482,7 @@ piattaforme Microsoft, Amazon o Google (livello 4).
       («non smettere di usare Microsoft, smettere di lasciarla operare») va integrata.
 - [ ] **Policy Brief IT+EN**: la raccomandazione n. 4 dice «non serve escludere i fornitori statunitensi:
       serve che il servizio sia operato da un'entità europea autonoma» — va aggiunta la via diretta.
-- [ ] Valutare una **nuova scheda grafica** `13-alternativa-esiste-gia.svg` con il 51,2% contro il 46,1%.
+- [ ] Valutare una **nuova scheda grafica** `13-alternativa-esiste-gia.svg` con il 50,5% contro il 43,3%.
 
 ⚠️ **Cautela**: «Provider italiano» e «Cloud italiano» sono categorie della classificazione MxMap, non un
 elenco di aziende verificate una per una. Prima di nominare fornitori specifici in TV vanno verificati
@@ -1737,8 +1750,8 @@ altrimenti si valuta una produzione su un bersaglio che si muove.
 
 ## ERRORI DA NON COMMETTERE (registro delle trappole già individuate)
 
-1. **Il 46% non è una quota del 75%.** Sono universi diversi: il 46% misura la posta elettronica, il 75%
-   la migrazione al cloud. Dire «di quel 75%, il 46% è americano» è indifendibile.
+1. **Il 43% non è una quota del 75%.** Sono universi diversi: il 43% misura la posta elettronica, il 75%
+   la migrazione al cloud. Dire «di quel 75%, il 43% è americano» è indifendibile.
    Formulazione corretta: *«Il Governo dichiara. Noi abbiamo misurato.»*
 2. **CLOUD Act ≠ FISA 702.** Per spiare un funzionario straniero lo strumento pertinente è la **702**
    (bersagli non-americani all'estero), non il CLOUD Act, che è procedura penale. Citarne uno solo ci

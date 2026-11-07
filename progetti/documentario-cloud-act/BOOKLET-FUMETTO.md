@@ -967,16 +967,16 @@ istituzionale generica.
 **DISEGNO — METAFORA VISIVA: i due righelli.**
 Due righelli affiancati, disegnati grandi, uno di legno e uno di metallo. Hanno **tacche diverse**:
 uno misura in centimetri, l'altro in pollici. Sopra il primo: `75% — enti migrati nel cloud`.
-Sopra il secondo: `46% — enti con la posta su fornitori soggetti a legge straniera`.
+Sopra il secondo: `43% — enti con la posta su fornitori soggetti a legge straniera`.
 In mezzo, un grosso segno di **diverso** (≠).
 
 **DIDASCALIA**:
 > Il Governo dichiara. **Noi abbiamo misurato.**
-> Su ventitremila enti pubblici italiani, **il 46% ha la posta elettronica su fornitori soggetti a una
+> Su ventitremila enti pubblici italiani, **il 43% ha la posta elettronica su fornitori soggetti a una
 > legge straniera.** Verificabile ente per ente, da chiunque, in cinque secondi.
 
 **RIQUADRO DI ONESTÀ** *(subito sotto la vignetta, sfondo grigio chiaro)*
-**BALLOON — MARTA**: «Quindi di quel 75%, il 46% è americano?»
+**BALLOON — MARTA**: «Quindi di quel 75%, il 43% è americano?»
 **BALLOON — SANDRO**: «**No.** E questa è la trappola in cui cascano tutti, noi compresi la prima volta.
 Sono due misure di due cose diverse, con due righelli diversi. Sommarle è comodo ed è sbagliato.»
 
@@ -1280,15 +1280,15 @@ dalle altre e sta più in alto**, isolata, e ha una dimensione doppia. Le altre 
 piccole. Nessun colore, nessun grafico a barre da presentazione: sembra un tabellone di stazione.
 
 **IL TABELLONE (da scrivere così)**:
-> **ISTRUZIONE — 8.403 istituti — 77,7%**
-> PA Centrale — 52 — 63,5%
-> Sanità — 234 — 59,4%
+> **ISTRUZIONE — 8.321 istituti — 77,2%**
+> PA Centrale — 55 — 61,8%
+> Sanità — 234 — 52,6%
 
 **DIDASCALIA**:
 > Di tutte le categorie della Pubblica Amministrazione italiana, quella con la quota più alta di
 > dipendenza da fornitori extra-europei **non è la Difesa, non è la Sanità, non è la presidenza del
 > Consiglio.**
-> **È l'Istruzione. Ottomilaquattrocentotré istituti. Il 77,7%.** Più di tre scuole su quattro.
+> **È l'Istruzione. Ottomilatrecentoventuno istituti. Il 77,2%.** Più di tre scuole su quattro.
 > Il fornitore dominante è **Google**.
 > È anche il gruppo più grande che misuriamo — **trentasette per cento di tutti gli enti** — ed è quello
 > messo peggio. `[A17]`
@@ -1337,7 +1337,7 @@ attaccato al muro con tre righe scritte a mano: sono le tre avvertenze qui sotto
 **DIDASCALIA**:
 > Qualcuno in Europa ha deciso diversamente: il **Baden-Württemberg** ha rinunciato a Microsoft 365
 > nelle proprie scuole. È il caso solido.
-> **In Italia, a fronte di 8.403 istituti, non è stato adottato nessun provvedimento.** `[A29]`
+> **In Italia, a fronte di 8.321 istituti, non è stato adottato nessun provvedimento.** `[A29]`
 
 **IL POST-IT (da scrivere a mano, leggibile)**:
 > ⚠️ E diciamo subito quello che **non** diremo:
@@ -1369,7 +1369,7 @@ La Busta è ferma davanti al quarto sportello, di spalle. Non fa niente. Aspetta
 
 **DIDASCALIA A**:
 > Su questo, in Europa, qualcuno si è mosso — e gli esiti sono **tutti diversi**.
-> Ottomilaquattrocentotré istituti. **Nessun provvedimento.**
+> Ottomilatrecentoventuno istituti. **Nessun provvedimento.**
 
 **RIQUADRO DI ONESTÀ** *(sfondo grigio — 🚨 obbligatorio: è il contro-argomento più forte dell'azienda,
 e va dato per intero)*:
@@ -1655,7 +1655,7 @@ ma stavolta **appoggiata su un davanzale, di profilo**, che guarda fuori. Non è
   e ha perso.** Il problema è ciò che non ha scritto in casa propria.
 - **Non dice** che l'Italia fosse fra i dodici Stati che chiesero la rimozione: quell'elenco non è
   pubblico. È una deduzione, e l'abbiamo scritto dov'era il caso.
-- **Non dice** che il 46% sia una fetta del 75%. Sono due misure diverse, con due righelli diversi.
+- **Non dice** che il 43% sia una fetta del 75%. Sono due misure diverse, con due righelli diversi.
 - **Non dice** che una controllata europea sia **perciò** soggetta alla legge americana: si accerta caso
   per caso, e non risulta nessuna sentenza che lo abbia deciso. E la cifratura con chiavi tenute fuori è
   una difesa che funziona davvero, per i dati fermi.

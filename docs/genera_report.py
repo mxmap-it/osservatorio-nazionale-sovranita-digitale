@@ -201,7 +201,7 @@ def build():
 
     story.append(Paragraph("REPORT", s_label))
     story.append(Paragraph("Stato della Sovranità Digitale<br/>nella PA italiana", s_title))
-    story.append(Paragraph("Giugno 2026 — Osservatorio Nazionale Sovranità Digitale · dati MxMap.it su IndicePA", s_sub))
+    story.append(Paragraph("Novembre 2026 — Osservatorio Nazionale Sovranità Digitale · dati MxMap.it su IndicePA", s_sub))
     story.append(HRFlowable(width="100%", thickness=1, color=BLUE, spaceAfter=8, spaceBefore=2))
 
     # Sintesi

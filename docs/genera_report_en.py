@@ -201,7 +201,7 @@ def build():
 
     story.append(Paragraph("REPORT", s_label))
     story.append(Paragraph("State of Digital Sovereignty<br/>in the Italian PA", s_title))
-    story.append(Paragraph("June 2026 — National Digital Sovereignty Observatory · MxMap.it data on IndicePA", s_sub))
+    story.append(Paragraph("November 2026 — National Digital Sovereignty Observatory · MxMap.it data on IndicePA", s_sub))
     story.append(HRFlowable(width="100%", thickness=1, color=BLUE, spaceAfter=8, spaceBefore=2))
 
     # Summary

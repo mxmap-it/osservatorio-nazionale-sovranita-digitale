@@ -30,7 +30,10 @@ jobs:
     outputs:
       changed: ${{ steps.fetch.outputs.changed }}
     env:
-      KPI_SOURCE_URL: ${{ vars.KPI_SOURCE_URL || 'https://fpietrosanti.github.io/mxmap.it/kpi.json' }}
+      # URL canonico (dominio custom): sopravvive a migrazioni org/repo.
+      # Il vecchio fpietrosanti.github.io/mxmap.it è morto col passaggio
+      # all'org mxmap-it (404 silenzioso da giugno a novembre 2026).
+      KPI_SOURCE_URL: ${{ vars.KPI_SOURCE_URL || 'https://mxmap.it/kpi.json' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,17 +45,18 @@ jobs:
         run: |
           set -uo pipefail
           tmp="$(mktemp)"
-          code="$(curl -fsS -m 30 -w '%{http_code}' -o "$tmp" "$KPI_SOURCE_URL" || echo 000)"
+          code="$(curl -fsSL -m 30 -w '%{http_code}' -o "$tmp" "$KPI_SOURCE_URL" || echo 000)"
           if [ "$code" != "200" ]; then
-            echo "::warning::KPI fetch failed (HTTP $code) from $KPI_SOURCE_URL — keeping existing data/kpi.json"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            # FALLIRE FORTE: un warning silenzioso ha lasciato il sito coi KPI
+            # di giugno per mesi (URL morto dopo la migrazione d'org). Il run
+            # rosso è visibile; il sito continua a servire l'ultimo dato buono.
+            echo "::error::KPI fetch failed (HTTP $code) from $KPI_SOURCE_URL — data/kpi.json NOT updated"
+            exit 1
           fi
           # Must be valid JSON with the expected top-level structure
           if ! jq -e '.totals and .sovereignty and (.generated_at != null)' "$tmp" >/dev/null 2>&1; then
-            echo "::warning::Fetched payload is not valid KPI JSON — keeping existing data/kpi.json"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            echo "::error::Fetched payload is not valid KPI JSON — data/kpi.json NOT updated"
+            exit 1
           fi
           mkdir -p data
           # Normalise (pretty-print, drop any placeholder flag) for stable diffs

@@ -18,17 +18,19 @@ Qui si apre il paradosso più scomodo. Il **PNRR finanzia con denaro pubblico** 
 
 Detto senza giri di parole: **stiamo usando soldi pubblici europei per pagare licenze e servizi a fornitori soggetti al CLOUD Act, invece di farne leva per far crescere operatori italiani ed europei?** È esattamente il bivio che la spesa pubblica dovrebbe affrontare apertamente: **autonomia industriale** (usare la domanda pubblica come leva per l'offerta nazionale, accettando costi iniziali più alti) oppure **dipendenza gestita** (continuare con gli hyperscaler — meno costoso oggi, più costoso domani, in denaro e in controllo).
 
-La posta elettronica è il banco di prova più semplice: ha requisiti molto meno complessi del cloud per i dati strategici, eppure **il 46% degli enti è già su provider extra-UE**. Se non si riesce a tenere sovrana nemmeno l'email — il servizio più basico — la domanda sul destino dei fondi PNRR diventa ancora più urgente. L'Osservatorio non offre una risposta ideologica: mette i **numeri sul tavolo**, perché la risposta sia verificabile e non solo dichiarata.
+La posta elettronica è il banco di prova più semplice: ha requisiti molto meno complessi del cloud per i dati strategici, eppure **il 43% degli enti è già su provider extra-UE**. Se non si riesce a tenere sovrana nemmeno l'email — il servizio più basico — la domanda sul destino dei fondi PNRR diventa ancora più urgente. L'Osservatorio non offre una risposta ideologica: mette i **numeri sul tavolo**, perché la risposta sia verificabile e non solo dichiarata.
 
 ## I numeri della dipendenza
 
-L'Osservatorio parte da un dato concreto e verificabile: l'analisi della posta elettronica di **22.987 enti** della PA italiana registrati nell'IndicePA, condotta tramite il progetto [MxMap.it](https://mxmap.it/).
+L'Osservatorio parte da un dato concreto e verificabile: l'analisi della posta elettronica di **22.922 enti** della PA italiana registrati nell'IndicePA, condotta tramite il progetto [MxMap.it](https://mxmap.it/).
 
-- Il **46% degli enti** usa provider email soggetti a **giurisdizione extra-UE** (CLOUD Act);
-- il **51%** si affida a provider italiani;
-- i provider più diffusi sono Google Workspace e Microsoft 365 (insieme circa il 46% del totale).
+- Il **43% degli enti** usa provider email soggetti a **giurisdizione extra-UE** (CLOUD Act);
+- il **50,5%** si affida a provider italiani;
+- i provider più diffusi sono Google Workspace e Microsoft 365 (insieme circa il 43% del totale).
 
-Il dato diventa ancora più netto guardando i settori: l'**Istruzione** è al **77,7%** su provider statunitensi, la **PA Centrale** al **63,5%**, la **Sanità** al **59,4%** — proprio gli ambiti che trattano i dati più sensibili dei cittadini.
+*(Dati al 7 novembre 2026. Dal novembre 2026 la metodologia attribuisce un provider cloud solo in presenza di segnali tecnici primari: gli enti non provabili sono dichiarati «Sconosciuti» — il 5,7% — invece che attribuiti per presunzione, quindi le quote sono prudenziali.)*
+
+Il dato diventa ancora più netto guardando i settori: l'**Istruzione** è al **77,2%** su provider statunitensi, la **PA Centrale** al **61,8%**, la **Sanità** al **52,6%** — proprio gli ambiti che trattano i dati più sensibili dei cittadini.
 
 ## L'Italia "attendista"
 

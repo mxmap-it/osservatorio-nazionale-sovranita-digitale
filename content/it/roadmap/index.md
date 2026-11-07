@@ -14,7 +14,7 @@ Questa pagina dice a che punto siamo. Non contiene date: contiene stati. Le date
 
 ### In produzione — chi opera l'infrastruttura
 
-La rilevazione di quale azienda gestisce davvero la posta elettronica ufficiale di **22.987 enti pubblici**, letta dai record DNS pubblici e rieseguita automaticamente. È la base su cui poggia tutto il resto, ed è già pubblica e riproducibile: [metodologia](/metodologia/), [dati aperti](/dati-aperti/).
+La rilevazione di quale azienda gestisce davvero la posta elettronica ufficiale di **circa 22.900 enti pubblici**, letta dai record DNS pubblici e rieseguita automaticamente. È la base su cui poggia tutto il resto, ed è già pubblica e riproducibile: [metodologia](/metodologia/), [dati aperti](/dati-aperti/).
 
 ### In lavorazione — allineamento continuo a MxMap upstream
 

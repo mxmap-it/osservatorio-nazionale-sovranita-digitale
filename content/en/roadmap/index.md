@@ -14,7 +14,7 @@ This page states where we are. It contains no dates, only states. We will write 
 
 ### In production — who operates the infrastructure
 
-The survey of which company actually runs the official email of **22,987 public bodies**, read from public DNS records and re-run automatically. It is the foundation everything else rests on, and it is already public and reproducible: [methodology](/en/metodologia/), [open data](/en/dati-aperti/).
+The survey of which company actually runs the official email of **around 22,900 public bodies**, read from public DNS records and re-run automatically. It is the foundation everything else rests on, and it is already public and reproducible: [methodology](/en/metodologia/), [open data](/en/dati-aperti/).
 
 ### In progress — staying aligned with MxMap upstream
 
