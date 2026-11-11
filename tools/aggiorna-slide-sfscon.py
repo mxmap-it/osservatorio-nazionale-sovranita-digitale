@@ -29,6 +29,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SORGENTE = os.path.join(ROOT, "static", "slide", "romhack-2026-mxmap-italia.pptx")
 USCITA = os.path.join(ROOT, "static", "slide", "sfscon-2026-mxmap-italia.pptx")
 
+ASSET = os.path.join(ROOT, "static", "slide", "_assets")
+MARCHIO_EUCN = os.path.join(ASSET, "eu-china-commons-mark.png")
+QR_EUCN = os.path.join(ASSET, "eu-china-commons-qr.png")
+
 NAVY, NAVY_SCURO = RGBColor(0x17, 0x32, 0x4D), RGBColor(0x0E, 0x20, 0x33)
 BLU, BIANCO, GRIGIO = RGBColor(0x6D, 0xB3, 0xFF), RGBColor(0xFF, 0xFF, 0xFF), RGBColor(0x9E, 0xB2, 0xC6)
 ROSSO, VERDE = RGBColor(0xFF, 0x6B, 0x74), RGBColor(0x5C, 0xB8, 0x8A)
@@ -90,6 +94,47 @@ def sostituisci(prs):
     return fatte
 
 
+def rendi_grassetto(prs):
+    """Trasforma i **così** rimasti a video in vero grassetto.
+
+    Nel deck di RomHack i marcatori Markdown erano finiti stampati sulle slide.
+    Qui il paragrafo viene ricomposto: il primo run fa da modello per font,
+    corpo e colore, e i pezzi fra i doppi asterischi diventano run in grassetto.
+    """
+    cambiati = 0
+    for s in prs.slides:
+        for sh in s.shapes:
+            if not sh.has_text_frame:
+                continue
+            for par in sh.text_frame.paragraphs:
+                intero = "".join(r.text for r in par.runs)
+                if "**" not in intero or not par.runs:
+                    continue
+                modello = par.runs[0]
+                formato = (modello.font.size, modello.font.color,
+                           modello.font.name, modello.font.underline)
+                pezzi = [p for p in intero.split("**") if p != ""]
+                grassetto_primo = intero.startswith("**")
+                # si riusa il primo run e si aggiungono gli altri in coda
+                for r in par.runs[1:]:
+                    r._r.getparent().remove(r._r)
+                for n, pezzo in enumerate(pezzi):
+                    r = modello if n == 0 else par.add_run()
+                    r.text = pezzo
+                    if n > 0:
+                        r.font.size = formato[0]
+                        r.font.name = formato[2]
+                        r.font.underline = formato[3]
+                        if formato[1].type is not None:
+                            try:
+                                r.font.color.rgb = formato[1].rgb
+                            except AttributeError:
+                                pass
+                    r.font.bold = (n % 2 == 0) if grassetto_primo else (n % 2 == 1)
+                cambiati += 1
+    return cambiati
+
+
 # ---------------------------------------------------------------- nuove slide
 def _txt(s, testo, x, y, w, h, size=18, bold=False, colore=BIANCO,
          align=PP_ALIGN.LEFT, interlinea=1.25, spazio=9):
@@ -101,12 +146,17 @@ def _txt(s, testo, x, y, w, h, size=18, bold=False, colore=BIANCO,
         par.alignment = align
         par.line_spacing = interlinea
         par.space_after = Pt(spazio)
-        marcato = riga.startswith("**") and riga.endswith("**")
-        r = par.add_run()
-        r.text = riga[2:-2] if marcato else riga
-        r.font.size, r.font.bold = Pt(size), bold or marcato
-        r.font.color.rgb = colore
-        r.font.name = "Segoe UI"
+        # il grassetto si marca con **così**, anche a metà riga: si spezza sui
+        # delimitatori e i pezzi dispari diventano run in grassetto
+        pezzi = riga.split("**")
+        for n, pezzo in enumerate(pezzi):
+            if pezzo == "":
+                continue
+            r = par.add_run()
+            r.text = pezzo
+            r.font.size, r.font.bold = Pt(size), bold or (n % 2 == 1)
+            r.font.color.rgb = colore
+            r.font.name = "Segoe UI"
     return tb
 
 
@@ -198,6 +248,53 @@ def costruisci_sezione_spesa(prs, vuota):
     return nuove
 
 
+def costruisci_eu_china(prs, vuota):
+    """Slide sull'Europe–China Digital Commons Observatory.
+
+    Numeri dallo STATE.md del progetto eu-china-digital-commons all'11/11/2026.
+    Sito, repo e casella verificati vivi lo stesso giorno (HTTP 200 su
+    eu-china-commons.eu e sul repo; MX del dominio su smtp.google.com).
+    """
+    s = nuova(prs, vuota); _fondo(s, NAVY); _barra(s)
+
+    if os.path.exists(MARCHIO_EUCN):
+        s.shapes.add_picture(MARCHIO_EUCN, Inches(9.35), Inches(1.35),
+                             width=Inches(3.45))
+        zh = _txt(s, "中欧数字公地观察站", Inches(9.35), Inches(3.75), Inches(3.45),
+                  Inches(0.6), size=19, bold=True, colore=BIANCO, align=PP_ALIGN.CENTER)
+        # Segoe UI non ha i glifi cinesi: il font va detto, non lasciato al ripiego
+        for par in zh.text_frame.paragraphs:
+            for r in par.runs:
+                r.font.name = "Microsoft YaHei"
+        _txt(s, ["Europe–China Digital", "Commons Observatory"], Inches(9.35),
+             Inches(4.35), Inches(3.45), Inches(0.9), size=13, colore=GRIGIO,
+             align=PP_ALIGN.CENTER, interlinea=1.15, spazio=0)
+
+    _txt(s, "The same method, pointed somewhere else",
+         Inches(0.75), Inches(0.55), Inches(8.4), Inches(1.1), size=28, bold=True)
+    _txt(s, "Europe–China Digital Commons Observatory — research in progress",
+         Inches(0.78), Inches(1.62), Inches(8.4), Inches(0.6), size=15, colore=BLU)
+    _txt(s, [
+        "**Who funds, builds and reuses open source** in Europe and in China — "
+        "read from public sources on both sides, in English and in Chinese, "
+        "rather than from press releases.",
+        "**62 initiatives** in a four-level registry, 66% of them on primary sources · "
+        "**13 verified public-sector reuse cases** (EU 8, China 5) · **40 papers** in a "
+        "systematic review · every source archived with its SHA-256.",
+        "**A finding, not a gap:** documented open-source deployments inside Chinese "
+        "public administrations are scarce — and the scarcity is itself the result.",
+    ], Inches(0.78), Inches(2.3), Inches(8.3), Inches(3.4), size=15)
+
+    if os.path.exists(QR_EUCN):
+        s.shapes.add_picture(QR_EUCN, Inches(0.78), Inches(5.55), height=Inches(1.3))
+    _txt(s, ["**eu-china-commons.eu**",
+             "contact@eu-china-commons.eu",
+             "github.com/fpietrosanti/eu-china-commons  ·  data CC BY 4.0"],
+         Inches(2.3), Inches(5.65), Inches(7), Inches(1.3), size=14,
+         colore=GRIGIO, interlinea=1.15, spazio=2)
+    return [s]
+
+
 def sposta_dopo(prs, nuove, indice_dopo):
     """Le slide aggiunte finiscono in coda: si spostano dopo `indice_dopo` (0-based)."""
     lst = prs.slides._sldIdLst
@@ -254,6 +351,9 @@ def main():
         n = fatte.get(vecchio, 0)
         print("   %-62s %s" % (vecchio[:62], ("%dx" % n) if n else "NON TROVATO"))
 
+    n = rendi_grassetto(prs)
+    print("\nParagrafi con **marcatori** convertiti in grassetto vero: %d" % n)
+
     vuota = prs.slide_layouts[6]
     nuove = costruisci_sezione_spesa(prs, vuota)
     # la sezione va in coda ai risultati sulla posta: si cerca l'ultima slide
@@ -270,6 +370,23 @@ def main():
         sys.exit("Divisore «03» non trovato: collocazione della nuova sezione incerta, mi fermo.")
     sposta_dopo(prs, nuove, dopo)
     print("\nSezione inserita dopo la slide %d (prima del divisore 03)." % (dopo + 1))
+
+    # EU–China: va in fondo, subito prima della slide «Contribute»
+    if not os.path.exists(MARCHIO_EUCN):
+        sys.exit("Mancano gli asset EU–China: esegui prima "
+                 "python tools/genera-asset-eu-china.py")
+    eucn = costruisci_eu_china(prs, vuota)
+    prima_di = None
+    for i, s in enumerate(prs.slides):
+        testi = [sh.text_frame.text.strip() for sh in s.shapes
+                 if sh.has_text_frame and sh.text_frame.text.strip()]
+        if testi and testi[0] == "Contribute":
+            prima_di = i
+            break
+    if prima_di is None:
+        sys.exit("Slide «Contribute» non trovata: non so dove mettere EU–China.")
+    sposta_dopo(prs, eucn, prima_di - 1)
+    print("Slide EU–China inserita alla posizione %d (prima di «Contribute»)." % prima_di)
 
     # la rimozione va per ultima: se si rimuove prima, add_slide riusa i nomi
     # di parte (slideNN.xml) ancora occupati dalle slide rimaste, e il file esce
