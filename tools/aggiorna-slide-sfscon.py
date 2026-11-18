@@ -14,7 +14,7 @@ Numeri da mxmap.it/kpi.json del 2026-11-09; spesa ICT dallo STATE.md del
 progetto analisi-spesa-ict al 2026-11-06. Ciò che è misurato da noi e ciò che
 è riferito da terzi resta distinto, come nel resto del progetto.
 
-Uso:  python tools/aggiorna-slide-sfscon.py
+Uso:  python tools/aggiorna-slide-sfscon.py   (scrive solo in static/slide/_bozza/)
 """
 import copy
 import os
@@ -27,7 +27,9 @@ from pptx.util import Emu, Inches, Pt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SORGENTE = os.path.join(ROOT, "static", "slide", "romhack-2026-mxmap-italia.pptx")
-USCITA = os.path.join(ROOT, "static", "slide", "sfscon-2026-mxmap-italia.pptx")
+# Il deck pubblicato (static/slide/sfscon-2026-mxmap-italia.pptx) è la versione
+# definitiva rivista a mano dopo il talk: questo script NON deve sovrascriverlo.
+USCITA = os.path.join(ROOT, "static", "slide", "_bozza", "sfscon-2026-mxmap-italia-bozza.pptx")
 
 ASSET = os.path.join(ROOT, "static", "slide", "_assets")
 MARCHIO_EUCN = os.path.join(ASSET, "eu-china-commons-mark.png")
