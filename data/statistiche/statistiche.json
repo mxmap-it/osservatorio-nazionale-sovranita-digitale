@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-19T16:54",
+ "aggiornato": "2026-11-19T16:57",
  "dal": "2026-11-18",
  "al": "2026-11-18",
  "finestra": {
@@ -12,6 +12,7 @@
   {
    "host": "mxmap.it",
    "nome": "MxMap.it",
+   "nome_en": "MxMap.it",
    "descr": {
     "it": "mappa e pagine per ente",
     "en": "map and per-entity pages"
@@ -33,6 +34,7 @@
   {
    "host": "osservatorio.mxmap.it",
    "nome": "Osservatorio",
+   "nome_en": "Observatory",
    "descr": {
     "it": "sito dell'Osservatorio",
     "en": "Observatory site"
@@ -54,6 +56,7 @@
   {
    "host": "analisi-spesa-ict.mxmap.it",
    "nome": "Spesa ICT",
+   "nome_en": "ICT spending",
    "descr": {
     "it": "analisi della spesa ICT",
     "en": "ICT spending analysis"
