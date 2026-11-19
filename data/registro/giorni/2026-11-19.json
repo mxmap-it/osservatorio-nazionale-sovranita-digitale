@@ -184,5 +184,14 @@
     "https://osservatorio.mxmap.it/registro/"
    ]
   }
- ]
+ ],
+ "kpi": {
+  "n_enti": 22925,
+  "copertura": 94.32,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
 }
