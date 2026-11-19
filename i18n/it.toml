@@ -190,6 +190,12 @@ other = "Certificazioni"
 [footerRoadmap]
 other = "Roadmap"
 
+[footerStatistiche]
+other = "Statistiche di accesso"
+
+[footerPrivacy]
+other = "Privacy"
+
 [footerRegistro]
 other = "Registro attività"
 

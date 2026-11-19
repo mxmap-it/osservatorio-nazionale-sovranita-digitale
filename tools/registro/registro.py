@@ -686,6 +686,7 @@ def telegram_riepilogo(prova=False, forza=False, motore="api"):
         if t and invia(t, prova) and not prova:
             s["settimanale"] = sett
         comunita_post("settimanale", sett, prova)
+        statistiche_post(sett, prova)
     else:
         ieri = (oggi - dt.timedelta(days=1)).isoformat()
         if s["giornaliero"] == ieri and not forza:
@@ -708,6 +709,15 @@ def comunita_post(modo, periodo, prova=False):
         (comunita.post_settimanale if modo == "settimanale" else comunita.post_giornaliero)(periodo, prova)
     except Exception as e:
         log(f"comunità: {modo} {periodo} non pubblicato: {e}")
+
+
+def statistiche_post(sett, prova=False):
+    """Lunedì: statistiche di accesso ai siti. Errori qui non bloccano il registro."""
+    try:
+        import statistiche
+        statistiche.post_settimanale(sett, prova)
+    except Exception as e:
+        log(f"statistiche: settimana {sett} non pubblicata: {e}")
 
 
 def segna_tutto_postato():

@@ -1,0 +1,147 @@
+{
+ "aggiornato": "2026-11-19T16:54",
+ "dal": "2026-11-18",
+ "al": "2026-11-18",
+ "finestra": {
+  "dal": "2026-10-20",
+  "al": "2026-11-18",
+  "giorni": 30
+ },
+ "soglia": 5,
+ "siti": [
+  {
+   "host": "mxmap.it",
+   "nome": "MxMap.it",
+   "descr": {
+    "it": "mappa e pagine per ente",
+    "en": "map and per-entity pages"
+   },
+   "url": "https://mxmap.it/",
+   "giorni": [
+    [
+     "2026-11-18",
+     0
+    ]
+   ],
+   "ultimi_7": 0,
+   "precedenti_7": 0,
+   "ultimi_30": 0,
+   "totale": 0,
+   "pagine": [],
+   "pagine_altro": 0
+  },
+  {
+   "host": "osservatorio.mxmap.it",
+   "nome": "Osservatorio",
+   "descr": {
+    "it": "sito dell'Osservatorio",
+    "en": "Observatory site"
+   },
+   "url": "https://osservatorio.mxmap.it/",
+   "giorni": [
+    [
+     "2026-11-18",
+     0
+    ]
+   ],
+   "ultimi_7": 0,
+   "precedenti_7": 0,
+   "ultimi_30": 0,
+   "totale": 0,
+   "pagine": [],
+   "pagine_altro": 0
+  },
+  {
+   "host": "analisi-spesa-ict.mxmap.it",
+   "nome": "Spesa ICT",
+   "descr": {
+    "it": "analisi della spesa ICT",
+    "en": "ICT spending analysis"
+   },
+   "url": "https://analisi-spesa-ict.mxmap.it/",
+   "giorni": [
+    [
+     "2026-11-18",
+     0
+    ]
+   ],
+   "ultimi_7": 0,
+   "precedenti_7": 0,
+   "ultimi_30": 0,
+   "totale": 0,
+   "pagine": [],
+   "pagine_altro": 0
+  }
+ ],
+ "altri_host_30": 0,
+ "fonti": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "paesi": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "regioni_visitatori": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "dispositivi": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "browser": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "sistemi": {
+  "voci": [],
+  "altro": 0,
+  "totale": 0
+ },
+ "mxmap": {
+  "tipi_pagina": {},
+  "visite_pagine_ente": 0,
+  "enti_distinti": 0,
+  "enti_totali": 22925,
+  "per_regione": [],
+  "per_provincia": {
+   "voci": [],
+   "altro": 0,
+   "totale": 0
+  },
+  "per_categoria": [],
+  "per_sovranita": [
+   {
+    "chiave": "it",
+    "nome": "Italiano",
+    "nome_en": "Italian",
+    "n": 0
+   },
+   {
+    "chiave": "eu_non_it",
+    "nome": "UE non italiano",
+    "nome_en": "EU, non-Italian",
+    "n": 0
+   },
+   {
+    "chiave": "extra_eu",
+    "nome": "Extra-UE",
+    "nome_en": "Non-EU",
+    "n": 0
+   },
+   {
+    "chiave": "unknown",
+    "nome": "Non determinato",
+    "nome_en": "Undetermined",
+    "n": 0
+   }
+  ],
+  "enti_top": []
+ }
+}

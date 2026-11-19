@@ -443,6 +443,31 @@ pagine. Lo stesso dato alimenta un **bot Telegram**.
   `settimana --tutte --motore cli`, e **`telegram segna-tutto`** prima di
   riattivare il bot, o posterà tutto il passato.
 
+### 13.1 Statistiche di accesso ai siti
+
+Pagine **`/statistiche/`** e **`/privacy/`** (IT+EN). Un solo contatore per i tre siti
+(mxmap.it, osservatorio.mxmap.it, analisi-spesa-ict.mxmap.it):
+
+- **GoatCounter self-hosted** su `stats.mxmap.it` (servizio systemd `goatcounter`, utente
+  `goatcounter`, dati in `/var/lib/goatcounter`, Caddy in reverse proxy senza log di accesso;
+  record DNS su Internet.bs creato con le credenziali del progetto EOR,
+  `sudo -u eor /home/eor/bin/domains.py`). Dashboard pubblica. Login in
+  `~/.local/share/osservatorio-bot/statistiche.env` (600).
+- **Privacy:** niente cookie, IP mai salvati, solo aggregati per pagina e giorno; DNT/GPC
+  non contati. Il percorso registrato è `host + pathname` (niente query string).
+  Geolocalizzazione DB-IP City Lite (CC BY 4.0: l'attribuzione sta in `/statistiche/`),
+  aggiornata il 2 di ogni mese.
+- **Snippet:** qui in `layouts/partials/head.html` (solo build di produzione); in mxmap.it
+  `assets/statistiche.js`, incluso nelle pagine statiche **e nei generatori**
+  `build_entity_pages.py` / `build_eu_security_page.py` (le ~23k pagine per ente non sono in
+  git); in analisi-spesa-ict in `sito/layouts/partials/head.html`.
+- **Pubblicazione:** `tools/registro/statistiche.py pubblica` (cron `server.sh statistiche`
+  alle 5:10) → `data/statistiche/statistiche.json`. Le pagine `/ente/…` di mxmap.it sono
+  **georiferite** con `mail_sovereignty.pages.assign_entity_paths` (stessa funzione che genera
+  gli URL, mai rifatta qui) su `https://mxmap.it/data.json`: regione, provincia, comune,
+  categoria, sovranità del provider. **Soglia 5**: sotto, una voce non si pubblica.
+  Il lunedì alle 8:30 il bot posta la settimana con il grafico.
+
 ---
 
 ## 11. Repo e contatti collegati

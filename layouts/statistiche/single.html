@@ -1,0 +1,215 @@
+{{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
+{{ $sep := cond $isEN "- . ," "- , ." }}
+{{ $S := site.Data.statistiche.statistiche }}
+{{ $vuoto := true }}
+{{ with $S }}{{ range .siti }}{{ if gt .totale 0 }}{{ $vuoto = false }}{{ end }}{{ end }}{{ end }}
+
+<style>
+  .st-tile { border: 1px solid #dde3ea; border-radius: 6px; padding: 1rem 1.1rem; height: 100%; background: #fff; }
+  .st-tile .st-nome { font-weight: 700; font-size: 1.05rem; }
+  .st-tile .st-host { font-size: .82rem; color: #5c6f82; }
+  .st-tile .st-num { font-size: 2rem; font-weight: 700; line-height: 1.1; margin-top: .5rem; font-variant-numeric: tabular-nums; }
+  .st-tile .st-sub { font-size: .85rem; color: #33475b; }
+  .st-serie { width: 100%; height: 90px; display: block; margin-top: .6rem; }
+  .st-serie rect { fill: #2a78d6; }
+  .st-serie rect:hover { fill: #0b4f9c; }
+  .st-sez { margin-top: 3rem; }
+  .st-barre { list-style: none; padding: 0; margin: 0; }
+  .st-barre li { display: grid; grid-template-columns: minmax(0, 15rem) 1fr 4.5rem; gap: .6rem; align-items: center; padding: .22rem 0; font-size: .93rem; }
+  .st-barre .st-et { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .st-barre .st-b { background: #eef1f4; border-radius: 0 4px 4px 0; height: .8rem; }
+  .st-barre .st-b span { display: block; height: 100%; background: #2a78d6; border-radius: 0 4px 4px 0; min-width: 2px; }
+  .st-barre .st-v { text-align: right; font-variant-numeric: tabular-nums; color: #33475b; }
+  .st-nota { font-size: .85rem; color: #5c6f82; }
+  .st-tab td, .st-tab th { font-size: .92rem; }
+  .st-tab td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  @media (max-width: 576px) { .st-barre li { grid-template-columns: minmax(0, 9rem) 1fr 3.5rem; } }
+</style>
+
+<div class="container-xxl section-spacing-lg">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1>{{ .Title }}</h1>
+      <div class="lead mb-3">{{ .Content }}</div>
+
+      <div class="callout callout-highlight info mb-4">
+        <div class="callout-title"><span>{{ if $isEN }}How we count{{ else }}Come contiamo{{ end }}</span></div>
+        <p>{{ if $isEN }}With <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, open source, installed on our own server in the EU: <strong>no cookies, no IP addresses stored, no fingerprinting</strong>, and nobody is counted if their browser asks not to be tracked (Do Not Track, Global Privacy Control). Only aggregate counts per page and per day exist. Here we publish only items with at least {{ with $S }}{{ .soglia }}{{ else }}5{{ end }} visits.{{ else }}Con <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, software libero, installato sul nostro server in UE: <strong>niente cookie, nessun indirizzo IP salvato, nessuna impronta del browser</strong>, e non contiamo chi chiede al browser di non essere tracciato (Do Not Track, Global Privacy Control). Esistono solo conteggi aggregati per pagina e per giorno. Qui pubblichiamo solo le voci con almeno {{ with $S }}{{ .soglia }}{{ else }}5{{ end }} visite.{{ end }}
+        <a href="{{ partial "url-lingua.html" "privacy/" }}">{{ if $isEN }}Privacy notice{{ else }}Informativa privacy{{ end }}</a> ·
+        <a href="https://stats.mxmap.it/" target="_blank" rel="noopener">{{ if $isEN }}live dashboard{{ else }}dashboard in tempo reale{{ end }}</a></p>
+      </div>
+
+      {{ if or (not $S) $vuoto }}
+      <div class="alert alert-info" role="status">
+        {{ if $isEN }}Counting started on 19 November 2026: figures appear here from the first full day, and are updated every night.{{ else }}Il conteggio è partito il 19 novembre 2026: i numeri compaiono qui dal primo giorno completo e si aggiornano ogni notte.{{ end }}
+      </div>
+      {{ else }}
+      {{ $f := $S.finestra }}
+      <p class="st-nota">
+        {{ if $isEN }}Data from {{ $S.dal }} to {{ $S.al }} (complete days, Europe/Rome time). Distributions refer to the last {{ $f.giorni }} days ({{ $f.dal }} – {{ $f.al }}). Updated {{ replace $S.aggiornato "T" " " }}.
+        {{ else }}Dati dal {{ $S.dal }} al {{ $S.al }} (giorni completi, ora di Roma). Le distribuzioni si riferiscono agli ultimi {{ $f.giorni }} giorni ({{ $f.dal }} – {{ $f.al }}). Aggiornato il {{ replace $S.aggiornato "T" " alle " }}.{{ end }}
+      </p>
+
+      {{/* ── i tre siti ── */}}
+      <div class="row g-3 mb-2">
+        {{ range $S.siti }}
+        {{ $max := 1 }}{{ range .giorni }}{{ if gt (index . 1) $max }}{{ $max = index . 1 }}{{ end }}{{ end }}
+        {{ $n := len .giorni }}
+        <div class="col-md-4">
+          <div class="st-tile">
+            <div class="st-nome"><a href="{{ .url }}" target="_blank" rel="noopener">{{ cond $isEN (.nome_en | default .nome) .nome }}</a></div>
+            <div class="st-host">{{ .host }} · {{ index .descr (cond $isEN "en" "it") }}</div>
+            <div class="st-num">{{ lang.FormatNumberCustom 0 .ultimi_7 $sep }}</div>
+            <div class="st-sub">{{ if $isEN }}visits in the last 7 days{{ else }}visite negli ultimi 7 giorni{{ end }}
+              {{ if gt .precedenti_7 0 }}{{ $v := math.Round (mul 100 (div (sub (float .ultimi_7) .precedenti_7) .precedenti_7)) }}
+              · {{ if ge $v 0 }}+{{ end }}{{ $v }}% {{ if $isEN }}on the previous week{{ else }}sulla settimana prima{{ end }}{{ end }}</div>
+            <div class="st-sub">{{ lang.FormatNumberCustom 0 .ultimi_30 $sep }} {{ if $isEN }}in 30 days{{ else }}in 30 giorni{{ end }} · {{ lang.FormatNumberCustom 0 .totale $sep }} {{ if $isEN }}in total{{ else }}in totale{{ end }}</div>
+            <svg class="st-serie" viewBox="0 0 {{ mul $n 10 }} 100" preserveAspectRatio="none" role="img"
+                 aria-label="{{ if $isEN }}Visits per day{{ else }}Visite al giorno{{ end }}, {{ .host }}">
+              {{ range $i, $g := .giorni }}{{ $h := div (mul 98.0 (index $g 1)) $max }}
+              <rect x="{{ add (mul $i 10) 1 }}" y="{{ sub 100 $h }}" width="8" height="{{ $h }}"><title>{{ index $g 0 }}: {{ index $g 1 }}</title></rect>
+              {{ end }}
+            </svg>
+            <div class="st-nota">{{ if $isEN }}Visits per day since {{ $S.dal }}{{ else }}Visite al giorno dal {{ $S.dal }}{{ end }}</div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      {{/* ── MxMap: quali enti vengono consultati ── */}}
+      {{ $M := $S.mxmap }}
+      <section class="st-sez" id="enti">
+        <h2>{{ if $isEN }}Which public bodies people look up on MxMap.it{{ else }}Quali enti vengono consultati su MxMap.it{{ end }}</h2>
+        <p>{{ if $isEN }}MxMap.it has one page for each of the {{ lang.FormatNumberCustom 0 $M.enti_totali $sep }} public bodies in IndicePA. Each visit to one of those pages is linked back to the body, and so to its region, province, category and the jurisdiction of its email provider. In the last {{ $f.giorni }} days: <strong>{{ lang.FormatNumberCustom 0 $M.visite_pagine_ente $sep }} visits</strong> to the pages of <strong>{{ lang.FormatNumberCustom 0 $M.enti_distinti $sep }} different bodies</strong>.
+        {{ else }}MxMap.it ha una pagina per ciascuno dei {{ lang.FormatNumberCustom 0 $M.enti_totali $sep }} enti dell'IndicePA. Ogni visita a una di quelle pagine è ricondotta all'ente, e quindi alla sua regione, provincia, categoria e alla giurisdizione del suo provider di posta. Negli ultimi {{ $f.giorni }} giorni: <strong>{{ lang.FormatNumberCustom 0 $M.visite_pagine_ente $sep }} visite</strong> alle pagine di <strong>{{ lang.FormatNumberCustom 0 $M.enti_distinti $sep }} enti diversi</strong>.{{ end }}</p>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5">{{ if $isEN }}By region of the body{{ else }}Per regione dell'ente{{ end }}</h3>
+            {{ $max := 1 }}{{ range $M.per_regione }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre">
+              {{ range $M.per_regione }}
+              <li><span class="st-et">{{ .nome }} <span class="st-nota">· {{ .enti }} {{ if $isEN }}bodies{{ else }}enti{{ end }}</span></span>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5">{{ if $isEN }}By jurisdiction of the body's email provider{{ else }}Per giurisdizione del provider di posta dell'ente{{ end }}</h3>
+            {{ $max := 1 }}{{ range $M.per_sovranita }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre mb-4">
+              {{ range $M.per_sovranita }}
+              <li><span class="st-et">{{ cond $isEN .nome_en .nome }}</span>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+            <h3 class="h5">{{ if $isEN }}By category{{ else }}Per categoria{{ end }}</h3>
+            {{ $max := 1 }}{{ range $M.per_categoria }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre mb-4">
+              {{ range $M.per_categoria }}
+              <li><span class="st-et" title="{{ cond $isEN .nome_en .nome }}">{{ cond $isEN .nome_en .nome }}</span>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+            {{ with $M.per_provincia.voci }}
+            <h3 class="h5">{{ if $isEN }}Most viewed provinces{{ else }}Province più consultate{{ end }}</h3>
+            {{ $max := 1 }}{{ range . }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre">
+              {{ range first 12 . }}
+              <li><span class="st-et">{{ .nome }}</span>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+        </div>
+
+        {{ with $M.enti_top }}
+        <h3 class="h5 mt-4">{{ if $isEN }}Most viewed bodies{{ else }}Enti più consultati{{ end }}</h3>
+        <div class="table-responsive">
+          <table class="table table-sm st-tab">
+            <thead><tr><th>{{ if $isEN }}Body{{ else }}Ente{{ end }}</th><th>{{ if $isEN }}Municipality{{ else }}Comune{{ end }}</th><th>{{ if $isEN }}Category{{ else }}Categoria{{ end }}</th><th class="text-end">{{ if $isEN }}Visits{{ else }}Visite{{ end }}</th></tr></thead>
+            <tbody>
+              {{ range . }}
+              <tr><td><a href="{{ .url }}" target="_blank" rel="noopener">{{ .nome }}</a></td><td>{{ .comune }} ({{ .provincia }})</td><td>{{ cond $isEN .categoria_en .categoria }}</td><td class="n">{{ lang.FormatNumberCustom 0 .n $sep }}</td></tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+        {{ end }}
+      </section>
+
+      {{/* ── pagine più lette per sito ── */}}
+      <section class="st-sez" id="pagine">
+        <h2>{{ if $isEN }}Most read pages{{ else }}Pagine più lette{{ end }}</h2>
+        <div class="row g-4">
+          {{ range $S.siti }}
+          <div class="col-lg-4">
+            <h3 class="h5">{{ cond $isEN (.nome_en | default .nome) .nome }}</h3>
+            {{ if .pagine }}
+            {{ $max := 1 }}{{ range .pagine }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre">
+              {{ range first 12 .pagine }}
+              <li style="grid-template-columns: minmax(0, 1fr) 4rem 3.5rem"><a class="st-et" href="{{ .url }}" title="{{ .titolo | default .path }}" target="_blank" rel="noopener">{{ .path }}</a>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+            {{ else }}<p class="st-nota">{{ if $isEN }}No page above the threshold yet.{{ else }}Ancora nessuna pagina sopra la soglia.{{ end }}</p>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+
+      {{/* ── provenienza e dispositivi ── */}}
+      <section class="st-sez" id="provenienza">
+        <h2>{{ if $isEN }}Where visitors come from{{ else }}Da dove arrivano i visitatori{{ end }}</h2>
+        <div class="row g-4">
+          {{ $blocchi := slice
+              (dict "t" (cond $isEN "Referring sites" "Siti di provenienza") "d" $S.fonti "en" false)
+              (dict "t" (cond $isEN "Countries" "Paesi") "d" $S.paesi "en" true)
+              (dict "t" (cond $isEN "Italian regions of the visitors" "Regioni italiane dei visitatori") "d" $S.regioni_visitatori "en" false)
+              (dict "t" (cond $isEN "Devices" "Dispositivi") "d" $S.dispositivi "en" true) }}
+          {{ range $blocchi }}
+          {{ $d := .d }}{{ $usaEN := and $isEN .en }}
+          <div class="col-lg-6">
+            <h3 class="h5">{{ .t }}</h3>
+            {{ if $d.voci }}
+            {{ $max := 1 }}{{ range $d.voci }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+            <ul class="st-barre">
+              {{ range $d.voci }}
+              {{ $nome := .nome }}{{ if $usaEN }}{{ $nome = .nome_en | default .nome }}{{ end }}
+              {{ if eq $nome "diretto" }}{{ $nome = cond $isEN "direct (no referrer)" "diretto (nessun sito di provenienza)" }}{{ end }}
+              <li><span class="st-et" title="{{ $nome }}">{{ $nome }}</span>
+                <span class="st-b"><span style="width: {{ div (mul 100.0 .n) $max }}%"></span></span>
+                <span class="st-v">{{ lang.FormatNumberCustom 0 .n $sep }}</span></li>
+              {{ end }}
+            </ul>
+            {{ if gt $d.altro 0 }}<p class="st-nota">{{ if $isEN }}Other (each below the threshold){{ else }}Altro (ciascuno sotto la soglia){{ end }}: {{ lang.FormatNumberCustom 0 $d.altro $sep }}</p>{{ end }}
+            {{ else }}<p class="st-nota">{{ if $isEN }}Nothing above the threshold yet.{{ else }}Ancora niente sopra la soglia.{{ end }}</p>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <section class="st-sez">
+        <h2>{{ if $isEN }}Data and code{{ else }}Dati e codice{{ end }}</h2>
+        <p>{{ if $isEN }}The figures on this page are rebuilt every night from the GoatCounter aggregates by
+        <a href="{{ site.Params.repoURL | default "https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale" }}/blob/main/tools/registro/statistiche.py">tools/registro/statistiche.py</a>
+        and published as <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/blob/main/data/statistiche/statistiche.json">open data (JSON)</a>, under the same CC BY-SA 4.0 licence as the rest of the site. Every Monday the Telegram bot posts the weekly figures with a chart.
+        {{ else }}I numeri di questa pagina sono ricostruiti ogni notte dagli aggregati di GoatCounter da
+        <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/blob/main/tools/registro/statistiche.py">tools/registro/statistiche.py</a>
+        e pubblicati come <a href="https://github.com/mxmap-it/osservatorio-nazionale-sovranita-digitale/blob/main/data/statistiche/statistiche.json">dato aperto (JSON)</a>, con la stessa licenza CC BY-SA 4.0 del resto del sito. Ogni lunedì il bot Telegram pubblica i numeri della settimana con un grafico.{{ end }}
+        <a href="{{ partial "url-lingua.html" "registro/" }}">{{ if $isEN }}Activity log{{ else }}Registro attività{{ end }}</a>.</p>
+        <p class="st-nota"><a href="https://db-ip.com" target="_blank" rel="noopener">IP Geolocation by DB-IP</a> ({{ if $isEN }}DB-IP City Lite, CC BY 4.0, used only to derive country and region at the moment of the visit{{ else }}DB-IP City Lite, CC BY 4.0, usato solo per ricavare paese e regione al momento della visita{{ end }}).</p>
+      </section>
+    </div>
+  </div>
+</div>
+{{ end }}

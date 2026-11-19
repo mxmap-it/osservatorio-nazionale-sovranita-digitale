@@ -133,3 +133,9 @@
   .cloudact-bar:focus-visible { outline:2px solid #E8A33D; outline-offset:-2px; }
   @media (max-width: 768px) { .cloudact-inner { font-size:.78rem; } .cloudact-src { margin-left:26px; } }
 </style>
+{{- if hugo.IsProduction }}
+{{/* Statistiche web cookieless, ospitate dall'Osservatorio (GoatCounter su stats.mxmap.it, server in UE).
+     Niente cookie, niente IP salvati; chi chiede di non essere tracciato (DNT/GPC) non viene contato.
+     Il percorso include l'host: un solo contatore per tutti i siti. Vedi /privacy/ e /statistiche/. */}}
+<script>(function(){if(navigator.doNotTrack==="1"||window.doNotTrack==="1"||navigator.globalPrivacyControl)return;window.goatcounter={path:function(){return location.host+location.pathname}};var s=document.createElement("script");s.async=true;s.src="https://stats.mxmap.it/count.js";s.setAttribute("data-goatcounter","https://stats.mxmap.it/count");document.head.appendChild(s)})();</script>
+{{- end }}

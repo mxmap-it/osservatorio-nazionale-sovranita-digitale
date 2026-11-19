@@ -4,11 +4,17 @@
 #   server.sh installa   prepara $DATA (env con sale, venv, clone del repo) — idempotente
 #   server.sh ciclo      raccolta + sintesi + post live + riepilogo delle 8:30; commit e push
 #   server.sh poll       legge i messaggi nuovi della comunità Telegram
+#   server.sh statistiche  statistiche di accesso ai siti (GoatCounter) → data/statistiche; commit e push
 #
 # Crontab (ora del server = Europe/Rome):
 #   */5 * * * *  ~/.local/share/osservatorio-bot/repo/tools/registro/server.sh poll
 #   15 * * * *   ~/.local/share/osservatorio-bot/repo/tools/registro/server.sh ciclo
 #   30 8 * * *   ~/.local/share/osservatorio-bot/repo/tools/registro/server.sh ciclo
+#   10 5 * * *   ~/.local/share/osservatorio-bot/repo/tools/registro/server.sh statistiche
+#
+# Statistiche: GoatCounter (servizio systemd `goatcounter`, utente goatcounter, dati in
+# /var/lib/goatcounter, dietro Caddy su stats.mxmap.it). statistiche.py ne legge una copia
+# con `sudo -u goatcounter sqlite3 .backup` (ubuntu ha sudo senza password).
 #
 # Il bot lavora su un CLONE dedicato ($DATA/repo), così non tocca mai la copia
 # di lavoro di chi sviluppa. Segreti in $DATA/env (permessi 600, fuori da git):
@@ -63,14 +69,33 @@ case "$modo" in
     cd "$REPO" || exit 1
     git pull -q --rebase --autostash || { echo "pull fallito"; exit 1; }
     "$PY" tools/registro/registro.py ciclo --motore "$REGISTRO_MOTORE"
-    git add data/registro tools/registro/stato-telegram.json
+    git add data/registro data/statistiche tools/registro/stato-telegram.json
     if ! git diff --cached --quiet; then
       git commit -q -m "Registro attività: aggiornamento automatico" -m "Generato da tools/registro/server.sh sul server."
       for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 10; done
     fi
     ;;
+  statistiche)
+    cd "$REPO" || exit 1
+    git pull -q --rebase --autostash || { echo "pull fallito"; exit 1; }
+    "$PY" tools/registro/statistiche.py pubblica
+    git add data/statistiche
+    if ! git diff --cached --quiet; then
+      git commit -q -m "Statistiche di accesso: aggiornamento automatico" -m "Generato da tools/registro/server.sh sul server."
+      for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 10; done
+    fi
+    # geolocalizzazione (DB-IP City Lite, CC BY 4.0): nuova edizione il 2 di ogni mese
+    if [ "$(date +%d)" = "02" ]; then
+      f="/tmp/dbip-$$.mmdb"
+      if curl -sfL "https://download.db-ip.com/free/dbip-city-lite-$(date +%Y-%m).mmdb.gz" | gunzip > "$f" && [ -s "$f" ]; then
+        sudo -n install -o goatcounter -g goatcounter -m 644 "$f" /var/lib/goatcounter/dbip-city-lite.mmdb \
+          && sudo -n systemctl restart goatcounter && echo "geodb aggiornato"
+      fi
+      rm -f "$f"
+    fi
+    ;;
   *)
-    echo "uso: $0 installa|ciclo|poll"; exit 2 ;;
+    echo "uso: $0 installa|ciclo|poll|statistiche"; exit 2 ;;
 esac
 # log corti: si tengono le ultime 5000 righe
 tail -n 5000 "$log" > "$log.tmp" && mv "$log.tmp" "$log"
