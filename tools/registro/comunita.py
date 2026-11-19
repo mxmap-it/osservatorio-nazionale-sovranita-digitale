@@ -158,6 +158,18 @@ def poll():
     ammessi = set(comunita_ids())
     visti = json.loads(kv(c, "chat_viste") or "{}")
     esclusi = {r[0] for r in c.execute("SELECT persona FROM esclusi")}
+    if not ammessi:
+        # Gruppo non ancora configurato: si guardano le chat senza consumare gli
+        # aggiornamenti, così a configurazione fatta si leggono anche questi
+        # (presentazione all'ingresso compresa). Telegram li tiene 24 ore.
+        for u in api("getUpdates", offset=offset, timeout=0, limit=100) or []:
+            for k in ("message", "channel_post", "edited_message", "my_chat_member", "chat_member"):
+                ch = (u.get(k) or {}).get("chat")
+                if ch:
+                    visti[str(ch["id"])] = {"tipo": ch.get("type"), "titolo": ch.get("title")}
+        kv(c, "chat_viste", json.dumps(visti, ensure_ascii=False))
+        c.commit()
+        return
     n = 0
     while True:
         lot = api("getUpdates", offset=offset, timeout=0, limit=100,
