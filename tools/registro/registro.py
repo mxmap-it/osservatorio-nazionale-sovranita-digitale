@@ -523,8 +523,12 @@ def url_voce(v):
 
 def link_voce(v, max_link=2):
     out = []
-    for u in v["link"][:max_link]:
-        etichetta = urllib.parse.urlparse(u).netloc.replace("www.", "")
+    # i post sono in italiano: la copia /en/ di una pagina già linkata non serve
+    link = [u for u in v["link"] if u.replace("/en/", "/", 1) == u or u.replace("/en/", "/", 1) not in v["link"]]
+    for u in link[:max_link]:
+        p = urllib.parse.urlparse(u)
+        etichetta = (p.netloc.replace("www.", "") + p.path.rstrip("/"))
+        etichetta = etichetta if len(etichetta) <= 48 else etichetta[:47] + "…"
         out.append(f'<a href="{esc(u)}">{esc(etichetta)}</a>')
     for i in v["issue"][:2]:
         repo, n = i.split("#")
