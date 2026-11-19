@@ -2,31 +2,54 @@
  "data": "2026-11-19",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "3565899ee48159cd",
-  "osservatorio": "22c132a0d86fa299"
+  "spesa-ict": "b533b88741e1e81e",
+  "osservatorio": "3ed29d09ff09f4d9",
+  "mxmap": "37562ed423bca0dd"
  },
  "voci": [
   {
-   "id": "2026-11-19-spesa-ict-1",
-   "contesto": "spesa-ict",
-   "tipo": "analisi",
-   "rilevante": true,
+   "id": "2026-11-19-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
    "titolo": {
-    "it": "Imbuto di classificazione: nuovo livello B con quattro segnali dalla banca dati BDNCP",
-    "en": "Classification funnel: new level B with four signals from the BDNCP database"
+    "it": "Statistiche di visita senza cookie, ospitate su un server in UE",
+    "en": "Cookieless visit statistics, hosted on an EU server"
    },
    "sintesi": {
-    "it": "L'imbuto che classifica i contratti ICT della PA aggiunge un livello B basato su quattro segnali della banca dati BDNCP: quadro economico, affidamenti in-house riconosciuti tramite IPA, durate e finanziamento PNRR. È documentato anche il metodo del raffinamento a livelli, ed è pubblicato il rendiconto 0.19.",
-    "en": "The funnel that classifies public administration ICT contracts adds a level B based on four signals from the BDNCP database: economic framework, in-house awards identified via IPA, durations and PNRR funding. The tiered refinement method is also documented, and report 0.19 is published."
+    "it": "Il sito mxmap.it, l'Osservatorio e l'analisi della spesa ICT ora contano le visite con un contatore ospitato in proprio (GoatCounter su stats.mxmap.it, server in UE): niente cookie, nessun indirizzo IP salvato, segnali DNT/GPC rispettati. Il contatore è incluso anche nelle pagine generate per ogni ente, area e categoria e nella pagina EU Security, così si può vedere quali enti vengono consultati.",
+    "en": "The mxmap.it site, the Observatory and the ICT spending analysis now count visits with a self-hosted counter (GoatCounter on stats.mxmap.it, server in the EU): no cookies, no IP addresses stored, DNT/GPC signals respected. The counter is also included in the generated pages for each body, area and category and in the EU Security page, so it is possible to see which bodies are being viewed."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@fff81ff349",
-    "mxmap-it/analisi-spesa-ict@9d57f026f2"
+    "mxmap-it/mxmap.it@633ad9169e"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Online il cruscotto dei contratti: 667.303 CIG dell'imbuto ricercabili",
+    "en": "Contracts dashboard online: 667,303 funnel CIGs searchable"
+   },
+   "sintesi": {
+    "it": "Una nuova pagina del sito permette di cercare e annotare tutti i 667.303 contratti (CIG) dell'imbuto di classificazione, con gli esiti dei 12 livelli di raffinamento e la possibilità di risalire dai totali ai singoli contratti. Una verifica automatica ha riprodotto 341 totali su 341; i nomi di persone fisiche sono oscurati.",
+    "en": "A new site page lets users search and annotate all 667,303 contracts (CIGs) in the classification funnel, with the results of the 12 refinement levels and the ability to drill down from totals to individual contracts. An automated check reproduced 341 out of 341 totals; names of natural persons are redacted."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@970d9321bb",
+    "mxmap-it/analisi-spesa-ict@150244b1ea"
    ],
    "n_commit": 2,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#71",
-    "mxmap-it/analisi-spesa-ict#74"
+    "mxmap-it/analisi-spesa-ict#53",
+    "mxmap-it/analisi-spesa-ict#78"
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
@@ -35,25 +58,57 @@
   {
    "id": "2026-11-19-spesa-ict-2",
    "contesto": "spesa-ict",
-   "tipo": "pubblicazione",
+   "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Pubblicata la Mappa dell'imbuto: dataset, livelli, limiti e mancanze con gravità",
-    "en": "Funnel Map published: datasets, levels, limits and gaps by severity"
+    "it": "Tabella unica degli spostamenti fra livelli: cloud certo a 1,29 mld netti",
+    "en": "Single table of shifts across levels: certain cloud at 1.29 billion net"
    },
    "sintesi": {
-    "it": "La nuova Mappa dell'imbuto descrive i dataset usati, le loro relazioni, i livelli di classificazione, i limiti noti e le mancanze ordinate per gravità, con tre grafici; è generata da un file di configurazione, così resta allineata ai dati. Aggiornato anche il punto nave, il riepilogo dello stato dell'analisi.",
-    "en": "The new Funnel Map describes the datasets used, how they relate, the classification levels, known limits and gaps ranked by severity, with three charts; it is generated from a configuration file so it stays aligned with the data. The status summary («punto nave») was also updated."
+    "it": "Una sola tabella ora traccia, contratto per contratto, come la spesa si sposta fra tutti i livelli di raffinamento dell'imbuto: la spesa cloud certa risulta di 1,29 mld di euro netti e il residuo S6 da classificare di 10,67 mld. La verifica a mano dei contratti in-house ha ridotto l'in-house certo dal 2024 da 0,42 a 0,08 mld netti: l'accordo quadro di Cloud Toscana (242,4 M€) è un accordo aperto e l'impianto CINECA (117,3 M€) riguarda il proprio data center, non il cloud.",
+    "en": "A single table now traces, contract by contract, how spending shifts across all refinement levels of the funnel: certain cloud spending stands at €1.29 billion net and the S6 residual still to be classified at €10.67 billion. Manual verification of in-house contracts reduced certain in-house spending since 2024 from 0.42 to 0.08 billion net: the Cloud Toscana framework agreement (€242.4 million) is an open framework agreement and the CINECA facility (€117.3 million) concerns its own data centre, not cloud."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@7ef60c56bf"
+    "mxmap-it/analisi-spesa-ict@fc09782b4c",
+    "mxmap-it/analisi-spesa-ict@0b03e17b71",
+    "mxmap-it/analisi-spesa-ict@13b1788849",
+    "mxmap-it/analisi-spesa-ict@74e200d9f9"
    ],
-   "n_commit": 1,
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#52",
+    "mxmap-it/analisi-spesa-ict#70",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto, livello B: quattro segnali dalla banca dati ANAC e stima della spesa per SAL",
+    "en": "Funnel level B: four signals from the ANAC database and estimate of spending by progress report"
+   },
+   "sintesi": {
+    "it": "Il raffinamento dell'imbuto usa ora quattro segnali della banca dati dei contratti pubblici (quadro economico, in-house tramite IPA, durate, PNRR). Dagli stati di avanzamento lavori la spesa ICT è stimata fra 5,06 e 19,17 mld di euro, con una stima per classe di 10,71 mld; il controllo di coerenza del quadro economico ha escluso 373 CIG con valori impossibili.",
+    "en": "Funnel refinement now uses four signals from the national public contracts database (economic framework, in-house via IPA, durations, NRRP). From progress reports (SAL), ICT spending is estimated between €5.06 and €19.17 billion, with a per-class estimate of €10.71 billion; the economic framework consistency check excluded 373 CIGs with impossible values."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@fff81ff349",
+    "mxmap-it/analisi-spesa-ict@9d57f026f2",
+    "mxmap-it/analisi-spesa-ict@16ac2510d3",
+    "mxmap-it/analisi-spesa-ict@ea1b5cad9f"
+   ],
+   "n_commit": 4,
    "issue": [
     "mxmap-it/analisi-spesa-ict#71",
-    "mxmap-it/analisi-spesa-ict#74",
-    "mxmap-it/analisi-spesa-ict#76",
-    "mxmap-it/analisi-spesa-ict#77"
+    "mxmap-it/analisi-spesa-ict#74"
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
@@ -65,18 +120,74 @@
    "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Prova di ripetibilità: l'imbuto rifatto da zero riproduce tutti i numeri pubblicati",
-    "en": "Repeatability test: the funnel rebuilt from scratch reproduces all published figures"
+    "it": "Settimo campione a cieco: precisione 89,1% e richiamo 99,0% sulle big tech",
+    "en": "Seventh blind sample: 89.1% precision and 99.0% recall on big tech"
    },
    "sintesi": {
-    "it": "L'intera catena di classificazione è stata rieseguita da zero a partire dall'archivio ANAC e confrontata con gli esiti pubblicati: tutti i numeri sono stati riprodotti, con differenze solo nell'ordine delle righe e negli arrotondamenti in virgola mobile. Il test è ora richiamato nel punto nave (1.2) e nella mappa (0.3), dove è registrata una nuova mancanza (M12).",
-    "en": "The entire classification chain was re-run from scratch starting from the ANAC archive and compared with the published results: all figures were reproduced, with differences only in row order and floating-point rounding. The test is now referenced in the status summary (1.2) and in the map (0.3), where a new gap (M12) is recorded."
+    "it": "Con regole di classificazione congelate (v4.5) sono stati estratti 210 nuovi CIG ed etichettati prima del confronto, con impronta registrata. Sulla categoria big tech la precisione è dell'89,1% (98,9% pesata in euro) e il richiamo del 99,0%; aggiornati di conseguenza il metodo e la mappa dei limiti.",
+    "en": "With frozen classification rules (v4.5), 210 new CIGs were drawn and labelled before comparison, with a recorded fingerprint. For the big tech category, precision is 89.1% (98.9% weighted by euros) and recall 99.0%; the method and the map of limitations were updated accordingly."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@0bbc693cc8",
+    "mxmap-it/analisi-spesa-ict@34805ff523"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#45",
+    "mxmap-it/analisi-spesa-ict#52",
+    "mxmap-it/analisi-spesa-ict#70",
+    "mxmap-it/analisi-spesa-ict#72",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Terzo asse v0.4: schede ACN di 24 fornitori SaaS in più, copertura all'85,6%",
+    "en": "Third axis v0.4: ACN profiles of 24 more SaaS providers, coverage at 85.6%"
+   },
+   "sintesi": {
+    "it": "Sono state archiviate le schede ACN di altri 24 fornitori SaaS (104 pagine), di cui 8 con infrastruttura dichiarata; la copertura SaaS sale all'85,6%. Le tre stime della quota extra-UE per questo ambito sono 6,5%, 30,8% e 62,0%.",
+    "en": "The ACN profiles of 24 additional SaaS providers were archived (104 pages), 8 of which declare their infrastructure; SaaS coverage rises to 85.6%. The three estimates of the non-EU share for this area are 6.5%, 30.8% and 62.0%."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@9666372963"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#70"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Prova di ripetibilità: l'imbuto rifatto da zero riproduce tutti i numeri",
+    "en": "Repeatability test: the funnel rebuilt from scratch reproduces all numbers"
+   },
+   "sintesi": {
+    "it": "L'intera catena dell'imbuto è stata rieseguita da zero a partire dall'archivio ANAC: tutti i numeri pubblicati sono stati riprodotti, con differenze solo nell'ordine delle righe e negli arrotondamenti. Per eliminare anche queste, i dati sono ora ordinati in modo canonico, le somme calcolate al centesimo e i dati di ingresso registrati, con istruzioni per riprodurre il lavoro.",
+    "en": "The entire funnel pipeline was re-run from scratch starting from the ANAC archive: all published numbers were reproduced, with differences only in row order and rounding. To remove these as well, data are now sorted canonically, sums computed to the cent and input data registered, with instructions for reproducing the work."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@6c291bf3ea",
-    "mxmap-it/analisi-spesa-ict@9c8539428e"
+    "mxmap-it/analisi-spesa-ict@9c8539428e",
+    "mxmap-it/analisi-spesa-ict@222a819b78",
+    "mxmap-it/analisi-spesa-ict@53a98d6de2"
    ],
-   "n_commit": 2,
+   "n_commit": 4,
    "issue": [
     "mxmap-it/analisi-spesa-ict#71",
     "mxmap-it/analisi-spesa-ict#74",
@@ -87,27 +198,31 @@
    ]
   },
   {
-   "id": "2026-11-19-spesa-ict-5",
+   "id": "2026-11-19-spesa-ict-7",
    "contesto": "spesa-ict",
    "tipo": "pubblicazione",
    "rilevante": true,
    "titolo": {
-    "it": "Sito rivisto: sezione Metodo riorganizzata e pagina dell'imbuto generata dagli esiti",
-    "en": "Site revised: Method section reorganised and funnel page generated from results"
+    "it": "Mappa dell'imbuto e revisione di coerenza del sito",
+    "en": "Funnel map and site consistency review"
    },
    "sintesi": {
-    "it": "Una revisione di coerenza del sito segnala i numeri superati, indica le decisioni in vigore, elimina i link rotti e corregge la griglia delle convenzioni togliendo istanze indicate come «inviate» che non esistevano; il cruscotto ANAC viene ripubblicato ogni giorno. La sezione Metodo è organizzata per gruppi, la pagina dell'imbuto è riscritta e generata direttamente dagli esiti, ed è fissata la soglia tra le classi G3 e G4.",
-    "en": "A consistency review of the site flags outdated figures, states the decisions in force, removes broken links and corrects the agreements grid by removing requests listed as «sent» that did not exist; the ANAC dashboard is now republished daily. The Method section is organised by groups, the funnel page is rewritten and generated directly from the results, and the threshold between classes G3 and G4 has been set."
+    "it": "Pubblicata la Mappa dell'imbuto, con dataset, relazioni, livelli, limiti e mancanze classificate per gravità, generata automaticamente e corredata da tre grafici. Il sito è stato rivisto: numeri superati segnalati, sezione Metodo riorganizzata per gruppi, pagina dell'imbuto riscritta e generata dagli esiti, zero link rotti e cruscotto ANAC ripubblicato ogni giorno.",
+    "en": "The Funnel Map was published, with datasets, relationships, levels, limitations and gaps classified by severity, generated automatically and accompanied by three charts. The site was reviewed: outdated numbers flagged, Method section reorganised by groups, funnel page rewritten and generated from results, zero broken links and ANAC dashboard republished daily."
    },
    "commit": [
+    "mxmap-it/analisi-spesa-ict@7ef60c56bf",
     "mxmap-it/analisi-spesa-ict@07ec7dcda3",
     "mxmap-it/analisi-spesa-ict@1ee66184e8"
    ],
-   "n_commit": 2,
+   "n_commit": 3,
    "issue": [
     "mxmap-it/analisi-spesa-ict#23",
     "mxmap-it/analisi-spesa-ict#53",
     "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74",
+    "mxmap-it/analisi-spesa-ict#76",
+    "mxmap-it/analisi-spesa-ict#77",
     "mxmap-it/analisi-spesa-ict#78"
    ],
    "link": [
@@ -115,17 +230,46 @@
    ]
   },
   {
-   "id": "2026-11-19-spesa-ict-3",
+   "id": "2026-11-19-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Design metodologico 1.0 con confronto europeo e rapporto CPV concluso",
+    "en": "Methodological design 1.0 with European comparison and CPV report completed"
+   },
+   "sintesi": {
+    "it": "Pubblicata la versione 1.0 del design metodologico, con un'analisi comparata europea basata su fonti verificate e archiviate. Concluso anche il rapporto sul perimetro dei codici CPV; le bozze di contatto per AgID, DataCivicLab e ricercatori europei restano in attesa dell'approvazione di Fabio e non sono state inviate.",
+    "en": "Version 1.0 of the methodological design was published, with a European comparative analysis based on verified and archived sources. The report on the scope of CPV codes was also completed; draft contact messages for AgID, DataCivicLab and European researchers await Fabio's approval and have not been sent."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@60e136d58e",
+    "mxmap-it/analisi-spesa-ict@8c941491aa"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#21",
+    "mxmap-it/analisi-spesa-ict#37",
+    "mxmap-it/analisi-spesa-ict#48",
+    "mxmap-it/analisi-spesa-ict#49",
+    "mxmap-it/analisi-spesa-ict#59"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-8",
    "contesto": "spesa-ict",
    "tipo": "metodo",
    "rilevante": false,
    "titolo": {
-    "it": "Decisione: richieste di accesso civico massivo solo dopo il rendiconto del risultato parziale",
-    "en": "Decision: bulk FOIA requests only after the report on the partial result"
+    "it": "Decisione: richieste di accesso civico massive solo dopo il rendiconto parziale",
+    "en": "Decision: mass freedom-of-information requests only after the partial report"
    },
    "sintesi": {
-    "it": "Le richieste di accesso civico massivo alle amministrazioni sono rinviate alla fase finale, dopo la pubblicazione del rendiconto sul risultato parziale. La decisione è riportata nella mappa (versione 0.2) e nel punto nave (1.1).",
-    "en": "Bulk freedom-of-information requests to administrations are postponed to the final phase, after publication of the report on the partial result. The decision is recorded in the map (version 0.2) and in the status summary (1.1)."
+    "it": "Le richieste di accesso civico su larga scala alle amministrazioni saranno inviate solo alla fine, dopo il rendiconto del risultato parziale. La decisione è registrata nella mappa dell'imbuto e nel punto della situazione.",
+    "en": "Large-scale freedom-of-information requests to administrations will be sent only at the end, after the report on the partial result. The decision is recorded in the funnel map and in the status update."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@3bc43e2b65"
@@ -138,22 +282,73 @@
    "link": []
   },
   {
+   "id": "2026-11-19-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Fonti: mirror BDAP, Consip e OpenCoesione, censimento AgID archiviato, residuo S6 ripassato",
+    "en": "Sources: BDAP, Consip and OpenCoesione mirror, AgID census archived, S6 residual re-checked"
+   },
+   "sintesi": {
+    "it": "La copia locale delle fonti include ora l'elenco BDAP con il suo perimetro, il catalogo Consip e OpenCoesione completo, con annotate le restrizioni robots.txt che escludono i CSV di BDAP e le API Consip. La pagina del censimento ICT di AgID è stata archiviata dopo la scadenza, senza dati pubblicati; completato il ripasso del residuo S6, con siti della Difesa sempre irraggiungibili per timeout.",
+    "en": "The local copy of sources now includes the BDAP list with its scope, the Consip catalogue and complete OpenCoesione, noting the robots.txt restrictions that exclude BDAP CSV files and Consip APIs. AgID's ICT census page was archived after the deadline, with no data published; the re-check of the S6 residual was completed, with Defence sites consistently unreachable due to timeouts."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@66c580e7dc",
+    "mxmap-it/analisi-spesa-ict@c065c23044",
+    "mxmap-it/analisi-spesa-ict@9e739da9b1"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#11",
+    "mxmap-it/analisi-spesa-ict#17",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#26",
+    "mxmap-it/analisi-spesa-ict#54",
+    "mxmap-it/analisi-spesa-ict#60",
+    "mxmap-it/analisi-spesa-ict#73"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-19-spesa-ict-11",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Statistiche di visita senza cookie su server proprio",
+    "en": "Cookieless visit statistics on own server"
+   },
+   "sintesi": {
+    "it": "Il sito usa ora un contatore di visite ospitato in proprio, senza cookie e senza salvare indirizzi IP, che rispetta le preferenze Do Not Track e GPC. Un solo contatore copre mxmap.it, l'Osservatorio e questo sito.",
+    "en": "The site now uses a self-hosted visit counter, without cookies and without storing IP addresses, respecting Do Not Track and GPC preferences. A single counter covers mxmap.it, the Observatory and this site."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@975971b0a8"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
    "id": "2026-11-19-osservatorio-1",
    "contesto": "osservatorio",
    "tipo": "pubblicazione",
    "rilevante": true,
    "titolo": {
-    "it": "Online il Registro attività dell'Osservatorio, con lo storico dal 2 maggio 2026",
-    "en": "The Observatory's Activity Log is online, with history since 2 May 2026"
+    "it": "Online il Registro attività dell'Osservatorio, con aggiornamenti via Telegram",
+    "en": "The Observatory's Activity Log is online, with updates via Telegram"
    },
    "sintesi": {
-    "it": "La nuova pagina /registro/ (in italiano e inglese) raccoglie il diario di lavoro dal 2 maggio 2026: 319 voci in 4 contesti (MxMap.it, Spesa ICT, Osservatorio, PVL/IndicePA/Trasparenza), 22 riepiloghi settimanali e i KPI della scansione notturna giorno per giorno, con filtri per contesto e rilevanza. Le voci sono sintetizzate da un modello linguistico a partire dai commit, mentre i link sono costruiti dal codice e mai dal modello; dei repository privati si pubblicano solo i risultati, senza link ai commit.",
-    "en": "The new /registro/ page (in Italian and English) collects the work log since 2 May 2026: 319 entries across 4 contexts (MxMap.it, ICT Spending, Observatory, PVL/IndicePA/Transparency), 22 weekly summaries and the nightly scan KPIs day by day, with filters by context and relevance. Entries are summarised by a language model from the commits, while links are built by the code and never by the model; for private repositories only results are published, without links to commits."
+    "it": "La nuova pagina /registro/ (IT+EN) raccoglie il diario di lavoro dal 2 maggio 2026: 319 voci in 4 contesti (MxMap.it, Spesa ICT, Osservatorio, PVL/IndicePA/Trasparenza), 22 riepiloghi settimanali e i KPI della scansione notturna giorno per giorno, con filtri per contesto e rilevanza. Le sintesi sono generate con Claude a partire dai commit; i link sono costruiti dal codice, mai dal modello, e per i repository privati si pubblicano solo i risultati. Un bot Telegram segnala le voci rilevanti e invia riepiloghi giornalieri (alle 8:30) e settimanali (il lunedì).",
+    "en": "The new /registro/ page (IT+EN) collects the work log since 2 May 2026: 319 entries across 4 contexts (MxMap.it, ICT Spending, Observatory, PVL/IndicePA/Transparency), 22 weekly summaries and the nightly scan KPIs day by day, with filters by context and relevance. Summaries are generated with Claude from the commits; links are built by the code, never by the model, and for private repositories only results are published. A Telegram bot flags relevant entries and sends daily (8:30) and weekly (Monday) summaries."
    },
    "commit": [
-    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0a1192b5f7"
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0a1192b5f7",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@42d913c81e"
    ],
-   "n_commit": 1,
+   "n_commit": 2,
    "issue": [],
    "link": [
     "https://osservatorio.mxmap.it/registro/",
@@ -161,28 +356,49 @@
    ]
   },
   {
+   "id": "2026-11-19-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Statistiche di accesso pubbliche senza cookie e nuova pagina Privacy",
+    "en": "Public cookieless access statistics and new Privacy page"
+   },
+   "sintesi": {
+    "it": "Le visite a osservatorio, mxmap.it e analisi-spesa-ict sono ora misurate con un contatore GoatCounter ospitato in proprio su un server in UE, senza cookie, senza salvare gli IP e rispettando DNT/GPC. La pagina /statistiche/ (IT+EN) mostra visite per sito, pagine più lette e provenienza e, per mxmap.it, gli enti consultati per regione, provincia, categoria e giurisdizione del provider di posta, con una soglia di 5 visite. La pagina /privacy/ (IT+EN) spiega cosa si raccoglie, dichiara l'hosting su GitHub Pages e descrive il bot della comunità.",
+    "en": "Visits to the Observatory, mxmap.it and analisi-spesa-ict are now measured with a self-hosted GoatCounter counter on an EU server, without cookies, without storing IP addresses and respecting DNT/GPC. The /statistiche/ page (IT+EN) shows visits per site, most-read pages and referrers and, for mxmap.it, the bodies consulted by region, province, category and mail provider jurisdiction, with a threshold of 5 visits. The /privacy/ page (IT+EN) explains what is collected, discloses hosting on GitHub Pages and describes the community bot."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7ac9811db7"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/statistiche/",
+    "https://osservatorio.mxmap.it/privacy/",
+    "https://osservatorio.mxmap.it/en/statistiche/"
+   ]
+  },
+  {
    "id": "2026-11-19-osservatorio-2",
    "contesto": "osservatorio",
    "tipo": "sviluppo",
-   "rilevante": true,
+   "rilevante": false,
    "titolo": {
-    "it": "Bot Telegram: aggiornamenti dal Registro e misura dell'attività della comunità",
-    "en": "Telegram bot: updates from the Log and measurement of community activity"
+    "it": "Bot del registro sul server e misura della partecipazione nella comunità Telegram",
+    "en": "Log bot moved to the server and measurement of participation in the Telegram community"
    },
    "sintesi": {
-    "it": "Un bot Telegram, eseguito sul server dell'Osservatorio, pubblica le voci rilevanti del Registro, un riepilogo giornaliero alle 8:30 e uno settimanale il lunedì. Il bot misura inoltre l'attività del gruppo della comunità (persone, messaggi, persone attive, grafico dell'andamento) e ne sintetizza discussioni e documenti condivisi: i messaggi restano solo sul server, le persone sono pseudonimizzate, le sintesi non contengono nomi né citazioni e chi lo desidera può uscire con il comando /escludimi.",
-    "en": "A Telegram bot, running on the Observatory's server, posts the relevant Log entries, a daily summary at 8:30 and a weekly one on Mondays. The bot also measures activity in the community group (people, messages, active people, trend chart) and summarises discussions and shared documents: messages stay only on the server, people are pseudonymised, summaries contain no names or quotes, and anyone can opt out with the /escludimi command."
+    "it": "Il bot del registro gira ora su un server dedicato al posto del workflow GitHub Actions. Conta persone, messaggi e persone attive nel gruppo della comunità, disegna il grafico dell'andamento e sintetizza discussioni e documenti condivisi nella sezione «Dalla comunità» dei riepiloghi. I messaggi restano solo sul server e mai in git, le persone sono pseudonimizzate, le sintesi non contengono nomi né citazioni e con /escludimi ci si può escludere; corretto anche un caso in cui i messaggi arrivati prima della configurazione del gruppo sarebbero andati persi.",
+    "en": "The log bot now runs on a dedicated server instead of the GitHub Actions workflow. It counts people, messages and active people in the community group, draws the trend chart and summarises discussions and shared documents in the «From the community» section of the summaries. Messages stay only on the server and never in git, people are pseudonymised, summaries contain no names or quotes, and /escludimi lets anyone opt out; a case where messages arriving before the group was configured would have been lost has also been fixed."
    },
    "commit": [
     "mxmap-it/osservatorio-nazionale-sovranita-digitale@b81f204550",
-    "mxmap-it/osservatorio-nazionale-sovranita-digitale@27e09cd7d0",
-    "mxmap-it/osservatorio-nazionale-sovranita-digitale@42d913c81e"
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@27e09cd7d0"
    ],
-   "n_commit": 3,
+   "n_commit": 2,
    "issue": [],
-   "link": [
-    "https://osservatorio.mxmap.it/registro/"
-   ]
+   "link": []
   }
  ],
  "kpi": {
