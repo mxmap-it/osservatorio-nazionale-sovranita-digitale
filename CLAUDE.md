@@ -425,10 +425,19 @@ pagine. Lo stesso dato alimenta un **bot Telegram**.
 - **Repo privati** (`"pubblico": false`): nel registro solo risultati, niente
   link ai commit/issue, e il prompt omette server, tunnel, credenziali. Se il
   repo non è leggibile il contesto viene **saltato**, mai azzerato.
-- **Automazione:** `.github/workflows/registro.yml`, ogni ora. Live = voci
-  `rilevante`; 8:30 Roma = sintesi di ieri; lunedì 8:30 = settimana. Segreti:
-  `ANTHROPIC_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `REGISTRO_GH_TOKEN`.
-  Il canale va in `hugo.toml` → `registroTelegramURL`.
+- **Automazione: gira sul server**, non su GitHub Actions (decisione del fondatore,
+  19/11/2026): `tools/registro/server.sh` (installa · ciclo · poll) dal cron
+  dell'utente `ubuntu`, su un **clone dedicato** in `~/.local/share/osservatorio-bot/repo`
+  (mai la copia di lavoro). Le sintesi usano Claude Code headless (`--motore cli`),
+  niente API key. Segreti in `~/.local/share/osservatorio-bot/env` (600).
+  Live = voci `rilevante`; 8:30 = sintesi di ieri; lunedì 8:30 = settimana.
+  Il push del clone fa partire `deploy.yml`. Il canale va in `hugo.toml` →
+  `registroTelegramURL`.
+- **Comunità Telegram:** `tools/registro/comunita.py`. Messaggi in
+  `~/.local/share/osservatorio-bot/comunita.db` (600, **mai in git**), persone
+  pseudonimizzate con `COMUNITA_SALT`; `/escludimi` cancella e ignora. Le sintesi
+  non nominano né citano nessuno. Un bot non legge lo storico precedente al suo
+  ingresso: si importa l'export JSON di Telegram Desktop (`comunita.py importa`).
 - **Rigenerare lo storico** (senza API key, con Claude Code): `registro.py raccogli
   --dal 2026-05-01`, poi `sintetizza --dal … --al … --motore cli --forza`,
   `settimana --tutte --motore cli`, e **`telegram segna-tutto`** prima di

@@ -681,6 +681,7 @@ def telegram_riepilogo(prova=False, forza=False, motore="api"):
         t = testo_settimanale(sett)
         if t and invia(t, prova) and not prova:
             s["settimanale"] = sett
+        comunita_post("settimanale", sett, prova)
     else:
         ieri = (oggi - dt.timedelta(days=1)).isoformat()
         if s["giornaliero"] == ieri and not forza:
@@ -691,8 +692,18 @@ def telegram_riepilogo(prova=False, forza=False, motore="api"):
             s["giornaliero"] = ieri
         elif invia(t, prova) and not prova:
             s["giornaliero"] = ieri
+        comunita_post("giornaliero", ieri, prova)
     if not prova:
         salva_stato(s)
+
+
+def comunita_post(modo, periodo, prova=False):
+    """Sezione «Dalla comunità»: errori qui non devono bloccare il registro."""
+    try:
+        import comunita
+        (comunita.post_settimanale if modo == "settimanale" else comunita.post_giornaliero)(periodo, prova)
+    except Exception as e:
+        log(f"comunità: {modo} {periodo} non pubblicato: {e}")
 
 
 def segna_tutto_postato():
@@ -718,14 +729,14 @@ def main():
     a = sub.add_parser("sintetizza")
     a.add_argument("--dal", default=(oggi_roma() - dt.timedelta(days=1)).isoformat())
     a.add_argument("--al", default=oggi_roma().isoformat())
-    a.add_argument("--motore", choices=["api", "cli"], default="api"); a.add_argument("--forza", action="store_true")
+    a.add_argument("--motore", choices=["api", "cli"], default=os.environ.get("REGISTRO_MOTORE", "api")); a.add_argument("--forza", action="store_true")
     a = sub.add_parser("settimana"); a.add_argument("settimana", nargs="?")
-    a.add_argument("--tutte", action="store_true"); a.add_argument("--motore", choices=["api", "cli"], default="api")
+    a.add_argument("--tutte", action="store_true"); a.add_argument("--motore", choices=["api", "cli"], default=os.environ.get("REGISTRO_MOTORE", "api"))
     a.add_argument("--forza", action="store_true")
     a = sub.add_parser("telegram"); a.add_argument("modo", choices=["live", "giornaliero", "settimanale", "riepilogo", "segna-tutto"])
     a.add_argument("--giorno"); a.add_argument("--prova", action="store_true"); a.add_argument("--forza", action="store_true")
-    a.add_argument("--motore", choices=["api", "cli"], default="api")
-    a = sub.add_parser("ciclo"); a.add_argument("--motore", choices=["api", "cli"], default="api")
+    a.add_argument("--motore", choices=["api", "cli"], default=os.environ.get("REGISTRO_MOTORE", "api"))
+    a = sub.add_parser("ciclo"); a.add_argument("--motore", choices=["api", "cli"], default=os.environ.get("REGISTRO_MOTORE", "api"))
     a.add_argument("--prova", action="store_true")
     x = ap.parse_args()
 
