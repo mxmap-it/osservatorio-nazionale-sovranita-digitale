@@ -2,7 +2,7 @@
  "data": "2026-11-19",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "fa59cfed66d71b19",
+  "spesa-ict": "e9240b40049db6bc",
   "osservatorio": "3ed29d09ff09f4d9",
   "mxmap": "37562ed423bca0dd"
  },
@@ -32,24 +32,27 @@
   {
    "id": "2026-11-19-spesa-ict-1",
    "contesto": "spesa-ict",
-   "tipo": "pubblicazione",
+   "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Cruscotto dei contratti: tutti i 667.303 CIG dell'imbuto consultabili",
-    "en": "Contracts dashboard: all 667,303 CIGs in the funnel now searchable"
+    "it": "Imbuto, livello B: quattro segnali BDNCP per raffinare la classificazione dei contratti",
+    "en": "Funnel, level B: four BDNCP signals to refine contract classification"
    },
    "sintesi": {
-    "it": "È online un cruscotto in cui si possono cercare e annotare tutti i 667.303 contratti (CIG) dell'imbuto di classificazione, con gli esiti dei 12 livelli di analisi. Dai totali pubblicati si può scendere fino ai singoli contratti: la verifica ha riprodotto 341 totali su 341. I nomi delle persone fisiche sono oscurati.",
-    "en": "A dashboard is now online where all 667,303 contracts (CIGs) in the classification funnel can be searched and annotated, with the outcomes of the 12 analysis levels. Users can drill down from the published totals to individual contracts: the check reproduced 341 totals out of 341. Names of natural persons are redacted."
+    "it": "L'imbuto di classificazione si arricchisce di un livello B che usa quattro segnali della banca dati BDNCP: quadro economico, affidamenti in-house tramite IPA, durate e PNRR. La spesa ICT rilevata dagli stati di avanzamento (SAL) è compresa fra 5,06 e 19,17 mld, con una stima per classe di 10,71 mld; sono stati tolti 373 CIG con valori impossibili. Nella versione 0.2 il livello esclude 1.274 CIG (130,6 M€); un nuovo campione di misura a cieco dà 34 esiti corretti su 40 (intervallo di Wilson 71-93%).",
+    "en": "The classification funnel gains a level B that uses four signals from the BDNCP database: economic framework, in-house awards via IPA, durations and PNRR. ICT spending recorded in progress statements (SAL) ranges between €5.06 and €19.17 billion, with a per-class estimate of €10.71 billion; 373 CIGs with impossible values were removed. In version 0.2 the level excludes 1,274 CIGs (€130.6M); a new blind measurement sample gives 34 correct results out of 40 (Wilson interval 71-93%)."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@970d9321bb",
-    "mxmap-it/analisi-spesa-ict@150244b1ea"
+    "mxmap-it/analisi-spesa-ict@fff81ff349",
+    "mxmap-it/analisi-spesa-ict@9d57f026f2",
+    "mxmap-it/analisi-spesa-ict@16ac2510d3",
+    "mxmap-it/analisi-spesa-ict@ea1b5cad9f",
+    "mxmap-it/analisi-spesa-ict@a0f630b899"
    ],
-   "n_commit": 2,
+   "n_commit": 5,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#53",
-    "mxmap-it/analisi-spesa-ict#78"
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74"
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
@@ -61,12 +64,12 @@
    "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Tabella unica degli spostamenti: cloud certo a 1,29 miliardi netti, in-house ridimensionato",
-    "en": "Single table of reclassifications: certain cloud at 1.29 billion net, in-house scaled down"
+    "it": "Tabella unica degli spostamenti per CIG: cloud certo a 1,29 mld netti",
+    "en": "Single table of per-CIG shifts: certain cloud at €1.29 billion net"
    },
    "sintesi": {
-    "it": "Una nuova tabella riunisce, contratto per contratto, gli spostamenti di classificazione fra tutti i livelli di raffinamento dell'imbuto. Dopo la verifica a mano dei grandi contratti in-house (Cloud Toscana, accordo quadro da 242,4 M€; CINECA, 117,3 M€ per l'impianto del proprio data center, non cloud), la spesa cloud certa è di 1,29 miliardi netti, quella in-house certa dal 2024 scende da 0,42 a 0,08 miliardi e il residuo da classificare (S6) è di 10,67 miliardi. Rendiconto dell'imbuto aggiornato alla versione 0.20.2.",
-    "en": "A new table brings together, contract by contract, the classification shifts across all refinement levels of the funnel. After manual checks of the large in-house contracts (Cloud Toscana, a 242.4 M€ framework agreement; CINECA, 117.3 M€ for the installation of its own data centre, not cloud), certain cloud spending stands at 1.29 billion net, certain in-house spending since 2024 falls from 0.42 to 0.08 billion, and the residual still to classify (S6) is 10.67 billion. The funnel report is updated to version 0.20.2."
+    "it": "Una tabella unica riporta come ogni contratto (CIG) si sposta fra i livelli di raffinamento dell'imbuto. Dopo la verifica a mano degli affidamenti in-house (Cloud Toscana, 242,4 M€, è un accordo quadro aperto; CINECA, 117,3 M€, è l'impianto del proprio data center e non cloud), il cloud certo sale a 1,29 mld netti, l'in-house certo dal 2024 scende da 0,42 a 0,08 mld e il residuo da classificare (S6) è di 10,67 mld.",
+    "en": "A single table shows how each contract (CIG) moves across the funnel's refinement levels. After manual verification of in-house awards (Cloud Toscana, €242.4M, is an open framework agreement; CINECA, €117.3M, is the build-out of its own data centre and not cloud), certain cloud rises to €1.29 billion net, certain in-house since 2024 falls from €0.42 to €0.08 billion and the residual still to be classified (S6) is €10.67 billion."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@fc09782b4c",
@@ -94,26 +97,21 @@
    "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Livello B dell'imbuto: quattro nuovi segnali dalla banca dati BDNCP",
-    "en": "Funnel level B: four new signals from the BDNCP database"
+    "it": "Imbuto: misurata la precisione dello strato S1 e inclusi gli SmartCIG dal 2024",
+    "en": "Funnel: precision of layer S1 measured and SmartCIGs included from 2024"
    },
    "sintesi": {
-    "it": "L'imbuto usa ora quattro segnali della banca dati dei contratti pubblici (quadro economico, affidamenti in-house tramite IPA, durate, PNRR). Poiché il campo degli stati di avanzamento è talvolta singolo e talvolta progressivo, la spesa ICT per avanzamento lavori è indicata come intervallo fra 5,06 e 19,17 miliardi, con una stima per classe di 10,71; sono stati tolti 373 CIG con valori impossibili. La regola B1 (versione 0.2) esclude 1.274 CIG per 130,6 M€; un campione di misura a cieco dà 34 corretti su 40 (intervallo di Wilson 71-93%).",
-    "en": "The funnel now uses four signals from the public contracts database (economic framework, in-house awards via IPA, durations, PNRR). Because the progress-payment field is sometimes single and sometimes cumulative, ICT spending from progress payments is given as a range between 5.06 and 19.17 billion, with a per-class estimate of 10.71; 373 CIGs with impossible values were removed. Rule B1 (version 0.2) excludes 1,274 CIGs worth 130.6 M€; a blind measurement sample gives 34 correct out of 40 (Wilson interval 71-93%)."
+    "it": "Lo strato S1 dell'imbuto risulta preciso per il 98,7% dei CIG, con 0 contratti cloud su 399 esaminati a cieco. Gli SmartCIG (affidamenti di importo minore) entrano nell'imbuto dal 2024: cloud certo 13,6 M€, residuo 45,1 M€.",
+    "en": "Funnel layer S1 is precise for 98.7% of CIGs, with 0 cloud contracts out of 399 examined blind. SmartCIGs (lower-value awards) enter the funnel from 2024: certain cloud €13.6M, residual €45.1M."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@fff81ff349",
-    "mxmap-it/analisi-spesa-ict@9d57f026f2",
-    "mxmap-it/analisi-spesa-ict@16ac2510d3",
-    "mxmap-it/analisi-spesa-ict@ea1b5cad9f",
-    "mxmap-it/analisi-spesa-ict@a0f630b899",
-    "mxmap-it/analisi-spesa-ict@5c4e173536"
+    "mxmap-it/analisi-spesa-ict@99707ffb50",
+    "mxmap-it/analisi-spesa-ict@4be8d56cb0"
    ],
-   "n_commit": 6,
+   "n_commit": 2,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#71",
-    "mxmap-it/analisi-spesa-ict#73",
-    "mxmap-it/analisi-spesa-ict#74"
+    "mxmap-it/analisi-spesa-ict#76",
+    "mxmap-it/analisi-spesa-ict#77"
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
@@ -129,8 +127,8 @@
     "en": "Seventh blind sample: big tech precision 89.1%, recall 99.0%"
    },
    "sintesi": {
-    "it": "Con regole congelate (v4.5) sono stati estratti 210 nuovi CIG, con etichette fissate e registrate prima del confronto. Sui fornitori big tech la precisione è dell'89,1% (98,9% se pesata in euro) e il richiamo del 99,0%. Aggiornati di conseguenza il metodo e la mappa dei limiti noti.",
-    "en": "With frozen rules (v4.5), 210 new CIGs were drawn, with labels fixed and recorded before the comparison. For big tech suppliers, precision is 89.1% (98.9% when weighted in euros) and recall is 99.0%. The method and the map of known limitations were updated accordingly."
+    "it": "Con le regole v4.5 congelate è stato estratto un nuovo campione di 210 CIG (seme 20261119), con le etichette fissate prima del confronto. Per i grandi fornitori tecnologici la precisione è 89,1% (98,9% pesata in euro) e il richiamo 99,0%.",
+    "en": "With rules v4.5 frozen, a new sample of 210 CIGs was drawn (seed 20261119), with labels fixed before comparison. For big tech suppliers precision is 89.1% (98.9% weighted in euros) and recall 99.0%."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@0bbc693cc8",
@@ -152,24 +150,24 @@
   {
    "id": "2026-11-19-spesa-ict-5",
    "contesto": "spesa-ict",
-   "tipo": "analisi",
+   "tipo": "pubblicazione",
    "rilevante": true,
    "titolo": {
-    "it": "Precisione della regola S1 misurata e contratti SmartCIG inclusi dal 2024",
-    "en": "Precision of rule S1 measured and SmartCIG contracts included from 2024"
+    "it": "Cruscotto dei contratti: 667.303 CIG ricercabili e annotabili",
+    "en": "Contracts dashboard: 667,303 CIGs searchable and annotatable"
    },
    "sintesi": {
-    "it": "La regola S1 risulta corretta per il 98,7% dei CIG, con 0 contratti cloud su 399 controllati a cieco. Da questa versione l'imbuto include anche i contratti SmartCIG dal 2024: 13,6 M€ di cloud certo e 45,1 M€ di residuo. Rendiconto dell'imbuto 0.21.",
-    "en": "Rule S1 proves correct for 98.7% of CIGs, with 0 cloud contracts out of 399 checked blind. From this version the funnel also includes SmartCIG contracts from 2024: 13.6 M€ of certain cloud and 45.1 M€ of residual. Funnel report 0.21."
+    "it": "Nuova pagina pubblica in cui tutti i 667.303 CIG dell'imbuto si possono cercare e annotare, con gli esiti di 12 livelli di classificazione. Dai totali si scende ai singoli contratti, con 341 totali su 341 riprodotti; i nomi di persone fisiche sono oscurati.",
+    "en": "New public page where all 667,303 CIGs in the funnel can be searched and annotated, with the results of 12 classification levels. Users can drill down from totals to individual contracts, with 341 out of 341 totals reproduced; names of natural persons are redacted."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@99707ffb50",
-    "mxmap-it/analisi-spesa-ict@4be8d56cb0"
+    "mxmap-it/analisi-spesa-ict@970d9321bb",
+    "mxmap-it/analisi-spesa-ict@150244b1ea"
    ],
    "n_commit": 2,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#76",
-    "mxmap-it/analisi-spesa-ict#77"
+    "mxmap-it/analisi-spesa-ict#53",
+    "mxmap-it/analisi-spesa-ict#78"
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
@@ -178,28 +176,6 @@
   {
    "id": "2026-11-19-spesa-ict-6",
    "contesto": "spesa-ict",
-   "tipo": "dati",
-   "rilevante": true,
-   "titolo": {
-    "it": "Terzo asse: schede ACN di altri 24 fornitori SaaS, copertura all'85,6%",
-    "en": "Third axis: ACN records for 24 more SaaS suppliers, coverage at 85.6%"
-   },
-   "sintesi": {
-    "it": "Sono state raccolte e archiviate le schede del catalogo ACN di altri 24 fornitori SaaS (104 pagine), di cui 8 dichiarano l'infrastruttura usata. La copertura della categoria SaaS 1.2 sale all'85,6%; la quota extra-UE della categoria è espressa con tre valori: 6,5%, 30,8% e 62,0%.",
-    "en": "The ACN catalogue records of 24 more SaaS suppliers were collected and archived (104 pages), 8 of which declare the infrastructure used. Coverage of SaaS category 1.2 rises to 85.6%; the extra-EU share of the category is expressed with three values: 6.5%, 30.8% and 62.0%."
-   },
-   "commit": [
-    "mxmap-it/analisi-spesa-ict@9666372963"
-   ],
-   "n_commit": 1,
-   "issue": [
-    "mxmap-it/analisi-spesa-ict#70"
-   ],
-   "link": []
-  },
-  {
-   "id": "2026-11-19-spesa-ict-7",
-   "contesto": "spesa-ict",
    "tipo": "metodo",
    "rilevante": true,
    "titolo": {
@@ -207,8 +183,8 @@
     "en": "Repeatability test: the funnel rebuilt from scratch reproduces all figures"
    },
    "sintesi": {
-    "it": "L'intera catena dell'imbuto è stata rieseguita da zero partendo dall'archivio ANAC: tutti i numeri pubblicati sono stati riprodotti, con differenze solo nell'ordine delle righe e negli arrotondamenti. Per eliminare anche queste, i dati sono ora in ordine canonico per CIG, le somme sono calcolate al centesimo e gli ingressi esterni sono registrati, con istruzioni per riprodurre il lavoro.",
-    "en": "The entire funnel pipeline was rerun from scratch starting from the ANAC archive: all published figures were reproduced, with differences only in row order and rounding. To remove these too, the data are now in canonical order by CIG, sums are computed to the cent and external inputs are registered, with instructions for reproducing the work."
+    "it": "L'intera catena dell'imbuto è stata rieseguita da zero a partire dall'archivio ANAC: tutti i numeri pubblicati sono stati riprodotti, con differenze solo nell'ordine delle righe e negli arrotondamenti. Per renderla stabile, i dati sono ora ordinati per CIG, le somme calcolate al centesimo e gli ingressi registrati; è pubblicata una guida per riprodurre i risultati.",
+    "en": "The entire funnel chain was re-run from scratch starting from the ANAC archive: all published figures were reproduced, with differences only in row order and rounding. To make it stable, data are now sorted by CIG, sums computed to the cent and inputs registered; a guide to reproduce the results is published."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@6c291bf3ea",
@@ -222,33 +198,32 @@
     "mxmap-it/analisi-spesa-ict#74",
     "mxmap-it/analisi-spesa-ict#78"
    ],
-   "link": []
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
   },
   {
-   "id": "2026-11-19-spesa-ict-8",
+   "id": "2026-11-19-spesa-ict-7",
    "contesto": "spesa-ict",
    "tipo": "pubblicazione",
    "rilevante": true,
    "titolo": {
-    "it": "Pubblicata la Mappa dell'imbuto e riordinata la sezione Metodo del sito",
-    "en": "Funnel Map published and Method section of the site reorganised"
+    "it": "Mappa dell'imbuto e sito rivisto: dataset, livelli, limiti e mancanze",
+    "en": "Funnel map and revised website: datasets, levels, limits and gaps"
    },
    "sintesi": {
-    "it": "La Mappa dell'imbuto descrive dataset, relazioni, livelli, limiti e mancanze con la loro gravità, con tre grafici. Il sito è stato rivisto per coerenza: i numeri superati sono marcati, i link rotti sono zero, la sezione Metodo è organizzata per gruppi e la pagina dell'imbuto è generata direttamente dagli esiti. Registrato anche che la pagina del censimento ICT AgID, dopo la scadenza, non riporta dati pubblicati.",
-    "en": "The Funnel Map describes datasets, relationships, levels, limitations and gaps with their severity, with three charts. The site was reviewed for consistency: outdated figures are marked, broken links are zero, the Method section is organised by groups and the funnel page is generated directly from the results. It was also recorded that the AgID ICT census page, after its deadline, shows no published data."
+    "it": "È pubblicata la Mappa dell'imbuto, che descrive dataset, relazioni, livelli, limiti e mancanze con la loro gravità, con tre grafici. Il sito è stato rivisto per coerenza: numeri superati marcati come tali, decisioni in vigore, 0 link rotti, sezione Metodo per gruppi e pagina dell'imbuto generata direttamente dagli esiti.",
+    "en": "The Funnel Map is published, describing datasets, relationships, levels, limits and gaps with their severity, with three charts. The website was revised for consistency: superseded figures marked as such, decisions in force, 0 broken links, a Method section organised by group and a funnel page generated directly from the results."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@7ef60c56bf",
     "mxmap-it/analisi-spesa-ict@07ec7dcda3",
-    "mxmap-it/analisi-spesa-ict@1ee66184e8",
-    "mxmap-it/analisi-spesa-ict@c065c23044"
+    "mxmap-it/analisi-spesa-ict@1ee66184e8"
    ],
-   "n_commit": 4,
+   "n_commit": 3,
    "issue": [
     "mxmap-it/analisi-spesa-ict#23",
     "mxmap-it/analisi-spesa-ict#53",
-    "mxmap-it/analisi-spesa-ict#54",
-    "mxmap-it/analisi-spesa-ict#60",
     "mxmap-it/analisi-spesa-ict#71",
     "mxmap-it/analisi-spesa-ict#74",
     "mxmap-it/analisi-spesa-ict#76",
@@ -260,30 +235,7 @@
    ]
   },
   {
-   "id": "2026-11-19-spesa-ict-9",
-   "contesto": "spesa-ict",
-   "tipo": "metodo",
-   "rilevante": true,
-   "titolo": {
-    "it": "Decisione: richieste massive di accesso civico solo dopo il risultato parziale",
-    "en": "Decision: mass civic access requests only after the partial result"
-   },
-   "sintesi": {
-    "it": "È stato deciso che le richieste di accesso civico su larga scala alle amministrazioni partiranno solo alla fine, dopo la pubblicazione del rendiconto sul risultato parziale.",
-    "en": "It was decided that large-scale civic access requests to public administrations will start only at the end, after publication of the report on the partial result."
-   },
-   "commit": [
-    "mxmap-it/analisi-spesa-ict@3bc43e2b65"
-   ],
-   "n_commit": 1,
-   "issue": [
-    "mxmap-it/analisi-spesa-ict#58",
-    "mxmap-it/analisi-spesa-ict#78"
-   ],
-   "link": []
-  },
-  {
-   "id": "2026-11-19-spesa-ict-10",
+   "id": "2026-11-19-spesa-ict-8",
    "contesto": "spesa-ict",
    "tipo": "pubblicazione",
    "rilevante": true,
@@ -292,102 +244,142 @@
     "en": "Methodological design 1.0 with European comparative analysis"
    },
    "sintesi": {
-    "it": "Pubblicata la versione 1.0 del design metodologico, che include un'analisi comparata con esperienze europee; le fonti citate sono state verificate e archiviate.",
-    "en": "Version 1.0 of the methodological design has been published, including a comparative analysis of European experiences; the sources cited have been verified and archived."
+    "it": "Pubblicata la versione 1.0 del design metodologico, che include un'analisi comparata con esperienze europee e fonti verificate e archiviate.",
+    "en": "Version 1.0 of the methodological design is published, including a comparative analysis with European experiences and verified, archived sources."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@60e136d58e"
+    "mxmap-it/analisi-spesa-ict@60e136d58e",
+    "mxmap-it/analisi-spesa-ict@c1f4eec569"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#48",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Terzo asse v0.4: schede ACN di 24 fornitori SaaS in più",
+    "en": "Third axis v0.4: ACN records for 24 additional SaaS suppliers"
+   },
+   "sintesi": {
+    "it": "Sono state raccolte le schede ACN di altri 24 fornitori SaaS (104 pagine archiviate), 8 dei quali dichiarano l'infrastruttura usata. La copertura della categoria SaaS 1.2 sale all'85,6%; per la quota extra-UE della stessa categoria sono riportati tre valori: 6,5%, 30,8% e 62,0%.",
+    "en": "ACN records were collected for 24 more SaaS suppliers (104 pages archived), 8 of which declare the infrastructure they use. Coverage of SaaS category 1.2 rises to 85.6%; for the non-EU share of the same category three values are reported: 6.5%, 30.8% and 62.0%."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@9666372963"
    ],
    "n_commit": 1,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#48"
+    "mxmap-it/analisi-spesa-ict#70"
    ],
-   "link": []
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Copia locale delle fonti: BDAP, Consip, OpenCoesione, openpnrr e SIOPE",
+    "en": "Local copy of sources: BDAP, Consip, OpenCoesione, openpnrr and SIOPE"
+   },
+   "sintesi": {
+    "it": "La copia locale delle fonti pubbliche è stata estesa e verificata: OpenCoesione completo, openpnrr, SIOPE aggiornato, Consip e IndicePA verificati, con lo stato di ogni fonte. Rilevato che i robots.txt di BDAP e Consip escludono rispettivamente i CSV e l'API, oggetto di due raccomandazioni. La pagina del Censimento ICT AgID è stata riletta e archiviata dopo la scadenza: nessun dato risulta pubblicato.",
+    "en": "The local copy of public sources was extended and verified: OpenCoesione complete, openpnrr, SIOPE updated, Consip and IndicePA verified, with the status of each source. It was found that the BDAP and Consip robots.txt files exclude the CSVs and the API respectively, which is the subject of two recommendations. The AgID ICT Census page was re-read and archived after its deadline: no data appear to have been published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@66c580e7dc",
+    "mxmap-it/analisi-spesa-ict@91df2c6637",
+    "mxmap-it/analisi-spesa-ict@6965055530",
+    "mxmap-it/analisi-spesa-ict@c065c23044"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#11",
+    "mxmap-it/analisi-spesa-ict#12",
+    "mxmap-it/analisi-spesa-ict#13",
+    "mxmap-it/analisi-spesa-ict#17",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#26",
+    "mxmap-it/analisi-spesa-ict#54",
+    "mxmap-it/analisi-spesa-ict#60"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
   },
   {
    "id": "2026-11-19-spesa-ict-11",
    "contesto": "spesa-ict",
-   "tipo": "documentazione",
+   "tipo": "metodo",
    "rilevante": false,
    "titolo": {
-    "it": "Rapporto sul perimetro CPV concluso; bozze di contatto in attesa di approvazione",
-    "en": "CPV scope report completed; contact drafts awaiting approval"
+    "it": "Accesso civico massivo rinviato a dopo il rendiconto parziale; bozze di contatto",
+    "en": "Bulk FOI requests postponed until after the partial report; draft contacts"
    },
    "sintesi": {
-    "it": "Il rapporto sul perimetro dei codici CPV è concluso (versione 0.3.2). Sono pronte bozze di contatto per AgID, DataCivicLab e ricercatori europei, che Fabio deve approvare: nessuna è stata inviata.",
-    "en": "The report on the scope of CPV codes is completed (version 0.3.2). Contact drafts for AgID, DataCivicLab and European researchers are ready for Fabio's approval: none has been sent."
+    "it": "Si è deciso di presentare le richieste di accesso civico massivo solo alla fine, dopo il rendiconto del risultato parziale. Concluso il rapporto sul perimetro CPV; preparate bozze di contatto per AgID, DataCivicLab e ricercatori europei, da approvare da Fabio: nessun invio effettuato.",
+    "en": "It was decided to submit bulk freedom-of-information requests only at the end, after the report on the partial result. The report on the CPV perimeter is concluded; draft contacts for AgID, DataCivicLab and European researchers were prepared, pending Fabio's approval: nothing has been sent."
    },
    "commit": [
+    "mxmap-it/analisi-spesa-ict@3bc43e2b65",
     "mxmap-it/analisi-spesa-ict@8c941491aa"
    ],
-   "n_commit": 1,
+   "n_commit": 2,
    "issue": [
     "mxmap-it/analisi-spesa-ict#21",
     "mxmap-it/analisi-spesa-ict#37",
     "mxmap-it/analisi-spesa-ict#49",
-    "mxmap-it/analisi-spesa-ict#59"
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#59",
+    "mxmap-it/analisi-spesa-ict#78"
    ],
    "link": []
   },
   {
    "id": "2026-11-19-spesa-ict-12",
    "contesto": "spesa-ict",
-   "tipo": "dati",
+   "tipo": "analisi",
    "rilevante": false,
    "titolo": {
-    "it": "Copie locali delle fonti: BDAP, Consip, OpenCoesione e OpenPNRR",
-    "en": "Local copies of sources: BDAP, Consip, OpenCoesione and OpenPNRR"
+    "it": "Prova leggera di modelli tabulari (TabICL) sulle etichette esistenti",
+    "en": "Light test of tabular models (TabICL) on existing labels"
    },
    "sintesi": {
-    "it": "Ampliate le copie locali delle fonti pubbliche: elenco BDAP ricavato dai metadati con il perimetro delimitato, catalogo Consip letto dalle pagine HTML, OpenCoesione completo e OpenPNRR. Dove i file robots.txt escludono l'accesso automatico ai dati (CSV BDAP, API Consip) sono state formulate raccomandazioni.",
-    "en": "Local copies of public sources were extended: BDAP list derived from metadata with a defined scope, Consip catalogue read from HTML pages, full OpenCoesione and OpenPNRR. Where robots.txt files exclude automated access to the data (BDAP CSVs, Consip API), recommendations were drafted."
+    "it": "Un modello tabulare provato sulle etichette esistenti ottiene un macro-F1 di 0,92 sul riconoscimento del cloud e copre il 96% del residuo S6, ma solo imitando una delle vie di classificazione già in uso; sulla giurisdizione fa peggio delle regole attuali. La proposta è una prova prospettica come semplice filtro di priorità.",
+    "en": "A tabular model tested on existing labels achieves a macro-F1 of 0.92 on cloud recognition and covers 96% of the S6 residual, but only by imitating one of the classification routes already in use; on jurisdiction it performs worse than the current rules. The proposal is a prospective test as a simple prioritisation filter."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@66c580e7dc"
+    "mxmap-it/analisi-spesa-ict@f86b927001"
    ],
    "n_commit": 1,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#11",
-    "mxmap-it/analisi-spesa-ict#17",
-    "mxmap-it/analisi-spesa-ict#25",
-    "mxmap-it/analisi-spesa-ict#26"
+    "mxmap-it/analisi-spesa-ict#56"
    ],
    "link": []
   },
   {
    "id": "2026-11-19-spesa-ict-13",
    "contesto": "spesa-ict",
-   "tipo": "analisi",
-   "rilevante": false,
-   "titolo": {
-    "it": "Residuo S6: concluso il ripasso delle verifiche sui siti delle amministrazioni",
-    "en": "Residual S6: re-check of administration websites completed"
-   },
-   "sintesi": {
-    "it": "Concluso il nuovo passaggio sul residuo non classificato (livello 4), che ripete i controlli falliti per errori di rete o limiti dei siti; i siti della Difesa restano irraggiungibili per timeout. La chiusura è attesa dopo il giro notturno.",
-    "en": "The new pass on the unclassified residual (level 4), repeating checks that failed due to network errors or site limits, is completed; Defence websites remain unreachable due to timeouts. Closure is expected after the overnight run."
-   },
-   "commit": [
-    "mxmap-it/analisi-spesa-ict@9e739da9b1"
-   ],
-   "n_commit": 1,
-   "issue": [
-    "mxmap-it/analisi-spesa-ict#73"
-   ],
-   "link": []
-  },
-  {
-   "id": "2026-11-19-spesa-ict-14",
-   "contesto": "spesa-ict",
    "tipo": "infrastruttura",
    "rilevante": false,
    "titolo": {
-    "it": "Statistiche di visita senza cookie sul sito",
-    "en": "Cookieless visit statistics on the site"
+    "it": "Statistiche web senza cookie con GoatCounter in self-hosting",
+    "en": "Cookieless web statistics with self-hosted GoatCounter"
    },
    "sintesi": {
-    "it": "Introdotto un contatore di visite ospitato in proprio, senza cookie e senza salvare indirizzi IP, che rispetta le preferenze Do Not Track e GPC e copre con un unico contatore anche mxmap.it e l'Osservatorio.",
-    "en": "A self-hosted visit counter was introduced, without cookies and without storing IP addresses, respecting Do Not Track and GPC preferences and covering mxmap.it and the Observatory with a single counter."
+    "it": "Il sito adotta un contatore di visite ospitato in proprio: niente cookie, nessun indirizzo IP salvato, rispetto delle preferenze Do Not Track e GPC. Un solo contatore copre mxmap.it, l'Osservatorio e questo sito.",
+    "en": "The website adopts a self-hosted visit counter: no cookies, no IP addresses stored, Do Not Track and GPC preferences respected. A single counter covers mxmap.it, the Observatory and this website."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@975971b0a8"
