@@ -1,0 +1,27 @@
+{
+ "settimana": "2026-W34",
+ "dal": "2026-08-17",
+ "al": "2026-08-23",
+ "fonte": "7b19f3953adc6dc8",
+ "titolo": {
+  "it": "MxMap Italia segue il progetto upstream mxmap/secassure2026 senza fondersi",
+  "en": "MxMap Italia follows the upstream mxmap/secassure2026 project without merging"
+ },
+ "sintesi": {
+  "it": "Nella settimana MxMap.it ha definito il rapporto con il progetto originale: lo sviluppo di mxmap prosegue in mxmap/secassure2026, orientato all'area DACH e alla sicurezza della posta elettronica, e la versione italiana ne adotterà selettivamente le modifiche utili senza fondersi. Un'automazione settimanale segnalerà le novità del progetto originale; tra i primi candidati da valutare ci sono i controlli SPF e DMARC e la verifica DANE e DNSSEC. Le scansioni notturne sono rimaste stabili: tra 22.901 e 22.903 enti, copertura tra il 97,24% e il 97,25%, quota extra-UE ferma al 46,9%.",
+  "en": "During the week MxMap.it defined its relationship with the original project: mxmap development continues in mxmap/secassure2026, focused on the DACH area and email security, and the Italian version will selectively adopt useful changes without merging. A weekly automation will report new developments in the original project; among the first candidates to evaluate are SPF and DMARC checks and DANE and DNSSEC verification. Nightly scans remained stable: between 22,901 and 22,903 entities, coverage between 97.24% and 97.25%, non-EU share unchanged at 46.9%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La versione italiana seguirà il nuovo progetto upstream mxmap/secassure2026 senza fondersi con esso, adottandone selettivamente le modifiche; un'automazione settimanale apre una segnalazione con le novità. Tra i primi candidati: controllo di SPF e DMARC, verifica di DANE e DNSSEC e riorganizzazione del classificatore dei fornitori. Le scansioni notturne dal 19 al 23 agosto indicano 22.903 enti, copertura al 97,25%, 46,9% extra-UE, 49,8% in Italia, 0,5% UE non italiana e 2,8% non determinato, senza variazioni nella quota extra-UE.",
+    "en": "The Italian version will follow the new upstream project mxmap/secassure2026 without merging with it, selectively adopting its changes; a weekly automation opens an issue listing new developments. Among the first candidates: SPF and DMARC checks, DANE and DNSSEC verification and a reorganisation of the provider classifier. Nightly scans from 19 to 23 August show 22,903 entities, 97.25% coverage, 46.9% non-EU, 49.8% in Italy, 0.5% EU outside Italy and 2.8% undetermined, with no change in the non-EU share."
+   },
+   "voci": [
+    "2026-08-19-mxmap-1"
+   ]
+  }
+ ],
+ "n_voci": 1
+}

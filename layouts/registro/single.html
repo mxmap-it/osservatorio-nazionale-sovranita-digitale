@@ -1,0 +1,157 @@
+{{ define "main" }}
+{{ $isEN := eq site.Language.Lang "en" }}
+{{ $l := cond $isEN "en" "it" }}
+{{ $sep := cond $isEN "- . ," "- , ." }}
+{{ $R := site.Data.registro }}
+{{ $contesti := $R.contesti }}
+{{ $ctx := dict }}
+{{ range $contesti }}{{ $ctx = merge $ctx (dict .id .) }}{{ end }}
+{{ $tipi := dict
+  "pubblicazione" (slice "Pubblicazione" "Publication") "dati" (slice "Dati" "Data")
+  "analisi" (slice "Analisi" "Analysis") "sviluppo" (slice "Sviluppo" "Development")
+  "bugfix" (slice "Correzione" "Fix") "metodo" (slice "Metodo" "Method")
+  "infrastruttura" (slice "Infrastruttura" "Infrastructure") "documentazione" (slice "Documentazione" "Documentation") }}
+{{ $giorni := sort ($R.giorni | default dict) "data" "desc" }}
+{{ $conta := dict }}{{ $nvoci := 0 }}{{ $ngiorni := 0 }}
+{{ range $giorni }}{{ if .voci }}{{ $ngiorni = add $ngiorni 1 }}{{ end }}{{ range .voci }}{{ $nvoci = add $nvoci 1 }}{{ $conta = merge $conta (dict .contesto (add (index $conta .contesto | default 0) 1)) }}{{ end }}{{ end }}
+{{ $tg := site.Params.registroTelegramURL | default site.Params.telegramURL }}
+
+<style>
+  .reg-filtri .btn { margin: 0 .35rem .5rem 0; }
+  .reg-filtri .btn[aria-pressed="false"] { opacity: .45; }
+  .reg-sett { border-left: 4px solid #0066CC; background: #f2f7fc; padding: 1rem 1.25rem; margin: 2.5rem 0 1.25rem; }
+  .reg-sett h2 { font-size: 1.35rem; margin-bottom: .25rem; }
+  .reg-giorno { margin: 1.75rem 0 .75rem; font-size: 1.1rem; border-bottom: 1px solid #dde3ea; padding-bottom: .25rem; }
+  .reg-voce { border-left: 4px solid var(--c); padding: .15rem 0 .15rem 1rem; margin: 0 0 1.1rem; }
+  .reg-voce h3 { font-size: 1.05rem; margin: .2rem 0 .3rem; }
+  .reg-voce p { margin-bottom: .3rem; font-size: .97rem; }
+  .reg-badge { display: inline-block; font-size: .72rem; font-weight: 600; color: #fff; background: var(--c); border-radius: 3px; padding: .05rem .4rem; margin-right: .35rem; }
+  .reg-tipo { font-size: .75rem; text-transform: uppercase; letter-spacing: .03em; color: #5c6f82; }
+  .reg-ril { font-size: .75rem; color: #a61b1b; font-weight: 600; margin-left: .35rem; }
+  .reg-link { font-size: .85rem; color: #5c6f82; }
+  .reg-link a { margin-right: .6rem; }
+  .reg-kpi { font-size: .9rem; color: #33475b; background: #f6f8fa; border-radius: 4px; padding: .35rem .6rem; margin-bottom: .9rem; }
+  .reg-voce:target { background: #fff8e1; }
+</style>
+
+<div class="container-xxl section-spacing-lg">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <h1>{{ .Title }}</h1>
+      <div class="lead mb-3">{{ .Content }}</div>
+
+      <div class="callout callout-highlight info mb-4">
+        <div class="callout-title"><span>{{ if $isEN }}Follow it on Telegram{{ else }}Seguilo su Telegram{{ end }}</span></div>
+        <p>{{ if $isEN }}A bot posts the relevant updates as they happen, a summary of the previous day every morning at 8:30 and, on Mondays, the weekly summary. Posts are in Italian.{{ else }}Un bot pubblica gli aggiornamenti rilevanti man mano che arrivano, ogni mattina alle 8:30 la sintesi del giorno prima e il lunedì il riepilogo della settimana.{{ end }}
+        <a href="{{ $tg }}" target="_blank" rel="noopener"><strong>{{ if $isEN }}Join the channel{{ else }}Unisciti al canale{{ end }}</strong></a>.</p>
+      </div>
+
+      <p class="text-muted small">
+        {{ lang.FormatNumberCustom 0 $nvoci $sep }} {{ if $isEN }}entries over{{ else }}voci in{{ end }}
+        {{ lang.FormatNumberCustom 0 $ngiorni $sep }} {{ if $isEN }}working days{{ else }}giorni di lavoro{{ end }}.
+        {{ if $isEN }}Filter by work stream:{{ else }}Filtra per contesto:{{ end }}
+      </p>
+      <div class="reg-filtri mb-2" role="group" aria-label="{{ if $isEN }}Filters{{ else }}Filtri{{ end }}">
+        {{ range $contesti }}
+        <button type="button" class="btn btn-sm btn-outline-primary" data-filtro="{{ .id }}" aria-pressed="true">
+          <span class="reg-badge" style="--c: {{ .colore }}">{{ index $conta .id | default 0 }}</span>{{ index .nome $l }}
+        </button>
+        {{ end }}
+      </div>
+      <div class="form-check form-switch mb-4">
+        <input class="form-check-input" type="checkbox" id="solo-rilevanti">
+        <label class="form-check-label" for="solo-rilevanti">{{ if $isEN }}Only highlights{{ else }}Solo gli aggiornamenti rilevanti{{ end }}</label>
+      </div>
+
+      {{ $sett := "" }}{{ $primo := true }}
+      {{ range $giorni }}
+        {{ $g := . }}
+        {{ if ne .settimana $sett }}
+          {{ $sett = .settimana }}
+          {{ $s := index ($R.settimane | default dict) $sett }}
+          <section class="reg-sett" id="s-{{ $sett }}">
+            {{ if $s }}
+              {{ $dal := time.AsTime $s.dal }}{{ $al := time.AsTime $s.al }}
+              <div class="reg-tipo">{{ if $isEN }}Week of{{ else }}Settimana{{ end }} {{ $dal | time.Format ":date_long" }} – {{ $al | time.Format ":date_long" }}</div>
+              <h2>{{ index $s.titolo $l }}</h2>
+              <p class="mb-2">{{ index $s.sintesi $l }}</p>
+              <ul class="mb-0 small">
+                {{ range $s.punti }}{{ $c := index $ctx .contesto }}{{ if $c }}
+                <li data-contesto="{{ .contesto }}"><strong>{{ index $c.breve $l }}</strong> — {{ index .testo $l }}</li>
+                {{ end }}{{ end }}
+              </ul>
+            {{ else if $primo }}
+              <div class="reg-tipo">{{ if $isEN }}Current week{{ else }}Settimana in corso{{ end }}</div>
+              <p class="mb-0 small text-muted">{{ if $isEN }}The weekly summary is published on Monday morning.{{ else }}Il riepilogo della settimana esce il lunedì mattina.{{ end }}</p>
+            {{ else }}
+              {{ $p := split $sett "-W" }}<div class="reg-tipo">{{ if $isEN }}Week {{ index $p 1 }}, {{ index $p 0 }}{{ else }}Settimana {{ index $p 1 }} del {{ index $p 0 }}{{ end }}</div>
+              <p class="mb-0 small text-muted">{{ if $isEN }}Only the nightly MxMap scans this week.{{ else }}In questa settimana solo le scansioni notturne di MxMap.{{ end }}</p>
+            {{ end }}
+            {{ $primo = false }}
+          </section>
+        {{ end }}
+
+        <div class="reg-g" id="g-{{ .data }}">
+          <h2 class="reg-giorno">{{ time.AsTime .data | time.Format ":date_full" }}</h2>
+          {{ with .kpi }}
+          <div class="reg-kpi" data-contesto="mxmap">
+            🛰️ {{ if $isEN }}Nightly MxMap scan{{ else }}Scansione notturna MxMap{{ end }}:
+            {{ with .n_enti }}{{ lang.FormatNumberCustom 0 . $sep }} {{ if $isEN }}bodies{{ else }}enti{{ end }} ·{{ end }}
+            {{ if $isEN }}non-EU{{ else }}extra-UE{{ end }} <strong>{{ lang.FormatNumberCustom 1 (.extra_eu | default 0) $sep }}%</strong>
+            {{ with .delta_extra_eu }}({{ if gt . 0.0 }}+{{ end }}{{ lang.FormatNumberCustom 1 . $sep }}){{ end }}
+            · {{ if $isEN }}Italian{{ else }}italiani{{ end }} {{ lang.FormatNumberCustom 1 (.it | default 0) $sep }}%
+            · {{ if $isEN }}EU non-IT{{ else }}UE non IT{{ end }} {{ lang.FormatNumberCustom 1 (.eu_non_it | default 0) $sep }}%
+            · {{ if $isEN }}unclassified{{ else }}non classificati{{ end }} {{ lang.FormatNumberCustom 1 (.unknown | default 0) $sep }}%
+          </div>
+          {{ end }}
+          {{ range .voci }}
+          {{ $c := index $ctx .contesto }}
+          <article class="reg-voce" id="{{ .id }}" data-contesto="{{ .contesto }}" data-rilevante="{{ .rilevante }}" style="--c: {{ $c.colore }}">
+            <span class="reg-badge" style="--c: {{ $c.colore }}">{{ index $c.breve $l }}</span>
+            <span class="reg-tipo">{{ index (index $tipi .tipo) (cond $isEN 1 0) }}</span>
+            {{ if .rilevante }}<span class="reg-ril">● {{ if $isEN }}highlight{{ else }}rilevante{{ end }}</span>{{ end }}
+            <h3><a href="#{{ .id }}" class="text-decoration-none text-reset">{{ index .titolo $l }}</a></h3>
+            <p>{{ index .sintesi $l }}</p>
+            {{ if or .link .issue .commit }}
+            <div class="reg-link">
+              {{ range .link }}<a href="{{ . }}">{{ replaceRE `^https?://(www\.)?` "" . | strings.TrimSuffix "/" | truncate 60 }}</a>{{ end }}
+              {{ range .issue }}{{ $p := split . "#" }}<a href="https://github.com/{{ index $p 0 }}/issues/{{ index $p 1 }}">{{ index (split (index $p 0) "/") 1 }}#{{ index $p 1 }}</a>{{ end }}
+              {{ range .commit }}{{ $p := split . "@" }}<a href="https://github.com/{{ index $p 0 }}/commit/{{ index $p 1 }}"><code>{{ substr (index $p 1) 0 7 }}</code></a>{{ end }}
+            </div>
+            {{ end }}
+          </article>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var bottoni = document.querySelectorAll('[data-filtro]');
+  var soloRil = document.getElementById('solo-rilevanti');
+  function applica() {
+    var attivi = {};
+    bottoni.forEach(function (b) { attivi[b.dataset.filtro] = b.getAttribute('aria-pressed') === 'true'; });
+    document.querySelectorAll('[data-contesto]').forEach(function (el) {
+      if (el.matches('[data-filtro]')) return;
+      var ok = attivi[el.dataset.contesto] !== false;
+      if (ok && soloRil.checked && el.classList.contains('reg-voce')) ok = el.dataset.rilevante === 'true';
+      if (ok && soloRil.checked && el.classList.contains('reg-kpi')) ok = false;
+      el.hidden = !ok;
+    });
+    document.querySelectorAll('.reg-g').forEach(function (g) {
+      g.hidden = !g.querySelector('.reg-voce:not([hidden]), .reg-kpi:not([hidden])');
+    });
+  }
+  bottoni.forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      applica();
+    });
+  });
+  soloRil.addEventListener('change', applica);
+})();
+</script>
+{{ end }}

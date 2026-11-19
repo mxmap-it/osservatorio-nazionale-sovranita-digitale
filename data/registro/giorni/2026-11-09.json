@@ -1,0 +1,576 @@
+{
+ "data": "2026-11-09",
+ "settimana": "2026-W46",
+ "fonte": {
+  "mxmap": "1ae32d91ba7e0626",
+  "spesa-ict": "e15032293bb21fee",
+  "pvl-at": "74ed73a113b30183"
+ },
+ "voci": [
+  {
+   "id": "2026-11-09-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicata la EU Security Map: posta degli enti di sicurezza europei per giurisdizione",
+    "en": "EU Security Map published: email of European security bodies by jurisdiction"
+   },
+   "sintesi": {
+    "it": "Una nuova pagina in inglese (/eu-security/), consultabile tramite ricerca, mostra su quali fornitori si appoggia la posta degli enti di sicurezza nazionale europei, con una classifica dei paesi per esposizione a fornitori USA. La giurisdizione è valutata rispetto al paese di ciascun ente (nazionale, USA, altro UE, altro estero, sconosciuta). La prima scansione DNS passiva copriva 374 enti in 44 paesi più l'UE, estesa in giornata a 410 enti in 48 paesi più l'UE; è previsto un aggiornamento settimanale.",
+    "en": "A new English-language page (/eu-security/), searchable, shows which providers handle the email of European national-security bodies, with a ranking of countries by exposure to US providers. Jurisdiction is assessed relative to each body's own country (national, US, other EU, other foreign, unknown). The first passive DNS scan covered 374 bodies in 44 countries plus the EU, extended during the day to 410 bodies in 48 countries plus the EU; a weekly update is scheduled."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6da340d0c9",
+    "mxmap-it/mxmap.it@07b1c1f856",
+    "mxmap-it/mxmap.it@117ceb15ed"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/mxmap.it#33"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "EU Security Map a 539 enti, con metodo di individuazione del dominio dichiarato per ciascuno",
+    "en": "EU Security Map expanded to 539 bodies, with the domain-identification method stated for each"
+   },
+   "sintesi": {
+    "it": "Una seconda ondata ha aggiunto forze armate, protezione civile, regolatori nucleari e autorità di sicurezza, portando la mappa a 539 enti. Per ogni dominio ora si indica come è stato stabilito: sito ufficiale, documento ufficiale, fonte terza, deduzione dal sito oppure concordanza tra più modelli linguistici con fonte e record MX verificati. Con questo criterio 29 domini sono stati confermati dalla concordanza ChatGPT+Qwen, e 38 dalla concordanza a tre modelli (ChatGPT, Claude, Qwen).",
+    "en": "A second wave added armed forces, civil protection, nuclear regulators and security authorities, bringing the map to 539 bodies. Each domain now states how it was established: official website, official document, third-party source, inference from the website, or agreement among several language models with a verified source and MX record. Under this criterion 29 domains were confirmed by ChatGPT+Qwen agreement, and 38 by three-model agreement (ChatGPT, Claude, Qwen)."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@02e3dc3ca0",
+    "mxmap-it/mxmap.it@bbb52424c1",
+    "mxmap-it/mxmap.it@ad5f243657"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/mxmap.it#33"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "EU Security Map: dettaglio per settore con classifiche dedicate",
+    "en": "EU Security Map: sector drill-down with dedicated rankings"
+   },
+   "sintesi": {
+    "it": "Gli enti sono ora raggruppati in 7 famiglie (polizia, difesa, intelligence, frontiere e mare, interno e giustizia, cybersicurezza, protezione civile e altro), ciascuna con indicatori, classifiche per paese (esposizione USA e giurisdizione nazionale) e l'elenco degli enti che usano fornitori USA. Permette di confrontare la dipendenza tra settori, non solo tra paesi.",
+    "en": "Bodies are now grouped into 7 families (police, defence, intelligence, border and maritime, interior and justice, cybersecurity, civil protection and other), each with indicators, country rankings (US exposure and national jurisdiction) and the list of bodies using US providers. This allows dependence to be compared across sectors, not only across countries."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@fd4b961613"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#33"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "EU Security Map: censiti enti di sicurezza nazionale e domini email in decine di paesi europei",
+    "en": "EU Security Map: national-security bodies and email domains catalogued across dozens of European countries"
+   },
+   "sintesi": {
+    "it": "È stato redatto il documento di progetto della EU Security Map e raccolta, paese per paese, la ricerca su polizie, forze di frontiera, servizi di intelligence, ministeri e agenzie di cybersicurezza, con i relativi domini email ricavati da fonti ufficiali (per esempio 11 enti per la Romania). Copre tra gli altri Grecia, Cipro, Slovenia, Romania, Bulgaria, Penisola iberica, Irlanda, Regno Unito, Islanda, Europa centro-orientale, Balcani occidentali, Italia, San Marino, Vaticano e le istituzioni UE.",
+    "en": "The EU Security Map design document was drafted and research was compiled country by country on police forces, border forces, intelligence services, ministries and cybersecurity agencies, with their email domains taken from official sources (for example, 11 bodies for Romania). Coverage includes, among others, Greece, Cyprus, Slovenia, Romania, Bulgaria, the Iberian Peninsula, Ireland, the United Kingdom, Iceland, Central and Eastern Europe, the Western Balkans, Italy, San Marino, the Vatican and the EU institutions."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@5aa62a456b",
+    "mxmap-it/mxmap.it@17a49fe378",
+    "mxmap-it/mxmap.it@237b7d54dc",
+    "mxmap-it/mxmap.it@e7b3bd7408",
+    "mxmap-it/mxmap.it@2e18c1aac9",
+    "mxmap-it/mxmap.it@a53748434f",
+    "mxmap-it/mxmap.it@1f5600d189",
+    "mxmap-it/mxmap.it@2bafb5e7e3",
+    "mxmap-it/mxmap.it@dd4f984081",
+    "mxmap-it/mxmap.it@9895b4d6bc",
+    "mxmap-it/mxmap.it@605e04ed50",
+    "mxmap-it/mxmap.it@b5831f9d6c",
+    "mxmap-it/mxmap.it@d854d624a2"
+   ],
+   "n_commit": 13,
+   "issue": [
+    "mxmap-it/mxmap.it#33",
+    "mxmap-it/mxmap.it#35"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Anteprime social aggiornate automaticamente con i dati più recenti",
+    "en": "Social previews automatically updated with the latest data"
+   },
+   "sintesi": {
+    "it": "La EU Security Map ha un'immagine di anteprima per i social generata dagli indicatori verificati (26% USA, 73% nazionale, quota USA per settore, paesi più esposti), che viene rigenerata ogni settimana. Anche l'anteprima della home di mxmap.it, ferma a giugno (22.987 enti, senza risultati), ora si rigenera ogni notte con i risultati aggiornati.",
+    "en": "The EU Security Map has a social preview image generated from verified indicators (26% US, 73% national, US share by sector, most exposed countries), regenerated every week. The mxmap.it home page preview, which was stuck at June (22,987 bodies, no results), is now regenerated every night with up-to-date results."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@2feb37d4ac",
+    "mxmap-it/mxmap.it@0ad354fa1a"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#33"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Convenzioni ICT: 2.260 documenti in copia pubblica (erano 1.782)",
+    "en": "ICT framework agreements: 2,260 documents in public copy (previously 1,782)"
+   },
+   "sintesi": {
+    "it": "Le copie pubbliche dei documenti delle convenzioni salgono a 2.260 file in 75 release, con manifest sha256, grazie a 478 documenti in più provenienti dai registri degli aggregatori (tra cui Azienda Zero e una ricerca su Consip). Il rapporto sulle convenzioni, versione 0.11 ancora in bozza, si aggiorna: documenti ufficiali da 2.041 a 2.257, celle con dato pubblico da 424 a 499, indice medio dal 38 al 45%, documenti mancanti da 757 a 756.",
+    "en": "Public copies of framework agreement documents rise to 2,260 files in 75 releases, with a sha256 manifest, thanks to 478 additional documents from aggregator registers (including Azienda Zero and a Consip search). The framework agreements report, version 0.11 and still a draft, is updated: official documents from 2,041 to 2,257, cells with public data from 424 to 499, average index from 38 to 45%, missing documents from 757 to 756."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@159f522277",
+    "mxmap-it/analisi-spesa-ict@f0ac818954",
+    "mxmap-it/analisi-spesa-ict@cb25c4d3d5",
+    "mxmap-it/analisi-spesa-ict@92e1803415",
+    "mxmap-it/convenzioni-ict-documenti@760fb1769a",
+    "mxmap-it/analisi-spesa-ict@67e6f85f57",
+    "mxmap-it/analisi-spesa-ict@1de6960f53"
+   ],
+   "n_commit": 7,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "BDAP: spesa ICT dello Stato per ministero e difetto nei dati SIOPE riprodotto",
+    "en": "BDAP: State ICT spending by ministry and SIOPE data defect reproduced"
+   },
+   "sintesi": {
+    "it": "Nuova pagina sul dataset BDAP. Collegando le stazioni appaltanti ai ministeri tramite codice fiscale, i CIG ICT ministeriali passano da 10.758 a 23.644; la parte di spesa non coperta si concentra sul MEF, circa 0,3 mld l'anno. Il confronto SIOPE via BDAP con i dati diretti su 20 regioni (2023-2025) riproduce un difetto già segnalato da AgID: Lombardia e Friuli Venezia Giulia 2025 ferme a marzo (1.717 comuni) e 84 comuni di Trento assenti.",
+    "en": "New page on the BDAP dataset. By linking contracting authorities to ministries through their tax code, ministerial ICT CIGs rise from 10,758 to 23,644; the uncovered share of spending is concentrated at the Ministry of Economy and Finance (MEF), about 0.3 bn per year. Comparing SIOPE via BDAP with direct data across 20 regions (2023-2025) reproduces a defect already reported by AgID: Lombardy and Friuli Venezia Giulia 2025 stop at March (1,717 municipalities) and 84 municipalities of Trento are missing."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2196cf39a2",
+    "mxmap-it/analisi-spesa-ict@b5250f6dc0",
+    "mxmap-it/analisi-spesa-ict@ad405e266f",
+    "mxmap-it/analisi-spesa-ict@5e873cbabc",
+    "mxmap-it/analisi-spesa-ict@fbc4199815",
+    "mxmap-it/analisi-spesa-ict@908203c708",
+    "mxmap-it/analisi-spesa-ict@db1433aa62",
+    "mxmap-it/analisi-spesa-ict@9af5c7396e"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#30",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#67"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto di classificazione: rendiconto in bozza, stima S3-S6 dal 2024 a 56,06 mld",
+    "en": "Classification funnel: draft report, S3-S6 estimate from 2024 at 56.06 bn"
+   },
+   "sintesi": {
+    "it": "Il rendiconto dell'imbuto avanza in bozza fino alla versione 0.14, in vista del 12/11, con una sintesi per lettori esterni. È stato gestito il caso dei CIG ripetuti (una riga ANAC per ogni codice CPV) e una prova a secco della versione 0.3.4, non ancora applicata, stima la spesa negli strati S3-S6 dal 2024 in 56,06 mld (prima circa 55,7), con 29 nuovi casi G1 per 3,82 mld. I numeri sono provvisori.",
+    "en": "The funnel report progresses in draft up to version 0.14, ahead of 12/11, with a summary for external readers. Repeated CIGs (one ANAC row per CPV code) were addressed, and a dry run of version 0.3.4, not yet applied, estimates spending in layers S3-S6 from 2024 at 56.06 bn (previously about 55.7), with 29 new G1 cases worth 3.82 bn. Figures are provisional."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@980be9fc9c",
+    "mxmap-it/analisi-spesa-ict@a7e336f2bc",
+    "mxmap-it/analisi-spesa-ict@bc270353c3",
+    "mxmap-it/analisi-spesa-ict@cfaf8f8186",
+    "mxmap-it/analisi-spesa-ict@ed9c902e6f",
+    "mxmap-it/analisi-spesa-ict@31b9a796f7",
+    "mxmap-it/analisi-spesa-ict@7a2092b070",
+    "mxmap-it/analisi-spesa-ict@ad543d7b7f"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#47",
+    "mxmap-it/analisi-spesa-ict#50",
+    "mxmap-it/analisi-spesa-ict#57",
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#68",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#73"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Documento per ANAC v1.1: tutti i 18 problemi pronti, aggiunto quello sugli accordi quadro",
+    "en": "Document for ANAC v1.1: all 18 issues ready, framework agreement issue added"
+   },
+   "sintesi": {
+    "it": "Il documento per ANAC e la relativa presentazione passano alla versione 1.1 con un registro delle revisioni: i 18 problemi segnalati sono tutti documentati. Il nuovo punto P15 riguarda il collegamento tra contratti e accordi quadro: lo 0,82% della spesa ICT non è collegabile, il campo CONVENZIONE sparisce dagli open data dal 2024 e STRUMENTO_SVOLGIMENTO è vuoto nel 98,7% dei casi; norme e modello dati ANAC sono archiviati.",
+    "en": "The document for ANAC and its presentation move to version 1.1 with a revision log: all 18 reported issues are documented. The new item P15 concerns the link between contracts and framework agreements: 0.82% of ICT spending cannot be linked, the CONVENZIONE field disappears from open data from 2024 and STRUMENTO_SVOLGIMENTO is empty in 98.7% of cases; the rules and the ANAC data model are archived."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@794e84c187",
+    "mxmap-it/analisi-spesa-ict@59bb41dcef",
+    "mxmap-it/analisi-spesa-ict@137fc23084",
+    "mxmap-it/analisi-spesa-ict@68d746bbe1"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#34",
+    "mxmap-it/analisi-spesa-ict#35",
+    "mxmap-it/analisi-spesa-ict#46",
+    "mxmap-it/analisi-spesa-ict#50"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Misura 1.2: quota dei prodotti big tech USA e dell'infrastruttura sottostante",
+    "en": "Measure 1.2: share of US big tech products and of underlying infrastructure"
+   },
+   "sintesi": {
+    "it": "Il rendiconto sull'obiettivo 6 (versioni 0.6-0.9) stima che i prodotti big tech USA acquistati con la Misura 1.2 valgano 13,6 M€ (1,7%, 73 CIG) su 818,9 M€, con limiti tra 2,1 e 25%. Considerando anche l'infrastruttura su cui girano i servizi (PSN, SaaS con prove per 122,9 M€), la quota sale al 30,6% / 21,5%, con una forbice tra 3,0 e 62,2%. I risultati sono in bozza.",
+    "en": "The report on objective 6 (versions 0.6-0.9) estimates that US big tech products purchased under Measure 1.2 amount to 13.6 M€ (1.7%, 73 CIGs) out of 818.9 M€, with bounds between 2.1 and 25%. When the infrastructure the services run on is also considered (PSN, SaaS with evidence for 122.9 M€), the share rises to 30.6% / 21.5%, with a range of 3.0 to 62.2%. The results are a draft."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@b8aa9d54b4",
+    "mxmap-it/analisi-spesa-ict@7a446981ce",
+    "mxmap-it/analisi-spesa-ict@453793299c",
+    "mxmap-it/analisi-spesa-ict@b8487b0a43",
+    "mxmap-it/analisi-spesa-ict@9fb0c6eada"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#43",
+    "mxmap-it/analisi-spesa-ict#45"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rivenditori: il 61,2% dei prodotti extra-UE passa da rivenditori con codice fiscale italiano",
+    "en": "Resellers: 61.2% of non-EU products go through resellers with an Italian tax code"
+   },
+   "sintesi": {
+    "it": "La mappa dei rivenditori (versione 4.5) attribuisce 3,023 mld di acquisti di prodotti extra-UE: il 61,2% passa da rivenditori con codice fiscale italiano (79,3% della parte nota, 57,5% considerando il capogruppo), per 2.205 enti. Significa che la spesa verso aziende italiane può comunque finanziare prodotti sotto giurisdizione extra-UE.",
+    "en": "The reseller map (version 4.5) attributes 3.023 bn of non-EU product purchases: 61.2% goes through resellers with an Italian tax code (79.3% of the known share, 57.5% when considering the parent company), across 2,205 bodies. This means spending with Italian companies can still fund products under non-EU jurisdiction."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@947741b7d4",
+    "mxmap-it/analisi-spesa-ict@200181be2e",
+    "mxmap-it/analisi-spesa-ict@9ba5ad88af",
+    "mxmap-it/analisi-spesa-ict@6658189209",
+    "mxmap-it/analisi-spesa-ict@8da9591a4c"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#71"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-8",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rapporto CPV 0.3: affidabilità dei codici ICT per anno e tipo di ente",
+    "en": "CPV report 0.3: reliability of ICT codes by year and type of body"
+   },
+   "sintesi": {
+    "it": "Il rapporto misura quanto i codici CPV descrivono bene gli acquisti: il 6,5% dei CPV ICT riguarda oggetti non ICT (32% nelle scuole) e il 9,2% degli acquisti ICT ha un CPV non ICT; il vocabolario identifica solo il 15% degli acquisti cloud. Il perimetro passa da 385.249 a 383.148 CIG ed è pubblicata una pagina sul perimetro ICT.",
+    "en": "The report measures how well CPV codes describe purchases: 6.5% of ICT CPVs concern non-ICT items (32% in schools) and 9.2% of ICT purchases have a non-ICT CPV; the vocabulary identifies only 15% of cloud purchases. The scope moves from 385,249 to 383,148 CIGs and a page on the ICT scope is published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@834d6834e3"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#44",
+    "mxmap-it/analisi-spesa-ict#59"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-12",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pagina Raccomandazioni con download CSV/JSON",
+    "en": "Recommendations page with CSV/JSON downloads"
+   },
+   "sintesi": {
+    "it": "La pagina delle Raccomandazioni ora è generata dal registro, che viene verificato, ed è scaricabile in CSV e JSON; corretti anche i titoli sugli schermi stretti.",
+    "en": "The Recommendations page is now generated from the register, which is verified, and can be downloaded as CSV and JSON; titles on narrow screens were also fixed."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3a7ff26eb0"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-09-spesa-ict-7",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Classificatore dei prodotti: tre nuovi campioni a cieco e regole corrette fino alla v4.5",
+    "en": "Product classifier: three new blind samples and rules corrected up to v4.5"
+   },
+   "sintesi": {
+    "it": "Le regole che riconoscono i prodotti acquistati sono state misurate su tre nuovi campioni etichettati a cieco, con le etichette fissate prima del confronto: precisione sui big tech 92,2%, 86,2% e 80,7% (98,1% in euro). Dopo ogni misura le classi di errore sono state corrette e il campione è diventato di sviluppo; un settimo campione indipendente è previsto prima del rendiconto finale.",
+    "en": "The rules recognising purchased products were measured on three new blind-labelled samples, with labels fixed before the comparison: big tech precision 92.2%, 86.2% and 80.7% (98.1% by euro value). After each measurement the error classes were corrected and the sample became a development sample; a seventh independent sample is planned before the final report."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@0818f6fb1d",
+    "mxmap-it/analisi-spesa-ict@0f1b7ca88d",
+    "mxmap-it/analisi-spesa-ict@08c9990738",
+    "mxmap-it/analisi-spesa-ict@9bb18871cc",
+    "mxmap-it/analisi-spesa-ict@041e14f126",
+    "mxmap-it/analisi-spesa-ict@e3c0d1973a",
+    "mxmap-it/analisi-spesa-ict@799f2eccd2",
+    "mxmap-it/analisi-spesa-ict@179fd6dac8",
+    "mxmap-it/analisi-spesa-ict@02830f51f0"
+   ],
+   "n_commit": 9,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#72"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Accesso civico massivo: elenco dei documenti mancanti e strumenti preparati, nessun invio",
+    "en": "Bulk civic access: list of missing documents and tools prepared, nothing sent"
+   },
+   "sintesi": {
+    "it": "È stato preparato un elenco unico dei documenti mancanti da chiedere con l'accesso civico (28.807 voci: 756 convenzioni e 28.051 CIG, per 6.626 enti), insieme a modelli di istanza, scadenzario, adattatore PEC, generatore pubblico in anteprima e uno strumento che interpreta le risposte con regole e, per il resto, un modello linguistico, senza applicare nulla in automatico. Deciso l'invio via PEC istituzionale al protocollo; gli enti senza PEC sono 775. Nessuna richiesta è stata inviata o pubblicata.",
+    "en": "A single list of missing documents to request through civic access was prepared (28,807 items: 756 framework agreements and 28,051 CIGs, across 6,626 bodies), along with request templates, a deadline tracker, a PEC adapter, a public generator in preview and a tool that interprets replies with rules and, for the rest, a language model, without applying anything automatically. It was decided to send via institutional PEC to the registry office; 775 bodies have no PEC. No request has been sent or published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1079bb057f",
+    "mxmap-it/analisi-spesa-ict@6cd361728f",
+    "mxmap-it/analisi-spesa-ict@bcad2ca9d1",
+    "mxmap-it/analisi-spesa-ict@f59379ac89",
+    "mxmap-it/analisi-spesa-ict@e1bd7cdf58",
+    "mxmap-it/analisi-spesa-ict@ae5439cc01",
+    "mxmap-it/analisi-spesa-ict@9d800a5807",
+    "mxmap-it/analisi-spesa-ict@c265e0db57",
+    "mxmap-it/analisi-spesa-ict@ea2dd9081b",
+    "mxmap-it/analisi-spesa-ict@a7f9acb085",
+    "mxmap-it/analisi-spesa-ict@f8cdb478f3",
+    "mxmap-it/analisi-spesa-ict@4140429833",
+    "mxmap-it/analisi-spesa-ict@0549b5131a"
+   ],
+   "n_commit": 13,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#58"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Revisione indipendente delle proposte della via 6 dell'imbuto",
+    "en": "Independent review of funnel route 6 proposals"
+   },
+   "sintesi": {
+    "it": "Le proposte di classificazione della via 6 sono state riviste con i criteri C1-C4 e una seconda lettura cieca con un modello: su 175 dei 214 casi letti, 62 concordi, 76 non confermati e 37 discordi. Una ricerca mirata degli atti su 100 CIG ha trovato un solo atto nuovo; i restanti 99 CIG (1.263 M€) entrano con priorità alta nell'elenco per l'accesso civico. Esiti nel rendiconto imbuto 0.15 in bozza.",
+    "en": "Classification proposals from route 6 were reviewed with criteria C1-C4 and a second blind reading by a model: of the 175 out of 214 cases read, 62 agree, 76 are not confirmed and 37 disagree. A targeted search for documents on 100 CIGs found only one new document; the remaining 99 CIGs (1,263 M€) enter the civic access list with high priority. Results are in the draft funnel report 0.15."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@7921c3f1e1",
+    "mxmap-it/analisi-spesa-ict@3136409bc1",
+    "mxmap-it/analisi-spesa-ict@8d6e42851d",
+    "mxmap-it/analisi-spesa-ict@1aaf520870",
+    "mxmap-it/analisi-spesa-ict@28db9ddf9e"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#66"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-spesa-ict-11",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Residuo dell'imbuto: ricerca nei siti degli enti conclusa, 536 CIG con documento",
+    "en": "Funnel residual: search of bodies' websites completed, 536 CIGs with a document"
+   },
+   "sintesi": {
+    "it": "La ricerca nelle sezioni Amministrazione trasparente (livello L4) è conclusa su 4.007 enti su 4.352 e ha trovato 4.393 CIG (7,36 mld). Un ripasso con browser automatico delle pagine quasi vuote ha aggiunto 187 CIG e ha rilevato che 125 indirizzi su 152 risultano errati. In totale 536 CIG (304,8 M€) hanno un documento che cita il CIG; l'elenco per l'accesso civico è stato rigenerato (28.902 voci).",
+    "en": "The search of the Transparent Administration sections (level L4) is completed for 4,007 out of 4,352 bodies and found 4,393 CIGs (7.36 bn). A second pass with an automated browser on near-empty pages added 187 CIGs and found that 125 out of 152 addresses are wrong. In total 536 CIGs (304.8 M€) have a document citing the CIG; the civic access list was regenerated (28,902 items)."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@54c8f84af4",
+    "mxmap-it/analisi-spesa-ict@b5fc4dc664",
+    "mxmap-it/analisi-spesa-ict@c805e200a4",
+    "mxmap-it/analisi-spesa-ict@aa95765f53"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#68",
+    "mxmap-it/analisi-spesa-ict#73"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-spesa-ict-13",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Server: mirror ripresi e un solo job pesante alla volta dopo saturazione della RAM",
+    "en": "Server: mirrors resumed and one heavy job at a time after RAM saturation"
+   },
+   "sintesi": {
+    "it": "I mirror dei dati sono ripresi dopo che è stato liberato spazio su disco. Dopo un incidente del 9/11 con la memoria satura si esegue un solo job pesante alla volta. Migliorato lo strumento di archiviazione delle pagine e riorganizzati lo stato del lavoro e la roadmap, con nuovi ticket.",
+    "en": "Data mirrors resumed after disk space was freed. After an incident on 9/11 with memory saturated, only one heavy job runs at a time. The page archiving tool was improved and the work status and roadmap were reorganised, with new tickets."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1191dbed19",
+    "mxmap-it/analisi-spesa-ict@2751c88e4b",
+    "mxmap-it/analisi-spesa-ict@ad4f7ade94",
+    "mxmap-it/analisi-spesa-ict@c55f285946"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#17",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#43",
+    "mxmap-it/analisi-spesa-ict#69",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#72"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Prima osservazione di come Copilot legge i siti della PA",
+    "en": "First observation of how Copilot reads public administration websites"
+   },
+   "sintesi": {
+    "it": "In una breve sessione di prova su 3 indirizzi, Copilot ha restituito i titoli esatti anche di siti che bloccano gli accessi da datacenter. Come già visto per Gemini, la risposta corretta può però derivare dall'indice del motore di ricerca Bing e non da una lettura diretta della pagina. Il risultato è preliminare: servirà una seconda verifica in un altro giorno, con un indirizzo di controllo che nega l'accesso al crawler di Bing.",
+    "en": "In a short trial session on 3 URLs, Copilot returned the exact titles even of sites that block datacenter access. As already seen with Gemini, however, the correct answer may come from the Bing search index rather than from a live reading of the page. The result is preliminary: a second check on another day is needed, using a control URL that denies access to the Bing crawler."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-09-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Tempo di attesa configurabile per le verifiche anti-bot nelle sonde del browser",
+    "en": "Configurable wait time for anti-bot checks in browser probes"
+   },
+   "sintesi": {
+    "it": "Ora si può impostare con un solo parametro il tempo di attesa sulle pagine di verifica anti-bot in JavaScript. Se il parametro non viene impostato restano i valori attuali (4 e 6 secondi). La modifica prepara una decisione ancora aperta sull'uso di attese più lunghe (8-10 secondi) per una classe di siti, senza cambiare per ora il metodo.",
+    "en": "The wait time on JavaScript anti-bot check pages can now be set with a single parameter. If the parameter is not set, the current values (4 and 6 seconds) remain. The change prepares a still-open decision on using longer waits (8-10 seconds) for one class of sites, without changing the method for now."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22922,
+  "copertura": 94.32,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
+}

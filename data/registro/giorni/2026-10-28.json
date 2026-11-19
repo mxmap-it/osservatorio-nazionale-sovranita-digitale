@@ -1,0 +1,214 @@
+{
+ "data": "2026-10-28",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "f2cfa5bd5fbabb39"
+ },
+ "voci": [
+  {
+   "id": "2026-10-28-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicato il rendiconto per la revisione pubblica sulla spesa PA in servizi cloud (misura v3)",
+    "en": "Report for public review on PA spending on cloud services published (v3 measure)"
+   },
+   "sintesi": {
+    "it": "È online il rendiconto con il metodo e i risultati intermedi della misura v3 della spesa della PA in servizi cloud, riferita al periodo 2022-2026: riepilogo, rivenditori, finanziamenti PNRR cloud, importi da verificare, campione di misura e impronte sha256 delle fonti. Una pagina di revisione permette di esaminare annotazione alla cieca, importi, richieste agli enti e lacune. I risultati sono dichiarati intermedi e sottoposti a revisione pubblica.",
+    "en": "The report with the method and interim results of the v3 measure of PA spending on cloud services, covering 2022-2026, is online: summary, resellers, PNRR cloud funding, amounts to be verified, measurement sample and sha256 fingerprints of the sources. A review page allows examination of blind annotation, amounts, requests to institutions and gaps. The results are declared interim and open to public review."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@b2dfccaf7c",
+    "mxmap-it/analisi-spesa-ict@1133ec96f0",
+    "mxmap-it/analisi-spesa-ict@0d26bb6824",
+    "mxmap-it/analisi-spesa-ict@180961be50"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#43",
+    "mxmap-it/analisi-spesa-ict#48"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-28-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuove regole v3 per attribuire i contratti ai fornitori cloud",
+    "en": "New v3 rules for attributing contracts to cloud providers"
+   },
+   "sintesi": {
+    "it": "Le regole di classificazione sono state riscritte partendo dagli errori riscontrati nella misura v2 e verificate su righe annotate e casi di test. Tra le decisioni del 28/10: ogni CIG contato una sola volta (vale l'ultima versione), attribuzione diretta al provider solo se tutti gli aggiudicatari coincidono, distinzione tra vendita diretta e rivenditore, in-house e software per cloud in casa (come VMware) esclusi dalla misura cloud. Gli importi che sembrano massimali di convenzione sono marcati ed elencati, con totali calcolati con e senza di essi.",
+    "en": "The classification rules were rewritten starting from the errors found in the v2 measure and checked against annotated rows and test cases. Among the decisions of 28/10: each CIG counted only once (the latest version prevails), direct attribution to the provider only if all awardees coincide, distinction between direct sales and resellers, in-house and software for on-premises cloud (such as VMware) excluded from the cloud measure. Amounts that appear to be framework-agreement ceilings are flagged and listed, with totals calculated with and without them."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@4c63769037",
+    "mxmap-it/analisi-spesa-ict@fae86ac904",
+    "mxmap-it/analisi-spesa-ict@da0b5d9d42",
+    "mxmap-it/analisi-spesa-ict@66f74002a1",
+    "mxmap-it/analisi-spesa-ict@7dc83cdb17",
+    "mxmap-it/analisi-spesa-ict@5356784919",
+    "mxmap-it/analisi-spesa-ict@59a2b6eb6c",
+    "mxmap-it/analisi-spesa-ict@2057103a02",
+    "mxmap-it/analisi-spesa-ict@c3efb6cca9",
+    "mxmap-it/analisi-spesa-ict@db5e82a733",
+    "mxmap-it/analisi-spesa-ict@c25aa6fa9d",
+    "mxmap-it/analisi-spesa-ict@06a48fa24f"
+   ],
+   "n_commit": 12,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#22",
+    "mxmap-it/analisi-spesa-ict#48",
+    "mxmap-it/analisi-spesa-ict#52"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-28-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Registro delle richieste e raccomandazioni ad ANAC, Consip, PSN, Sogei, DTD e ACN",
+    "en": "Register of requests and recommendations to ANAC, Consip, PSN, Sogei, DTD and ACN"
+   },
+   "sintesi": {
+    "it": "È stato avviato un registro delle richieste e raccomandazioni rivolte agli enti che gestiscono o producono i dati. Vi sono già annotati casi come un aggiudicatario registrato come «IMPRESA INESISTENTE» e importi di adesione pari al massimale della convenzione.",
+    "en": "A register of requests and recommendations addressed to the bodies that manage or produce the data has been started. It already records cases such as an awardee registered as \"IMPRESA INESISTENTE\" (non-existent company) and adhesion amounts equal to the framework-agreement ceiling."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2958035d6c",
+    "mxmap-it/analisi-spesa-ict@af51313e90",
+    "mxmap-it/analisi-spesa-ict@9efedf3771"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#54"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-28-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Misura estesa al 2022-2026 e collegata ai finanziamenti PNRR cloud",
+    "en": "Measure extended to 2022-2026 and linked to PNRR cloud funding"
+   },
+   "sintesi": {
+    "it": "Poiché i finanziamenti PNRR per il cloud partono dal 2022, la misura copre ora il periodo 2022-2026. I finanziamenti dei dati aperti PA Digitale 2026 sono collegati tramite CUP ai contratti attribuiti, e le relative fonti sono state segnalate per l'archiviazione.",
+    "en": "Since PNRR cloud funding starts in 2022, the measure now covers 2022-2026. Funding from the PA Digitale 2026 open data is linked via CUP to the attributed contracts, and the related sources have been flagged for archiving."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@9dfb52a32c",
+    "mxmap-it/analisi-spesa-ict@8121f6e3cb",
+    "mxmap-it/analisi-spesa-ict@7269a52c6f"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#26",
+    "mxmap-it/analisi-spesa-ict#43",
+    "mxmap-it/analisi-spesa-ict#48"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-28-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Misura cloud riproducibile da zero, con verifica umana alla cieca",
+    "en": "Cloud measure reproducible from scratch, with blind human verification"
+   },
+   "sintesi": {
+    "it": "Uno script e una guida consentono di rifare da zero la misura e il mirror completo dei dati, confrontando l'esito con i numeri pubblicati. La documentazione del metodo descrive difficoltà, vie di attribuzione, verifica umana alla cieca con indice kappa, test e riuso; un registro dei procedimenti traccia ipotesi, errori e correzioni.",
+    "en": "A script and a guide make it possible to redo the measure and the full data mirror from scratch, comparing the outcome with the published figures. The method documentation describes difficulties, attribution routes, blind human verification with the kappa index, tests and reuse; a log of procedures tracks hypotheses, errors and corrections."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@0c4cd9bdc6",
+    "mxmap-it/analisi-spesa-ict@5c6e603ebf",
+    "mxmap-it/analisi-spesa-ict@fb07f2ea36",
+    "mxmap-it/analisi-spesa-ict@5fea47dc85",
+    "mxmap-it/analisi-spesa-ict@9ec8349ca0"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#47",
+    "mxmap-it/analisi-spesa-ict#48"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-28-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Mappa dei rivenditori e campionatore per l'annotazione alla cieca",
+    "en": "Reseller map and sampler for blind annotation"
+   },
+   "sintesi": {
+    "it": "Una mappa dei rivenditori distingue la vendita diretta dei fornitori da quella tramite intermediari, con SAP Italia e ServiceNow riconosciuti come vendita diretta. Il campionatore esclude i campioni già esaminati e produce una copia cieca per gli annotatori.",
+    "en": "A reseller map distinguishes providers' direct sales from sales through intermediaries, with SAP Italia and ServiceNow recognised as direct sales. The sampler excludes samples already examined and produces a blind copy for annotators."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@0e06088b71",
+    "mxmap-it/analisi-spesa-ict@0f80601931",
+    "mxmap-it/analisi-spesa-ict@ddd38b6167"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#48"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-28-spesa-ict-7",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Classificatore v3.1: telefonia in cloud e annotazione assistita",
+    "en": "Classifier v3.1: cloud telephony and assisted annotation"
+   },
+   "sintesi": {
+    "it": "Il classificatore riconosce ora un tipo «telefonia» per VoIP e centralini in cloud. Nella pagina di revisione l'annotatore A può confermare la proposta v3.1 con un clic, mentre l'annotatore B lavora alla cieca, così da mantenere indipendente la verifica.",
+    "en": "The classifier now recognises a \"telephony\" type for VoIP and cloud-based PBX systems. On the review page annotator A can confirm the v3.1 proposal with one click, while annotator B works blind, keeping the verification independent."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@4f365ea03d",
+    "mxmap-it/analisi-spesa-ict@ab7cdf44d6",
+    "mxmap-it/analisi-spesa-ict@7b992a7e6d",
+    "mxmap-it/analisi-spesa-ict@24bf2c2326",
+    "mxmap-it/analisi-spesa-ict@e512655e3b",
+    "mxmap-it/analisi-spesa-ict@f9429d56d8",
+    "mxmap-it/analisi-spesa-ict@6b15355245"
+   ],
+   "n_commit": 7,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#48"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22921,
+  "copertura": 97.27,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

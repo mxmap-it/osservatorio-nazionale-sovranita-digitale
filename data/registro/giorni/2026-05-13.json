@@ -1,0 +1,72 @@
+{
+ "data": "2026-05-13",
+ "settimana": "2026-W20",
+ "fonte": {
+  "mxmap": "4ffd2ba5fb5a9799"
+ },
+ "voci": [
+  {
+   "id": "2026-05-13-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Dataset pubblico scaricabile (CSV/JSON/XLSX) rigenerato e riallineato",
+    "en": "Public downloadable dataset (CSV/JSON/XLSX) regenerated and realigned"
+   },
+   "sintesi": {
+    "it": "I file scaricabili, fermi al 10 maggio, non riflettevano le correzioni di classificazione introdotte nel frattempo: ad esempio un'unione di comuni senza server di posta propri risultava attribuita per errore al fornitore di un comune membro. I file sono stati rigenerati e ora coincidono con i dati mostrati sul sito.",
+    "en": "The downloadable files, last generated on 10 May, did not reflect the classification corrections made since then: for example, a union of municipalities with no mail servers of its own was wrongly attributed to a member municipality's provider. The files have been regenerated and now match the data shown on the site."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d157964df2"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-13-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Scansione notturna: limiti di tempo sulla lettura dei banner SMTP",
+    "en": "Nightly scan: time limits on SMTP banner retrieval"
+   },
+   "sintesi": {
+    "it": "In produzione la scansione si era bloccata per 57 minuti perché alcuni server di posta accettavano la connessione senza mai rispondere. Ora ogni server ha un limite di 10 secondi e l'intera fase ha un tetto di 10 minuti, così un singolo server che non risponde non può più fermare la rilevazione notturna.",
+    "en": "In production the scan had stalled for 57 minutes because some mail servers accepted the connection but never responded. Each server now has a 10-second limit and the whole phase has a 10-minute cap, so a single unresponsive server can no longer halt the nightly survey."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@3313902f29"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-13-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Aggiornamento notturno completo dei 22.935 enti e dei file pubblici",
+    "en": "Full nightly refresh of the 22,935 entities and public files"
+   },
+   "sintesi": {
+    "it": "La procedura notturna ora rigenera ogni notte l'intero dataset italiano (22.935 enti), dall'elenco IndicePA fino all'esportazione dei file CSV/JSON/XLSX, che prima non era inclusa nell'automazione. Questo elimina la causa del disallineamento tra sito e file scaricabili; la durata stimata è di 90-120 minuti.",
+    "en": "The nightly procedure now regenerates the entire Italian dataset (22,935 entities) every night, from the IndicePA registry through to the export of the CSV/JSON/XLSX files, which was previously not part of the automation. This removes the cause of the mismatch between the site and the downloadable files; the estimated run time is 90-120 minutes."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@122515ff12",
+    "mxmap-it/mxmap.it@7ceb6e5a80"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

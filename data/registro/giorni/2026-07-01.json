@@ -1,0 +1,68 @@
+{
+ "data": "2026-07-01",
+ "settimana": "2026-W27",
+ "fonte": {
+  "osservatorio": "624ba5863b2747c0"
+ },
+ "voci": [
+  {
+   "id": "2026-07-01-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il sito dell'Osservatorio è disponibile anche in inglese",
+    "en": "The Observatory website is now also available in English"
+   },
+   "sintesi": {
+    "it": "Tutte le sezioni del sito (decisori, stakeholder, partecipa, stampa, iniziative, dati aperti, ricercatori, kit attivisti, FAQ, chi siamo, metodologia) e gli articoli di report e news hanno ora una versione inglese sotto /en/, con numeri nel formato anglosassone e etichette dei dati tradotte. La versione inglese è indicizzabile dai motori di ricerca e collegata a quella italiana, così l'Osservatorio diventa consultabile anche da interlocutori europei e internazionali.",
+    "en": "All website sections (decision-makers, stakeholders, get involved, press, initiatives, open data, researchers, activist kit, FAQ, about us, methodology) and the report and news articles now have an English version under /en/, with numbers in English format and translated data labels. The English version can be indexed by search engines and is linked to the Italian one, making the Observatory accessible to European and international audiences as well."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4d9ce95434",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@91369de1ac",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a17d47b919"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/en/",
+    "https://osservatorio.mxmap.it/en/metodologia/",
+    "https://osservatorio.mxmap.it/en/dati-aperti/"
+   ]
+  },
+  {
+   "id": "2026-07-01-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Versioni inglesi di tutti i documenti PDF dell'Osservatorio",
+    "en": "English versions of all the Observatory's PDF documents"
+   },
+   "sintesi": {
+    "it": "Sono disponibili in inglese 8 documenti: policy brief, technical brief, report (ancora in bozza), kit per attivisti, scheda per ricercatori, business case per la migrazione, visione strategica e presentazione. Le pagine del sito in inglese rimandano automaticamente ai PDF in inglese; il briefing UE, già in inglese, è collegato in entrambe le lingue.",
+    "en": "8 documents are now available in English: policy brief, technical brief, report (still a draft), activist kit, researchers' factsheet, business case for migration, strategic vision and slide deck. The English pages of the website automatically link to the English PDFs; the EU briefing, already in English, is linked in both languages."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d01e745712"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa-en.pdf",
+    "https://osservatorio.mxmap.it/pdf/report-2026-06-sovranita-digitale-pa-en.pdf",
+    "https://osservatorio.mxmap.it/pdf/technical-brief-sovranita-digitale-pa-en.pdf"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22878,
+  "copertura": 97.22,
+  "extra_eu": 46.6,
+  "eu_non_it": 0.5,
+  "it": 50.1,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

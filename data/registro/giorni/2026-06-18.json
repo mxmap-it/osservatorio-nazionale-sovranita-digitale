@@ -1,0 +1,196 @@
+{
+ "data": "2026-06-18",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "c56c68cdf0cc9055",
+  "osservatorio": "ba83c9bdff260805"
+ },
+ "voci": [
+  {
+   "id": "2026-06-18-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova categoria per i provider europei non italiani: escono dal conteggio «italiano»",
+    "en": "New category for non-Italian European providers: removed from the “Italian” count"
+   },
+   "sintesi": {
+    "it": "OVH, Hetzner, IONOS, Scaleway, Gandi e Infomaniak erano classificati come provider locali e quindi contati come italiani, gonfiando l'indice di sovranità. Ora compaiono come «Provider europeo» in una categoria propria «Europeo (non italiano)»; per semplicità Svizzera e Regno Unito sono trattati come europei. Effetto atteso al prossimo run: circa 118 enti spostati e indice stimato da circa 52,7 a circa 52,1.",
+    "en": "OVH, Hetzner, IONOS, Scaleway, Gandi and Infomaniak were classified as local providers and therefore counted as Italian, inflating the sovereignty index. They now appear as “European provider” in a dedicated “European (non-Italian)” category; for simplicity Switzerland and the United Kingdom are treated as European. Expected effect at the next run: about 118 entities reclassified and the index estimated to move from about 52.7 to about 52.1."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6be5953b89",
+    "mxmap-it/mxmap.it@c0b3bf9c3f"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#21"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-18-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Enti senza record MX: segnalati come anomalia, mai classificati come sovrani o non sovrani",
+    "en": "Entities without MX records: flagged as anomalies, never classified as sovereign or non-sovereign"
+   },
+   "sintesi": {
+    "it": "Principio adottato: senza record MX non c'è dato, quindi l'ente risulta «sconosciuto» e viene segnalato come anomalia. Prima alcuni casi venivano erroneamente contati come self-hosted o come pubblici regionali; al prossimo run i circa 665 enti senza MX saranno trattati in modo coerente. Unica eccezione documentata: 18 enti ASMEL con sola PEC sono attribuiti alla piattaforma pubblica consortile ASMENET, di cui è noto l'uso per la posta ordinaria, mentre 12 enti RUPAR Piemonte restano «sconosciuti».",
+    "en": "Principle adopted: no MX record means no data, so the entity is marked “unknown” and flagged as an anomaly. Previously some cases were wrongly counted as self-hosted or as regional public; at the next run the roughly 665 entities without MX will be handled consistently. The only documented exception: 18 ASMEL entities with only certified email (PEC) are attributed to the public consortium platform ASMENET, known to be used for their ordinary email, while 12 RUPAR Piemonte entities remain “unknown”."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@3e59b2ea6c",
+    "mxmap-it/mxmap.it@98a65bd318"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#18"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-18-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pulsante «Riporta un errore» su mappa, Ricerca PA e PA Centrale",
+    "en": "“Report an error” button on the map, PA Search and Central PA"
+   },
+   "sintesi": {
+    "it": "Ogni scheda della mappa e ogni riga delle viste Ricerca PA e PA Centrale offre ora un pulsante per segnalare un errore, tramite ticket GitHub già compilato con i dati mostrati (ente, dominio, codice IPA, provider, MX, SPF) oppure tramite il canale Telegram. Le correzioni da parte della community diventano così più semplici e verificabili.",
+    "en": "Every map popup and every row in the PA Search and Central PA views now offers a button to report an error, via a GitHub ticket pre-filled with the displayed data (entity, domain, IPA code, provider, MX, SPF) or via the Telegram channel. This makes community corrections simpler and verifiable."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@72a02e9342"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#12"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-18-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Riconosciuti nuovi gateway antispam e corretti i domini di alcuni enti",
+    "en": "New anti-spam gateways recognised and domains corrected for some entities"
+   },
+   "sintesi": {
+    "it": "Aggiunti 9 gateway emersi dal censimento e il servizio «Defender» di Welcome Italia: la classificazione risale così al fornitore reale della posta, spesso Microsoft. Un nuovo script individua dopo ogni scansione altri gateway candidati. Corretti inoltre i domini di CSI Piemonte (ora su csi.it, Microsoft 365) e dell'Ambito Territoriale Caccia Roma 2, la cui posta certificata era stata scambiata per quella ordinaria.",
+    "en": "Added 9 gateways that emerged from the census and Welcome Italia's “Defender” service: the classification now traces back to the actual email provider, often Microsoft. A new script identifies further candidate gateways after each scan. The domains of CSI Piemonte (now on csi.it, Microsoft 365) and of the Ambito Territoriale Caccia Roma 2, whose certified email had been mistaken for ordinary email, were also corrected."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6a9976e931",
+    "mxmap-it/mxmap.it@f056156594",
+    "mxmap-it/mxmap.it@11764d6403",
+    "mxmap-it/mxmap.it@3e7634ceff"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/mxmap.it#14"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-18-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Dataset pubblico: regioni e province corrette",
+    "en": "Public dataset: regions and provinces corrected"
+   },
+   "sintesi": {
+    "it": "Il filtro «Regione» della Ricerca Ente mostrava 71 valori, tra cui nomi di enti, invece delle 20 regioni. Il dataset pubblico (JSON, CSV, XLSX) è stato rigenerato usando i campi geografici puliti: 20 regioni ISTAT e 107 sigle di provincia.",
+    "en": "The “Region” filter in Entity Search showed 71 values, including entity names, instead of the 20 regions. The public dataset (JSON, CSV, XLSX) was regenerated using the clean geographic fields: 20 ISTAT regions and 107 province codes."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6365f92e29"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#19"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-18-mxmap-6",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Migliorata la reperibilità del sito sui motori di ricerca, con sitemap aggiornata ogni notte",
+    "en": "Improved search-engine discoverability of the site, with a sitemap updated nightly"
+   },
+   "sintesi": {
+    "it": "Aggiunti metadati, sitemap rigenerata a ogni scansione notturna, robots.txt e manifest. Il dataset è descritto in modo da poter comparire in Google Dataset Search, con licenza CC BY-SA 4.0.",
+    "en": "Added metadata, a sitemap regenerated at every nightly scan, robots.txt and a manifest. The dataset is described so that it can appear in Google Dataset Search, under a CC BY-SA 4.0 licence."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@05127f4181"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-18-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Aggiunto pa.zerozone.it alla pagina Iniziative",
+    "en": "pa.zerozone.it added to the Initiatives page"
+   },
+   "sintesi": {
+    "it": "La pagina Iniziative ora segnala pa.zerozone.it, un progetto che monitora i siti web e l'infrastruttura della Pubblica Amministrazione italiana. Il sito dà così un riferimento in più a chi si occupa di temi vicini a quelli dell'Osservatorio.",
+    "en": "The Initiatives page now lists pa.zerozone.it, a project that monitors the websites and infrastructure of the Italian Public Administration. The site thus gives one more reference to anyone working on topics close to those of the Observatory."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@87bff348fd"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-18-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sito più facile da trovare sui motori di ricerca, con le statistiche chiave nell'anteprima",
+    "en": "Site easier to find on search engines, with key statistics in the preview"
+   },
+   "sintesi": {
+    "it": "La descrizione della home mostrata nei risultati di ricerca e nelle condivisioni social ora riporta le statistiche principali: quota extra-UE, quota italiana e numero di enti. Si aggiorna da sola insieme ai dati. Il sito è ora segnalato ai motori di ricerca anche come dataset, con il nome «Osservatorio Nazionale Sovranità Digitale» e il nome alternativo «MxMap Italia». La mappa del sito si rigenera a ogni aggiornamento e le lingue non ancora tradotte sono escluse dall'indicizzazione.",
+    "en": "The home page description shown in search results and social media shares now gives the main statistics: the non-EU share, the Italian share and the number of entities. It updates automatically along with the data. The site is now also flagged to search engines as a dataset, under the name «Osservatorio Nazionale Sovranità Digitale» and the alternate name «MxMap Italia». The sitemap is regenerated with every update, and languages not yet translated are excluded from indexing."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@596e4fe62e",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@af2bc531c3"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ]
+}

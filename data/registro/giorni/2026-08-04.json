@@ -1,0 +1,139 @@
+{
+ "data": "2026-08-04",
+ "settimana": "2026-W32",
+ "fonte": {
+  "osservatorio": "6f6d56de611ee4f2"
+ },
+ "voci": [
+  {
+   "id": "2026-08-04-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Misure tecniche dei fornitori cloud: completata l'analisi di Google, Oracle e Amazon",
+    "en": "Cloud providers' technical measures: analysis of Google, Oracle and Amazon completed"
+   },
+   "sintesi": {
+    "it": "Pubblicate le analisi su Google, Oracle e Amazon e una sintesi sui quattro grandi fornitori, che li confronta con l'offerta PSN. Ne emergono tre punti. «PSN Managed» comprende in realtà due architetture distinte. Nel catalogo ANSSI (130 pagine lette) Oracle, Microsoft, Amazon, AWS e PSN compaiono zero volte. Infine, ogni misura protegge contro avversari specifici ma crea un nuovo elemento (una chiave, un'attestazione, un control plane) che resta nella disponibilità del fornitore. La pagina precisa che questo non dimostra comportamenti scorretti né divulgazioni di dati pubblici italiani.",
+    "en": "Analyses of Google, Oracle and Amazon have been published, together with a summary of the four large providers that compares them with the PSN offering. Three points emerge. \"PSN Managed\" actually covers two distinct architectures. In the ANSSI catalogue (130 pages read), Oracle, Microsoft, Amazon, AWS and PSN appear zero times. Finally, each measure protects against specific adversaries but creates a new element (a key, an attestation, a control plane) that remains within the provider's control. The page states that this does not prove any wrongdoing or any disclosure of Italian public data."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@90b1b1904c",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@02cdc9e50b",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@8f39855ca8"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/psn/",
+    "https://osservatorio.mxmap.it/en/psn/"
+   ]
+  },
+  {
+   "id": "2026-08-04-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova pagina «Perché il PSN non garantisce la sovranità digitale», con scenari e proposte",
+    "en": "New page \"Why the PSN does not guarantee digital sovereignty\", with scenarios and proposals"
+   },
+   "sintesi": {
+    "it": "La pagina sulle misure tecniche diventa /psn/, il documento di riferimento sul Polo Strategico Nazionale; il vecchio indirizzo reindirizza alla nuova pagina. In apertura il documento riconosce ciò che il programma ottiene davvero, cioè consolidamento e sicurezza, e include una sezione che spiega come verificare l'analisi. La pagina valuta sette scenari di minaccia: il programma regge nei primi tre, mentre l'esposizione si concentra su ordini giuridici esteri, controllo del software, continuità senza il fornitore e metadati. Chiudono sei misure praticabili, nessuna delle quali richiede di abbandonare i fornitori attuali.",
+    "en": "The technical measures page becomes /psn/, the reference document on the National Strategic Hub (PSN); the old address redirects to the new page. The document opens by acknowledging what the programme actually achieves, namely consolidation and security, and includes a section explaining how to verify the analysis. The page assesses seven threat scenarios: the programme holds up in the first three, while exposure is concentrated on foreign legal orders, software control, continuity without the provider and metadata. It closes with six practicable measures, none of which requires abandoning current providers."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c791c7ddee",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@bc8c50e0d8",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@32b89c27e8",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2c980dc25a"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/psn/",
+    "https://osservatorio.mxmap.it/en/psn/"
+   ]
+  },
+  {
+   "id": "2026-08-04-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Due revisioni esterne: corretti errori già pubblicati sulla pagina PSN",
+    "en": "Two external reviews: errors already published on the PSN page corrected"
+   },
+   "sintesi": {
+    "it": "Il documento è stato sottoposto a due revisioni esterne, verificate punto per punto sulle fonti primarie. Sono stati corretti errori già pubblicati. Il primo riguarda il Golden Power, che per legge può applicarsi solo a soggetti di diritto italiano e non ai fornitori esteri. Il secondo riguarda l'affermazione che non si possa calcolare su dati cifrati, falsa per via della crittografia omomorfica. Il terzo è la confusione tra Nitro System e Nitro Enclaves. Sono stati accolti altri rilievi e respinti quelli non documentati, ed è stato pubblicato uno standard probatorio in dodici regole.",
+    "en": "The document underwent two external reviews, checked point by point against primary sources. Errors that had already been published were corrected. The first concerns the Golden Power, which by law can apply only to entities under Italian law and not to foreign providers. The second concerns the claim that computation on encrypted data is impossible, which homomorphic encryption shows to be false. The third is the confusion between Nitro System and Nitro Enclaves. Other comments were accepted and undocumented ones rejected, and an evidentiary standard of twelve rules was published."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@17c0483514",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@8426f02a56"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/psn/",
+    "https://osservatorio.mxmap.it/en/psn/"
+   ]
+  },
+  {
+   "id": "2026-08-04-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Analisi PSN in PDF (24 pagine, IT/EN), fonti accanto alle citazioni e sezione per i decisori",
+    "en": "PSN analysis as PDF (24 pages, IT/EN), sources next to quotes and section for decision-makers"
+   },
+   "sintesi": {
+    "it": "Pubblicato il PDF dell'analisi in italiano e inglese: 24 pagine e 90.000 caratteri, generati direttamente dalla pagina web, così che non esista un testo parallelo che possa divergere. Accanto alle citazioni principali compaiono ora dodici blocchi «Fonte:», e la pagina contiene 51 link esterni distinti verificabili. Una nuova sezione per i decisori raccoglie in sintesi il giudizio e le sei misure proposte.",
+    "en": "The PDF of the analysis has been published in Italian and English: 24 pages and 90,000 characters, generated directly from the web page, so that no parallel text exists that could diverge. Twelve \"Source:\" blocks now appear next to the main quotations, and the page contains 51 distinct, verifiable external links. A new section for decision-makers summarises the assessment and the six proposed measures."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@bbf936d32f"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/psn-analisi-profili-sovranita-digitale.pdf",
+    "https://osservatorio.mxmap.it/pdf/psn-digital-sovereignty-profile-analysis-en.pdf",
+    "https://osservatorio.mxmap.it/psn/"
+   ]
+  },
+  {
+   "id": "2026-08-04-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Il sito non carica più risorse da terzi: font, CSS, JS e icone serviti dal proprio dominio",
+    "en": "The site no longer loads third-party resources: fonts, CSS, JS and icons served from its own domain"
+   },
+   "sintesi": {
+    "it": "I caratteri Titillium Web e il framework Bootstrap Italia, finora caricati da Google Fonts e da un CDN, sono ora ospitati sul dominio dell'Osservatorio. In questo modo si evitano dipendenze esterne e la trasmissione dell'indirizzo IP dei lettori a terzi. La verifica nel browser registra zero richieste di rete verso host esterni, e la pagina PSN invita i lettori a controllarlo da sé.",
+    "en": "The Titillium Web fonts and the Bootstrap Italia framework, previously loaded from Google Fonts and a CDN, are now hosted on the Observatory's own domain. This avoids external dependencies and the transmission of readers' IP addresses to third parties. A check in the browser records zero network requests to external hosts, and the PSN page invites readers to verify this themselves."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@6a739df6cf"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22897,
+  "copertura": 97.27,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

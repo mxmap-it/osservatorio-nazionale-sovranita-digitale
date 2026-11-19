@@ -1,0 +1,64 @@
+{
+ "data": "2026-10-31",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "08ef80c941a6f5f0"
+ },
+ "voci": [
+  {
+   "id": "2026-10-31-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Metodologia e decisioni: imbuto di classificazione a strati e soglia d'importo",
+    "en": "Methodology and decisions: layered classification funnel and amount threshold"
+   },
+   "sintesi": {
+    "it": "È stata documentata la metodologia dell'analisi della spesa ICT. I contratti vengono classificati con un imbuto a strati e si applica una soglia d'importo. Sono stati indicati i gruppi di contratti da approfondire e l'esito atteso in termini di policy. Le scelte di metodo sono così esplicite e verificabili prima della pubblicazione dei risultati.",
+    "en": "The methodology of the ICT spending analysis has been documented. Contracts are classified through a layered funnel and an amount threshold is applied. The groups of contracts that need closer examination and the expected policy outcome have been set out. The methodological choices are thus explicit and verifiable before results are published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1ace290f55"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-31-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Piano per l'acquisizione dei documenti di gara, prima e dopo il 2024",
+    "en": "Plan for acquiring tender documents, before and after 2024"
+   },
+   "sintesi": {
+    "it": "È stato definito come acquisire i documenti dei contratti, con un trattamento distinto per gli atti precedenti e successivi al 2024. Il percorso di recupero si articola su più livelli. La misura della disponibilità dei riferimenti ai documenti è prevista ma non ancora effettuata.",
+    "en": "The approach for acquiring contract documents has been defined, with separate handling for records before and after 2024. The retrieval path is organised in several levels. A measurement of how many references to documents are available is planned but has not yet been carried out."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@d2c696c35b"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22923,
+  "copertura": 97.28,
+  "extra_eu": 47.2,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "settimana": "2026-W24",
+ "dal": "2026-06-08",
+ "al": "2026-06-14",
+ "fonte": "055d8ddc9976cae1",
+ "titolo": {
+  "it": "MxMap misura affidabilità e sovranità della posta; online il sito dell'Osservatorio",
+  "en": "MxMap measures classification confidence and mail sovereignty; Observatory website goes live"
+ },
+ "sintesi": {
+  "it": "MxMap.it ha adottato le regole di affidabilità di un paper accademico presentato a ESORICS 2026 e un modello che distingue i server di posta domestici da quelli esteri: nel primo report il 49,6% degli enti risulta con server di posta all'estero. In una pagina pubblica sono ora elencati i 767 enti (3,34%) con dati incompleti o incerti. Sono online anche la pagina Statistiche e il feed aperto kpi.json, che alimenta il sito dell'Osservatorio, pubblicato in prima versione con pagine dedicate ai diversi pubblici e otto documenti PDF. La pubblicazione notturna dei dati è stata ripristinata e resa più robusta. Lo storico delle rilevazioni è pronto, ma si attiverà solo con il primo scan ufficiale.",
+  "en": "MxMap.it adopted the confidence rules of an academic paper presented at ESORICS 2026, together with a model that distinguishes domestic from foreign mail servers: in the first report, 49.6% of entities have their mail servers abroad. A public page now lists the 767 entities (3.34%) with incomplete or uncertain data. The Statistics page and the open kpi.json feed are also online; the feed powers the Observatory website, which launched in a first version with pages for different audiences and eight PDF documents. Nightly data publication was restored and made more robust. The scan history system is ready, but will only be activated with the first official scan."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La classificazione adotta 7 regole di affidabilità tratte dal paper ESORICS 2026 e distingue i server di posta domestici da quelli esteri. Con le nuove regole 219 enti sono passati da cloud a indipendenti, mentre una mappatura corretta ha attribuito a Microsoft 365 893 scuole prima classificate come «Sconosciuto». Sono state pubblicate la pagina delle anomalie (767 enti, 3,34%), la pagina Statistiche (indice ISD 52,65%, quota soggetta al CLOUD Act 47,34%) e il feed aperto kpi.json; la pubblicazione notturna è stata ripristinata e resa più robusta.",
+    "en": "The classification adopts 7 confidence rules taken from the ESORICS 2026 paper and distinguishes domestic from foreign mail servers. Under the new rules, 219 entities moved from cloud to independent, while a corrected mapping assigned 893 schools previously classified as \"Unknown\" to Microsoft 365. The anomalies page (767 entities, 3.34%), the Statistics page (ISD index 52.65%, share subject to the CLOUD Act 47.34%) and the open kpi.json feed were published; nightly publication was restored and made more robust."
+   },
+   "voci": [
+    "2026-06-11-mxmap-1",
+    "2026-06-12-mxmap-1",
+    "2026-06-14-mxmap-1",
+    "2026-06-14-mxmap-2"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È online la prima versione del sito, realizzata con Bootstrap Italia, con FAQ, la pagina «Partecipa al progetto» e sezioni per decisori, stakeholder, stampa, attivisti e ricercatori. Sono stati pubblicati otto documenti PDF, tra cui un Policy Brief e un Technical Brief per i regolatori. Gli indicatori chiave ora arrivano ogni giorno dai dati di MxMap. È stata annunciata la presentazione del report alla Camera, con una data provvisoria ancora da confermare.",
+    "en": "The first version of the website is online, built with Bootstrap Italia, with FAQs, the \"Get involved\" page and sections for decision-makers, stakeholders, press, activists and researchers. Eight PDF documents were published, including a Policy Brief and a Technical Brief for regulators. Key indicators now come daily from MxMap data. The presentation of the report at the Chamber of Deputies was announced, with a provisional date still to be confirmed."
+   },
+   "voci": [
+    "2026-06-12-osservatorio-1",
+    "2026-06-14-osservatorio-1",
+    "2026-06-14-osservatorio-2",
+    "2026-06-14-osservatorio-3"
+   ]
+  }
+ ],
+ "n_voci": 21
+}

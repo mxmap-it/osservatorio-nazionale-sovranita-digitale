@@ -1,0 +1,75 @@
+{
+ "data": "2026-05-02",
+ "settimana": "2026-W18",
+ "fonte": {
+  "mxmap": "0f995189ac95e5a7",
+  "spesa-ict": "",
+  "osservatorio": "",
+  "pvl-at": ""
+ },
+ "voci": [
+  {
+   "id": "2026-05-02-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Definito il perimetro della versione italiana di MxMap: Regioni, Province e Comuni",
+    "en": "Scope defined for the Italian version of MxMap: Regions, Provinces and Municipalities"
+   },
+   "sintesi": {
+    "it": "Pubblicata la guida che fissa il perimetro dell'adattamento italiano: solo Regioni, Province e Comuni, senza PEC, scuole né altri livelli di enti, usando IndicePA come elenco di partenza e il sito istituzionale di ogni ente per ricavarne il dominio. La guida elenca anche le società informatiche regionali in-house (es. Lepida, ARIA, CSI Piemonte, Insiel, Sogei) e i principali fornitori privati della PA, per classificare correttamente chi gestisce la posta degli enti.",
+    "en": "A guide was published that sets the scope of the Italian adaptation: only Regions, Provinces and Municipalities, with no certified email (PEC), schools or other tiers of bodies. It uses IndicePA as the starting list and each body's institutional website to derive its domain. The guide also lists the in-house regional IT companies (e.g. Lepida, ARIA, CSI Piemonte, Insiel, Sogei) and the main private PA contractors, so that whoever runs each body's email can be classified correctly."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@11aecda26e"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-02-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Elenco di 7.994 enti territoriali da IndicePA, collegati alle mappe OpenStreetMap",
+    "en": "List of 7,994 territorial bodies from IndicePA, linked to OpenStreetMap"
+   },
+   "sintesi": {
+    "it": "Un nuovo script scarica da IndicePA gli enti territoriali italiani, escludendo enti in liquidazione, enti senza sito istituzionale utilizzabile, consorzi, unioni e comunità montane. Grazie a una tabella di corrispondenza ricavata da Wikidata, 7.990 enti su 7.994 (99,95%) sono collegati al proprio confine su OpenStreetMap: tutte le 22 Regioni e i 7.870 Comuni, 84 Province su 87 (mancano 3 province sarde riformate) e 14 Città metropolitane su 15. I codici delle Regioni sono stati verificati direttamente su OpenStreetMap.",
+    "en": "A new script downloads Italian territorial bodies from IndicePA, excluding bodies in liquidation, bodies without a usable institutional website, consortia, unions and mountain communities. Using a correspondence table derived from Wikidata, 7,990 of 7,994 bodies (99.95%) are linked to their boundary on OpenStreetMap: all 22 Regions and 7,870 Municipalities, 84 of 87 Provinces (3 reformed Sardinian provinces are missing) and 14 of 15 Metropolitan Cities. The Region codes were checked directly against OpenStreetMap."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@18019bb617",
+    "mxmap-it/mxmap.it@1d9ddd2e1b"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-02-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Script per scaricare i confini amministrativi italiani su tre livelli",
+    "en": "Script to download Italian administrative boundaries at three levels"
+   },
+   "sintesi": {
+    "it": "Aggiunto uno script che scarica da OpenStreetMap i confini di Regioni, Province e Città metropolitane e di circa 7.900 Comuni, per disegnare la mappa italiana. Lo script è predisposto ma deve ancora essere eseguito sul server.",
+    "en": "A script was added that downloads from OpenStreetMap the boundaries of Regions, Provinces and Metropolitan Cities, and of about 7,900 Municipalities, to draw the Italian map. The script is ready but has yet to be run on the server."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@a4fabb29a0"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

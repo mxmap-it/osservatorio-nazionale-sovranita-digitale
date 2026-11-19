@@ -1,0 +1,41 @@
+{
+ "data": "2026-06-30",
+ "settimana": "2026-W27",
+ "fonte": {
+  "osservatorio": "0f6e26cd8f231b6e"
+ },
+ "voci": [
+  {
+   "id": "2026-06-30-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il sito diventa bilingue: prima versione inglese di homepage, intestazione e piè di pagina",
+    "en": "The site becomes bilingual: first English version of homepage, header and footer"
+   },
+   "sintesi": {
+    "it": "Il sito dell'Osservatorio ha ora una versione inglese all'indirizzo /en/. Per ora sono tradotti l'intestazione, il piè di pagina e la homepage, inclusi gli indicatori principali e gli inviti a Telegram e a MxMap. La traduzione degli altri contenuti è ancora in corso. È stata inoltre fissata una regola di lavoro: ogni modifica ai testi italiani va accompagnata dall'aggiornamento della versione inglese, così le due lingue restano allineate.",
+    "en": "The Observatory website now has an English version at /en/. So far the header, the footer and the homepage have been translated, including the main indicators and the calls to join Telegram and visit MxMap. Translation of the remaining content is still in progress. A working rule has also been set: every change to the Italian texts must come with an update to the English version, so the two languages stay aligned."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e389f03476",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e81c634e81"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22878,
+  "copertura": 97.31,
+  "extra_eu": 46.6,
+  "eu_non_it": 0.5,
+  "it": 50.1,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

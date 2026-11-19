@@ -1,0 +1,65 @@
+{
+ "settimana": "2026-W46",
+ "dal": "2026-11-09",
+ "al": "2026-11-15",
+ "fonte": "9d58b2465808d428",
+ "titolo": {
+  "it": "EU Security Map pubblicata con 539 enti; spesa ICT confrontata con il pagato SIOPE e BDAP",
+  "en": "EU Security Map published with 539 bodies; ICT spending compared with SIOPE and BDAP payments"
+ },
+ "sintesi": {
+  "it": "La settimana ha visto la pubblicazione della EU Security Map: mostra su quali fornitori si appoggia la posta di 539 enti di sicurezza europei, con classifiche per paese e per settore e con il metodo usato per individuare ciascun dominio. L'analisi della spesa ICT ha ora un riferimento di spesa effettiva, cioè 5,1 miliardi di euro pagati nel 2024 secondo SIOPE e BDAP, da confrontare con il valore dei contratti, che è circa 3,5 volte il pagato. Il documento per ANAC è arrivato alla versione 1.1 con tutti i 18 problemi documentati. Nel progetto PVL il perimetro è stato riconciliato con IndicePA a 23.770 enti ed è iniziata la ricostruzione dei 6.933 enti che non vi compaiono. Molti risultati della spesa ICT sono ancora in bozza.",
+  "en": "This week the EU Security Map was published. It shows which providers handle the email of 539 European security bodies, with rankings by country and by sector and the method used to identify each domain. The ICT spending analysis now has a reference for actual spending: €5.1 billion paid in 2024 according to SIOPE and BDAP, to be compared with contract values, which are about 3.5 times the amount paid. The document for ANAC reached version 1.1, with all 18 issues documented. In the PVL project the scope was reconciled with IndicePA at 23,770 bodies, and reconstruction of the 6,933 bodies missing from it began. Many of the ICT spending results are still in draft."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "È stata pubblicata la EU Security Map (/eu-security/). In giornata è passata da 374 enti in 44 paesi più l'UE a 539 enti, ciascuno con il metodo di individuazione del dominio dichiarato. Gli enti sono raggruppati in 7 settori, con classifiche dedicate; un aggiornamento settimanale è previsto. La scansione notturna di mxmap.it è rimasta stabile per tutta la settimana: 22.924 enti, quota extra-UE al 43,3%.",
+    "en": "The EU Security Map (/eu-security/) was published. Within the day it grew from 374 bodies in 44 countries plus the EU to 539 bodies, each with the method used to identify its domain stated. Bodies are grouped into 7 sectors, each with its own rankings; a weekly update is planned. The mxmap.it nightly scan stayed stable all week: 22,924 bodies, extra-EU share at 43.3%."
+   },
+   "voci": [
+    "2026-11-09-mxmap-2",
+    "2026-11-09-mxmap-3",
+    "2026-11-09-mxmap-4"
+   ]
+  },
+  {
+   "contesto": "spesa-ict",
+   "testo": {
+    "it": "Collegando SIOPE e BDAP ai contratti si ottengono 5,1 miliardi di euro di pagato ICT nel 2024. Il documento per ANAC è passato alla versione 1.1 con 18 problemi documentati, e le copie pubbliche delle convenzioni sono salite a 2.260 file. Tra le analisi in bozza: il 61,2% dei prodotti extra-UE passa da rivenditori con codice fiscale italiano, e per la Lombardia non risultano CIG della Regione verso ARIA.",
+    "en": "Linking SIOPE and BDAP to contracts gives €5.1 billion in ICT payments in 2024. The document for ANAC moved to version 1.1 with 18 issues documented, and public copies of framework agreement documents rose to 2,260 files. Among the draft analyses: 61.2% of extra-EU products go through resellers with an Italian tax code, and for Lombardy no Region CIGs to ARIA were found."
+   },
+   "voci": [
+    "2026-11-10-spesa-ict-1",
+    "2026-11-09-spesa-ict-4",
+    "2026-11-09-spesa-ict-6",
+    "2026-11-10-spesa-ict-3"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È pronta la presentazione per SFSCon 2026, aggiornata al rilevamento del 9 novembre: 42 slide, disponibili anche in PDF. Rispetto alla versione di RomHack aggiunge una sezione sulla spesa ICT e una slide sull'Europe-China Digital Commons Observatory.",
+    "en": "The SFSCon 2026 presentation is ready, updated to the 9 November survey: 42 slides, also available as a PDF. Compared with the RomHack version, it adds a section on ICT spending and a slide on the Europe-China Digital Commons Observatory."
+   },
+   "voci": [
+    "2026-11-11-osservatorio-1"
+   ]
+  },
+  {
+   "contesto": "pvl-at",
+   "testo": {
+    "it": "Il perimetro di analisi è stato riconciliato con IndicePA a 23.770 enti ed è iniziata la ricostruzione dei 6.933 enti che non vi compaiono, con dati ancora provvisori. Entrano nel perimetro 779 società a controllo pubblico, a condizione di una seconda verifica sui loro siti. È stata inoltre proposta una scala di confidenza a quattro livelli, non ancora applicata ai dati pubblicati.",
+    "en": "The analysis scope was reconciled with IndicePA at 23,770 bodies, and reconstruction of the 6,933 bodies missing from it began; the data are still provisional. 779 publicly controlled companies enter the scope, subject to a second check of their websites. A four-level confidence scale was also proposed; it is not yet applied to published data."
+   },
+   "voci": [
+    "2026-11-11-pvl-at-1",
+    "2026-11-11-pvl-at-2",
+    "2026-11-11-pvl-at-3",
+    "2026-11-10-pvl-at-1"
+   ]
+  }
+ ],
+ "n_voci": 32
+}

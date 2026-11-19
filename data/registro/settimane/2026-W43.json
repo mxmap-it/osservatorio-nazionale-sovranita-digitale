@@ -1,0 +1,41 @@
+{
+ "settimana": "2026-W43",
+ "dal": "2026-10-19",
+ "al": "2026-10-25",
+ "fonte": "dbf39897488e95c8",
+ "titolo": {
+  "it": "Il costo della dipendenza nei dati Asterès, scansione MxMap ripresa, progetti ricostruibili",
+  "en": "The cost of dependency in Asterès data, MxMap scan resumed, projects rebuildable"
+ },
+ "sintesi": {
+  "it": "L'Osservatorio ha pubblicato un articolo sui due studi Asterès per il Cigref, secondo cui l'Europa trasferisce 264 Md€ l'anno all'economia americana. L'articolo li presenta come stime commissionate da una parte interessata, non come misurazioni, e ricorda perché resta necessaria la misurazione dal basso sui contratti pubblici reali. La scansione notturna di MxMap.it, ferma dal 16 ottobre per un nuovo comune nato da fusione, è di nuovo attiva; per il resto della settimana gli indicatori sono rimasti stabili (fuori UE 47,1%). Sia il sito dell'Osservatorio sia MxMap.it si possono ora ricostruire da zero partendo da un clone pulito del repository, e la ricostruzione è stata verificata.",
+  "en": "The Observatory published an article on the two Asterès studies for Cigref, which estimate that Europe transfers €264 billion a year to the US economy. The article presents them as estimates commissioned by an interested party, not as measurements, and explains why bottom-up measurement based on real public contracts is still needed. The MxMap.it nightly scan, stalled since 16 October by a new municipality created through a merger, is running again; for the rest of the week the indicators stayed stable (outside the EU 47.1%). Both the Observatory website and MxMap.it can now be rebuilt from scratch starting from a clean clone of the repository, and the rebuild has been verified."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La scansione notturna è ripartita dopo lo stop causato dal nuovo «Comune di Castegnero Nanto», pubblicato su IndicePA senza dati geografici. Ora gli enti con codice sconosciuto ricevono provincia e regione dal codice ISTAT, e fino a 5 casi anomali non bloccano più la pubblicazione. Una guida di ripresa (docs/STATE.md) è stata verificata su un clone pulito: 34 test superati e indicatori ricostruiti su 22.917 enti; nella settimana la quota fuori UE è rimasta al 47,1%.",
+    "en": "The nightly scan restarted after the stop caused by the new «Comune di Castegnero Nanto», published on IndicePA without geographic data. Entities with an unknown code now get their province and region from the ISTAT code, and up to 5 anomalous cases no longer block publication. A recovery guide (docs/STATE.md) was verified on a clean clone: 34 tests passed and indicators rebuilt for 22,917 entities; during the week the share outside the EU stayed at 47.1%."
+   },
+   "voci": [
+    "2026-10-19-mxmap-1",
+    "2026-10-21-mxmap-1"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È stato pubblicato in italiano e inglese l'articolo sui dati Asterès per il Cigref (264 Md€ l'anno, sovrapprezzo atteso di 140 Md€ l'anno al 2030). Il tema è entrato anche nei policy brief e nella home. Sono stati pubblicati il video del talk al RomHack Camp 2026 e la pagina della roadmap. Sono stati riparati circa 220 link rotti nelle home linguistiche, e ora il sito si ricostruisce da zero su Windows, macOS e Linux, con il testo dei 17 PDF pubblicati rimasto identico.",
+    "en": "The article on the Asterès data for Cigref was published in Italian and English (€264 billion a year, an expected surcharge of €140 billion a year by 2030). The topic was also added to the policy briefs and the home page. The video of the RomHack Camp 2026 talk and the roadmap page were published. About 220 broken links in the language home pages were fixed, and the site can now be rebuilt from scratch on Windows, macOS and Linux, with the text of the 17 published PDFs unchanged."
+   },
+   "voci": [
+    "2026-10-19-osservatorio-1",
+    "2026-10-19-osservatorio-2",
+    "2026-10-19-osservatorio-3",
+    "2026-10-21-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 8
+}

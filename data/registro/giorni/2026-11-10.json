@@ -1,0 +1,152 @@
+{
+ "data": "2026-11-10",
+ "settimana": "2026-W46",
+ "fonte": {
+  "spesa-ict": "d54471fa24dfd652",
+  "pvl-at": "832b667616f5715e"
+ },
+ "voci": [
+  {
+   "id": "2026-11-10-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "SIOPE come denominatore della spesa ICT per ente: 5,1 miliardi pagati nel 2024",
+    "en": "SIOPE as the per-entity denominator of ICT spending: 5.1 billion paid in 2024"
+   },
+   "sintesi": {
+    "it": "I pagamenti ICT registrati in SIOPE dal 2022 al 2025 sono stati associati, ente per ente, ai contratti ICT dell'imbuto, insieme ai conti economici del Servizio sanitario nazionale 2022-2024 (BDAP 0.4). Ne risulta un pagato ICT 2024 di 5,1 miliardi di euro (1,14 dallo Stato via BDAP e 3,97 da SIOPE): un riferimento della spesa effettiva da confrontare con il valore dei contratti. Il sito ha una nuova pagina SIOPE con i dati scaricabili.",
+    "en": "ICT payments recorded in SIOPE from 2022 to 2025 were matched, entity by entity, with the ICT contracts in the funnel, together with the 2022-2024 income statements of the National Health Service (BDAP 0.4). The result is 2024 ICT spending paid of 5.1 billion euros (1.14 from the State via BDAP and 3.97 from SIOPE): a measure of actual spending to compare with contract values. The site has a new SIOPE page with downloadable data."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@45d143f3d0"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#12",
+    "mxmap-it/analisi-spesa-ict#67"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-10-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rendiconto imbuto 0.16: riscontro SIOPE+BDAP e verifica in-house di quattro enti",
+    "en": "Funnel report 0.16: SIOPE+BDAP cross-check and in-house review of four entities"
+   },
+   "sintesi": {
+    "it": "La nuova sezione 4.13 chiarisce che l'imbuto misura il valore dei contratti, circa 3,5 volte il pagato, e introduce un indicatore di copertura per ente come strato di riscontro, non sommato ai totali. La verifica degli affidamenti in-house mostra che Venezia/Venis, ARPAL/PuntoZero e ARPEA/CSI hanno CIG in-house solo dal 2024-25, mentre per Regione Lombardia non risultano CIG verso ARIA nel 2020-26.",
+    "en": "The new section 4.13 clarifies that the funnel measures contract value, about 3.5 times the amount paid, and introduces a per-entity coverage indicator as a cross-check layer, not added to the totals. The review of in-house awards shows that Venezia/Venis, ARPAL/PuntoZero and ARPEA/CSI have in-house CIGs only from 2024-25, while for the Lombardy Region no CIGs towards ARIA appear in 2020-26."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@a805340393"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#12",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#67"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-10-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Lombardia: la spesa ICT tramite ARIA non passa da CIG regionali",
+    "en": "Lombardy: ICT spending through ARIA does not go through regional CIGs"
+   },
+   "sintesi": {
+    "it": "Per Regione Lombardia il pagato ICT SIOPE è stato separato per codice ente: 164-257 milioni di euro per la gestione sanitaria accentrata e 99-138 milioni per la gestione ordinaria. Non risultano CIG della Regione verso ARIA, la cui attività ICT in-house vale circa 189 milioni l'anno (bilancio 2023), mentre i CIG ICT con ARIA come stazione appaltante ammontano a 2,4 miliardi. Il rendiconto è aggiornato alla versione 0.16.1 e sono state aggiunte voci per richieste di accesso civico.",
+    "en": "For the Lombardy Region, SIOPE ICT payments were split by entity code: 164-257 million euros for centralised health management and 99-138 million for ordinary management. No Region CIGs towards ARIA appear, while ARIA's in-house ICT activity is worth about 189 million a year (2023 budget) and ICT CIGs with ARIA as contracting authority amount to 2.4 billion. The report was updated to version 0.16.1 and items for freedom of information requests were added."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@abfb41f476"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#12"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-10-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Archiviazione delle fonti: corrette collisioni di nomi e archiviate pagine della Lombardia",
+    "en": "Source archiving: name collisions fixed and Lombardy pages archived"
+   },
+   "sintesi": {
+    "it": "Lo strumento di archiviazione delle fonti gestisce ora correttamente alcune collisioni di nomi tra file, con test dedicati. Sono state archiviate le pagine di Amministrazione trasparente della Lombardia (art. 41 c.1-bis) e lo script di verifica in-house ora identifica le società per codice fiscale.",
+    "en": "The source archiving tool now correctly handles some file name collisions, with dedicated tests. The Lombardy Transparent Administration pages (art. 41 para. 1-bis) were archived, and the in-house verification script now identifies companies by tax code."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1c7d23d948"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#12"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-10-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Proposta di una scala di confidenza unificata a quattro livelli",
+    "en": "Proposal for a unified four-level confidence scale"
+   },
+   "sintesi": {
+    "it": "È stata messa a punto una proposta di scala di confidenza unificata (versione 0.1), con quattro livelli ricavati dai controlli esistenti, per indicare quanto è affidabile ciascuna rilevazione sulla visibilità dei siti della PA. Si tratta di una proposta, non ancora applicata ai dati pubblicati.",
+    "en": "A proposal for a unified confidence scale (version 0.1) has been drafted, with four levels derived from existing checks, to indicate how reliable each measurement of PA website visibility is. This is a proposal and has not yet been applied to published data."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-10-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Livelli di confidenza integrati nei prototipi dei cruscotti con dati di prova",
+    "en": "Confidence levels integrated into dashboard prototypes using test data"
+   },
+   "sintesi": {
+    "it": "La scala di confidenza proposta è stata integrata nei prototipi dei cruscotti, con una pagina di approfondimento e grafici che ripartiscono i risultati per livello. I prototipi usano dati fittizi, modificati in modo che compaiano anche i casi da sottoporre a revisione, come i siti che bloccano l'accesso automatizzato; non contengono quindi numeri reali.",
+    "en": "The proposed confidence scale has been integrated into the dashboard prototypes, with a detailed page and charts breaking down results by level. The prototypes use dummy data, adjusted so that cases requiring review also appear, such as sites that block automated access; they therefore contain no real figures."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22924,
+  "copertura": 94.31,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
+}

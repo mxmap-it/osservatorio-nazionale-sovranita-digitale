@@ -1,0 +1,108 @@
+{
+ "data": "2026-05-06",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "f2a1aaf096ca487c"
+ },
+ "voci": [
+  {
+   "id": "2026-05-06-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Dataset pubblico degli enti in CSV, XLSX e JSON e nuova pagina «Ricerca Ente»",
+    "en": "Public entity dataset in CSV, XLSX and JSON and new “Search Entity” page"
+   },
+   "sintesi": {
+    "it": "È disponibile per il download un dataset unico, aggiornato automaticamente a ogni scansione, con 22.988 righe: una per ente, con categoria IndicePA, dominio, record di posta, fornitore rilevato, giurisdizione e motivazione della classificazione. Gli stessi dati alimentano la nuova pagina «Ricerca Ente», con filtri per categoria, fornitore, sovranità e regione, ordinamento e collegamento alla scheda IndicePA di ciascun ente.",
+    "en": "A single downloadable dataset is now available, updated automatically at every scan, with 22,988 rows: one per entity, with IndicePA category, domain, mail records, detected provider, jurisdiction and the reason for the classification. The same data powers the new “Search Entity” page, with filters by category, provider, sovereignty and region, sorting, and a link to each entity’s IndicePA record."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@3f5722f3da",
+    "mxmap-it/mxmap.it@3926cc831b",
+    "mxmap-it/mxmap.it@253bbdee53",
+    "mxmap-it/mxmap.it@919cf16a15"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-06-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Corretta la classificazione di migliaia di enti finora indicati come «Infrastruttura autonoma»",
+    "en": "Classification corrected for thousands of entities previously shown as “Autonomous infrastructure”"
+   },
+   "sintesi": {
+    "it": "A partire da una segnalazione sul Comune di Latina, la revisione dei 3.792 enti classificati come «Infrastruttura autonoma» ha mostrato errori sistematici: circa 800 enti usano in realtà server di posta su infrastruttura Amazon o Google (quindi soggetti a giurisdizione USA), circa 1.500 sono serviti da provider italiani non ancora catalogati (aggiunte 23 reti di provider e 60 domini di associati AIIP) e alcuni da infrastrutture in-house regionali. Secondo le stime dichiarate, ancora da confermare dopo la riclassificazione, la categoria dovrebbe scendere a circa 1.300 enti e gli enti su AWS passare da 10 a circa 770; la scansione completa è stata rieseguita con i nuovi criteri.",
+    "en": "Following a report about the Municipality of Latina, a review of the 3,792 entities classified as “Autonomous infrastructure” revealed systematic errors: about 800 entities actually use mail servers on Amazon or Google infrastructure (and are therefore subject to US jurisdiction), about 1,500 are served by Italian providers not yet catalogued (23 provider networks and 60 domains of AIIP members were added), and some by regional in-house infrastructure. According to the stated estimates, still to be confirmed after reclassification, the category should shrink to about 1,300 entities and entities on AWS should rise from 10 to about 770; the full scan was re-run with the new criteria."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@e82c2c9f89",
+    "mxmap-it/mxmap.it@662d617881"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://www.aiip.it/associati/",
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-06-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sezione Scuole: un punto sulla mappa per ogni istituto scolastico",
+    "en": "Schools section: one point on the map for each school"
+   },
+   "sintesi": {
+    "it": "La vista Scuole mostra ora un marcatore geolocalizzato per ciascun ente dell'istruzione, con scheda del fornitore di posta, invece del solo dato aggregato per comune. La legenda conta le scuole (8.168) anziché i comuni (3.015); l'obiettivo di geolocalizzazione è di 8.405 punti.",
+    "en": "The Schools view now shows a geolocated marker for each education entity, with a mail-provider popup, instead of only the per-municipality aggregate. The legend counts schools (8,168) rather than municipalities (3,015); the geolocation target is 8,405 points."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@63a7609927"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-06-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Mappa: percentuali in legenda e correzioni a schede e categorie",
+    "en": "Map: percentages in the legend and fixes to popups and categories"
+   },
+   "sintesi": {
+    "it": "La legenda riporta ora accanto a ogni fornitore anche la quota percentuale sul totale del livello visualizzato. È stato corretto un difetto che tagliava la parte alta delle schede informative per gli enti del Nord Italia, con un test automatico di verifica, ed è stata eliminata una voce spuria in legenda unificando i fornitori privati della PA sotto «Provider Italiano».",
+    "en": "The legend now shows, next to each provider, its percentage share of the total for the level being displayed. A defect that cut off the top of information popups for entities in Northern Italy was fixed, with an automated verification test, and a spurious legend entry was removed by grouping private PA contractors under “Italian Provider”."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@3b49b8cf47",
+    "mxmap-it/mxmap.it@504aef06b5",
+    "mxmap-it/mxmap.it@fe6f62b2f7",
+    "mxmap-it/mxmap.it@ec2af18676",
+    "mxmap-it/mxmap.it@bfff47ef8a",
+    "mxmap-it/mxmap.it@9163e33827",
+    "mxmap-it/mxmap.it@e2012a0bdf"
+   ],
+   "n_commit": 7,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

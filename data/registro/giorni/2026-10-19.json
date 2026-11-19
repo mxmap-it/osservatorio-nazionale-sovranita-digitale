@@ -1,0 +1,112 @@
+{
+ "data": "2026-10-19",
+ "settimana": "2026-W43",
+ "fonte": {
+  "mxmap": "ec5a6d691d358b26",
+  "osservatorio": "9bb4a79e07908587"
+ },
+ "voci": [
+  {
+   "id": "2026-10-19-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Scansione notturna di nuovo attiva dopo lo stop causato da un nuovo comune nato da fusione",
+    "en": "Nightly scan running again after a stop caused by a new comune created by merger"
+   },
+   "sintesi": {
+    "it": "Dal 16 ottobre la scansione notturna si interrompeva perché IndicePA aveva pubblicato il nuovo «Comune di Castegnero Nanto» (fusione di Castegnero e Nanto, provincia di Vicenza) senza dati geografici, e il codice non era ancora nemmeno negli elenchi ISTAT. Il sito non era guasto, ma è rimasto fermo ai dati del 15 ottobre. Ora un ente con codice sconosciuto riceve provincia e regione dalle prime cifre del codice ISTAT, mentre il nome del comune non viene mai inventato. Pochi casi anomali (fino a 5) non bloccano più la pubblicazione e l'elenco dei comuni ISTAT si aggiorna a ogni scansione.",
+    "en": "Since 16 October the nightly scan had been stopping because IndicePA published the new \"Comune di Castegnero Nanto\" (a merger of Castegnero and Nanto, province of Vicenza) without geographic data, and the code was not yet even in ISTAT's lists. The site was not broken, but it stayed frozen on 15 October data. Now an entity with an unknown code gets its province and region from the first digits of the ISTAT code, while the comune name is never invented. A few anomalous cases (up to 5) no longer block publication, and the ISTAT list of comuni is refreshed on every scan."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@15298b4fd5",
+    "mxmap-it/mxmap.it@19463508f2"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#27"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-19-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il costo economico della dipendenza: i dati Asterès per il Cigref e il nostro commento",
+    "en": "The economic cost of dependence: the Asterès data for Cigref and our commentary"
+   },
+   "sintesi": {
+    "it": "Un nuovo articolo in italiano e inglese riporta due studi Asterès per il Cigref, entrambi archiviati in PDF: secondo questi studi l'Europa trasferisce 264 Md€ l'anno all'economia americana (≈1,5% del PIL UE, quanto la bolletta energetica del continente) e affronterà un sovrapprezzo atteso di 140 Md€ l'anno al 2030, con un aumento medio del 51% al rinnovo dei contratti. L'articolo chiarisce che si tratta di stime estrapolate da interviste a sei CIO e commissionate da una parte interessata, non di misurazioni, e spiega perché resta necessaria la misurazione dell'Osservatorio, fatta dal basso sui contratti pubblici reali. Ai policy brief IT ed EN è stata aggiunta la sezione «Il costo economico della dipendenza» e la home affianca ora il nostro 46% ai 264 miliardi.",
+    "en": "A new article in Italian and English reports two Asterès studies for Cigref, both archived as PDFs: according to these studies, Europe transfers €264 billion a year to the American economy (≈1.5% of EU GDP, as much as the continent's energy bill) and faces an expected surcharge of €140 billion a year by 2030, with an average increase of 51% at contract renewal. The article makes clear that these are estimates extrapolated from interviews with six CIOs and commissioned by an interested party, not measurements, and explains why the Observatory's measurement, done bottom-up on real public contracts, is still needed. The section \"The economic cost of dependence\" was added to the IT and EN policy briefs, and the home page now places our 46% alongside the 264 billion."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@10b92e57f5"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/news/2026-10-19-bolletta-digitale-europa/",
+    "https://osservatorio.mxmap.it/en/news/2026-10-19-bolletta-digitale-europa/",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf"
+   ]
+  },
+  {
+   "id": "2026-10-19-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "RomHack Camp 2026: online il video del talk e la roadmap dell'Osservatorio",
+    "en": "RomHack Camp 2026: talk video and the Observatory roadmap now online"
+   },
+   "sintesi": {
+    "it": "La news sul RomHack Camp 2026 rimanda ora al video del talk su YouTube. È stata inoltre pubblicata la pagina della roadmap, già pronta ma mai messa online: la news vi rimandava e il link risultava inesistente sul sito.",
+    "en": "The RomHack Camp 2026 news item now links to the video of the talk on YouTube. The roadmap page has also been published: it was ready but had never been put online, while the news item linked to it and the link was broken on the site."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c94983319a"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/news/2026-10-05-romhack-camp-2026/",
+    "https://osservatorio.mxmap.it/roadmap/",
+    "https://osservatorio.mxmap.it/en/roadmap/"
+   ]
+  },
+  {
+   "id": "2026-10-19-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Riparati circa 220 link rotti nelle home in altre lingue UE",
+    "en": "About 220 broken links fixed on the home pages in other EU languages"
+   },
+   "sintesi": {
+    "it": "Una modifica al piè di pagina aveva fatto puntare le 22 home linguistiche a pagine inesistenti (ad esempio /de/psn/), producendo circa 220 link rotti dal 27 settembre. Ora le lingue UE che hanno solo la home tradotta rimandano alla lingua predefinita; è stato anche corretto il generatore delle slide, che aveva sovrascritto il deck definitivo, poi ripristinato. Sul sito generato risultano 72 pagine e 0 link interni rotti.",
+    "en": "A change to the footer had made the 22 language home pages point to non-existent pages (for example /de/psn/), producing about 220 broken links since 27 September. EU languages that only have a translated home page now link to the default language; the slide generator, which had overwritten the final deck (since restored), was also fixed. The built site has 72 pages and 0 broken internal links."
+   },
+   "commit": [],
+   "n_commit": 0,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22920,
+  "copertura": 97.26,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

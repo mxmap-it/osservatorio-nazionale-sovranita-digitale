@@ -1,0 +1,33 @@
+{
+ "data": "2026-06-20",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "495e0752a4c75a30"
+ },
+ "voci": [
+  {
+   "id": "2026-06-20-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ripristinato il salvataggio notturno dello storico dati nel repository",
+    "en": "Nightly saving of the data history to the repository restored"
+   },
+   "sintesi": {
+    "it": "Dal 15 giugno 2026 il passaggio che registra ogni notte i dati della scansione nello storico git falliva a ogni esecuzione, a causa di file modificati durante la pipeline e non inclusi nel salvataggio. La correzione mette temporaneamente da parte queste modifiche prima dell'allineamento con il repository; la pubblicazione del sito non era stata colpita, e ora anche lo storico dei dati torna ad aggiornarsi regolarmente.",
+    "en": "Since 15 June 2026 the step that records the nightly scan data in the git history had failed on every run, because of files modified during the pipeline and not included in the save. The fix temporarily sets these changes aside before syncing with the repository; publication of the website was not affected, and the data history is now updated regularly again."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@824bbc57f1"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#10"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

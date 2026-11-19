@@ -1,0 +1,29 @@
+{
+ "settimana": "2026-W40",
+ "dal": "2026-09-28",
+ "al": "2026-10-04",
+ "fonte": "a57afb1872166b0e",
+ "titolo": {
+  "it": "MxMap.it: ripristinate la vista Scuole e la mappa di base, la PA Centrale sale a 55 enti",
+  "en": "MxMap.it: Schools view and base map restored, Central PA rises to 55 entities"
+ },
+ "sintesi": {
+  "it": "La settimana è stata dedicata a riparare parti di mxmap.it che avevano smesso di funzionare senza segnalare errori. La vista Scuole mostra di nuovo 8.318 punti geolocalizzati per indirizzo. La tabella della PA Centrale torna ad aggiornarsi ogni notte e include ora le tre Forze armate. La mappa di base usa OpenStreetMap al posto di CARTO, che ora richiede una chiave API. Nella scansione notturna gli enti sono passati da 22.900 a 22.911, mentre le quote sono rimaste stabili: 47,0% della posta su infrastruttura extra-UE, 49,7% in Italia, copertura al 97,23%.",
+  "en": "The week was spent repairing parts of mxmap.it that had stopped working without reporting errors. The Schools view again shows 8,318 points geolocated by address. The Central PA table is once more updated every night and now includes the three Armed Forces. The base map uses OpenStreetMap instead of CARTO, which now requires an API key. In the nightly scan the number of entities rose from 22,900 to 22,911, while the shares stayed stable: 47.0% of email on non-EU infrastructure, 49.7% in Italy, coverage at 97.23%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La vista Scuole era vuota da almeno un mese perché mancava il file delle coordinate. Ora è ripristinata con la geolocalizzazione per indirizzo, 37 nuovi enti e 8.318 punti, e nuovi controlli automatici impediscono di sovrascrivere dati validi. La tabella della PA Centrale passa da 52 a 55 enti con Esercito, Marina e Aeronautica, tutti con posta autonoma (self-hosted), e rientra nell'aggiornamento notturno. La mappa di base passa a OpenStreetMap, con Esri come riserva, e un test automatico verifica ogni giorno entrambe le fonti.",
+    "en": "The Schools view had been empty for at least a month because the coordinates file was missing. It is now restored with address-level geolocation, 37 new entities and 8,318 points, and new automatic checks prevent valid data from being overwritten. The Central PA table grows from 52 to 55 entities with the Army, Navy and Air Force, all running their own email (self-hosted), and is back in the nightly update. The base map switches to OpenStreetMap, with Esri as a fallback, and an automated test checks both sources every day."
+   },
+   "voci": [
+    "2026-09-29-mxmap-1",
+    "2026-09-29-mxmap-2",
+    "2026-09-29-mxmap-3"
+   ]
+  }
+ ],
+ "n_voci": 3
+}

@@ -1,0 +1,130 @@
+{
+ "data": "2026-05-03",
+ "settimana": "2026-W18",
+ "fonte": {
+  "mxmap": "07faeaf77a6e4029",
+  "spesa-ict": "",
+  "osservatorio": "",
+  "pvl-at": ""
+ },
+ "voci": [
+  {
+   "id": "2026-05-03-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Classificazione italiana: nuovi fornitori nazionali e categoria per l'ICT pubblico regionale",
+    "en": "Italian classification: new national providers and a category for regional public ICT"
+   },
+   "sintesi": {
+    "it": "La classificazione ora riconosce direttamente Aruba, Register.it, Seeweb, InfoCert e Namirial: nella prima elaborazione 3.583 enti finivano sotto un generico «ISP locale». Introdotte anche le categorie «pubblico regionale» (Lepida, ARIA, CSI Piemonte, Insiel e altre società ICT pubbliche) e «contractor PA privato» (Engineering, Almaviva). Su indicazione del fondatore, i consorzi di comuni ASMEL e GVCC sono classificati come infrastruttura pubblica e non come gateway di terzi, con uno spostamento di 438 enti in questa categoria.",
+    "en": "The classification now directly recognises Aruba, Register.it, Seeweb, InfoCert and Namirial: in the first run 3,583 entities fell under a generic \"local ISP\". Two new categories were also introduced: \"regional public\" (Lepida, ARIA, CSI Piemonte, Insiel and other publicly owned ICT companies) and \"private PA contractor\" (Engineering, Almaviva). At the founder's direction, the ASMEL and GVCC municipal consortia are classified as public infrastructure rather than third-party gateways, moving 438 entities into this category."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@47e29c527f",
+    "mxmap-it/mxmap.it@999bbb812f"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-03-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Prima rilevazione completa sui comuni italiani: 7.870 enti classificati",
+    "en": "First complete survey of Italian municipalities: 7,870 entities classified"
+   },
+   "sintesi": {
+    "it": "Dopo più passaggi della pipeline, i casi non classificati sono scesi da 81 a 1. Distribuzione finale: posta autogestita 25,9%, Microsoft 365 18,9%, Aruba 18,5%, posta provinciale condivisa 10,3%, Google Workspace 9,2%, pubblico regionale 6,1%, Register.it 5,4%, ISP italiani 5,4%. In un passaggio intermedio della giornata gli hyperscaler statunitensi (Microsoft, Google, AWS) risultavano al 28,1%.",
+    "en": "After several pipeline passes, unclassified cases fell from 81 to 1. Final distribution: self-hosted mail 25.9%, Microsoft 365 18.9%, Aruba 18.5%, shared provincial mail 10.3%, Google Workspace 9.2%, regional public 6.1%, Register.it 5.4%, Italian ISPs 5.4%. In an intermediate run earlier in the day, US hyperscalers (Microsoft, Google, AWS) stood at 28.1%."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@a48c7b63c0",
+    "mxmap-it/mxmap.it@08c73ca1cb",
+    "mxmap-it/mxmap.it@717b65affe",
+    "mxmap-it/mxmap.it@228ac53367",
+    "mxmap-it/mxmap.it@39a03c1698"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-03-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "mxmap.it in versione italiana: mappa di regioni, province e comuni",
+    "en": "Italian version of mxmap.it: map of regions, provinces and municipalities"
+   },
+   "sintesi": {
+    "it": "Il sito mxmap.it mostra ora solo l'Italia, con interfaccia interamente in italiano e mappe a tre livelli: regioni, province e comuni. La legenda distingue i fornitori statunitensi soggetti al CLOUD Act, in rosso e arancio, da quelli italiani, pubblici o commerciali, in tonalità di verde.",
+    "en": "The mxmap.it site now shows Italy only, with a fully Italian interface and three-level maps: regions, provinces and municipalities. The legend separates US providers subject to the CLOUD Act, in red and orange, from Italian public or commercial providers, in shades of green."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@de7152ca03",
+    "mxmap-it/mxmap.it@b59213643f",
+    "mxmap-it/mxmap.it@8e2596be94",
+    "mxmap-it/mxmap.it@8b2a2d1d07"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-03-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pipeline italiana riproducibile con recupero dei casi non classificati",
+    "en": "Reproducible Italian pipeline with recovery of unclassified cases"
+   },
+   "sintesi": {
+    "it": "Uno script unico ricostruisce l'intero dataset italiano da fonti pubbliche (IndicePA, Wikidata, OpenStreetMap) e produce report per provincia e regione. Per gli enti senza MX si usano gli indirizzi email non PEC pubblicati in IndicePA, il sito ufficiale indicato in Wikidata, la homepage del comune e, come ultima risorsa, una ricerca web. La posta PEC resta esclusa, salvo le infrastrutture PEC di proprietà pubblica (RUPAR Piemonte, ASMEPEC). Le 5 correzioni manuali di dominio sono annotate come tali nei dati per trasparenza.",
+    "en": "A single script rebuilds the entire Italian dataset from public sources (IndicePA, Wikidata, OpenStreetMap) and produces per-province and per-region reports. For entities without MX, it uses the non-PEC email addresses published in IndicePA, the official website listed in Wikidata, the municipality's homepage and, as a last resort, a web search. PEC mail remains excluded, except for publicly owned PEC infrastructure (RUPAR Piemonte, ASMEPEC). The 5 manual domain corrections are labelled as such in the data for transparency."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@470d22404a",
+    "mxmap-it/mxmap.it@4d821dacf2",
+    "mxmap-it/mxmap.it@1b3226742d",
+    "mxmap-it/mxmap.it@50483abce0",
+    "mxmap-it/mxmap.it@a048f4daa1"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-03-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Download più robusto dei confini amministrativi italiani da OpenStreetMap",
+    "en": "More robust download of Italian administrative boundaries from OpenStreetMap"
+   },
+   "sintesi": {
+    "it": "I server pubblici Overpass andavano spesso in timeout sulle richieste più grandi. Ora lo scaricamento ruota fra quattro server, ripete i tentativi falliti e scarica i comuni una provincia alla volta (circa 107 richieste). Corretto anche un errore nella conversione dei file cartografici.",
+    "en": "Public Overpass servers often timed out on the largest requests. The download now rotates across four servers, retries failed attempts and fetches municipalities one province at a time (about 107 requests). An error in the conversion of the map files was also fixed."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@9a97ae9662",
+    "mxmap-it/mxmap.it@0145237d2a",
+    "mxmap-it/mxmap.it@2200116257"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

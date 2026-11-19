@@ -1,0 +1,40 @@
+{
+ "settimana": "2026-W44",
+ "dal": "2026-10-26",
+ "al": "2026-11-01",
+ "fonte": "818f7ef846c0a85f",
+ "titolo": {
+  "it": "Spesa ICT: archivio e verifiche sui dati ANAC, misura cloud v3 aperta alla revisione",
+  "en": "ICT spending: ANAC data archive and checks, cloud measure v3 open for review"
+ },
+ "sintesi": {
+  "it": "La settimana è stata dedicata quasi tutta all'analisi della spesa ICT. È partito un archivio permanente dei dati ANAC. Sono stati verificati 12.079.473 CIG dal 2007 al 2026 e il rendiconto per ANAC è arrivato alla versione 1.7, con 15 schede pronte e una procedura per riprodurre le verifiche da zero. È stato pubblicato per la revisione pubblica il rendiconto della misura v3 della spesa della PA in servizi cloud (2022-2026), con regole di attribuzione riscritte e verifica alla cieca; i risultati sono dichiarati intermedi. Nella scansione notturna di MxMap gli enti sono passati da 22.920 a 22.924 e la quota extra-UE dal 47,1% al 47,2%.",
+  "en": "The week was devoted almost entirely to the ICT spending analysis. A permanent archive of ANAC data was started. 12,079,473 CIGs from 2007 to 2026 were checked, and the report for ANAC reached version 1.7, with 15 completed issue sheets and a procedure for reproducing the checks from scratch. The report on measure v3 of public administration spending on cloud services (2022-2026) was published for public review, with rewritten attribution rules and blind verification; the results are stated to be interim. In the MxMap nightly scan, the number of entities rose from 22,920 to 22,924 and the non-EU share from 47.1% to 47.2%."
+ },
+ "punti": [
+  {
+   "contesto": "spesa-ict",
+   "testo": {
+    "it": "Avviato l'archivio permanente dei dati ANAC: 1.801 risorse e 128,92 GB effettivamente serviti, contro i 524,78 GB dichiarati dal catalogo. Le verifiche, estese a 12.079.473 CIG, sono confluite nel rendiconto per ANAC, ora alla versione 1.7, con 15 schede pronte, tra cui i mesi OCDS duplicati verificati al byte; snapshot e script consentono di riprodurle da zero. È stato pubblicato per la revisione pubblica il rendiconto della misura cloud v3 (2022-2026), collegata ai finanziamenti PNRR; il metodo attribuisce la giurisdizione al prodotto oltre che al fornitore, controlla la confidenza con regole deterministiche e prevede la categoria «non determinabile».",
+    "en": "A permanent archive of ANAC data was started: 1,801 resources and 128.92 GB actually served, against the 524.78 GB declared by the catalogue. The checks, extended to 12,079,473 CIGs, fed into the report for ANAC, now at version 1.7, with 15 completed issue sheets, including OCDS months found to be byte-for-byte duplicates; a snapshot and scripts allow the checks to be reproduced from scratch. The report on cloud measure v3 (2022-2026), linked to PNRR funding, was published for public review; the method attributes jurisdiction to the product as well as the supplier, checks confidence with deterministic rules and includes a «not determinable» category."
+   },
+   "voci": [
+    "2026-10-26-spesa-ict-2",
+    "2026-10-27-spesa-ict-2",
+    "2026-10-28-spesa-ict-1",
+    "2026-10-29-spesa-ict-3"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Sono state raccolte e documentate le misure e le metodologie usate in Europa per valutare la sovranità digitale e la spesa pubblica in servizi cloud, insieme a un'ipotesi di pilota sui dati ANAC, come base metodologica per l'analisi della spesa ICT.",
+    "en": "The measures and methodologies used in Europe to assess digital sovereignty and public spending on cloud services were collected and documented, together with a proposed pilot on ANAC data, as a methodological basis for the ICT spending analysis."
+   },
+   "voci": [
+    "2026-10-27-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 35
+}

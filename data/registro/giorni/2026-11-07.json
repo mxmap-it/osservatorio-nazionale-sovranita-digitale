@@ -1,0 +1,184 @@
+{
+ "data": "2026-11-07",
+ "settimana": "2026-W45",
+ "fonte": {
+  "mxmap": "91caf326a664af47",
+  "osservatorio": "7a33ebfeef2cf604",
+  "pvl-at": "dd8f2a85ca4460b3"
+ },
+ "voci": [
+  {
+   "id": "2026-11-07-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Enti dietro gateway: la classificazione si basa ora solo sui segnali primari",
+    "en": "Entities behind gateways: classification now relies on primary signals only"
+   },
+   "sintesi": {
+    "it": "Per gli enti la cui posta passa da un gateway di sicurezza o da un relay, il fornitore viene attribuito solo in presenza di segnali primari. In mancanza di questi, i fornitori informatici italiani della PA sono classificati come provider commerciali italiani, mentre gateway e relay esteri restano «sconosciuti», come nel paper di riferimento. Verificato sulla scansione del 7 novembre: ISD al 53,56% (prima 50,8%) e quota Sconosciuto al 5,7% (prima 2,7%). Secondo la simulazione la quota USA scende dal 48,6% al 45,8%; restano aperti due punti collegati.",
+    "en": "For entities whose mail passes through a security gateway or relay, the provider is now attributed only when primary signals are present. Without them, Italian IT suppliers to the public administration are classified as Italian commercial providers, while foreign gateways and relays remain \"unknown\", as in the reference paper. Verified on the 7 November scan: ISD at 53.56% (previously 50.8%) and Unknown share at 5.7% (previously 2.7%). According to the simulation, the US share falls from 48.6% to 45.8%; two related issues remain open."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@72981e99d3",
+    "mxmap-it/mxmap.it@6993d1f5da"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#29",
+    "mxmap-it/mxmap.it#30",
+    "mxmap-it/mxmap.it#31",
+    "mxmap-it/mxmap.it#32"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-07-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Ricerca Ente: nuova vista Security Gateway e modalità diagnostica",
+    "en": "Entity Search: new Security Gateway view and diagnostic mode"
+   },
+   "sintesi": {
+    "it": "La Ricerca Ente consente ora di filtrare gli enti in base al gateway di posta: risultano 3.454 enti dietro un gateway, di cui 973 dietro un servizio di sicurezza antispam e 2.481 dietro un fornitore informatico o un relay. La nuova modalità diagnostica mostra per ogni ente l'evidenza DNS completa su cui si basa la classificazione e permette di segnalare un'anomalia con una segnalazione GitHub già compilata.",
+    "en": "Entity Search can now filter entities by mail gateway: 3,454 entities sit behind a gateway, 973 of them behind an anti-spam security service and 2,481 behind an IT supplier or relay. The new diagnostic mode shows, for each entity, the full DNS evidence behind its classification and lets users report an anomaly through a pre-filled GitHub issue."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@8bae9e3fe5"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#28"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-07-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Le piattaforme Zimbra/Carbonio sono ora trattate come caselle ospitate, non come gateway",
+    "en": "Zimbra/Carbonio platforms now treated as mailbox hosts, not gateways"
+   },
+   "sintesi": {
+    "it": "Gli enti serviti da piattaforme di posta Zimbra/Carbonio ospitano lì le proprie caselle, quindi non vanno più attribuiti a Microsoft o Google sulla base di segnali indiretti: con la prossima scansione verranno corretti circa 100 casi errati. Una verifica ripetibile su 191 enti ha confermato 4 piattaforme su 4 e ha mantenuto 7 configurazioni ibride genuine; la procedura è documentata e pubblicata.",
+    "en": "Entities served by Zimbra/Carbonio mail platforms host their mailboxes there, so they are no longer attributed to Microsoft or Google on the basis of indirect signals: about 100 incorrect cases will be corrected at the next scan. A repeatable check on 191 entities confirmed 4 out of 4 platforms and preserved 7 genuine hybrid configurations; the procedure is documented and published."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@1edddb7e1e"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#28",
+    "mxmap-it/mxmap.it#31"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-07-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Il progetto originario resta congelato sullo stato del paper revisionato",
+    "en": "The original project remains frozen at the state of the reviewed paper"
+   },
+   "sintesi": {
+    "it": "I manutentori del progetto originario da cui deriva MxMap Italia mantengono il repository fermo allo stato del paper revisionato e rimandano i miglioramenti proposti a una mappa futura. Questo non ha effetti su MxMap Italia, che segue un percorso autonomo; il monitoraggio settimanale del progetto originario prosegue.",
+    "en": "The maintainers of the original project from which MxMap Italia derives are keeping the repository frozen at the state of the reviewed paper and are deferring proposed improvements to a future map. This has no effect on MxMap Italia, which follows its own path; weekly monitoring of the original project continues."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@688061b509"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#34",
+    "mxmap-it/mxmap.it#37"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-07-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Metodologia: definite le quattro categorie di sovranità e i casi «Sconosciuto»",
+    "en": "Methodology: the four sovereignty categories and «Unknown» cases are defined"
+   },
+   "sintesi": {
+    "it": "La pagina di metodologia, in italiano e in inglese, spiega ora le quattro categorie in cui sono classificati gli enti e quando un ente viene dichiarato «Sconosciuto»: assenza di record MX o fornitore reale non determinabile dietro un gateway. Tenant e token vengono trattati come indizi di licenza, non di hosting. Nella news sul RomHack Camp i numeri del 5 ottobre (46%, 22.987 enti) sono ora indicati come dati alla data dell'intervento, con rimando a quelli correnti.",
+    "en": "The methodology page, in Italian and English, now explains the four categories into which bodies are classified and when a body is declared «Unknown»: no MX record, or an actual provider that cannot be determined behind a gateway. Tenants and tokens are treated as evidence of licensing, not of hosting. In the RomHack Camp news item, the 5 October figures (46%, 22,987 bodies) are now marked as data as of the talk, with a pointer to the current figures."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0db0041bd8"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/metodologia/",
+    "https://osservatorio.mxmap.it/en/metodologia/",
+    "https://osservatorio.mxmap.it/news/2026-10-05-romhack-camp-2026/"
+   ]
+  },
+  {
+   "id": "2026-11-07-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Report di novembre 2026 in bozza e sito riallineato ai dati del 7 novembre",
+    "en": "November 2026 report published as a draft and site realigned to 7 November data"
+   },
+   "sintesi": {
+    "it": "È online, in bozza, il report di novembre 2026 in italiano e in inglese, con i relativi PDF. Il report di giugno resta in archivio. Gli indicatori del sito sono stati riallineati ai dati del 7 novembre: la quota di enti su fornitori extra-UE citata nelle pagine passa dal 46% al 43%, il settore Istruzione è al 77,2% e gli enti «Sconosciuti» sono il 5,7%. L'«Infrastruttura autonoma» scende dal 13,5% al 3,6% perché i servizi ospitati dal fornitore sono ora conteggiati come fornitore italiano. È stato corretto anche l'aggiornamento automatico degli indicatori: dopo un cambio di indirizzo della fonte non funzionava più e il sito era rimasto per mesi ai dati di giugno. Ora usa la fonte ufficiale mxmap.it/kpi.json e un eventuale errore viene segnalato invece di passare inosservato.",
+    "en": "The November 2026 report is online as a draft, in Italian and English, together with its PDFs. The June report remains in the archive. The site's indicators have been realigned to 7 November data: the share of bodies on non-EU providers cited in the pages goes from 46% to 43%, the Education sector stands at 77.2% and «Unknown» bodies are 5.7%. «Autonomous infrastructure» drops from 13.5% to 3.6% because provider-hosted services now count as an Italian provider. The automatic indicator update has also been fixed: after a change of source address it had stopped working and the site had been showing June data for months. It now uses the official source mxmap.it/kpi.json, and any failure is flagged instead of going unnoticed."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7a85d6a6d3"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/report/2026-11-stato-sovranita-digitale-pa/",
+    "https://osservatorio.mxmap.it/pdf/report-2026-11-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/en/report/2026-11-stato-sovranita-digitale-pa/"
+   ]
+  },
+  {
+   "id": "2026-11-07-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Amministrazione trasparente: verifica immediata dei siti che sembrano bloccare la rilevazione",
+    "en": "Transparency sections: immediate re-check of sites that appear to block the survey"
+   },
+   "sintesi": {
+    "it": "Quando una sezione Amministrazione trasparente sembra bloccata da un filtro di sicurezza, la rilevazione viene subito ripetuta da una rete diversa da quella dei centri dati. Se la pagina risulta accessibile, la sezione è conteggiata come raggiungibile e si annota che il blocco riguarda solo l'accesso dai centri dati; altrimenti il caso resta da verificare nei controlli successivi. Questo evita di classificare come inaccessibili siti che sono invece consultabili dai cittadini.",
+    "en": "When a Transparent Administration section appears to be blocked by a security filter, the survey is immediately repeated from a network other than data-centre networks. If the page turns out to be accessible, the section is counted as reachable and the record notes that the block only concerns access from data centres; otherwise the case remains to be verified in subsequent checks. This avoids classifying as inaccessible sites that citizens can in fact consult."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22922,
+  "copertura": 94.31,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": -4.0
+ }
+}

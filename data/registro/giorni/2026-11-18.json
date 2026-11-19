@@ -1,0 +1,273 @@
+{
+ "data": "2026-11-18",
+ "settimana": "2026-W47",
+ "fonte": {
+  "spesa-ict": "de62184945e7841a",
+  "osservatorio": "3679c837978a25f7",
+  "pvl-at": "32685895f78ed4f5"
+ },
+ "voci": [
+  {
+   "id": "2026-11-18-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto di classificazione 0.3.4 applicato e rendiconto 0.17 completato",
+    "en": "Classification funnel 0.3.4 applied and report 0.17 completed"
+   },
+   "sintesi": {
+    "it": "Il dataset dei contratti ICT è stato rigenerato con la versione 0.3.4 dell'imbuto: nessun CIG ripetuto, e la catena ufficiale riproduce i 56,06 miliardi negli strati S3-S6 dal 2024. Su 265 proposte della revisione entrano 22 CIG (403,6 M€) nello strato S5 e 9 CIG (27,2 M€) nel cloud; 50 restano in coda. Il rendiconto 0.17 documenta anche i tetti (12 CIG spostati da S1 a S6, 4 incerti), le licenze (cloud 159,9 M€) e la misura del filtro P1 su S6: 267 CIG per 0,494 miliardi, con 8 contratti ICT veri persi in un campione di 40.",
+    "en": "The ICT contracts dataset was regenerated with version 0.3.4 of the funnel: no repeated CIGs, and the official pipeline reproduces the 56.06 billion in strata S3-S6 since 2024. Of 265 proposals in the review, 22 CIGs (€403.6 M) enter stratum S5 and 9 CIGs (€27.2 M) enter cloud; 50 remain queued. Report 0.17 also documents the caps (12 CIGs moved from S1 to S6, 4 uncertain), licences (cloud €159.9 M) and the measurement of filter P1 on S6: 267 CIGs worth 0.494 billion, with 8 genuine ICT contracts lost in a sample of 40."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@d2dcb2d8af",
+    "mxmap-it/analisi-spesa-ict@66a9422aa4",
+    "mxmap-it/analisi-spesa-ict@ead8744abe"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#71"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-18-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rendiconto BDNCP e L. 190 0.2: inventario di 62 dataset e insieme ICT corretto",
+    "en": "BDNCP and Law 190 report 0.2: inventory of 62 datasets and corrected ICT set"
+   },
+   "sintesi": {
+    "it": "Il rendiconto inventaria i 62 dataset BDNCP (128,7 GB), il loro uso e il potenziale non sfruttato, il registro e il campione L. 190 e la stima per un mirror. L'insieme ICT è ora limitato agli strati S3-S6: prima includeva anche gli accordi quadro «padre», e il conteggio scende da 661.633 a 443.331 CIG.",
+    "en": "The report inventories the 62 BDNCP datasets (128.7 GB), their use and untapped potential, the Law 190 register and sample, and the estimate for a mirror. The ICT set is now limited to strata S3-S6: it previously also included parent framework agreements, and the count drops from 661,633 to 443,331 CIGs."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1d3e4341fd",
+    "mxmap-it/analisi-spesa-ict@f252123e2f"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#74"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-18-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicati sul sito tutti i rendiconti e le pagine di progetto",
+    "en": "All reports and project pages published on the website"
+   },
+   "sintesi": {
+    "it": "Sul sito sono ora pubblicati ed elencati il rendiconto dell'imbuto 0.17, l'obiettivo 6, il perimetro CPV, gli usi dei dataset, il mirror pubblico e le sue motivazioni, oltre al rendiconto BDNCP e L. 190. Fabio ha fissato la regola che tutto sia pubblicato e sempre aggiornato.",
+    "en": "The website now publishes and lists funnel report 0.17, objective 6, the CPV perimeter, dataset uses, the public mirror and its rationale, as well as the BDNCP and Law 190 report. Fabio set the rule that everything be published and always kept up to date."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@8ba058cb0c"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#74"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-18-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Raffinamento a livelli sopra l'imbuto al posto del filtro P1",
+    "en": "Layered refinement on top of the funnel instead of filter P1"
+   },
+   "sintesi": {
+    "it": "Per decisione di Fabio il filtro P1 non viene adottato; al suo posto un raffinamento a livelli: L2 esclude dal cloud stampanti, consumabili e cablaggio (6.980 CIG, 470 M€; campione 40 su 40 confermato), L3 usa il modello Opus sul testo di 843 CIG del gruppo G3, L4 applica Opus alla via 6 (5 disaccordi sul cloud). La revisione riguarda 273 proposte e i livelli ora girano in catena automatica; il lavoro è in corso e documentato nel rendiconto 0.18.",
+    "en": "By Fabio's decision, filter P1 is not adopted; it is replaced by a layered refinement: L2 removes printers, consumables and cabling from cloud (6,980 CIGs, €470 M; sample 40 out of 40 confirmed), L3 uses the Opus model on the text of 843 CIGs in group G3, L4 applies Opus to route 6 (5 disagreements on cloud). The review covers 273 proposals and the layers now run as an automatic chain; the work is in progress and documented in report 0.18."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@f599b9c6af",
+    "mxmap-it/analisi-spesa-ict@0afb08684a"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#71"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-18-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Via 6: proseguita la seconda lettura e 32 nuovi gruppi G1 messi in coda",
+    "en": "Route 6: second reading continued and 32 new G1 groups queued"
+   },
+   "sintesi": {
+    "it": "Sono stati letti i pacchetti r031-r037 e riletto il pacchetto r006. Con l'imbuto 0.3.4 si aggiungono in coda 32 gruppi G1 non ancora letti, per 3,84 miliardi, senza modificare i pacchetti e gli esiti già esistenti; la lettura è in corso.",
+    "en": "Packages r031-r037 were read and package r006 was re-read. With funnel 0.3.4, 32 not-yet-read G1 groups worth 3.84 billion are added to the queue without altering existing packages and outcomes; the reading is in progress."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@8075ea7c8f",
+    "mxmap-it/analisi-spesa-ict@ea16655165"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#47",
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#66",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-18-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ripresa dopo la migrazione del server: job riattivati e sincronizzazione più robusta",
+    "en": "Resumption after server migration: jobs reactivated and more robust sync"
+   },
+   "sintesi": {
+    "it": "Dopo la migrazione del server sono stati riattivati i job pianificati del progetto. La sincronizzazione con il server ora non fallisce più quando un job scrive file durante l'aggiornamento.",
+    "en": "After the server migration, the project's scheduled jobs were reactivated. Synchronisation with the server no longer fails when a job writes files during the update."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@e8ee2954a9",
+    "mxmap-it/analisi-spesa-ict@fb92b587fe"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#73",
+    "mxmap-it/analisi-spesa-ict#74"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-18-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "SFSCon 2026: pubblicate le slide definitive del talk del 14 novembre",
+    "en": "SFSCon 2026: final slides of the 14 November talk published"
+   },
+   "sintesi": {
+    "it": "Il PDF (42 pagine) e il PPTX del talk presentato a SFSCon 2026, nella track Digital Independence Day, sono stati sostituiti con la versione definitiva effettivamente presentata e restano scaricabili dal sito. Lo script che rigenera le slide ora salva in una cartella di bozza, così da non sovrascrivere il deck definitivo rivisto a mano.",
+    "en": "The PDF (42 pages) and PPTX of the talk given at SFSCon 2026, in the Digital Independence Day track, have been replaced with the final version actually presented and remain downloadable from the site. The script that regenerates the slides now saves to a draft folder, so that it does not overwrite the hand-revised final deck."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7f54b0ef24"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-18-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "News sul talk a SFSCon 2026 preparata in bozza, in attesa del video",
+    "en": "News on the SFSCon 2026 talk prepared as a draft, pending the video"
+   },
+   "sintesi": {
+    "it": "È pronta, in italiano e inglese, la news sul talk del 14 novembre, con i numeri del rilevamento, i temi trattati, i materiali e tre foto dell'intervento (con metadati EXIF rimossi). Resta in bozza e sarà pubblicata insieme al link alla registrazione, quando SFSCon renderà disponibili i video.",
+    "en": "The news item on the 14 November talk is ready, in Italian and English, with the survey figures, the topics covered, the materials and three photos of the talk (with EXIF metadata removed). It remains a draft and will be published together with the link to the recording, once SFSCon releases the videos."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2a04d3eeda"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-18-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicate la sintesi del 7 novembre e una parte pubblica del cruscotto di lavoro",
+    "en": "7 November summary and a public section of the work dashboard published"
+   },
+   "sintesi": {
+    "it": "Su decisione di Fabio del 18 novembre, una parte del cruscotto che segue lo stato dei lavori su PVL, IndicePA e Amministrazione trasparente è ora consultabile pubblicamente. Anche la sintesi del 7 novembre è diventata una pagina pubblica del sito, così chiunque può leggerla e citarla.",
+    "en": "Following Fabio's decision of 18 November, part of the dashboard that tracks the status of work on PVL, IndicePA and Amministrazione trasparente can now be viewed publicly. The 7 November summary has also become a public page on the site, so anyone can read and cite it."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-18-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Incrocio tra Amministrazione trasparente e PVL più affidabile; correzione nell'espansione IndicePA",
+    "en": "More reliable cross-check between Amministrazione trasparente and PVL; IndicePA expansion fix"
+   },
+   "sintesi": {
+    "it": "L'incrocio tra le sezioni Amministrazione trasparente e i dati PVL ora può riprendere da dove si era interrotto senza ripetere le coppie già analizzate. Gli indirizzi web malformati vengono registrati invece di bloccare l'elaborazione, e gli errori sui singoli casi non fermano più l'intero run. Nell'espansione dell'anagrafe IndicePA, il nuovo tentativo sugli enti con errori non ripete più in ciclo sempre gli stessi casi.",
+    "en": "The cross-check between Amministrazione trasparente sections and PVL data can now resume from where it stopped, without repeating pairs already analysed. Malformed web addresses are logged instead of halting processing, and errors on individual cases no longer stop the entire run. In the IndicePA registry expansion, retries on entities that returned errors no longer loop over the same cases."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-18-pvl-at-3",
+   "contesto": "pvl-at",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Controlli automatici sui lavori di lunga durata",
+    "en": "Automated checks on long-running jobs"
+   },
+   "sintesi": {
+    "it": "Sono stati aggiunti controlli automatici che sorvegliano le elaborazioni di lunga durata, ed è stata dismessa l'automazione legata al run PVL ormai concluso.",
+    "en": "Automated checks now monitor long-running processing jobs, and the automation tied to the PVL run, which has now finished, has been retired."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22922,
+  "copertura": 94.32,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.4,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
+}

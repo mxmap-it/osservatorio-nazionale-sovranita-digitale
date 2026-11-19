@@ -1,0 +1,40 @@
+{
+ "data": "2026-10-06",
+ "settimana": "2026-W41",
+ "fonte": {
+  "mxmap": "be63098508612573"
+ },
+ "voci": [
+  {
+   "id": "2026-10-06-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Segnalazione ai motori di ricerca (IndexNow): limiti di tempo contro i blocchi",
+    "en": "Search engine notification (IndexNow): time limits against hangs"
+   },
+   "sintesi": {
+    "it": "Il 5 ottobre l'invio quotidiano delle pagine del sito ai motori di ricerca si era bloccato. Un server rallentato inviava la risposta poco alla volta, così l'operazione è stata interrotta dopo 15 minuti. Ora ogni file ha un tempo massimo di 75 secondi e la raccolta complessiva uno di 8 minuti: se il tempo finisce, viene inviata una parte degli indirizzi e il resto si recupera nei giorni successivi. In una prova sulla mappa del sito sono stati raccolti 30.579 indirizzi in 2,9 secondi.",
+    "en": "On 5 October the daily submission of the site's pages to search engines had hung. A slowed-down server was sending its response a little at a time, so the job was stopped after 15 minutes. Each file now has a 75-second time limit and the overall collection an 8-minute one: if time runs out, part of the addresses is submitted and the rest is picked up on the following days. In a test against the site map, 30,579 addresses were collected in 2.9 seconds."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@97778ab0e1"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22913,
+  "copertura": 97.24,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.7,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

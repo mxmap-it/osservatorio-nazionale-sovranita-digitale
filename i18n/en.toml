@@ -190,5 +190,8 @@ other = "Certifications"
 [footerRoadmap]
 other = "Roadmap"
 
+[footerRegistro]
+other = "Activity log"
+
 [numbersEconomic]
 other = "And every year <strong>&euro;264 billion</strong> leaves European companies for the American economy in cloud and software services: as much as the continent's energy bill."

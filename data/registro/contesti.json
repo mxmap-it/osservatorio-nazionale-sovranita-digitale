@@ -1,0 +1,51 @@
+[
+  {
+    "id": "mxmap",
+    "nome": {"it": "MxMap.it — scansioni e sviluppo", "en": "MxMap.it — scans and development"},
+    "breve": {"it": "MxMap.it", "en": "MxMap.it"},
+    "descrizione": "Software MxMap Italia: scansione notturna dei record DNS della posta di ~23.000 enti pubblici, classificazione dei fornitori per giurisdizione, sito mxmap.it, sviluppo e bugfix, EU Security Map.",
+    "repo": ["mxmap-it/mxmap.it"],
+    "pubblico": true,
+    "sito": "https://mxmap.it/",
+    "colore": "#0066CC",
+    "emoji": "🗺️",
+    "escludi": ["^chore: nightly data update", "^Merge (pull request|branch)"],
+    "scansioni": {"repo": "mxmap-it/mxmap.it", "file": "kpi.json", "titolo": "^chore: nightly data update"}
+  },
+  {
+    "id": "spesa-ict",
+    "nome": {"it": "Analisi della spesa ICT", "en": "Public ICT spending analysis"},
+    "breve": {"it": "Spesa ICT", "en": "ICT spending"},
+    "descrizione": "Analisi della spesa pubblica ICT e cloud della PA italiana (contratti BDNCP/ANAC, imbuto di classificazione, convenzioni, rendiconti): quanta spesa va a fornitori sotto giurisdizione italiana, UE o extra-UE.",
+    "repo": ["mxmap-it/analisi-spesa-ict", "mxmap-it/convenzioni-ict-documenti"],
+    "pubblico": true,
+    "sito": "https://analisi-spesa-ict.mxmap.it/",
+    "colore": "#5C2D91",
+    "emoji": "💶",
+    "escludi": ["^Server: output dei job in corso", "^Merge (pull request|branch)"]
+  },
+  {
+    "id": "osservatorio",
+    "nome": {"it": "Osservatorio — sito e pubblicazioni", "en": "Observatory — website and publications"},
+    "breve": {"it": "Osservatorio", "en": "Observatory"},
+    "descrizione": "Sito osservatorio.mxmap.it: nuovi contenuti, news, report, brief e PDF, analisi (es. PSN), traduzioni, presentazioni e materiali per gli stakeholder.",
+    "repo": ["mxmap-it/osservatorio-nazionale-sovranita-digitale"],
+    "pubblico": true,
+    "sito": "https://osservatorio.mxmap.it/",
+    "colore": "#008758",
+    "emoji": "🏛️",
+    "escludi": ["^chore: update KPI data", "^Merge (pull request|branch)", "^Registro attività: aggiornamento automatico"]
+  },
+  {
+    "id": "pvl-at",
+    "nome": {"it": "PVL, espansione IndicePA e Amministrazione trasparente", "en": "PVL, IndicePA expansion and Transparency sections"},
+    "breve": {"it": "PVL e Trasparenza", "en": "PVL & Transparency"},
+    "descrizione": "Monitoraggio della visibilità dei siti della PA (PVL: robots.txt e accessibilità), espansione e bonifica dell'anagrafe IndicePA (enti mancanti, controllo pubblico), analisi delle sezioni Amministrazione trasparente.",
+    "repo": ["mxmap-it/monitoraggio-pvl-e-amministrazione-trasparente", "mxmap-it/transparency-monitor"],
+    "pubblico": false,
+    "sito": "",
+    "colore": "#A66300",
+    "emoji": "🔎",
+    "escludi": ["^Merge (pull request|branch)"]
+  }
+]

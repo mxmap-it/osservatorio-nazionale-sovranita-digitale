@@ -1,0 +1,64 @@
+{
+ "data": "2026-09-22",
+ "settimana": "2026-W39",
+ "fonte": {
+  "mxmap": "ebbc0ecfb8eb45ef",
+  "osservatorio": "7ea2521c02b2e0b8"
+ },
+ "voci": [
+  {
+   "id": "2026-09-22-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sitemap più affidabile: date di aggiornamento solo per le pagine davvero cambiate",
+    "en": "More reliable sitemap: update dates only for pages that actually changed"
+   },
+   "sintesi": {
+    "it": "La data di ultimo aggiornamento di ogni pagina di mxmap.it ora avanza solo quando il suo contenuto cambia davvero, invece di risultare aggiornata ogni notte; lo stato iniziale copre 30.555 pagine e viene conservato tra una scansione notturna e l'altra. Le pagine degli enti sono ora raggruppate in tre sitemap (territoriali 9.430, scuole 8.314, istituzioni 5.143) al posto dei 20 file regionali, e la segnalazione ai motori di ricerca tramite IndexNow privilegia le pagine modificate negli ultimi tre giorni. L'obiettivo è migliorare l'indicizzazione delle schede degli enti nei motori di ricerca.",
+    "en": "The last-updated date of each mxmap.it page now advances only when its content actually changes, instead of appearing updated every night; the initial state covers 30,555 pages and is preserved between nightly scans. Entity pages are now grouped into three sitemaps (territorial 9,430, schools 8,314, institutions 5,143) instead of the 20 regional files, and notifications to search engines via IndexNow prioritise pages modified in the last three days. The aim is to improve how entity pages are indexed by search engines."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@0644391f8c",
+    "mxmap-it/mxmap.it@4e1297a1b3"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-22-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "In homepage i collegamenti diretti ai dati di ogni regione su mxmap.it",
+    "en": "Homepage now links directly to each region's data on mxmap.it"
+   },
+   "sintesi": {
+    "it": "La homepage dell'Osservatorio ha una nuova sezione, «La sovranità digitale nella tua regione». Contiene 20 collegamenti alle pagine regionali di mxmap.it, più due accessi alla vista di tutte le aree e alla vista per categoria. Da qui si arriva più facilmente alle circa 23.000 schede dedicate ai singoli enti. La sezione è in italiano e in inglese.",
+    "en": "The Observatory homepage has a new section, \"Digital sovereignty in your region\". It contains 20 links to the regional pages on mxmap.it, plus two entry points to the all-areas view and the by-category view. From here readers can more easily reach the roughly 23,000 profiles of individual public bodies. The section is available in Italian and English."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b2356ae20c"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22889,
+  "copertura": 97.26,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

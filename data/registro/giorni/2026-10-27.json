@@ -1,0 +1,208 @@
+{
+ "data": "2026-10-27",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "44e0075857f19d28",
+  "osservatorio": "adc8c27a19facad2"
+ },
+ "voci": [
+  {
+   "id": "2026-10-27-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Verifiche sui dati ANAC: 12.079.473 CIG controllati sul mirror completo 2007-2026",
+    "en": "Checks on ANAC data: 12,079,473 CIGs verified on the full 2007-2026 mirror"
+   },
+   "sintesi": {
+    "it": "I controlli di integrità sui codici CIG sono stati estesi a tutto il mirror dei dati ANAC, compresi tutti gli anni e gli aggiornamenti mensili, per un totale di 12.079.473 CIG dal 2007 al 2026. Le verifiche hanno inoltre misurato una copertura dei dati OCDS del 67% a marzo, con il fornitore presente nel 20,4% delle aggiudicazioni, e confermato con un confronto byte per byte i mesi OCDS duplicati (24 mesi in 8 gruppi). I risultati sono confluiti nelle versioni 1.4 e 1.5 del rendiconto per ANAC, che include un nuovo reperto sulle righe CSV non conformi.",
+    "en": "Integrity checks on CIG codes were extended to the entire mirror of ANAC data, including all years and monthly updates, for a total of 12,079,473 CIGs from 2007 to 2026. The checks also measured 67% coverage of OCDS data in March, with the supplier present in 20.4% of awards, and confirmed the duplicated OCDS months through a byte-by-byte comparison (24 months in 8 groups). The results went into versions 1.4 and 1.5 of the report for ANAC, which includes a new finding on non-conforming CSV rows."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@4d231b1c97",
+    "mxmap-it/analisi-spesa-ict@6828363828",
+    "mxmap-it/analisi-spesa-ict@4b1de89891",
+    "mxmap-it/analisi-spesa-ict@d3d6079ffc",
+    "mxmap-it/analisi-spesa-ict@fd36b288dd",
+    "mxmap-it/analisi-spesa-ict@d0913e49dc",
+    "mxmap-it/analisi-spesa-ict@fb9402dbba",
+    "mxmap-it/analisi-spesa-ict@a7fd09ec32",
+    "mxmap-it/analisi-spesa-ict@323a004e16",
+    "mxmap-it/analisi-spesa-ict@49abc628c5"
+   ],
+   "n_commit": 10,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#31",
+    "mxmap-it/analisi-spesa-ict#38",
+    "mxmap-it/analisi-spesa-ict#42"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-27-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Registro dei problemi nei dati ANAC: 15 schede pronte, verificate per seconde vie indipendenti",
+    "en": "Register of issues in ANAC data: 15 entries ready, checked through independent second routes"
+   },
+   "sintesi": {
+    "it": "I problemi riscontrati nei dati ANAC sono ora raccolti in un registro con schede che riportano per ciascuno prova, controvalidazione, azione suggerita, metrica e stato di prontezza; sono stati aggiunti i problemi P16 (CSV non conformi negli aggiornamenti 2026) e P17 (codici fiscali segnaposto). Diversi problemi sono stati confermati da una seconda rete o da una seconda via indipendente, e una verifica con metodi di richiesta distinti ha portato a correggere due indicatori (D6/I9). Con le versioni 1.6 e 1.7 del rendiconto le schede pronte sono 15, e il problema P03 risulta essere una regressione comparsa nel 2026.",
+    "en": "The issues found in ANAC data are now collected in a register with entries that state, for each one, evidence, cross-validation, suggested action, metric and readiness status; issues P16 (non-conforming CSV files in the 2026 updates) and P17 (placeholder tax codes) were added. Several issues were confirmed from a second network or through an independent second route, and a check using distinct request methods led to correcting two indicators (D6/I9). With versions 1.6 and 1.7 of the report, 15 entries are ready, and issue P03 turns out to be a regression that appeared in 2026."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@167b386393",
+    "mxmap-it/analisi-spesa-ict@b804d33409",
+    "mxmap-it/analisi-spesa-ict@c1501162cc",
+    "mxmap-it/analisi-spesa-ict@e19eb3d49b",
+    "mxmap-it/analisi-spesa-ict@5db30dc57e",
+    "mxmap-it/analisi-spesa-ict@28d3cdacfd",
+    "mxmap-it/analisi-spesa-ict@a83eddc9a1",
+    "mxmap-it/analisi-spesa-ict@441efaba34",
+    "mxmap-it/analisi-spesa-ict@38afe8289f"
+   ],
+   "n_commit": 9,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#18",
+    "mxmap-it/analisi-spesa-ict#32",
+    "mxmap-it/analisi-spesa-ict#33"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-27-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Verifiche ANAC riproducibili da zero: snapshot dei 349 file e guida alla riproduzione",
+    "en": "ANAC checks reproducible from scratch: snapshot of the 349 files and reproduction guide"
+   },
+   "sintesi": {
+    "it": "È stato deciso che la ripetibilità da zero della pipeline di verifica sia un criterio di chiusura del lavoro su ANAC, e che documento e presentazione includano una sezione sulla riproduzione. Sono stati pubblicati nel repository uno snapshot dei 349 file usati per il rendiconto (indirizzo, dimensione e impronta sha256), uno script unico di verifica con dipendenze bloccate, un confronto automatico con gli esiti pubblicati e una guida per riprodurre i risultati sia dai dati dal vivo sia dallo snapshot.",
+    "en": "It was decided that the ability to rerun the verification pipeline from scratch is a closing criterion for the ANAC work, and that the document and presentation include a section on reproduction. A snapshot of the 349 files used for the report (address, size and sha256 fingerprint), a single verification script with pinned dependencies, an automatic comparison with the published results and a guide to reproducing the results both from live data and from the snapshot were added to the repository."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6ee4ccb4e9",
+    "mxmap-it/analisi-spesa-ict@431cae1344",
+    "mxmap-it/analisi-spesa-ict@e47bb50147",
+    "mxmap-it/analisi-spesa-ict@9a6eae96e1",
+    "mxmap-it/analisi-spesa-ict@bc40e06112",
+    "mxmap-it/analisi-spesa-ict@72ffbf2c0a",
+    "mxmap-it/analisi-spesa-ict@08a06b8c91"
+   ],
+   "n_commit": 7,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#47"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-27-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documento e presentazione per ANAC generati dal registro dei problemi (in preparazione)",
+    "en": "Document and presentation for ANAC generated from the issue register (in preparation)"
+   },
+   "sintesi": {
+    "it": "Dal registro dei problemi vengono ora generati automaticamente un documento per ANAC, con sintesi dei problemi e schede tecniche, e una presentazione esecutiva di 20 slide; per ogni problema è stata aggiunta una spiegazione delle conseguenze in linguaggio piano. Il PDF del documento è stato ritirato in attesa di rifare l'impaginazione.",
+    "en": "A document for ANAC, with a summary of the issues and technical entries, and a 20-slide executive presentation are now generated automatically from the issue register; a plain-language explanation of the consequences was added for each issue. The PDF of the document was withdrawn pending a redo of the layout."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@94528af506",
+    "mxmap-it/analisi-spesa-ict@a6eec213e5",
+    "mxmap-it/analisi-spesa-ict@8e52764106",
+    "mxmap-it/analisi-spesa-ict@181c34eadf",
+    "mxmap-it/analisi-spesa-ict@2100ee2536"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#34",
+    "mxmap-it/analisi-spesa-ict#35",
+    "mxmap-it/analisi-spesa-ict#36"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-27-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pilota per attribuire il cloud provider ai contratti ICT: campioni separati e prima misura",
+    "en": "Pilot to attribute the cloud provider to ICT contracts: separate samples and first measurement"
+   },
+   "sintesi": {
+    "it": "È stato avviato un pilota per riconoscere il fornitore cloud nei contratti ICT del 2025 attraverso vie differenziate (descrizioni, dizionario dei marchi, accordi quadro e lotti Consip, ricostruiti anche dalla tabella degli accordi quadro 2007-2025). Per evitare di misurare la precisione sugli stessi dati usati per correggere le regole, sono stati costruiti un campione di sviluppo (745 contratti, 36 strati) e un campione di misura distinto (717 contratti, 30 strati). La prima misura, su 437 righe del campione di misura, è provvisoria perché l'annotazione non era cieca.",
+    "en": "A pilot was launched to identify the cloud provider in 2025 ICT contracts through differentiated routes (descriptions, a dictionary of brands, framework agreements and Consip lots, also reconstructed from the 2007-2025 framework agreement table). To avoid measuring accuracy on the same data used to fix the rules, a development sample (745 contracts, 36 strata) and a separate measurement sample (717 contracts, 30 strata) were built. The first measurement, on 437 rows of the measurement sample, is provisional because the annotation was not blind."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@fd8d40e5aa",
+    "mxmap-it/analisi-spesa-ict@c37f12826e",
+    "mxmap-it/analisi-spesa-ict@5d235026cb",
+    "mxmap-it/analisi-spesa-ict@8c359a3269",
+    "mxmap-it/analisi-spesa-ict@c588a9e40d",
+    "mxmap-it/analisi-spesa-ict@9ec4e81e0c",
+    "mxmap-it/analisi-spesa-ict@1a913f1109",
+    "mxmap-it/analisi-spesa-ict@dc0fcb799e",
+    "mxmap-it/analisi-spesa-ict@ec99601f4b",
+    "mxmap-it/analisi-spesa-ict@c717a9b289",
+    "mxmap-it/analisi-spesa-ict@a6f7ca4fe8",
+    "mxmap-it/analisi-spesa-ict@48bd65756b",
+    "mxmap-it/analisi-spesa-ict@9717fdbbae",
+    "mxmap-it/analisi-spesa-ict@9db45cf44f",
+    "mxmap-it/analisi-spesa-ict@4bf74cbcf2",
+    "mxmap-it/analisi-spesa-ict@dd320859ec",
+    "mxmap-it/analisi-spesa-ict@9442a34d0a"
+   ],
+   "n_commit": 17,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#48",
+    "mxmap-it/analisi-spesa-ict#50"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-27-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ricerca sulle misure europee della sovranità digitale e della spesa cloud pubblica",
+    "en": "Research on European measures of digital sovereignty and public cloud spending"
+   },
+   "sintesi": {
+    "it": "Sono state raccolte e documentate le misure e le metodologie usate in Europa per valutare la sovranità digitale e per misurare la spesa pubblica in servizi cloud, insieme a un'ipotesi di pilota sui dati ANAC. Il materiale serve come base metodologica per l'analisi della spesa ICT della Pubblica Amministrazione, attualmente in preparazione.",
+    "en": "The measures and methodologies used in Europe to assess digital sovereignty and to measure public spending on cloud services have been collected and documented, together with a proposed pilot based on ANAC data. The material serves as the methodological basis for the analysis of Public Administration ICT spending, currently in preparation."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d5278adc38",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@36343ee8d2"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale#49"
+   ],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22920,
+  "copertura": 97.26,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

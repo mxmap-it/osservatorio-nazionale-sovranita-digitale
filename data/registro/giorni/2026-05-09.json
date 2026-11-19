@@ -1,0 +1,55 @@
+{
+ "data": "2026-05-09",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "8eb214987c3bf108"
+ },
+ "voci": [
+  {
+   "id": "2026-05-09-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Audit di un errore di attribuzione dei server di posta: 1.112 enti certamente coinvolti",
+    "en": "Audit of a mail server misattribution error: 1,112 entities certainly affected"
+   },
+   "sintesi": {
+    "it": "Un'analisi d'impatto ha individuato gli enti a cui la pipeline aveva assegnato il server di posta di un altro ente, ricavato dall'estrazione automatica (scraping) delle homepage: 1.112 casi sono errori certi (tenant Microsoft di un ente diverso), mentre altri 5.609 presentano una discordanza tra server e dominio ancora da verificare, perché includono sia casi legittimi sia errori. È stata inoltre documentata la catena con cui il sistema recupera un dominio di posta valido quando quello del sito istituzionale in IndicePA non ne ha uno, con il principio che l'email non PEC registrata in IndicePA prevale sempre e lo scraping è l'ultima risorsa.",
+    "en": "An impact analysis identified the entities to which the pipeline had assigned another entity's mail server, derived from automated extraction (scraping) of homepages: 1,112 cases are certain errors (a Microsoft tenant belonging to a different entity), while another 5,609 show a mismatch between server and domain that still needs checking, as they include both legitimate cases and errors. The chain by which the system recovers a valid mail domain when the institutional website listed in IndicePA has none was also documented, with the principle that the non-PEC email registered in IndicePA always takes precedence and scraping is the last resort."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@99973a53c5"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-09-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Corretta l'attribuzione errata dei server di posta e aggiunta una nuova fonte IndicePA",
+    "en": "Fixed the misattribution of mail servers and added a new IndicePA source"
+   },
+   "sintesi": {
+    "it": "L'errore nasceva dall'assegnazione automatica del server di posta di qualsiasi dominio email trovato in una homepage (ad esempio un dominio del Ministero dell'Interno associato al server di posta del Comune di Roma). Ora ogni dominio candidato passa da un controllo prudente che lo scarta per impostazione predefinita e lo accetta solo in caso di corrispondenza verificabile con l'ente; le voci già contaminate vengono rimosse dai dati. Si aggiunge inoltre una nuova fonte: le email non PEC delle Aree Organizzative Omogenee e delle Unità Organizzative di IndicePA, con i casi dubbi segnalati per revisione manuale anziché ereditati in silenzio.",
+    "en": "The error stemmed from automatically assigning the mail server of any email domain found on a homepage (for example, a Ministry of the Interior domain associated with the City of Rome's mail server). Every candidate domain now goes through a conservative check that rejects it by default and accepts it only when there is a verifiable match with the entity; entries already contaminated are removed from the data. A new source is also added: the non-PEC emails of IndicePA's Homogeneous Organisational Areas and Organisational Units, with doubtful cases flagged for manual review rather than silently inherited."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@a238749d1b",
+    "mxmap-it/mxmap.it@7e5d0cfeaf",
+    "mxmap-it/mxmap.it@8dc2426063"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

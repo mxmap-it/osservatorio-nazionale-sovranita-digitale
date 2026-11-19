@@ -1,0 +1,44 @@
+{
+ "data": "2026-11-01",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "2340555edc788ce9"
+ },
+ "voci": [
+  {
+   "id": "2026-11-01-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pianificati il censimento del patrimonio ICT della PA e una pipeline di recupero documenti",
+    "en": "Planned census of PA ICT assets and a document retrieval pipeline"
+   },
+   "sintesi": {
+    "it": "Sono state messe in agenda due attività: un censimento del patrimonio ICT della Pubblica Amministrazione e una pipeline prioritaria che, partendo dal dettaglio di ogni CIG, risale alle pubblicazioni dell'ente e ai relativi documenti di gara. Si tratta di lavoro pianificato, non ancora svolto; servirà a documentare meglio i contratti analizzati.",
+    "en": "Two activities were added to the plan: a census of the Public Administration's ICT assets, and a priority pipeline that starts from the details of each CIG (tender identification code) and traces back to the contracting body's publications and the related tender documents. This is planned work, not yet carried out; it is meant to document the analysed contracts more thoroughly."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@bd049b2e21",
+    "mxmap-it/analisi-spesa-ict@fca5f5292e"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57",
+    "mxmap-it/analisi-spesa-ict#60"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22924,
+  "copertura": 97.29,
+  "extra_eu": 47.2,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

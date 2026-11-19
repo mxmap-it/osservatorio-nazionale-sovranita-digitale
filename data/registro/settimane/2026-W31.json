@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W31",
+ "dal": "2026-07-27",
+ "al": "2026-08-02",
+ "fonte": "f8bff3fe54cbb205",
+ "titolo": {
+  "it": "Certificare l'immunità: confronto Francia-Italia, Policy Brief aggiornato e dossier su fonti primarie",
+  "en": "Certifying immunity: France-Italy comparison, updated Policy Brief and primary-source dossiers"
+ },
+ "sintesi": {
+  "it": "La settimana ha prodotto la nuova sezione bilingue «Certificazioni e Sovranità»: SecNumCloud 3.2 è l'unico schema con requisiti di immunità dalle leggi extraterritoriali, mentre nel regolamento ACN (DD 21007/24, 88 pagine) non risulta alcuna clausola equivalente. Il Policy Brief IT ed EN è passato da 2 a 3 pagine e propone 4 raccomandazioni. È stato aggiornato più volte con gli esiti delle verifiche e con il dato corretto su S3NS. Una serie di dossier verificati su fonti primarie (FedRAMP, strumenti federali USA, AWS e Google, sanzioni, casi europei, CADA e Data Act) ha corretto diversi assunti, tra cui alcuni nostri errori, e ha reso più caute le formulazioni. La scansione notturna di MxMap è rimasta stabile: 22.895 enti, copertura del 97,27%, quota extra-UE al 46,8%.",
+  "en": "The week produced the new bilingual section «Certifications and Sovereignty»: SecNumCloud 3.2 is the only scheme with requirements for immunity from extraterritorial laws, while the ACN regulation (DD 21007/24, 88 pages) contains no equivalent clause. The IT and EN Policy Brief grew from 2 to 3 pages and proposes 4 recommendations. It was updated several times with the outcome of the checks and with the corrected S3NS figure. A series of dossiers verified on primary sources (FedRAMP, US federal instruments, AWS and Google, sanctions, European cases, CADA and the Data Act) corrected several assumptions, including some of our own errors, and made the wording more cautious. The MxMap nightly scan remained stable: 22,895 entities, 97.27% coverage, non-EU share at 46.8%."
+ },
+ "punti": [
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Pubblicata la pagina /certificazioni/ (IT+EN), che confronta SecNumCloud 3.2 con la qualificazione ACN. Successivamente vi sono stati aggiunti l'ammissione scritta di Google sulla localizzazione dei dati e un riquadro sul caso Airbus/Scaleway. Il Policy Brief è stato ampliato e corretto: esito della verifica sul decreto ACN, livello «High+» dell'EUCS, qualificazione S3NS del 17 dicembre 2025. Nuovi dossier documentano che nessun fornitore cloud europeo è autorizzato FedRAMP, censiscono 25 strumenti federali USA (7 incidono sul cloud) e indicano il Data Act art. 29, 12 gennaio 2027, come unica scadenza vincolante con data certa.",
+    "en": "The /certificazioni/ page (IT+EN) was published, comparing SecNumCloud 3.2 with the ACN qualification. Google's written admission on data localisation and a box on the Airbus/Scaleway case were later added to it. The Policy Brief was expanded and corrected: outcome of the check on the ACN decree, the EUCS «High+» level, and the S3NS qualification of 17 December 2025. New dossiers document that no European cloud provider is FedRAMP-authorised, catalogue 25 US federal instruments (7 affecting cloud) and identify Data Act Art. 29, 12 January 2027, as the only binding deadline with a fixed date."
+   },
+   "voci": [
+    "2026-07-29-osservatorio-1",
+    "2026-07-29-osservatorio-2",
+    "2026-08-02-osservatorio-1",
+    "2026-08-02-osservatorio-4"
+   ]
+  }
+ ],
+ "n_voci": 18
+}

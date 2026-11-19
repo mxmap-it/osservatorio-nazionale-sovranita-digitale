@@ -1,0 +1,114 @@
+{
+ "data": "2026-08-03",
+ "settimana": "2026-W32",
+ "fonte": {
+  "osservatorio": "247efcc7e1fac2a6"
+ },
+ "voci": [
+  {
+   "id": "2026-08-03-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "PSN: nei documenti ufficiali «sovranità del dato» indica una copia di backup mensile",
+    "en": "PSN: in official documents “data sovereignty” means a monthly backup copy"
+   },
+   "sintesi": {
+    "it": "Sono stati letti per intero quattro documenti ufficiali del Polo Strategico Nazionale, 161 pagine, e i PDF sono stati archiviati. Il manuale definisce la «sovranità del dato» come una copia dei workload replicata ogni mese nel perimetro del PSN. Nei quattro documenti non compaiono mai termini come CLOUD Act, controllo societario o SecNumCloud. L'analisi corregge anche una nostra assunzione iniziale: nel livello PSN Managed i servizi sono gestiti da personale del PSN. Resta l'ipotesi di lavoro secondo cui il PSN è un buon programma di consolidamento ma non garantisce immunità giurisdizionale; non è ancora un risultato accertato e manca il dato su quale livello sia il più adottato dagli enti.",
+    "en": "Four official documents of the National Strategic Hub (PSN), 161 pages, were read in full and the PDFs were archived. The manual defines “data sovereignty” as a copy of workloads replicated monthly within the PSN perimeter. Terms such as CLOUD Act, corporate control or SecNumCloud never appear in the four documents. The analysis also corrects an initial assumption of ours: in the PSN Managed tier, services are run by PSN staff. The working hypothesis remains that the PSN is a sound consolidation programme but does not provide jurisdictional immunity; it is not yet an established finding, and data on which tier public bodies use most is still missing."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@82e5d9f649",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7de45d37e0",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@73c05b846e"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-08-03-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova pagina bilingue «Misure tecniche»: cosa proteggono e dove si fermano",
+    "en": "New bilingual “Technical measures” page: what they protect and where they stop"
+   },
+   "sintesi": {
+    "it": "Pubblicata la pagina /misure-tecniche/, in italiano e inglese, che esamina sette misure proposte dai fornitori (chiavi esterne/BYOK, region nazionale, personale locale, confidential computing, attestazione remota, entità giuridica europea, backup «sovrano»), indicando per ciascuna cosa risolve davvero e dove si ferma. La pagina si basa sul documento integrale dell'agenzia francese ANSSI (13 pagine, 17.10.2025), secondo cui il confidential computing non basta a soddisfare il requisito di immunità di SecNumCloud e il BYOK non risolve il problema. Include una FAQ e dieci obiezioni affrontate nella loro forma più forte; la conclusione politica è dichiarata come nostra, le premesse tecniche sono dell'ANSSI.",
+    "en": "The /misure-tecniche/ page has been published in Italian and English. It examines seven measures offered by providers (external keys/BYOK, national region, local staff, confidential computing, remote attestation, European legal entity, “sovereign” backup), stating for each what it genuinely solves and where it stops. The page draws on the full document from the French agency ANSSI (13 pages, 17.10.2025), which states that confidential computing is not sufficient to meet SecNumCloud's immunity requirement and that BYOK does not solve the problem. It includes an FAQ and ten objections addressed in their strongest form; the policy conclusion is stated as ours, while the technical premises are ANSSI's."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@da9681a0de",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@408ddc316f",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e062aaf050"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/misure-tecniche/",
+    "https://osservatorio.mxmap.it/en/misure-tecniche/"
+   ]
+  },
+  {
+   "id": "2026-08-03-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Tabella di confronto: i tre livelli PSN contro i requisiti francesi SecNumCloud",
+    "en": "Comparison table: the three PSN tiers against French SecNumCloud requirements"
+   },
+   "sintesi": {
+    "it": "Sulla pagina «Misure tecniche» è stata aggiunta una tabella che confronta otto requisiti sui tre livelli PSN con la sezione 19.6 di SecNumCloud, con ogni casella ricavata dalle 161 pagine di documenti PSN. Il risultato: la differenza non sta nella purezza dei fornitori, perché anche in Francia operano offerte basate su Microsoft e Google, ma nel fatto che la Francia ha scritto requisiti misurabili su sede, capitale e amministrazione, mentre l'Italia non ne ha scritto alcuno.",
+    "en": "A table has been added to the “Technical measures” page comparing eight requirements across the three PSN tiers with section 19.6 of SecNumCloud, with each cell drawn from the 161 pages of PSN documents. The finding: the difference lies not in the purity of providers, since offerings based on Microsoft and Google also operate in France, but in the fact that France has written measurable requirements on headquarters, capital and administration, while Italy has written none."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@65cb3a7ad8"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/misure-tecniche/",
+    "https://osservatorio.mxmap.it/en/misure-tecniche/"
+   ]
+  },
+  {
+   "id": "2026-08-03-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documentario: Atto 7 sul PSN completato e script v3.1 senza stime non verificabili",
+    "en": "Documentary: Act 7 on the PSN completed and script v3.1 without unverifiable estimates"
+   },
+   "sintesi": {
+    "it": "È stato scritto il segmento del film sul PSN ed è stata prodotta la scheda grafica 15, che confronta i requisiti francesi con quelli italiani. Per decisione del fondatore si smette di cercare il dato, non pubblico, su quale livello PSN sia il più adottato: le inquadrature descrivono l'architettura senza quantificare, e l'assenza del dato diventa essa stessa un reperto, accanto ad altri due casi di dati non raccolti. Script e storyboard v3.1 sono allineati sul sito: 143 inquadrature, 1800 secondi.",
+    "en": "The film segment on the PSN has been written and graphic card 15, comparing French and Italian requirements, has been produced. By the founder's decision, the search for the non-public figure on which PSN tier is most adopted has stopped: the shots describe the architecture without quantifying it, and the absence of the figure itself becomes a finding, alongside two other cases of data that is not collected. Script and storyboard v3.1 are aligned on the site: 143 shots, 1,800 seconds."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@1471389823",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d27a19b87c",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c187bd30fc"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22895,
+  "copertura": 97.27,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "data": "2026-11-17",
+ "settimana": "2026-W47",
+ "fonte": {
+  "pvl-at": "2625bdc2570ae9bd"
+ },
+ "voci": [
+  {
+   "id": "2026-11-17-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Chiuso il giro di rilevazione PVL, avviato l'incrocio completo; 409 conferme per IndicePA",
+    "en": "PVL survey round completed, full cross-check started; 409 confirmations for IndicePA"
+   },
+   "sintesi": {
+    "it": "Si è concluso il giro completo di rilevazione PVL sulla visibilità dei siti della PA (totale registrato: 597.420) ed è partito l'incrocio completo dei risultati. Nell'espansione dell'anagrafe IndicePA sono finora 409 le conferme, e i casi andati in errore vengono ora ricontrollati con un secondo passaggio; i dati sono parziali e il lavoro è in corso.",
+    "en": "The full PVL survey round on the visibility of public administration websites has been completed (recorded total: 597,420), and the full cross-check of the results has started. In the IndicePA registry expansion there are 409 confirmations so far, and cases that ended in errors are now rechecked in a second pass; the data are partial and the work is ongoing."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22923,
+  "copertura": 94.32,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
+}

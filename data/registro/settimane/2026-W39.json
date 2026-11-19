@@ -1,0 +1,40 @@
+{
+ "settimana": "2026-W39",
+ "dal": "2026-09-21",
+ "al": "2026-09-27",
+ "fonte": "9aff4491525cc385",
+ "titolo": {
+  "it": "Avviato il filone sulla spesa ICT: censite le fonti, misurato il collegamento CIG-CUP",
+  "en": "ICT spending strand launched: sources surveyed, CIG-CUP link measured"
+ },
+ "sintesi": {
+  "it": "La settimana ha avviato il lavoro sulla spesa ICT. Ci sono un piano, una regola per decidere cosa rientra nel perimetro e un censimento delle fonti, che ha già documentato le prime anomalie nei dati aperti. Il dataset ANAC che collega CIG e CUP copre solo il 20,2% dei CIG ICT, pari al 18,9% del valore, e per i dati SIOPE la fonte diventa siope.it al posto di BDAP. In parallelo, la sitemap di mxmap.it e i collegamenti interni del sito dell'Osservatorio sono stati rivisti per rendere le schede degli enti e le analisi più facili da trovare.",
+  "en": "This week, work on ICT spending began. There is now a work plan, a rule for deciding what falls within scope and a survey of sources, which has already documented the first anomalies in the open data. ANAC's dataset linking CIG and CUP codes covers only 20.2% of ICT CIGs, equal to 18.9% of their value, and the source for SIOPE data is now siope.it instead of BDAP. In parallel, the mxmap.it sitemap and the internal links on the Observatory website were revised to make the entity pages and the analyses easier to find."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La data di aggiornamento di ogni pagina nella sitemap ora avanza solo quando il contenuto cambia davvero; lo stato iniziale copre 30.555 pagine. Le schede degli enti sono raggruppate in tre sitemap (territoriali 9.430, scuole 8.314, istituzioni 5.143) al posto dei 20 file regionali. Nelle scansioni notturne gli enti passano da 22.887 a 22.900, mentre la quota extra-UE resta tra il 46,9% e il 47,0%.",
+    "en": "The last-updated date of each page in the sitemap now advances only when its content actually changes; the initial state covers 30,555 pages. Entity pages are grouped into three sitemaps (territorial 9,430, schools 8,314, institutions 5,143) instead of the 20 regional files. In the nightly scans, the number of entities rose from 22,887 to 22,900, while the extra-EU share stayed between 46.9% and 47.0%."
+   },
+   "voci": [
+    "2026-09-22-mxmap-1"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Avviato il filone sulla spesa ICT con piano di lavoro, regola di perimetro e censimento delle fonti. Il collegamento CIG-CUP di ANAC copre il 20,2% dei CIG ICT e il 18,9% del valore, e i dati SIOPE saranno presi da siope.it invece che da BDAP. Sul sito, la homepage ha nuove sezioni con i collegamenti alle 20 regioni su mxmap.it e alle analisi su PSN e Certificazioni; sono stati corretti gli undici link del piè di pagina inglese.",
+    "en": "The ICT spending strand was launched with a work plan, a scope rule and a survey of sources. ANAC's CIG-CUP link covers 20.2% of ICT CIGs and 18.9% of their value, and SIOPE data will be taken from siope.it instead of BDAP. On the website, the homepage has new sections linking to the 20 regions on mxmap.it and to the PSN and Certifications analyses; the eleven links in the English footer were fixed."
+   },
+   "voci": [
+    "2026-09-23-osservatorio-1",
+    "2026-09-23-osservatorio-4",
+    "2026-09-24-osservatorio-1",
+    "2026-09-27-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 8
+}

@@ -1,0 +1,164 @@
+{
+ "data": "2026-05-04",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "ecedb836a0c9a060",
+  "spesa-ict": "",
+  "osservatorio": "",
+  "pvl-at": ""
+ },
+ "voci": [
+  {
+   "id": "2026-05-04-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuove categorie di fornitori sulla mappa italiana: Cloud Italiano, Provider Italiano, Infrastruttura autonoma",
+    "en": "New provider categories on the Italian map: Italian Cloud, Italian Provider, Autonomous Infrastructure"
+   },
+   "sintesi": {
+    "it": "La legenda è stata riorganizzata in cinque fasce: USA (CLOUD Act), Cloud Italiano (infrastrutture pubbliche come Lepida, ARIA, CSI, Insiel, Sogei), Provider Italiano (che riunisce Aruba, Register.it, Seeweb, InfoCert, Namirial, ISP nazionali e locali), Infrastruttura autonoma e Altro. Anche i contractor privati della PA, aziende di giurisdizione italiana, sono confluiti nella fascia Provider Italiano; nei dati grezzi la distinzione tecnica resta disponibile per verifica.",
+    "en": "The legend has been reorganised into five tiers: USA (CLOUD Act), Italian Cloud (public infrastructures such as Lepida, ARIA, CSI, Insiel, Sogei), Italian Provider (grouping Aruba, Register.it, Seeweb, InfoCert, Namirial, national and local ISPs), Autonomous Infrastructure and Other. Private PA contractors, companies under Italian jurisdiction, have also been merged into the Italian Provider tier; the technical distinction remains available in the raw data for auditing."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@c045bec7ca",
+    "mxmap-it/mxmap.it@453109dba3"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-04-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Comuni sui server provinciali: analisi dei 111 domini di provincia e riclassificazione",
+    "en": "Municipalities on provincial mail servers: analysis of the 111 provincial domains and reclassification"
+   },
+   "sintesi": {
+    "it": "Una nuova verifica esamina direttamente i 111 domini provinciali (es. al.it) usati da molti comuni per la posta: nessuno mostra segnali di fornitori hyperscaler, quindi i comuni che li usano sono ora classificati come infrastruttura pubblica italiana anziché in una categoria residua. Dopo una correzione che evita di riclassificare comuni già attribuiti correttamente ad Aruba o Microsoft, la distribuzione dei 7.870 comuni è: Microsoft 1252 (15,9%), Google 587 (7,5%), ISP locali 2246 (28,5%), autonomi 2037 (25,9%), pubblico regionale 879 (11,2%).",
+    "en": "A new check directly examines the 111 provincial domains (e.g. al.it) that many municipalities use for email: none shows hyperscaler signals, so municipalities using them are now classified as Italian public infrastructure rather than placed in a residual category. After a fix that stops reclassifying municipalities already correctly attributed to Aruba or Microsoft, the distribution across 7,870 municipalities is: Microsoft 1252 (15.9%), Google 587 (7.5%), local ISPs 2246 (28.5%), independent 2037 (25.9%), regional public 879 (11.2%)."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@52f5d085f8",
+    "mxmap-it/mxmap.it@4ad996c1cf",
+    "mxmap-it/mxmap.it@974fbdf6d9",
+    "mxmap-it/mxmap.it@5d97cad698",
+    "mxmap-it/mxmap.it@4971283b67"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-04-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Scansione estesa a tutta IndicePA, report per categoria e tabella della PA Centrale",
+    "en": "Scan extended to the whole IndicePA, per-category reports and Central Government table"
+   },
+   "sintesi": {
+    "it": "La scansione ora copre, oltre agli enti territoriali, tutte le categorie dell'IndicePA (scuole, ASL, ospedali, università, ministeri, autorità, ordini professionali, stazioni appaltanti, ecc.), circa 23.000 enti. Gli enti sono raggruppati in 15 aree riconoscibili dai cittadini (tra cui Istruzione, Sanità e PA Centrale) con report sulla quota di fornitori USA per ciascuna; sul sito è stata aggiunta una tabella consultabile dei 52 enti della PA Centrale, raggiungibile da un pulsante dedicato.",
+    "en": "Beyond territorial entities, the scan now covers all IndicePA categories (schools, health authorities, hospitals, universities, ministries, authorities, professional orders, contracting authorities, etc.), about 23,000 entities. Entities are grouped into 15 citizen-recognisable areas (including Education, Health and Central Government) with reports on the share of US providers for each; the site now has a browsable table of the 52 Central Government entities, reachable from a dedicated button."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@2ec2fce43c",
+    "mxmap-it/mxmap.it@2e90f00f31",
+    "mxmap-it/mxmap.it@0e3e39a3a7",
+    "mxmap-it/mxmap.it@803d76d8ae",
+    "mxmap-it/mxmap.it@23a3345692",
+    "mxmap-it/mxmap.it@1dc4edde37"
+   ],
+   "n_commit": 6,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/",
+    "https://fpietrosanti.github.io/mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-04-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Classificazione più accurata: recupero enti senza sito, scuole e domini ministeriali corretti",
+    "en": "More accurate classification: entities without website recovered, schools and ministry domains corrected"
+   },
+   "sintesi": {
+    "it": "Gli enti privi di sito istituzionale valido vengono ora inclusi usando il dominio della loro email non PEC (circa 1000 enti in più), e i server ospitati su reti di provider italiani vengono attribuiti al provider effettivo. Sono state rimosse alcune regole che classificavano come infrastruttura pubblica italiana domini come istruzione.it e miur.it, che risultano su Microsoft 365, e 893 scuole con server propri: le scuole risultano ora per circa il 60% su Google. Con 11 correzioni manuali verificate, gli enti non classificati scendono da 21 a circa 10; il dataset pubblicato conta 22.824 enti.",
+    "en": "Entities without a valid institutional website are now included using the domain of their non-PEC email (about 1000 more entities), and servers hosted on Italian provider networks are attributed to the actual provider. Some rules that classified as Italian public infrastructure domains such as istruzione.it and miur.it, which turn out to be on Microsoft 365, and 893 schools with their own servers have been removed: schools now appear to be about 60% on Google. With 11 verified manual corrections, unclassified entities drop from 21 to about 10; the published dataset counts 22,824 entities."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@c6fd8bc39e",
+    "mxmap-it/mxmap.it@81716f3bbc",
+    "mxmap-it/mxmap.it@db176e65e9",
+    "mxmap-it/mxmap.it@ba2b782537"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-04-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Mappa: corrette legenda, colorazione di regioni e province e confini esteri",
+    "en": "Map: legend, region and province colouring and foreign borders fixed"
+   },
+   "sintesi": {
+    "it": "Sono stati corretti diversi problemi della mappa: regioni e province che apparivano vuote, una legenda che mostrava solo AWS, e la presenza di regioni francesi di confine (Auvergne-Rhône-Alpes, Haute-Savoie). Ora la vista Regioni mostra le 20 regioni italiane e la vista Province include anche le province di Friuli e Sardegna prima mancanti.",
+    "en": "Several map issues have been fixed: regions and provinces appearing empty, a legend showing only AWS, and the presence of cross-border French regions (Auvergne-Rhône-Alpes, Haute-Savoie). The Regions view now shows the 20 Italian regions and the Provinces view also includes the previously missing provinces of Friuli and Sardinia."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6b8b8dc67a",
+    "mxmap-it/mxmap.it@33c311a983",
+    "mxmap-it/mxmap.it@8c487e944a",
+    "mxmap-it/mxmap.it@75a4811287",
+    "mxmap-it/mxmap.it@a3d259c95d",
+    "mxmap-it/mxmap.it@3bedd17d3f",
+    "mxmap-it/mxmap.it@7fe8e66116",
+    "mxmap-it/mxmap.it@a827da082b"
+   ],
+   "n_commit": 8,
+   "issue": [],
+   "link": [
+    "https://fpietrosanti.github.io/mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-04-mxmap-6",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Catena automatica sul server: corretta l'attesa della fine della scansione",
+    "en": "Automated server chain: fixed waiting for the scan to finish"
+   },
+   "sintesi": {
+    "it": "La procedura che sul server esegue in sequenza scansione, riclassificazione, report e pubblicazione restava bloccata in attesa anche a scansione conclusa; ora riconosce correttamente la fine del processo.",
+    "en": "The server procedure that runs scan, reclassification, reports and publication in sequence stayed stuck waiting even after the scan had finished; it now correctly detects when the process ends."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@20041f6c46",
+    "mxmap-it/mxmap.it@c314480ae1"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

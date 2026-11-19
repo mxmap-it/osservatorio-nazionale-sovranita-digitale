@@ -1,0 +1,219 @@
+{
+ "data": "2026-06-14",
+ "settimana": "2026-W24",
+ "fonte": {
+  "mxmap": "4ab17c8190324821",
+  "osservatorio": "694f4aa975932841"
+ },
+ "voci": [
+  {
+   "id": "2026-06-14-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Online la pagina Statistiche sulla sovranità della posta della PA",
+    "en": "Statistics page on the sovereignty of public-sector email now online"
+   },
+   "sintesi": {
+    "it": "La nuova pagina Statistiche mostra la situazione attuale: indice ISD al 52,65% e quota soggetta al CLOUD Act al 47,34%. Riporta anche la composizione per giurisdizione MX, il mercato dei fornitori, la qualità dei dati e il dettaglio per tipo di ente (Istruzione 78% CLOUD Act, Comuni 75% ISD). I numeri vengono ricalcolati e sottoposti a controlli automatici di coerenza a ogni aggiornamento. Le serie storiche non sono ancora pubblicate: arriveranno con il primo run storicizzato. Il tab «Statistiche» del sito ora porta direttamente a questa pagina.",
+    "en": "The new Statistics page shows the current situation: ISD index at 52.65% and the share subject to the CLOUD Act at 47.34%. It also reports the breakdown by MX jurisdiction, the provider market, data quality and the detail by type of body (Education 78% CLOUD Act, Municipalities 75% ISD). The figures are recalculated and run through automatic consistency checks at every update. Historical series are not yet published: they will arrive with the first historicised run. The site's «Statistics» tab now links directly to this page."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@955e8feb7d",
+    "mxmap-it/mxmap.it@5287661647",
+    "mxmap-it/mxmap.it@d8854ad758"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/mxmap.it#1"
+   ],
+   "link": [
+    "https://fpietrosanti.github.io/mxmap.it/statistiche.html"
+   ]
+  },
+  {
+   "id": "2026-06-14-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicato il feed KPI aperto usato dall'Osservatorio",
+    "en": "Open KPI feed used by the Observatory published"
+   },
+   "sintesi": {
+    "it": "Un file pubblico (kpi.json, licenza CC BY-SA 4.0) mette a disposizione i numeri di MxMap raggruppati nelle quattro categorie dell'Osservatorio. Il sito dell'Osservatorio lo usa al posto dei valori provvisori. Valori attuali: Italia 51,2%, extra-UE (CLOUD Act) 46,1%, UE non italiana 0%, non determinato 2,7%. Il file si aggiorna con la scansione notturna ed è pubblicato alla radice del sito.",
+    "en": "A public file (kpi.json, CC BY-SA 4.0 licence) makes MxMap's figures available grouped into the Observatory's four categories. The Observatory website uses it in place of its provisional values. Current values: Italy 51.2%, non-EU (CLOUD Act) 46.1%, non-Italian EU 0%, undetermined 2.7%. The file is updated with the nightly scan and is published at the root of the site."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@f135382829",
+    "mxmap-it/mxmap.it@36ecedd78a"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://fpietrosanti.github.io/mxmap.it/kpi.json"
+   ]
+  },
+  {
+   "id": "2026-06-14-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Ricerca enti: attendibilità e giurisdizione MX; 893 scuole riclassificate",
+    "en": "Body search: reliability and MX jurisdiction; 893 schools reclassified"
+   },
+   "sintesi": {
+    "it": "Nella ricerca degli enti e nel dataset pubblico (22.987 righe) ogni ente ora indica l'attendibilità della classificazione e la giurisdizione del server di posta (italiana o estera), con filtri e ordinamento dedicati. È stata anche corretta una mappatura: 893 scuole del Ministero dell'Istruzione e del Merito, prima classificate come «Sconosciuto», risultano ora su Microsoft 365, quindi soggette al CLOUD Act statunitense.",
+    "en": "In the body search and in the public dataset (22,987 rows), each body now shows the reliability of its classification and the jurisdiction of its mail server (Italian or foreign), with dedicated filters and sorting. A mapping was also corrected: 893 schools of the Ministry of Education and Merit, previously classified as «Unknown», are now shown as using Microsoft 365, and therefore as subject to the US CLOUD Act."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@cd07b81ee2"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-14-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Aggiornamento notturno più robusto, con controlli automatici e segnalazioni",
+    "en": "More robust nightly update, with automatic checks and alerts"
+   },
+   "sintesi": {
+    "it": "Per due volte un errore nel salvataggio dei dati aveva bloccato l'aggiornamento notturno. Ora la pubblicazione del sito non dipende più da quel passaggio. Ogni modifica al codice viene provata con gli stessi script della notte prima di entrare in uso, e in caso di errore si apre automaticamente una segnalazione.",
+    "en": "Twice, an error when saving the data had blocked the nightly update. Publishing the site no longer depends on that step. Every code change is now tested with the same scripts used overnight before it goes into use, and if something fails an issue is opened automatically."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@a341b98ee2"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-14-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuove sezioni del sito per decisori, stakeholder, stampa, attivisti e ricercatori",
+    "en": "New site sections for decision makers, stakeholders, press, activists and researchers"
+   },
+   "sintesi": {
+    "it": "Il sito si arricchisce di pagine dedicate ai diversi pubblici: «Per i Decisori» (policy brief, contesto normativo, raccomandazioni), «Stakeholder e Impatto» con 9 schede di attori e azioni possibili, Press Kit con numeri chiave e spunti per giornalisti, «Dati Aperti» con documentazione dei dataset, dizionario dei dati e guida alla citazione, oltre a Kit Attivisti e Scheda Ricercatori. Sono state ampliate anche le pagine Chi Siamo (missione, obiettivi, principi), FAQ e Partecipa, che ora indirizza ciascun ruolo alle risorse pertinenti.",
+    "en": "The site gains pages dedicated to its different audiences: \"For Decision Makers\" (policy brief, regulatory context, recommendations), \"Stakeholders and Impact\" with 9 cards on actors and possible actions, a Press Kit with key numbers and angles for journalists, \"Open Data\" with dataset documentation, a data dictionary and a citation guide, plus an Activist Kit and a Researcher Sheet. The About, FAQ and Get Involved pages were also expanded, the latter now directing each role to the relevant resources."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ba5cfb1e95",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7df4750e83"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-14-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicati otto documenti PDF: policy brief, technical brief, visione e materiali per stakeholder",
+    "en": "Eight PDF documents published: policy brief, technical brief, vision and stakeholder materials"
+   },
+   "sintesi": {
+    "it": "Sono scaricabili dal sito un Policy Brief di 2 pagine per i decisori, un Technical Brief di 6 pagine per i regolatori (AgID, ACN, Garante) con quadro giuridico (GDPR, CLOUD Act, Schrems, NIS2), matrice dei rischi, 7 raccomandazioni e una roadmap di migrazione per la posta elettronica della PA, e un documento di Visione Strategica in 7 sezioni. Si aggiungono un Business Case per fornitori IT e Consip, un EU Briefing in inglese per le istituzioni europee, una presentazione di 16 slide, un Kit Attivisti e una Scheda Ricercatori; gli script che generano i PDF sono inclusi nel repository.",
+    "en": "The site now offers for download a 2-page Policy Brief for decision makers, a 6-page Technical Brief for regulators (AgID, ACN, Garante) covering the legal framework (GDPR, CLOUD Act, Schrems, NIS2), a risk matrix, 7 recommendations and a migration roadmap for PA email, and a 7-section Strategic Vision document. These are joined by a Business Case for IT providers and Consip, an EU Briefing in English for European institutions, a 16-slide deck, an Activist Kit and a Researcher Sheet; the scripts that generate the PDFs are included in the repository."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4b8ba80e1e",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@fb87c4ff24",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b5da453fae",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0703375cc9"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/technical-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/eu-briefing-digital-sovereignty-italian-pa.pdf"
+   ]
+  },
+  {
+   "id": "2026-06-14-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Indicatori chiave aggiornati automaticamente dai dati di MxMap",
+    "en": "Key indicators automatically updated from MxMap data"
+   },
+   "sintesi": {
+    "it": "Le pagine per decisori e stampa mostrano ora gli indicatori reali provenienti da MxMap, aggiornati ogni giorno da un'automazione: il primo dataset riguarda 22.987 enti, con il 46,1% classificato extra-UE e il 51,2% classificato IT. Se un valore non è ancora disponibile il sito mostra un trattino invece di uno 0%, e tutti i collegamenti a MxMap (inclusi 5 PDF rigenerati) puntano ora all'indirizzo di produzione.",
+    "en": "The decision-maker and press pages now display real indicators from MxMap, updated daily by an automation: the first dataset covers 22,987 entities, with 46.1% classified as extra-EU and 51.2% classified as IT. When a value is not yet available the site shows a dash instead of 0%, and all links to MxMap (including 5 regenerated PDFs) now point to the production address."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@354e000fec",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@aa38b025ca",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@12ced40ba5",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@14fa171bcd"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://fpietrosanti.github.io/mxmap.it/",
+    "https://fpietrosanti.github.io/mxmap.it/kpi.json"
+   ]
+  },
+  {
+   "id": "2026-06-14-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Annunciata la presentazione del report alla Camera, data da confermare",
+    "en": "Presentation of the report at the Chamber of Deputies announced, date to be confirmed"
+   },
+   "sintesi": {
+    "it": "La homepage ospita un banner e una notizia dedicata all'uscita del report e alla sua presentazione alla Camera. La data indicata è provvisoria e ancora da confermare.",
+    "en": "The homepage carries a banner and a dedicated news item on the release of the report and its presentation at the Chamber of Deputies. The date shown is provisional and still to be confirmed."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c6904539ca"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-14-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Predisposto il sito per le 24 lingue ufficiali dell'UE",
+    "en": "Site prepared for all 24 official EU languages"
+   },
+   "sintesi": {
+    "it": "Il sito è stato configurato per supportare tutte le lingue ufficiali dell'UE, con l'italiano come lingua predefinita, testi dell'interfaccia in italiano e inglese e un selettore di lingua nell'intestazione. Nessun contenuto è ancora stato tradotto.",
+    "en": "The site has been configured to support all official EU languages, with Italian as the default, interface text in Italian and English, and a language selector in the header. No content has been translated yet."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@68790add3d"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

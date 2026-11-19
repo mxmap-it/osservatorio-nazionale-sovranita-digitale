@@ -1,0 +1,31 @@
+{
+ "data": "2026-05-18",
+ "settimana": "2026-W21",
+ "fonte": {
+  "mxmap": "cbfd1a9348db0b04"
+ },
+ "voci": [
+  {
+   "id": "2026-05-18-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il sito mxmap.it cambia nome: Osservatorio sulla Sovranità Digitale della Posta Elettronica della PA",
+    "en": "mxmap.it renamed: Observatory on the Digital Sovereignty of Italian Public Administration Email"
+   },
+   "sintesi": {
+    "it": "Le pagine pubbliche di mxmap.it adottano il nuovo nome «Osservatorio sulla Sovranità Digitale della Posta Elettronica della PA Italiana», in forma breve «Osservatorio Sovranità Digitale PA». Sono stati aggiornati titoli, descrizioni, intestazioni e la pagina di metodologia. Il cambiamento riguarda solo i testi visibili: il dominio e gli indirizzi delle pagine restano invariati, quindi i link esistenti continuano a funzionare.",
+    "en": "The public pages of mxmap.it adopt the new name “Observatory on the Digital Sovereignty of Italian Public Administration Email”, shortened to “PA Digital Sovereignty Observatory”. Titles, descriptions, headers and the methodology page have been updated. The change affects only the visible text: the domain and page addresses stay the same, so existing links keep working."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d857ae0c16"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

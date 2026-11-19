@@ -1,0 +1,38 @@
+{
+ "settimana": "2026-W28",
+ "dal": "2026-07-06",
+ "al": "2026-07-12",
+ "fonte": "84243f385d7301a2",
+ "titolo": {
+  "it": "Il sito diventa «Osservatorio Nazionale Sovranità Digitale» e documenta il CLOUD Act",
+  "en": "The site becomes the «Osservatorio Nazionale Sovranità Digitale» and documents the CLOUD Act"
+ },
+ "sintesi": {
+  "it": "Il sito ha assunto il nome pubblico «Osservatorio Nazionale Sovranità Digitale» su tutte le pagine e su circa 30.000 schede degli enti. «MxMap Italia» resta il nome dello strumento e del dominio. Ogni scheda ente si apre ora con un riepilogo in linguaggio naturale su fornitore, giurisdizione e Paese dei server di posta. Il sito e le pubblicazioni riportano ora, con le fonti, la dichiarazione di Microsoft France al Senato francese: alla domanda se possa garantire che i dati europei non vengano consegnati alle autorità statunitensi, ha risposto «non posso garantirlo». Nella scansione notturna la quota di enti con posta extra-UE è rimasta stabile, al 46,7%.",
+  "en": "The site has taken the public name «Osservatorio Nazionale Sovranità Digitale» across all pages and about 30,000 entity pages. «MxMap Italia» remains the name of the tool and the domain. Each entity page now opens with a plain-language summary of the mail provider, the jurisdiction and the country of the mail servers. The site and the publications now include, with sources, Microsoft France's statement to the French Senate: asked whether it could guarantee that European data would not be handed over to US authorities, it answered «I cannot guarantee it». In the nightly scan, the share of entities with extra-EU mail held steady at 46.7%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Il nome visibile del sito diventa «Osservatorio Nazionale Sovranità Digitale». «MxMap Italia» resta come nome alternativo, così il sito si trova anche con le ricerche fatte in passato. Le schede degli enti si aprono con un paragrafo descrittivo su fornitore, giurisdizione (italiana, UE o CLOUD Act statunitense), Paese dei server, affidabilità del dato e confronto con gli enti vicini. Serve a renderle più leggibili e indicizzabili: finora i motori di ricerca ne escludevano 246. Nella scansione notturna gli enti sono passati da 22.878 a 22.884, con una copertura tra il 97,2% e il 97,3% e la quota extra-UE stabile al 46,7%.",
+    "en": "The site's visible name becomes «Osservatorio Nazionale Sovranità Digitale». «MxMap Italia» remains as an alternative name, so the site can still be found through past searches. Entity pages open with a descriptive paragraph on provider, jurisdiction (Italian, EU or US CLOUD Act), server country, data reliability and a comparison with nearby entities. The aim is to make them more readable and indexable: until now, search engines excluded 246 of them. In the nightly scan, entities went from 22,878 to 22,884, with coverage between 97.2% and 97.3% and the extra-EU share stable at 46.7%."
+   },
+   "voci": [
+    "2026-07-07-mxmap-1",
+    "2026-07-07-mxmap-2"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Il sito riporta ora la dichiarazione «non posso garantirlo» resa da Microsoft France al Senato francese il 10 giugno 2025 sull'accesso delle autorità statunitensi ai dati europei. Compare in un banner su ogni pagina, nella pagina per i decisori e in una nuova FAQ. Lo stesso riquadro, con le fonti (senat.fr e heise), è stato aggiunto in italiano e in inglese a Policy Brief, Technical Brief (ora di 7 pagine) e Report.",
+    "en": "The site now includes the statement «I cannot guarantee it», made by Microsoft France to the French Senate on 10 June 2025 about US authorities' access to European data. It appears in a banner on every page, on the page for decision-makers and in a new FAQ. The same box, with sources (senat.fr and heise), was added in Italian and English to the Policy Brief, the Technical Brief (now 7 pages) and the Report."
+   },
+   "voci": [
+    "2026-07-08-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 3
+}

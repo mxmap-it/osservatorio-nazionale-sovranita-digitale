@@ -1,0 +1,127 @@
+{
+ "data": "2026-06-19",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "e8d0626a394093d8",
+  "osservatorio": "c5ff9266b4259bfc"
+ },
+ "voci": [
+  {
+   "id": "2026-06-19-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Una pagina pubblica per ciascuno dei circa 23.000 enti, con hub geografici e per categoria",
+    "en": "A public page for each of the roughly 23,000 bodies, with geographic and category hubs"
+   },
+   "sintesi": {
+    "it": "Il sito genera ora una pagina dedicata per ogni ente pubblico (~22.987), con fornitore di posta, giurisdizione, evidenze DNS, grado di affidabilità della classificazione, confronto con gli enti vicini e un pulsante «Riporta un errore»; in tutto circa 53.000 pagine, incluse quelle per regione, provincia, comune, categoria e dominio. Questo rende consultabile e ricercabile il dato del singolo ente, e anche il deploy ordinario del sito ora pubblica tutte le pagine.",
+    "en": "The site now generates a dedicated page for each public body (~22,987), showing its mail provider, jurisdiction, DNS evidence, classification confidence, a comparison with nearby bodies and a “Report an error” button; about 53,000 pages in total, including pages by region, province, municipality, category and domain. This makes each body's data consultable and searchable, and the regular site deploy now publishes all pages as well."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@b3599db8c4",
+    "mxmap-it/mxmap.it@291f5b9005"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#15",
+    "mxmap-it/mxmap.it#16"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-19-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Riallineati i dati del sito alla rilevazione notturna del 18 giugno",
+    "en": "Site data realigned with the 18 June nightly scan"
+   },
+   "sintesi": {
+    "it": "I dati della scansione del 2026-06-18 erano già online ma non salvati nel repository, con il rischio che un aggiornamento successivo riportasse le statistiche a quelle del 15 giugno. Ora repository e sito coincidono: 22.878 enti, indice ISD 51,55, 123 enti su fornitori UE non italiani, con le correzioni di classificazione di quel run. È stata documentata la procedura di recupero per evitare il problema in futuro.",
+    "en": "Data from the 2026-06-18 scan were already online but not saved in the repository, with the risk that a later update would revert statistics to those of 15 June. Repository and site now match: 22,878 bodies, ISD index 51.55, 123 bodies on non-Italian EU providers, with that run's classification fixes. The recovery procedure has been documented to prevent the issue in future."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@8f1bd03e0f",
+    "mxmap-it/mxmap.it@ba38b53517"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#10",
+    "mxmap-it/mxmap.it#15",
+    "mxmap-it/mxmap.it#21"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-19-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ministero dell'istruzione e Ministero della salute: posta ricondotta a Microsoft 365",
+    "en": "Ministry of Education and Ministry of Health: mail traced to Microsoft 365"
+   },
+   "sintesi": {
+    "it": "I domini mim.gov.it e salute.gov.it non dichiarano server di posta e risultavano quindi «sconosciuti»; la posta dei due ministeri passa in realtà da istruzione.it e sanita.it, entrambi su Microsoft 365. La correzione manuale verrà applicata alla prossima scansione.",
+    "en": "The domains mim.gov.it and salute.gov.it declare no mail server and were therefore classified as “unknown”; the two ministries' mail actually goes through istruzione.it and sanita.it, both on Microsoft 365. The manual correction will apply from the next scan."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@92c2fd548d",
+    "mxmap-it/mxmap.it@27ef911b71"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-19-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Policy Brief e pagina Decisori: GDPR artt. 48/115 e il paradosso del PSN",
+    "en": "Policy Brief and Decision-makers page: GDPR Arts. 48/115 and the PSN paradox"
+   },
+   "sintesi": {
+    "it": "Il Policy Brief ora spiega gli articoli 48 e 115 del GDPR a confronto con il CLOUD Act statunitense e il principio per cui la giurisdizione dipende dalla nazionalità del fornitore; il PDF è stato rigenerato e passa a 7 pagine. La pagina per i decisori aggiunge un riquadro «Dichiarare è più facile che costruire» sul paradosso del Polo Strategico Nazionale (PSN) e una riga normativa sugli artt. 48/115. Il Technical Brief, ampliato in un primo momento, è stato riportato alla versione precedente di 6 pagine.",
+    "en": "The Policy Brief now explains GDPR Articles 48 and 115 alongside the US CLOUD Act, and the principle that jurisdiction depends on the provider's nationality; the PDF has been regenerated and grows to 7 pages. The decision-makers page adds a callout, \"Declaring is easier than building\", on the paradox of the National Strategic Hub (PSN), plus a regulatory row on Arts. 48/115. The Technical Brief, which was expanded at first, has been reverted to its previous 6-page version."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@521e1edfe2",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ddca114e5a"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-19-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Bozza di articolo per una testata esterna sul divario tra dichiarazioni e realizzazioni",
+    "en": "Draft article for an external outlet on the gap between declarations and delivery"
+   },
+   "sintesi": {
+    "it": "È stata preparata una bozza di articolo, «Tra ciò che si firma e ciò che si costruisce», da proporre ad Agenda Digitale e non da pubblicare sul sito. Il testo mette a confronto CLOUD Act e GDPR, discute il paradosso del PSN e la posizione attendista dell'Italia rispetto all'UE, e si chiede se i fondi PNRR/PSN per il cloud finanzino una dipendenza dagli Stati Uniti. Le citazioni nominative nel testo sono state tolte, a favore dei dati dell'Osservatorio; le fonti restano elencate in fondo.",
+    "en": "A draft article, \"Between what is signed and what is built\", has been prepared for submission to Agenda Digitale rather than for publication on the site. It compares the CLOUD Act and the GDPR, discusses the PSN paradox and Italy's wait-and-see stance compared with the EU, and asks whether PNRR/PSN cloud funds are financing dependence on the United States. Named quotations have been removed from the text in favour of the Observatory's data; sources remain listed at the end."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4fac1d2fcf",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@dc273cb4e3"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

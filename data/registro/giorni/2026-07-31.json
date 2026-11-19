@@ -1,0 +1,125 @@
+{
+ "data": "2026-07-31",
+ "settimana": "2026-W31",
+ "fonte": {
+  "osservatorio": "f1d0407414b7e544"
+ },
+ "voci": [
+  {
+   "id": "2026-07-31-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Policy Brief IT e EN aggiornati con i risultati delle verifiche più recenti",
+    "en": "IT and EN Policy Briefs updated with the latest verification results"
+   },
+   "sintesi": {
+    "it": "I due PDF dicevano ancora che la verifica sul decreto ACN 21007/24 era in corso: ora ne riportano l'esito (88 pagine e tutti gli allegati letti, nessuna occorrenza dei termini rilevanti) e spiegano perché l'unica clausola esistente non è applicabile. È stata anche corretta la descrizione del livello «High+» dello schema europeo EUCS, che non è mai stato un livello formale e non è stato reintrodotto; al suo posto è citata la proposta sui livelli di affidabilità del CADA, con i suoi limiti.",
+    "en": "The two PDFs still stated that the review of ACN decree 21007/24 was in progress: they now report its outcome (88 pages and all annexes read, no occurrence of the relevant terms) and explain why the only existing clause cannot be applied. The description of the 'High+' level of the European EUCS scheme was also corrected, as it was never a formal level and has not been reintroduced; in its place the brief cites the proposal on CADA trust levels, with its limits."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@44b249ca50"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa-en.pdf"
+   ]
+  },
+  {
+   "id": "2026-07-31-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Mappa del protezionismo digitale USA: 25 strumenti federali, 7 incidono sul cloud",
+    "en": "Map of US digital protectionism: 25 federal instruments, 7 affect the cloud"
+   },
+   "sintesi": {
+    "it": "Un nuovo dossier di ricerca censisce 25 strumenti federali statunitensi, verificati su fonti primarie, e conclude che il meccanismo non è un divieto ma una stratificazione di requisiti, di cui 7 incidono sul cloud. Il dossier riporta per primi anche gli argomenti contrari, come la norma federale che vieta l'esclusione basata sulla sola proprietà straniera, e corregge due affermazioni: la barriera FedRAMP è la sponsorizzazione di un'agenzia e non il costo, e nel 2025-2026 gli USA non hanno introdotto nuove restrizioni verso i fornitori europei.",
+    "en": "A new research dossier lists 25 US federal instruments, verified against primary sources, and concludes that the mechanism is not a ban but a layering of requirements, 7 of which affect the cloud. The dossier also puts the counter-arguments first, such as the federal rule that prohibits exclusion based on foreign ownership alone, and corrects two claims: the FedRAMP barrier is agency sponsorship rather than cost, and in 2025-2026 the US did not introduce new restrictions on European providers."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@3696ff0722",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e8531ace26"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-07-31-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "AWS e sovranità contrattuale: le audizioni al Senato francese del 2019 e il CLOUD Act",
+    "en": "AWS and contractual sovereignty: the 2019 French Senate hearings and the CLOUD Act"
+   },
+   "sintesi": {
+    "it": "Un nuovo dossier esamina, su fonti primarie lette integralmente, la tesi dell'AWS European Sovereign Cloud. Risulta che nel 2019 una commissione del Senato francese audì sotto giuramento Google, Microsoft e AWS sulla stessa domanda posta a Microsoft nel 2025, e che nessuna delle tre rispose con un sì o con un no; il dossier 02 è stato rettificato di conseguenza. La conclusione è che la tesi regge nella sostanza ma va formulata con più cautela: l'applicazione del CLOUD Act a una controllata dipende dai fatti, e la cifratura con chiavi esterne è una difesa valida da riconoscere.",
+    "en": "A new dossier examines the AWS European Sovereign Cloud claim using primary sources read in full. It finds that in 2019 a French Senate committee heard Google, Microsoft and AWS under oath on the same question put to Microsoft in 2025, and that none of the three answered yes or no; dossier 02 was corrected accordingly. The conclusion is that the claim holds in substance but must be phrased more cautiously: whether the CLOUD Act applies to a subsidiary depends on the facts, and encryption with external keys is a valid defence that should be acknowledged."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@520159667b",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ac655103b6"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-07-31-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Interruzione dei servizi digitali per effetto di sanzioni: un vettore distinto dall'accesso ai dati",
+    "en": "Interruption of digital services through sanctions: a vector distinct from data access"
+   },
+   "sintesi": {
+    "it": "Un nuovo dossier tratta il rischio che un fornitore debba sospendere i servizi a un soggetto sanzionato dagli USA, separandolo dall'accesso ai dati previsto dal CLOUD Act. Il caso più citato risulta il più fragile, mentre i casi documentati con più solidità riguardano due cittadini europei, una giudice slovena e un giudice francese; il dossier nota inoltre che il Regolamento di blocco UE non è stato attivato. Il rischio per l'Italia è dichiarato teorico e sei casi in circolazione sono segnalati come non attendibili.",
+    "en": "A new dossier addresses the risk that a provider must suspend services to a party sanctioned by the US, keeping it separate from the data access provided for by the CLOUD Act. The most cited case turns out to be the most fragile, while the most solidly documented cases concern two European citizens, a Slovenian judge and a French judge; the dossier also notes that the EU Blocking Regulation has not been activated. The risk for Italy is stated as theoretical, and six circulating cases are flagged as unreliable."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b0055012a1",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f2da5e4f60"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-07-31-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pagina di lavoro allineata e nuove regole interne su verifica e propagazione dei fatti",
+    "en": "Working page aligned and new internal rules on fact verification and propagation"
+   },
+   "sintesi": {
+    "it": "La pagina di lavoro non pubblica del progetto ora riflette lo stato reale: 11 dossier, 17 fatti su fonte primaria e nessuna verifica aperta. Sono state fissate tre regole interne: ogni correzione va riportata su tutti i materiali, PDF compresi; le fonti seguono una gerarchia di affidabilità dichiarata e le deduzioni vanno indicate come tali; le pagine di lavoro devono restare escluse dai motori di ricerca.",
+    "en": "The project's non-public working page now reflects the actual state: 11 dossiers, 17 facts based on primary sources and no open verifications. Three internal rules were set: every correction must be carried over to all materials, PDFs included; sources follow a declared reliability hierarchy and deductions must be marked as such; working pages must stay excluded from search engines."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@93b4e1367b",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a6609fc893"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22895,
+  "copertura": 97.27,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

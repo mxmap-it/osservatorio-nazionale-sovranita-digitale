@@ -1,0 +1,103 @@
+{
+ "data": "2026-06-11",
+ "settimana": "2026-W24",
+ "fonte": {
+  "mxmap": "a65879b6c59157dd"
+ },
+ "voci": [
+  {
+   "id": "2026-06-11-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuovo indice di affidabilità della classificazione e sovranità della posta (domestica/estera)",
+    "en": "New classification confidence score and mail sovereignty (domestic/foreign)"
+   },
+   "sintesi": {
+    "it": "La classificazione dei fornitori di posta adotta ora le regole di affidabilità di un paper accademico presentato a ESORICS 2026: 7 regole e un modello che distingue i server di posta domestici da quelli esteri in base al paese della rete che li ospita. 219 enti che usano Microsoft solo per Teams, ma ricevono la posta su server italiani, sono stati riclassificati da cloud a indipendenti; il Ministero dell'Interno è di nuovo classificato correttamente su Microsoft. Primo report: 91,4% degli enti classificati con alta confidenza, 49,6% con server di posta all'estero.",
+    "en": "Mail provider classification now uses the confidence rules from an academic paper presented at ESORICS 2026: 7 rules and a model that distinguishes domestic from foreign mail servers based on the country of the hosting network. 219 bodies that use Microsoft only for Teams but receive mail on Italian servers were reclassified from cloud to independent; the Ministry of the Interior is again correctly classified as Microsoft. First report: 91.4% of bodies classified with high confidence, 49.6% with mail servers abroad."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@b82652b2ce",
+    "mxmap-it/mxmap.it@477ff6cf32",
+    "mxmap-it/mxmap.it@33faa5a998",
+    "mxmap-it/mxmap.it@f4b29eba01"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-11-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sulla mappa: affidabilità della classificazione per ente e filtro per sovranità della posta",
+    "en": "On the map: per-body classification confidence and mail sovereignty filter"
+   },
+   "sintesi": {
+    "it": "La scheda di ogni ente mostra ora la percentuale di affidabilità della classificazione e se la posta è gestita in Italia o all'estero, con rimando alla metodologia. Un nuovo filtro «Sovranità MX» (Sovrana/Estera/Mista) colora comuni, province e regioni in base alla quota di enti in ciascuna giurisdizione: in Italia 10.597 domestici, 11.397 esteri, 257 misti e 736 non determinati. La verifica visiva del filtro sul sito pubblicato è ancora da completare.",
+    "en": "Each body's info panel now shows the classification confidence percentage and whether its mail is handled in Italy or abroad, with a link to the methodology. A new \"MX Sovereignty\" filter (Sovereign/Foreign/Mixed) colours municipalities, provinces and regions by the share of bodies in each jurisdiction: in Italy 10,597 domestic, 11,397 foreign, 257 mixed and 736 undetermined. Visual checking of the filter on the published site is still pending."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@feb0a816bd",
+    "mxmap-it/mxmap.it@f361ba8d68"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-11-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ripristinata la pubblicazione notturna dei dati, bloccata da un controllo di qualità troppo rigido",
+    "en": "Nightly data publishing restored after being blocked by an overly strict quality check"
+   },
+   "sintesi": {
+    "it": "Da alcuni giorni la scansione notturna non veniva pubblicata perché un controllo legacy richiedeva almeno l'80% di classificazioni ad alta confidenza e il dato si fermava al 79,9%. La soglia è stata portata al 75% e il controllo ora segnala i peggioramenti senza bloccare la pubblicazione. Sono stati inoltre introdotti controlli automatici di formattazione del codice.",
+    "en": "For several days the nightly scan was not published because a legacy check required at least 80% high-confidence classifications and the data stood at 79.9%. The threshold was lowered to 75% and the check now flags degradations without blocking publication. Automatic code-formatting checks were also introduced."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@57c0682c1d",
+    "mxmap-it/mxmap.it@b3832ba578",
+    "mxmap-it/mxmap.it@dbd677a158",
+    "mxmap-it/mxmap.it@88e076d61b",
+    "mxmap-it/mxmap.it@0d23716fb4"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-11-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Metodologia: riferimenti al paper ESORICS 2026 e al progetto originale mxmap.ch",
+    "en": "Methodology: references to the ESORICS 2026 paper and the original mxmap.ch project"
+   },
+   "sintesi": {
+    "it": "La pagina di metodologia ha una nuova sezione «Riferimenti» con la citazione completa del paper ESORICS 2026 sulle dipendenze dai fornitori di posta dei comuni di Germania, Austria e Svizzera e del progetto svizzero mxmap.ch da cui MxMap Italia deriva. Il riconoscimento compare anche nel pannello informativo della mappa.",
+    "en": "The methodology page has a new \"References\" section with the full citation of the ESORICS 2026 paper on email provider dependencies in municipalities across Germany, Austria and Switzerland, and of the Swiss mxmap.ch project from which MxMap Italia derives. The credit also appears in the map's info panel."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@8fdce9900d"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

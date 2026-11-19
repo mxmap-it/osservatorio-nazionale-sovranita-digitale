@@ -1,0 +1,208 @@
+{
+ "data": "2026-10-29",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "0c067d237d3c61d6"
+ },
+ "voci": [
+  {
+   "id": "2026-10-29-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Classificazione assistita dei contratti (via 6): 611 esiti al primo giro, secondo giro in corso",
+    "en": "Assisted contract classification (route 6): 611 results in the first round, second round under way"
+   },
+   "sintesi": {
+    "it": "Il primo giro di classificazione assistita sul campione di 611 lotti è completo: gli esiti si basano quasi solo sul testo disponibile. Il secondo giro riesamina 306 casi dubbi più 31 di controllo, suddivisi in 68 pacchetti. Dopo un pilota, gli esiti del modello Haiku sono stati tenuti da parte per il confronto e il lavoro è proseguito con Sonnet. I risultati sono parziali e in corso di verifica.",
+    "en": "The first round of assisted classification on the sample of 611 lots is complete: the results rely almost entirely on the available text. The second round re-examines 306 doubtful cases plus 31 control cases, split into 68 packages. After a pilot, the Haiku model's results were set aside for comparison and the work continued with Sonnet. The results are partial and still being checked."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@683a827857",
+    "mxmap-it/analisi-spesa-ict@3cf4295dc0",
+    "mxmap-it/analisi-spesa-ict@19bcd59c15",
+    "mxmap-it/analisi-spesa-ict@90d3b8b33b",
+    "mxmap-it/analisi-spesa-ict@265898dfd6",
+    "mxmap-it/analisi-spesa-ict@bb3b8034fe",
+    "mxmap-it/analisi-spesa-ict@3695e20e0e",
+    "mxmap-it/analisi-spesa-ict@bf240aca79",
+    "mxmap-it/analisi-spesa-ict@aa0e7fb75c",
+    "mxmap-it/analisi-spesa-ict@0e055d1875",
+    "mxmap-it/analisi-spesa-ict@c7f120977c",
+    "mxmap-it/analisi-spesa-ict@9b0cd8c9a9"
+   ],
+   "n_commit": 12,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-29-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicata la pagina Iniziative Consip e PSN, con scheda su Cloud Toscana",
+    "en": "Consip and PSN Initiatives page published, with a profile of Cloud Toscana"
+   },
+   "sintesi": {
+    "it": "È online una base di conoscenza sulle iniziative Consip, SPC e PSN, partita da 15 voci controvalidate, allineata all'analisi dell'Osservatorio sul PSN. I lotti 2-4 di SPC Cloud sono stati verificati sugli atti AgID. La scheda su Sistema Cloud Toscana, ricostruita dal contratto quadro (RTI con TIM mandataria, non in-house), descrive i ruoli dei partner e i sub-responsabili e contiene una valutazione condizionata dell'esposizione al CLOUD Act.",
+    "en": "A knowledge base on Consip, SPC and PSN initiatives is now online. It started from 15 cross-validated entries and is aligned with the Observatory's analysis of the PSN. SPC Cloud lots 2-4 were verified against AgID documents. The profile of Sistema Cloud Toscana, reconstructed from the framework contract (a temporary business association with TIM as lead partner, not in-house), describes the partners' roles and sub-processors and includes a conditional assessment of exposure to the CLOUD Act."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1444d1659a",
+    "mxmap-it/analisi-spesa-ict@92e327477e",
+    "mxmap-it/analisi-spesa-ict@e06e8ec5f7",
+    "mxmap-it/analisi-spesa-ict@88b8da7049",
+    "mxmap-it/analisi-spesa-ict@dc59a01eab",
+    "mxmap-it/analisi-spesa-ict@0486def84e"
+   ],
+   "n_commit": 6,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-29-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Metodo: confidenza verificabile, giurisdizione «non determinabile» e criterio di cloud sovrano",
+    "en": "Method: verifiable confidence, \"not determinable\" jurisdiction and a sovereign cloud criterion"
+   },
+   "sintesi": {
+    "it": "La confidenza dichiarata dal modello viene ora controllata con regole deterministiche (R1-R3) e ha una definizione operativa basata sulla precisione misurata. È stata introdotta la categoria «giurisdizione non determinabile dal testo», ad esempio per i contratti PSN che non indicano il servizio. Si aggiungono il criterio di cloud sovrano (Cloud Toscana = IT), i livelli di acquisizione dei documenti L0-L7 registrati per ogni atto e il principio a imbuto: escludere il certo, includere il certo e lavorare sui casi incerti. Il metodo è descritto in una nuova pagina «Metodologia sperimentale in corso».",
+    "en": "The confidence declared by the model is now checked with deterministic rules (R1-R3) and has an operational definition based on measured precision. A new category, \"jurisdiction not determinable from the text\", has been introduced, for example for PSN contracts that do not specify the service. Further additions are a sovereign cloud criterion (Cloud Toscana = IT), document acquisition levels L0-L7 recorded for each document, and a funnel principle: exclude what is certain, include what is certain and work on the uncertain cases. The method is described on a new page, \"Experimental methodology in progress\"."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@c34180efc5",
+    "mxmap-it/analisi-spesa-ict@389b55e1d9",
+    "mxmap-it/analisi-spesa-ict@7e83738b4f",
+    "mxmap-it/analisi-spesa-ict@af4f7ba047",
+    "mxmap-it/analisi-spesa-ict@d544cae721",
+    "mxmap-it/analisi-spesa-ict@9ed0c24c16",
+    "mxmap-it/analisi-spesa-ict@e5d1371010",
+    "mxmap-it/analisi-spesa-ict@77e4f095b6",
+    "mxmap-it/analisi-spesa-ict@d79b9e311e",
+    "mxmap-it/analisi-spesa-ict@7ac46ed849",
+    "mxmap-it/analisi-spesa-ict@1827b03dd1",
+    "mxmap-it/analisi-spesa-ict@134ec0f9a1"
+   ],
+   "n_commit": 12,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#56"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-29-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Annotazioni collaborative: una pagina per i volontari che revisionano i contratti",
+    "en": "Collaborative annotations: a page for volunteers reviewing contracts"
+   },
+   "sintesi": {
+    "it": "Nasce una sezione Annotazioni collaborative, con guida, in cui i volontari possono esaminare i contratti in uno stato condiviso, segnalare i casi non determinabili e indicare se servono documenti esterni e quali. Le richieste di documenti alimentano una coda per la raccolta automatica. Le annotazioni vengono esportate ogni ora e versionate.",
+    "en": "A new Collaborative annotations section, with a guide, lets volunteers examine contracts in a shared workspace, flag cases that cannot be determined, and say whether external documents are needed and which ones. Document requests feed a queue for automated collection. Annotations are exported every hour and kept under version control."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@7b2bbc5e62",
+    "mxmap-it/analisi-spesa-ict@2be8c2ad78",
+    "mxmap-it/analisi-spesa-ict@7ee32eaa82",
+    "mxmap-it/analisi-spesa-ict@075329e26a",
+    "mxmap-it/analisi-spesa-ict@4c69bdfc4f",
+    "mxmap-it/analisi-spesa-ict@4ed02783f2",
+    "mxmap-it/analisi-spesa-ict@cb5e62bf20",
+    "mxmap-it/analisi-spesa-ict@f0830a36e2"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-29-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Esecuzione sul server: archiviazione degli atti, tetto di calcolo e ripresa automatica",
+    "en": "Running on the server: document archiving, compute cap and automatic resumption"
+   },
+   "sintesi": {
+    "it": "Il secondo giro gira ora sul server: ogni atto viene scaricato, archiviato con impronta sha256 e convertito in testo, con OCR quando serve. I compiti automatici dei modelli sono sottoposti a un tetto di calcolo con registro dei consumi; quote e valori di taratura sono provvisori. Il lavoro riprende da solo quando il limite d'uso si azzera e gli esiti vengono salvati in git prima di ogni aggiornamento del codice.",
+    "en": "The second round now runs on the server: each document is downloaded, archived with a sha256 fingerprint and converted to text, using OCR where needed. The models' automated tasks are subject to a compute cap with a usage log; quotas and calibration values are provisional. Work resumes on its own when the usage limit resets, and results are saved to git before every code update."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@e07932816d",
+    "mxmap-it/analisi-spesa-ict@18c9a91889",
+    "mxmap-it/analisi-spesa-ict@fa7c0e8436",
+    "mxmap-it/analisi-spesa-ict@c3234c1fce",
+    "mxmap-it/analisi-spesa-ict@ed6081409c",
+    "mxmap-it/analisi-spesa-ict@20a7f24211",
+    "mxmap-it/analisi-spesa-ict@d6ddbf4b07",
+    "mxmap-it/analisi-spesa-ict@fd1a2ca600",
+    "mxmap-it/analisi-spesa-ict@1daa532a6e",
+    "mxmap-it/analisi-spesa-ict@45ef553077",
+    "mxmap-it/analisi-spesa-ict@66342ba297",
+    "mxmap-it/analisi-spesa-ict@391ea6d369",
+    "mxmap-it/analisi-spesa-ict@4bb925069b"
+   ],
+   "n_commit": 13,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#20",
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-29-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Nessun classificatore ICT/cloud esistente trovato; pilota di acquisizione da TED",
+    "en": "No existing ICT/cloud classifier found; pilot of document acquisition from TED"
+   },
+   "sintesi": {
+    "it": "Una ricerca su GitHub, Hugging Face e Zenodo non ha trovato classificatori pubblici di spesa ICT o cloud. Ha però individuato risorse riusabili, come una corrispondenza ANAC→CPV su Zenodo ed EuroTender. È stato inoltre avviato un pilota per acquisire documenti di livello L2 dalla banca dati europea TED.",
+    "en": "A search of GitHub, Hugging Face and Zenodo found no public classifiers for ICT or cloud spending. It did identify reusable resources, such as an ANAC→CPV mapping on Zenodo and EuroTender. A pilot was also launched to acquire L2-level documents from the European TED database."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@e1354cc3d6",
+    "mxmap-it/analisi-spesa-ict@f60f28e636"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#57"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22923,
+  "copertura": 97.26,
+  "extra_eu": 47.2,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.1
+ }
+}

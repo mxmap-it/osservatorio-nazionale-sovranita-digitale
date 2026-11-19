@@ -1,0 +1,31 @@
+{
+ "data": "2026-05-30",
+ "settimana": "2026-W22",
+ "fonte": {
+  "mxmap": "e4b19ea9fc02df43"
+ },
+ "voci": [
+  {
+   "id": "2026-05-30-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Il deploy notturno del sito ora pubblica il ramo principale e non più una versione superata",
+    "en": "Nightly site deploy now publishes the main branch instead of an outdated version"
+   },
+   "sintesi": {
+    "it": "La procedura automatica che ogni notte alle 04:00 UTC aggiorna il sito pubblicava per errore un ramo storico del codice, fermo da mesi. Questo avrebbe sostituito il sito con contenuti superati e cancellato il lavoro sulla versione italiana. Ora il sito viene pubblicato dallo stesso ramo su cui confluiscono ogni notte i dati aggiornati.",
+    "en": "The automated procedure that updates the site every night at 04:00 UTC was mistakenly publishing a historical branch of the code that had not changed for months. This would have replaced the site with outdated content and removed the work on the Italian version. The site is now published from the same branch that receives the updated data each night."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@dba4e423a8"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "data": "2026-06-16",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "d62b012907b0a35d",
+  "osservatorio": "1c8116310a3935e1"
+ },
+ "voci": [
+  {
+   "id": "2026-06-16-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": true,
+   "titolo": {
+    "it": "Repository spostati nell'organizzazione GitHub mxmap-it e Osservatorio su nuovo dominio",
+    "en": "Repositories moved to the mxmap-it GitHub organisation and Observatory on a new domain"
+   },
+   "sintesi": {
+    "it": "I repository del progetto sono ora nell'organizzazione github.com/mxmap-it: sono stati aggiornati 44 collegamenti tra pagine, documentazione, script e dati pubblicati. Il sito dell'Osservatorio è ora raggiungibile su osservatorio.mxmap.it e i riferimenti nei report sono stati aggiornati; il sito mxmap.it resta invariato.",
+    "en": "The project's repositories are now under the github.com/mxmap-it organisation: 44 links were updated across pages, documentation, scripts and published data. The Observatory website is now available at osservatorio.mxmap.it and references in the reports were updated; the mxmap.it site is unchanged."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@be662c31b7",
+    "mxmap-it/mxmap.it@df9f61885a"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-16-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Badge BETA e canale Telegram nell'intestazione di mxmap.it",
+    "en": "BETA badge and Telegram channel in the mxmap.it header"
+   },
+   "sintesi": {
+    "it": "Nell'intestazione del sito compaiono un badge «BETA» e un collegamento al canale Telegram, lo stesso dell'Osservatorio. Una nota sul badge spiega che il progetto è in costante evoluzione, che la prima scansione ufficiale (da cui partirà la misurazione quotidiana) non è ancora partita, e invita a collaborare su GitHub e a unirsi al canale. La nota e l'intestazione sono state adattate per funzionare correttamente anche su smartphone.",
+    "en": "The site header now shows a «BETA» badge and a link to the Telegram channel, the same one used by the Observatory. A note on the badge explains that the project is constantly evolving, that the first official scan (which will start the daily measurement) has not yet begun, and invites people to contribute on GitHub and join the channel. The note and the header were adjusted to work properly on smartphones as well."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d525f790dd",
+    "mxmap-it/mxmap.it@68ad9fee62",
+    "mxmap-it/mxmap.it@f47a9e4bff",
+    "mxmap-it/mxmap.it@3e8e4babad"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/",
+    "https://t.me/+Ot-M_g0dkh1kMGI0"
+   ]
+  },
+  {
+   "id": "2026-06-16-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Immagine di anteprima per la condivisione di mxmap.it sui social",
+    "en": "Preview image for sharing mxmap.it on social media"
+   },
+   "sintesi": {
+    "it": "È stata aggiunta un'immagine di anteprima in formato PNG, nello stile grafico dell'Osservatorio, così che i link a mxmap.it condivisi su X, Facebook, WhatsApp e LinkedIn mostrino correttamente logo e descrizione.",
+    "en": "A PNG preview image, in the Observatory's visual style, has been added so that links to mxmap.it shared on X, Facebook, WhatsApp and LinkedIn correctly display the logo and description."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@51bef2c446"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-16-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pannello «Informazioni» leggibile su mobile e sezione download unificata",
+    "en": "«Information» panel readable on mobile and unified download section"
+   },
+   "sintesi": {
+    "it": "Su smartphone il pannello «Informazioni» veniva tagliato e la parte finale non era raggiungibile; ora scorre correttamente. Inoltre i due blocchi duplicati per scaricare il dataset sono stati unificati in uno solo, con descrizione delle colonne, licenza e link a KPI e report in formato JSON.",
+    "en": "On smartphones the «Information» panel was cut off and its final part could not be reached; it now scrolls correctly. In addition, the two duplicate blocks for downloading the dataset were merged into one, with a description of the columns, the licence and links to the KPIs and the report in JSON format."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@c29ca25d3b",
+    "mxmap-it/mxmap.it@a8dad44646"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-16-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il sito passa al dominio osservatorio.mxmap.it e annuncia il lancio in beta",
+    "en": "The site moves to the osservatorio.mxmap.it domain and announces its beta launch"
+   },
+   "sintesi": {
+    "it": "Il sito dell'Osservatorio ora usa il dominio osservatorio.mxmap.it; tutti i link interni e i PDF sono stati aggiornati e rigenerati. Le news sono state riazzerate con un annuncio, datato 16 giugno 2026, del lancio in beta del sito e del software MxMap, con un invito a partecipare; il banner dell'evento alla Camera è stato disattivato.",
+    "en": "The Observatory website now uses the osservatorio.mxmap.it domain; all internal links and PDFs have been updated and regenerated. The news section has been reset with an announcement, dated 16 June 2026, of the beta launch of the site and of the MxMap software, with an invitation to take part; the banner for the event at the Chamber of Deputies has been switched off."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@03d7a0de5c",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@02778104a0"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-16-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Report di giugno 2026 in bozza e pagina «Report Beta» generata dai dati MxMap",
+    "en": "Draft June 2026 report and a «Report Beta» page generated from MxMap data"
+   },
+   "sintesi": {
+    "it": "La pagina Report ora mostra un rapporto generato direttamente dai dati MxMap: sintesi, quadro della sovranità, principali fornitori, ripartizione per categoria di ente, affidabilità dei dati e nota di metodo. È disponibile anche un PDF del report di giugno 2026, chiaramente segnato come BOZZA su ogni pagina: i suoi contenuti sono quindi provvisori.",
+    "en": "The Report page now shows a report generated directly from MxMap data: summary, sovereignty overview, main providers, breakdown by category of public body, data reliability and a methodology note. A PDF of the June 2026 report is also available, clearly marked as DRAFT on every page, so its contents are provisional."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@5568acf466",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@fb18efbcfa"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/report-2026-06-sovranita-digitale-pa.pdf"
+   ]
+  },
+  {
+   "id": "2026-06-16-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pagina Decisori: sovranità per categoria di ente e classifica dei fornitori",
+    "en": "Decision-makers page: sovereignty by category of public body and provider ranking"
+   },
+   "sintesi": {
+    "it": "La pagina per i decisori aggiunge un grafico che ordina le categorie di enti pubblici (classificazione IPA) per quota di dipendenza da fornitori extra-UE, e una classifica dei principali fornitori colorata per giurisdizione. I grafici si alimentano dai dati MxMap e restano nascosti finché i dati non sono disponibili.",
+    "en": "The decision-makers page adds a chart ranking categories of public bodies (IPA classification) by their share of dependence on non-EU providers, and a ranking of the main providers coloured by jurisdiction. The charts are fed by MxMap data and stay hidden until the data is available."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@69ff4cd56d",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@69fe318300"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale#3"
+   ],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-16-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Aggiunta l'iniziativa sovranita-digitale.it e una FAQ sulle differenze",
+    "en": "Added the sovranita-digitale.it initiative and an FAQ on the differences"
+   },
+   "sintesi": {
+    "it": "La pagina Iniziative include ora sovranita-digitale.it, iniziativa italiana indipendente che analizza la sovranità digitale su più dimensioni a partire da diversi dataset pubblici. Una nuova FAQ spiega che l'Osservatorio si concentra sulla sovranità della posta elettronica e che i due progetti sono complementari.",
+    "en": "The Initiatives page now includes sovranita-digitale.it, an independent Italian initiative that analyses digital sovereignty across several dimensions using various public datasets. A new FAQ explains that the Observatory focuses on email sovereignty and that the two projects are complementary."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@9137c21721"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-16-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Intestazione, menu e anteprime social rivisti; badge BETA e menu mobile corretto",
+    "en": "Header, menu and social previews revised; BETA badge and fixed mobile menu"
+   },
+   "sintesi": {
+    "it": "Logo e collegamenti dell'intestazione sono stati resi più leggibili, il piè di pagina è stato ripulito dai duplicati ed è stato aggiunto Telegram; il Press Kit è ora nel menu News. Un badge BETA con collegamenti a GitHub e Telegram segnala lo stato del progetto, il menu su smartphone ora si apre correttamente e le anteprime sui social mostrano l'immagine grande, personalizzabile per pagina. Gli inviti Telegram mettono ora al primo posto la partecipazione al progetto.",
+    "en": "The header logo and links have been made more legible, duplicates were removed from the footer and Telegram was added; the Press Kit now sits under the News menu. A BETA badge with links to GitHub and Telegram signals the project's status, the menu on smartphones now opens correctly, and social media previews show the large image, which can be customised per page. Telegram invitations now put taking part in the project first."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@1dfa05eabb",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@221f64fcc9",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@8409decbef",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f26e4c3c75",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@328c91071f",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f044f82541"
+   ],
+   "n_commit": 6,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-16-osservatorio-6",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Repository trasferiti nell'organizzazione GitHub mxmap-it",
+    "en": "Repositories moved to the mxmap-it GitHub organisation"
+   },
+   "sintesi": {
+    "it": "I repository del progetto sono stati spostati nell'organizzazione GitHub mxmap-it: i link nel sito, nei contenuti e nei PDF sono stati aggiornati e i PDF interessati rigenerati. I link ai repository di terzi della famiglia MxMap non sono stati modificati.",
+    "en": "The project's repositories have been moved to the mxmap-it GitHub organisation: links in the site, content and PDFs have been updated and the affected PDFs regenerated. Links to third-party repositories in the MxMap family were left unchanged."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@1b7b0a36be"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "data": "2026-09-30",
+ "settimana": "2026-W40",
+ "fonte": {},
+ "voci": [],
+ "kpi": {
+  "n_enti": 22903,
+  "copertura": 97.23,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.7,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "data": "2026-11-04",
+ "settimana": "2026-W45",
+ "fonte": {
+  "spesa-ict": "88f905e6a467ebef",
+  "pvl-at": "11527cf2d7b968f6"
+ },
+ "voci": [
+  {
+   "id": "2026-11-04-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Link ai documenti di gara: presenti per il 65,1% dei CIG 2024-2026",
+    "en": "Links to tender documents: available for 65.1% of 2024-2026 CIGs"
+   },
+   "sintesi": {
+    "it": "Sull'universo di 3,73 M di CIG 2024-2026, il 65,1% ha un link ai documenti di gara, disponibile solo tramite l'API della Piattaforma per la pubblicità legale (PVL). I link puntano a 36.888 domini; 16 famiglie di sistemi sono state attribuite con certezza e una verifica a campione ha riguardato 400 domini. Sono stati pubblicati la pagina sui sistemi documentali, gli open data, l'aggiornamento del registro delle criticità ANAC e del rendiconto.",
+    "en": "Across the universe of 3.73 M CIGs for 2024-2026, 65.1% have a link to tender documents, available only through the API of the Legal Publicity Platform (PVL). The links point to 36,888 domains; 16 system families were attributed with certainty and a sample check covered 400 domains. The page on document systems, the open data, and updates to the ANAC issues register and the report were published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@695255d803",
+    "mxmap-it/analisi-spesa-ict@cb38e7626e"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57",
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-04-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicata la scheda normativa sull'accessibilità dei documenti di gara",
+    "en": "Legal brief on the accessibility of tender documents published"
+   },
+   "sintesi": {
+    "it": "Una nuova pagina del sito ricostruisce il quadro normativo sull'accesso ai documenti di gara a partire dal link PVL: art. 53 della direttiva 2014/24/UE verificato su EUR-Lex, delibere ANAC, giurisprudenza amministrativa e della Corte dei conti sulla responsabilità per omessa pubblicazione e perimetro delle sanzioni. Le fonti sono archiviate e i punti ancora incerti sono indicati esplicitamente.",
+    "en": "A new page on the site sets out the legal framework for access to tender documents via the PVL link: Article 53 of Directive 2014/24/EU checked on EUR-Lex, ANAC resolutions, administrative and Court of Auditors case law on liability for failure to publish, and the scope of sanctions. Sources are archived and points still uncertain are stated explicitly."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@73d8379fd1",
+    "mxmap-it/analisi-spesa-ict@88503c9b6a",
+    "mxmap-it/analisi-spesa-ict@3bb27bc49e",
+    "mxmap-it/analisi-spesa-ict@e3d3e09486"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#63"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-04-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Verifica delle pagine di trasparenza: open data del giro su 30.701 enti (beta)",
+    "en": "Transparency page check: open data from the round on 30,701 bodies (beta)"
+   },
+   "sintesi": {
+    "it": "Sono stati pubblicati open data e dashboard del giro di verifica del 2026-11-03 su 30.701 enti (metodo 1.1.0-beta). Dopo due giri di conferma, i blocchi da firewall applicativo (WAF) non riprodotti sono stati riclassificati e le prove pubbliche sono limitate ai casi di WAF e di accesso negato. Si tratta ancora di una versione beta.",
+    "en": "Open data and a dashboard were published for the 2026-11-03 check round on 30,701 bodies (method 1.1.0-beta). After two confirmation rounds, web application firewall (WAF) blocks that could not be reproduced were reclassified and public evidence is limited to WAF and access-denied cases. This is still a beta release."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2c0818339a",
+    "mxmap-it/analisi-spesa-ict@3e989b9803",
+    "mxmap-it/analisi-spesa-ict@778c8d3174"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#61"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-04-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Verifica trasparenza: criteri più prudenti per conferme, segnalazioni e piattaforme condivise",
+    "en": "Transparency check: more cautious criteria for confirmations, notices and shared platforms"
+   },
+   "sintesi": {
+    "it": "Le segnalazioni via PEC partiranno solo per violazioni pubblicate e, nel caso dei WAF, solo se confermate; i WAF senza verifica estesa sono marcati «solo prima prova». Per le piattaforme condivise si controlla un campione per host senza estendere l'esito agli enti non verificati, con un solo ritentativo sui timeout.",
+    "en": "Notices via certified email (PEC) will be sent only for published violations and, for WAFs, only if confirmed; WAFs without extended verification are marked \"first test only\". For shared platforms a sample per host is checked without extending the result to unverified bodies, with a single retry on timeouts."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6d4dda6899",
+    "mxmap-it/analisi-spesa-ict@d6e335279d",
+    "mxmap-it/analisi-spesa-ict@cf52582028",
+    "mxmap-it/analisi-spesa-ict@1d9d8cddd0"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#61"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-04-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Visibilità PA: proposta di specifica 0.2 da approvare",
+    "en": "PA Visibility: draft specification 0.2 pending approval"
+   },
+   "sintesi": {
+    "it": "È stata redatta la specifica di Visibilità PA, ancora una proposta da approvare: un osservatorio dei file robots, un monitor di Amministrazione trasparente su un nucleo comune e un re-indicizzatore. La versione 0.2 aggiunge una matrice dei blocchi per user agent, l'albo pretorio per ente ed esclusioni configurabili per sito.",
+    "en": "The PA Visibility specification has been drafted and is still a proposal pending approval: a robots file observatory, a Transparent Administration monitor on a common core, and a re-indexer. Version 0.2 adds a blocking matrix by user agent, the official notice board per body, and per-site configurable exclusions."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@daeaca2f72",
+    "mxmap-it/analisi-spesa-ict@2a2ef33a25"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#64"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-04-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Metodo 1.2.0: regole più prudenti per classificare siti non raggiungibili o bloccati",
+    "en": "Method 1.2.0: more cautious rules for classifying unreachable or blocked sites"
+   },
+   "sintesi": {
+    "it": "Pubblicata la versione 1.2.0 del metodo, che cambia alcune regole di classificazione: un reindirizzamento finale non conta come contenuto, alcuni errori di connessione sicura non vengono più attribuiti a sistemi di protezione (WAF), i blocchi silenziosi del traffico sono distinti dalla semplice irraggiungibilità e i limiti di traffico imposti dai server prevedono un'attesa e una ripetizione. Inoltre, quando l'indirizzo indicato nei dati della legge 190 non corrisponde al sito dell'ente, da quell'indirizzo non si deducono più esiti negativi come «irraggiungibile» o «sezione non individuata».",
+    "en": "Version 1.2.0 of the method has been published, changing some classification rules: a final redirect does not count as content, some secure-connection errors are no longer attributed to protection systems (WAF), silent traffic blocks are distinguished from simple unreachability, and rate limits imposed by servers now trigger a wait and a retry. In addition, when the address given in the Law 190 data does not match the entity's website, negative outcomes such as «unreachable» or «section not found» are no longer inferred from that address."
+   },
+   "commit": [],
+   "n_commit": 6,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-04-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Amministrazione trasparente: nuova versione 1.2.0 dello strumento di rilevazione",
+    "en": "Transparency sections: new version 1.2.0 of the survey tool"
+   },
+   "sintesi": {
+    "it": "Lo strumento che verifica le sezioni «Amministrazione trasparente» dei siti della PA, finora in versione beta, è stato riorganizzato in un modulo autonomo e portato alla versione 1.2.0. La nuova versione separa le fasi di verifica, misura e ricerca della sezione, conserva registri completi e ripete a distanza di 60 minuti le misure negative prima di confermarle, così da ridurre i falsi esiti.",
+    "en": "The tool that checks the «Amministrazione trasparente» (transparency) sections of public administration websites, until now in beta, has been reorganised into a standalone module and brought to version 1.2.0. The new version separates the verification, measurement and section-finding phases, keeps complete logs and repeats negative measurements after 60 minutes before confirming them, in order to reduce false results."
+   },
+   "commit": [],
+   "n_commit": 6,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-04-pvl-at-3",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Diagnosi della versione beta su un campione di 223 enti; pilota di confronto in corso",
+    "en": "Diagnosis of the beta version on a sample of 223 entities; comparison pilot under way"
+   },
+   "sintesi": {
+    "it": "Gli esiti della versione beta sono stati riesaminati su un campione di 223 enti per individuare le cause degli errori, tra cui sezioni non individuate perché la ricerca ripiegava sul sito del fornitore anziché su quello dell'ente. Sono stati ricavati 22 casi di controllo da misure reali per verificare che le nuove versioni non cambino gli esiti corretti; è in corso un pilota che confronta la beta con la versione 1.2.0, i cui risultati non sono ancora disponibili.",
+    "en": "The results of the beta version were re-examined on a sample of 223 entities to identify the causes of errors, including sections not found because the search fell back on the supplier's website instead of the entity's. 22 control cases were derived from real measurements to check that new versions do not change correct results; a pilot comparing the beta with version 1.2.0 is under way, and its results are not yet available."
+   },
+   "commit": [],
+   "n_commit": 8,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22920,
+  "copertura": 97.28,
+  "extra_eu": 47.3,
+  "eu_non_it": 0.5,
+  "it": 49.5,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

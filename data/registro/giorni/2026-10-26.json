@@ -1,0 +1,310 @@
+{
+ "data": "2026-10-26",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "2db249a01b8be029"
+ },
+ "voci": [
+  {
+   "id": "2026-10-26-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Avvio dell'analisi: fonti, strade scartate, roadmap e obblighi delle autorità",
+    "en": "Analysis launched: sources, discarded paths, roadmap and authorities' obligations"
+   },
+   "sintesi": {
+    "it": "Pubblicata l'analisi delle fonti sulla spesa ICT pubblica, con le strade non seguite e il perché (tra cui l'OCDS di ANAC fermo da sette mesi e la sua API REST non funzionante), insieme a una roadmap in cinque fasi e a un registro dei problemi che parte con tredici voci verificate. Un risultato della verifica: appalti e spesa pubblica non rientrano negli High Value Dataset del regolamento UE 2023/138, quindi l'obbligo europeo di pubblicare in blocco e via API non si può invocare per BDNCP, BDAP, SIOPE e Consip; diciotto delle attese verso le autorità risultano già smentite.",
+    "en": "The analysis of sources on public ICT spending has been published, with the paths not taken and why (including ANAC's OCDS, stalled for seven months, and its non-working REST API), together with a five-phase roadmap and an issue register that starts with thirteen verified entries. One finding from the verification: procurement and public spending are not among the High Value Datasets of EU Regulation 2023/138, so the European obligation to publish in bulk and via API cannot be invoked for BDNCP, BDAP, SIOPE and Consip; eighteen of the expectations towards the authorities have already been disproved."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@ba3d19d852",
+    "mxmap-it/analisi-spesa-ict@61800c14d3",
+    "mxmap-it/analisi-spesa-ict@5046248288"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-26-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Archivio permanente dei dati ANAC: censite 1.801 risorse, 128,92 GB reali",
+    "en": "Permanent archive of ANAC data: 1,801 resources catalogued, 128.92 GB actually served"
+   },
+   "sintesi": {
+    "it": "Partito un archivio che conserva i dati ANAC senza mai sovrascriverli. Il censimento conta 70 dataset e 1.801 risorse: il volume reale servito è di 128,92 GB contro i 524,78 GB dichiarati dal catalogo, una sovrastima media di 4,1 volte che riguarda tutte le 1.797 risorse scaricabili; quattro risorse elencate rispondono 404. I primi controlli di integrità correggono alcune stime precedenti: i CIG con CUP valido sono il 72,5% (13,7% sull'ICT di ottobre) e gli errori veri nei codici fiscali degli aggiudicatari sono l'1,5%; il download completo è ancora in corso.",
+    "en": "An archive that stores ANAC data without ever overwriting it has started. The census counts 70 datasets and 1,801 resources: the volume actually served is 128.92 GB against the 524.78 GB declared by the catalogue, an average overestimate of 4.1 times that affects all 1,797 downloadable resources; four listed resources return 404. The first integrity checks correct some earlier estimates: CIGs with a valid CUP are 72.5% (13.7% for October ICT) and genuine errors in awardees' tax codes are 1.5%; the full download is still in progress."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1bac35f8bc",
+    "mxmap-it/analisi-spesa-ict@4a3dd4db37",
+    "mxmap-it/analisi-spesa-ict@bb4d8c8081",
+    "mxmap-it/analisi-spesa-ict@cc5b2ab737",
+    "mxmap-it/analisi-spesa-ict@025a51cfa2"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#9"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sonda di disponibilità: quattro nuovi problemi nei dati ANAC",
+    "en": "Availability probe: four new problems in ANAC data"
+   },
+   "sintesi": {
+    "it": "Un registro di 25 voci e una sonda giornaliera controllano, mese per mese, se ogni risorsa è disponibile: alla prima tornata, su 125 risorse 111 sono disponibili, 13 assenti e una negata. Emergono quattro problemi nuovi: smartcig senza giugno e luglio 2026, l'OCDS 2026 che contiene solo marzo, la versione JSON di smartcig interrotta ad agosto e il campo dimensione del catalogo che descrive il file scompattato invece di quello servito. ANAC non espone ETag su nessuna delle 95 risorse sondate.",
+    "en": "A 25-entry register and a daily probe check, month by month, whether each resource is available: in the first round, of 125 resources 111 are available, 13 missing and one denied. Four new problems emerge: smartcig missing June and July 2026, the 2026 OCDS containing only March, the JSON version of smartcig discontinued in August, and the catalogue's size field describing the uncompressed file rather than the one served. ANAC exposes no ETag on any of the 95 probed resources."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@b84bba8a79",
+    "mxmap-it/analisi-spesa-ict@a091165c5e"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "L'OCDS di ANAC serve lo stesso file per mesi diversi, verificato al byte",
+    "en": "ANAC's OCDS serves the same file for different months, verified byte by byte"
+   },
+   "sintesi": {
+    "it": "Sei mesi consecutivi, da novembre 2024 ad aprile 2025, servono lo stesso file da 3.183.014.151 byte, e cinque mesi, da maggio a settembre 2025, un altro identico: dei 23 mesi disponibili, i contenuti distinti sono al massimo 11. Chi costruisce una serie storica mese per mese conta quindi più volte gli stessi dati. Nel file di marzo 2026, inoltre, il 13,4% delle release non ha una data utilizzabile.",
+    "en": "Six consecutive months, from November 2024 to April 2025, serve the same 3,183,014,151-byte file, and five months, from May to September 2025, another identical one: of the 23 available months, there are at most 11 distinct contents. Anyone building a month-by-month time series therefore counts the same data several times. In the March 2026 file, moreover, 13.4% of releases have no usable date."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@65c94fe14c"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rapporto ANAC 1.3: incongruenze documentate e confermate in modo indipendente da AgID",
+    "en": "ANAC report 1.3: documented inconsistencies independently confirmed by AgID"
+   },
+   "sintesi": {
+    "it": "Il rapporto su ANAC passa dalla versione 1.1 alla 1.3, con una sezione di nove incongruenze tra ciò che ANAC dichiara e ciò che pubblica, ciascuna con prove archiviate e un'azione correttiva; tra queste, la licenza dell'OCDS indicata come CC BY 4.0 nelle pagine e CC BY-SA 4.0 nel file. AgID ha descritto pubblicamente, in modo indipendente, cinque degli stessi problemi, abbandonando l'OCDS il 18-19 ottobre. Sono state anche corrette affermazioni non verificate, eliminati dati provenienti da fonti riservate e attenuate le affermazioni assolute.",
+    "en": "The ANAC report moves from version 1.1 to 1.3, with a section of nine inconsistencies between what ANAC declares and what it publishes, each with archived evidence and a corrective action; among them, the OCDS licence stated as CC BY 4.0 on the web pages and CC BY-SA 4.0 in the file. AgID has independently and publicly described five of the same problems, abandoning the OCDS on 18-19 October. Unverified statements have also been corrected, data from confidential sources removed and absolute claims toned down."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@c13e5eb071",
+    "mxmap-it/analisi-spesa-ict@f93418415b",
+    "mxmap-it/analisi-spesa-ict@3e7386175c",
+    "mxmap-it/analisi-spesa-ict@6574b49e66",
+    "mxmap-it/analisi-spesa-ict@21f6c4c502"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#6",
+    "mxmap-it/analisi-spesa-ict#11",
+    "mxmap-it/analisi-spesa-ict#14",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#30",
+    "mxmap-it/analisi-spesa-ict#31",
+    "mxmap-it/analisi-spesa-ict#32",
+    "mxmap-it/analisi-spesa-ict#33",
+    "mxmap-it/analisi-spesa-ict#37",
+    "mxmap-it/analisi-spesa-ict#38",
+    "mxmap-it/analisi-spesa-ict#39"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-26-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Online il sito analisi-spesa-ict.mxmap.it",
+    "en": "The analisi-spesa-ict.mxmap.it website is online"
+   },
+   "sintesi": {
+    "it": "Il sito del progetto adotta la stessa grafica dell'osservatorio e mette al centro l'obiettivo finale, la spesa ICT in cloud per giurisdizione, riassumendo in una tabella i cinque passi intermedi. È organizzato in tre sezioni (Rendiconti, Enti, Metodo) e pubblica come pagine i documenti di progetto e il rapporto ANAC.",
+    "en": "The project website uses the same design as the observatory and puts the final goal, cloud ICT spending by jurisdiction, at the centre, summarising the five intermediate steps in a table. It is organised in three sections (Reports, Bodies, Method) and publishes the project documents and the ANAC report as pages."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@15f340407c",
+    "mxmap-it/analisi-spesa-ict@9564435698",
+    "mxmap-it/analisi-spesa-ict@e9ed717c07"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#8",
+    "mxmap-it/analisi-spesa-ict#9",
+    "mxmap-it/analisi-spesa-ict#12"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-26-spesa-ict-7",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "La giurisdizione si attribuisce al prodotto acquistato, non solo al fornitore",
+    "en": "Jurisdiction is attributed to the product purchased, not only to the supplier"
+   },
+   "sintesi": {
+    "it": "Nelle gare dell'OCDS di marzo 2026 che nominano Microsoft 365, Azure, AWS o Google, i fornitori aggiudicatari sono il produttore solo tra lo 0% e il 5% delle volte; per Microsoft 365 i fornitori distinti sono 66 su 115 aggiudicazioni. Contare solo la giurisdizione del fornitore farebbe quindi apparire come spesa italiana la dipendenza dalle big tech: si useranno due lenti separate, prodotto e fornitore. Il dato attende una controvalidazione, perché solo 19.829 release su 136.850 con aggiudicazione indicano il fornitore.",
+    "en": "In March 2026 OCDS tenders naming Microsoft 365, Azure, AWS or Google, the awarded suppliers are the producer only between 0% and 5% of the time; for Microsoft 365 there are 66 distinct suppliers across 115 awards. Counting only the supplier's jurisdiction would therefore make dependence on big tech look like Italian spending: two separate lenses, product and supplier, will be used. The figure is awaiting cross-validation, because only 19,829 of 136,850 releases with an award indicate the supplier."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@00e21929c8"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#42"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-8",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Fondi PNRR per il cloud: tracciabili fino ai contratti per circa metà dei progetti",
+    "en": "PNRR cloud funds: traceable to contracts for about half of the projects"
+   },
+   "sintesi": {
+    "it": "Fabio ha deciso di misurare quanta parte dei fondi PNRR per il cloud sia andata a prodotti delle big tech statunitensi. La verifica della catena dei dati mostra che delle 22.162 candidature finanziate dalla Misura 1.2 (1,34 miliardi), 11.566 CUP portano ad almeno un contratto in ANAC, per 17.973 CIG.",
+    "en": "Fabio decided to measure how much of the PNRR cloud funds went to products of US big tech. Verification of the data chain shows that of the 22,162 applications funded under Measure 1.2 (1.34 billion), 11,566 CUPs lead to at least one contract in ANAC, for 17,973 CIGs."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@148e230620"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#43"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Perimetro delle fonti ristretto a quelle utili alla spesa ICT",
+    "en": "Source scope narrowed to those useful for ICT spending"
+   },
+   "sintesi": {
+    "it": "Le fonti sono state prima delimitate alla spesa pubblica diretta o indiretta e poi, su indicazione di Fabio, ristrette a quelle utili alla spesa ICT e cloud. Escono, tra le altre, aiuti di Stato, INPS, AIFA, NoiPA e OpenCivitas: delle 36 fonti di DataCivicLab ne restano fuori 29.",
+    "en": "Sources were first limited to direct or indirect public spending and then, at Fabio's indication, narrowed to those useful for ICT and cloud spending. State aid, INPS, AIFA, NoiPA and OpenCivitas, among others, are dropped: of DataCivicLab's 36 sources, 29 are left out."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@c672482100",
+    "mxmap-it/analisi-spesa-ict@2d3b4c2338",
+    "mxmap-it/analisi-spesa-ict@97ec6fb586"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#14"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-10-26-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Organizzazione del lavoro: board pubblica, criteri di chiusura ANAC e tetto di sforzo",
+    "en": "Work organisation: public board, ANAC closure criteria and effort cap"
+   },
+   "sintesi": {
+    "it": "I 30 ticket sono su una board pubblica. Fabio ha stabilito che ogni problema comunicato debba avere un'azione correttiva e una metrica di non ricorrenza, ed essere controvalidato per una via indipendente; ha inoltre fissato un tetto di sforzo giornaliero, che si applicherà dopo il completamento di ANAC. Non si tenterà di recuperare i dati già spariti: saranno registrati come perduti.",
+    "en": "The 30 tickets are on a public board. Fabio established that every problem communicated must have a corrective action and a non-recurrence metric, and be cross-validated by an independent route; he also set a daily effort cap, which will apply once ANAC is completed. No attempt will be made to recover data that has already disappeared: it will be recorded as lost."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2336d9bafe",
+    "mxmap-it/analisi-spesa-ict@e86c3f95be",
+    "mxmap-it/analisi-spesa-ict@cf22d181eb",
+    "mxmap-it/analisi-spesa-ict@966277eb9f",
+    "mxmap-it/analisi-spesa-ict@b5dbe35fe9"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#9",
+    "mxmap-it/analisi-spesa-ict#10",
+    "mxmap-it/analisi-spesa-ict#15",
+    "mxmap-it/analisi-spesa-ict#16",
+    "mxmap-it/analisi-spesa-ict#18",
+    "mxmap-it/analisi-spesa-ict#20",
+    "mxmap-it/analisi-spesa-ict#31",
+    "mxmap-it/analisi-spesa-ict#32",
+    "mxmap-it/analisi-spesa-ict#36"
+   ],
+   "link": [
+    "https://github.com/orgs/mxmap-it/projects/1"
+   ]
+  },
+  {
+   "id": "2026-10-26-spesa-ict-11",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Controlli giornalieri automatici sui nove problemi ANAC",
+    "en": "Automatic daily checks on the nine ANAC problems"
+   },
+   "sintesi": {
+    "it": "Per ognuna delle nove incongruenze del rapporto ANAC c'è ora un controllo automatico giornaliero che registra se il problema persiste, con la prova: lo storico mostrerà se e quando verrà risolto. Corretti due errori che registravano le risposte 404 come errori di rete o ignoravano gli OCDS annuali.",
+    "en": "For each of the nine inconsistencies in the ANAC report there is now an automatic daily check that records whether the problem persists, with evidence: the history will show whether and when it is resolved. Two bugs were fixed that recorded 404 responses as network errors or ignored the annual OCDS files."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2d470baa57",
+    "mxmap-it/analisi-spesa-ict@5ef2127af6",
+    "mxmap-it/analisi-spesa-ict@5a89928033",
+    "mxmap-it/analisi-spesa-ict@7dfe682fbd"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#15",
+    "mxmap-it/analisi-spesa-ict#32",
+    "mxmap-it/analisi-spesa-ict#33"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22920,
+  "copertura": 97.26,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

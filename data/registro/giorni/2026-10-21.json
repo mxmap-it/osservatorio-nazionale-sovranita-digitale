@@ -1,0 +1,64 @@
+{
+ "data": "2026-10-21",
+ "settimana": "2026-W43",
+ "fonte": {
+  "mxmap": "a0a377ad59fae012",
+  "osservatorio": "56dd1d1a6dbc357d"
+ },
+ "voci": [
+  {
+   "id": "2026-10-21-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Il progetto si può riprendere da qualsiasi computer partendo da un clone del repository",
+    "en": "The project can be resumed from any computer starting from a repository clone"
+   },
+   "sintesi": {
+    "it": "È stata aggiunta una guida di ripresa (docs/STATE.md). Spiega come rimettere in funzione il progetto da zero, elenca ciò che volutamente resta fuori dal repository (solo le credenziali) e riporta le regole operative e le attività ancora aperte. La verifica è stata fatta su un clone pulito: i 34 test passano anche senza dipendenze aggiuntive e gli indicatori vengono ricostruiti correttamente dai dati pubblicati (22.917 enti).",
+    "en": "A resume guide (docs/STATE.md) has been added. It explains how to get the project running again from scratch, lists what is deliberately kept out of the repository (credentials only) and records the operational rules and the items still open. This was verified on a clean clone: the 34 tests pass even without additional dependencies and the indicators are rebuilt correctly from the published data (22,917 entities)."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@41457a61f3"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#34"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-21-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Il progetto del sito si può ricostruire da zero su Windows, macOS e Linux",
+    "en": "The site project can be rebuilt from scratch on Windows, macOS and Linux"
+   },
+   "sintesi": {
+    "it": "Finora 17 generatori di PDF e immagini contenevano percorsi di font validi solo sulla macchina originale. Ora i font vengono trovati su qualsiasi sistema. Sono stati aggiunti anche l'elenco delle dipendenze, uno strumento che controlla l'ambiente e le istruzioni per ripartire da zero. La verifica: i 18 generatori sono stati eseguiti senza errori, il testo dei 17 PDF pubblicati è rimasto identico e un clone pulito costruisce 72 pagine. Il test su Linux ha fatto emergere un errore di import nella copertina LinkedIn, che è stato corretto.",
+    "en": "Until now, 17 PDF and image generators contained font paths that only worked on the original machine. Fonts are now found on any system. A dependency list, an environment-check tool and instructions for starting from scratch were also added. Verification: the 18 generators ran without errors, the text of the 17 published PDFs is unchanged and a clean clone builds 72 pages. The Linux test revealed an import error in the LinkedIn cover, which has been fixed."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@96019cceb3",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f2d493cfbf"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22917,
+  "copertura": 97.27,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

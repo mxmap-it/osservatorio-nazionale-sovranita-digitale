@@ -1,0 +1,162 @@
+{
+ "data": "2026-07-29",
+ "settimana": "2026-W31",
+ "fonte": {
+  "osservatorio": "cc0e4c3f07ebbc00"
+ },
+ "voci": [
+  {
+   "id": "2026-07-29-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova sezione «Certificazioni e Sovranità»: Francia e Italia a confronto, articolo per articolo",
+    "en": "New \"Certifications and Sovereignty\" section: France and Italy compared, article by article"
+   },
+   "sintesi": {
+    "it": "Pubblicata in italiano e in inglese la pagina che mette in fila le cinque cose chiamate «cloud sovrano» e confronta le certificazioni: SecNumCloud 3.2 francese è l'unico schema con requisiti di immunità dalle leggi extraterritoriali e di controllo europeo del capitale. Dalla lettura integrale del regolamento di qualificazione ACN (DD 21007/24, 88 pagine con tutti e 4 gli allegati) non risulta alcuna clausola equivalente: termini come «CLOUD Act», «extraterritoriale» o «sede legale» hanno zero occorrenze. La pagina documenta anche che lo schema europeo EUCS non è ancora adottato e che nel 2021 l'Italia aveva co-scritto con Germania, Spagna e Francia la proposta sui criteri di immunità, poi rimossi nel marzo 2024; include una sezione di fonti con l'indicazione della loro affidabilità.",
+    "en": "A page has been published in Italian and English that sets out the five things called \"sovereign cloud\" and compares certifications: France's SecNumCloud 3.2 is the only scheme with requirements for immunity from extraterritorial laws and European control of capital. A full reading of the ACN qualification regulation (DD 21007/24, 88 pages including all 4 annexes) shows no equivalent clause: terms such as \"CLOUD Act\", \"extraterritorial\" or \"registered office\" have zero occurrences. The page also documents that the European EUCS scheme has not yet been adopted, and that in 2021 Italy co-wrote with Germany, Spain and France the proposal on immunity criteria, which were later removed in March 2024; it includes a sources section noting how reliable each one is."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e2f6ac0e96",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@18e9b7b7ca",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e7d4011805",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@20ec1613f3",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f6cb407ed2"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/certificazioni/",
+    "https://osservatorio.mxmap.it/en/certificazioni/"
+   ]
+  },
+  {
+   "id": "2026-07-29-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Policy Brief aggiornato: nuova sezione «La via d'uscita: certificare l'immunità»",
+    "en": "Policy Brief updated: new section \"The way out: certifying immunity\""
+   },
+   "sintesi": {
+    "it": "Il Policy Brief, in italiano e in inglese, passa da 2 a 3 pagine con una sezione che spiega perché la residenza del dato e le clausole contrattuali non tolgono la giurisdizione, confronta SecNumCloud 3.2 con la qualificazione italiana e propone 4 raccomandazioni operative. La citazione dell'audizione al Senato francese è ora riportata integralmente, con l'inciso finale, la precisazione che fu resa sotto giuramento e il riferimento al rapporto del Senato n. 830 dell'8 luglio 2025.",
+    "en": "The Policy Brief, in Italian and English, grows from 2 to 3 pages with a section explaining why data residency and contractual clauses do not remove jurisdiction, comparing SecNumCloud 3.2 with the Italian qualification and proposing 4 operational recommendations. The quote from the French Senate hearing is now given in full, with its closing clause, the clarification that it was made under oath and the reference to Senate report no. 830 of 8 July 2025."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b3b8dad843",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@50a3612996"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa-en.pdf"
+   ]
+  },
+  {
+   "id": "2026-07-29-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "FedRAMP: nessun fornitore cloud europeo autorizzato; scuole, il cluster più esposto",
+    "en": "FedRAMP: no European cloud provider authorised; schools are the most exposed cluster"
+   },
+   "sintesi": {
+    "it": "Una verifica diretta sul FedRAMP Marketplace statunitense (684 prodotti) non ha trovato alcun fornitore cloud europeo autorizzato; i gruppi europei presenti lo sono tutti tramite una società statunitense costituita appositamente. Dai dati dell'Osservatorio l'Istruzione risulta il cluster con la quota più alta della PA: 8.403 istituti, il 77,7% su fornitori extra-UE, pari al 37% di tutti gli enti misurati.",
+    "en": "A direct check of the US FedRAMP Marketplace (684 products) found no authorised European cloud provider; the European groups listed are all present through a US company set up for the purpose. Observatory data show that Education has the highest share of any cluster in the public administration: 8,403 institutions, 77.7% on non-EU providers, accounting for 37% of all bodies measured."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0f0a752445"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-07-29-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ricerca documentale: dossier su PSN, PNRR, Data Privacy Framework e asimmetrie USA-UE",
+    "en": "Documentary research: dossiers on PSN, PNRR, Data Privacy Framework and US-EU asymmetries"
+   },
+   "sintesi": {
+    "it": "Sono stati redatti i dossier di ricerca e un documento di controllo che separa ciò che è verificato su fonte primaria da ciò che è riportato da fonti secondarie, dalle contraddizioni aperte e da ciò che resta da verificare, insieme a un registro degli errori da evitare. Tra i risultati: le tutele del PSN riguardano 280 enti sui 13.000 migrati; il catalogo ACN conta 2.107 schede e 826 fornitori; il Data Privacy Framework non offre ricorso contro gli ordini CLOUD Act. La ricerca ha anche corretto tre assunti di partenza rivelatisi infondati, tra cui l'idea che il Buy American Act escluda il software europeo; tutte le verifiche bloccanti sono state chiuse o accettate con il rischio residuo dichiarato.",
+    "en": "Research dossiers have been drafted, along with a control document that separates what is verified against primary sources from what is reported by secondary sources, open contradictions and what remains to be verified, together with a register of errors to avoid. Among the findings: PSN safeguards cover 280 bodies out of the 13,000 migrated; the ACN catalogue lists 2,107 entries and 826 providers; the Data Privacy Framework offers no redress against CLOUD Act orders. The research also corrected three starting assumptions that proved unfounded, including the idea that the Buy American Act excludes European software; all blocking checks have been closed or accepted with the residual risk stated."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2a83ef90ac",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a8e294c008",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ee1b362e7c",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@324240aa1a",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d5b824479e",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4b031c5668",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7b8ec4c8c5",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@54165bda52",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c67ee7c583",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@54295af0cf"
+   ],
+   "n_commit": 10,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-07-29-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documentario: script di 20 minuti, storyboard, schede grafiche e booklet a fumetti",
+    "en": "Documentary: 20-minute script, storyboard, graphic cards and comic booklet"
+   },
+   "sintesi": {
+    "it": "È pronta una prima stesura completa dello script, in dodici atti, che ancora ogni affermazione al dossier corrispondente. A questa si aggiungono uno storyboard di 95 inquadrature, 7 schede grafiche e la sceneggiatura di un booklet a fumetti divulgativo per adulti. Tutti i materiali incorporano i 18 vincoli editoriali emersi dalla verifica delle fonti; una parte dello script è stata tagliata perché riguardava irregolarità negli appalti e non la sovranità digitale.",
+    "en": "A complete first draft of the script, in twelve acts, is ready, with every statement anchored to the corresponding dossier. It is joined by a 95-shot storyboard, 7 graphic cards and the screenplay for an explanatory comic booklet for adults. All materials incorporate the 18 editorial constraints that emerged from source verification; one part of the script was cut because it concerned procurement irregularities rather than digital sovereignty."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@008eb227db",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0533e8ad38",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@3eb7fcf258"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-07-29-osservatorio-6",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sito: supporto alle pagine di lavoro escluse da motori di ricerca, sitemap e feed",
+    "en": "Website: support for working pages excluded from search engines, sitemap and feeds"
+   },
+   "sintesi": {
+    "it": "Il sito ora consente di pubblicare pagine di lavoro non indicizzate, escluse dalla sitemap e dai feed RSS, perché una pagina soltanto non collegata finirebbe comunque nei motori di ricerca. La funzione è usata per la pagina interna del progetto documentario; è stato verificato che le altre pagine restano indicizzabili.",
+    "en": "The website can now publish working pages that are not indexed and are excluded from the sitemap and RSS feeds, because a page that is merely unlinked would still end up in search engines. The feature is used for the internal page of the documentary project; it was verified that the other pages remain indexable."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@fc7f352381"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22894,
+  "copertura": 97.28,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

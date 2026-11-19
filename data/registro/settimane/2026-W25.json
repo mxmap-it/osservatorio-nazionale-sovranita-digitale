@@ -1,0 +1,43 @@
+{
+ "settimana": "2026-W25",
+ "dal": "2026-06-15",
+ "al": "2026-06-21",
+ "fonte": "bc7ccafe6432557b",
+ "titolo": {
+  "it": "Lancio in beta su mxmap.it: report pubblico, una pagina per ente e classificazione più rigorosa",
+  "en": "Beta launch on mxmap.it: public report, one page per body and stricter classification"
+ },
+ "sintesi": {
+  "it": "MxMap e l'Osservatorio sono passati ai domini mxmap.it e osservatorio.mxmap.it e i repository all'organizzazione GitHub mxmap-it. Il 16 giugno 2026 è stato annunciato il lancio in beta. MxMap pubblica ora un report aggiornato ogni notte, un dataset solo Italia e una pagina per ciascuno dei circa 23.000 enti, con regione e provincia attribuite al 100% degli enti. Il metodo è diventato più rigoroso: i provider europei non italiani hanno una categoria propria, gli enti senza record MX risultano «sconosciuti» e i gateway antispam vengono ricondotti al fornitore reale. Con la rilevazione del 18 giugno l'indice ISD è sceso a 51,55, e la scansione del 21 giugno riporta 22.877 enti: 50,1% su fornitori italiani, 46,6% extra-UE, 0,5% UE non italiani, 2,7% sconosciuti. L'Osservatorio porta gli indicatori in homepage, pubblica in bozza il report di giugno e aggiorna il Policy Brief con gli artt. 48 e 115 del GDPR.",
+  "en": "MxMap and the Observatory moved to the mxmap.it and osservatorio.mxmap.it domains, and the repositories moved to the mxmap-it GitHub organisation. The beta launch was announced on 16 June 2026. MxMap now publishes a report updated every night, an Italy-only dataset and a page for each of about 23,000 bodies, with region and province assigned to 100% of bodies. The method became stricter: non-Italian European providers have their own category, bodies with no MX record are \"unknown\", and anti-spam gateways are traced back to the actual provider. With the 18 June scan the ISD index fell to 51.55, and the 21 June scan reports 22,877 bodies: 50.1% on Italian providers, 46.6% non-EU, 0.5% non-Italian EU and 2.7% unknown. The Observatory brings the indicators to its homepage, publishes the June report as a draft and updates the Policy Brief with GDPR Articles 48 and 115."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "È uscito il report pubblico «Stato sovranità digitale PA», aggiornato ogni notte, con analisi per settore e per area geografica: il Molise risulta la regione più sovrana (ISD 73,83%) e il Veneto la più esposta al CLOUD Act (58,67%). Sono state corrette diverse classificazioni: gateway Libraesva e altri gateway antispam, una categoria «Europeo (non italiano)» per OVH, Hetzner, IONOS e altri, e i circa 665 enti senza MX ora trattati come anomalia. Il sito genera inoltre circa 53.000 pagine, una per ogni ente, con un pulsante «Riporta un errore».",
+    "en": "The public report \"State of digital sovereignty in the PA\" was released and is updated every night, with analysis by sector and by geographic area: Molise is the most sovereign region (ISD 73.83%) and Veneto the most exposed to the CLOUD Act (58.67%). Several classifications were corrected: Libraesva and other anti-spam gateways, a \"European (non-Italian)\" category for OVH, Hetzner, IONOS and others, and the roughly 665 bodies with no MX record, now treated as anomalies. The site also generates about 53,000 pages, one for each body, with a \"Report an error\" button."
+   },
+   "voci": [
+    "2026-06-15-mxmap-1",
+    "2026-06-18-mxmap-1",
+    "2026-06-18-mxmap-2",
+    "2026-06-19-mxmap-1"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Il sito è passato a osservatorio.mxmap.it con l'annuncio del lancio in beta, una nuova identità visiva e gli indicatori MxMap in homepage. Sono state pubblicate la pagina «Report Beta», generata dai dati MxMap, e il PDF del report di giugno 2026, segnato come bozza. Il Policy Brief, ora di 7 pagine, spiega gli artt. 48 e 115 del GDPR a confronto con il CLOUD Act, e la pagina Decisori aggiunge un riquadro sul paradosso del PSN.",
+    "en": "The site moved to osservatorio.mxmap.it with the announcement of the beta launch, a new visual identity and the MxMap indicators on the homepage. The \"Beta Report\" page, generated from MxMap data, was published together with the PDF of the June 2026 report, marked as a draft. The Policy Brief, now 7 pages long, explains GDPR Articles 48 and 115 in comparison with the CLOUD Act, and the Decision-makers page adds a box on the PSN paradox."
+   },
+   "voci": [
+    "2026-06-15-osservatorio-1",
+    "2026-06-16-osservatorio-1",
+    "2026-06-16-osservatorio-2",
+    "2026-06-19-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 39
+}

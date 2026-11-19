@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W22",
+ "dal": "2026-05-25",
+ "al": "2026-05-31",
+ "fonte": "795a784e551e7782",
+ "titolo": {
+  "it": "MxMap.it: comuni distinti con i codici ISTAT, controlli automatici e deploy corretto",
+  "en": "MxMap.it: municipalities identified via ISTAT codes, automated checks and a fixed deploy"
+ },
+ "sintesi": {
+  "it": "Questa settimana il lavoro ha riguardato solo MxMap.it e si è concentrato sull'affidabilità dei dati e del processo di pubblicazione. Per riconoscere i comuni la mappa usa ora i codici ISTAT. In questo modo 154 enti che IndicePA classifica come «Comune», ma che non lo sono, non compaiono più al posto dei comuni veri. La pipeline notturna confronta l'elenco degli enti con un'istantanea ISTAT di 7.896 comuni e si interrompe se trova nuove anomalie. Sono stati ripristinati anche i test automatici ed è stato corretto il deploy notturno, che pubblicava un ramo superato del codice.",
+  "en": "This week's work involved only MxMap.it and focused on the reliability of the data and of the publishing process. The map now uses ISTAT codes to identify municipalities. As a result, 154 bodies that IndicePA classifies as a «Comune» (municipality), but that are not, no longer appear in place of actual municipalities. The nightly pipeline compares the list of bodies with an ISTAT snapshot of 7,896 municipalities and stops if it finds new anomalies. The automated tests were also restored, and the nightly deploy, which had been publishing an outdated branch of the code, was fixed."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Per distinguere i comuni dagli altri enti la vista comuni usa ora i codici ISTAT. In questo modo 154 enti classificati come «Comune» in IndicePA vengono esclusi dalla mappa e riportati in un elenco di verifica, mentre Roma Capitale, esclusa per errore da un primo filtro basato sul nome, è inclusa correttamente. La pipeline notturna controlla l'elenco degli enti su un'istantanea ISTAT di 7.896 comuni e gestisce esplicitamente i codici provinciali sardi precedenti al 2016. Sono stati ripristinati i test automatici, con una soglia di copertura dell'84%, ed è stato corretto il deploy notturno, che pubblicava un ramo storico del codice.",
+    "en": "To tell municipalities apart from other bodies, the municipalities view now uses ISTAT codes. As a result, 154 bodies classified as a «Comune» (municipality) in IndicePA are excluded from the map and listed for review, while Roma Capitale, which an earlier name-based filter had wrongly excluded, is now correctly included. The nightly pipeline checks the list of bodies against an ISTAT snapshot of 7,896 municipalities and explicitly handles the Sardinian provincial codes from before 2016. The automated tests were restored, with a coverage threshold of 84%, and the nightly deploy, which had been publishing a legacy branch of the code, was fixed."
+   },
+   "voci": [
+    "2026-05-29-mxmap-1",
+    "2026-05-29-mxmap-2",
+    "2026-05-29-mxmap-3",
+    "2026-05-30-mxmap-1"
+   ]
+  }
+ ],
+ "n_voci": 4
+}

@@ -1,0 +1,40 @@
+{
+ "data": "2026-09-27",
+ "settimana": "2026-W39",
+ "fonte": {
+  "osservatorio": "5f09b4fe2929fa75"
+ },
+ "voci": [
+  {
+   "id": "2026-09-27-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Analisi PSN e Certificazioni più raggiungibili dal sito; corretti i link del piè di pagina",
+    "en": "PSN and Certifications analyses easier to reach on the site; footer links fixed"
+   },
+   "sintesi": {
+    "it": "Le pagine sul PSN e sulle Certificazioni compaiono ora anche nella home, in una nuova sezione «Le analisi», e nel piè di pagina: le pagine che vi rimandano passano da 37 a 59. È stato inoltre corretto un difetto preesistente per cui gli undici link del piè di pagina della versione inglese portavano alle pagine italiane. Infine l'ordine delle voci del menu, prima casuale, è ora fisso in entrambe le lingue.",
+    "en": "The PSN and Certifications pages now also appear on the home page, in a new «The analyses» section, and in the footer: the number of pages linking to them rises from 37 to 59. A pre-existing defect was also fixed, whereby the eleven footer links in the English version led to the Italian pages. Finally, the order of the menu items, previously random, is now fixed in both languages."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@adb7660f5d"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22900,
+  "copertura": 97.24,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

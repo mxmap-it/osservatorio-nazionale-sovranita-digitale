@@ -407,6 +407,35 @@ registro, e viceversa.
 
 ---
 
+## 13. Registro attività e bot Telegram
+
+Pagina **`/registro/`** (IT+EN): il diario di lavoro dal 2 maggio 2026, una voce
+per avanzamento, raggruppate per giorno e settimana, con link a commit, issue e
+pagine. Lo stesso dato alimenta un **bot Telegram**.
+
+- **Contesti** in `data/registro/contesti.json` (oggi: MxMap.it, Spesa ICT,
+  Osservatorio, PVL/IndicePA/Trasparenza). Per aggiungerne uno basta una voce
+  con i suoi repo: nessuna modifica al codice.
+- **Strumento unico:** `tools/registro/registro.py` (raccogli · sintetizza ·
+  settimana · telegram · ciclo). Le sintesi IT+EN le scrive Claude; i link li
+  costruisce il codice, il modello sceglie solo fra identificativi forniti.
+- **Dati in git:** `data/registro/giorni/*.json`, `data/registro/settimane/*.json`,
+  `tools/registro/stato-telegram.json`. La cache dei commit `.registro-cache/`
+  **non** va in git: contiene i messaggi dei repo privati.
+- **Repo privati** (`"pubblico": false`): nel registro solo risultati, niente
+  link ai commit/issue, e il prompt omette server, tunnel, credenziali. Se il
+  repo non è leggibile il contesto viene **saltato**, mai azzerato.
+- **Automazione:** `.github/workflows/registro.yml`, ogni ora. Live = voci
+  `rilevante`; 8:30 Roma = sintesi di ieri; lunedì 8:30 = settimana. Segreti:
+  `ANTHROPIC_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `REGISTRO_GH_TOKEN`.
+  Il canale va in `hugo.toml` → `registroTelegramURL`.
+- **Rigenerare lo storico** (senza API key, con Claude Code): `registro.py raccogli
+  --dal 2026-05-01`, poi `sintetizza --dal … --al … --motore cli --forza`,
+  `settimana --tutte --motore cli`, e **`telegram segna-tutto`** prima di
+  riattivare il bot, o posterà tutto il passato.
+
+---
+
 ## 11. Repo e contatti collegati
 
 - **MxMap.it** (fonte dati): https://github.com/mxmap-it/mxmap.it

@@ -1,0 +1,70 @@
+{
+ "data": "2026-07-03",
+ "settimana": "2026-W27",
+ "fonte": {
+  "mxmap": "0de669f7b659c746"
+ },
+ "voci": [
+  {
+   "id": "2026-07-03-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pubblicazione del sito più affidabile dopo i deploy falliti del 3 luglio",
+    "en": "More reliable site publishing after the failed deploys of 3 July"
+   },
+   "sintesi": {
+    "it": "Il 3 luglio la pubblicazione notturna su GitHub Pages è fallita più volte durante la sincronizzazione di circa 53.000 file. Il sito non è mai andato offline e i dati erano già aggiornati. Ora un errore temporaneo fa ripartire la pubblicazione in automatico fino a 3 tentativi, con pause crescenti. Inoltre non vengono più generate le circa 22.400 pagine /dominio/: erano solo reindirizzamenti alle schede degli enti e non comparivano nella sitemap. Così i file scendono a circa 31.000 e la sitemap resta invariata. È stata valutata anche una pubblicazione incrementale su Cloudflare R2, ma è stata scartata perché avrebbe richiesto di spostare il DNS di mxmap.it su Cloudflare.",
+    "en": "On 3 July, nightly publishing to GitHub Pages failed several times while syncing about 53,000 files. The site never went offline and the data had already been updated. Now a temporary error restarts publishing automatically, up to 3 attempts with increasing pauses. In addition, the roughly 22,400 /dominio/ pages are no longer generated: they were only redirects to the entity pages and did not appear in the sitemap. This brings the file count down to about 31,000, and the sitemap is unchanged. An incremental deploy to Cloudflare R2 was also evaluated, but it was discarded because it would have required moving mxmap.it's DNS to Cloudflare."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@ce31f1f357",
+    "mxmap-it/mxmap.it@138e5abc47",
+    "mxmap-it/mxmap.it@516c4e0ee0",
+    "mxmap-it/mxmap.it@1842e4a360",
+    "mxmap-it/mxmap.it@82c068f6ed"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/mxmap.it#15"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-07-03-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Link dalla homepage alle pagine per area e per categoria per favorire l'indicizzazione",
+    "en": "Homepage links to area and category pages to help search indexing"
+   },
+   "sintesi": {
+    "it": "Finora i motori di ricerca potevano trovare le circa 30.000 pagine per area e per ente solo tramite la sitemap, e molte restavano non indicizzate. La homepage ora ha link diretti a /aree/ e /categoria/. Da lì si arriva a ogni scheda seguendo il percorso regione, provincia, comune e ente. I tempi di indicizzazione delle pagine meno visitate dipendono comunque da fattori esterni.",
+    "en": "Until now, search engines could find the roughly 30,000 area and entity pages only through the sitemap, and many remained unindexed. The homepage now has direct links to /aree/ and /categoria/. From there, every entity page can be reached by following the path region, province, municipality and entity. How long it takes to index the less-visited pages still depends on external factors."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d2cc465c6d"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#15"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22878,
+  "copertura": 97.3,
+  "extra_eu": 46.7,
+  "eu_non_it": 0.5,
+  "it": 50.1,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.1
+ }
+}

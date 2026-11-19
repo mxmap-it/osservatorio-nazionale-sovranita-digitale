@@ -1,0 +1,140 @@
+{
+ "data": "2026-11-19",
+ "settimana": "2026-W47",
+ "fonte": {
+  "spesa-ict": "3565899ee48159cd"
+ },
+ "voci": [
+  {
+   "id": "2026-11-19-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto di classificazione: nuovo livello B con quattro segnali dalla banca dati BDNCP",
+    "en": "Classification funnel: new level B with four signals from the BDNCP database"
+   },
+   "sintesi": {
+    "it": "L'imbuto che classifica i contratti ICT della PA aggiunge un livello B basato su quattro segnali della banca dati BDNCP: quadro economico, affidamenti in-house riconosciuti tramite IPA, durate e finanziamento PNRR. È documentato anche il metodo del raffinamento a livelli, ed è pubblicato il rendiconto 0.19.",
+    "en": "The funnel that classifies public administration ICT contracts adds a level B based on four signals from the BDNCP database: economic framework, in-house awards identified via IPA, durations and PNRR funding. The tiered refinement method is also documented, and report 0.19 is published."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@fff81ff349",
+    "mxmap-it/analisi-spesa-ict@9d57f026f2"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicata la Mappa dell'imbuto: dataset, livelli, limiti e mancanze con gravità",
+    "en": "Funnel Map published: datasets, levels, limits and gaps by severity"
+   },
+   "sintesi": {
+    "it": "La nuova Mappa dell'imbuto descrive i dataset usati, le loro relazioni, i livelli di classificazione, i limiti noti e le mancanze ordinate per gravità, con tre grafici; è generata da un file di configurazione, così resta allineata ai dati. Aggiornato anche il punto nave, il riepilogo dello stato dell'analisi.",
+    "en": "The new Funnel Map describes the datasets used, how they relate, the classification levels, known limits and gaps ranked by severity, with three charts; it is generated from a configuration file so it stays aligned with the data. The status summary («punto nave») was also updated."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@7ef60c56bf"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74",
+    "mxmap-it/analisi-spesa-ict#76",
+    "mxmap-it/analisi-spesa-ict#77"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Prova di ripetibilità: l'imbuto rifatto da zero riproduce tutti i numeri pubblicati",
+    "en": "Repeatability test: the funnel rebuilt from scratch reproduces all published figures"
+   },
+   "sintesi": {
+    "it": "L'intera catena di classificazione è stata rieseguita da zero a partire dall'archivio ANAC e confrontata con gli esiti pubblicati: tutti i numeri sono stati riprodotti, con differenze solo nell'ordine delle righe e negli arrotondamenti in virgola mobile. Il test è ora richiamato nel punto nave (1.2) e nella mappa (0.3), dove è registrata una nuova mancanza (M12).",
+    "en": "The entire classification chain was re-run from scratch starting from the ANAC archive and compared with the published results: all figures were reproduced, with differences only in row order and floating-point rounding. The test is now referenced in the status summary (1.2) and in the map (0.3), where a new gap (M12) is recorded."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6c291bf3ea",
+    "mxmap-it/analisi-spesa-ict@9c8539428e"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#74",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sito rivisto: sezione Metodo riorganizzata e pagina dell'imbuto generata dagli esiti",
+    "en": "Site revised: Method section reorganised and funnel page generated from results"
+   },
+   "sintesi": {
+    "it": "Una revisione di coerenza del sito segnala i numeri superati, indica le decisioni in vigore, elimina i link rotti e corregge la griglia delle convenzioni togliendo istanze indicate come «inviate» che non esistevano; il cruscotto ANAC viene ripubblicato ogni giorno. La sezione Metodo è organizzata per gruppi, la pagina dell'imbuto è riscritta e generata direttamente dagli esiti, ed è fissata la soglia tra le classi G3 e G4.",
+    "en": "A consistency review of the site flags outdated figures, states the decisions in force, removes broken links and corrects the agreements grid by removing requests listed as «sent» that did not exist; the ANAC dashboard is now republished daily. The Method section is organised by groups, the funnel page is rewritten and generated directly from the results, and the threshold between classes G3 and G4 has been set."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@07ec7dcda3",
+    "mxmap-it/analisi-spesa-ict@1ee66184e8"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#23",
+    "mxmap-it/analisi-spesa-ict#53",
+    "mxmap-it/analisi-spesa-ict#71",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-19-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Decisione: richieste di accesso civico massivo solo dopo il rendiconto del risultato parziale",
+    "en": "Decision: bulk FOIA requests only after the report on the partial result"
+   },
+   "sintesi": {
+    "it": "Le richieste di accesso civico massivo alle amministrazioni sono rinviate alla fase finale, dopo la pubblicazione del rendiconto sul risultato parziale. La decisione è riportata nella mappa (versione 0.2) e nel punto nave (1.1).",
+    "en": "Bulk freedom-of-information requests to administrations are postponed to the final phase, after publication of the report on the partial result. The decision is recorded in the map (version 0.2) and in the status summary (1.1)."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3bc43e2b65"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#58",
+    "mxmap-it/analisi-spesa-ict#78"
+   ],
+   "link": []
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "data": "2026-09-29",
+ "settimana": "2026-W40",
+ "fonte": {
+  "mxmap": "aad796c03a38a52f"
+ },
+ "voci": [
+  {
+   "id": "2026-09-29-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Ripristinata la vista Scuole: oltre 8.300 istituti di nuovo sulla mappa, geolocalizzati per indirizzo",
+    "en": "Schools view restored: over 8,300 institutions back on the map, geolocated by address"
+   },
+   "sintesi": {
+    "it": "Per almeno un mese la vista Scuole di mxmap.it è rimasta vuota senza segnalare errori, perché il file con le coordinate degli istituti non era mai stato salvato nel repository. Dopo una soluzione provvisoria basata sui centri dei comuni, è stata recuperata la geolocalizzazione originale per indirizzo (Nominatim/OpenStreetMap), integrata con 37 nuovi enti: la mappa mostra ora 8.318 punti scolastici a livello di via. Sono stati aggiunti controlli automatici che impediscono a una rigenerazione difettosa di sovrascrivere dati validi con dati molto ridotti.",
+    "en": "For at least a month the Schools view on mxmap.it was empty without reporting any error, because the file holding the institutions' coordinates had never been saved to the repository. After an interim fix based on municipal centroids, the original address-level geolocation (Nominatim/OpenStreetMap) was recovered and topped up with 37 new entities: the map now shows 8,318 school points at street level. Automated checks were added to prevent a faulty rebuild from overwriting valid data with a much smaller dataset."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@05d5dd1345",
+    "mxmap-it/mxmap.it@a485d761ae",
+    "mxmap-it/mxmap.it@a65ca28c24",
+    "mxmap-it/mxmap.it@96974996fc"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-29-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "PA Centrale: le tre Forze armate compaiono nella tabella, che passa da 52 a 55 enti",
+    "en": "Central Government: the three armed forces now appear in the table, which grows from 52 to 55 entities"
+   },
+   "sintesi": {
+    "it": "La tabella della PA Centrale non veniva più aggiornata automaticamente, per cui gli enti aggiunti di recente non comparivano. Rigenerata, ora include Esercito, Marina e Aeronautica, classificati come infrastruttura di posta autonoma (self-hosted), e passa da 52 a 55 righe. La tabella è stata inserita nell'aggiornamento notturno, così da restare allineata ai dati.",
+    "en": "The Central Government table was no longer being updated automatically, so recently added entities did not appear. Once regenerated, it now includes the Army, Navy and Air Force, classified as autonomous (self-hosted) mail infrastructure, and grows from 52 to 55 rows. The table has been added to the nightly update so that it stays aligned with the data."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@af3cba6630"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-29-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Mappa di base passata a OpenStreetMap dopo il blocco delle mappe CARTO senza chiave",
+    "en": "Base map switched to OpenStreetMap after CARTO blocked keyless map tiles"
+   },
+   "sintesi": {
+    "it": "Da settembre il fornitore CARTO richiede una chiave API per le sue mappe di base, e la mappa del sito aveva smesso di funzionare senza dare errori evidenti. Su decisione del fondatore di usare solo servizi aperti e senza chiavi di terze parti, la mappa usa ora OpenStreetMap, con passaggio automatico a una riserva Esri in caso di guasti. Entrambe le fonti vengono verificate ogni giorno con test automatici.",
+    "en": "Since September the provider CARTO has required an API key for its base maps, and the site's map had stopped working without showing obvious errors. Following the founder's decision to use only open services without third-party keys, the map now uses OpenStreetMap, with automatic failover to an Esri reserve in case of outages. Both sources are checked daily by automated tests."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@6e8de078f0",
+    "mxmap-it/mxmap.it@6a5c68ec44"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#26"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22900,
+  "copertura": 97.23,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.7,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.1
+ }
+}

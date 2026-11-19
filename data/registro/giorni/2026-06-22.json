@@ -1,0 +1,64 @@
+{
+ "data": "2026-06-22",
+ "settimana": "2026-W26",
+ "fonte": {
+  "mxmap": "8b9d778d491e018f"
+ },
+ "voci": [
+  {
+   "id": "2026-06-22-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Di nuovo online le pagine per ente, area e categoria e la sitemap di mxmap.it",
+    "en": "Per-entity, area and category pages and the sitemap of mxmap.it back online"
+   },
+   "sintesi": {
+    "it": "Le pagine generate per singolo ente, per area e per categoria, insieme alla sitemap, risultavano irraggiungibili (errore 404) su tutto il sito, anche se le pubblicazioni automatiche risultavano riuscite. La causa era un'impostazione di pubblicazione del sito ospitato su GitHub: venivano serviti solo i file salvati nel repository e non le pagine generate automaticamente. Ripristinata la modalità corretta, l'indice della sitemap, le sue 23 sezioni e circa 30.500 indirizzi sono di nuovo raggiungibili e verificati; la pubblicazione ora riconferma questa impostazione a ogni aggiornamento.",
+    "en": "The pages generated for each individual entity, area and category, together with the sitemap, were unreachable (404 error) across the whole site, even though the automated publishing runs reported success. The cause was a publishing setting of the site hosted on GitHub: only files saved in the repository were served, not the automatically generated pages. With the correct mode restored, the sitemap index, its 23 sections and about 30,500 addresses are reachable again and verified; publishing now reaffirms this setting at every update."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@4d03266849"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#15"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-22-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "La scansione notturna documenta da sola le cause dei salvataggi non riusciti",
+    "en": "The nightly scan now documents the causes of failed saves on its own"
+   },
+   "sintesi": {
+    "it": "Quando il salvataggio dei risultati della scansione notturna fallisce dopo tutti i tentativi, il sistema registra ora automaticamente nella segnalazione dedicata il dettaglio dell'errore, la causa nota e la soluzione. In questo modo i guasti futuri sono spiegati invece di risultare come un generico «commit fallito», e i problemi nuovi si distinguono da quelli già noti.",
+    "en": "When saving the results of the nightly scan fails after all attempts, the system now automatically records in the dedicated issue the error details, the known cause and the fix. This way future failures are explained rather than appearing as a generic \"commit failed\", and new problems can be told apart from known ones."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@e7093dcfee"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#10"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22877,
+  "copertura": 97.29,
+  "extra_eu": 46.6,
+  "eu_non_it": 0.5,
+  "it": 50.1,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

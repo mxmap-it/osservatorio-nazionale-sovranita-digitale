@@ -1,0 +1,40 @@
+{
+ "settimana": "2026-W27",
+ "dal": "2026-06-29",
+ "al": "2026-07-05",
+ "fonte": "f3c461e4bad98fd4",
+ "titolo": {
+  "it": "L'Osservatorio diventa bilingue; MxMap rende più affidabile la pubblicazione del sito",
+  "en": "The Observatory goes bilingual; MxMap makes its site publishing more reliable"
+ },
+ "sintesi": {
+  "it": "In questa settimana il sito dell'Osservatorio è diventato consultabile in inglese sotto /en/. Ora sono tradotti tutte le sezioni, gli articoli di report e news e 8 documenti PDF, così i contenuti sono accessibili anche a interlocutori europei e internazionali. Su MxMap.it, dopo i deploy falliti del 3 luglio, la pubblicazione riprova in automatico in caso di errore e i file da pubblicare sono scesi da circa 53.000 a circa 31.000. La homepage ora ha anche link diretti alle pagine per area e per categoria, per favorirne l'indicizzazione. La scansione notturna è rimasta stabile su 22.878 enti, con il 46,6% della posta su fornitori extra-UE.",
+  "en": "This week the Observatory website became available in English under /en/. All sections, the report and news articles and 8 PDF documents are now translated, so the content is also accessible to European and international stakeholders. On MxMap.it, after the failed deployments of 3 July, publishing now retries automatically when an error occurs, and the number of files to publish has dropped from about 53,000 to about 31,000. The homepage now also has direct links to the area and category pages to help them get indexed. The nightly scan remained stable at 22,878 bodies, with 46.6% of email on non-EU providers."
+ },
+ "punti": [
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Il 30 giugno sono stati tradotti in inglese la homepage, l'intestazione e il piè di pagina. Il 1° luglio la traduzione è stata estesa a tutte le sezioni del sito e agli articoli, con numeri nel formato anglosassone e la versione inglese indicizzabile dai motori di ricerca. Sono disponibili in inglese anche 8 documenti PDF, tra cui policy brief, technical brief e business case per la migrazione. Inoltre è stata fissata una regola: ogni modifica ai testi italiani va accompagnata dall'aggiornamento della versione inglese.",
+    "en": "On 30 June the homepage, header and footer were translated into English. On 1 July the translation was extended to all sections of the site and to the articles, with numbers in English format and the English version indexable by search engines. 8 PDF documents are also available in English, including the policy brief, the technical brief and the business case for migration. A rule was also set: every change to the Italian texts must come with an update to the English version."
+   },
+   "voci": [
+    "2026-07-01-osservatorio-1",
+    "2026-07-01-osservatorio-2",
+    "2026-06-30-osservatorio-1"
+   ]
+  },
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Il 3 luglio la pubblicazione notturna su GitHub Pages è fallita più volte; il sito non è mai andato offline. Ora un errore temporaneo fa ripartire la pubblicazione in automatico fino a 3 tentativi. Inoltre non vengono più generate le circa 22.400 pagine /dominio/, che erano solo reindirizzamenti: così i file scendono a circa 31.000. La homepage ora rimanda a /aree/ e /categoria/ per favorire l'indicizzazione delle circa 30.000 pagine per area e per ente. I dati della scansione sono rimasti stabili: 22.878 enti, copertura tra il 97,2% e il 97,31%, extra-UE al 46,6% a fine settimana.",
+    "en": "On 3 July the nightly publication to GitHub Pages failed several times; the site never went offline. Now a temporary error restarts publishing automatically, for up to 3 attempts. The roughly 22,400 /dominio/ pages, which were only redirects, are also no longer generated, bringing the number of files down to about 31,000. The homepage now links to /aree/ and /categoria/ to help get the roughly 30,000 area and body pages indexed. The scan figures remained stable: 22,878 bodies, coverage between 97.2% and 97.31%, and non-EU at 46.6% at the end of the week."
+   },
+   "voci": [
+    "2026-07-03-mxmap-1",
+    "2026-07-03-mxmap-2"
+   ]
+  }
+ ],
+ "n_voci": 5
+}

@@ -1,0 +1,66 @@
+{
+ "settimana": "2026-W45",
+ "dal": "2026-11-02",
+ "al": "2026-11-08",
+ "fonte": "85a43047ebb47ba6",
+ "titolo": {
+  "it": "Spesa ICT e convenzioni messe a verifica pubblica; nuove regole per trasparenza e posta PA",
+  "en": "ICT spending and framework agreements opened to public scrutiny; new rules for PA transparency and email"
+ },
+ "sintesi": {
+  "it": "L'analisi della spesa ICT è passata dalla metodologia ai risultati pubblicati: l'imbuto di classificazione è arrivato alla versione 0.3.1, con una prima forbice della quota cloud al 13-96%. È online la sezione Convenzioni (86 iniziative, 295 lotti), con un archivio pubblico di 1.768 documenti verificabili tramite sha256. Il monitoraggio delle sezioni «Amministrazione trasparente» e dei link di pubblicità legale ha adottato regole più prudenti, tra cui la conferma degli esiti negativi in 3 giorni diversi, e ha pubblicato i primi dati aperti del run pilota. MxMap ha rivisto la classificazione degli enti dietro gateway: dal 7 novembre la quota extra-UE è al 43,3% (prima 47,3%) e gli enti «Sconosciuti» sono il 5,7% (prima 2,7%).",
+  "en": "The ICT spending analysis moved from methodology to published results: the classification funnel reached version 0.3.1, with a first range for the cloud share of 13–96%. The Framework Agreements section is online (86 initiatives, 295 lots), with a public archive of 1,768 documents that can be verified via sha256. Monitoring of the «Amministrazione trasparente» sections and of legal publicity links adopted more cautious rules, including confirmation of negative outcomes on 3 different days, and published the first open data from the pilot run. MxMap revised how it classifies entities behind gateways: since 7 November the extra-EU share stands at 43.3% (previously 47.3%) and «Unknown» entities at 5.7% (previously 2.7%)."
+ },
+ "punti": [
+  {
+   "contesto": "spesa-ict",
+   "testo": {
+    "it": "L'imbuto di classificazione è passato dalla versione 0.2 alla 0.3.1: esclusi 40 mld di spesa non ICT, licenze conteggiate separatamente dal cloud e una prima forbice della quota cloud sovrana al 13-96%, ampia perché le incertezze restano aperte. È online la sezione Convenzioni (86 iniziative, 295 lotti), con 1.768 documenti archiviati con fonte e sha256 e le pagine dei documenti mancanti. Il cruscotto sulla disponibilità dei dati ANAC indica che al 6 novembre 8 metriche su 9 non sono rispettate.",
+    "en": "The classification funnel moved from version 0.2 to 0.3.1: 40 bn of non-ICT spending was excluded, licences are counted separately from cloud, and a first range for the sovereign cloud share was set at 13–96%, wide because uncertainties remain open. The Framework Agreements section is online (86 initiatives, 295 lots), with 1,768 documents archived with source and sha256, and pages listing missing documents. The ANAC data availability dashboard shows that as of 6 November 8 out of 9 metrics are not met."
+   },
+   "voci": [
+    "2026-11-03-spesa-ict-5",
+    "2026-11-05-spesa-ict-1",
+    "2026-11-06-spesa-ict-1",
+    "2026-11-06-spesa-ict-3"
+   ]
+  },
+  {
+   "contesto": "pvl-at",
+   "testo": {
+    "it": "Lo strumento di rilevazione delle sezioni «Amministrazione trasparente» è passato alla versione 1.2.0 e il metodo alla 1.3.0, che conferma un esito di rete negativo solo se si ripete in almeno 3 giorni diversi. Sono stati pubblicati in licenza CC BY 4.0 i primi dati del run pilota; sui 223 enti del pilota risultano, in via provvisoria, 87 enti conformi e 23 non conformi. Dei 135 siti che risultavano bloccati o irraggiungibili, 74 (55%) bloccano solo le reti da datacenter.",
+    "en": "The «Amministrazione trasparente» detection tool moved to version 1.2.0 and the method to 1.3.0, which confirms a negative network outcome only if it recurs on at least 3 different days. The first data from the pilot run were published under a CC BY 4.0 licence; among the 223 pilot entities, 87 are provisionally compliant and 23 non-compliant. Of the 135 sites that appeared blocked or unreachable, 74 (55%) block only datacenter networks."
+   },
+   "voci": [
+    "2026-11-05-pvl-at-1",
+    "2026-11-05-pvl-at-2",
+    "2026-11-06-pvl-at-3",
+    "2026-11-06-pvl-at-5"
+   ]
+  },
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Per gli enti dietro un gateway di sicurezza o un relay, il fornitore viene ora attribuito solo in presenza di segnali primari: nella scansione del 7 novembre la quota extra-UE scende dal 47,3% al 43,3% e quella «Sconosciuto» sale dal 2,7% al 5,7%. La Ricerca Ente ha una nuova vista Security Gateway (3.454 enti) e una modalità diagnostica. Le piattaforme Zimbra/Carbonio sono ora trattate come caselle ospitate: circa 100 casi errati saranno corretti con la prossima scansione.",
+    "en": "For entities behind a security gateway or relay, the provider is now attributed only when primary signals are present: in the 7 November scan the extra-EU share falls from 47.3% to 43.3% and the «Unknown» share rises from 2.7% to 5.7%. Entity Search has a new Security Gateway view (3,454 entities) and a diagnostic mode. Zimbra/Carbonio platforms are now treated as hosted mailboxes: about 100 incorrect cases will be fixed with the next scan."
+   },
+   "voci": [
+    "2026-11-07-mxmap-1",
+    "2026-11-07-mxmap-2",
+    "2026-11-07-mxmap-3"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È online, in bozza, il report di novembre 2026 in italiano e in inglese, e gli indicatori del sito sono stati riallineati ai dati del 7 novembre: la quota extra-UE citata nelle pagine passa dal 46% al 43%. È stato corretto l'aggiornamento automatico degli indicatori, fermo da mesi ai dati di giugno, che ora usa mxmap.it/kpi.json e segnala gli errori. La metodologia definisce le quattro categorie di sovranità e i casi «Sconosciuto».",
+    "en": "The November 2026 report is online in draft form in Italian and English, and the site indicators were realigned to the 7 November data: the extra-EU share cited in the pages moves from 46% to 43%. The automatic update of the indicators, which had been stuck on June data for months, was fixed: it now uses mxmap.it/kpi.json and reports errors. The methodology defines the four sovereignty categories and the «Unknown» cases."
+   },
+   "voci": [
+    "2026-11-07-osservatorio-2",
+    "2026-11-07-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 63
+}

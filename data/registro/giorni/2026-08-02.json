@@ -1,0 +1,189 @@
+{
+ "data": "2026-08-02",
+ "settimana": "2026-W31",
+ "fonte": {
+  "osservatorio": "edfb46ac4467c881"
+ },
+ "voci": [
+  {
+   "id": "2026-08-02-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Google: ammissione scritta sulla localizzazione dei dati e dato S3NS aggiornato sul sito",
+    "en": "Google: written admission on data localisation and updated S3NS data on the site"
+   },
+   "sintesi": {
+    "it": "Un nuovo fact pack su Google documenta che in un white paper del febbraio 2022 l'azienda scrive che «i requisiti di localizzazione dei dati non incidono» sull'obbligo di divulgarli, e che in un documento per le scuole ammette di poter ricevere richieste FISA 702. L'ammissione è stata aggiunta alla pagina /certificazioni/ (IT+EN) e il dato su S3NS è stato corretto ovunque, Policy Brief compreso: qualificata SecNumCloud il 17 dicembre 2025, prima qualificazione che copre insieme IaaS, PaaS e CaaS. Sull'audizione al Senato francese del 2019 la verifica sul resoconto integrale conclude per un'imprecisione con effetto fuorviante, non per una falsa testimonianza, e dichiara che un dubbio resta; è stata attenuata una formulazione precedente troppo netta.",
+    "en": "A new fact pack on Google documents that in a February 2022 white paper the company writes that \"data localization requirements do not impact\" whether data may have to be disclosed, and that in a document for schools it acknowledges it may receive FISA 702 requests. The admission has been added to the /certificazioni/ page (IT+EN) and the S3NS data has been corrected everywhere, Policy Brief included: SecNumCloud-qualified on 17 December 2025, the first qualification covering IaaS, PaaS and CaaS together. On the 2019 French Senate hearing, a check against the full official record concludes there was an inaccuracy with a misleading effect, not perjury, and states that some doubt remains; an earlier, overly categorical wording has been toned down."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2801a90bed",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f53b9c965e",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@db8c43c6eb"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa-en.pdf"
+   ]
+  },
+  {
+   "id": "2026-08-02-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "AWS: catena societaria, dottrina sul CLOUD Act e cifre italiane, con due rettifiche",
+    "en": "AWS: corporate chain, CLOUD Act scholarship and Italian figures, with two corrections"
+   },
+   "sintesi": {
+    "it": "Il fact pack 15 completa il dossier su AWS: identificate dal registro tedesco le quattro società coinvolte, con due rettifiche al dossier 12 (una presunta controllante intermedia è il vecchio nome della holding; il registro tedesco è gratuito dal 2022, quindi l'opacità segnalata era un nostro errore). Non esistono sentenze che applichino il §2713 a una controllata estera, ma la dottrina autorevole ritiene che un giudice «quasi certamente» riconoscerebbe il controllo della capogruppo. Chiarite le cifre italiane (2 mld per la Region Milano 2022, 1,2 mld per il piano 2024-2029, 3,2 mld cumulati dal 2012) e rilevato che il report di trasparenza AWS è meno dettagliato di quelli di Microsoft e Google; resta da verificare l'argomento dell'immunità sovrana.",
+    "en": "Fact pack 15 completes the AWS dossier: the four companies involved have been identified from the German register, with two corrections to dossier 12 (an alleged intermediate parent is the former name of the holding; the German register has been free since 2022, so the opacity we reported was our own mistake). There are no rulings applying §2713 to a foreign subsidiary, but authoritative scholarship holds that a court would \"almost certainly\" find the parent company has control. The Italian figures have been clarified (2 bn for the 2022 Milan Region, 1.2 bn for the 2024-2029 plan, 3.2 bn cumulative since 2012), and AWS's transparency report was found to be less detailed than those of Microsoft and Google; the sovereign immunity argument remains to be verified."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@13fa968685",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ba88c475f8"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-08-02-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sovranità digitale in Europa: 23 casi germanofoni e Benelux, nordici, est e UE",
+    "en": "Digital sovereignty in Europe: 23 German-speaking and Benelux cases, Nordics, East and EU"
+   },
+   "sintesi": {
+    "it": "Due nuovi dossier, basati su ricerche in lingua nazionale, mappano le iniziative europee. Il caso danese, molto citato, risulta travisato: il ministero ha smentito i titoli internazionali, il pilota riguarda 38 postazioni e nelle stesse settimane lo Stato ha firmato 4,2 mld DKK di licenze Microsoft; il caso concreto è Aarhus, con 60 sistemi migrati da Azure a Hetzner e costi annui ridotti del 72%. Documentati anche successi (BwMessenger, Bundesheer austriaco), fallimenti (Dataport Phoenix, LiMux), contro-fatti come i 481,4 mln spesi dalla Germania federale in licenze Microsoft nel 2025, e la gara UE da 180 mln aggiudicata a nove aziende europee; su 24 casi, solo cinque migrazioni risultano concluse e verificate su fonte primaria.",
+    "en": "Two new dossiers, based on research in the national languages, map European initiatives. The much-cited Danish case turns out to be misreported: the ministry denied the international headlines, the pilot covers 38 workstations, and in the same weeks the State signed DKK 4.2 bn in Microsoft licences; the concrete case is Aarhus, with 60 systems migrated from Azure to Hetzner and annual costs cut by 72%. Also documented are successes (BwMessenger, the Austrian Bundesheer), failures (Dataport Phoenix, LiMux), counter-facts such as the 481.4 mn spent by the German federal government on Microsoft licences in 2025, and the 180 mn EU tender awarded to nine European companies; out of 24 cases, only five migrations are completed and verified against primary sources."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d68d7f0e75",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@61bc83c6d5",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4497bc8053",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a7d4a1ed9e",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2e5ef2195c"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-08-02-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Leve europee e caso Airbus: CADA, Data Act e lettera EUCS High+ verificati su fonte primaria",
+    "en": "European levers and the Airbus case: CADA, Data Act and EUCS High+ letter verified on primary sources"
+   },
+   "sintesi": {
+    "it": "Il dossier 19 legge in originale la proposta CADA: la sequenza in due livelli di sovranità è già scritta nell'Allegato II, ma le date sono segnaposto mai compilati, e la centrale d'acquisto europea non è operativa (la Commissione ipotizza il 2029); un ente locale potrebbe aderirvi anche senza il proprio Stato. L'unica scadenza vincolante con data certa è il Data Act art. 29, 12 gennaio 2027. Confermati su fonte primaria il caso Airbus/Scaleway, con la protezione dalle leggi extraterritoriali come criterio di gara, e i 62 firmatari della lettera EUCS High+ (fra gli italiani anche Aruba), datata 10 giugno 2024; la pagina /certificazioni/ ha un nuovo riquadro bilingue sul caso Airbus.",
+    "en": "Dossier 19 reads the CADA proposal in the original: the two-level sovereignty sequence is already written in Annex II, but the dates are placeholders never filled in, and the European procurement body is not operational (the Commission suggests 2029); a local authority could join even without its own State. The only binding deadline with a fixed date is Data Act art. 29, 12 January 2027. The Airbus/Scaleway case, with protection against extraterritorial laws as a tender criterion, and the 62 signatories of the EUCS High+ letter (Aruba among the Italian ones), dated 10 June 2024, were confirmed on primary sources; the /certificazioni/ page has a new bilingual box on the Airbus case."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@3baee3f30c",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d90c680b51",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ceb2e6032b",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a4cab733f2"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-08-02-osservatorio-6",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pagina del progetto documentario: sintesi in dieci punti e tabella «chi è chi»",
+    "en": "Documentary project page: ten-point summary and a \"who's who\" table"
+   },
+   "sintesi": {
+    "it": "La pagina /progetto-documentario/ si apre ora con una sintesi dell'inchiesta in dieci punti, leggibile senza conoscenze preliminari, in cui ogni punto dichiara anche i propri limiti. Si aggiungono una tabella di dodici soggetti (dal CLOUD Act al Data Act) e tre schede grafiche. Corretti scaletta, versioni e verifiche aperte, che erano rimaste ferme a versioni precedenti.",
+    "en": "The /progetto-documentario/ page now opens with a ten-point summary of the investigation, readable without prior knowledge, in which each point also states its own limits. A table of twelve actors (from the CLOUD Act to the Data Act) and three graphic cards have been added. The outline, version labels and open checks, which were still showing earlier versions, have been corrected."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@035670a9ed"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-08-02-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documentario sul CLOUD Act: script portato a 30 minuti, 13 atti e 139 inquadrature",
+    "en": "CLOUD Act documentary: script extended to 30 minutes, 13 acts and 139 shots"
+   },
+   "sintesi": {
+    "it": "Script, storyboard, booklet a fumetti e schede grafiche del documentario sono stati riallineati più volte nel corso della giornata. È stato tagliato l'atto sul blocco degli account perché riguarda persone fisiche e non i dati della PA, e il finale ora presenta anche la via dei fornitori nazionali ed europei, già maggioritaria (51,2% degli enti contro 46,1% su fornitori extra-UE). La versione 3.0 dura 30 minuti, con un nuovo atto sull'Italia concreta e un promo interamente tipografico da 90 e 30 secondi. Si tratta di bozze in revisione, lavorate solo in italiano fino all'approvazione finale.",
+    "en": "The documentary's script, storyboard, comic booklet and graphic cards were realigned several times during the day. The act on account blocking was cut because it concerns individuals rather than public administration data, and the ending now also presents the path of national and European providers, which is already the majority practice (51.2% of bodies versus 46.1% on non-EU providers). Version 3.0 runs 30 minutes, with a new act on concrete Italian cases and an all-typographic promo in 90- and 30-second versions. These are drafts under review, worked on in Italian only until final approval."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d2cd4ee6de",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@adc47adf6b",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b562ef0691",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f1f28a70d4",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@e324085f37",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@58f6a07815",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ed9119d2f2",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7f6f4db198",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@9df6cab39a",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@5db0638527",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@5eb0c2cc95",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@bcc2fce449",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2d0912e270",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a5822459eb"
+   ],
+   "n_commit": 14,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-08-02-osservatorio-7",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Programmate due analisi: il PSN misurato con il metro europeo e l'uso di AI generativa",
+    "en": "Two analyses scheduled: the PSN measured against the European yardstick, and the use of generative AI"
+   },
+   "sintesi": {
+    "it": "È stato programmato un confronto articolo per articolo fra i requisiti del Polo Strategico Nazionale e quelli di SecNumCloud ed EUCS High+, limitato alla parte in cui il PSN rivende servizi Microsoft, Google e Amazon. Il confronto userà solo fonti primarie e non conterrà accuse alle aziende partner. In una fase successiva si valuterà anche l'uso di AI generativa per fumetto e video, con l'obbligo di dichiararlo e senza immagini di persone reali.",
+    "en": "An article-by-article comparison has been scheduled between the requirements of the National Strategic Hub (PSN) and those of SecNumCloud and EUCS High+, limited to the part where the PSN resells Microsoft, Google and Amazon services. The comparison will use only primary sources and will contain no accusations against partner companies. At a later stage, the use of generative AI for the comic and the video will also be assessed, with a requirement to disclose it and no images of real people."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c7d37bf8ff",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a7b43527a2"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22895,
+  "copertura": 97.27,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "data": "2026-10-05",
+ "settimana": "2026-W41",
+ "fonte": {
+  "osservatorio": "60d605bcdebec34e"
+ },
+ "voci": [
+  {
+   "id": "2026-10-05-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il talk a RomHack Camp 2026: news e slide pubblicate in PDF e PPTX",
+    "en": "The RomHack Camp 2026 talk: news and slides published in PDF and PPTX"
+   },
+   "sintesi": {
+    "it": "Pubblicata la news sull'intervento del 2 ottobre a RomHack Camp 2026 (STAGE 2, lightning talk di 20 minuti), con l'estratto dal programma ufficiale, i numeri presentati e i temi trattati. Le slide sono disponibili in PDF e PPTX nella versione finale rivista dall'autore; il video è in arrivo. Il talk e tutti i materiali sono in inglese, come segnalato anche nella pagina italiana.",
+    "en": "The news item on the 2 October talk at RomHack Camp 2026 (STAGE 2, 20-minute lightning talk) has been published, with the excerpt from the official programme, the figures presented and the topics covered. The slides are available in PDF and PPTX in the final version revised by the author; the video is coming soon. The talk and all materials are in English, as also noted on the Italian page."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@50495fdd31"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/news/2026-10-05-romhack-camp-2026/",
+    "https://osservatorio.mxmap.it/pdf/romhack-2026-mxmap-italia.pdf",
+    "https://osservatorio.mxmap.it/slide/romhack-2026-mxmap-italia.pptx"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22911,
+  "copertura": 97.24,
+  "extra_eu": 47.0,
+  "eu_non_it": 0.5,
+  "it": 49.7,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

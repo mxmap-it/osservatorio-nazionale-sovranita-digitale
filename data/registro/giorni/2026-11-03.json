@@ -1,0 +1,333 @@
+{
+ "data": "2026-11-03",
+ "settimana": "2026-W45",
+ "fonte": {
+  "spesa-ict": "2591139749814299"
+ },
+ "voci": [
+  {
+   "id": "2026-11-03-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto 0.3: base di conoscenza dei 30 accordi quadro ICT principali e prima quota di sovranità",
+    "en": "Funnel 0.3: knowledge base of the 30 main ICT framework agreements and first sovereignty share"
+   },
+   "sintesi": {
+    "it": "L'imbuto di classificazione ora ha un riepilogo per anno, strato, gruppo e giurisdizione sui dati ANAC 2020-2026. Ha anche l'elenco dei 3.764 accordi quadro e convenzioni padre della spesa ICT dal 2020, ordinati per euro, e una base di conoscenza sui 30 accordi principali, che coprono 59 dei 77 mld degli attuativi. È uscita sul sito la pagina dell'imbuto con la prima quota di sovranità 2024-2025, la relativa forbice e la precisione misurata sul campione v3. Gli importi di alcuni attuativi risultano pari al massimale dell'accordo: nel caso dell'AQ 91918889EE sono 31,7 mld su 35,2.",
+    "en": "The classification funnel now has a summary by year, layer, group and jurisdiction on ANAC data for 2020-2026. It also has the list of the 3,764 parent framework agreements and conventions in ICT spending since 2020, sorted by euro value, and a knowledge base on the 30 main agreements, which cover 59 of the 77 bn of call-off contracts. The site now has the funnel page with the first sovereignty share for 2024-2025, its range and the precision measured on the v3 sample. The amounts of some call-off contracts equal the agreement's ceiling: for AQ 91918889EE they make up 31.7 bn out of 35.2."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1339fbd86f",
+    "mxmap-it/analisi-spesa-ict@880662cb35",
+    "mxmap-it/analisi-spesa-ict@2e52cd2990",
+    "mxmap-it/analisi-spesa-ict@7d277ae15f",
+    "mxmap-it/analisi-spesa-ict@3e93861b8c",
+    "mxmap-it/analisi-spesa-ict@bf7d10f369",
+    "mxmap-it/analisi-spesa-ict@a3ebc1b8ef",
+    "mxmap-it/analisi-spesa-ict@0dda0f2997",
+    "mxmap-it/analisi-spesa-ict@1e38ad87bb"
+   ],
+   "n_commit": 9,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-03-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova pagina sull'evoluzione dei dati ANAC: CIG e SmartCIG, 2020-2023 e dal 2024",
+    "en": "New page on how ANAC data has changed: CIG and SmartCIG, 2020-2023 and from 2024"
+   },
+   "sintesi": {
+    "it": "Una nuova pagina spiega come sono cambiati negli anni i dati sugli appalti (CIG e SmartCIG, prima e dopo il 2024) e quanto sono attendibili in ciascun periodo. Insieme alla pagina è stato pubblicato un profilo degli SmartCIG 2022-2025 per anno, fattispecie e procedura, con lo script che lo produce.",
+    "en": "A new page explains how procurement data (CIG and SmartCIG, before and after 2024) has changed over the years and how reliable it is in each period. Alongside the page, a profile of SmartCIGs for 2022-2025 by year, case type and procedure was published, with the script that produces it."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6f73e12fb6",
+    "mxmap-it/analisi-spesa-ict@a2d259507f"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-03-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Dossier sulle principali convenzioni ICT con fonti archiviate e revisione avversariale",
+    "en": "Dossiers on the main ICT conventions with archived sources and adversarial review"
+   },
+   "sintesi": {
+    "it": "Ogni grande convenzione ha ora un dossier con fonti archiviate e verificabili (tra cui 44 avvisi TED, 22 voci verificate) e un'analisi degli attuativi BDNCP: licenze Microsoft EA6/EA8/EA9 e Oracle, servizi applicativi e sanità digitale, PSN, SPC Cloud, system management, reti, PC. Ogni dossier è passato per una revisione avversariale, che ha corretto diverse classificazioni e trovato un errore di un fattore 1.000 negli importi ASPAL. Tra i risultati: l'EA Microsoft è un misto di on-premise e SaaS (quota SaaS stimata al 44-50%, Azure assente) e, dal bilancio 2025, la quota hyperscaler del PSN è stimata al 5-12%. Le questioni ancora aperte sono raccolte in un registro delle incertezze (I1-I14), con le azioni necessarie per chiuderle.",
+    "en": "Each major convention now has a dossier with archived, verifiable sources (including 44 TED notices, 22 entries verified) and an analysis of BDNCP call-off contracts: Microsoft EA6/EA8/EA9 and Oracle licences, application services and digital health, PSN, SPC Cloud, system management, networks, PCs. Every dossier went through an adversarial review, which corrected several classifications and found a factor-of-1,000 error in the ASPAL amounts. Among the findings: the Microsoft EA is a mix of on-premise and SaaS (SaaS share estimated at 44-50%, Azure absent) and, based on the 2025 financial statements, the PSN's hyperscaler share is estimated at 5-12%. Open questions are collected in an uncertainty register (I1-I14), with the actions needed to resolve them."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@642bef36b8",
+    "mxmap-it/analisi-spesa-ict@c0c3f81f21",
+    "mxmap-it/analisi-spesa-ict@67b5d6c08f",
+    "mxmap-it/analisi-spesa-ict@7c9ab4d9a1",
+    "mxmap-it/analisi-spesa-ict@4fdc1f2838",
+    "mxmap-it/analisi-spesa-ict@ee2634849d",
+    "mxmap-it/analisi-spesa-ict@f3c9f3e934",
+    "mxmap-it/analisi-spesa-ict@76ad56d723",
+    "mxmap-it/analisi-spesa-ict@2d5c3a5133",
+    "mxmap-it/analisi-spesa-ict@abbfd1e9e3",
+    "mxmap-it/analisi-spesa-ict@51cec009ce",
+    "mxmap-it/analisi-spesa-ict@e7071c89ff",
+    "mxmap-it/analisi-spesa-ict@e934a19dce",
+    "mxmap-it/analisi-spesa-ict@700c0ee866",
+    "mxmap-it/analisi-spesa-ict@171f5e77df",
+    "mxmap-it/analisi-spesa-ict@353bdd542a",
+    "mxmap-it/analisi-spesa-ict@5ebd3e7252",
+    "mxmap-it/analisi-spesa-ict@d3385f1f10",
+    "mxmap-it/analisi-spesa-ict@23266b06f0",
+    "mxmap-it/analisi-spesa-ict@156fde088d",
+    "mxmap-it/analisi-spesa-ict@d905069c49"
+   ],
+   "n_commit": 21,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-03-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Criteri di sovranità: licenze separate dal cloud, cloud degli hyperscaler sempre extra-UE",
+    "en": "Sovereignty criteria: licences separated from cloud, hyperscaler cloud always non-EU"
+   },
+   "sintesi": {
+    "it": "Un documento dedicato raccoglie le decisioni metodologiche del 3 novembre. Le licenze sono conteggiate separatamente dal cloud e la forbice si calcola sul solo cloud. L'hosting dedicato conta come cloud e la Svizzera è considerata sovrana. La sovranità dipende dal ruolo e dal controllo giuridico di chi eroga il servizio. Con i criteri semplificati, il cloud di Microsoft, Google, Amazon e Oracle è sempre extra-UE, chiunque lo rivenda (PSN compreso), senza ricostruzioni societarie. Il ricalcolo con questi criteri non cambia le cifre cloud.",
+    "en": "A dedicated document collects the methodological decisions of 3 November. Licences are counted separately from cloud and the range is calculated on cloud only. Dedicated hosting counts as cloud and Switzerland is considered sovereign. Sovereignty depends on the role and legal control of whoever delivers the service. Under the simplified criteria, Microsoft, Google, Amazon and Oracle cloud is always non-EU, whoever resells it (PSN included), with no reconstruction of corporate structures. Recalculating with these criteria does not change the cloud figures."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6cf713fd65",
+    "mxmap-it/analisi-spesa-ict@8f57e22ead",
+    "mxmap-it/analisi-spesa-ict@d379fb3087",
+    "mxmap-it/analisi-spesa-ict@1eade30c10",
+    "mxmap-it/analisi-spesa-ict@70e5985dd7",
+    "mxmap-it/analisi-spesa-ict@09d65b3a16",
+    "mxmap-it/analisi-spesa-ict@6fe22b9a8a",
+    "mxmap-it/analisi-spesa-ict@3b7c5d226b"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-03-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto 0.3.1: sintesi con grafici e forbice della quota cloud al 13-96%",
+    "en": "Funnel 0.3.1: summary with charts and a cloud share range of 13-96%"
+   },
+   "sintesi": {
+    "it": "Nella versione 0.3.1 dell'imbuto gli attuativi PSN di cui non si conosce il servizio sono marcati come incerti invece che italiani, perché il servizio PSN compare nell'oggetto solo per l'1% del valore. La pagina dell'imbuto ora riassume lo stato del lavoro con grafici, una forbice del 13-96%, un campione di progetti PSN, l'elaborazione delle licenze Microsoft, le criticità e le azioni previste. La forbice ampia rispecchia le incertezze che restano aperte.",
+    "en": "In version 0.3.1 of the funnel, PSN call-off contracts whose service is unknown are marked as uncertain instead of Italian, because the PSN service appears in the subject field for only 1% of the value. The funnel page now summarises the state of the work with charts, a 13-96% range, a sample of PSN projects, the processing of Microsoft licences, open issues and planned actions. The wide range reflects the uncertainties that are still open."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@a4a61e33f5",
+    "mxmap-it/analisi-spesa-ict@9a748a0d34",
+    "mxmap-it/analisi-spesa-ict@c5c0ae009d",
+    "mxmap-it/analisi-spesa-ict@3966f3e9b3"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-03-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Database dei documenti PSN pubblicati: copertura tra il 5,0% e il 7,9% del valore",
+    "en": "Database of published PSN documents: coverage between 5.0% and 7.9% of value"
+   },
+   "sintesi": {
+    "it": "È stato creato un database dei documenti pubblicati dagli enti sui progetti PSN (piani dei fabbisogni, determine, contratti), a partire da una verifica a campione. Sulla base dell'imbuto (692 CIG, 1.918 M€), i documenti trovati coprono tra il 5,0% e il 7,9% del valore. Un ente (Calabria) omette il piano dei fabbisogni per motivi di confidenzialità.",
+    "en": "A database was built of the documents that public bodies have published on PSN projects (needs plans, decisions, contracts), starting from a sample check. On the funnel's base (692 CIGs, €1,918 M), the documents found cover between 5.0% and 7.9% of the value. One body (Calabria) leaves out the needs plan, citing confidentiality."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@4820e09d25",
+    "mxmap-it/analisi-spesa-ict@00db27b9b1",
+    "mxmap-it/analisi-spesa-ict@6820749afa",
+    "mxmap-it/analisi-spesa-ict@2ed80844fe"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-03-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Monitor «Amministrazione trasparente» in beta, con dashboard e controllo dei falsi positivi",
+    "en": "«Amministrazione trasparente» monitor in beta, with dashboard and false-positive checks"
+   },
+   "sintesi": {
+    "it": "Un nuovo strumento autonomo verifica l'accessibilità delle sezioni «Amministrazione trasparente» degli enti, partendo dal registro ANAC e da IndicePA. Rileva robots, noindex, WAF e TLS, le piattaforme e gli open data, e prepara le PEC con un registro degli invii. Le scelte seguono le decisioni di Fabio. La versione 1.1.0-beta ha una pagina con dashboard. Il controllo dei falsi positivi sui 53 enti bloccati ha confermato robots 15/15, noindex 8/8 e WAF 13/30.",
+    "en": "A new standalone tool checks the accessibility of public bodies' «Amministrazione trasparente» sections, starting from the ANAC register and IndicePA. It detects robots, noindex, WAF and TLS, platforms and open data, and prepares certified-email (PEC) messages with a log of what is sent. The design choices follow Fabio's decisions. Version 1.1.0-beta has a page with a dashboard. The false-positive check on the 53 blocked bodies confirmed robots 15/15, noindex 8/8 and WAF 13/30."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2c9dcc43d2",
+    "mxmap-it/analisi-spesa-ict@981ba1a8f4",
+    "mxmap-it/analisi-spesa-ict@4a80e357dc",
+    "mxmap-it/analisi-spesa-ict@1eca969e6d",
+    "mxmap-it/analisi-spesa-ict@f8589c976e",
+    "mxmap-it/analisi-spesa-ict@087e98be82",
+    "mxmap-it/analisi-spesa-ict@362ee2446e",
+    "mxmap-it/analisi-spesa-ict@b74075a568"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57",
+    "mxmap-it/analisi-spesa-ict#61"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-03-spesa-ict-7",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Campione dei contratti Microsoft EA: lettura degli atti degli enti, in corso",
+    "en": "Sample of Microsoft EA contracts: reading the bodies' documents, in progress"
+   },
+   "sintesi": {
+    "it": "È iniziata la lettura degli atti pubblicati dagli enti per capire che cosa comprano davvero con l'EA Microsoft. Il lavoro è in corso ed è stato esteso a 38 enti. Primi risultati: per AIFA il carrello completo è cloud al 98,5%; per altri enti il dettaglio non è pubblicato. Sono stati trovati 7 atti su 62, doppioni o errori nei dati per 61 M€, e l'importo ANCI di 45 M è stato confermato dall'ente. L'accesso civico resta l'ultima risorsa.",
+    "en": "Work has begun on reading the documents published by public bodies to see what they actually buy under the Microsoft EA. The work is in progress and has been extended to 38 bodies. First results: for AIFA the full shopping cart is 98.5% cloud; for other bodies the breakdown is not published. 7 documents out of 62 were found, along with duplicates or errors in the data worth €61 M, and ANCI's amount of 45 M was confirmed by the body itself. Civic access requests remain the last resort."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@56c2842225",
+    "mxmap-it/analisi-spesa-ict@f9578073c6",
+    "mxmap-it/analisi-spesa-ict@53bb5dc195",
+    "mxmap-it/analisi-spesa-ict@8a82cd7ea2",
+    "mxmap-it/analisi-spesa-ict@1af6a354b8",
+    "mxmap-it/analisi-spesa-ict@eb23f86acf",
+    "mxmap-it/analisi-spesa-ict@4013c13b39",
+    "mxmap-it/analisi-spesa-ict@166f922eda",
+    "mxmap-it/analisi-spesa-ict@4c52da72be"
+   ],
+   "n_commit": 9,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-03-spesa-ict-8",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Regole e dimensionamento per la raccolta degli atti da Amministrazione trasparente",
+    "en": "Rules and sizing for collecting documents from Amministrazione trasparente"
+   },
+   "sintesi": {
+    "it": "Per le sezioni «Amministrazione trasparente», robots.txt e i sistemi anti-bot non bloccano la raccolta, perché questi dati devono essere accessibili per legge (art. 9 c.1 d.lgs. 33/2013). Non si usano CAPTCHA né rotazione degli IP, e ogni blocco viene registrato come evidenza. Uno studio di dimensionamento misura sul campione Microsoft la resa della raccolta e le cause dei blocchi.",
+    "en": "For the «Amministrazione trasparente» sections, robots.txt and anti-bot systems do not stop collection, because this data must be accessible by law (art. 9(1) Legislative Decree 33/2013). No CAPTCHA-solving or IP rotation is used, and every block is recorded as evidence. A sizing study measures, on the Microsoft sample, the collection yield and the causes of blocks."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@c3d4b03e84",
+    "mxmap-it/analisi-spesa-ict@9ea3a79665",
+    "mxmap-it/analisi-spesa-ict@0aca958bcd",
+    "mxmap-it/analisi-spesa-ict@89354b0d0a"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-03-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Link ai documenti di gara per CIG dall'API della Pubblicità a valore legale",
+    "en": "Links to tender documents by CIG from the Legal-Value Publication API"
+   },
+   "sintesi": {
+    "it": "Dal 2024 l'API pubblica della Pubblicità a valore legale espone i link ai documenti di gara per CIG. È quindi possibile raccoglierli senza passare dalla pagina di dettaglio protetta da CAPTCHA. Lo scaricamento completo è stato avviato, insieme a statistiche di disponibilità e a una verifica dei link.",
+    "en": "Since 2024, the public API of the Legal-Value Publication (PVL) has exposed links to tender documents by CIG. They can therefore be collected without going through the CAPTCHA-protected detail page. The full download has started, along with availability statistics and a link check."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@64dd3498a1",
+    "mxmap-it/analisi-spesa-ict@87d293f167"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-03-spesa-ict-11",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Limiti di calcolo del server e riproducibilità degli script",
+    "en": "Server computing limits and script reproducibility"
+   },
+   "sintesi": {
+    "it": "Sono stati documentati i limiti di calcolo incontrati (memoria esaurita il 27/10 e il 3/11, disco al 93%), con una proposta di risorse aggiuntive. Sono state documentate anche le condizioni per rendere riproducibili gli script dell'imbuto.",
+    "en": "The computing limits encountered were documented (memory exhausted on 27/10 and 3/11, disk at 93%), with a proposal for additional resources. The conditions for making the funnel scripts reproducible were also documented."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@10d9107007",
+    "mxmap-it/analisi-spesa-ict@9da627d5b4"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22921,
+  "copertura": 97.28,
+  "extra_eu": 47.3,
+  "eu_non_it": 0.5,
+  "it": 49.5,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.1
+ }
+}

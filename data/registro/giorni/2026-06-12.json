@@ -1,0 +1,154 @@
+{
+ "data": "2026-06-12",
+ "settimana": "2026-W24",
+ "fonte": {
+  "mxmap": "31dfb0c5ed7a3eaa",
+  "osservatorio": "d20dde5242133077"
+ },
+ "voci": [
+  {
+   "id": "2026-06-12-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova pagina pubblica sulle anomalie: 767 enti (3,34%) con dati incompleti o incerti",
+    "en": "New public page on anomalies: 767 entities (3.34%) with incomplete or uncertain data"
+   },
+   "sintesi": {
+    "it": "È online una pagina che elenca gli enti per cui la classificazione è incompleta o incerta: 767 enti (3,34%), di cui 659 senza record MX, 77 con geolocalizzazione non risolta e 99 a bassa confidenza; 138 di questi risultano comunque classificati. La pagina, raggiungibile dal pannello informativo della mappa, offre riepiloghi per tipo e fornitore e una tabella filtrabile, ed è aggiornata dalla scansione notturna: rende esplicito il margine di incertezza dei dati.",
+    "en": "A page is now online listing the entities whose classification is incomplete or uncertain: 767 entities (3.34%), of which 659 have no MX record, 77 have unresolved geolocation and 99 are low-confidence; 138 of these are nonetheless classified. The page, reachable from the map's information panel, offers breakdowns by type and provider and a filterable table, and is updated by the nightly scan: it makes the margin of uncertainty in the data explicit."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@35b027cb6b"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-12-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Predisposto un verificatore via bounce per i 69 enti con fornitore di posta ignoto",
+    "en": "Bounce-based verifier set up for the 69 entities with unknown mail provider"
+   },
+   "sintesi": {
+    "it": "Dei 99 enti a bassa confidenza, 69 hanno un record MX ma un fornitore effettivo ignoto e possono essere verificati inviando un messaggio di prova, dichiarato come TEST, a un indirizzo inesistente e analizzando l'avviso di mancato recapito; gli altri 30 (senza MX, solo PEC) non sono verificabili così. Su indicazione di Fabio l'invio avverrà tramite un server di posta autenticato e non direttamente verso i server degli enti, per non finire nello spam. Lo strumento è implementato e testato, ma nessun messaggio è ancora stato inviato.",
+    "en": "Of the 99 low-confidence entities, 69 have an MX record but an unknown actual provider and can be verified by sending a test message, declared as a TEST, to a non-existent address and analysing the non-delivery report; the other 30 (no MX, PEC only) cannot be verified this way. At Fabio's direction, sending will go through an authenticated mail server rather than directly to the entities' servers, to avoid being flagged as spam. The tool is implemented and tested, but no message has been sent yet."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@981ce72a09",
+    "mxmap-it/mxmap.it@6583bf452f",
+    "mxmap-it/mxmap.it@3d2daa81af",
+    "mxmap-it/mxmap.it@a33397d5e3",
+    "mxmap-it/mxmap.it@b21a257751",
+    "mxmap-it/mxmap.it@d9ce883d7a",
+    "mxmap-it/mxmap.it@2c21542f8b",
+    "mxmap-it/mxmap.it@06239652ba"
+   ],
+   "n_commit": 8,
+   "issue": [
+    "mxmap-it/mxmap.it#4",
+    "mxmap-it/mxmap.it#18"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-12-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Storico delle rilevazioni: dashboard, cronologia per ente e metadati DCAT-AP_IT (non ancora attivi)",
+    "en": "Scan history: dashboard, per-entity timeline and DCAT-AP_IT metadata (not yet active)"
+   },
+   "sintesi": {
+    "it": "È stato sviluppato il sistema di storicizzazione delle scansioni, verificato su 22.987 enti: una pagina con grafici dell'andamento di sovranità, giurisdizione e copertura, una scheda «Storia di questo ente» nella mappa e metadati DCAT-AP_IT per la raccolta su dati.gov.it. Per scelta del fondatore lo storico parte in avanti dal primo scan ufficiale, senza ricostruire il passato, e senza distinguere tra cambi reali e metodologici, perché la metodologia sarà congelata da quel momento. Il sistema si attiverà con il primo scan ufficiale.",
+    "en": "A system for keeping the history of scans has been developed and verified on 22,987 entities: a page with charts of trends in sovereignty, jurisdiction and coverage, a \"History of this entity\" card in the map, and DCAT-AP_IT metadata for harvesting by dati.gov.it. By the founder's choice, the history runs forward from the first official scan, without reconstructing the past, and without distinguishing real from methodological changes, since the methodology will be frozen from that point. The system will be activated with the first official scan."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@3c686005d9",
+    "mxmap-it/mxmap.it@262dbbce03",
+    "mxmap-it/mxmap.it@5247b7e924",
+    "mxmap-it/mxmap.it@e55056f069",
+    "mxmap-it/mxmap.it@1bd527c6ad"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/mxmap.it#1"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-06-12-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pubblicazione notturna resa robusta contro i conflitti con altri aggiornamenti",
+    "en": "Nightly publishing made robust against conflicts with other updates"
+   },
+   "sintesi": {
+    "it": "Il job notturno a volte non pubblicava i dati quando, durante l'esecuzione, venivano registrate altre modifiche. Ora riprova più volte e, in caso di conflitto, prevale il dato appena rigenerato, così l'aggiornamento del sito non viene più saltato.",
+    "en": "The nightly job sometimes failed to publish the data when other changes were recorded while it was running. It now retries several times and, in case of conflict, the freshly regenerated data prevails, so the site update is no longer skipped."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@fb34be6b82"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-06-12-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Online la prima versione del sito dell'Osservatorio",
+    "en": "First version of the Observatory website goes online"
+   },
+   "sintesi": {
+    "it": "Nasce il sito dell'Osservatorio, con sezioni per report (in versione web e PDF), news, presentazioni, metodologia e informazioni sul progetto. La grafica adotta Bootstrap Italia, il sistema di design della Pubblica Amministrazione italiana, e la pubblicazione degli aggiornamenti è automatica.",
+    "en": "The Observatory website is launched, with sections for reports (web and PDF versions), news, presentations, methodology and information about the project. The design uses Bootstrap Italia, the Italian Public Administration's design system, and updates are published automatically."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@8be0d999fd",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@ead271d52a"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-12-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuove pagine FAQ e «Partecipa al progetto», con il canale Telegram",
+    "en": "New FAQ and \"Get involved\" pages, including the Telegram channel"
+   },
+   "sintesi": {
+    "it": "Il sito si arricchisce di una pagina di domande frequenti (11 domande in 3 categorie) e di una pagina «Partecipa al progetto» che presenta i modi per contribuire, compreso il canale Telegram. Servono a spiegare il progetto e ad aprirlo a nuovi contributi.",
+    "en": "The website gains a frequently asked questions page (11 questions in 3 categories) and a \"Get involved\" page presenting the ways to contribute, including the Telegram channel. They help explain the project and open it to new contributions."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@5287457ba3",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@af67bf85a0"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  }
+ ]
+}

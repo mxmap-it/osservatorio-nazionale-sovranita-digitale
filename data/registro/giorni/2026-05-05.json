@@ -1,0 +1,165 @@
+{
+ "data": "2026-05-05",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "8ab7d42f52a6cb01",
+  "spesa-ict": "",
+  "osservatorio": "",
+  "pvl-at": ""
+ },
+ "voci": [
+  {
+   "id": "2026-05-05-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Recuperati nel censimento consorzi, unioni ed enti con sola PEC prima esclusi",
+    "en": "Consortia, unions and PEC-only bodies previously excluded brought back into the census"
+   },
+   "sintesi": {
+    "it": "Circa 97 consorzi, unioni, associazioni e comunità montane, prima scartati, sono ora inclusi e classificati. Per i circa 620 enti che in IndicePA hanno solo indirizzi PEC, il fondatore ha scelto di non usare il dominio PEC: la posta certificata è concentrata su pochi gestori e non rappresenta la posta d'ufficio. Si cerca invece il sito reale dell'ente con Wikidata, Wikipedia in italiano e, come ultimo passaggio, un modello linguistico; ogni risultato viene verificato sui record MX e salvato in un file pubblico e rivisto a mano. Il primo passaggio automatico ha recuperato 24 enti; per gli altri 603 è stata preparata la ricerca assistita.",
+    "en": "About 97 consortia, unions, associations and mountain communities that had previously been discarded are now included and classified. For the roughly 620 bodies that have only PEC addresses in IndicePA, the founder chose not to use the PEC domain: certified email is concentrated among a few providers and does not represent office email. Instead, each body's real website is looked up via Wikidata, Italian Wikipedia and, as a last step, a language model; every result is checked against MX records and saved in a public, manually reviewed file. The first automated pass recovered 24 bodies; assisted lookup was prepared for the remaining 603."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@59969e1eb3",
+    "mxmap-it/mxmap.it@929817d8d0",
+    "mxmap-it/mxmap.it@e05d65194c",
+    "mxmap-it/mxmap.it@6901823fd8",
+    "mxmap-it/mxmap.it@19d3b2856f",
+    "mxmap-it/mxmap.it@8b00ce0105",
+    "mxmap-it/mxmap.it@f74046b330"
+   ],
+   "n_commit": 7,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-05-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicato il riepilogo di trasparenza: 97,06% degli enti IndicePA mappati",
+    "en": "Transparency summary published: 97.06% of IndicePA bodies mapped"
+   },
+   "sintesi": {
+    "it": "Sul sito una nuova sezione mostra quanti enti sono entrati nell'analisi e in che modo, e si aggiorna a ogni esecuzione. Su 23.684 enti IndicePA, 22.988 sono mappati (97,06%): 22.575 (95,32%) al primo tentativo, gli altri tramite correzioni manuali (16), ricerca assistita da modello linguistico (22), Wikidata e Wikipedia (19), email non PEC (232) e consorzi recuperati (124). Restano esclusi 79 enti in liquidazione, per scelta, e 617 enti con sola PEC (2,61%).",
+    "en": "A new section on the site shows how many bodies entered the analysis and how, and it updates on every run. Of 23,684 IndicePA bodies, 22,988 are mapped (97.06%): 22,575 (95.32%) on the first attempt, the rest through manual corrections (16), language-model-assisted lookup (22), Wikidata and Wikipedia (19), non-PEC email (232) and recovered consortia (124). By design, 79 bodies in liquidation are excluded, and 617 PEC-only bodies (2.61%) remain unmapped."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@72263f7d3f",
+    "mxmap-it/mxmap.it@53d2101492"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-05-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova sezione «Scuole»: 8.168 scuole statali, il 78,6% su fornitori USA",
+    "en": "New “Schools” section: 8,168 state schools, 78.6% on US providers"
+   },
+   "sintesi": {
+    "it": "La mappa ha un nuovo livello che mostra, comune per comune, quale fornitore di posta prevale tra le scuole statali. Il primo calcolo riguarda 8.168 scuole, il 78,6% delle quali usa fornitori statunitensi.",
+    "en": "The map has a new level that shows, municipality by municipality, which email provider prevails among state schools. The first calculation covers 8,168 schools, 78.6% of which use US providers."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@0a63bb795b",
+    "mxmap-it/mxmap.it@93d508f26e"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-05-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuovo titolo, pannello statistiche per gruppi di enti e legenda per livello",
+    "en": "New title, statistics panel by groups of bodies and per-level legend"
+   },
+   "sintesi": {
+    "it": "Il sito si chiama ora «Sovranità Digitale della Posta Elettronica nella Pubblica Amministrazione italiana». Il pannello statistiche, pensato in origine per una mappa mondiale, ora mostra solo i dati italiani: una panoramica per giurisdizione del fornitore e il dettaglio per gruppi (Territoriale, Istruzione, Sanità, PA Centrale, Ordini, Welfare) e per categoria IPA. La legenda conta regioni, province o singoli enti a seconda del livello di mappa selezionato.",
+    "en": "The site is now titled “Digital Sovereignty of Email in the Italian Public Administration”. The statistics panel, originally designed for a world map, now shows only Italian data: an overview by provider jurisdiction and breakdowns by group (Territorial, Education, Health, Central PA, Professional Orders, Welfare) and by IPA category. The legend counts regions, provinces or individual bodies depending on the selected map level."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@5fc5856618",
+    "mxmap-it/mxmap.it@12cd8093ae"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-05-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Mappa completa: tutti i 7.888 comuni e tutte le province, Sardegna e Valle d'Aosta incluse",
+    "en": "Complete map: all 7,888 municipalities and all provinces, including Sardinia and Valle d'Aosta"
+   },
+   "sintesi": {
+    "it": "Sono stati corretti i problemi che lasciavano aree bianche sulla mappa: confini comunali scaricati in modo incompleto, poligoni costruiti in un formato non leggibile e la vista Province senza colori. I confini dei comuni ora coprono 7.888 comuni su 7.888. La Valle d'Aosta è stata aggiunta e la Sardegna è interamente coperta nella vista Province, usando le vecchie province anteriori alla riforma del 2016 abbinate alle province attuali.",
+    "en": "Fixes were made to the problems that left white areas on the map: incompletely downloaded municipal boundaries, polygons built in an unreadable format, and the Province view showing no colours. Municipal boundaries now cover 7,888 out of 7,888 municipalities. Valle d'Aosta has been added and Sardinia is fully covered in the Province view, using the old pre-2016-reform provinces matched to the current ones."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@a449829bc9",
+    "mxmap-it/mxmap.it@6d919de0fa",
+    "mxmap-it/mxmap.it@8b56ed7172",
+    "mxmap-it/mxmap.it@763b977a59",
+    "mxmap-it/mxmap.it@771ed63165",
+    "mxmap-it/mxmap.it@492dbea984",
+    "mxmap-it/mxmap.it@bc31f902ba",
+    "mxmap-it/mxmap.it@515c9d88c8",
+    "mxmap-it/mxmap.it@b958b14b3a",
+    "mxmap-it/mxmap.it@3d46fe6060",
+    "mxmap-it/mxmap.it@223f5dc3f8",
+    "mxmap-it/mxmap.it@36368090c4",
+    "mxmap-it/mxmap.it@05a6d27a55",
+    "mxmap-it/mxmap.it@8345cf916c",
+    "mxmap-it/mxmap.it@05897538a9"
+   ],
+   "n_commit": 15,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-05-mxmap-6",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Procedura completa riproducibile da zero",
+    "en": "Full pipeline reproducible from scratch"
+   },
+   "sintesi": {
+    "it": "Lo script principale ora esegue in sequenza tutti i passaggi aggiunti: recupero degli enti, confini, classificazione DNS, report e sito. Partendo da una copia pulita del codice si ottengono gli stessi risultati pubblicati, salvo l'aggiornamento dei dati DNS.",
+    "en": "The main script now runs all the added steps in sequence: recovering bodies, boundaries, DNS classification, reports and the site. Starting from a clean copy of the code produces the same published results, apart from DNS data being refreshed."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@b7af5b23f8"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

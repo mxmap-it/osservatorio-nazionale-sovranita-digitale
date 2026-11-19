@@ -1,0 +1,64 @@
+{
+ "data": "2026-07-07",
+ "settimana": "2026-W28",
+ "fonte": {
+  "mxmap": "bddd3b9a49fca4a0"
+ },
+ "voci": [
+  {
+   "id": "2026-07-07-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il sito assume il nome pubblico «Osservatorio Nazionale Sovranità Digitale»",
+    "en": "The site adopts the public name \"Osservatorio Nazionale Sovranità Digitale\""
+   },
+   "sintesi": {
+    "it": "Il nome visibile del sito diventa «Osservatorio Nazionale Sovranità Digitale» su home page, mappa, pagine statiche (statistiche, report, metodologia, anomalie, storia) e circa 30.000 schede degli enti. «MxMap Italia» resta il nome dello strumento e del dominio mxmap.it ed è mantenuto come nome alternativo, così il sito resta reperibile anche con le ricerche precedenti.",
+    "en": "The site's visible name becomes \"Osservatorio Nazionale Sovranità Digitale\" (National Digital Sovereignty Observatory) across the home page, map, static pages (statistics, reports, methodology, anomalies, history) and about 30,000 entity pages. \"MxMap Italia\" remains the name of the tool and of the mxmap.it domain and is kept as an alternate name, so the site can still be found through earlier searches."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@f3074f4682"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#15"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-07-07-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ogni scheda ente si apre con un riepilogo in linguaggio naturale",
+    "en": "Each entity page now opens with a plain-language summary"
+   },
+   "sintesi": {
+    "it": "Ogni scheda ente si apre ora con un paragrafo descrittivo: indica il fornitore di posta, la giurisdizione a cui è soggetto (italiana, UE o CLOUD Act statunitense), il Paese dei server di posta, l'affidabilità del dato e un confronto con gli enti vicini. Lo scopo è rendere le schede più leggibili e più facili da indicizzare per i motori di ricerca, che finora ne escludevano 246 perché poco distintive.",
+    "en": "Each entity page now opens with a descriptive paragraph: it states the email provider, the jurisdiction it is subject to (Italian, EU or the US CLOUD Act), the country of the mail servers, the reliability of the data and a comparison with nearby entities. The aim is to make the pages more readable and easier for search engines to index; so far 246 of them had been left out as not distinctive enough."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@e836cb9bea"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22878,
+  "copertura": 97.2,
+  "extra_eu": 46.7,
+  "eu_non_it": 0.5,
+  "it": 50.0,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.1
+ }
+}

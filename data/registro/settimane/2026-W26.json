@@ -1,0 +1,28 @@
+{
+ "settimana": "2026-W26",
+ "dal": "2026-06-22",
+ "al": "2026-06-28",
+ "fonte": "26a4c6764726a03c",
+ "titolo": {
+  "it": "MxMap.it: tornano raggiungibili pagine e sitemap, la scansione notturna spiega i propri errori",
+  "en": "MxMap.it: pages and sitemap reachable again, nightly scan now explains its own failures"
+ },
+ "sintesi": {
+  "it": "Nella settimana l'attività si è concentrata su MxMap.it. Le pagine per ente, area e categoria e la sitemap, che risultavano irraggiungibili per un'impostazione di pubblicazione errata, sono state ripristinate e verificate: circa 30.500 indirizzi sono di nuovo consultabili e indicizzabili. La scansione notturna registra ora da sola la causa dei salvataggi non riusciti, così i guasti futuri restano documentati. I dati di scansione sono rimasti stabili: circa 22.878 enti, copertura tra il 97,21% e il 97,30%, quota extra-UE ferma al 46,6%.",
+  "en": "This week's activity focused on MxMap.it. The per-entity, area and category pages and the sitemap, which were unreachable because of an incorrect publishing setting, were restored and verified: about 30,500 addresses can again be browsed and indexed. The nightly scan now records the cause of failed saves on its own, so future failures remain documented. Scan data stayed stable: about 22,878 entities, coverage between 97.21% and 97.30%, extra-EU share unchanged at 46.6%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Ripristinata la modalità di pubblicazione del sito: l'indice della sitemap, le sue 23 sezioni e circa 30.500 indirizzi sono di nuovo raggiungibili, e l'impostazione viene riconfermata a ogni aggiornamento. Quando il salvataggio della scansione notturna fallisce, il dettaglio dell'errore, la causa nota e la soluzione vengono ora annotati automaticamente nella segnalazione dedicata. Nella settimana la quota di enti con posta presso fornitori extra-UE è rimasta al 46,6%, con copertura tra il 97,21% e il 97,30%.",
+    "en": "The site's publishing mode was restored: the sitemap index, its 23 sections and about 30,500 addresses are reachable again, and the setting is reconfirmed at every update. When saving the nightly scan fails, the error details, the known cause and the fix are now recorded automatically in the dedicated issue. During the week the share of entities with email at extra-EU providers remained at 46.6%, with coverage between 97.21% and 97.30%."
+   },
+   "voci": [
+    "2026-06-22-mxmap-1",
+    "2026-06-22-mxmap-2"
+   ]
+  }
+ ],
+ "n_voci": 2
+}

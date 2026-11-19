@@ -1,0 +1,42 @@
+{
+ "data": "2026-08-05",
+ "settimana": "2026-W32",
+ "fonte": {
+  "osservatorio": "96ca171cf6ff867e"
+ },
+ "voci": [
+  {
+   "id": "2026-08-05-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "AWS European Sovereign Cloud GmbH: socio unico al 100% è una società del Delaware",
+    "en": "AWS European Sovereign Cloud GmbH: sole shareholder holding 100% is a Delaware company"
+   },
+   "sintesi": {
+    "it": "Grazie all'elenco dei soci del registro delle imprese di Potsdam (HRB 40853 P), autenticato da un notaio il 20.10.2025, l'Osservatorio documenta su fonte primaria che A100 ROW, Inc. di Wilmington (Delaware) detiene tutte le 25.000 quote da 1,00 euro della società presentata come capogruppo europea del cloud sovrano di AWS, cioè il 100%. Il passaggio successivo non si può provare allo stesso modo, perché il Delaware non pubblica chi sono i soci: fonti secondarie indicano Amazon.com Inc., e questo viene riportato come indicazione, non come prova. Il documento è stato archiviato e aggiunto con il suo hash al registro delle fonti. Dalla pagina è stata tolta la riserva sulla mancata lettura dell'elenco dei soci e i PDF sono stati rigenerati.",
+    "en": "Using the shareholder list from the Potsdam commercial register (HRB 40853 P), notarised on 20.10.2025, the Observatory documents from a primary source that A100 ROW, Inc. of Wilmington (Delaware) holds all 25,000 shares of €1.00 in the company presented as the European parent of AWS's sovereign cloud, i.e. 100%. The next link in the chain cannot be proven in the same way, because Delaware does not publish who the shareholders are: secondary sources point to Amazon.com Inc., and this is reported as an indication, not as proof. The document has been archived and added with its hash to the source register. The caveat about the shareholder list not having been read was removed from the page, and the PDFs were regenerated."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@07df35287d"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://osservatorio.mxmap.it/pdf/psn-analisi-profili-sovranita-digitale.pdf",
+    "https://osservatorio.mxmap.it/pdf/psn-digital-sovereignty-profile-analysis-en.pdf"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22897,
+  "copertura": 97.27,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "data": "2026-09-24",
+ "settimana": "2026-W39",
+ "fonte": {
+  "osservatorio": "e230b63ab7cea553"
+ },
+ "voci": [
+  {
+   "id": "2026-09-24-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Dati di spesa SIOPE: la fonte diventa siope.it al posto di BDAP",
+    "en": "SIOPE spending data: the source becomes siope.it instead of BDAP"
+   },
+   "sintesi": {
+    "it": "L'Osservatorio prenderà i dati SIOPE direttamente da siope.it invece che da BDAP, come documentato anche da AgID nel proprio processo di elaborazione: su BDAP i file sono generati a richiesta, si verificano errori ricorrenti e per 1.717 comuni il 2025 si ferma a marzo, mentre su siope.it sono disponibili tutti e dodici i mesi. Sono stati verificati i file nazionali 2025 di uscite (77 MB), entrate e anagrafiche, con importi in centesimi e valori mensili non cumulati.",
+    "en": "The Observatory will take SIOPE data directly from siope.it instead of BDAP, as AgID also documents in its own processing pipeline: on BDAP files are generated on request, recurring errors occur and for 1,717 municipalities 2025 stops at March, whereas siope.it provides all twelve months. The national 2025 files for expenditure (77 MB), revenue and registry data were checked, with amounts in cents and monthly, non-cumulative values."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@876843e0c4"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22896,
+  "copertura": 97.27,
+  "extra_eu": 46.9,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

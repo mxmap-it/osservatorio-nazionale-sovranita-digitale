@@ -1,0 +1,84 @@
+{
+ "data": "2026-09-17",
+ "settimana": "2026-W38",
+ "fonte": {
+  "mxmap": "dcf8c262179d25e4",
+  "osservatorio": "c823ba4c5a8b5b8d"
+ },
+ "voci": [
+  {
+   "id": "2026-09-17-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Segnalazione quotidiana delle pagine di mxmap.it ai motori di ricerca tramite IndexNow",
+    "en": "Daily submission of mxmap.it pages to search engines via IndexNow"
+   },
+   "sintesi": {
+    "it": "Ogni giorno alle 12:30 UTC una procedura automatica segnala tramite il protocollo IndexNow (Bing, Yandex, Seznam, Naver, Yep) una porzione a rotazione di 1000 delle circa 30.552 pagine del sito; il ciclo completo dura circa un mese e poi ricomincia, così i motori vengono avvisati degli aggiornamenti notturni dei dati. Google non aderisce a IndexNow: per Google valgono la sitemap aggiornata e i link interni. Un controllo sui link interni delle pagine principali ha dato 77 risposte valide su 77.",
+    "en": "Every day at 12:30 UTC an automated procedure uses the IndexNow protocol (Bing, Yandex, Seznam, Naver, Yep) to submit a rotating batch of 1000 of the site's roughly 30,552 pages; the full cycle takes about a month and then restarts, so search engines are notified of the nightly data refreshes. Google does not support IndexNow: for Google, the updated sitemap and internal links are what count. A check of internal links on the main pages returned 77 valid responses out of 77."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d0ecb55989",
+    "mxmap-it/mxmap.it@d9324a7246"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-17-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sitemap e meta robots seguono ora un'unica regola di indicizzazione",
+    "en": "Sitemap and meta robots now follow a single indexing rule"
+   },
+   "sintesi": {
+    "it": "Search Console segnalava pagine escluse per il tag «noindex»: le home delle 22 lingue UE erano marcate noindex ma comparivano comunque nella sitemap, perché due copie della regola erano divergenti. Ora un'unica regola governa meta robots, hreflang, sitemap e indice delle sitemap: su 66 pagine nessun meta robots è cambiato, la sitemap passa da 60 a 38 URL senza pagine noindex e l'indice da 24 a 2 voci (italiano e inglese), senza escludere pagine indicizzabili.",
+    "en": "Search Console was reporting pages excluded by the 'noindex' tag: the home pages of the 22 EU languages were marked noindex but still appeared in the sitemap, because two copies of the rule had diverged. A single rule now governs meta robots, hreflang, the sitemap and the sitemap index: across 66 pages no meta robots tag changed, the sitemap goes from 60 to 38 URLs with no noindex pages, and the index from 24 to 2 entries (Italian and English), with no indexable page excluded."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f43115f87b"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-17-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Copertina per la pagina LinkedIn dell'Osservatorio, con relativo generatore",
+    "en": "Cover image for the Observatory's LinkedIn page, with its generator"
+   },
+   "sintesi": {
+    "it": "Preparata l'immagine di copertina della pagina LinkedIn dell'Osservatorio nei formati 1128x654 e 1128x191, insieme allo script che la genera ridisegnando il marchio a partire dal file vettoriale originale, così da poterla riprodurre e aggiornare.",
+    "en": "The cover image for the Observatory's LinkedIn page was prepared in 1128x654 and 1128x191 formats, together with the script that generates it by redrawing the logo from the original vector file, so that it can be reproduced and updated."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@a35f44795a"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22884,
+  "copertura": 97.27,
+  "extra_eu": 46.9,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

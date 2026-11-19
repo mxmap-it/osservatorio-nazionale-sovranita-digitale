@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W32",
+ "dal": "2026-08-03",
+ "al": "2026-08-09",
+ "fonte": "f99921688c34961a",
+ "titolo": {
+  "it": "PSN: pubblicata l'analisi di riferimento, verificata sulle fonti e corretta dopo due revisioni",
+  "en": "PSN: reference analysis published, checked against sources and corrected after two reviews"
+ },
+ "sintesi": {
+  "it": "La settimana è stata dedicata al Polo Strategico Nazionale. Sono stati letti 161 pagine di documenti ufficiali PSN e 130 pagine del catalogo ANSSI. Ne è nata la pagina /psn/, in italiano e in inglese e con PDF di 24 pagine, che riconosce al programma consolidamento e sicurezza ma rileva che l'Italia, a differenza della Francia, non ha scritto requisiti misurabili su sede, capitale e amministrazione. Due revisioni esterne hanno portato a correggere tre errori già pubblicati. Un documento del registro delle imprese di Potsdam mostra che il socio unico al 100% di AWS European Sovereign Cloud GmbH è una società del Delaware. La scansione notturna di MxMap è rimasta stabile: tra 22.895 e 22.901 enti, quota extra-UE tra il 46,8% e il 46,9%.",
+  "en": "The week was devoted to the National Strategic Hub (PSN). 161 pages of official PSN documents and 130 pages of the ANSSI catalogue were read. The result is the /psn/ page, in Italian and English with a 24-page PDF, which credits the programme with consolidation and security but finds that Italy, unlike France, has written no measurable requirements on headquarters, capital and administration. Two external reviews led to the correction of three errors already published. A document from the Potsdam commercial register shows that the 100% sole shareholder of AWS European Sovereign Cloud GmbH is a Delaware company. The MxMap nightly scan remained stable: between 22,895 and 22,901 bodies, with the extra-EU share between 46.8% and 46.9%."
+ },
+ "punti": [
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Pubblicata la pagina /psn/ (IT/EN, PDF di 24 pagine generato dalla pagina web). Contiene sette scenari di minaccia, sei misure praticabili e una tabella che confronta otto requisiti dei tre livelli PSN con la sezione 19.6 di SecNumCloud. Due revisioni esterne hanno corretto errori già pubblicati (Golden Power, crittografia omomorfica, Nitro System/Enclaves) e hanno portato a uno standard probatorio in dodici regole. Su fonte primaria è documentato che A100 ROW, Inc. (Delaware) detiene il 100% di AWS European Sovereign Cloud GmbH. Il sito ora serve font, CSS, JS e icone dal proprio dominio.",
+    "en": "The /psn/ page was published (IT/EN, with a 24-page PDF generated from the web page). It contains seven threat scenarios, six practicable measures and a table comparing eight requirements of the three PSN tiers with section 19.6 of SecNumCloud. Two external reviews corrected errors already published (Golden Power, homomorphic encryption, Nitro System/Enclaves) and led to a twelve-rule evidentiary standard. A primary source documents that A100 ROW, Inc. (Delaware) holds 100% of AWS European Sovereign Cloud GmbH. The site now serves fonts, CSS, JS and icons from its own domain."
+   },
+   "voci": [
+    "2026-08-04-osservatorio-2",
+    "2026-08-03-osservatorio-3",
+    "2026-08-04-osservatorio-3",
+    "2026-08-05-osservatorio-1"
+   ]
+  }
+ ],
+ "n_voci": 10
+}

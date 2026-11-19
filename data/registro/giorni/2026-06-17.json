@@ -1,0 +1,33 @@
+{
+ "data": "2026-06-17",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "fe90b67ca6a01ea3"
+ },
+ "voci": [
+  {
+   "id": "2026-06-17-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Classificazione: riconosciuti i gateway antivirus Libraesva, emerge il fornitore reale",
+    "en": "Classification: Libraesva antivirus gateways now recognised, revealing the actual provider"
+   },
+   "sintesi": {
+    "it": "Il classificatore riconosceva i gateway Libraesva solo dal dominio «libraesva.com». Per questo circa 150 enti finivano classificati come fornitore italiano o «independent», e il servizio di posta effettivamente usato restava nascosto, spesso Microsoft 365. Ora il riconoscimento usa la parola chiave «esva», che copre tutti i 110 nomi di server osservati, e per questi enti si risale al fornitore reale. Dopo la nuova esecuzione della pipeline si prevede che circa 76 enti (tra cui comune.venezia.it, ieo.it, consiglio.regione.liguria.it e lavoro.gov.it) passino a Microsoft, con un aumento della quota soggetta al CLOUD Act e un calo dell'ISD di 0,3-0,4 punti; si tratta di stime ancora da confermare.",
+    "en": "The classifier recognised Libraesva gateways only by the domain \"libraesva.com\". As a result, about 150 bodies were classified as using an Italian or \"independent\" provider, and the mail service they actually use stayed hidden, often Microsoft 365. Recognition now uses the keyword \"esva\", which covers all 110 server names observed, and for these bodies the actual provider is traced. After the pipeline is re-run, about 76 bodies (including comune.venezia.it, ieo.it, consiglio.regione.liguria.it and lavoro.gov.it) are expected to move to Microsoft, raising the share subject to the CLOUD Act and lowering the ISD by 0.3-0.4 points; these are estimates still to be confirmed."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@b92468cfd1"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#14"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

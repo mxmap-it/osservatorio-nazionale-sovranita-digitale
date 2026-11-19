@@ -1,0 +1,55 @@
+{
+ "data": "2026-06-10",
+ "settimana": "2026-W24",
+ "fonte": {
+  "mxmap": "6caa434a992fa241"
+ },
+ "voci": [
+  {
+   "id": "2026-06-10-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Indice di affidabilità della classificazione, allineato al progetto MxMap originario",
+    "en": "Classification confidence score, aligned with the original MxMap project"
+   },
+   "sintesi": {
+    "it": "Per ogni ente la classificazione del fornitore di posta riporta ora un indice di affidabilità, insieme alla regola applicata e ai segnali DNS che la sostengono. L'algoritmo riproduce esattamente quello del progetto MxMap originario da cui deriva MxMap Italia, senza criteri aggiuntivi, così i risultati restano confrontabili. Test dedicati verificano che i valori coincidano.",
+    "en": "For each entity, the mail provider classification now includes a confidence score, along with the rule applied and the DNS signals supporting it. The algorithm exactly reproduces that of the original MxMap project from which MxMap Italia derives, with no additional criteria, so results remain comparable. Dedicated tests check that the values match."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@7070df2b75",
+    "mxmap-it/mxmap.it@db0b4ac9bb"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-10-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Storicizzazione dei dati: documento di progetto e prototipo con recupero dello storico",
+    "en": "Data historicization: design document and prototype with historical backfill"
+   },
+   "sintesi": {
+    "it": "È stato scritto il documento di progetto per conservare nel tempo l'evoluzione delle classificazioni, con un primo prototipo e una procedura per ricostruire lo storico passato. Il prototipo è stato provato su 12 versioni reali dei dati archiviate nel repository; si tratta di una fase di progettazione, non ancora in produzione.",
+    "en": "A design document was written for preserving how classifications evolve over time, with a first prototype and a procedure to reconstruct past history. The prototype was tested on 12 real versions of the data archived in the repository; this is a design phase, not yet in production."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@cb0bd27f9b",
+    "mxmap-it/mxmap.it@7b9b894492"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/mxmap.it#15"
+   ],
+   "link": []
+  }
+ ]
+}

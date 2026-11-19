@@ -1,0 +1,98 @@
+{
+ "data": "2026-05-29",
+ "settimana": "2026-W22",
+ "fonte": {
+  "mxmap": "6b817f5dfbdf6b57"
+ },
+ "voci": [
+  {
+   "id": "2026-05-29-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Vista comuni: gli enti non comunali ora sono esclusi con un criterio basato su ISTAT",
+    "en": "Municipality view: non-municipal bodies now excluded using an ISTAT-based criterion"
+   },
+   "sintesi": {
+    "it": "IndicePA classifica come «Comune» anche enti che non lo sono (ad esempio UNCEM Lazio, ANCI Piemonte, consorzi e agenzie). Sulla mappa finivano al posto dei comuni veri: UNCEM Lazio, per esempio, compariva sul poligono di Roma. Un primo filtro basato sul nome escludeva per errore Roma Capitale, perciò la distinzione ora si basa sui codici ISTAT: 154 enti indicati come «Comune» in IndicePA sono trattati come enti non territoriali e riportati in un elenco di verifica. Dati del sito e file scaricabili (CSV/JSON/XLSX) sono stati rigenerati.",
+    "en": "IndicePA classifies as «Comune» (municipality) some bodies that are not municipalities (for example UNCEM Lazio, ANCI Piemonte, consortia and agencies). On the map they appeared in place of real municipalities: UNCEM Lazio, for example, was shown on Rome's polygon. A first name-based filter wrongly excluded Roma Capitale, so the distinction now relies on ISTAT codes: 154 bodies listed as «Comune» in IndicePA are treated as non-territorial entities and recorded in a review list. Site data and downloadable files (CSV/JSON/XLSX) have been regenerated."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@97ca9ec591",
+    "mxmap-it/mxmap.it@c06a5db063",
+    "mxmap-it/mxmap.it@26ec4246e0",
+    "mxmap-it/mxmap.it@1dca7e22dd",
+    "mxmap-it/mxmap.it@c26a735873",
+    "mxmap-it/mxmap.it@0a31bd02b8",
+    "mxmap-it/mxmap.it@05eb82aca7",
+    "mxmap-it/mxmap.it@77f083bcb6",
+    "mxmap-it/mxmap.it@416dddbafd",
+    "mxmap-it/mxmap.it@4f1da32574",
+    "mxmap-it/mxmap.it@c29955b179",
+    "mxmap-it/mxmap.it@26b4b591e9"
+   ],
+   "n_commit": 12,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-29-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Controlli automatici sull'elenco degli enti e confronto con l'elenco ufficiale ISTAT",
+    "en": "Automated checks on the list of bodies and cross-check against the official ISTAT list"
+   },
+   "sintesi": {
+    "it": "La pipeline notturna ora verifica regole di coerenza sull'elenco degli enti e confronta i comuni con un'istantanea ISTAT di 7.896 comuni (gennaio 2024). Se IndicePA introduce nuove anomalie, l'elaborazione si interrompe. I codici provinciali sardi precedenti alla riforma del 2016, che generavano 376 discrepanze, sono gestiti esplicitamente. Le regole, le fonti e le anomalie note di IndicePA sono descritte in una nuova documentazione.",
+    "en": "The nightly pipeline now checks consistency rules on the list of bodies and cross-checks municipalities against an ISTAT snapshot of 7,896 municipalities (January 2024). If IndicePA introduces new anomalies, processing stops. Sardinian province codes from before the 2016 reform, which caused 376 discrepancies, are handled explicitly. The rules, sources and known IndicePA anomalies are described in new documentation."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@71368d0d5a",
+    "mxmap-it/mxmap.it@a887fb4a3b",
+    "mxmap-it/mxmap.it@ba27bf03e1",
+    "mxmap-it/mxmap.it@35b5645890",
+    "mxmap-it/mxmap.it@d53d566455",
+    "mxmap-it/mxmap.it@76f8c84898",
+    "mxmap-it/mxmap.it@0ead60cca7",
+    "mxmap-it/mxmap.it@39c1b175d8",
+    "mxmap-it/mxmap.it@b1f27a6e39",
+    "mxmap-it/mxmap.it@f32521ded8"
+   ],
+   "n_commit": 10,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-29-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Ripristinati i test automatici e corrette alcune etichette di reti (AS) duplicate o errate",
+    "en": "Automated tests restored and some duplicate or incorrect network (AS) labels fixed"
+   },
+   "sintesi": {
+    "it": "I controlli automatici del codice erano bloccati da tempo, quindi i test non venivano eseguiti. Sbloccandoli sono emerse e sono state corrette alcune etichette dei sistemi autonomi: AS6830 ora è Liberty Global Europe, AS3212 Telemach Slovenija e AS3221 EENET. Sono stati aggiunti nuovi test e la soglia minima di copertura è stata fissata all'84%, con l'obiettivo di alzarla gradualmente.",
+    "en": "The automated code checks had been blocked for some time, so the tests were not being run. Unblocking them revealed some autonomous system labels, which have been corrected: AS6830 is now Liberty Global Europe, AS3212 Telemach Slovenija and AS3221 EENET. New tests have been added and the minimum coverage threshold has been set at 84%, with the aim of raising it gradually."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@816d999304",
+    "mxmap-it/mxmap.it@0fc09ebaf7",
+    "mxmap-it/mxmap.it@38170213c5",
+    "mxmap-it/mxmap.it@7025f40894",
+    "mxmap-it/mxmap.it@fbb228a0a0"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/mxmap.it#13",
+    "mxmap-it/mxmap.it#14"
+   ],
+   "link": []
+  }
+ ]
+}

@@ -7,3 +7,6 @@ Thumbs.db
 itb.html
 __pycache__/
 *.pyc
+
+# Registro attività: cache dei commit (contiene messaggi di repo privati)
+/.registro-cache/

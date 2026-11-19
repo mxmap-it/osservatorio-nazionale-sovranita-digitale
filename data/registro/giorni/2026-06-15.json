@@ -1,0 +1,344 @@
+{
+ "data": "2026-06-15",
+ "settimana": "2026-W25",
+ "fonte": {
+  "mxmap": "161e5cf3155d0ee6",
+  "osservatorio": "470a5d742b85709e"
+ },
+ "voci": [
+  {
+   "id": "2026-06-15-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicato il report «Stato sovranità digitale PA»",
+    "en": "\"State of digital sovereignty in the PA\" report published"
+   },
+   "sintesi": {
+    "it": "MxMap pubblica un report pubblico (pagina web e file report.json) aggiornato ogni notte, che l'Osservatorio può riprendere: sintesi per decisori, fotografia, settori, andamento e metodologia. I settori più esposti a fornitori soggetti al CLOUD Act sono Istruzione (78%), Sanità (61%) e Ricerca (57%); la PA Centrale (circa 52 enti) è stata tolta dai dati in evidenza perché i segmenti sono piccoli, ma resta visibile nella tabella per settore.",
+    "en": "MxMap publishes a public report (web page and report.json file), updated every night, which the Observatory can reuse: summary for decision-makers, snapshot, sectors, trend and methodology. The sectors most exposed to providers subject to the CLOUD Act are Education (78%), Health (61%) and Research (57%); Central PA (about 52 bodies) was removed from the highlighted figures because its segments are small, but remains visible in the sector table."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@eedd54b6dd",
+    "mxmap-it/mxmap.it@167c37f359"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Numeri di testata allineati sull'indice ISD calcolato sugli enti classificati",
+    "en": "Headline figures aligned on the ISD index computed over classified bodies"
+   },
+   "sintesi": {
+    "it": "Lo stesso indicatore compariva con cifre diverse sulle pagine: 52,65% nelle statistiche e 51,2% nel report e nel file KPI, che includeva anche gli enti di fornitore ignoto. Ora tutte le pagine riportano l'ISD canonico, calcolato solo sugli enti classificati: sovranità italiana al 52,65%, quota CLOUD Act al 47,34%. Il grafico della composizione continua a mostrare anche la quota ignota.",
+    "en": "The same indicator appeared with different figures across pages: 52.65% in the statistics and 51.2% in the report and KPI file, which also included bodies with an unknown provider. All pages now show the canonical ISD, computed only over classified bodies: Italian sovereignty at 52.65%, CLOUD Act share at 47.34%. The composition chart still shows the unknown share as well."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@2d48a411dd"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sovranità per area geografica: Molise la regione più sovrana, Veneto la più esposta",
+    "en": "Sovereignty by geographic area: Molise most sovereign region, Veneto most exposed"
+   },
+   "sintesi": {
+    "it": "Report e pagina Statistiche hanno ora una sezione per regioni e macroaree. Il Molise è la regione più sovrana (ISD 73,83%), mentre il Veneto è la più esposta al CLOUD Act (58,67%). Il Nord industrializzato risulta l'area meno sovrana. Anche la mappa raggruppa ora regioni e province con i dati geografici puliti: prima la vista regionale mostrava 72 gruppi errati.",
+    "en": "The report and the Statistics page now have a section by regions and macro-areas. Molise is the most sovereign region (ISD 73.83%), while Veneto is the most exposed to the CLOUD Act (58.67%). The industrialised North is the least sovereign area. The map now also groups regions and provinces using the clean geographic data: previously the regional view showed 72 incorrect groups."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@468cea241b",
+    "mxmap-it/mxmap.it@63af2f5e9e",
+    "mxmap-it/mxmap.it@7bc65ef74b"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://mxmap.it"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-5",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Dataset solo Italia scaricabile in CSV, JSON e XLSX",
+    "en": "Italy-only dataset available for download in CSV, JSON and XLSX"
+   },
+   "sintesi": {
+    "it": "Il file dati principale ora contiene solo gli enti italiani, per evitare confusione con i dati mondiali del progetto originario: si passa da 84.453 a 22.987 enti. Le scansioni degli altri paesi sono state disattivate in modo reversibile. Il sito e il README hanno ora link sempre aggiornati all'ultimo dataset (CSV, JSON, XLSX, KPI, report).",
+    "en": "The main data file now contains only Italian bodies, to avoid confusion with the original project's worldwide data: it goes from 84,453 to 22,987 bodies. Scans of other countries have been disabled in a reversible way. The site and the README now have links that always point to the latest dataset (CSV, JSON, XLSX, KPI, report)."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@42dd1ed543",
+    "mxmap-it/mxmap.it@d3a7080fb9"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Regione e provincia attribuite al 100% degli enti tramite i codici ISTAT",
+    "en": "Region and province assigned to 100% of bodies via ISTAT codes"
+   },
+   "sintesi": {
+    "it": "Il dato territoriale di IndicePA è incompleto, perché il campo regione è compilato solo per 7.685 enti su 22.987. Per questo ogni ente viene ora collocato a partire dal codice ISTAT del comune sede. I codici sardi anteriori alla riforma del 2016 sono stati ricondotti alle province attuali, portando regione e provincia al 100% (22.987 su 22.987). Questo rende possibile l'analisi per aree geografiche.",
+    "en": "IndicePA's territorial data is incomplete, because the region field is filled in for only 7,685 of 22,987 bodies. Each body is therefore now located from the ISTAT code of its seat municipality. Sardinian codes predating the 2016 reform were mapped to the current provinces, bringing region and province to 100% (22,987 of 22,987). This makes analysis by geographic area possible."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@0b6f48beff",
+    "mxmap-it/mxmap.it@cfcce5ed31",
+    "mxmap-it/mxmap.it@51e3dd8e5c"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://github.com/fpietrosanti/mxmap.it/issues/2"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-6",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sito su dominio mxmap.it con l'identità visiva della famiglia MxMap",
+    "en": "Site moved to the mxmap.it domain with the MxMap family visual identity"
+   },
+   "sintesi": {
+    "it": "Il sito è ora raggiungibile sul dominio mxmap.it e tutti i link pubblici sono stati aggiornati. Le pagine adottano il marchio condiviso con l'Osservatorio: simbolo radar, palette e carattere tipografico comuni.",
+    "en": "The site is now reachable at the mxmap.it domain and all public links have been updated. The pages adopt the brand shared with the Observatory: a common radar symbol, palette and typeface."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@52c5a22e93",
+    "mxmap-it/mxmap.it@5dda35f0de",
+    "mxmap-it/mxmap.it@0a5599bbdb",
+    "mxmap-it/mxmap.it@23e035a31d"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/mxmap.it#11"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-mxmap-7",
+   "contesto": "mxmap",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documentazione: limiti di IndicePA, README in italiano e roadmap",
+    "en": "Documentation: IndicePA limits, Italian README and roadmap"
+   },
+   "sintesi": {
+    "it": "La metodologia dichiara ora in modo esplicito che IndicePA non è una base dati pulita da cui ricavare direttamente i domini email degli enti: la sua bonifica continua è una dipendenza essenziale del progetto. Il README è stato riscritto in italiano, con il funzionamento completo e i casi particolari. È stata aggiunta una roadmap a fasi costruita a partire dalle issue aperte.",
+    "en": "The methodology now states explicitly that IndicePA is not a clean database from which bodies' email domains can be derived directly: its ongoing clean-up is an essential dependency of the project. The README has been rewritten in Italian, covering the full workflow and special cases. A phased roadmap built from the open issues has been added."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@e3421a11bc",
+    "mxmap-it/mxmap.it@aad9895d51",
+    "mxmap-it/mxmap.it@df45d559df",
+    "mxmap-it/mxmap.it@17191f40a9"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/mxmap.it#2",
+    "mxmap-it/mxmap.it#3",
+    "mxmap-it/mxmap.it#4",
+    "mxmap-it/mxmap.it#5",
+    "mxmap-it/mxmap.it#6"
+   ],
+   "link": [
+    "https://github.com/fpietrosanti/mxmap.it/issues/2"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Gli indicatori di sovranità digitale arrivano in homepage",
+    "en": "Digital sovereignty indicators now on the homepage"
+   },
+   "sintesi": {
+    "it": "La homepage mostra ora le stesse 4 schede di indicatori della pagina «Per i Decisori», aggiornate in tempo reale dai dati MxMap, con la data di aggiornamento e un collegamento alla pagina dedicata. Chi visita il sito vede subito i numeri principali senza doverli cercare.",
+    "en": "The homepage now shows the same 4 indicator cards as the \"Per i Decisori\" (For Decision-Makers) page, updated live from MxMap data, with the update date and a link to the dedicated page. Visitors see the main figures immediately without having to look for them."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@85aa9250fb"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "«Chi Siamo»: nuova sezione sul progetto multi-stakeholder",
+    "en": "\"Chi Siamo\": new section on the multi-stakeholder project"
+   },
+   "sintesi": {
+    "it": "La pagina «Chi Siamo» presenta associazioni e gruppi civici, raggruppati per area e con esempi a partire dall'Associazione Copernicani, e l'intenzione di costruire un progetto multi-stakeholder. Il testo chiarisce che si tratta di un invito aperto e non di adesioni già confermate.",
+    "en": "The \"Chi Siamo\" (About Us) page now presents associations and civic groups, grouped by area and with examples starting with Associazione Copernicani, along with the intention to build a multi-stakeholder project. The text makes clear that this is an open invitation and not a list of confirmed adhesions."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7f2fb8aef5",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@4cb0603718"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova pagina «Iniziative collegate in Europa»",
+    "en": "New page \"Related initiatives in Europe\""
+   },
+   "sintesi": {
+    "it": "Una nuova pagina raccoglie le istanze della famiglia MxMap e CAmap, oltre ad altre iniziative europee che misurano la sovranità digitale: EDRIX, Nextcloud DSI ed EU Cloud Sovereignty Framework (SEAL). La pagina è collegata da «Chi Siamo» e dalla Metodologia, per inquadrare l'Osservatorio nel lavoro già esistente in Europa.",
+    "en": "A new page lists the instances of the MxMap family and CAmap, as well as other European initiatives that measure digital sovereignty: EDRIX, Nextcloud DSI and the EU Cloud Sovereignty Framework (SEAL). The page is linked from \"Chi Siamo\" and from the Methodology, to place the Observatory within existing work in Europe."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@70211f71a9"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-5",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Community Telegram in evidenza, pagina «Partecipa» ridisegnata e navigazione riordinata",
+    "en": "Telegram community highlighted, \"Partecipa\" page redesigned and navigation tidied"
+   },
+   "sintesi": {
+    "it": "Il sito invita ora a unirsi alla community Telegram con una fascia in homepage, un badge visibile su tutte le pagine e un blocco dedicato nella pagina «Partecipa», riorganizzata per tipo di stakeholder. La sezione Presentazioni è stata rimossa, l'intestazione semplificata e tutti i link pubblici a MxMap puntano ora a mxmap.it; i 5 PDF sono stati rigenerati di conseguenza.",
+    "en": "The site now invites visitors to join the Telegram community through a band on the homepage, a badge visible on every page and a dedicated block on the \"Partecipa\" (Get Involved) page, reorganised by type of stakeholder. The Presentations section has been removed, the header simplified, and all public links to MxMap now point to mxmap.it; the 5 PDFs have been regenerated accordingly."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@82aff3687d",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@57bae1dd25",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@974c37092c"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/technical-brief-sovranita-digitale-pa.pdf"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-6",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicato il brand kit dell'Osservatorio",
+    "en": "Observatory brand kit published"
+   },
+   "sintesi": {
+    "it": "L'Osservatorio ha una nuova identità visiva, con un logo a radar applicato a intestazione, piè di pagina, icone del sito e anteprime per i social, compreso l'avatar del canale Telegram. Una nuova pagina /brand/ offre anteprime, file scaricabili e linee guida su colori e uso, con licenza CC BY-SA 4.0.",
+    "en": "The Observatory has a new visual identity, with a radar logo applied to the header, footer, site icons and social previews, including the Telegram channel avatar. A new /brand/ page offers previews, downloadable files and colour and usage guidelines, under a CC BY-SA 4.0 licence."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@0d53732dfb",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@83a5141fcd"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Pagina Report incentrata sulla giurisdizione dei fornitori",
+    "en": "Report page focused on provider jurisdiction"
+   },
+   "sintesi": {
+    "it": "Le sezioni su dati e metodologia della pagina Report sono state riformulate intorno alla giurisdizione dei fornitori (sovranità giuridica), eliminando il riferimento tecnico alla collocazione dei server di posta (MX). Il testo è così coerente con ciò che l'Osservatorio misura.",
+    "en": "The data and methodology sections of the Report page have been reworded around provider jurisdiction (legal sovereignty), removing the technical reference to mail server (MX) placement. The text is thus consistent with what the Observatory measures."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@c98d6a13d6"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-06-15-osservatorio-7",
+   "contesto": "osservatorio",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Guida interna del progetto con regole, convenzioni e roadmap",
+    "en": "Internal project guide with rules, conventions and roadmap"
+   },
+   "sintesi": {
+    "it": "È stata aggiunta una guida interna che fissa le regole del progetto: la sovranità si misura sulla giurisdizione giuridica del fornitore e non sulla collocazione dei server di posta, oltre alle procedure di verifica, di produzione dei PDF e di aggiornamento degli indicatori. Include anche una roadmap ricavata dalle segnalazioni aperte su GitHub per MxMap.",
+    "en": "An internal guide has been added that sets out the project rules: sovereignty is measured by the provider's legal jurisdiction and not by the placement of mail servers, along with the procedures for verification, PDF production and indicator updates. It also includes a roadmap derived from the open issues on GitHub for MxMap."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@7cf10597ec"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

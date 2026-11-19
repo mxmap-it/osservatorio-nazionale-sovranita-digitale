@@ -1,0 +1,141 @@
+{
+ "data": "2026-11-11",
+ "settimana": "2026-W46",
+ "fonte": {
+  "spesa-ict": "c491b59af0983b9c",
+  "osservatorio": "af70ed824f2dacc5",
+  "pvl-at": "ce52976e99257430"
+ },
+ "voci": [
+  {
+   "id": "2026-11-11-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documentata l'Anagrafe unica delle stazioni appaltanti (AUSA) e il suo uso nell'analisi",
+    "en": "Documented the Single Registry of Contracting Authorities (AUSA) and how the analysis uses it"
+   },
+   "sintesi": {
+    "it": "Aggiunta una nota sull'AUSA, l'anagrafe prevista dall'art. 33-ter del D.L. 179/2012 a cui le amministrazioni devono iscriversi per ottenere un CIG. La nota descrive i campi utilizzati (indirizzo, indicatori di società in house o partecipata) e una verifica fatta l'11/11/2026, che conta 48.040 codici fiscali con aggiornamento al 3/11.",
+    "en": "Added a note on AUSA, the registry established by Art. 33-ter of Decree-Law 179/2012, in which public bodies must enrol to obtain a CIG (tender identification code). The note describes the fields used (address, flags for in-house or state-participated companies) and a check carried out on 11/11/2026, which counted 48,040 tax codes with data updated to 3/11."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@86f0dcec99"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#75"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-11-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Presentazione per SFSCon 2026: slide e PDF aggiornati al rilevamento del 9 novembre",
+    "en": "SFSCon 2026 presentation: slides and PDF updated to the 9 November survey"
+   },
+   "sintesi": {
+    "it": "È pronta la presentazione per SFSCon 2026, derivata da quella di RomHack, che resta invariata. Usa i numeri del rilevamento del 9 novembre e aggiunge una sezione sull'analisi della spesa ICT e una slide sull'Europe-China Digital Commons Observatory. Il deck finale conta 42 slide ed è disponibile anche in PDF di 42 pagine.",
+    "en": "The presentation for SFSCon 2026 is ready. It is derived from the RomHack deck, which remains unchanged. It uses the figures from the 9 November survey and adds a section on the ICT spending analysis and a slide on the Europe-China Digital Commons Observatory. The final deck has 42 slides and is also available as a 42-page PDF."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@22676f5487",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@2f06dd13d6"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/pdf/sfscon-2026-mxmap-italia.pdf",
+    "https://osservatorio.mxmap.it/slide/sfscon-2026-mxmap-italia.pptx",
+    "https://eu-china-commons.eu/"
+   ]
+  },
+  {
+   "id": "2026-11-11-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Perimetro di analisi riconciliato con IndicePA: 23.770 enti e decisioni sul perimetro",
+    "en": "Analysis perimeter reconciled with IndicePA: 23,770 entities and perimeter decisions"
+   },
+   "sintesi": {
+    "it": "Prima dell'analisi completa, l'elenco degli enti è stato riconciliato con IndicePA tramite il codice fiscale, registrando per ogni esclusione la causa: il perimetro risultante è di 23.770 enti. Fabio ha fissato le regole di perimetro: ricostruire i dati degli enti che mancano da IndicePA, includere le società partecipate soggette agli stessi obblighi e gli enti in liquidazione, e tenere traccia dei cambi di sito.",
+    "en": "Before the full analysis, the list of entities was reconciled with IndicePA using the fiscal code, recording the reason for each exclusion: the resulting perimeter is 23,770 entities. Fabio set the perimeter rules: rebuild the data for entities missing from IndicePA, include publicly held companies subject to the same obligations as well as entities in liquidation, and track website changes."
+   },
+   "commit": [],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-11-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Avviata la ricostruzione dei 6.933 enti assenti da IndicePA",
+    "en": "Rebuilding the 6,933 entities missing from IndicePA has started"
+   },
+   "sintesi": {
+    "it": "È stata creata una base dati per i 6.933 enti fuori da IndicePA, con 38.847 informazioni raccolte, storico e registro delle variazioni. I siti web vengono individuati combinando più modelli linguistici e più motori di ricerca, poi confermati da una verifica diretta: su un primo campione di 20 enti i riscontri sono 9, e la verifica è in corso sull'intera coda. L'incrocio con l'anagrafe delle stazioni appaltanti (AUSA) copre 6.448 enti su 6.933 e aggiunge indirizzi e stato; i dati sono provvisori.",
+    "en": "A database has been created for the 6,933 entities outside IndicePA, with 38,847 data points collected, history and a change log. Websites are identified by combining several language models and several search engines, then confirmed by direct checking: on a first sample of 20 entities there were 9 matches, and checking is under way across the whole queue. Cross-referencing with the register of contracting authorities (AUSA) covers 6,448 of 6,933 entities and adds addresses and status; the data are provisional."
+   },
+   "commit": [],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-11-pvl-at-3",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Società a controllo pubblico: 779 incluse nel perimetro, con doppia validazione",
+    "en": "Publicly controlled companies: 779 added to the perimeter, with double validation"
+   },
+   "sintesi": {
+    "it": "Sulla base dell'art. 2-bis del d.lgs. 33/2013, del Testo unico sulle società partecipate e della delibera ANAC 1134/2017, le società sono state classificate con il censimento MEF 2023 delle partecipazioni: su 879 corrispondenze, 779 a controllo pubblico, 95 a partecipazione minoritaria e 5 quotate. Fabio ha approvato l'inclusione delle 779 a condizione di una seconda verifica indipendente sui loro siti (sezione «Società trasparente», riferimenti al d.lgs. 33/2013 o al socio pubblico); il controllo è considerato confermato solo se MEF e sito concordano.",
+    "en": "Based on Art. 2-bis of Legislative Decree 33/2013, the Consolidated Act on publicly held companies and ANAC resolution 1134/2017, companies were classified using the 2023 MEF census of public shareholdings: out of 879 matches, 779 are publicly controlled, 95 are minority holdings and 5 are listed. Fabio approved including the 779 on condition of a second, independent check of their websites (a «Società trasparente» section, references to Legislative Decree 33/2013 or to the public shareholder); control is considered confirmed only when MEF and the website agree."
+   },
+   "commit": [],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-11-pvl-at-4",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Siti irraggiungibili: nuovo controllo dei 215 errori per riconoscere i blocchi selettivi",
+    "en": "Unreachable sites: re-checking the 215 errors to identify selective blocking"
+   },
+   "sintesi": {
+    "it": "I 215 siti che hanno restituito errore vengono ricontrollati da una rete diversa: se un sito risponde normalmente ma blocca le richieste provenienti dai datacenter, viene classificato come tale invece che come inaccessibile. Il controllo è in corso.",
+    "en": "The 215 sites that returned an error are being re-checked from a different network: if a site responds normally but blocks requests coming from datacenters, it is classified as such rather than as inaccessible. The check is in progress."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22924,
+  "copertura": 94.32,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.5,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
+}

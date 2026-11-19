@@ -1,0 +1,43 @@
+{
+ "data": "2026-07-08",
+ "settimana": "2026-W28",
+ "fonte": {
+  "osservatorio": "0c8b5f1790130ec5"
+ },
+ "voci": [
+  {
+   "id": "2026-07-08-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Sito e PDF: la dichiarazione di Microsoft France al Senato francese sul CLOUD Act",
+    "en": "Site and PDFs: Microsoft France's statement to the French Senate on the CLOUD Act"
+   },
+   "sintesi": {
+    "it": "Il sito riporta ora la dichiarazione testuale «non posso garantirlo» resa dal direttore affari pubblici e legali di Microsoft France nell'audizione al Senato francese del 10 giugno 2025, sull'accesso delle autorità statunitensi ai dati europei. Compare in un banner fisso su ogni pagina, in un riquadro e nella tabella del quadro normativo della pagina per i decisori, e in una nuova FAQ: «Un fornitore statunitense può rifiutarsi di consegnare dati europei al governo USA?». Lo stesso riquadro, con le fonti (senat.fr e heise), è stato aggiunto in italiano e in inglese a Policy Brief, Technical Brief (che passa da 6 a 7 pagine) e Report, accanto alla parte sul CLOUD Act e sulla giurisdizione.",
+    "en": "The site now carries the verbatim statement \"I cannot guarantee it\", made by Microsoft France's Director of Public and Legal Affairs at the French Senate hearing of 10 June 2025, on US authorities' access to European data. It appears in a fixed banner on every page, in a callout and in the regulatory-framework table on the decision-makers page, and in a new FAQ: \"Can a US provider refuse to hand European data to the US government?\". The same callout, with its sources (senat.fr and heise), has been added in Italian and English to the Policy Brief, the Technical Brief (which grows from 6 to 7 pages) and the Report, next to the section on the CLOUD Act and jurisdiction."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@9ae171bd31",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f5dd6eb47b"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/",
+    "https://osservatorio.mxmap.it/pdf/policy-brief-sovranita-digitale-pa.pdf",
+    "https://osservatorio.mxmap.it/pdf/technical-brief-sovranita-digitale-pa.pdf"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22878,
+  "copertura": 97.28,
+  "extra_eu": 46.7,
+  "eu_non_it": 0.5,
+  "it": 50.0,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

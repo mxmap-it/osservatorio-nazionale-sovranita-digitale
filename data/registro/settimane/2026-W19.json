@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W19",
+ "dal": "2026-05-04",
+ "al": "2026-05-10",
+ "fonte": "1248b417e6955522",
+ "titolo": {
+  "it": "MxMap.it si estende a tutta IndicePA e corregge le attribuzioni errate dei server di posta",
+  "en": "MxMap.it extends to all of IndicePA and corrects misattributed mail servers"
+ },
+ "sintesi": {
+  "it": "La scansione della posta elettronica pubblica non riguarda più solo gli enti territoriali, ma tutte le categorie di IndicePA, circa 23.000 enti: 22.988 sono mappati (97,06%) e il metodo di inclusione è documentato in un riepilogo di trasparenza. Sono stati pubblicati un dataset scaricabile per ente in CSV, XLSX e JSON e una nuova sezione sulle scuole statali, l'78,6% delle quali usa fornitori statunitensi secondo il primo calcolo. Nella seconda parte della settimana un audit ha individuato attribuzioni errate dei server di posta ricavate dalle homepage: con un controllo più prudente i dati sono stati rigenerati, recuperando 11.958 enti tramite le fonti IndicePA ed eliminando 1.627 attribuzioni errate, con tabelle pubblicate per la verifica.",
+  "en": "The scan of public-sector email no longer covers only territorial bodies but all IndicePA categories, about 23,000 entities: 22,988 are mapped (97.06%) and the inclusion method is documented in a transparency summary. A downloadable per-entity dataset in CSV, XLSX and JSON was published, together with a new section on state schools, 78.6% of which use US providers according to the first calculation. In the second half of the week an audit identified mail servers wrongly attributed on the basis of homepage scraping: with a more cautious check the data were regenerated, recovering 11,958 entities through IndicePA sources and removing 1,627 incorrect attributions, with tables published for verification."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La scansione copre ora tutte le categorie di IndicePA, raggruppate in 15 aree, con 22.988 enti mappati su 23.684 (97,06%), un riepilogo di trasparenza sul metodo di inclusione, un dataset pubblico in CSV, XLSX e JSON e la pagina «Ricerca Ente». Sono state aggiunte la tabella dei 52 enti della PA Centrale e una sezione Scuole con 8.168 scuole statali, il 78,6% su fornitori USA, e la mappa copre ora tutti i 7.888 comuni e tutte le province. Un audit ha individuato 1.112 attribuzioni certamente errate dei server di posta; dopo l'introduzione di un controllo prudente i dati sono stati rigenerati, con 11.958 enti recuperati dai domini non PEC delle aree organizzative di IndicePA e 1.627 attribuzioni errate rimosse.",
+    "en": "The scan now covers all IndicePA categories, grouped into 15 areas, with 22,988 of 23,684 entities mapped (97.06%), a transparency summary of the inclusion method, a public dataset in CSV, XLSX and JSON, and the «Ricerca Ente» (entity search) page. A table of the 52 Central Government bodies was added, along with a Schools section covering 8,168 state schools, 78.6% of them on US providers, and the map now covers all 7,888 municipalities and all provinces. An audit identified 1,112 certainly incorrect mail-server attributions; after a cautious check was introduced the data were regenerated, with 11,958 entities recovered from the non-PEC domains of IndicePA organisational areas and 1,627 incorrect attributions removed."
+   },
+   "voci": [
+    "2026-05-04-mxmap-3",
+    "2026-05-05-mxmap-2",
+    "2026-05-06-mxmap-1",
+    "2026-05-10-mxmap-2"
+   ]
+  }
+ ],
+ "n_voci": 23
+}

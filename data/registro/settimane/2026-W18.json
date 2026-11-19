@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W18",
+ "dal": "2026-04-27",
+ "al": "2026-05-03",
+ "fonte": "0071d81d3ed46c88",
+ "titolo": {
+  "it": "MxMap.it passa all'Italia: prima rilevazione dei fornitori di posta di 7.870 Comuni",
+  "en": "MxMap.it turns to Italy: first survey of email providers for 7,870 municipalities"
+ },
+ "sintesi": {
+  "it": "In questa settimana MxMap è stato adattato all'Italia, con un perimetro limitato a Regioni, Province e Comuni e con IndicePA come elenco di partenza. Dei 7.994 enti territoriali estratti, 7.990 sono stati collegati al proprio confine su OpenStreetMap. La prima rilevazione completa ha classificato 7.870 Comuni: il 25,9% gestisce la posta in proprio, il 18,9% usa Microsoft 365 e il 9,2% Google Workspace. Il sito mxmap.it mostra ora una mappa italiana su tre livelli e distingue i fornitori statunitensi soggetti al CLOUD Act da quelli italiani.",
+  "en": "This week MxMap was adapted to Italy, with a scope limited to Regions, Provinces and Municipalities and with IndicePA as the starting list. Of the 7,994 territorial bodies extracted, 7,990 were linked to their boundary on OpenStreetMap. The first complete survey classified 7,870 Municipalities: 25.9% run their own email, 18.9% use Microsoft 365 and 9.2% use Google Workspace. The mxmap.it site now shows a three-level map of Italy and distinguishes US providers subject to the CLOUD Act from Italian ones."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "È stato fissato il perimetro italiano (Regioni, Province e Comuni, PEC esclusa) e sono stati estratti 7.994 enti da IndicePA, di cui 7.990 (99,95%) collegati ai confini su OpenStreetMap. La classificazione riconosce ora i principali fornitori nazionali e le società ICT pubbliche regionali; la prima rilevazione su 7.870 Comuni ha ridotto i casi non classificati da 81 a 1. Una pipeline riproducibile ricostruisce il dataset da fonti pubbliche e il sito mxmap.it presenta ora la mappa italiana su tre livelli.",
+    "en": "The Italian scope was set (Regions, Provinces and Municipalities, certified email (PEC) excluded) and 7,994 bodies were extracted from IndicePA, of which 7,990 (99.95%) were linked to their boundaries on OpenStreetMap. The classification now recognises the main national providers and the regional public ICT companies; the first survey of 7,870 Municipalities reduced unclassified cases from 81 to 1. A reproducible pipeline rebuilds the dataset from public sources, and the mxmap.it site now presents the three-level map of Italy."
+   },
+   "voci": [
+    "2026-05-02-mxmap-2",
+    "2026-05-03-mxmap-1",
+    "2026-05-03-mxmap-2",
+    "2026-05-03-mxmap-4"
+   ]
+  }
+ ],
+ "n_voci": 8
+}

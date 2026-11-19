@@ -1,0 +1,572 @@
+{
+ "data": "2026-11-06",
+ "settimana": "2026-W45",
+ "fonte": {
+  "spesa-ict": "8dd17ec898382f07",
+  "pvl-at": "42f11c5081e6d51f"
+ },
+ "voci": [
+  {
+   "id": "2026-11-06-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Convenzioni ICT: archivio pubblico di 1.768 documenti con fonte e impronta sha256",
+    "en": "ICT framework agreements: public archive of 1,768 documents with source and sha256 fingerprint"
+   },
+   "sintesi": {
+    "it": "Le copie dei documenti delle convenzioni ICT raccolti finora sono pubblicate in 50 release del repository convenzioni-ict-documenti, con fonte originale, sha256, data di acquisizione e link alla copia; il manifest è rilasciato in CC0. Ogni documento sul sito rimanda ora alla propria copia, così chiunque può verificare che il file non sia cambiato rispetto alla fonte.",
+    "en": "Copies of the ICT framework agreement documents collected so far are published in 50 releases of the convenzioni-ict-documenti repository, with original source, sha256, acquisition date and a link to the copy; the manifest is released under CC0. Each document on the site now links to its own copy, so anyone can check that the file has not changed from the source."
+   },
+   "commit": [
+    "mxmap-it/convenzioni-ict-documenti@d56a13bc14",
+    "mxmap-it/analisi-spesa-ict@336c962ec0",
+    "mxmap-it/analisi-spesa-ict@c186f67f13",
+    "mxmap-it/convenzioni-ict-documenti@62b12e82ad",
+    "mxmap-it/analisi-spesa-ict@a673e51802",
+    "mxmap-it/convenzioni-ict-documenti@de030b8682"
+   ],
+   "n_commit": 6,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Convenzioni ICT: pagine per convenzione con documenti presenti e mancanti",
+    "en": "ICT framework agreements: per-agreement pages with available and missing documents"
+   },
+   "sintesi": {
+    "it": "Ogni convenzione ha ora una pagina che elenca i documenti trovati e quelli attesi ma non reperiti, con un invito a contribuire. L'inventario dei mancanti è stato rivisto a mano (da 886 a 797 righe, poi 757 dopo la ricerca delle pagine ufficiali di 7 iniziative Consip/PSN, con 195 documenti archiviati) e verificato anche sulle piattaforme degli aggregatori regionali e negli atti degli enti aderenti. Il rapporto sulle convenzioni resta in bozza (0.10) e nessuna istanza di accesso civico è stata inviata.",
+    "en": "Each framework agreement now has a page listing the documents found and those expected but not located, with an invitation to contribute. The inventory of missing documents was reviewed by hand (from 886 to 797 rows, then 757 after locating the official pages of 7 Consip/PSN initiatives, with 195 documents archived) and also checked on regional aggregators' platforms and in the records of participating bodies. The report on framework agreements remains a draft (0.10) and no freedom-of-information request has been sent."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@92ca0f1cd5",
+    "mxmap-it/analisi-spesa-ict@9fadb9fe93",
+    "mxmap-it/analisi-spesa-ict@4ffd31db48",
+    "mxmap-it/analisi-spesa-ict@c0c1fe742c",
+    "mxmap-it/analisi-spesa-ict@aefa431f25",
+    "mxmap-it/analisi-spesa-ict@f6071c88ee",
+    "mxmap-it/analisi-spesa-ict@affa0bafa8",
+    "mxmap-it/analisi-spesa-ict@15591e940c",
+    "mxmap-it/analisi-spesa-ict@4d003e103e",
+    "mxmap-it/analisi-spesa-ict@a91541e9ed",
+    "mxmap-it/analisi-spesa-ict@1dc2884fc5",
+    "mxmap-it/analisi-spesa-ict@fa143d53ce",
+    "mxmap-it/analisi-spesa-ict@60e43d244c",
+    "mxmap-it/analisi-spesa-ict@93cb8a7f37",
+    "mxmap-it/analisi-spesa-ict@f263a9ff5b",
+    "mxmap-it/analisi-spesa-ict@8b0a5b7495",
+    "mxmap-it/analisi-spesa-ict@ca3534acf6",
+    "mxmap-it/analisi-spesa-ict@1485300f13",
+    "mxmap-it/analisi-spesa-ict@fd6a868aa2",
+    "mxmap-it/analisi-spesa-ict@bc1c4d986e",
+    "mxmap-it/analisi-spesa-ict@56fa08697b",
+    "mxmap-it/analisi-spesa-ict@24d8a318f8",
+    "mxmap-it/analisi-spesa-ict@931fee9440",
+    "mxmap-it/analisi-spesa-ict@ff53d80f09",
+    "mxmap-it/analisi-spesa-ict@e93827583a",
+    "mxmap-it/analisi-spesa-ict@e8e9af0934"
+   ],
+   "n_commit": 26,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#47",
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Cruscotto di disponibilità dei dati ANAC: 8 metriche su 9 non rispettate al 6/11",
+    "en": "ANAC data availability dashboard: 8 of 9 metrics not met as of 6/11"
+   },
+   "sintesi": {
+    "it": "È online la pagina /enti/anac-cruscotto/, costruita sulle metriche giornaliere I1-I9 e sul registro dei problemi, con i dati anche in formato aperto. Al 6 novembre 8 metriche su 9 risultano non rispettate.",
+    "en": "The /enti/anac-cruscotto/ page is online, built on the daily metrics I1-I9 and the issue register, with the data also available as open data. As of 6 November, 8 of 9 metrics are not met."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@2a04ab93c9",
+    "mxmap-it/analisi-spesa-ict@aba81b5b8f"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#16",
+    "mxmap-it/analisi-spesa-ict#36"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Perimetro ICT per codici CPV misurato e rivisto",
+    "en": "ICT scope by CPV codes measured and revised"
+   },
+   "sintesi": {
+    "it": "L'attendibilità dei codici CPV è stata misurata (lista bianca all'83%/93%, falsi esclusi nello strato S1 all'1%) e confrontata con la letteratura (ECA 28/2023, Ramboll 2012: 405 avvisi, 23% inesatti). Per decisione di Fabio il CPV 79342 esce dal perimetro (solo 3% ICT, 5.706 CIG in S1), il filtro testuale include software e connettività (+3.593 CIG nel residuo, calcolati a parte) e il 3224 è rinviato (79% videosorveglianza).",
+    "en": "The reliability of CPV codes was measured (whitelist at 83%/93%, false exclusions in stratum S1 at 1%) and compared with the literature (ECA 28/2023, Ramboll 2012: 405 notices, 23% inaccurate). By Fabio's decision, CPV 79342 is removed from scope (only 3% ICT, 5,706 CIGs in S1), the text filter now includes software and connectivity (+3,593 CIGs in the residual, calculated separately) and 3224 is postponed (79% video surveillance)."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@a326041bf4",
+    "mxmap-it/analisi-spesa-ict@5e62375dcc",
+    "mxmap-it/analisi-spesa-ict@21c917f8c5"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#44",
+    "mxmap-it/analisi-spesa-ict#46",
+    "mxmap-it/analisi-spesa-ict#50",
+    "mxmap-it/analisi-spesa-ict#52",
+    "mxmap-it/analisi-spesa-ict#59"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Documento per ANAC sulla qualità dei dati: 11 pagine, 17 problemi",
+    "en": "Document for ANAC on data quality: 11 pages, 17 issues"
+   },
+   "sintesi": {
+    "it": "È stato impaginato dal registro dei problemi un documento di 11 pagine A4 destinato ad ANAC, con 17 problemi e un'appendice; il problema dei codici fiscali segnaposto (1.282 «CFAVCP-») è stato controvalidato sull'anagrafica delle stazioni appaltanti. Sono state aggiornate anche le schede sulle date OCDS (0 date conformi da dicembre 2019, 3,59 milioni di release senza data) e sul campo dell'accordo quadro, compilato al 98,6-100% nei contratti discendenti: il 20% rilevato prima era un artefatto.",
+    "en": "An 11-page A4 document for ANAC was typeset from the issue register, with 17 issues and an appendix; the issue of placeholder tax codes (1,282 «CFAVCP-») was cross-validated against the contracting authorities registry. The entries on OCDS dates (0 compliant dates since December 2019, 3.59 million releases without a date) and on the framework agreement field, filled in 98.6-100% of derived contracts, were also updated: the 20% found earlier was an artefact."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@d5f83c9fed",
+    "mxmap-it/analisi-spesa-ict@220137dfb9",
+    "mxmap-it/analisi-spesa-ict@16c2472a6d",
+    "mxmap-it/analisi-spesa-ict@1eb29ff807",
+    "mxmap-it/analisi-spesa-ict@913960bf4f"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#32",
+    "mxmap-it/analisi-spesa-ict#33",
+    "mxmap-it/analisi-spesa-ict#34",
+    "mxmap-it/analisi-spesa-ict#35",
+    "mxmap-it/analisi-spesa-ict#36",
+    "mxmap-it/analisi-spesa-ict#46",
+    "mxmap-it/analisi-spesa-ict#47",
+    "mxmap-it/analisi-spesa-ict#50"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Imbuto di classificazione: rendiconto «dove siamo» in bozza fino alla 0.9",
+    "en": "Classification funnel: «where we are» report in draft up to 0.9"
+   },
+   "sintesi": {
+    "it": "Il rendiconto, non ancora elencato sul sito, raccoglie le verifiche del giorno: tetti contro spesa sui 2.130 CIG oltre 50 M€, impegni PSN contro bilanci, spoglio di 15 decreti PNRR 1.1 (524 M€), 11.043 righe di CIG contati due volte, censimento degli accordi Microsoft (8 atti) e Oracle (5 atti, nessun cloud) e i vincitori TED come seconda fonte degli aggiudicatari. La correzione del conteggio dei CIG ripetuti non è ancora applicata ai numeri; in-house e datacenter propri restano un punto aperto.",
+    "en": "The report, not yet listed on the site, gathers the day's checks: ceilings versus spending on the 2,130 CIGs above €50 M, PSN commitments versus budgets, review of 15 PNRR 1.1 decrees (€524 M), 11,043 rows of double-counted CIGs, a census of Microsoft agreements (8 records) and Oracle (5 records, no cloud), and TED winners as a second source of awardees. The fix for repeated CIG counting is not yet applied to the figures; in-house services and own data centres remain an open point."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@ce658ec466",
+    "mxmap-it/analisi-spesa-ict@cce04aac98",
+    "mxmap-it/analisi-spesa-ict@f758e2edbd",
+    "mxmap-it/analisi-spesa-ict@173954a91e",
+    "mxmap-it/analisi-spesa-ict@f040dff51d",
+    "mxmap-it/analisi-spesa-ict@e63f2baa14",
+    "mxmap-it/analisi-spesa-ict@682e272061",
+    "mxmap-it/analisi-spesa-ict@b7a47e46ba",
+    "mxmap-it/analisi-spesa-ict@09059fccd7",
+    "mxmap-it/analisi-spesa-ict@f51fa341c0",
+    "mxmap-it/analisi-spesa-ict@561f124ad3",
+    "mxmap-it/analisi-spesa-ict@f0bb458e59",
+    "mxmap-it/analisi-spesa-ict@b67aededbd",
+    "mxmap-it/analisi-spesa-ict@f89d1d592d",
+    "mxmap-it/analisi-spesa-ict@d0a89e2547",
+    "mxmap-it/analisi-spesa-ict@26a8a76b53",
+    "mxmap-it/analisi-spesa-ict@a2968ac2af",
+    "mxmap-it/analisi-spesa-ict@9238ba353a",
+    "mxmap-it/analisi-spesa-ict@fc3d9de06d",
+    "mxmap-it/analisi-spesa-ict@185500b04c",
+    "mxmap-it/analisi-spesa-ict@77bbb3562f",
+    "mxmap-it/analisi-spesa-ict@ec7e291802",
+    "mxmap-it/analisi-spesa-ict@ae804a5553",
+    "mxmap-it/analisi-spesa-ict@f50da9f0de"
+   ],
+   "n_commit": 24,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#52",
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#57",
+    "mxmap-it/analisi-spesa-ict#59",
+    "mxmap-it/analisi-spesa-ict#60",
+    "mxmap-it/analisi-spesa-ict#66"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-06-spesa-ict-7",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Classificazione del residuo con modello linguistico: prompt portabile e confronto fra modelli",
+    "en": "Classifying the residual with a language model: portable prompt and model comparison"
+   },
+   "sintesi": {
+    "it": "La «via 6» classifica i CIG rimasti nel residuo su due assi con stato, con verifica a regole e guardia di budget; un prompt portabile permette di riprodurre il lavoro con altri modelli (pilota di concordanza su 12 CIG, riproduzione automatica su 50). Primo parziale: 28 CIG del gruppo G1 (196 in totale) e 10 del G3; per decisione di Fabio la lavorazione prosegue fino al termine, i risultati sono in corso.",
+    "en": "«Route 6» classifies the CIGs left in the residual on two axes with status, with rule-based checks and a budget guard; a portable prompt allows the work to be reproduced with other models (concordance pilot on 12 CIGs, automatic reproduction on 50). First partial result: 28 CIGs of group G1 (196 in total) and 10 of G3; by Fabio's decision processing continues to completion, results are in progress."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@dee4a3c6c0",
+    "mxmap-it/analisi-spesa-ict@04949fc1c8",
+    "mxmap-it/analisi-spesa-ict@536d9d214a",
+    "mxmap-it/analisi-spesa-ict@4cf5b68848"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55",
+    "mxmap-it/analisi-spesa-ict#66"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-8",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Residuo S6: ricerca dei CIG su piattaforme e Amministrazione Trasparente, 735 trovati",
+    "en": "Residual S6: searching CIGs on platforms and Transparent Administration, 735 found"
+   },
+   "sintesi": {
+    "it": "Per i CIG non coperti dalla via 6 è stata avviata una catena di acquisizione ripartibile: piattaforme e-procurement, vetrina pubblica MePA da anonimo e sezioni Bandi di gara degli enti, con pause per host e registro dei blocchi. Le pagine di Amministrazione Trasparente vengono visitate anche se escluse da robots.txt, in orari di poco carico e con il robots.txt archiviato come evidenza. Il livello L4 ha trovato finora 735 CIG; le misure sono parziali.",
+    "en": "For CIGs not covered by route 6, a restartable acquisition chain was started: e-procurement platforms, the public MePA storefront accessed anonymously, and the tender sections of public bodies, with per-host pauses and a log of blocks. Transparent Administration pages are visited even when excluded by robots.txt, at low-load hours and with the robots.txt archived as evidence. Level L4 has found 735 CIGs so far; measurements are partial."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@536144e5dd",
+    "mxmap-it/analisi-spesa-ict@6ad95778f7",
+    "mxmap-it/analisi-spesa-ict@f9ef26066b",
+    "mxmap-it/analisi-spesa-ict@7e2ebeb04d",
+    "mxmap-it/analisi-spesa-ict@560c36b7d7",
+    "mxmap-it/analisi-spesa-ict@2bc1894e1f",
+    "mxmap-it/analisi-spesa-ict@9c272fc732",
+    "mxmap-it/analisi-spesa-ict@7a90bb399d",
+    "mxmap-it/analisi-spesa-ict@fb3238eb40",
+    "mxmap-it/analisi-spesa-ict@e88bcfb4f1",
+    "mxmap-it/analisi-spesa-ict@1be6894752",
+    "mxmap-it/analisi-spesa-ict@932ddc878e",
+    "mxmap-it/analisi-spesa-ict@cc3d5634c7",
+    "mxmap-it/analisi-spesa-ict@6ae8297aa8",
+    "mxmap-it/analisi-spesa-ict@105531b3be",
+    "mxmap-it/analisi-spesa-ict@16280c18d9",
+    "mxmap-it/analisi-spesa-ict@dcf1c6806b",
+    "mxmap-it/analisi-spesa-ict@ef773cfa67",
+    "mxmap-it/analisi-spesa-ict@00c046ca49"
+   ],
+   "n_commit": 19,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#57"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-9",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Obiettivo 6: lente per prodotto, rivenditori esteri e big tech nel PNRR (bozze 0.1-0.5)",
+    "en": "Objective 6: product lens, foreign resellers and big tech in the PNRR (drafts 0.1-0.5)"
+   },
+   "sintesi": {
+    "it": "L'analisi su prodotti e rivenditori è avanzata con tre campioni a cieco per tarare le regole, codice fiscale e nazionalità dei rivenditori, ripartizione dei raggruppamenti di imprese e flag PNRR/PNC (1.064 CIG senza flag). L'accesso al catalogo ACN è risultato bloccato; il lavoro è in bozza.",
+    "en": "The analysis of products and resellers advanced with three blind samples to calibrate the rules, resellers' tax codes and nationality, apportionment of temporary business groupings and PNRR/PNC flags (1,064 CIGs without a flag). Access to the ACN catalogue was blocked; the work is in draft."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@ed7fc840a3",
+    "mxmap-it/analisi-spesa-ict@d5fb8a4ae3",
+    "mxmap-it/analisi-spesa-ict@b49b6d7138",
+    "mxmap-it/analisi-spesa-ict@8b11589f58",
+    "mxmap-it/analisi-spesa-ict@b3462be430"
+   ],
+   "n_commit": 5,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#11",
+    "mxmap-it/analisi-spesa-ict#12",
+    "mxmap-it/analisi-spesa-ict#13",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#26",
+    "mxmap-it/analisi-spesa-ict#27",
+    "mxmap-it/analisi-spesa-ict#28",
+    "mxmap-it/analisi-spesa-ict#29",
+    "mxmap-it/analisi-spesa-ict#40",
+    "mxmap-it/analisi-spesa-ict#41",
+    "mxmap-it/analisi-spesa-ict#43",
+    "mxmap-it/analisi-spesa-ict#45"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-10",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Copie locali di nuove fonti pubbliche e bozze sul mirror ANAC",
+    "en": "Local copies of new public sources and drafts on the ANAC mirror"
+   },
+   "sintesi": {
+    "it": "Sono state acquisite copie di Consip, TED, FTS, SIOPE, IndicePA, BDAP (metadati di 3.684 dataset), OpenCUP, CPT e altre fonti; i mirror sono ora sospesi per lo spazio disco. Per il mirror pubblico dei dati ANAC sono pronte un indice per risorsa e pagine in bozza non elencate; la scelta dell'hosting spetta a Fabio.",
+    "en": "Copies of Consip, TED, FTS, SIOPE, IndicePA, BDAP (metadata of 3,684 datasets), OpenCUP, CPT and other sources were acquired; the mirrors are now paused due to disk space. For the public mirror of ANAC data, a per-resource index and unlisted draft pages are ready; the hosting choice is up to Fabio."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@32a34a1fed",
+    "mxmap-it/analisi-spesa-ict@c400cbea9e",
+    "mxmap-it/analisi-spesa-ict@a0a44caf4a",
+    "mxmap-it/analisi-spesa-ict@281ab518fc"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#9",
+    "mxmap-it/analisi-spesa-ict#11",
+    "mxmap-it/analisi-spesa-ict#17",
+    "mxmap-it/analisi-spesa-ict#25",
+    "mxmap-it/analisi-spesa-ict#26",
+    "mxmap-it/analisi-spesa-ict#27",
+    "mxmap-it/analisi-spesa-ict#29",
+    "mxmap-it/analisi-spesa-ict#66"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-11",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Nomi dei RUP: richiesta ad ANAC annullata, raccolta da web e atti",
+    "en": "Procurement officers' names: request to ANAC cancelled, collection from web and records"
+   },
+   "sintesi": {
+    "it": "Era stata preparata un'istanza di accesso civico ad ANAC sui responsabili delle procedure, limitata ai CIG da notificare. Per decisione di Fabio del 7/11 l'istanza è annullata e i dati saranno raccolti dal web o dagli atti.",
+    "en": "A freedom-of-information request to ANAC on procedure officers, limited to the CIGs to be notified, had been prepared. By Fabio's decision of 7/11 the request is cancelled and the data will be collected from the web or from the records."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@abe11c802a",
+    "mxmap-it/analisi-spesa-ict@e30c4a050b",
+    "mxmap-it/analisi-spesa-ict@e861e1b8db"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#65"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-12",
+   "contesto": "spesa-ict",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Sito leggibile su mobile senza scorrimento orizzontale",
+    "en": "Site readable on mobile without horizontal scrolling"
+   },
+   "sintesi": {
+    "it": "Corretti il margine laterale dei contenitori e l'a capo degli identificatori lunghi, che facevano uscire le pagine dallo schermo dei telefoni.",
+    "en": "Fixed the side padding of containers and line wrapping of long identifiers, which made pages overflow phone screens."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@03481bcfc2",
+    "mxmap-it/analisi-spesa-ict@d7f9c6c51c"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-spesa-ict-13",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Server riallineato e sincronizzazione che segnala gli errori",
+    "en": "Server realigned and synchronisation that reports errors"
+   },
+   "sintesi": {
+    "it": "La copia del lavoro sul server si era disallineata; è stata riallineata con backup e ora la sincronizzazione segnala gli errori invece di divergere in silenzio, con file CSV in formato di riga uniforme.",
+    "en": "The working copy on the server had drifted; it was realigned with a backup, and synchronisation now reports errors instead of silently diverging, with CSV files using a uniform line format."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1e558aed2f",
+    "mxmap-it/analisi-spesa-ict@749d22c1a3"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-3",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Amministrazione trasparente: pilota su 223 enti, 87 conformi e 23 non indicizzabili (provvisori)",
+    "en": "Transparent Administration: pilot on 223 bodies, 87 compliant and 23 not indexable (provisional)"
+   },
+   "sintesi": {
+    "it": "Il nuovo metodo di mappatura delle sezioni «Amministrazione trasparente» (at-map) è stato provato sui 223 enti della beta: concorda sul nucleo e corregge due errori sistematici della beta (10 e 16 enti); nel 29% dei casi (65) il riferimento comunicato ad ANAC ai sensi della L. 190 risulta superato. Per decisione di Fabio, basta una sola sezione attiva non indicizzabile dai motori di ricerca perché l'ente sia classificato non conforme all'art. 9: con questa regola il pilota conta 87 enti conformi e 23 non conformi, dati provvisori da confermare prima di qualsiasi uso esterno. Il giro completo su circa 30.700 enti è stimato in 1-2 giorni.",
+    "en": "The new mapping method for «Transparent Administration» sections (at-map) was tested on the 223 bodies of the beta: it agrees on the core and corrects two systematic errors in the beta (10 and 16 bodies); in 29% of cases (65) the reference submitted to ANAC under Law 190 is outdated. By Fabio's decision, a single active section that search engines cannot index is enough to classify the body as non-compliant with art. 9: under this rule the pilot counts 87 compliant and 23 non-compliant bodies, provisional figures to be confirmed before any external use. The full run on about 30,700 bodies is estimated at 1-2 days."
+   },
+   "commit": [],
+   "n_commit": 12,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-5",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Siti irraggiungibili: il 55% dei casi esaminati blocca solo le reti da datacenter",
+    "en": "Unreachable sites: 55% of examined cases block only datacenter networks"
+   },
+   "sintesi": {
+    "it": "I 135 casi che risultavano bloccati o irraggiungibili dal server sono stati verificati da una connessione domestica: 74 (55%) sono blocchi rivolti solo alle reti da datacenter, 41 sono irraggiungibili per tutti e 20 bloccati per tutti. Una seconda misura indipendente concorda su 132 casi su 135; emerge anche un nuovo difetto di pubblicazione, la catena di certificati TLS incompleta.",
+    "en": "The 135 cases that appeared blocked or unreachable from the server were checked from a home connection: 74 (55%) are blocks aimed only at datacenter networks, 41 are unreachable for everyone and 20 blocked for everyone. A second independent measurement agrees on 132 out of 135 cases; a new publication defect also emerged, the incomplete TLS certificate chain."
+   },
+   "commit": [],
+   "n_commit": 12,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-6",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Indicizzazione effettiva: sezioni su trasparenza-pa.net visibili su Google, non su Bing",
+    "en": "Actual indexing: sections on trasparenza-pa.net visible on Google, not on Bing"
+   },
+   "sintesi": {
+    "it": "Su un campione di 300 coppie ente-sito, ricavate dai link PVL (20.635 coppie per 15.091 enti), sono state trovate 222 sezioni attive. Per le sezioni ospitate su trasparenza-pa.net, il robots.txt ammette Googlebot ma esclude gli altri motori; una prima verifica dell'indice conferma che risultano visibili su Google e assenti su Bing e DuckDuckGo. Il caso va confermato sul giro completo.",
+    "en": "In a sample of 300 body-site pairs, drawn from PVL links (20,635 pairs for 15,091 bodies), 222 live sections were found. For sections hosted on trasparenza-pa.net, robots.txt allows Googlebot but excludes other engines; a first index check confirms they are visible on Google and absent from Bing and DuckDuckGo. The case is to be confirmed in the full run."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "PVL livello 1: misure di rete con OONI e avvio del giro mensile di novembre",
+    "en": "PVL level 1: network measurements with OONI and start of the November run"
+   },
+   "sintesi": {
+    "it": "Definita in bozza la metodologia di verifica dei siti (probe-0.1) e adottato OONI, strumento aperto di misura della rete, con la sua classificazione standard degli errori, per spiegare ogni esito di accesso non diretto. Le misure sono regolate da un ritmo per sito anziché da un tetto giornaliero. È partito il giro completo di livello 1 di novembre (2026-11-pvl).",
+    "en": "A draft site-verification methodology (probe-0.1) was defined, and OONI, an open network measurement tool, was adopted with its standard error classification to explain every access outcome that is not direct. Measurements are governed by a per-site pace rather than a daily cap. The full November level 1 run (2026-11-pvl) has started."
+   },
+   "commit": [],
+   "n_commit": 14,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Responsabile unico del procedimento: fonti definite per i soli CIG da notificare",
+    "en": "Single procedure manager (RUP): sources defined for notifiable CIGs only"
+   },
+   "sintesi": {
+    "it": "Si è verificato che il nome del RUP non è ricavabile dagli open data della Banca dati nazionale dei contratti pubblici (BDNCP). Il RUP sarà quindi ricercato solo per i CIG da notificare, con due metodi: la consultazione web e l'estrazione dagli atti, per cui è stato realizzato un prototipo che segnala i casi incerti.",
+    "en": "It was verified that the RUP's name cannot be obtained from the open data of the National Public Contracts Database (BDNCP). The RUP will therefore be looked up only for the CIGs to be notified, using two methods: web consultation and extraction from official documents, for which a prototype that flags uncertain cases has been built."
+   },
+   "commit": [],
+   "n_commit": 7,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-4",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Enti senza sezione trovata: 12 falsi negativi corretti, nuove difformità misurate",
+    "en": "Bodies with no section found: 12 false negatives corrected, new irregularities measured"
+   },
+   "sintesi": {
+    "it": "I casi senza sezione trovata sono stati riesaminati con un browser vero: 12 falsi negativi sono stati corretti e 51 casi classificati per causa (fra cui 14 senza sito in ingresso, 13 domini inesistenti e 10 home attive senza link). Dei 14 enti senza home, 13 risultano cessati in IndicePA e 1 senza sito. Su indicazione di Fabio, i problemi di rilevamento diventano difformità da misurare, come il link alla sezione costituito solo da un'immagine o un'etichetta diversa da quelle prescritte.",
+    "en": "Cases with no section found were re-examined with a real browser: 12 false negatives were corrected and 51 cases classified by cause (including 14 with no input site, 13 non-existent domains and 10 live home pages without a link). Of the 14 bodies without a home page, 13 are listed as ceased in IndicePA and 1 has no website. At Fabio's direction, detection problems become irregularities to be measured, such as a link to the section consisting only of an image or a label differing from the prescribed ones."
+   },
+   "commit": [],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-06-pvl-at-7",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Prova esplorativa: raggiungibilità delle sezioni dagli assistenti AI",
+    "en": "Exploratory test: reachability of sections by AI assistants"
+   },
+   "sintesi": {
+    "it": "Su idea di Fabio si sta sperimentando una tecnica che verifica se gli assistenti AI riescono a leggere una sezione su richiesta. La prima prova riguarda solo 3 sezioni e dà esiti diversi fra fornitori. Le regole fissate sono poche verifiche per seduta e due conferme in giorni diversi.",
+    "en": "Following an idea of Fabio's, a technique is being tested to check whether AI assistants can read a section on request. The first test covers only 3 sections and gives different results across providers. The rules set are few checks per session and two confirmations on different days."
+   },
+   "commit": [],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22922,
+  "copertura": 97.28,
+  "extra_eu": 47.3,
+  "eu_non_it": 0.5,
+  "it": 49.5,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

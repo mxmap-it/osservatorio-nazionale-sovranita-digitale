@@ -1,0 +1,73 @@
+{
+ "data": "2026-05-11",
+ "settimana": "2026-W20",
+ "fonte": {
+  "mxmap": "55d965a453a811c4"
+ },
+ "voci": [
+  {
+   "id": "2026-05-11-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Ogni ente indica ora come è stato individuato il suo server di posta, con nuova pagina di metodo",
+    "en": "Each body now shows how its mail server was identified, with a new methodology page"
+   },
+   "sintesi": {
+    "it": "Per ogni ente il dataset registra il metodo con cui è stato trovato il record MX della posta, scelto fra 14 categorie, e la prova a supporto. Una nuova pagina di metodologia in italiano spiega ciascun metodo, le regole di validazione e le statistiche per metodo. Sulla mappa, la scheda di ogni ente mostra il metodo e rimanda alla pagina. I dati esistenti sono stati completati a ritroso a partire dalle informazioni di controllo già presenti. In questo modo chiunque può verificare da dove proviene ciascuna classificazione.",
+    "en": "For each body, the dataset records the method used to find its mail MX record, chosen from 14 categories, together with the supporting evidence. A new Italian-language methodology page explains each method, the validation rules and the statistics per method. On the map, each body's detail card shows the method and links to the page. Existing data was backfilled from the audit information already available. This lets anyone check where each classification comes from."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@4d1cffa06c",
+    "mxmap-it/mxmap.it@c68e1effed"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-11-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Tracciamento del metodo di individuazione integrato in tutte le fasi della scansione",
+    "en": "Discovery-method tracking built into every stage of the scan"
+   },
+   "sintesi": {
+    "it": "Ogni fase della pipeline che assegna un server di posta a un ente ora registra direttamente il metodo e la prova. Le scansioni future non avranno quindi bisogno di completare i dati a ritroso. Lo script di completamento resta disponibile come rete di sicurezza per i dati più vecchi.",
+    "en": "Every pipeline stage that assigns a mail server to a body now records the method and the evidence directly. Future scans will therefore not need to backfill the data. The backfill script remains available as a safety net for older data."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d3bfb8c4d1"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-11-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Simulazioni diagnostiche sui criteri di accettazione dei domini di ripiego",
+    "en": "Diagnostic simulations of acceptance criteria for fallback domains"
+   },
+   "sintesi": {
+    "it": "Due simulazioni interne hanno valutato come cambierebbero i risultati applicando un controllo di legittimità ai domini ricavati da indirizzi email non PEC, e un confronto per somiglianza dei nomi su due gruppi di casi oggi scartati. Sono verifiche esplorative e non modificano i dati pubblicati.",
+    "en": "Two internal simulations assessed how the results would change if a legitimacy check were applied to domains taken from non-PEC email addresses, and if a name-similarity comparison were run on two groups of currently rejected cases. These are exploratory checks and do not change the published data."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@2a99362737",
+    "mxmap-it/mxmap.it@7247936b33"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

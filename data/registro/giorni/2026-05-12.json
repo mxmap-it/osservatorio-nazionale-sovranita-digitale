@@ -1,0 +1,105 @@
+{
+ "data": "2026-05-12",
+ "settimana": "2026-W20",
+ "fonte": {
+  "mxmap": "54a99a1a95ab449c"
+ },
+ "voci": [
+  {
+   "id": "2026-05-12-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Criteri più rigorosi per l'uso degli indirizzi email non PEC degli enti",
+    "en": "Stricter criteria for using public bodies' non-PEC email addresses"
+   },
+   "sintesi": {
+    "it": "Il dominio email non PEC di un ente viene ora usato solo se corrisponde al nome dell'ente; in una simulazione lo hanno superato 67 enti su 236 (28,4%), mentre gli altri 169 (71,6%) sono classificati come sconosciuti. Prima questi casi causavano attribuzioni errate, ad esempio a caselle personali o a domini di altri enti. Il validatore accetta ora anche i domini che differiscono dal nome per un solo carattere (per esempio consorfarm/consofarm), se le parole sono di almeno 6 lettere.",
+    "en": "A public body's non-PEC email domain is now used only if it matches the body's name; in a simulation, 67 of 236 bodies (28.4%) passed this check, while the other 169 (71.6%) are classified as unknown. Previously these cases led to wrong attributions, for example to personal mailboxes or to other bodies' domains. The validator now also accepts domains that differ from the name by a single character (e.g. consorfarm/consofarm), provided the words are at least 6 letters long."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@71774d4530",
+    "mxmap-it/mxmap.it@40ac23c730",
+    "mxmap-it/mxmap.it@f1892c9eb6"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-05-12-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Nuova regola 6.6 per i domini composti: recuperati 13 ACI provinciali e altri 7 enti",
+    "en": "New rule 6.6 for compound domains: 13 provincial ACI offices and 7 other bodies recovered"
+   },
+   "sintesi": {
+    "it": "La nuova regola 6.6 riconosce i domini email formati unendo più parti del nome del sito istituzionale (per esempio arezzo.aci.it → aciarezzo.it). La regola è descritta nella pagina di metodologia. Con la regola sono stati recuperati 10 ACI provinciali e altri 7 enti; per ACI Ravenna, Trapani e Taranto, il cui dominio istituzionale non ha un server di posta, sono state aggiunte correzioni manuali.",
+    "en": "The new rule 6.6 recognises email domains formed by joining several parts of the institutional website's name (e.g. arezzo.aci.it → aciarezzo.it). The rule is described on the methodology page. The rule recovered 10 provincial ACI offices and 7 other bodies; manual corrections were added for ACI Ravenna, Trapani and Taranto, whose institutional domain has no mail server."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@24618504da",
+    "mxmap-it/mxmap.it@be40b85895",
+    "mxmap-it/mxmap.it@b143ce3c4a",
+    "mxmap-it/mxmap.it@db779ee648",
+    "mxmap-it/mxmap.it@288c59a4e4",
+    "mxmap-it/mxmap.it@30a9abd9a5"
+   ],
+   "n_commit": 6,
+   "issue": [],
+   "link": [
+    "http://www.acravenna.it/"
+   ]
+  },
+  {
+   "id": "2026-05-12-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": true,
+   "titolo": {
+    "it": "Ripristinata la mappa delle scuole e corretta la classificazione di 898 scuole MIM",
+    "en": "School map restored and 898 MIM schools correctly classified"
+   },
+   "sintesi": {
+    "it": "È stato corretto un errore che impediva l'aggiornamento della mappa delle scuole: ora contiene di nuovo 8.404 punti. Le 898 scuole la cui posta passa dall'infrastruttura del Ministero dell'Istruzione e del Merito (MIM), verificata tramite firma DKIM, sono ora classificate correttamente e non vengono più rimosse durante la pulizia dei dati.",
+    "en": "A bug that prevented the school map from updating has been fixed: it again shows 8,404 points. The 898 schools whose email goes through the infrastructure of the Ministry of Education and Merit (MIM), verified via DKIM signature, are now correctly classified and are no longer removed during data cleanup."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@599e9fff9d",
+    "mxmap-it/mxmap.it@b905f8754f",
+    "mxmap-it/mxmap.it@3966dcc784",
+    "mxmap-it/mxmap.it@e65b95fc4a"
+   ],
+   "n_commit": 4,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-12-mxmap-4",
+   "contesto": "mxmap",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "Strumenti di diagnosi per gli enti con fornitore ancora sconosciuto",
+    "en": "Diagnostic tools for bodies whose provider is still unknown"
+   },
+   "sintesi": {
+    "it": "È stato prodotto un elenco di 350 enti con fornitore sconosciuto che hanno un dominio di partenza o un indirizzo email non PEC. È stato anche creato uno strumento che raggruppa in categorie i 627 enti ancora non classificati, per guidare le prossime correzioni.",
+    "en": "A list was produced of 350 bodies with an unknown provider that have a starting domain or a non-PEC email address. A tool was also created that groups the 627 still-unclassified bodies into categories, to guide the next corrections."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@10b6401fe7",
+    "mxmap-it/mxmap.it@87b07489c2",
+    "mxmap-it/mxmap.it@9a8cb89f7e"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": []
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "data": "2026-11-02",
+ "settimana": "2026-W45",
+ "fonte": {
+  "spesa-ict": "2d0e1b4b8ff12063"
+ },
+ "voci": [
+  {
+   "id": "2026-11-02-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Via 6: verificato il secondo giro di classificazioni dei contratti",
+    "en": "Route 6: second round of contract classifications verified"
+   },
+   "sintesi": {
+    "it": "Il secondo giro di verifica della Via 6 si è chiuso con 337 esiti, di cui 86 corretti, e 27 fonti primarie provate. Il registro conta ora 611 classificazioni e 308 collegamenti tra CIG e documenti, base per attribuire la spesa ai fornitori in modo verificabile.",
+    "en": "The second verification round of Route 6 closed with 337 outcomes, of which 86 were corrected, and 27 primary sources tested. The register now holds 611 classifications and 308 links between CIGs and documents, a basis for attributing spending to suppliers in a verifiable way."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3318ede3b7"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-02-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto di classificazione: disegno degli strati S0-S6 e scelte sull'universo",
+    "en": "Classification funnel: design of layers S0-S6 and choices on the universe"
+   },
+   "sintesi": {
+    "it": "È stato definito, in bozza, il disegno degli strati S0-S6 dell'imbuto che separa la spesa ICT dal resto dei contratti, con i prodotti previsti per l'11/11. L'universo parte dal 2020 con vista per annualità, soglia di 500 € e la consulenza IT in-house collocata nello strato S5; il disegno operativo e la chiusura del secondo giro sono stati riportati nella metodologia sul sito.",
+    "en": "The design of layers S0-S6 of the funnel that separates ICT spending from other contracts has been defined in draft form, with the outputs planned for 11/11. The universe starts in 2020 with a per-year view, a €500 threshold and in-house IT consulting placed in layer S5; the operational design and the closure of the second round have been added to the methodology on the website."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@0b239a0636",
+    "mxmap-it/analisi-spesa-ict@804434d179",
+    "mxmap-it/analisi-spesa-ict@b46129441f"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-02-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto 0.2: criteri testuali ICT più stretti, esclusi 40 mld di spesa non ICT",
+    "en": "Funnel 0.2: stricter ICT text criteria, 40 bn of non-ICT spending excluded"
+   },
+   "sintesi": {
+    "it": "Nella versione 0.2 dell'imbuto i segnali ICT ricavati dal testo dei contratti sono stati ristretti: espressioni come «procedura telematica» e «contratto applicativo» facevano entrare nel residuo 40 miliardi di spesa non ICT. La correzione cambia la stima della spesa ICT considerata.",
+    "en": "In version 0.2 of the funnel, the ICT signals derived from contract text have been narrowed: expressions such as “procedura telematica” (online procedure) and “contratto applicativo” (implementing contract) brought 40 billion of non-ICT spending into the residual. The correction changes the estimate of the ICT spending considered."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@6b371700a3"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-02-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Script degli strati dell'imbuto sui dati ANAC dal 2020",
+    "en": "Script for the funnel layers on ANAC data since 2020"
+   },
+   "sintesi": {
+    "it": "Gli strati S0-S6 sono stati implementati in uno script che elabora i dati ANAC dal 2020 in streaming, senza caricare in memoria tutti i CIG.",
+    "en": "Layers S0-S6 have been implemented in a script that processes ANAC data since 2020 in streaming mode, without loading all CIGs into memory."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@bf3cd07189"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#55"
+   ],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22924,
+  "copertura": 97.27,
+  "extra_eu": 47.2,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

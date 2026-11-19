@@ -1,0 +1,28 @@
+{
+ "settimana": "2026-W30",
+ "dal": "2026-07-20",
+ "al": "2026-07-26",
+ "fonte": "8e3fd9e339eda1d2",
+ "titolo": {
+  "it": "MxMap.it: Google Workspace rilevato anche via DKIM, in mappa Esercito, Marina e Aeronautica",
+  "en": "MxMap.it: Google Workspace also detected via DKIM, Army, Navy and Air Force added to the map"
+ },
+ "sintesi": {
+  "it": "La settimana ha visto progressi solo su MxMap.it. La classificazione ora riconosce Google Workspace anche dalla chiave DKIM pubblicata nel DNS. Il segnale è presente nel 16,5% dei 6.405 enti già confermati su Google, con lo 0,67% di falsi positivi su un campione di 600 enti Microsoft. Serve soprattutto quando Google è nascosto dietro un gateway. Esercito, Marina e Aeronautica, che non hanno una voce autonoma in IndicePA, entrano nella mappa tramite un elenco curato di aggiunte manuali. Nelle scansioni notturne gli enti sono passati da 22.884 a 22.892, con copertura stabile intorno al 97,3% e quota extra-UE invariata al 46,8%.",
+  "en": "This week saw progress only on MxMap.it. Classification now also recognises Google Workspace from the DKIM key published in DNS. The signal is present in 16.5% of the 6,405 entities already confirmed on Google, with 0.67% false positives on a sample of 600 Microsoft entities. It is mainly useful when Google is hidden behind a gateway. The Army, Navy and Air Force do not have their own entries in IndicePA. They join the map through a curated list of manual additions. In the nightly scans the number of entities went from 22,884 to 22,892, with coverage stable at around 97.3% and the extra-EU share unchanged at 46.8%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "La classificazione ora controlla anche il record TXT google._domainkey. Il segnale è di supporto: MX diretto e DKIM Microsoft mantengono la precedenza. Esercito, Marina e Aeronautica sono stati aggiunti con un elenco curato che sopravvive all'aggiornamento notturno e si disattiva da solo se IndicePA li includerà. I loro server di posta risultano gestiti in proprio. Nella settimana i KPI notturni sono rimasti stabili: la quota extra-UE è ferma al 46,8% e quella italiana resta intorno al 50%.",
+    "en": "Classification now also checks the TXT record google._domainkey. The signal is supporting only: direct MX and Microsoft DKIM keep precedence. The Army, Navy and Air Force were added through a curated list that survives the nightly update and switches itself off if IndicePA includes them. Their mail servers turn out to be self-managed. During the week the nightly KPIs remained stable: the extra-EU share stayed at 46.8% and the Italian share remained around 50%."
+   },
+   "voci": [
+    "2026-07-24-mxmap-1",
+    "2026-07-24-mxmap-2"
+   ]
+  }
+ ],
+ "n_voci": 2
+}

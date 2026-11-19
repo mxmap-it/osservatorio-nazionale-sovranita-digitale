@@ -1,0 +1,101 @@
+{
+ "data": "2026-09-23",
+ "settimana": "2026-W39",
+ "fonte": {
+  "osservatorio": "cc6cc6d770a4df95"
+ },
+ "voci": [
+  {
+   "id": "2026-09-23-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Spesa ICT: piano di lavoro, confine del perimetro e censimento delle fonti",
+    "en": "ICT spending: work plan, scope boundary and census of sources"
+   },
+   "sintesi": {
+    "it": "Avviato il filone sulla spesa ICT con un piano di lavoro e una regola per decidere cosa rientra nel perimetro: un dato entra se aiuta a stabilire se un euro di spesa è sovrano o no. Il censimento delle fonti, verificate il 23 settembre, dà origine a un monitoraggio della disponibilità e della qualità dei dati aperti, con pagelle ai produttori e una dashboard nazionale. Le prime anomalie documentate sono l'OCDS di ANAC fermo a marzo, aggiornamenti delta che restano disponibili sei mesi, i dati Consip non conservati oltre i tre anni, soldipubblici dismesso e opentender fermo a marzo 2024.",
+    "en": "Work has started on ICT spending, with a work plan and a rule that decides what falls within scope: data is included if it helps establish whether a euro of spending is sovereign or not. The census of sources, verified on 23 September, gives rise to a monitor of the availability and quality of open data, with report cards for data producers and a national dashboard. The first anomalies documented are ANAC's OCDS stuck at March, delta updates that remain available for six months, Consip data not kept beyond three years, soldipubblici discontinued and opentender stuck at March 2024."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@83c7c240ff"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-09-23-osservatorio-4",
+   "contesto": "osservatorio",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Il collegamento CIG-CUP di ANAC copre circa un quinto della spesa ICT",
+    "en": "ANAC's CIG-CUP link covers about one fifth of ICT spending"
+   },
+   "sintesi": {
+    "it": "ANAC pubblica un dataset che collega CUP e CIG (7.167.369 righe, 7.045.847 CIG distinti, CC BY-SA), finora non usato dai progetti mappati; corregge una precedente indicazione secondo cui l'unico collegamento pubblico fosse il file di openpnrr. Sul perimetro ICT solo il 20,2% dei CIG ha un CUP, pari al 18,9% del valore: la quota sale al 30,8% sopra il milione e scende al 19,4% sotto i 40mila euro. Non è un difetto dei dati: il CUP identifica progetti di investimento, mentre licenze, canoni e manutenzione non lo sono.",
+    "en": "ANAC publishes a dataset linking CUP and CIG codes (7,167,369 rows, 7,045,847 distinct CIGs, CC BY-SA), not used so far by any of the projects mapped; this corrects an earlier statement that the only public link was the openpnrr file. Within the ICT scope only 20.2% of CIGs have a CUP, equal to 18.9% of the value: the share rises to 30.8% above one million and falls to 19.4% below 40 thousand euros. This is not a data flaw: the CUP identifies investment projects, whereas licences, fees and maintenance are not."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@824be72ca3"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-09-23-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Spesa ICT: riusare gli strumenti open source esistenti, accettando qualunque licenza libera",
+    "en": "ICT spending: reuse existing open source tools, accepting any free licence"
+   },
+   "sintesi": {
+    "it": "Una matrice di riuso verificata indica quali strumenti esistenti adottare (tra cui quelli di DataCivicLab, validatori di qualità e strumenti a riga di comando per Pubblicità Legale, BDAP e IndicePA), così da costruire solo ciò che manca. Poiché l'Osservatorio rilascia tutto con licenze libere, anche il copyleft è accettato: rientrano i moduli di cruscotto-italia (siope, bdap, anac, pnrr) e gli script ANAC di DVINS; restano esclusi i repository senza licenza, la Elastic License e le clausole non commerciali. La verifica su GLEIF indica circa 1.200 imprese italiane con controllante estero verificabile, lo 0,03% del totale: il registro fornitori sarà quindi costruito per valore e non per numerosità, con copertura dichiarata.",
+    "en": "A verified reuse matrix identifies which existing tools to adopt (including those from DataCivicLab, quality validators and command-line tools for Pubblicità Legale, BDAP and IndicePA), so that only what is missing gets built. Since the Observatory releases everything under free licences, copyleft is also accepted: the cruscotto-italia modules (siope, bdap, anac, pnrr) and DVINS's ANAC scripts are back in; repositories without a licence, the Elastic License and non-commercial clauses remain excluded. A check against GLEIF shows about 1,200 Italian companies with a verifiable foreign parent, 0.03% of the total: the supplier registry will therefore be built by value rather than by count, with declared coverage."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@07c2c2cde0",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@9931e2bc05"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-09-23-osservatorio-3",
+   "contesto": "osservatorio",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Registro fornitori: un punto di partenza in uno strumento open source esistente",
+    "en": "Supplier registry: a starting point in an existing open source tool"
+   },
+   "sintesi": {
+    "it": "Lo strumento open source anac-pl-pp-cli contiene già un modulo (Apache-2.0, con test) che classifica i fornitori come IT, UE o EXTRA-UE con la stessa definizione dell'Osservatorio: conta la giurisdizione del gruppo, non dove si trovano i dati, e chi non è riconosciuto resta non classificato invece di essere considerato italiano. La proposta è estrarre quella lista in un file dati mantenuto dall'Osservatorio in CC BY-SA, utilizzabile dallo strumento come vocabolario esterno; sono riusabili anche la validazione del CIG e il vocabolario CPV completo.",
+    "en": "The open source tool anac-pl-pp-cli already contains a module (Apache-2.0, with tests) that classifies suppliers as IT, EU or NON-EU using the same definition as the Observatory: what counts is the group's jurisdiction, not where the data is located, and unrecognised suppliers remain unclassified rather than being treated as Italian. The proposal is to extract that list into a data file maintained by the Observatory under CC BY-SA, which the tool can use as an external vocabulary; CIG validation and the full CPV vocabulary are also reusable."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d30d0bd0db"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22892,
+  "copertura": 97.27,
+  "extra_eu": 46.9,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.7,
+  "delta_extra_eu": -0.1
+ }
+}

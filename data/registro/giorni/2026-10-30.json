@@ -1,0 +1,69 @@
+{
+ "data": "2026-10-30",
+ "settimana": "2026-W44",
+ "fonte": {
+  "spesa-ict": "4316b427160808bd"
+ },
+ "voci": [
+  {
+   "id": "2026-10-30-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rapporto sui codici CPV: piano, rassegna della letteratura e raccomandazione R21",
+    "en": "CPV code report: plan, literature review and recommendation R21"
+   },
+   "sintesi": {
+    "it": "È stato avviato un rapporto sull'attendibilità dei codici CPV, la classificazione europea usata nei contratti pubblici e su cui si basa l'analisi della spesa ICT. Sono stati redatti il piano del rapporto, una rassegna della letteratura sul tema e una nuova raccomandazione (R21) sull'attendibilità del CPV e sui campi utili a rilevare la sovranità digitale. Il rapporto è in preparazione.",
+    "en": "Work has started on a report on the reliability of CPV codes, the European classification used in public contracts and on which the ICT spending analysis relies. The report plan, a literature review on the topic and a new recommendation (R21) on CPV reliability and on fields useful for capturing digital sovereignty have been drafted. The report is in preparation."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@f6c30727a8",
+    "mxmap-it/analisi-spesa-ict@a4694203b0",
+    "mxmap-it/analisi-spesa-ict@8912c8232e"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#59"
+   ],
+   "link": [
+    "https://github.com/mxmap-it/analisi-spesa-ict/issues/59",
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-30-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Metodologia aggiornata con le criticità del CPV",
+    "en": "Methodology updated with CPV limitations"
+   },
+   "sintesi": {
+    "it": "La nota metodologica dell'analisi ora descrive le criticità dei codici CPV, così che chi legge i risultati possa valutarne i limiti. Sono stati inoltre annotati gli approfondimenti a bassa priorità del rapporto CPV.",
+    "en": "The analysis's methodology note now describes the limitations of CPV codes, so that readers of the results can assess their limits. Lower-priority follow-up items for the CPV report have also been recorded."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3ceb0e19e0"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#59"
+   ],
+   "link": [
+    "https://github.com/mxmap-it/analisi-spesa-ict/issues/59"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22923,
+  "copertura": 97.27,
+  "extra_eu": 47.2,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "data": "2026-08-19",
+ "settimana": "2026-W34",
+ "fonte": {
+  "mxmap": "dd5232f85ea8c92f"
+ },
+ "voci": [
+  {
+   "id": "2026-08-19-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "MxMap Italia segue il nuovo progetto upstream mxmap/secassure2026",
+    "en": "MxMap Italy now follows the new upstream project mxmap/secassure2026"
+   },
+   "sintesi": {
+    "it": "Lo sviluppo del software mxmap originario prosegue nel progetto mxmap/secassure2026, che si concentra sull'area DACH e sulla sicurezza della posta elettronica. La versione italiana, che ha preso una strada propria, non verrà fusa con l'originale: ne seguirà gli sviluppi e ne adotterà selettivamente le modifiche utili. Un'automazione settimanale apre una segnalazione con le novità del progetto originale. Tra i primi candidati da valutare ci sono il controllo di SPF e DMARC, la verifica di DANE e DNSSEC e una riorganizzazione del classificatore dei fornitori.",
+    "en": "Development of the original mxmap software continues in the mxmap/secassure2026 project, which focuses on the DACH region and on email security. The Italian version has taken its own path and will not be merged with the original: it will follow upstream developments and selectively adopt useful changes. A weekly automation opens an issue listing new changes in the original project. Among the first candidates for review are SPF and DMARC checks, DANE and DNSSEC verification, and a reorganisation of the provider classifier."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@98d9c1bc4a"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#24"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22901,
+  "copertura": 97.24,
+  "extra_eu": 46.9,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

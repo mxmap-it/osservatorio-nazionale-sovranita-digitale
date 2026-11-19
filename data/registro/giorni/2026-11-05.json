@@ -1,0 +1,300 @@
+{
+ "data": "2026-11-05",
+ "settimana": "2026-W45",
+ "fonte": {
+  "spesa-ict": "1cf10be015139834",
+  "pvl-at": "6eaf5e44721a73f3"
+ },
+ "voci": [
+  {
+   "id": "2026-11-05-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicata la sezione Convenzioni: 86 iniziative ICT e 295 lotti",
+    "en": "Conventions section published: 86 ICT initiatives and 295 lots"
+   },
+   "sintesi": {
+    "it": "È online la nuova sezione /convenzioni/, che censisce per valore 2024-2025 le iniziative ICT di Consip, PSN, soggetti aggregatori e consorzi: 86 iniziative e 295 lotti, con l'inventario dei documenti disponibili e di quelli mancanti e le pagine Consip di 44 iniziative. La sezione ha un cruscotto a griglia ed è raggiungibile dal menu di tutte le pagine e dalla home; i documenti trovati tramite ricerca online complementare sono segnalati come provenienti da fonte non ufficiale.",
+    "en": "The new /convenzioni/ section is online, listing by 2024-2025 value the ICT initiatives of Consip, PSN, aggregators and consortia: 86 initiatives and 295 lots, with an inventory of available and missing documents and the Consip pages of 44 initiatives. The section has a grid dashboard and can be reached from the menu on every page and from the home page; documents found through complementary online searches are flagged as coming from an unofficial source."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@c695534b94",
+    "mxmap-it/analisi-spesa-ict@32d41ed9c7",
+    "mxmap-it/analisi-spesa-ict@d2e1311e97",
+    "mxmap-it/analisi-spesa-ict@faee151b4d",
+    "mxmap-it/analisi-spesa-ict@c691c61720",
+    "mxmap-it/analisi-spesa-ict@542b338564"
+   ],
+   "n_commit": 6,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-05-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Convenzioni: otto carenze di trasparenza e proposte di policy R37-R44",
+    "en": "Conventions: eight transparency gaps and policy proposals R37-R44"
+   },
+   "sintesi": {
+    "it": "Sono state messe in evidenza le carenze di trasparenza C1-C8 sulle convenzioni ICT, con le carenze C6 e C7 accertate sulle iniziative 2746 e 2928, e formulate le proposte di policy R37-R44. Sono state preparate 127 bozze di istanze di accesso civico (non inviate), poi ridotte a 19 dopo aver verificato prima le fonti online (campione di enti, centrali di committenza, ricerca web); una ricerca su TED per le iniziative non Consip e una verifica PVL sui contratti padre hanno dato esito negativo.",
+    "en": "Transparency gaps C1-C8 in ICT conventions have been highlighted, with gaps C6 and C7 confirmed on initiatives 2746 and 2928, and policy proposals R37-R44 have been drafted. 127 draft civic access requests were prepared (not sent), then reduced to 19 after first checking online sources (a sample of bodies, purchasing centres, web searches); a TED search for non-Consip initiatives and a PVL check on parent contracts returned negative results."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@59aba5dd95",
+    "mxmap-it/analisi-spesa-ict@ff9ae5bbc4",
+    "mxmap-it/analisi-spesa-ict@178bfbacb8"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-05-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Rapporto sulla trasparenza delle convenzioni: bozze 0.1, 0.2 e 0.3",
+    "en": "Report on the transparency of conventions: drafts 0.1, 0.2 and 0.3"
+   },
+   "sintesi": {
+    "it": "È stato redatto un rapporto sulla trasparenza delle convenzioni ICT, giunto in giornata alla versione 0.3, ancora in bozza; ogni versione è stata sottoposta a revisione avversariale, che ha portato a ridefinire le carenze e a precisare le norme citate. Il rapporto si basa su 1.360 documenti archiviati, usa gli open data Consip degli ordini come seconda misura del valore e, nella versione 0.3, riporta il consumato per convenzione indicando fonte per fonte.",
+    "en": "A report on the transparency of ICT conventions has been drafted, reaching version 0.3 during the day, still a draft; each version underwent an adversarial review, which led to redefining the gaps and clarifying the cited regulations. The report is based on 1,360 archived documents, uses Consip open data on orders as a second measure of value and, in version 0.3, reports the amount consumed per convention with its source indicated for each figure."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@94a7885648",
+    "mxmap-it/analisi-spesa-ict@754237a7d5",
+    "mxmap-it/analisi-spesa-ict@072131a9f7",
+    "mxmap-it/analisi-spesa-ict@773d2935f6"
+   ],
+   "n_commit": 4,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-05-spesa-ict-4",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Acquistinretepa consultato con browser reale: 663 iniziative in vetrina e flussi di monitoraggio",
+    "en": "Acquistinretepa consulted with a real browser: 663 showcased initiatives and monitoring data flows"
+   },
+   "sintesi": {
+    "it": "Il portale acquistinretepa è stato consultato con un browser reale: la vetrina elenca 663 iniziative e sono state lette le schede pubbliche di 26 iniziative, in cui il massimale residuo non è visibile senza login (carenza C7 accertata). Sono stati letti i 36 allegati sui flussi dati, tra cui quello sul monitoraggio dell'erogato per ordine, lotto, sede e prodotto, e registrato un elenco dei blocchi di accesso incontrati; il recupero del residuo resta in corso.",
+    "en": "The acquistinretepa portal was consulted with a real browser: the showcase lists 663 initiatives and the public pages of 26 initiatives were read, where the remaining ceiling is not visible without logging in (gap C7 confirmed). The 36 attachments on data flows were read, including the one on monitoring delivered amounts by order, lot, site and product, and a list of the access blocks encountered was recorded; retrieval of the remaining ceiling is still in progress."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@1d61b0f7d0",
+    "mxmap-it/analisi-spesa-ict@3ddc736c8a",
+    "mxmap-it/analisi-spesa-ict@324c4f3ac4"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Archivio dei documenti delle convenzioni consolidato sul server",
+    "en": "Archive of convention documents consolidated on the server"
+   },
+   "sintesi": {
+    "it": "L'archivio locale dei documenti è stato copiato sul server in modalità append-only, con verifica sha256 riuscita su 89 file su 89, e il manifest è stato unificato. È stato corretto un errore per cui le acquisizioni del primo giro non venivano registrate nel manifest; sono stati inoltre riletti gli atti PRINCO e scartati i documenti relativi ad altre gare.",
+    "en": "The local document archive was copied to the server in append-only mode, with sha256 verification passing on 89 of 89 files, and the manifest was merged. A bug that prevented first-round acquisitions from being recorded in the manifest was fixed; the PRINCO documents were also re-read and documents belonging to other tenders were discarded."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@da86764980",
+    "mxmap-it/analisi-spesa-ict@e0250ec714",
+    "mxmap-it/analisi-spesa-ict@ff5ba3582d"
+   ],
+   "n_commit": 3,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-spesa-ict-6",
+   "contesto": "spesa-ict",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Tabelle ordinabili e ricercabili, con date di pubblicazione e dei dati",
+    "en": "Sortable and searchable tables, with publication and data dates"
+   },
+   "sintesi": {
+    "it": "In tutte le pagine del sito le tabelle si possono ora ordinare e filtrare e mostrano le date di pubblicazione, aggiornamento e riferimento dei dati, anche in testata. Sul telefono le tabelle non fanno più scorrere la pagina e il testo lungo va a capo nelle celle.",
+    "en": "On every page of the site, tables can now be sorted and filtered and show the publication, update and data reference dates, also in the page header. On phones, tables no longer make the page scroll and long text wraps within cells."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@901ca1231d",
+    "mxmap-it/analisi-spesa-ict@e0dfa4bea3"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#62"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-05-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Metodo di classificazione 1.2.1 e 1.3.0: certificati non validi e conferma su 3 giorni",
+    "en": "Classification method 1.2.1 and 1.3.0: invalid certificates and 3-day confirmation"
+   },
+   "sintesi": {
+    "it": "Con la versione 1.2.1, per decisione di Fabio, una home page con certificato non valido viene classificata come «tls invalido», ma se il contenuto è leggibile la navigazione prosegue; sul pilota 18 siti sono stati riclassificati. La versione 1.3.0 introduce una regola più prudente: un esito di rete negativo è confermato solo se si ripete in almeno 3 giorni diversi. Ogni cambio di metodo è ora registrato e documentato in una pagina «Metodo» dedicata.",
+    "en": "With version 1.2.1, by Fabio's decision, a home page with an invalid certificate is classified as «invalid TLS», but if the content is readable the crawl continues; on the pilot, 18 sites were reclassified. Version 1.3.0 introduces a more cautious rule: a negative network outcome is confirmed only if it recurs on at least 3 different days. Every method change is now recorded and documented on a dedicated «Method» page."
+   },
+   "commit": [],
+   "n_commit": 9,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Primi dati pubblici del monitoraggio della trasparenza: run pilota in licenza CC BY 4.0",
+    "en": "First public data from the transparency monitor: pilot run under CC BY 4.0 licence"
+   },
+   "sintesi": {
+    "it": "È stato pubblicato il primo contenuto dell'archivio dati aperto del monitoraggio: il run pilota di novembre 2026 (metodo 1.2.0), con manifest verificabile tramite impronte sha256 e licenza CC BY 4.0. In parallelo è stata predisposta un'anteprima del sito statico di consultazione, per ora popolata con dati di prova.",
+    "en": "The first content of the monitor's open data archive has been published: the November 2026 pilot run (method 1.2.0), with a manifest verifiable through sha256 fingerprints and a CC BY 4.0 licence. In parallel, a preview of the static browsing site has been prepared, currently populated with test data."
+   },
+   "commit": [],
+   "n_commit": 4,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-3",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Pubblicità legale (PVL), livello 0: base normativa verificata e primo calcolo",
+    "en": "Legal publicity (PVL), level 0: verified legal basis and first calculation"
+   },
+   "sintesi": {
+    "it": "È stata redatta una scheda normativa verificata sulla pubblicità degli appalti, con prove documentali tracciabili: la delibera ANAC 529/2025 non riguarda il link, e la base primaria è l'art. 85 c.4 insieme all'art. 50 c.8-9. Su questa base è stato definito il metodo pvl-0.1 (regole R1-R8) ed eseguito un primo calcolo, in forma aggregata e senza nomi di enti.",
+    "en": "A verified legal fact sheet on procurement publicity has been drafted, with traceable documentary evidence: ANAC resolution 529/2025 does not concern the link, and the primary basis is Art. 85(4) together with Art. 50(8-9). On this basis the pvl-0.1 method (rules R1-R8) was defined and a first calculation was run, in aggregate form and without naming any body."
+   },
+   "commit": [],
+   "n_commit": 8,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-4",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "PVL: 790.436 link deduplicati, 63.885 CIG rimandano alla dashboard generica ANAC",
+    "en": "PVL: 790,436 links deduplicated, 63,885 CIGs point to the generic ANAC dashboard"
+   },
+   "sintesi": {
+    "it": "La deduplica dei link di pubblicità legale ha individuato 790.436 URL su 38.877 host, base per dimensionare i controlli successivi; gli URL malformati sono contati come esito a sé. È emerso che 63.885 CIG hanno come link la dashboard generica ANAC anziché una pagina specifica; per questi è stata proposta una classificazione dedicata.",
+    "en": "Deduplication of legal publicity links identified 790,436 URLs across 38,877 hosts, the basis for sizing subsequent checks; malformed URLs are counted as an outcome in their own right. It emerged that 63,885 CIGs link to the generic ANAC dashboard instead of a specific page; a dedicated classification has been proposed for these."
+   },
+   "commit": [],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-5",
+   "contesto": "pvl-at",
+   "tipo": "analisi",
+   "rilevante": false,
+   "titolo": {
+    "it": "PVL: inventario delle esenzioni normative e validazione giuridica a fine analisi",
+    "en": "PVL: inventory of legal exemptions and legal validation at the end of the analysis"
+   },
+   "sintesi": {
+    "it": "È stato compilato un inventario delle possibili esenzioni (E1-E15, 27 fonti con impronta sha256) e sono state scomposte le categorie di irregolarità C1-bis e C1, con una dashboard analitica riproducibile. È stato deciso che le analisi PVL saranno sottoposte a validazione giuridica al termine del lavoro.",
+    "en": "An inventory of possible exemptions has been compiled (E1-E15, 27 sources with sha256 fingerprints) and the irregularity categories C1-bis and C1 have been broken down, with a reproducible analytical dashboard. It was decided that the PVL analyses will undergo legal validation at the end of the work."
+   },
+   "commit": [],
+   "n_commit": 4,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-6",
+   "contesto": "pvl-at",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "PVL, livello 1: verifica dei link (C2-C4) con campionamento e conferma su 3 giorni",
+    "en": "PVL, level 1: link checks (C2-C4) with sampling and 3-day confirmation"
+   },
+   "sintesi": {
+    "it": "È stato sviluppato e documentato il metodo pvl-L1-0.1 per verificare l'effettivo funzionamento dei link di pubblicità legale (categorie C2-C4). Il campionamento prevede almeno un URL per ogni mese di copertura di ciascun modello di indirizzo, e si distingue tra semplice avviso e link vero e proprio; gli esiti negativi seguono la regola dei 3 giorni.",
+    "en": "The pvl-L1-0.1 method has been developed and documented to check whether legal publicity links actually work (categories C2-C4). Sampling requires at least one URL for each month of coverage of every address pattern, and a distinction is made between a mere notice and an actual link; negative outcomes follow the 3-day rule."
+   },
+   "commit": [],
+   "n_commit": 5,
+   "issue": [],
+   "link": []
+  },
+  {
+   "id": "2026-11-05-pvl-at-7",
+   "contesto": "pvl-at",
+   "tipo": "documentazione",
+   "rilevante": false,
+   "titolo": {
+    "it": "Specifica 1.0 e piano di lavoro per i monitoraggi PVL e Amministrazione trasparente",
+    "en": "Specification 1.0 and work plan for the PVL and Transparent Administration monitors"
+   },
+   "sintesi": {
+    "it": "Dopo un'analisi di architettura con revisione critica, sono state fissate la specifica 1.0 e una roadmap in fasi (R0-R9) con quattro obiettivi; l'osservatorio sull'Amministrazione trasparente avrà un ciclo autonomo. È stato inoltre chiuso il confronto tra il pilota 1.2.0 e la versione beta.",
+    "en": "Following an architecture analysis with critical review, specification 1.0 and a phased roadmap (R0-R9) with four objectives were set; the Transparent Administration observatory will have its own independent cycle. The comparison between the 1.2.0 pilot and the beta version was also completed."
+   },
+   "commit": [],
+   "n_commit": 7,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22922,
+  "copertura": 97.29,
+  "extra_eu": 47.3,
+  "eu_non_it": 0.5,
+  "it": 49.5,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

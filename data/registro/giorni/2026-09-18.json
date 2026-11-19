@@ -1,0 +1,40 @@
+{
+ "data": "2026-09-18",
+ "settimana": "2026-W38",
+ "fonte": {
+  "mxmap": "aac4a1283b4677ed"
+ },
+ "voci": [
+  {
+   "id": "2026-09-18-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Notifica IndexNow: nuovo tentativo dopo 90 secondi in caso di errore 403 temporaneo",
+    "en": "IndexNow notification: retry after 90 seconds on a temporary 403 error"
+   },
+   "sintesi": {
+    "it": "Il servizio IndexNow, che segnala ai motori di ricerca le pagine aggiornate di mxmap.it, può rifiutare temporaneamente una richiesta anche quando la configurazione è corretta, come osservato il 17 settembre 2026. Ora, prima di segnalare un errore, la richiesta viene ripetuta una volta dopo 90 secondi: così si evitano falsi allarmi, mentre un rifiuto persistente resta segnalato come problema di configurazione.",
+    "en": "The IndexNow service, which notifies search engines of updated mxmap.it pages, can temporarily reject a request even when the configuration is correct, as observed on 17 September 2026. Now, before reporting an error, the request is repeated once after 90 seconds: this avoids false alarms, while a persistent rejection is still reported as a configuration problem."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@aaedb84a22"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22885,
+  "copertura": 97.25,
+  "extra_eu": 46.9,
+  "eu_non_it": 0.5,
+  "it": 49.8,
+  "unknown": 2.8,
+  "delta_extra_eu": 0.0
+ }
+}

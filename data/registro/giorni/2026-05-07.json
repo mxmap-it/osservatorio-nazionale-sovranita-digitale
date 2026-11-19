@@ -1,0 +1,54 @@
+{
+ "data": "2026-05-07",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "91c0fb093031085c"
+ },
+ "voci": [
+  {
+   "id": "2026-05-07-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Percentuali su regioni e province: ora indicano la quota totale di posta in giurisdizione italiana",
+    "en": "Region and province percentages now show the total share of email under Italian jurisdiction"
+   },
+   "sintesi": {
+    "it": "La percentuale mostrata sopra ogni regione o provincia indicava finora solo la quota del fornitore prevalente, di solito la categoria «Provider Italiano». Ora somma tutte le categorie italiane: Cloud Italiano, Provider Italiano, Infrastruttura autonoma, Mail provinciale condivisa e Contractor PA privato. Il dato risponde quindi alla domanda «quanta posta della PA di questo territorio è gestita da soggetti italiani?». Alcune province salgono fino a 9 punti, per esempio Caltanissetta (dall'86% al 95%), Catania (dall'84% al 91%) e Trapani (dal 92% al 96%).",
+    "en": "Until now, the percentage shown above each region or province reflected only the share of the dominant provider, usually the «Provider Italiano» category. It now adds up all Italian categories: Italian Cloud, Italian Provider, Autonomous infrastructure, Shared provincial mail and Private PA contractor. The figure therefore answers the question «how much of this territory's public-sector email is handled by Italian entities?». Some provinces rise by up to 9 points, for example Caltanissetta (from 86% to 95%), Catania (from 84% to 91%) and Trapani (from 92% to 96%)."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@d05b671ff5"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-07-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Mappa delle scuole: schede di dettaglio complete e vista senza sovrapposizioni",
+    "en": "Schools map: full detail cards and an uncluttered view"
+   },
+   "sintesi": {
+    "it": "Nella sezione Scuole di mxmap.it ogni istituto ha ora la stessa scheda di analisi dei comuni: record MX con il paese del server, SPF, autodiscover, DKIM, motivo della classificazione e rilevamento di tenant Microsoft 365. Sono stati tolti i cerchi di raggruppamento numerati e nascosti i poligoni dei comuni, così la mappa mostra solo gli 8.405 indicatori delle scuole. Una correzione successiva impedisce che, durante il cambio di vista, compaia per errore la scheda di un comune.",
+    "en": "In the Schools section of mxmap.it, each school now has the same analysis card used for municipalities: MX records with the server's country, SPF, autodiscover, DKIM, the reason for the classification and Microsoft 365 tenant detection. The numbered cluster circles have been removed and municipal polygons hidden, so the map shows only the 8,405 school markers. A follow-up fix prevents a municipality's card from appearing by mistake while switching views."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@60c9a9d30c",
+    "mxmap-it/mxmap.it@4cf36181d0"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

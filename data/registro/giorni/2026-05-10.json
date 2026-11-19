@@ -1,0 +1,82 @@
+{
+ "data": "2026-05-10",
+ "settimana": "2026-W19",
+ "fonte": {
+  "mxmap": "db4a5067eaf4e81c"
+ },
+ "voci": [
+  {
+   "id": "2026-05-10-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Dati ricalcolati: 11.958 enti recuperati e 1.627 attribuzioni errate rimosse",
+    "en": "Data recomputed: 11,958 entities recovered and 1,627 incorrect attributions removed"
+   },
+   "sintesi": {
+    "it": "Con il nuovo controllo, i dati sono stati rigenerati: 11.958 enti sono stati recuperati usando i domini non PEC delle aree organizzative registrati in IndicePA, e 1.627 attribuzioni di posta a un ente diverso da quello reale sono state eliminate (dato cumulativo di due passaggi di pulizia). Le tabelle complete di recuperi e scarti sono pubblicate in CSV per la verifica.",
+    "en": "With the new check, the data was regenerated: 11,958 entities were recovered using the non-PEC domains of organisational areas registered in IndicePA, and 1,627 mail attributions to an entity other than the real one were removed (cumulative figure across two cleanup passes). The full tables of recoveries and rejections are published as CSV files for verification."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@04f6f732d1",
+    "mxmap-it/mxmap.it@603b62a59a",
+    "mxmap-it/mxmap.it@d462e76b64"
+   ],
+   "n_commit": 3,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-10-mxmap-3",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "840 scuole statali classificate sul tenant Microsoft 365 centrale del MIM",
+    "en": "840 state schools classified under the MIM's central Microsoft 365 tenant"
+   },
+   "sintesi": {
+    "it": "Circa 895 enti risultavano attribuiti per errore al dominio istruzione.it, usato per la casella del dirigente scolastico; il recupero dei dati ora applica lo stesso controllo di validità degli altri percorsi. Le scuole la cui posta risiede effettivamente sul tenant Microsoft 365 centrale del Ministero dell'Istruzione e del Merito, verificate tramite firma DKIM, sono 840 e compaiono sulla mappa come categoria distinta «Tenant centrale MIM (istruzione.it)», conteggiata tra le dipendenze soggette al CLOUD Act statunitense.",
+    "en": "About 895 entities had been wrongly attributed to the istruzione.it domain, used for the school head's mailbox; data recovery now applies the same validity check as the other paths. The schools whose mail actually resides on the central Microsoft 365 tenant of the Ministry of Education and Merit, verified via DKIM signature, number 840 and appear on the map as a distinct category, “Tenant centrale MIM (istruzione.it)”, counted among dependencies subject to the US CLOUD Act."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@1641fe936a",
+    "mxmap-it/mxmap.it@0677bc803e",
+    "mxmap-it/mxmap.it@d5fe12452c",
+    "mxmap-it/mxmap.it@24204a144a",
+    "mxmap-it/mxmap.it@366630ac00"
+   ],
+   "n_commit": 5,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-05-10-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Piattaforme condivise della PA accettate solo nel proprio ambito territoriale",
+    "en": "Shared PA platforms accepted only within their own territorial scope"
+   },
+   "sintesi": {
+    "it": "Il controllo che verifica se un dominio di posta appartiene davvero a un ente accettava piattaforme regionali per qualsiasi amministrazione: ad esempio regione.vda.it veniva considerato valido anche per il Ministero dell'Interno. Ora le piattaforme nazionali (come garr.it e sogei.it) valgono per tutta la PA, mentre quelle locali (come lepida.it, insiel.it, ariaspa.it) sono accettate solo per enti locali della stessa regione, così da evitare attribuzioni errate di fornitori.",
+    "en": "The check that verifies whether a mail domain really belongs to an entity accepted regional platforms for any administration: for example, regione.vda.it was considered valid even for the Ministry of the Interior. Now national platforms (such as garr.it and sogei.it) apply to the whole PA, while local ones (such as lepida.it, insiel.it, ariaspa.it) are accepted only for local entities in the same region, preventing incorrect provider attributions."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@0db6fb44ce",
+    "mxmap-it/mxmap.it@5296615b4d"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ]
+}

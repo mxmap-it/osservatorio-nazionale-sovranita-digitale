@@ -1,0 +1,37 @@
+{
+ "settimana": "2026-W41",
+ "dal": "2026-10-05",
+ "al": "2026-10-11",
+ "fonte": "d0f1dcef3ebed996",
+ "titolo": {
+  "it": "Materiali del talk a RomHack Camp 2026 online e invio a IndexNow reso più robusto",
+  "en": "RomHack Camp 2026 talk materials online and a more robust IndexNow submission"
+ },
+ "sintesi": {
+  "it": "In settimana l'Osservatorio ha pubblicato la news sul lightning talk del 2 ottobre a RomHack Camp 2026, con le slide finali in PDF e PPTX. Così i numeri e i temi presentati sono consultabili da tutti. Su MxMap.it è stato corretto il blocco del 5 ottobre nell'invio quotidiano delle pagine ai motori di ricerca: ora ogni fase ha un tempo massimo. La scansione notturna è rimasta stabile: gli enti sono passati da 22.911 a 22.915, la copertura dal 97,24% al 97,26% e la quota extra-UE dal 47,0% al 47,1%.",
+  "en": "This week the Observatory published the news item on the 2 October lightning talk at RomHack Camp 2026, with the final slides in PDF and PPTX. This makes the figures and topics presented available to everyone. On MxMap.it, the 5 October stall in the daily submission of pages to search engines was fixed: each step now has a time limit. The nightly scan remained stable: entities went from 22,911 to 22,915, coverage from 97.24% to 97.26% and the extra-EU share from 47.0% to 47.1%."
+ },
+ "punti": [
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È stata pubblicata la news sull'intervento del 2 ottobre a RomHack Camp 2026 (STAGE 2, lightning talk di 20 minuti). Contiene l'estratto dal programma ufficiale, i numeri presentati e i temi trattati. Le slide finali sono disponibili in PDF e PPTX, mentre il video è in arrivo. Tutti i materiali sono in inglese.",
+    "en": "The news item on the 2 October talk at RomHack Camp 2026 (STAGE 2, 20-minute lightning talk) was published. It includes the excerpt from the official programme, the figures presented and the topics covered. The final slides are available in PDF and PPTX, while the video is forthcoming. All materials are in English."
+   },
+   "voci": [
+    "2026-10-05-osservatorio-1"
+   ]
+  },
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Il 5 ottobre l'invio quotidiano a IndexNow si era bloccato per 15 minuti a causa di un server lento. Ora ogni file ha un limite di 75 secondi e la raccolta complessiva uno di 8 minuti. Gli indirizzi non inviati si recuperano nei giorni successivi; in una prova sono stati raccolti 30.579 indirizzi in 2,9 secondi. La scansione notturna è stabile: 22.915 enti a fine settimana, copertura al 97,26% e quota extra-UE al 47,1%.",
+    "en": "On 5 October the daily IndexNow submission stalled for 15 minutes because of a slow server. Each file now has a 75-second limit and the overall collection an 8-minute limit. Addresses not submitted are recovered in the following days; in a test, 30,579 addresses were collected in 2.9 seconds. The nightly scan is stable: 22,915 entities at the end of the week, coverage at 97.26% and the extra-EU share at 47.1%."
+   },
+   "voci": [
+    "2026-10-06-mxmap-1"
+   ]
+  }
+ ],
+ "n_voci": 2
+}

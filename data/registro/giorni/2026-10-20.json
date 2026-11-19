@@ -1,0 +1,61 @@
+{
+ "data": "2026-10-20",
+ "settimana": "2026-W43",
+ "fonte": {
+  "osservatorio": "06fddda29fe84881"
+ },
+ "voci": [
+  {
+   "id": "2026-10-20-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Rimosso dal repository un file di lavoro aggiunto per errore",
+    "en": "Working file added by mistake removed from the repository"
+   },
+   "sintesi": {
+    "it": "Una pagina di lavoro salvata (il validatore SHACL di SEMIC) era stata inclusa per errore nel repository. Non era collegata a nulla e non è mai stata pubblicata sul sito. Ora è esclusa in modo permanente. Il controllo successivo sul sito in produzione ha dato esito regolare: 102 riferimenti interni distinti, tutti raggiungibili; sitemap con 44 URL in italiano e inglese; i sei allegati scaricabili; il deck pubblicato è ancora la versione definitiva di 39 pagine.",
+    "en": "A saved working page (the SEMIC SHACL validator) had been included in the repository by mistake. It was not linked from anything and was never published on the site. It is now permanently excluded. The follow-up check on the live site found everything in order: 102 distinct internal links, all reachable; a sitemap with 44 URLs in Italian and English; the six attachments downloadable; the published deck is still the final 39-page version."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@8b9eb145ef",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@b6c47f716d"
+   ],
+   "n_commit": 2,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-10-20-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "sviluppo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Le due slide Asterès sulla dipendenza economica, esportabili a parte",
+    "en": "The two Asterès slides on economic dependence, exportable separately"
+   },
+   "sintesi": {
+    "it": "Il generatore della presentazione ora può produrre un file con le sole due slide Asterès sulla dipendenza economica, da importare nel deck. Il disegno delle slide resta così definito in un solo punto. Il deck pubblicato non cambia: resta la versione definitiva di 39 slide, rivista a mano.",
+    "en": "The presentation generator can now produce a file containing only the two Asterès slides on economic dependence, to be imported into the deck. The slide design is thus defined in a single place. The published deck does not change: it remains the final, hand-reviewed 39-slide version."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@f93f2f09e1"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  }
+ ],
+ "kpi": {
+  "n_enti": 22919,
+  "copertura": 97.27,
+  "extra_eu": 47.1,
+  "eu_non_it": 0.5,
+  "it": 49.6,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

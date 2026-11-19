@@ -1,0 +1,39 @@
+{
+ "settimana": "2026-W38",
+ "dal": "2026-09-14",
+ "al": "2026-09-20",
+ "fonte": "621eab894dccbd49",
+ "titolo": {
+  "it": "Indicizzazione: IndexNow quotidiano per mxmap.it e regola unica per la sitemap del sito",
+  "en": "Indexing: daily IndexNow for mxmap.it and a single rule for the website sitemap"
+ },
+ "sintesi": {
+  "it": "La settimana è stata dedicata soprattutto alla reperibilità delle pagine sui motori di ricerca. Su mxmap.it è attiva una segnalazione quotidiana tramite IndexNow, che a rotazione copre le circa 30.552 pagine del sito in circa un mese ed è stata resa più robusta contro i rifiuti temporanei. Sul sito dell'Osservatorio un'unica regola governa ora meta robots, hreflang e sitemap: la sitemap è scesa da 60 a 38 URL e non contiene più pagine noindex. La scansione notturna è rimasta stabile: gli enti analizzati sono passati da 22.881 a 22.886, con una copertura intorno al 97,26% e una quota di domini di posta extra-UE dal 46,9% al 47,0%.",
+  "en": "The week was mainly devoted to making pages discoverable by search engines. On mxmap.it, daily notification via IndexNow is now active: it covers the site's roughly 30,552 pages on a rotating basis over about a month, and it has been made more robust against temporary rejections. On the Observatory website, a single rule now governs meta robots, hreflang and the sitemap: the sitemap went from 60 to 38 URLs and no longer contains noindex pages. The nightly scan remained stable: the number of entities analysed went from 22,881 to 22,886, with coverage around 97.26% and the share of extra-EU mail domains rising from 46.9% to 47.0%."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Ogni giorno alle 12:30 UTC vengono segnalate tramite IndexNow (Bing, Yandex, Seznam, Naver, Yep) 1000 pagine a rotazione delle circa 30.552 del sito; per Google valgono la sitemap e i link interni, risultati validi in 77 controlli su 77. Dal 18 settembre, in caso di errore 403 temporaneo, la richiesta viene ripetuta una volta dopo 90 secondi, per evitare falsi allarmi. La scansione notturna è rimasta stabile: da 22.881 a 22.886 enti, copertura tra il 97,25% e il 97,27%, quota extra-UE dal 46,9% al 47,0%.",
+    "en": "Every day at 12:30 UTC, 1000 of the site's roughly 30,552 pages are notified on a rotating basis via IndexNow (Bing, Yandex, Seznam, Naver, Yep); for Google, the sitemap and internal links apply, and the internal links were valid in 77 out of 77 checks. Since 18 September, in case of a temporary 403 error the request is retried once after 90 seconds, to avoid false alarms. The nightly scan remained stable: from 22,881 to 22,886 entities, coverage between 97.25% and 97.27%, extra-EU share from 46.9% to 47.0%."
+   },
+   "voci": [
+    "2026-09-17-mxmap-1",
+    "2026-09-18-mxmap-1"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "Corretta la divergenza che faceva comparire in sitemap le home delle 22 lingue UE marcate noindex: un'unica regola governa ora meta robots, hreflang, sitemap e indice delle sitemap. La sitemap passa da 60 a 38 URL e l'indice da 24 a 2 voci, senza modifiche al meta robots delle 66 pagine. Preparata inoltre la copertina della pagina LinkedIn, con lo script che la rigenera dal file vettoriale del marchio.",
+    "en": "The divergence that caused the home pages of the 22 EU languages, marked noindex, to appear in the sitemap has been fixed: a single rule now governs meta robots, hreflang, the sitemap and the sitemap index. The sitemap goes from 60 to 38 URLs and the index from 24 to 2 entries, with no change to the meta robots of the 66 pages. The cover image for the LinkedIn page was also prepared, together with the script that regenerates it from the brand's vector file."
+   },
+   "voci": [
+    "2026-09-17-osservatorio-1",
+    "2026-09-17-osservatorio-2"
+   ]
+  }
+ ],
+ "n_voci": 4
+}

@@ -1,0 +1,64 @@
+{
+ "data": "2026-07-24",
+ "settimana": "2026-W30",
+ "fonte": {
+  "mxmap": "daff521eadd8bd9e"
+ },
+ "voci": [
+  {
+   "id": "2026-07-24-mxmap-1",
+   "contesto": "mxmap",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Google Workspace rilevato anche tramite la chiave DKIM pubblicata nel DNS",
+    "en": "Google Workspace now also detected via the DKIM key published in DNS"
+   },
+   "sintesi": {
+    "it": "La classificazione ora controlla anche il record TXT google._domainkey, dove Google Workspace pubblica la chiave DKIM, finora non rilevato perché si cercavano solo i record CNAME usati da Microsoft. Sui dati reali il segnale compare nel 16,5% dei 6405 enti già confermati su Google (il DKIM è opzionale), con falsi positivi dello 0,67% su un campione di 600 enti Microsoft: un miglioramento modesto ma affidabile, utile soprattutto quando Google è nascosto dietro un gateway. Il segnale è solo di supporto: MX diretto e DKIM Microsoft mantengono la precedenza.",
+    "en": "Classification now also checks the google._domainkey TXT record, where Google Workspace publishes its DKIM key; this was previously missed because only the CNAME records used by Microsoft were checked. On real data the signal appears for 16.5% of the 6405 bodies already confirmed on Google (DKIM is optional), with 0.67% false positives on a sample of 600 Microsoft bodies: a modest but reliable improvement, useful mainly when Google sits behind a gateway. The signal is only corroborating: direct MX and Microsoft DKIM keep precedence."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@04595482b4"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/mxmap.it#17"
+   ],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-07-24-mxmap-2",
+   "contesto": "mxmap",
+   "tipo": "dati",
+   "rilevante": true,
+   "titolo": {
+    "it": "Esercito, Marina e Aeronautica aggiunti alla mappa come enti non presenti in IndicePA",
+    "en": "Army, Navy and Air Force added to the map as bodies not listed in IndicePA"
+   },
+   "sintesi": {
+    "it": "Alcune amministrazioni reali non hanno una voce autonoma in IndicePA ma dispongono di dominio e posta propri: Esercito, Marina e Aeronautica, finora assenti (c'era solo il Ministero della Difesa). Sono state inserite tramite un elenco curato di aggiunte manuali che sopravvive all'aggiornamento notturno e si disattiva da solo se IndicePA le includerà; i loro server di posta risultano gestiti in proprio. Entrano con la scansione notturna successiva in mappa, statistiche e pagine degli enti.",
+    "en": "Some real administrations have no standalone IndicePA entry but run their own domain and mail: the Army, Navy and Air Force, which were missing until now (only the Ministry of Defence was listed). They were added through a curated list of manual additions that survives the nightly refresh and is automatically skipped if IndicePA includes them in future; their mail servers are self-hosted. They enter the map, statistics and body pages with the next nightly scan."
+   },
+   "commit": [
+    "mxmap-it/mxmap.it@1051f07676"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://mxmap.it/"
+   ]
+  }
+ ],
+ "kpi": {
+  "n_enti": 22891,
+  "copertura": 97.28,
+  "extra_eu": 46.8,
+  "eu_non_it": 0.5,
+  "it": 49.9,
+  "unknown": 2.7,
+  "delta_extra_eu": 0.0
+ }
+}

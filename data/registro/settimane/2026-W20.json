@@ -1,0 +1,30 @@
+{
+ "settimana": "2026-W20",
+ "dal": "2026-05-11",
+ "al": "2026-05-17",
+ "fonte": "0287e7c872846957",
+ "titolo": {
+  "it": "MxMap.it: metodo di individuazione per ogni ente, criteri più rigorosi e dati allineati ogni notte",
+  "en": "MxMap.it: detection method for every entity, stricter criteria and data aligned every night"
+ },
+ "sintesi": {
+  "it": "Questa settimana l'attività ha riguardato solo MxMap.it. Per ogni ente il dataset indica ora come è stato individuato il server di posta, scegliendo fra 14 categorie, con la relativa prova e una pagina di metodologia: chiunque può quindi verificare da dove viene ciascuna classificazione. Sono stati introdotti criteri più rigorosi per gli indirizzi email non PEC e una nuova regola per i domini composti. È stata ripristinata la mappa delle scuole, con 8.404 punti, e sono state classificate correttamente 898 scuole MIM. Da ora la procedura notturna rigenera l'intero dataset di 22.935 enti, compresi i file scaricabili, che quindi coincidono con quanto mostrato sul sito.",
+  "en": "This week, work focused only on MxMap.it. For every entity, the dataset now records how its mail server was identified, choosing from 14 categories, together with the supporting evidence and a methodology page. Anyone can therefore check where each classification comes from. Stricter criteria were introduced for non-PEC email addresses, along with a new rule for compound domains. The schools map was restored with 8,404 points, and 898 MIM schools are now classified correctly. From now on, the nightly procedure regenerates the full dataset of 22,935 entities, including the downloadable files, so the files match what is shown on the site."
+ },
+ "punti": [
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "Ogni ente riporta ora il metodo di individuazione del record MX, scelto fra 14 categorie, con la prova a supporto. Il metodo è spiegato in una nuova pagina di metodologia e viene registrato in ogni fase della scansione. Gli indirizzi email non PEC vengono usati solo se il dominio corrisponde al nome dell'ente: in una simulazione il controllo è stato superato da 67 enti su 236 (28,4%). Con la nuova regola 6.6 sui domini composti e alcune correzioni manuali sono stati recuperati 13 ACI provinciali e altri 7 enti. È stata ripristinata la mappa delle scuole, con 8.404 punti, e sono state classificate correttamente 898 scuole MIM. La scansione notturna ha ora limiti di tempo sui banner SMTP. Inoltre rigenera ogni notte i dati di 22.935 enti e i file CSV/JSON/XLSX.",
+    "en": "Every entity now shows the method used to identify its MX record, chosen from 14 categories, together with the supporting evidence. The method is explained on a new methodology page and is recorded at every stage of the scan. Non-PEC email addresses are used only if the domain matches the entity's name: in a simulation, 67 out of 236 entities (28.4%) passed the check. With the new rule 6.6 for compound domains and a few manual corrections, 13 provincial ACI offices and 7 other entities were recovered. The schools map was restored with 8,404 points, and 898 MIM schools are now classified correctly. The nightly scan now has time limits on reading SMTP banners. It also regenerates the data for 22,935 entities and the CSV/JSON/XLSX files every night."
+   },
+   "voci": [
+    "2026-05-11-mxmap-1",
+    "2026-05-12-mxmap-1",
+    "2026-05-12-mxmap-3",
+    "2026-05-13-mxmap-3"
+   ]
+  }
+ ],
+ "n_voci": 10
+}
