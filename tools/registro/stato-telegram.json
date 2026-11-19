@@ -968,7 +968,11 @@
   "mxmap-it/analisi-spesa-ict@9c8539428e",
   "mxmap-it/analisi-spesa-ict@07ec7dcda3",
   "mxmap-it/analisi-spesa-ict@1ee66184e8",
-  "mxmap-it/analisi-spesa-ict@3bc43e2b65"
+  "mxmap-it/analisi-spesa-ict@3bc43e2b65",
+  "mxmap-it/osservatorio-nazionale-sovranita-digitale@0a1192b5f7",
+  "mxmap-it/osservatorio-nazionale-sovranita-digitale@b81f204550",
+  "mxmap-it/osservatorio-nazionale-sovranita-digitale@27e09cd7d0",
+  "mxmap-it/osservatorio-nazionale-sovranita-digitale@42d913c81e"
  ],
  "voci_postate": [
   "2026-05-02-mxmap-1",
@@ -1289,7 +1293,9 @@
   "2026-11-19-spesa-ict-2",
   "2026-11-19-spesa-ict-4",
   "2026-11-19-spesa-ict-5",
-  "2026-11-19-spesa-ict-3"
+  "2026-11-19-spesa-ict-3",
+  "2026-11-19-osservatorio-1",
+  "2026-11-19-osservatorio-2"
  ],
  "giornaliero": "2026-11-18",
  "settimanale": "2026-W46"
