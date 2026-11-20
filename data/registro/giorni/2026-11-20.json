@@ -2,22 +2,22 @@
  "data": "2026-11-20",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "65909e31e317cc37",
+  "spesa-ict": "b3a45eb7dea5e290",
   "osservatorio": "ff9c72cb60c6bb08"
  },
  "voci": [
   {
    "id": "2026-11-20-spesa-ict-1",
    "contesto": "spesa-ict",
-   "tipo": "pubblicazione",
+   "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Cloud in proprio: datacenter degli enti e servizi delle in-house in una pagina pubblica",
-    "en": "In-house cloud: public bodies' own datacenters and in-house company services on a public page"
+    "it": "Cloud in proprio: datacenter degli enti e servizi delle società in-house nell'analisi",
+    "en": "In-house cloud: public bodies' data centres and in-house companies' services added to the analysis"
    },
    "sintesi": {
-    "it": "L'analisi ora include nella tabella unica anche il cloud gestito in proprio: i datacenter dell'ente, classificati come sovrani italiani, e i servizi forniti dalle società in-house, con una vista dedicata per singola società. La classificazione è stata verificata con tre campioni a cieco ed è consultabile in una nuova pagina pubblica.",
-    "en": "The analysis now also includes self-managed cloud in the single table: the public body's own datacenters, classified as Italian sovereign, and services provided by in-house companies, with a dedicated view per company. The classification was checked with three blind samples and is available on a new public page."
+    "it": "I datacenter gestiti direttamente dagli enti, classificati come sovrani italiani, e i servizi forniti dalle società in-house entrano nella tabella unica dell'analisi, con una vista dedicata per società in-house. La classificazione è stata verificata su tre campioni a cieco ed è consultabile in una nuova pagina pubblica.",
+    "en": "Data centres run directly by public bodies, classified as Italian-sovereign, and services provided by in-house companies are now included in the analysis's single table, with a dedicated view per in-house company. The classification was checked on three blind samples and is available on a new public page."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@e6aa558e27"
@@ -36,12 +36,12 @@
    "tipo": "dati",
    "rilevante": true,
    "titolo": {
-    "it": "Nuovo dataset delle società ICT pubbliche dal censimento MEF delle partecipazioni",
-    "en": "New dataset of public ICT companies from the MEF census of shareholdings"
+    "it": "Dataset delle società ICT pubbliche dal censimento MEF delle partecipazioni",
+    "en": "Dataset of public ICT companies from the MEF census of shareholdings"
    },
    "sintesi": {
-    "it": "Dal censimento delle partecipazioni pubbliche del MEF è stato ricavato un dataset delle società ICT pubbliche, identificate per codice fiscale, con siti web, presenza nel catalogo del riuso e home page. Gli elenchi delle fonti includono ora una copia locale dei dati MEF 2012-2023 e di Developers Italia.",
-    "en": "A dataset of public ICT companies, identified by tax code, has been derived from the MEF census of public shareholdings, with websites, presence in the reuse catalogue and home pages. The source lists now include a local copy of the MEF 2012-2023 data and of Developers Italia."
+    "it": "Nuovo dataset delle società ICT pubbliche, identificate per codice fiscale e partita IVA a partire dal censimento delle partecipazioni del Ministero dell'Economia, con siti web, home page e presenza nel catalogo del riuso. Sono stati aggiunti agli elenchi delle fonti il mirror del censimento MEF 2012-2023 e Developers Italia; la vista per società e il livello dei datacenter sono stati rifatti.",
+    "en": "New dataset of public ICT companies, identified by tax code and VAT number from the Ministry of Economy and Finance's census of shareholdings, with websites, home pages and presence in the reuse catalogue. The mirror of the 2012-2023 MEF census and Developers Italia were added to the source lists; the per-company view and the data-centre level were rebuilt."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@628320a256"
@@ -62,12 +62,12 @@
    "tipo": "metodo",
    "rilevante": true,
    "titolo": {
-    "it": "Riproducibilità di tutte le fonti verificata da clone pulito e nuova pagina Fonti e dataset",
-    "en": "Reproducibility of all sources verified from a clean clone and new Sources and datasets page"
+    "it": "Riproducibilità di tutte le fonti verificata e nuova pagina «Fonti e dataset»",
+    "en": "Reproducibility of all sources verified and new «Sources and datasets» page"
    },
    "sintesi": {
-    "it": "È stato redatto un inventario di 92 strumenti e sono stati congelati 22 ingressi di lavoro (tramite git, archivio, tar e impronte), raccolti in un registro unico e nella nuova pagina pubblica «Fonti e dataset». Una prova da clone pulito ha rigenerato dati identici, inclusa la catena in-house e datacenter; le società ICT pubbliche sono ora identificate anche per partita IVA, con una nuova classe di controllo pubblico congiunto il cui metodo è documentato tra le decisioni.",
-    "en": "An inventory of 92 tools was compiled and 22 working inputs were frozen (via git, archive, tar and fingerprints), collected in a single register and on the new public «Sources and datasets» page. A test from a clean clone regenerated identical data, including the in-house and datacenter chain; public ICT companies are now also identified by VAT number, with a new joint public control class whose method is documented among the decisions."
+    "it": "È stato redatto un inventario di 92 strumenti e sono stati congelati 22 ingressi di lavoro (tramite git, archiviazione, tar e impronte digitali), raccolti in un registro unico e in una pagina pubblica «Fonti e dataset». La prova di ricostruzione da una copia pulita è stata superata: la tabella completa dei CIG rigenerata dal mirror risulta identica, così come la catena in-house e datacenter.",
+    "en": "An inventory of 92 tools was compiled and 22 working inputs were frozen (via git, archiving, tar and fingerprints), collected in a single register and on a public «Sources and datasets» page. The rebuild test from a clean copy was passed: the full CIG table regenerated from the mirror is identical, as is the in-house and data-centre chain."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@753d4158b1",
@@ -85,6 +85,31 @@
   {
    "id": "2026-11-20-spesa-ict-4",
    "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Controllo pubblico congiunto e «sostanziale»: nuove classi e ricerca sulla giurisprudenza",
+    "en": "Joint and «substantial» public control: new classes and research on case law"
+   },
+   "sintesi": {
+    "it": "La classificazione delle società introduce il controllo pubblico congiunto e la classe «controllata sostanzialmente», per i casi con soci quotati controllati dallo Stato come il Polo Strategico Nazionale (PSN), motivata con argomenti di fatto e di diritto. Una nuova pagina pubblica documenta la ricerca sulla giurisprudenza (controllo in concreto, catene di società quotate, PSN), con 20 testi archiviati e verificabili tramite impronta sha256; è stata corretta la sezione 2bis del dataset.",
+    "en": "The company classification introduces joint public control and the «substantially controlled» class, for cases with listed shareholders controlled by the State such as the National Strategic Hub (PSN), justified on factual and legal grounds. A new public page documents the case-law research (control in practice, chains of listed companies, PSN), with 20 archived texts verifiable via sha256 fingerprint; section 2bis of the dataset was corrected."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@a795d8f0fe",
+    "mxmap-it/analisi-spesa-ict@e17a8e000f"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#82"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-20-spesa-ict-5",
+   "contesto": "spesa-ict",
    "tipo": "dati",
    "rilevante": false,
    "titolo": {
@@ -92,8 +117,8 @@
     "en": "ANAC dashboard: measurement of 20 November 2026"
    },
    "sintesi": {
-    "it": "È stata registrata la misura periodica del cruscotto ANAC del 20 novembre 2026.",
-    "en": "The periodic ANAC dashboard measurement of 20 November 2026 was recorded."
+    "it": "Aggiornata la misura periodica del cruscotto basato sui dati ANAC.",
+    "en": "The periodic measurement of the dashboard based on ANAC data was updated."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@6c0b2a3346"
