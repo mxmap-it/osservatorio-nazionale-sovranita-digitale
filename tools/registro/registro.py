@@ -12,10 +12,11 @@ Una sola sorgente: i commit dei repository di ciascun «contesto»
   sintetizza  per ogni (giorno, contesto) nuovo o cambiato chiede a Claude una
               sintesi IT+EN e la scrive in data/registro/giorni/AAAA-MM-GG.json;
   settimana   sintesi settimanale in data/registro/settimane/AAAA-Www.json;
-  telegram    posta su due canali. Gruppo principale (TELEGRAM_CHAT_ID): solo il
-              «settimanale» (lunedì 8:30), con comunità e statistiche. Canale
-              dei feed @osservatoriops (TELEGRAM_FEED_ID): «live» (voci
-              rilevanti appena sintetizzate) e «giornaliero» (ieri, alle 8:30);
+  telegram    posta su due chat. Gruppo principale (TELEGRAM_CHAT_ID): solo il
+              riepilogo «settimanale» (lunedì 8:30). Gruppo dei feed
+              @osservatoriops (TELEGRAM_FEED_ID), verboso: «live» (voci
+              rilevanti), «giornaliero» e comunità di ieri (8:30), e il lunedì
+              settimana, comunità della settimana, grafici e statistiche;
   ciclo       quello che fa il workflow ogni ora: raccogli + sintetizza +
               live + (se è l'ora) riepilogo delle 8:30.
 
@@ -628,6 +629,8 @@ def spezza(testo, lim=4000):
 
 
 CANALI = {"principale": "TELEGRAM_CHAT_ID", "feed": "TELEGRAM_FEED_ID"}
+FEED_RIGA = ('\n\n🔎 Aggiornamenti quotidiani, discussioni della comunità e statistiche dei siti: '
+             '<a href="https://t.me/osservatoriops">@osservatoriops</a>')
 
 
 def invia(testo, prova=False, canale="principale"):
@@ -687,35 +690,36 @@ def telegram_live(prova=False):
 
 
 def telegram_riepilogo(prova=False, forza=False, motore="api"):
-    """Alle 8:30 (Europe/Rome): lunedì il settimanale nel gruppo principale (con
-    comunità e statistiche); gli altri giorni il giornaliero di ieri, solo nel
-    canale dei feed. Il riassunto quotidiano della comunità non si posta più."""
+    """Alle 8:30 (Europe/Rome).
+    Canale dei feed (verboso): ogni giorno la sintesi di ieri + la comunità di ieri;
+    il lunedì anche settimana, comunità della settimana e statistiche dei siti.
+    Gruppo principale: SOLO il lunedì, il riepilogo della settimana."""
     ora = dt.datetime.now(ROMA)
     if not forza and not (dt.time(8, 25) <= ora.time() <= dt.time(12, 0)):
         log(f"riepilogo: sono le {ora:%H:%M} a Roma, non è l'ora")
         return
     s = stato()
     oggi = ora.date()
-    if oggi.weekday() == 0:
-        sett = settimana_di((oggi - dt.timedelta(days=1)).isoformat())
-        if s["settimanale"] == sett and not forza:
-            return
-        sintetizza_settimana(sett, motore)
-        t = testo_settimanale(sett)
-        if t and invia(t, prova) and not prova:
-            s["settimanale"] = sett
-        comunita_post("settimanale", sett, prova)
-        statistiche_post(sett, prova)
-    else:
-        ieri = (oggi - dt.timedelta(days=1)).isoformat()
-        if s["giornaliero"] == ieri and not forza:
-            return
+    ieri = (oggi - dt.timedelta(days=1)).isoformat()
+    if s["giornaliero"] != ieri or forza:
         t = testo_giornaliero(ieri)
         if t is None:
             log(f"riepilogo: nessuna attività il {ieri}, nessun post")
-            s["giornaliero"] = ieri
-        elif invia(t, prova, "feed") and not prova:
-            s["giornaliero"] = ieri
+        if t is None or invia(t, prova, "feed"):  # se il feed fallisce si riprova all'ora dopo, tutto insieme
+            comunita_post("giornaliero", ieri, prova)
+            if not prova:
+                s["giornaliero"] = ieri
+    if oggi.weekday() == 0:
+        sett = settimana_di(ieri)
+        if s["settimanale"] != sett or forza:
+            sintetizza_settimana(sett, motore)
+            t = testo_settimanale(sett)
+            if t and invia(t + FEED_RIGA, prova) and not prova:
+                s["settimanale"] = sett
+            if t:
+                invia(t, prova, "feed")
+            comunita_post("settimanale", sett, prova)
+            statistiche_post(sett, prova)
     if not prova:
         salva_stato(s)
 

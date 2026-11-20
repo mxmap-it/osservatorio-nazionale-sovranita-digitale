@@ -434,10 +434,10 @@ def post_settimanale(sett=None, prova=False):
         t.append("🌍 " + " · ".join(f"{E(r['nome'])} {num(r['n'])}" for r in paesi))
     t += ["", f"Senza cookie e senza salvare IP; voci sotto {SOGLIA} visite non mostrate. "
           f"<a href=\"{R.SITO}/statistiche/\">Tutte le statistiche</a> · <a href=\"https://stats.mxmap.it/\">dashboard in tempo reale</a>"]
-    R.invia("\n".join(t), prova)
+    R.invia("\n".join(t), prova, "feed")
     png = grafico()
     if png:
-        comunita.invia_foto(png, "📈 <b>Visite al giorno</b> sui siti dell'Osservatorio, ultime 8 settimane.", prova)
+        comunita.invia_foto(png, "📈 <b>Visite al giorno</b> sui siti dell'Osservatorio, ultime 8 settimane.", prova, "feed")
 
 
 def main():

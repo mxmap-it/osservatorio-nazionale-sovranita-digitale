@@ -431,10 +431,11 @@ pagine. Lo stesso dato alimenta un **bot Telegram**.
   (mai la copia di lavoro). Le sintesi usano Claude Code headless (`--motore cli`),
   niente API key. Segreti in `~/.local/share/osservatorio-bot/env` (600).
   **Due destinazioni** (decisione del fondatore, 20/11/2026): il gruppo della comunità
-  (`TELEGRAM_CHAT_ID`) riceve **solo il lunedì 8:30** la settimana + comunità + statistiche;
-  il canale **@osservatoriops** (`TELEGRAM_FEED_ID`, il bot deve esserne admin) riceve i feed
-  frequenti: live (voci `rilevante`) e alle 8:30 la sintesi di ieri. Il riassunto quotidiano
-  della comunità non si posta più. Se il canale feed non risponde, il ciclo continua.
+  (`TELEGRAM_CHAT_ID`) riceve **solo il lunedì 8:30 il riepilogo della settimana**, con un
+  rimando al gruppo dei feed. Il gruppo **@osservatoriops** (`TELEGRAM_FEED_ID`, il bot è
+  admin) è **verboso**: live (voci `rilevante`), alle 8:30 la sintesi di ieri e le discussioni
+  della comunità di ieri; il lunedì anche settimana, comunità della settimana con grafico,
+  statistiche dei siti con grafico. Se il feed non risponde, il ciclo continua.
   Il push del clone fa partire `deploy.yml`. Il canale va in `hugo.toml` →
   `registroTelegramURL`.
 - **Comunità Telegram:** `tools/registro/comunita.py`. Messaggi in

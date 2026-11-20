@@ -105,8 +105,8 @@ def api(metodo, **parametri):
     return d["result"]
 
 
-def invia_foto(percorso, didascalia, prova=False):
-    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+def invia_foto(percorso, didascalia, prova=False, canale="principale"):
+    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get(R.CANALI[canale])
     if prova or not (tok and chat):
         print(f"— FOTO {percorso} —\n{didascalia}\n")
         return prova
@@ -502,7 +502,7 @@ def post_giornaliero(g, prova=False):
     out, stat = sintesi(g, prova)
     if stat["messaggi"] == 0:
         return
-    R.invia(testo_sintesi(f"Dalla comunità — {R.mesi_it(g)}", out, stat, membri_oggi()), prova)
+    R.invia(testo_sintesi(f"Dalla comunità — {R.mesi_it(g)}", out, stat, membri_oggi()), prova, "feed")
 
 
 def post_settimanale(sett, prova=False):
@@ -511,10 +511,10 @@ def post_settimanale(sett, prova=False):
     out, stat = sintesi(sett, prova)
     dal, al = R.giorni_settimana(sett)[0], R.giorni_settimana(sett)[-1]
     titolo = f"La comunità nella settimana {dt.date.fromisoformat(dal).day}–{R.mesi_it(al).split(' ', 1)[1]}"
-    R.invia(testo_sintesi(titolo, out, stat, membri_oggi()), prova)
+    R.invia(testo_sintesi(titolo, out, stat, membri_oggi()), prova, "feed")
     png = grafico()
     if png:
-        invia_foto(png, "📈 <b>Andamento della comunità</b>: persone nel gruppo, messaggi e persone che scrivono, settimana per settimana.", prova)
+        invia_foto(png, "📈 <b>Andamento della comunità</b>: persone nel gruppo, messaggi e persone che scrivono, settimana per settimana.", prova, "feed")
 
 
 def main():
