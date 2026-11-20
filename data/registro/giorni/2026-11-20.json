@@ -2,7 +2,8 @@
  "data": "2026-11-20",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "aed91aa7e442e297"
+  "spesa-ict": "aed91aa7e442e297",
+  "osservatorio": "ec41ac06578413e8"
  },
  "voci": [
   {
@@ -27,6 +28,28 @@
    ],
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-20-osservatorio-1",
+   "contesto": "osservatorio",
+   "tipo": "infrastruttura",
+   "rilevante": false,
+   "titolo": {
+    "it": "Telegram: aggiornamenti frequenti sul canale @osservatoriops, al gruppo solo il riepilogo settimanale",
+    "en": "Telegram: frequent updates moved to the @osservatoriops channel, weekly digest only in the group"
+   },
+   "sintesi": {
+    "it": "Gli aggiornamenti in tempo reale e la sintesi giornaliera vengono ora pubblicati sul canale Telegram @osservatoriops, mentre il gruppo della comunità riceve solo il riepilogo settimanale del lunedì. Il riassunto quotidiano della comunità non viene più pubblicato. Un eventuale errore nell'invio al canale non blocca più il resto del ciclo di pubblicazione.",
+    "en": "Live updates and the daily summary are now published on the @osservatoriops Telegram channel, while the community group receives only the weekly digest on Mondays. The daily community summary is no longer posted. A possible error when posting to the channel no longer blocks the rest of the publishing cycle."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@dbf857d2ba"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": [
+    "https://osservatorio.mxmap.it/"
    ]
   }
  ]
