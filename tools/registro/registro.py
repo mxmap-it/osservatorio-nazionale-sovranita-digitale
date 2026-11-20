@@ -620,7 +620,19 @@ def spezza(testo, lim=4000):
     if len(testo) <= lim:
         return [testo]
     pezzi, cur = [], ""
-    for blocco in testo.split("\n\n"):
+    blocchi = []
+    for blocco in testo.split("\n\n"):  # un blocco troppo lungo si spezza per righe
+        if len(blocco) <= lim:
+            blocchi.append(blocco)
+            continue
+        riga_cur = ""
+        for riga in blocco.split("\n"):
+            if len(riga_cur) + len(riga) + 1 > lim and riga_cur:
+                blocchi.append(riga_cur)
+                riga_cur = ""
+            riga_cur = (riga_cur + "\n" + riga) if riga_cur else riga
+        blocchi.append(riga_cur)
+    for blocco in blocchi:
         if len(cur) + len(blocco) + 2 > lim and cur:
             pezzi.append(cur)
             cur = ""
