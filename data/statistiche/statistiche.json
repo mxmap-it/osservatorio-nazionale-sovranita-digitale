@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-19T16:57",
- "dal": "2026-11-18",
- "al": "2026-11-18",
+ "aggiornato": "2026-11-20T05:10",
+ "dal": "2026-11-19",
+ "al": "2026-11-19",
  "finestra": {
-  "dal": "2026-10-20",
-  "al": "2026-11-18",
+  "dal": "2026-10-21",
+  "al": "2026-11-19",
   "giorni": 30
  },
  "soglia": 5,
@@ -20,16 +20,16 @@
    "url": "https://mxmap.it/",
    "giorni": [
     [
-     "2026-11-18",
-     0
+     "2026-11-19",
+     6
     ]
    ],
-   "ultimi_7": 0,
+   "ultimi_7": 6,
    "precedenti_7": 0,
-   "ultimi_30": 0,
-   "totale": 0,
+   "ultimi_30": 6,
+   "totale": 7,
    "pagine": [],
-   "pagine_altro": 0
+   "pagine_altro": 6
   },
   {
    "host": "osservatorio.mxmap.it",
@@ -42,16 +42,16 @@
    "url": "https://osservatorio.mxmap.it/",
    "giorni": [
     [
-     "2026-11-18",
-     0
+     "2026-11-19",
+     20
     ]
    ],
-   "ultimi_7": 0,
+   "ultimi_7": 20,
    "precedenti_7": 0,
-   "ultimi_30": 0,
-   "totale": 0,
+   "ultimi_30": 20,
+   "totale": 20,
    "pagine": [],
-   "pagine_altro": 0
+   "pagine_altro": 20
   },
   {
    "host": "analisi-spesa-ict.mxmap.it",
@@ -64,28 +64,43 @@
    "url": "https://analisi-spesa-ict.mxmap.it/",
    "giorni": [
     [
-     "2026-11-18",
-     0
+     "2026-11-19",
+     2
     ]
    ],
-   "ultimi_7": 0,
+   "ultimi_7": 2,
    "precedenti_7": 0,
-   "ultimi_30": 0,
-   "totale": 0,
+   "ultimi_30": 2,
+   "totale": 2,
    "pagine": [],
-   "pagine_altro": 0
+   "pagine_altro": 2
   }
  ],
  "altri_host_30": 0,
  "fonti": {
-  "voci": [],
-  "altro": 0,
-  "totale": 0
+  "voci": [
+   {
+    "nome": "osservatorio.mxmap.it",
+    "n": 15
+   },
+   {
+    "nome": "diretto",
+    "n": 10
+   }
+  ],
+  "altro": 3,
+  "totale": 28
  },
  "paesi": {
-  "voci": [],
+  "voci": [
+   {
+    "nome": "Italia",
+    "n": 28,
+    "nome_en": "Italy"
+   }
+  ],
   "altro": 0,
-  "totale": 0
+  "totale": 28
  },
  "regioni_visitatori": {
   "voci": [],
@@ -93,22 +108,54 @@
   "totale": 0
  },
  "dispositivi": {
-  "voci": [],
+  "voci": [
+   {
+    "nome": "computer",
+    "n": 18,
+    "nome_en": "computer"
+   },
+   {
+    "nome": "telefono",
+    "n": 10,
+    "nome_en": "phone"
+   }
+  ],
   "altro": 0,
-  "totale": 0
+  "totale": 28
  },
  "browser": {
-  "voci": [],
+  "voci": [
+   {
+    "nome": "Chrome",
+    "n": 22
+   },
+   {
+    "nome": "Safari",
+    "n": 6
+   }
+  ],
   "altro": 0,
-  "totale": 0
+  "totale": 28
  },
  "sistemi": {
-  "voci": [],
-  "altro": 0,
-  "totale": 0
+  "voci": [
+   {
+    "nome": "Windows",
+    "n": 16
+   },
+   {
+    "nome": "iOS",
+    "n": 6
+   }
+  ],
+  "altro": 6,
+  "totale": 28
  },
  "mxmap": {
-  "tipi_pagina": {},
+  "tipi_pagina": {
+   "mappa": 3,
+   "altre": 3
+  },
   "visite_pagine_ente": 0,
   "enti_distinti": 0,
   "enti_totali": 22925,
