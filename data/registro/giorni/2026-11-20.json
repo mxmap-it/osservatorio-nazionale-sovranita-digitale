@@ -2,22 +2,22 @@
  "data": "2026-11-20",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "60bc280beb7bcb61",
+  "spesa-ict": "f28891cdaa772c83",
   "osservatorio": "ff9c72cb60c6bb08"
  },
  "voci": [
   {
    "id": "2026-11-20-spesa-ict-1",
    "contesto": "spesa-ict",
-   "tipo": "pubblicazione",
+   "tipo": "metodo",
    "rilevante": true,
    "titolo": {
-    "it": "Cloud in proprio: datacenter degli enti e servizi delle società in-house in una pagina pubblica",
-    "en": "In-house cloud: entities' own datacentres and in-house companies' services on a public page"
+    "it": "Cloud in proprio: datacenter degli enti e servizi delle in-house entrano nell'analisi",
+    "en": "Self-provided cloud: entities' own datacenters and in-house company services join the analysis"
    },
    "sintesi": {
-    "it": "L'analisi della spesa ICT ora include il «cloud in proprio»: i datacenter gestiti direttamente dagli enti, classificati come sovrani italiani, e i servizi forniti dalle società in-house entrano nella tabella unica, con una vista dedicata per singola società in-house. La classificazione è stata verificata su tre campioni a cieco ed è consultabile in una nuova pagina pubblica.",
-    "en": "The ICT spending analysis now includes «in-house cloud»: datacentres run directly by public entities, classified as Italian sovereign, and services provided by in-house companies are added to the single table, with a dedicated view for each in-house company. The classification was checked against three blind samples and can be consulted on a new public page."
+    "it": "La tabella unica della spesa ora comprende anche il cloud gestito in proprio: i datacenter dell'ente, classificati come sovrani italiani, e i servizi forniti dalle società in-house, con una vista dedicata per singola società. La classificazione è stata verificata su tre campioni a cieco ed è consultabile su una nuova pagina pubblica.",
+    "en": "The single spending table now also includes self-provided cloud: the entity's own datacenters, classified as Italian sovereign, and services supplied by in-house companies, with a dedicated view for each company. The classification was checked on three blind samples and can be consulted on a new public page."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@e6aa558e27"
@@ -34,14 +34,40 @@
    "id": "2026-11-20-spesa-ict-2",
    "contesto": "spesa-ict",
    "tipo": "dati",
-   "rilevante": false,
+   "rilevante": true,
    "titolo": {
-    "it": "Cruscotto ANAC: misura del 20 novembre 2026",
-    "en": "ANAC dashboard: measurement of 20 November 2026"
+    "it": "Nuovo dataset delle società ICT pubbliche dal censimento MEF delle partecipazioni",
+    "en": "New dataset of public ICT companies from the MEF census of shareholdings"
    },
    "sintesi": {
-    "it": "È stata registrata la rilevazione periodica del cruscotto sui contratti ANAC per il 20 novembre 2026, che aggiorna la serie storica della misura.",
-    "en": "The periodic measurement of the ANAC contracts dashboard for 20 November 2026 was recorded, updating the measurement's time series."
+    "it": "A partire dal censimento delle partecipazioni pubbliche del Ministero dell'Economia (MEF) è stato costruito un dataset delle società ICT pubbliche, organizzato per codice fiscale e corredato di siti web, presenza nel catalogo del riuso e home page. Negli elenchi delle fonti sono stati aggiunti una copia dei dati MEF 2012-2023 e Developers Italia.",
+    "en": "Starting from the public shareholdings census of the Ministry of Economy and Finance (MEF), a dataset of public ICT companies has been built, organised by tax code and enriched with websites, presence in the reuse catalogue and home pages. A mirror of the MEF 2012-2023 data and Developers Italia have been added to the source lists."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@628320a256"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#52",
+    "mxmap-it/analisi-spesa-ict#81",
+    "mxmap-it/analisi-spesa-ict#82"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-20-spesa-ict-3",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Cruscotto ANAC: misura periodica del 20 novembre 2026",
+    "en": "ANAC dashboard: periodic measurement of 20 November 2026"
+   },
+   "sintesi": {
+    "it": "È stata registrata la misura periodica del cruscotto basato sui dati dei contratti pubblici ANAC, che tiene traccia dell'andamento nel tempo.",
+    "en": "The periodic measurement of the dashboard based on ANAC public contract data has been recorded, tracking its evolution over time."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@6c0b2a3346"
