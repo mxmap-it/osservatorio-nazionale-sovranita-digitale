@@ -3,7 +3,7 @@
  "settimana": "2026-W47",
  "fonte": {
   "spesa-ict": "aed91aa7e442e297",
-  "osservatorio": "ec41ac06578413e8"
+  "osservatorio": "ff9c72cb60c6bb08"
  },
  "voci": [
   {
@@ -36,21 +36,42 @@
    "tipo": "infrastruttura",
    "rilevante": false,
    "titolo": {
-    "it": "Telegram: aggiornamenti frequenti sul canale @osservatoriops, al gruppo solo il riepilogo settimanale",
-    "en": "Telegram: frequent updates moved to the @osservatoriops channel, weekly digest only in the group"
+    "it": "Telegram: aggiornamenti frequenti spostati su @osservatoriops, nel gruppo solo il riepilogo settimanale",
+    "en": "Telegram: frequent updates moved to @osservatoriops, only the weekly summary in the group"
    },
    "sintesi": {
-    "it": "Gli aggiornamenti in tempo reale e la sintesi giornaliera vengono ora pubblicati sul canale Telegram @osservatoriops, mentre il gruppo della comunità riceve solo il riepilogo settimanale del lunedì. Il riassunto quotidiano della comunità non viene più pubblicato. Un eventuale errore nell'invio al canale non blocca più il resto del ciclo di pubblicazione.",
-    "en": "Live updates and the daily summary are now published on the @osservatoriops Telegram channel, while the community group receives only the weekly digest on Mondays. The daily community summary is no longer posted. A possible error when posting to the channel no longer blocks the rest of the publishing cycle."
+    "it": "Gli aggiornamenti in tempo reale, la sintesi giornaliera, le discussioni della comunità (quotidiane e settimanali), i grafici e le statistiche dei siti vengono ora pubblicati sul canale @osservatoriops. Il gruppo principale della comunità riceve solo il riepilogo del lunedì, con un rimando a @osservatoriops, così da ridurre il volume dei messaggi. Il riassunto quotidiano della comunità non viene più pubblicato nel gruppo, e un errore del canale dei feed non blocca più il ciclo di pubblicazione.",
+    "en": "Live updates, the daily summary, community discussions (daily and weekly), charts and site statistics are now published on the @osservatoriops channel. The main community group receives only the Monday summary, with a pointer to @osservatoriops, to reduce message volume. The daily community recap is no longer posted in the group, and an error in the feed channel no longer blocks the publishing cycle."
    },
    "commit": [
-    "mxmap-it/osservatorio-nazionale-sovranita-digitale@dbf857d2ba"
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@dbf857d2ba",
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@d86e29235a"
    ],
-   "n_commit": 1,
+   "n_commit": 2,
    "issue": [],
    "link": [
     "https://osservatorio.mxmap.it/"
    ]
+  },
+  {
+   "id": "2026-11-20-osservatorio-2",
+   "contesto": "osservatorio",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Telegram: i messaggi troppo lunghi vengono divisi riga per riga",
+    "en": "Telegram: overly long messages are now split line by line"
+   },
+   "sintesi": {
+    "it": "Il riepilogo giornaliero del 19/11 conteneva un blocco da 6.900 caratteri, che Telegram rifiutava perché superava il limite di lunghezza. Ora anche i blocchi più lunghi del limite vengono suddivisi riga per riga prima dell'invio.",
+    "en": "The daily summary of 19/11 contained a 6,900-character block, which Telegram rejected because it exceeded the length limit. Blocks longer than the limit are now also split line by line before sending."
+   },
+   "commit": [
+    "mxmap-it/osservatorio-nazionale-sovranita-digitale@bb7e2f41ea"
+   ],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
   }
  ]
 }
