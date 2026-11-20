@@ -18,7 +18,8 @@
 #
 # Il bot lavora su un CLONE dedicato ($DATA/repo), così non tocca mai la copia
 # di lavoro di chi sviluppa. Segreti in $DATA/env (permessi 600, fuori da git):
-#   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (dove posta), TELEGRAM_COMMUNITY_ID
+#   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (gruppo: solo riepiloghi settimanali),
+#   TELEGRAM_FEED_ID (canale @osservatoriops: live e giornaliero), TELEGRAM_COMMUNITY_ID
 #   (gruppo da misurare), COMUNITA_SALT (generato), REGISTRO_MOTORE=cli.
 set -uo pipefail
 DATA="${OSSERVATORIO_BOT_DATA:-$HOME/.local/share/osservatorio-bot}"
@@ -37,6 +38,7 @@ if [ "$modo" = installa ]; then
 # Bot del Registro attività — segreti (non in git)
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
+TELEGRAM_FEED_ID=@osservatoriops
 TELEGRAM_COMMUNITY_ID=
 COMUNITA_SALT=$(head -c 32 /dev/urandom | od -An -tx1 | tr -d ' \n')
 REGISTRO_MOTORE=cli

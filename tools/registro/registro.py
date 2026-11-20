@@ -12,8 +12,10 @@ Una sola sorgente: i commit dei repository di ciascun «contesto»
   sintetizza  per ogni (giorno, contesto) nuovo o cambiato chiede a Claude una
               sintesi IT+EN e la scrive in data/registro/giorni/AAAA-MM-GG.json;
   settimana   sintesi settimanale in data/registro/settimane/AAAA-Www.json;
-  telegram    posta sul canale: «live» (voci rilevanti appena sintetizzate),
-              «giornaliero» (ieri, alle 8:30) e «settimanale» (lunedì 8:30);
+  telegram    posta su due canali. Gruppo principale (TELEGRAM_CHAT_ID): solo il
+              «settimanale» (lunedì 8:30), con comunità e statistiche. Canale
+              dei feed @osservatoriops (TELEGRAM_FEED_ID): «live» (voci
+              rilevanti appena sintetizzate) e «giornaliero» (ieri, alle 8:30);
   ciclo       quello che fa il workflow ogni ora: raccogli + sintetizza +
               live + (se è l'ora) riepilogo delle 8:30.
 
@@ -625,11 +627,26 @@ def spezza(testo, lim=4000):
     return pezzi + [cur]
 
 
-def invia(testo, prova=False):
-    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+CANALI = {"principale": "TELEGRAM_CHAT_ID", "feed": "TELEGRAM_FEED_ID"}
+
+
+def invia(testo, prova=False, canale="principale"):
+    """«principale» = gruppo della comunità, solo riepiloghi settimanali;
+    «feed» = canale @osservatoriops, aggiornamenti frequenti (live, giornaliero)."""
+    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get(CANALI[canale])
     if prova or not (tok and chat):
-        print(("— PROVA —\n" if prova else "— TELEGRAM NON CONFIGURATO (manca TELEGRAM_BOT_TOKEN/CHAT_ID) —\n") + testo + "\n")
+        print((f"— PROVA ({canale}) —\n" if prova else f"— TELEGRAM NON CONFIGURATO (manca TELEGRAM_BOT_TOKEN/{CANALI[canale]}) —\n") + testo + "\n")
         return prova  # in prova consideriamo «inviato», senza config no
+    if canale == "feed":
+        try:  # il canale dei feed non deve mai bloccare il ciclo (es. bot non ancora admin)
+            return _invia(tok, chat, testo)
+        except Exception as e:
+            log(f"feed {chat}: messaggio non inviato: {e}")
+            return False
+    return _invia(tok, chat, testo)
+
+
+def _invia(tok, chat, testo):
     for pezzo in spezza(testo):
         data = urllib.parse.urlencode({"chat_id": chat, "text": pezzo, "parse_mode": "HTML",
                                        "link_preview_options": json.dumps({"is_disabled": True})}).encode()
@@ -661,7 +678,7 @@ def telegram_live(prova=False):
             chiave = v["commit"] or [v["id"]]
             if v["commit"] and sum(c in gia for c in chiave) * 2 >= len(chiave):
                 continue  # già annunciata (la voce è stata solo riscritta)
-            if invia(testo_live(v), prova) and not prova:
+            if invia(testo_live(v), prova, "feed") and not prova:
                 s["voci_postate"].append(v["id"])
                 s["commit_postati"] += chiave
                 gia.update(chiave)
@@ -670,7 +687,9 @@ def telegram_live(prova=False):
 
 
 def telegram_riepilogo(prova=False, forza=False, motore="api"):
-    """Alle 8:30 (Europe/Rome): lunedì il settimanale, gli altri giorni il giornaliero di ieri."""
+    """Alle 8:30 (Europe/Rome): lunedì il settimanale nel gruppo principale (con
+    comunità e statistiche); gli altri giorni il giornaliero di ieri, solo nel
+    canale dei feed. Il riassunto quotidiano della comunità non si posta più."""
     ora = dt.datetime.now(ROMA)
     if not forza and not (dt.time(8, 25) <= ora.time() <= dt.time(12, 0)):
         log(f"riepilogo: sono le {ora:%H:%M} a Roma, non è l'ora")
@@ -695,9 +714,8 @@ def telegram_riepilogo(prova=False, forza=False, motore="api"):
         if t is None:
             log(f"riepilogo: nessuna attività il {ieri}, nessun post")
             s["giornaliero"] = ieri
-        elif invia(t, prova) and not prova:
+        elif invia(t, prova, "feed") and not prova:
             s["giornaliero"] = ieri
-        comunita_post("giornaliero", ieri, prova)
     if not prova:
         salva_stato(s)
 
@@ -777,7 +795,7 @@ def main():
         elif x.modo == "giornaliero":
             g = x.giorno or (oggi_roma() - dt.timedelta(days=1)).isoformat()
             t = testo_giornaliero(g)
-            print("(nessuna attività)") if t is None else invia(t, x.prova)
+            print("(nessuna attività)") if t is None else invia(t, x.prova, "feed")
         elif x.modo == "settimanale":
             sett = x.giorno or settimana_di((oggi_roma() - dt.timedelta(days=7)).isoformat())
             t = testo_settimanale(sett)
