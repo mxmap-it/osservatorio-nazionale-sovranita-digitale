@@ -2,22 +2,46 @@
  "data": "2026-11-20",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "aed91aa7e442e297",
+  "spesa-ict": "60bc280beb7bcb61",
   "osservatorio": "ff9c72cb60c6bb08"
  },
  "voci": [
   {
    "id": "2026-11-20-spesa-ict-1",
    "contesto": "spesa-ict",
+   "tipo": "pubblicazione",
+   "rilevante": true,
+   "titolo": {
+    "it": "Cloud in proprio: datacenter degli enti e servizi delle società in-house in una pagina pubblica",
+    "en": "In-house cloud: entities' own datacentres and in-house companies' services on a public page"
+   },
+   "sintesi": {
+    "it": "L'analisi della spesa ICT ora include il «cloud in proprio»: i datacenter gestiti direttamente dagli enti, classificati come sovrani italiani, e i servizi forniti dalle società in-house entrano nella tabella unica, con una vista dedicata per singola società in-house. La classificazione è stata verificata su tre campioni a cieco ed è consultabile in una nuova pagina pubblica.",
+    "en": "The ICT spending analysis now includes «in-house cloud»: datacentres run directly by public entities, classified as Italian sovereign, and services provided by in-house companies are added to the single table, with a dedicated view for each in-house company. The classification was checked against three blind samples and can be consulted on a new public page."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@e6aa558e27"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#52"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-20-spesa-ict-2",
+   "contesto": "spesa-ict",
    "tipo": "dati",
    "rilevante": false,
    "titolo": {
-    "it": "Cruscotto ANAC: aggiornata la misura del 20 novembre 2026",
-    "en": "ANAC dashboard: measurement of 20 November 2026 updated"
+    "it": "Cruscotto ANAC: misura del 20 novembre 2026",
+    "en": "ANAC dashboard: measurement of 20 November 2026"
    },
    "sintesi": {
-    "it": "Il cruscotto sui contratti pubblici ANAC è stato aggiornato con la rilevazione periodica del 20 novembre 2026 (misura n. 23). L'aggiornamento mantiene la serie storica con cui si segue nel tempo la spesa ICT della PA.",
-    "en": "The dashboard on ANAC public contracts was updated with the periodic measurement of 20 November 2026 (measurement no. 23). The update keeps current the time series used to track public-sector ICT spending over time."
+    "it": "È stata registrata la rilevazione periodica del cruscotto sui contratti ANAC per il 20 novembre 2026, che aggiorna la serie storica della misura.",
+    "en": "The periodic measurement of the ANAC contracts dashboard for 20 November 2026 was recorded, updating the measurement's time series."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@6c0b2a3346"
@@ -26,9 +50,7 @@
    "issue": [
     "mxmap-it/analisi-spesa-ict#23"
    ],
-   "link": [
-    "https://analisi-spesa-ict.mxmap.it/"
-   ]
+   "link": []
   },
   {
    "id": "2026-11-20-osservatorio-1",
