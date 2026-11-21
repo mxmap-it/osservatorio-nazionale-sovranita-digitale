@@ -982,7 +982,12 @@
   "mxmap-it/analisi-spesa-ict@753d4158b1",
   "mxmap-it/analisi-spesa-ict@d7b8d0f311",
   "mxmap-it/analisi-spesa-ict@a795d8f0fe",
-  "mxmap-it/analisi-spesa-ict@e17a8e000f"
+  "mxmap-it/analisi-spesa-ict@e17a8e000f",
+  "mxmap-it/analisi-spesa-ict@7f79812c2b",
+  "mxmap-it/analisi-spesa-ict@e89ad60eb2",
+  "mxmap-it/analisi-spesa-ict@5d5e83cda3",
+  "mxmap-it/analisi-spesa-ict@0d2d280f0c",
+  "mxmap-it/analisi-spesa-ict@61ccc7f619"
  ],
  "voci_postate": [
   "2026-05-02-mxmap-1",
@@ -1312,7 +1317,11 @@
   "2026-11-20-spesa-ict-1",
   "2026-11-20-spesa-ict-2",
   "2026-11-20-spesa-ict-3",
-  "2026-11-20-spesa-ict-4"
+  "2026-11-20-spesa-ict-4",
+  "2026-11-21-spesa-ict-1",
+  "2026-11-21-spesa-ict-2",
+  "2026-11-21-spesa-ict-3",
+  "2026-11-21-spesa-ict-4"
  ],
  "giornaliero": "2026-11-20",
  "settimanale": "2026-W46"
