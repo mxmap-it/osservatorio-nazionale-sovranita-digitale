@@ -2,28 +2,29 @@
  "data": "2026-11-21",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "99cd2448f5f816da"
+  "spesa-ict": "2127d8056777ef64"
  },
  "voci": [
   {
    "id": "2026-11-21-spesa-ict-1",
    "contesto": "spesa-ict",
-   "tipo": "analisi",
+   "tipo": "pubblicazione",
    "rilevante": true,
    "titolo": {
-    "it": "Tabellone big tech: spesa per marchio e anno divisa tra cloud, licenze e incerto",
-    "en": "Big tech scoreboard: spending by brand and year split into cloud, licences and uncertain"
+    "it": "Tabellone big tech 0.3: spesa per marchio e anno, con copertura dei dati per trimestre",
+    "en": ""
    },
    "sintesi": {
-    "it": "Il nuovo tabellone riporta gli acquisti della PA presso i grandi fornitori tecnologici per marchio e per anno, distinguendo cloud, licenze e voci non classificabili con certezza. La versione 0.3 aggiunge un confronto con sovranita-digitale.it, la copertura dei dati per trimestre dal 2020 al 2026 e una nota su dovevannoinostrisoldi.com, così da rendere esplicito quanto i dati siano completi nei diversi periodi.",
-    "en": "The new scoreboard reports public administration purchases from major technology vendors by brand and by year, distinguishing cloud, licences and items that cannot be classified with certainty. Version 0.3 adds a comparison with sovranita-digitale.it, data coverage by quarter from 2020 to 2026 and a note on dovevannoinostrisoldi.com, making explicit how complete the data are in each period."
+    "it": "Il nuovo tabellone riporta, per marchio e per anno, gli acquisti verso i grandi fornitori tecnologici, distinguendo cloud, licenze e casi incerti. Il tabellone mostra anche la copertura dei dati per trimestre dal 2020 al 2026, un confronto con sovranita-digitale.it, una nota su dovevannoinostrisoldi.com e, come contesto, l'annuncio della Strategia Cloud Italia 2027-2029, ora archiviato (R91).",
+    "en": "The new board shows purchases from the large technology suppliers by brand and by year, separating cloud, licences and uncertain cases. It also shows data coverage by quarter from 2020 to 2026, a comparison with sovranita-digitale.it, a note on dovevannoinostrisoldi.com and, as context, the announcement of the Cloud Italia Strategy 2027-2029, now archived (R91)."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@7f79812c2b",
     "mxmap-it/analisi-spesa-ict@e89ad60eb2",
+    "mxmap-it/analisi-spesa-ict@c5f6e7bf67",
     "mxmap-it/analisi-spesa-ict@da0b7994e6"
    ],
-   "n_commit": 3,
+   "n_commit": 4,
    "issue": [
     "mxmap-it/analisi-spesa-ict#83"
    ],
@@ -37,12 +38,12 @@
    "tipo": "analisi",
    "rilevante": true,
    "titolo": {
-    "it": "Posta degli enti incrociata con gli acquisti: confermata la lente prodotto per Microsoft",
-    "en": "Public bodies' email cross-checked against purchases: product lens confirmed for Microsoft"
+    "it": "Controprova tra la posta degli enti (mxmap.it) e gli acquisti per marchio",
+    "en": ""
    },
    "sintesi": {
-    "it": "I dati sulla posta elettronica degli enti raccolti da mxmap.it sono stati confrontati con gli acquisti per marchio: per Microsoft la lettura per prodotto risulta confermata. Il confronto evidenzia anche un punto cieco del 70%, cioè una larga parte di uso che non trova riscontro diretto nei contratti.",
-    "en": "Data on public bodies' email collected by mxmap.it were compared with purchases by brand: for Microsoft the product-based reading is confirmed. The comparison also shows a 70% blind spot, i.e. a large share of usage that has no direct match in the contracts."
+    "it": "Abbiamo incrociato i fornitori di posta elettronica degli enti, rilevati da mxmap.it, con gli acquisti registrati per marchio. Per Microsoft la controprova conferma la lettura per prodotto, ma emerge un punto cieco del 70%: per questa quota l'uso del servizio non trova riscontro negli acquisti visibili.",
+    "en": "We matched the email providers of public bodies, as detected by mxmap.it, against purchases recorded by brand. For Microsoft the cross-check confirms the product-based reading, but it reveals a 70% blind spot: for this share, use of the service has no match in visible purchases."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@5d5e83cda3"
@@ -62,17 +63,41 @@
    "rilevante": true,
    "titolo": {
     "it": "Università statali e AWS: 0,47 M€ in sette anni nei CIG diretti",
-    "en": "State universities and AWS: €0.47M over seven years in direct CIGs"
+    "en": ""
    },
    "sintesi": {
-    "it": "Nei contratti diretti (CIG) delle università statali la spesa verso AWS ammonta a 0,47 milioni di euro in sette anni. Un uso più ampio non è visibile nei dati, ma non può essere escluso, ad esempio tramite canali di acquisto indiretti.",
-    "en": "In state universities' direct contracts (CIGs), spending on AWS amounts to €0.47 million over seven years. Broader usage is not visible in the data but cannot be ruled out, for example through indirect purchasing channels."
+    "it": "Nei contratti diretti (CIG) delle università statali verso AWS risultano 0,47 M€ in sette anni. L'ipotesi di un uso più ampio non è visibile nei dati, ma non può essere esclusa, perché gli acquisti possono passare per altri canali.",
+    "en": "Direct contracts (CIGs) between state universities and AWS amount to €0.47M over seven years. A wider use is not visible in the data, but it cannot be ruled out, because purchases may go through other channels."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@61ccc7f619"
    ],
    "n_commit": 1,
    "issue": [
+    "mxmap-it/analisi-spesa-ict#83"
+   ],
+   "link": []
+  },
+  {
+   "id": "2026-11-21-spesa-ict-5",
+   "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Imbuto: il quadro economico corregge l'importo solo da 100 € in su; 270 CIG cambiano",
+    "en": ""
+   },
+   "sintesi": {
+    "it": "Nell'imbuto di classificazione l'importo del quadro economico sostituisce quello dichiarato solo se vale almeno 100 €, per evitare correzioni con valori non plausibili come i 41,98 € di un contratto di Roseto. Dopo la rigenerazione quel CIG (B28410BF32) torna a essere classificato come errore di importo e 270 CIG cambiano esito.",
+    "en": "In the classification funnel, the cost-breakdown amount replaces the declared one only if it is at least €100, to avoid corrections with implausible values such as the €41.98 of a Roseto contract. After regeneration that CIG (B28410BF32) is again classified as an amount error and 270 CIGs change outcome."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@a9b6d10407",
+    "mxmap-it/analisi-spesa-ict@017c0bd0ae"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#71",
     "mxmap-it/analisi-spesa-ict#83"
    ],
    "link": [
@@ -82,42 +107,40 @@
   {
    "id": "2026-11-21-spesa-ict-4",
    "contesto": "spesa-ict",
-   "tipo": "metodo",
-   "rilevante": true,
+   "tipo": "dati",
+   "rilevante": false,
    "titolo": {
-    "it": "Qualità dei dati: nuova regola R90 sugli importi anomali e soglia di 100 € nell'imbuto",
-    "en": "Data quality: new rule R90 on anomalous amounts and €100 threshold in the funnel"
+    "it": "R90: cinque CIG ICT con importo uguale alla partita IVA del fornitore",
+    "en": ""
    },
    "sintesi": {
-    "it": "La regola R90 individua i CIG il cui importo coincide con la partita IVA del fornitore: sono 5 CIG ICT per 9,3 miliardi dichiarati, evidentemente frutto di errori di compilazione. Inoltre, nell'imbuto di classificazione il quadro economico corregge l'importo solo se vale almeno 100 € (caso di Roseto, 41,98 €); questa modifica avrà effetto alla prossima rigenerazione dei dati.",
-    "en": "Rule R90 identifies CIGs whose amount matches the supplier's VAT number: 5 ICT CIGs totalling 9.3 billion declared, evidently the result of data-entry errors. In addition, in the classification funnel the economic framework corrects the amount only if it is at least €100 (the Roseto case, €41.98); this change will take effect at the next data regeneration."
+    "it": "Una nuova regola di controllo (R90) individua 5 CIG ICT in cui l'importo dichiarato coincide con la partita IVA del fornitore, per un totale di 9,3 miliardi dichiarati. Si tratta di errori di compilazione che, se non riconosciuti, gonfierebbero la spesa.",
+    "en": "A new check rule (R90) flags 5 ICT CIGs whose declared amount matches the supplier's VAT number, for a total of 9.3 billion declared. These are data-entry errors that, if not caught, would inflate spending."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@0d2d280f0c",
-    "mxmap-it/analisi-spesa-ict@a9b6d10407"
+    "mxmap-it/analisi-spesa-ict@0d2d280f0c"
    ],
-   "n_commit": 2,
+   "n_commit": 1,
    "issue": [
-    "mxmap-it/analisi-spesa-ict#71",
     "mxmap-it/analisi-spesa-ict#83"
    ],
    "link": []
   },
   {
-   "id": "2026-11-21-spesa-ict-5",
+   "id": "2026-11-21-spesa-ict-6",
    "contesto": "spesa-ict",
-   "tipo": "documentazione",
+   "tipo": "metodo",
    "rilevante": false,
    "titolo": {
-    "it": "Strategia Cloud Italia 2027-2029: annuncio archiviato e inserito come contesto",
-    "en": "Cloud Italy Strategy 2027-2029: announcement archived and added as context"
+    "it": "Decisione: nessuna colonna sul livello di sovranità",
+    "en": ""
    },
    "sintesi": {
-    "it": "L'annuncio della Strategia Cloud Italia 2027-2029 è stato archiviato e aggiunto come contesto nel tabellone big tech, con la nuova voce R91.",
-    "en": "The announcement of the Cloud Italy Strategy 2027-2029 has been archived and added as context to the big tech scoreboard, with the new entry R91."
+    "it": "Si è deciso di non aggiungere una colonna con un livello di sovranità. I dati restano presentati senza una classificazione sintetica di questo tipo.",
+    "en": "It was decided not to add a column with a sovereignty level. The data are still presented without a summary rating of this kind."
    },
    "commit": [
-    "mxmap-it/analisi-spesa-ict@c5f6e7bf67"
+    "mxmap-it/analisi-spesa-ict@cdb84f2db4"
    ],
    "n_commit": 1,
    "issue": [
