@@ -2,7 +2,8 @@
  "data": "2026-11-22",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "086057b21417b2f4"
+  "spesa-ict": "086057b21417b2f4",
+  "pvl-at": "7cd2bdcb81535105"
  },
  "voci": [
   {
@@ -28,6 +29,24 @@
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
    ]
+  },
+  {
+   "id": "2026-11-22-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Controprova degli errori di accesso ai siti PA da una rete diversa",
+    "en": "Cross-check of PA website access errors from a different network"
+   },
+   "sintesi": {
+    "it": "Per i siti che risultano irraggiungibili nel monitoraggio PVL è stata introdotta una controprova da una rete diversa da quella principale, su un campione di indirizzi per sito, seguita da una nuova verifica immediata. Lo scopo è distinguere i siti che bloccano solo gli accessi automatici dai data center da quelli realmente non accessibili, rendendo più affidabile la classificazione degli errori.",
+    "en": "For websites that appear unreachable in the PVL monitoring, a cross-check from a network other than the main one has been introduced, on a sample of addresses per site, followed by an immediate re-check. The aim is to distinguish sites that block only automated access from data centres from those that are genuinely inaccessible, making the classification of errors more reliable."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
   }
  ]
 }
