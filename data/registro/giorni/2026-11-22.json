@@ -1,0 +1,33 @@
+{
+ "data": "2026-11-22",
+ "settimana": "2026-W47",
+ "fonte": {
+  "spesa-ict": "086057b21417b2f4"
+ },
+ "voci": [
+  {
+   "id": "2026-11-22-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Cruscotto ANAC: aggiornata la misura del 22 novembre 2026",
+    "en": "ANAC dashboard: measurement of 22 November 2026 updated"
+   },
+   "sintesi": {
+    "it": "Il cruscotto sui contratti ANAC ha registrato la misura periodica del 22 novembre 2026 (rilevazione n. 23). È un aggiornamento di routine che serve a seguire nel tempo l'andamento dei dati sulla spesa ICT.",
+    "en": "The ANAC contracts dashboard recorded its periodic measurement of 22 November 2026 (measurement no. 23). This is a routine update that makes it possible to track the ICT spending data over time."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@69af831bed"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#23"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  }
+ ]
+}
