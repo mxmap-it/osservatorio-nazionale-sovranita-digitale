@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-21T05:10",
+ "aggiornato": "2026-11-22T05:10",
  "dal": "2026-11-19",
- "al": "2026-11-20",
+ "al": "2026-11-21",
  "finestra": {
-  "dal": "2026-10-22",
-  "al": "2026-11-20",
+  "dal": "2026-10-23",
+  "al": "2026-11-21",
   "giorni": 30
  },
  "soglia": 5,
@@ -26,12 +26,16 @@
     [
      "2026-11-20",
      11
+    ],
+    [
+     "2026-11-21",
+     1
     ]
    ],
-   "ultimi_7": 17,
+   "ultimi_7": 18,
    "precedenti_7": 0,
-   "ultimi_30": 17,
-   "totale": 17,
+   "ultimi_30": 18,
+   "totale": 18,
    "pagine": [
     {
      "path": "/",
@@ -40,7 +44,7 @@
      "url": "https://mxmap.it/"
     }
    ],
-   "pagine_altro": 8
+   "pagine_altro": 9
   },
   {
    "host": "osservatorio.mxmap.it",
@@ -59,16 +63,20 @@
     [
      "2026-11-20",
      5
+    ],
+    [
+     "2026-11-21",
+     1
     ]
    ],
-   "ultimi_7": 25,
+   "ultimi_7": 26,
    "precedenti_7": 0,
-   "ultimi_30": 25,
-   "totale": 25,
+   "ultimi_30": 26,
+   "totale": 26,
    "pagine": [
     {
      "path": "/",
-     "n": 6,
+     "n": 7,
      "titolo": "Osservatorio Nazionale Sovranità Digitale",
      "url": "https://osservatorio.mxmap.it/"
     }
@@ -92,14 +100,18 @@
     [
      "2026-11-20",
      4
+    ],
+    [
+     "2026-11-21",
+     4
     ]
    ],
-   "ultimi_7": 6,
+   "ultimi_7": 10,
    "precedenti_7": 0,
-   "ultimi_30": 6,
-   "totale": 6,
+   "ultimi_30": 10,
+   "totale": 10,
    "pagine": [],
-   "pagine_altro": 6
+   "pagine_altro": 10
   }
  ],
  "altri_host_30": 0,
@@ -107,7 +119,7 @@
   "voci": [
    {
     "nome": "diretto",
-    "n": 20
+    "n": 23
    },
    {
     "nome": "osservatorio.mxmap.it",
@@ -118,19 +130,19 @@
     "n": 5
    }
   ],
-  "altro": 4,
-  "totale": 48
+  "altro": 7,
+  "totale": 54
  },
  "paesi": {
   "voci": [
    {
     "nome": "Italia",
-    "n": 46,
+    "n": 51,
     "nome_en": "Italy"
    }
   ],
-  "altro": 2,
-  "totale": 48
+  "altro": 3,
+  "totale": 54
  },
  "regioni_visitatori": {
   "voci": [],
@@ -146,26 +158,26 @@
    },
    {
     "nome": "telefono",
-    "n": 19,
+    "n": 25,
     "nome_en": "phone"
    }
   ],
   "altro": 0,
-  "totale": 47
+  "totale": 53
  },
  "browser": {
   "voci": [
    {
     "nome": "Chrome",
-    "n": 35
+    "n": 36
    },
    {
     "nome": "Safari",
-    "n": 12
+    "n": 17
    }
   ],
   "altro": 1,
-  "totale": 48
+  "totale": 54
  },
  "sistemi": {
   "voci": [
@@ -175,20 +187,20 @@
    },
    {
     "nome": "iOS",
-    "n": 12
+    "n": 17
    },
    {
     "nome": "Android",
-    "n": 7
+    "n": 8
    }
   ],
   "altro": 3,
-  "totale": 48
+  "totale": 54
  },
  "mxmap": {
   "tipi_pagina": {
    "mappa": 9,
-   "altre": 6,
+   "altre": 7,
    "aree": 2
   },
   "visite_pagine_ente": 0,
