@@ -2,22 +2,48 @@
  "data": "2026-11-22",
  "settimana": "2026-W47",
  "fonte": {
-  "spesa-ict": "086057b21417b2f4",
-  "pvl-at": "7cd2bdcb81535105"
+  "spesa-ict": "2684dce75d8ee803",
+  "pvl-at": "77d71574cd1221fb"
  },
  "voci": [
   {
    "id": "2026-11-22-spesa-ict-1",
    "contesto": "spesa-ict",
+   "tipo": "metodo",
+   "rilevante": false,
+   "titolo": {
+    "it": "Censimento art. 9: le richieste ai siti della PA partono da una connessione residenziale",
+    "en": "Art. 9 census: requests to PA websites now originate from a residential connection"
+   },
+   "sintesi": {
+    "it": "Il censimento art. 9 ora interroga i siti delle amministrazioni passando da una connessione di rete residenziale, attraverso un tunnel configurabile, per tutti gli strumenti di raccolta: richieste HTTP, curl, verifiche TLS e browser. La pagina di metodo sul sito è stata aggiornata per documentare questa scelta e renderla verificabile.",
+    "en": "The Art. 9 census now queries public administration websites through a residential network connection, via a configurable tunnel, for all collection tools: HTTP requests, curl, TLS checks and browser. The method page on the website has been updated to document this choice and make it verifiable."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3bda1ebe31",
+    "mxmap-it/analisi-spesa-ict@c8d1b22e91"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#61",
+    "mxmap-it/analisi-spesa-ict#84"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-22-spesa-ict-2",
+   "contesto": "spesa-ict",
    "tipo": "dati",
    "rilevante": false,
    "titolo": {
-    "it": "Cruscotto ANAC: aggiornata la misura del 22 novembre 2026",
-    "en": "ANAC dashboard: measurement of 22 November 2026 updated"
+    "it": "Cruscotto ANAC: misura periodica del 22 novembre 2026",
+    "en": "ANAC dashboard: periodic measurement of 22 November 2026"
    },
    "sintesi": {
-    "it": "Il cruscotto sui contratti ANAC ha registrato la misura periodica del 22 novembre 2026 (rilevazione n. 23). È un aggiornamento di routine che serve a seguire nel tempo l'andamento dei dati sulla spesa ICT.",
-    "en": "The ANAC contracts dashboard recorded its periodic measurement of 22 November 2026 (measurement no. 23). This is a routine update that makes it possible to track the ICT spending data over time."
+    "it": "È stata registrata la misura di routine del cruscotto sui dati ANAC per il 22 novembre 2026.",
+    "en": "The routine measurement of the ANAC data dashboard for 22 November 2026 has been recorded."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@69af831bed"
@@ -36,15 +62,15 @@
    "tipo": "metodo",
    "rilevante": false,
    "titolo": {
-    "it": "Controprova degli errori di accesso ai siti PA da una rete diversa",
-    "en": "Cross-check of PA website access errors from a different network"
+    "it": "Controprova da una rete diversa per i siti PA risultati non raggiungibili",
+    "en": "Cross-check from a different network for PA sites found unreachable"
    },
    "sintesi": {
-    "it": "Per i siti che risultano irraggiungibili nel monitoraggio PVL è stata introdotta una controprova da una rete diversa da quella principale, su un campione di indirizzi per sito, seguita da una nuova verifica immediata. Lo scopo è distinguere i siti che bloccano solo gli accessi automatici dai data center da quelli realmente non accessibili, rendendo più affidabile la classificazione degli errori.",
-    "en": "For websites that appear unreachable in the PVL monitoring, a cross-check from a network other than the main one has been introduced, on a sample of addresses per site, followed by an immediate re-check. The aim is to distinguish sites that block only automated access from data centres from those that are genuinely inaccessible, making the classification of errors more reliable."
+    "it": "I siti della PA risultati non raggiungibili nel monitoraggio di visibilità (PVL) vengono ora ricontrollati anche da una rete di accesso diversa da quella del data center. Così si distinguono i siti che bloccano solo le connessioni dai data center da quelli irraggiungibili ovunque, e si evita di contare come errori quelli che sono solo blocchi selettivi. Lo strumento è in fase di avvio e non ha ancora prodotto risultati pubblicati.",
+    "en": "PA websites found unreachable in the visibility monitoring (PVL) are now also rechecked from an access network other than the data centre. This separates sites that block only data-centre connections from those that are unreachable everywhere, so that selective blocks are not counted as errors. The tool is being rolled out and has not yet produced published results."
    },
    "commit": [],
-   "n_commit": 1,
+   "n_commit": 2,
    "issue": [],
    "link": []
   }
