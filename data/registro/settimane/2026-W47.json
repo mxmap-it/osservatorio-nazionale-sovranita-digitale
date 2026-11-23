@@ -1,0 +1,65 @@
+{
+ "settimana": "2026-W47",
+ "dal": "2026-11-16",
+ "al": "2026-11-22",
+ "fonte": "ccf5fc7329ebfdaa",
+ "titolo": {
+  "it": "Spesa ICT: imbuto riproducibile, cruscotto di 667.303 CIG e tabellone big tech",
+  "en": "ICT spending: reproducible funnel, 667,303-CIG dashboard and big tech scoreboard"
+ },
+ "sintesi": {
+  "it": "La settimana ha consolidato l'analisi della spesa ICT. L'imbuto di classificazione, rieseguito da zero a partire dall'archivio ANAC, riproduce tutti i numeri pubblicati. Tutti i 667.303 CIG sono ora ricercabili in un cruscotto pubblico e il cloud certo è stimato a 1,29 mld netti. Un settimo campione a cieco misura una precisione dell'89,1% e un richiamo del 99,0% sui grandi fornitori tecnologici. L'Osservatorio ha messo online il Registro attività e statistiche di accesso pubbliche senza cookie. Il giro di rilevazione PVL si è chiuso con 597.420 rilevazioni registrate. I KPI notturni di MxMap restano stabili: 43,3% di enti con posta extra-UE.",
+  "en": "The week consolidated the ICT spending analysis. The classification funnel, rerun from scratch starting from the ANAC archive, reproduces all published figures. All 667,303 CIGs are now searchable in a public dashboard, and certain cloud spending is estimated at €1.29 bn net. A seventh blind sample measures 89.1% precision and 99.0% recall for large technology suppliers. The Observatory launched the Activity log and public cookie-free access statistics. The PVL survey round closed with 597,420 recorded checks. MxMap's nightly KPIs remain stable: 43.3% of entities use non-EU email."
+ },
+ "punti": [
+  {
+   "contesto": "spesa-ict",
+   "testo": {
+    "it": "L'imbuto è passato alla versione 0.3.4 con nuovi livelli di raffinamento: un livello B basato su quattro segnali BDNCP, che esclude 1.274 CIG per 130,6 M€, e un raffinamento a livelli che sostituisce il filtro P1. Una tabella unica degli spostamenti porta il cloud certo a 1,29 mld netti, con un residuo S6 di 10,67 mld. L'intera catena, rieseguita da zero, riproduce tutti i numeri. Sono stati pubblicati il cruscotto dei 667.303 CIG, la Mappa dell'imbuto, il design metodologico 1.0 e il tabellone big tech 0.3; la controprova con mxmap.it indica per Microsoft un punto cieco del 70%.",
+    "en": "The funnel moved to version 0.3.4 with new refinement levels: a level B based on four BDNCP signals, which excludes 1,274 CIGs worth €130.6 M, and a tiered refinement that replaces the P1 filter. A single movement table brings certain cloud spending to €1.29 bn net, with an S6 residual of €10.67 bn. The whole chain, rerun from scratch, reproduces all figures. The dashboard of 667,303 CIGs, the Funnel map, the methodological design 1.0 and the big tech scoreboard 0.3 were published; the cross-check with mxmap.it shows a 70% blind spot for Microsoft."
+   },
+   "voci": [
+    "2026-11-19-spesa-ict-6",
+    "2026-11-19-spesa-ict-5",
+    "2026-11-19-spesa-ict-2",
+    "2026-11-21-spesa-ict-1"
+   ]
+  },
+  {
+   "contesto": "osservatorio",
+   "testo": {
+    "it": "È online il Registro attività (IT+EN), con 319 voci dal 2 maggio 2026, 22 riepiloghi settimanali e aggiornamenti via Telegram; gli aggiornamenti frequenti sono stati spostati sul canale @osservatoriops. Sono state pubblicate le statistiche di accesso senza cookie e una nuova pagina Privacy. Sono disponibili anche le slide definitive del talk a SFSCon 2026.",
+    "en": "The Activity log (IT+EN) is online, with 319 entries since 2 May 2026, 22 weekly summaries and updates via Telegram; frequent updates have moved to the @osservatoriops channel. Cookie-free access statistics and a new Privacy page were published. The final slides of the SFSCon 2026 talk are also available."
+   },
+   "voci": [
+    "2026-11-19-osservatorio-1",
+    "2026-11-19-osservatorio-3",
+    "2026-11-20-osservatorio-1",
+    "2026-11-18-osservatorio-1"
+   ]
+  },
+  {
+   "contesto": "pvl-at",
+   "testo": {
+    "it": "Il giro di rilevazione PVL si è chiuso con 597.420 rilevazioni registrate ed è partito l'incrocio completo; l'espansione IndicePA conta finora 409 conferme, su dati ancora parziali. La sintesi del 7 novembre e una parte del cruscotto di lavoro sono ora pubbliche. Per i siti non raggiungibili è in avvio una controprova da una rete diversa da quella del data center.",
+    "en": "The PVL survey round closed with 597,420 recorded checks, and the full cross-matching has started; the IndicePA expansion has 409 confirmations so far, on data that are still partial. The 7 November summary and part of the work dashboard are now public. For unreachable sites, a cross-check from a network other than the data centre's is being set up."
+   },
+   "voci": [
+    "2026-11-17-pvl-at-1",
+    "2026-11-18-pvl-at-1",
+    "2026-11-22-pvl-at-1"
+   ]
+  },
+  {
+   "contesto": "mxmap",
+   "testo": {
+    "it": "mxmap.it conta ora le visite con un contatore GoatCounter ospitato in proprio su un server in UE, senza cookie e senza salvare gli IP; il contatore copre anche le pagine dei singoli enti. Nella scansione notturna i KPI sono stabili: 22.927 enti, copertura al 94,32% e quota extra-UE al 43,3%.",
+    "en": "mxmap.it now counts visits with a self-hosted GoatCounter instance on an EU server, without cookies and without storing IP addresses; the counter also covers the pages of individual entities. In the nightly scan the KPIs are stable: 22,927 entities, 94.32% coverage and a 43.3% non-EU share."
+   },
+   "voci": [
+    "2026-11-19-mxmap-1"
+   ]
+  }
+ ],
+ "n_voci": 45
+}
