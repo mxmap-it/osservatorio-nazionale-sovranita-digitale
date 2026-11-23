@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-22T05:10",
+ "aggiornato": "2026-11-23T05:10",
  "dal": "2026-11-19",
- "al": "2026-11-21",
+ "al": "2026-11-22",
  "finestra": {
-  "dal": "2026-10-23",
-  "al": "2026-11-21",
+  "dal": "2026-10-24",
+  "al": "2026-11-22",
   "giorni": 30
  },
  "soglia": 5,
@@ -30,16 +30,20 @@
     [
      "2026-11-21",
      1
+    ],
+    [
+     "2026-11-22",
+     1
     ]
    ],
-   "ultimi_7": 18,
+   "ultimi_7": 19,
    "precedenti_7": 0,
-   "ultimi_30": 18,
-   "totale": 18,
+   "ultimi_30": 19,
+   "totale": 19,
    "pagine": [
     {
      "path": "/",
-     "n": 9,
+     "n": 10,
      "titolo": "Osservatorio Nazionale Sovranità Digitale — Posta elettronica della PA italiana",
      "url": "https://mxmap.it/"
     }
@@ -67,6 +71,10 @@
     [
      "2026-11-21",
      1
+    ],
+    [
+     "2026-11-22",
+     0
     ]
    ],
    "ultimi_7": 26,
@@ -104,6 +112,10 @@
     [
      "2026-11-21",
      4
+    ],
+    [
+     "2026-11-22",
+     0
     ]
    ],
    "ultimi_7": 10,
@@ -119,7 +131,7 @@
   "voci": [
    {
     "nome": "diretto",
-    "n": 23
+    "n": 24
    },
    {
     "nome": "osservatorio.mxmap.it",
@@ -131,18 +143,18 @@
    }
   ],
   "altro": 7,
-  "totale": 54
+  "totale": 55
  },
  "paesi": {
   "voci": [
    {
     "nome": "Italia",
-    "n": 51,
+    "n": 52,
     "nome_en": "Italy"
    }
   ],
   "altro": 3,
-  "totale": 54
+  "totale": 55
  },
  "regioni_visitatori": {
   "voci": [],
@@ -158,12 +170,12 @@
    },
    {
     "nome": "telefono",
-    "n": 25,
+    "n": 26,
     "nome_en": "phone"
    }
   ],
   "altro": 0,
-  "totale": 53
+  "totale": 54
  },
  "browser": {
   "voci": [
@@ -173,11 +185,11 @@
    },
    {
     "nome": "Safari",
-    "n": 17
+    "n": 18
    }
   ],
   "altro": 1,
-  "totale": 54
+  "totale": 55
  },
  "sistemi": {
   "voci": [
@@ -187,7 +199,7 @@
    },
    {
     "nome": "iOS",
-    "n": 17
+    "n": 18
    },
    {
     "nome": "Android",
@@ -195,11 +207,11 @@
    }
   ],
   "altro": 3,
-  "totale": 54
+  "totale": 55
  },
  "mxmap": {
   "tipi_pagina": {
-   "mappa": 9,
+   "mappa": 10,
    "altre": 7,
    "aree": 2
   },
