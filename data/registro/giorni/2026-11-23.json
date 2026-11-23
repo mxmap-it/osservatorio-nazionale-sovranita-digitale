@@ -29,5 +29,14 @@
     "https://analisi-spesa-ict.mxmap.it/"
    ]
   }
- ]
+ ],
+ "kpi": {
+  "n_enti": 22927,
+  "copertura": 94.24,
+  "extra_eu": 43.3,
+  "eu_non_it": 0.5,
+  "it": 50.4,
+  "unknown": 5.8,
+  "delta_extra_eu": 0.0
+ }
 }
