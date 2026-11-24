@@ -2,7 +2,8 @@
  "data": "2026-11-24",
  "settimana": "2026-W48",
  "fonte": {
-  "spesa-ict": "7d35e8f451a579c3"
+  "spesa-ict": "7d35e8f451a579c3",
+  "pvl-at": "b6b937b2ded6e64c"
  },
  "voci": [
   {
@@ -28,6 +29,24 @@
    "link": [
     "https://analisi-spesa-ict.mxmap.it/"
    ]
+  },
+  {
+   "id": "2026-11-24-pvl-at-1",
+   "contesto": "pvl-at",
+   "tipo": "bugfix",
+   "rilevante": false,
+   "titolo": {
+    "it": "Monitoraggio PVL: corretti falsi esiti negativi, 8.309 verifiche rimesse in coda",
+    "en": "PVL monitoring: false negative results fixed, 8,309 checks requeued"
+   },
+   "sintesi": {
+    "it": "Un difetto nel controllo di una delle reti di misura faceva registrare come non raggiungibili siti che in realtà potevano esserlo. Ora il controllo effettua una richiesta reale prima di registrare l'esito e gli eventuali errori vengono annotati; gli 8.309 esiti sospetti sono stati rimessi in coda per una nuova verifica, quindi i dati di accessibilità interessati sono in corso di aggiornamento.",
+    "en": "A defect in the check of one of the measurement networks caused sites to be recorded as unreachable when they may in fact have been reachable. The check now makes a real request before recording the result, and any errors are logged; the 8,309 suspicious results have been requeued for re-verification, so the affected accessibility data are being updated."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
   }
  ]
 }
