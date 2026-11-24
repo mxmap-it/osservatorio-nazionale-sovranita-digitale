@@ -3,7 +3,7 @@
  "settimana": "2026-W48",
  "fonte": {
   "spesa-ict": "7d35e8f451a579c3",
-  "pvl-at": "b6b937b2ded6e64c"
+  "pvl-at": "8ba00578e2e715ba"
  },
  "voci": [
   {
@@ -31,22 +31,49 @@
    ]
   },
   {
+   "id": "2026-11-24-pvl-at-2",
+   "contesto": "pvl-at",
+   "tipo": "metodo",
+   "rilevante": true,
+   "titolo": {
+    "it": "Mappa Amministrazione trasparente: incluse le sezioni dei siti che bloccano le reti datacenter",
+    "en": "Transparent Administration map: sections of sites blocking datacenter networks now included"
+   },
+   "sintesi": {
+    "it": "Alcuni siti della PA respingono le richieste provenienti da reti di datacenter ma sono accessibili da una connessione ordinaria. Le loro sezioni Amministrazione trasparente, individuate dai link del monitoraggio PVL, vengono ora rilevate ed entrano nella mappa con un'indicazione esplicita del blocco verso i datacenter. L'elaborazione parte automaticamente dopo la controprova ed è in corso.",
+    "en": "Some PA websites reject requests coming from datacenter networks but are accessible from an ordinary connection. Their Transparent Administration sections, identified through links from the PVL monitoring, are now collected and added to the map with an explicit flag for the datacenter block. Processing starts automatically after the cross-check and is ongoing."
+   },
+   "commit": [],
+   "n_commit": 1,
+   "issue": [],
+   "link": []
+  },
+  {
    "id": "2026-11-24-pvl-at-1",
    "contesto": "pvl-at",
    "tipo": "bugfix",
    "rilevante": false,
    "titolo": {
-    "it": "Monitoraggio PVL: corretti falsi esiti negativi, 8.309 verifiche rimesse in coda",
-    "en": "PVL monitoring: false negative results fixed, 8,309 checks requeued"
+    "it": "Controprova di raggiungibilità più affidabile: 8.309 esiti rimessi in verifica",
+    "en": "More reliable reachability cross-check: 8,309 results queued for re-verification"
    },
    "sintesi": {
-    "it": "Un difetto nel controllo di una delle reti di misura faceva registrare come non raggiungibili siti che in realtà potevano esserlo. Ora il controllo effettua una richiesta reale prima di registrare l'esito e gli eventuali errori vengono annotati; gli 8.309 esiti sospetti sono stati rimessi in coda per una nuova verifica, quindi i dati di accessibilità interessati sono in corso di aggiornamento.",
-    "en": "A defect in the check of one of the measurement networks caused sites to be recorded as unreachable when they may in fact have been reachable. The check now makes a real request before recording the result, and any errors are logged; the 8,309 suspicious results have been requeued for re-verification, so the affected accessibility data are being updated."
+    "it": "La controprova sui siti della PA che risultavano irraggiungibili ora verifica con una richiesta reale che il canale di verifica funzioni, invece di limitarsi a un controllo superficiale. In precedenza un malfunzionamento poteva registrare falsi esiti negativi: 8.309 esiti sospetti sono stati rimessi in coda per una nuova verifica.",
+    "en": "The cross-check on PA websites that appeared unreachable now confirms with a real request that the verification channel is working, instead of relying on a superficial check. Previously a malfunction could record false negative results: 8,309 suspicious results have been put back in the queue for re-verification."
    },
    "commit": [],
    "n_commit": 1,
    "issue": [],
    "link": []
   }
- ]
+ ],
+ "kpi": {
+  "n_enti": 22926,
+  "copertura": 94.31,
+  "extra_eu": 43.4,
+  "eu_non_it": 0.5,
+  "it": 50.4,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.1
+ }
 }
