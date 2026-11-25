@@ -2,21 +2,45 @@
  "data": "2026-11-25",
  "settimana": "2026-W48",
  "fonte": {
-  "spesa-ict": "4b7d46600959b4eb"
+  "spesa-ict": "9bc80b396a795c4c"
  },
  "voci": [
   {
    "id": "2026-11-25-spesa-ict-1",
    "contesto": "spesa-ict",
    "tipo": "dati",
-   "rilevante": false,
+   "rilevante": true,
    "titolo": {
-    "it": "Cruscotto ANAC: aggiornata la misura periodica del 25 novembre 2026",
-    "en": "ANAC dashboard: periodic measurement updated for 25 November 2026"
+    "it": "Censimento art. 9: importata la rilevazione da IP residenziale, 986 enti bloccano solo i datacenter",
+    "en": "Art. 9 census: residential-IP run imported, 986 bodies block datacenter access only"
    },
    "sintesi": {
-    "it": "Il cruscotto basato sui dati dei contratti pubblici ANAC è stato aggiornato con la rilevazione del 25 novembre 2026 (misura n. 23). L'aggiornamento periodico permette di seguire nel tempo l'andamento della spesa ICT della PA rispetto alla giurisdizione dei fornitori.",
-    "en": "The dashboard based on ANAC public contract data was updated with the 25 November 2026 measurement (measurement no. 23). The periodic update makes it possible to track over time how public-sector ICT spending is distributed by supplier jurisdiction."
+    "it": "Nel censimento art. 9 sono stati importati i risultati di un giro di rilevazione eseguito da una connessione residenziale. Il confronto porta da 210 a 986 il numero di enti il cui sito blocca soltanto gli accessi provenienti da datacenter: senza questa verifica, quegli enti sarebbero risultati irraggiungibili.",
+    "en": "The results of a census run carried out from a residential connection were imported into the art. 9 census. The comparison raises from 210 to 986 the number of bodies whose website blocks only access coming from datacenters: without this check, those bodies would have appeared unreachable."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@3cc3c9936a"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#84"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-25-spesa-ict-2",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Cruscotto ANAC: misura giornaliera del 25 novembre 2026",
+    "en": "ANAC dashboard: daily measurement for 25 November 2026"
+   },
+   "sintesi": {
+    "it": "Il cruscotto sui dati ANAC è stato aggiornato con la misura del 25 novembre 2026, nell'ambito della rilevazione periodica.",
+    "en": "The ANAC data dashboard was updated with the measurement for 25 November 2026, as part of the regular monitoring."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@cc381ce940"
@@ -29,5 +53,14 @@
     "https://analisi-spesa-ict.mxmap.it/"
    ]
   }
- ]
+ ],
+ "kpi": {
+  "n_enti": 22928,
+  "copertura": 94.32,
+  "extra_eu": 43.4,
+  "eu_non_it": 0.5,
+  "it": 50.4,
+  "unknown": 5.7,
+  "delta_extra_eu": 0.0
+ }
 }
