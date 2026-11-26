@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-25T05:10",
+ "aggiornato": "2026-11-26T05:10",
  "dal": "2026-11-19",
- "al": "2026-11-24",
+ "al": "2026-11-25",
  "finestra": {
-  "dal": "2026-10-26",
-  "al": "2026-11-24",
+  "dal": "2026-10-27",
+  "al": "2026-11-25",
   "giorni": 30
  },
  "soglia": 5,
@@ -42,21 +42,25 @@
     [
      "2026-11-24",
      5
+    ],
+    [
+     "2026-11-25",
+     3
     ]
    ],
-   "ultimi_7": 28,
+   "ultimi_7": 31,
    "precedenti_7": 0,
-   "ultimi_30": 28,
-   "totale": 28,
+   "ultimi_30": 31,
+   "totale": 31,
    "pagine": [
     {
      "path": "/",
-     "n": 17,
+     "n": 19,
      "titolo": "Osservatorio Nazionale Sovranità Digitale — Posta elettronica della PA italiana",
      "url": "https://mxmap.it/"
     }
    ],
-   "pagine_altro": 11
+   "pagine_altro": 12
   },
   {
    "host": "osservatorio.mxmap.it",
@@ -91,12 +95,16 @@
     [
      "2026-11-24",
      2
+    ],
+    [
+     "2026-11-25",
+     1
     ]
    ],
-   "ultimi_7": 30,
+   "ultimi_7": 31,
    "precedenti_7": 0,
-   "ultimi_30": 30,
-   "totale": 30,
+   "ultimi_30": 31,
+   "totale": 31,
    "pagine": [
     {
      "path": "/",
@@ -105,7 +113,7 @@
      "url": "https://osservatorio.mxmap.it/"
     }
    ],
-   "pagine_altro": 21
+   "pagine_altro": 22
   },
   {
    "host": "analisi-spesa-ict.mxmap.it",
@@ -140,6 +148,10 @@
     [
      "2026-11-24",
      0
+    ],
+    [
+     "2026-11-25",
+     0
     ]
    ],
    "ultimi_7": 10,
@@ -155,7 +167,7 @@
   "voci": [
    {
     "nome": "diretto",
-    "n": 33
+    "n": 37
    },
    {
     "nome": "osservatorio.mxmap.it",
@@ -167,18 +179,18 @@
    }
   ],
   "altro": 9,
-  "totale": 68
+  "totale": 72
  },
  "paesi": {
   "voci": [
    {
     "nome": "Italia",
-    "n": 63,
+    "n": 66,
     "nome_en": "Italy"
    }
   ],
-  "altro": 5,
-  "totale": 68
+  "altro": 6,
+  "totale": 72
  },
  "regioni_visitatori": {
   "voci": [],
@@ -189,59 +201,63 @@
   "voci": [
    {
     "nome": "telefono",
-    "n": 35,
+    "n": 37,
     "nome_en": "phone"
    },
    {
     "nome": "computer",
-    "n": 32,
+    "n": 34,
     "nome_en": "computer"
    }
   ],
   "altro": 0,
-  "totale": 67
+  "totale": 71
  },
  "browser": {
   "voci": [
    {
     "nome": "Chrome",
-    "n": 46
+    "n": 49
    },
    {
     "nome": "Safari",
-    "n": 21
+    "n": 22
    }
   ],
   "altro": 1,
-  "totale": 68
+  "totale": 72
  },
  "sistemi": {
   "voci": [
    {
     "nome": "Windows",
-    "n": 27
+    "n": 28
    },
    {
     "nome": "iOS",
-    "n": 20
+    "n": 21
    },
    {
     "nome": "Android",
-    "n": 14
+    "n": 15
+   },
+   {
+    "nome": "macOS",
+    "n": 5
    }
   ],
-  "altro": 7,
-  "totale": 68
+  "altro": 3,
+  "totale": 72
  },
  "mxmap": {
   "tipi_pagina": {
-   "mappa": 17,
+   "mappa": 20,
    "altre": 9,
    "aree": 2
   },
   "visite_pagine_ente": 0,
   "enti_distinti": 0,
-  "enti_totali": 22926,
+  "enti_totali": 22928,
   "per_regione": [],
   "per_provincia": {
    "voci": [],
