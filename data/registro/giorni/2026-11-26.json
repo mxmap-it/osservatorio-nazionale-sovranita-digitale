@@ -2,21 +2,46 @@
  "data": "2026-11-26",
  "settimana": "2026-W48",
  "fonte": {
-  "spesa-ict": "f9bf6c4f53b09fcf"
+  "spesa-ict": "194dd0a9ff3a847b"
  },
  "voci": [
   {
    "id": "2026-11-26-spesa-ict-1",
    "contesto": "spesa-ict",
+   "tipo": "analisi",
+   "rilevante": true,
+   "titolo": {
+    "it": "Indisponibilità persistente: 1.073 enti persistenti e prima diagnosi delle cause",
+    "en": "Persistent unavailability: 1,073 persistent entities and first diagnosis of causes"
+   },
+   "sintesi": {
+    "it": "Avviata l'analisi dell'indisponibilità persistente, con un inquadramento giuridico, un metodo per stabilire quando l'indisponibilità è persistente e uno schema di diagnosi delle cause (D0-D7). Le prime misure, che trattano separatamente AT e PVL, individuano 1.073 enti in condizione persistente; la diagnosi è per ora limitata alle categorie D1-D5 ed è da considerarsi preliminare.",
+    "en": "Work has begun on the analysis of persistent unavailability, with a legal framing, a method for determining when unavailability is persistent, and a scheme for diagnosing causes (D0-D7). The first measurements, which treat AT and PVL separately, identify 1,073 entities in a persistent condition; the diagnosis currently covers only categories D1-D5 and should be considered preliminary."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@7fb57d929a",
+    "mxmap-it/analisi-spesa-ict@719b9d1b43"
+   ],
+   "n_commit": 2,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#85"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  },
+  {
+   "id": "2026-11-26-spesa-ict-2",
+   "contesto": "spesa-ict",
    "tipo": "dati",
    "rilevante": false,
    "titolo": {
-    "it": "Cruscotto ANAC: aggiornata la misura del 26 novembre 2026",
-    "en": "ANAC dashboard: measurement of 26 November 2026 updated"
+    "it": "Cruscotto ANAC: misura del 26 novembre 2026",
+    "en": "ANAC dashboard: 26 November 2026 measurement"
    },
    "sintesi": {
-    "it": "Il cruscotto sui contratti pubblici ICT tratti dalla banca dati ANAC ha registrato la rilevazione periodica del 26 novembre 2026. L'aggiornamento mantiene allineato il monitoraggio della spesa ICT della PA.",
-    "en": "The dashboard on public ICT contracts drawn from the ANAC database recorded its periodic measurement of 26 November 2026. The update keeps the monitoring of public-sector ICT spending current."
+    "it": "Registrata la misura periodica del cruscotto ANAC per il 26 novembre 2026, che aggiorna la serie storica delle rilevazioni.",
+    "en": "The periodic ANAC dashboard measurement for 26 November 2026 was recorded, updating the historical series of measurements."
    },
    "commit": [
     "mxmap-it/analisi-spesa-ict@de1f24453a"
