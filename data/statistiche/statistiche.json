@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-26T05:10",
+ "aggiornato": "2026-11-27T05:10",
  "dal": "2026-11-19",
- "al": "2026-11-25",
+ "al": "2026-11-26",
  "finestra": {
-  "dal": "2026-10-27",
-  "al": "2026-11-25",
+  "dal": "2026-10-28",
+  "al": "2026-11-26",
   "giorni": 30
  },
  "soglia": 5,
@@ -46,12 +46,16 @@
     [
      "2026-11-25",
      3
+    ],
+    [
+     "2026-11-26",
+     2
     ]
    ],
-   "ultimi_7": 31,
-   "precedenti_7": 0,
-   "ultimi_30": 31,
-   "totale": 31,
+   "ultimi_7": 27,
+   "precedenti_7": 6,
+   "ultimi_30": 33,
+   "totale": 34,
    "pagine": [
     {
      "path": "/",
@@ -60,7 +64,7 @@
      "url": "https://mxmap.it/"
     }
    ],
-   "pagine_altro": 12
+   "pagine_altro": 14
   },
   {
    "host": "osservatorio.mxmap.it",
@@ -99,10 +103,14 @@
     [
      "2026-11-25",
      1
+    ],
+    [
+     "2026-11-26",
+     0
     ]
    ],
-   "ultimi_7": 31,
-   "precedenti_7": 0,
+   "ultimi_7": 11,
+   "precedenti_7": 20,
    "ultimi_30": 31,
    "totale": 31,
    "pagine": [
@@ -152,22 +160,26 @@
     [
      "2026-11-25",
      0
+    ],
+    [
+     "2026-11-26",
+     0
     ]
    ],
-   "ultimi_7": 10,
-   "precedenti_7": 0,
+   "ultimi_7": 8,
+   "precedenti_7": 2,
    "ultimi_30": 10,
    "totale": 10,
    "pagine": [],
    "pagine_altro": 10
   }
  ],
- "altri_host_30": 0,
+ "altri_host_30": 1,
  "fonti": {
   "voci": [
    {
     "nome": "diretto",
-    "n": 37
+    "n": 39
    },
    {
     "nome": "osservatorio.mxmap.it",
@@ -175,22 +187,22 @@
    },
    {
     "nome": "mxmap.it",
-    "n": 6
+    "n": 7
    }
   ],
   "altro": 9,
-  "totale": 72
+  "totale": 75
  },
  "paesi": {
   "voci": [
    {
     "nome": "Italia",
-    "n": 66,
+    "n": 68,
     "nome_en": "Italy"
    }
   ],
-  "altro": 6,
-  "totale": 72
+  "altro": 7,
+  "totale": 75
  },
  "regioni_visitatori": {
   "voci": [],
@@ -206,36 +218,36 @@
    },
    {
     "nome": "computer",
-    "n": 34,
+    "n": 36,
     "nome_en": "computer"
    }
   ],
   "altro": 0,
-  "totale": 71
+  "totale": 73
  },
  "browser": {
   "voci": [
    {
     "nome": "Chrome",
-    "n": 49
+    "n": 51
    },
    {
     "nome": "Safari",
-    "n": 22
+    "n": 23
    }
   ],
   "altro": 1,
-  "totale": 72
+  "totale": 75
  },
  "sistemi": {
   "voci": [
    {
     "nome": "Windows",
-    "n": 28
+    "n": 30
    },
    {
     "nome": "iOS",
-    "n": 21
+    "n": 22
    },
    {
     "nome": "Android",
@@ -247,17 +259,17 @@
    }
   ],
   "altro": 3,
-  "totale": 72
+  "totale": 75
  },
  "mxmap": {
   "tipi_pagina": {
-   "mappa": 20,
-   "altre": 9,
+   "mappa": 21,
+   "altre": 10,
    "aree": 2
   },
   "visite_pagine_ente": 0,
   "enti_distinti": 0,
-  "enti_totali": 22928,
+  "enti_totali": 22930,
   "per_regione": [],
   "per_provincia": {
    "voci": [],
