@@ -1,0 +1,33 @@
+{
+ "data": "2026-11-28",
+ "settimana": "2026-W48",
+ "fonte": {
+  "spesa-ict": "5a3f3408f79b8050"
+ },
+ "voci": [
+  {
+   "id": "2026-11-28-spesa-ict-1",
+   "contesto": "spesa-ict",
+   "tipo": "dati",
+   "rilevante": false,
+   "titolo": {
+    "it": "Cruscotto ANAC aggiornato con la misura del 28 novembre 2026",
+    "en": "ANAC dashboard updated with the 28 November 2026 measurement"
+   },
+   "sintesi": {
+    "it": "Al cruscotto sui contratti pubblici ANAC si aggiunge una nuova rilevazione periodica, la numero 23. Serve a seguire nel tempo come si divide la spesa ICT della PA tra fornitori sotto giurisdizione italiana, UE ed extra-UE.",
+    "en": "A new periodic measurement, number 23, has been added to the ANAC public contracts dashboard. It is used to track over time how public-sector ICT spending is split between suppliers under Italian, EU and non-EU jurisdiction."
+   },
+   "commit": [
+    "mxmap-it/analisi-spesa-ict@241185b91d"
+   ],
+   "n_commit": 1,
+   "issue": [
+    "mxmap-it/analisi-spesa-ict#23"
+   ],
+   "link": [
+    "https://analisi-spesa-ict.mxmap.it/"
+   ]
+  }
+ ]
+}
