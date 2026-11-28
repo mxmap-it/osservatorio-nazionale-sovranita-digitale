@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-27T05:10",
+ "aggiornato": "2026-11-28T05:10",
  "dal": "2026-11-19",
- "al": "2026-11-26",
+ "al": "2026-11-27",
  "finestra": {
-  "dal": "2026-10-28",
-  "al": "2026-11-26",
+  "dal": "2026-10-29",
+  "al": "2026-11-27",
   "giorni": 30
  },
  "soglia": 5,
@@ -50,21 +50,31 @@
     [
      "2026-11-26",
      2
+    ],
+    [
+     "2026-11-27",
+     34
     ]
    ],
-   "ultimi_7": 27,
-   "precedenti_7": 6,
-   "ultimi_30": 33,
-   "totale": 34,
+   "ultimi_7": 50,
+   "precedenti_7": 17,
+   "ultimi_30": 67,
+   "totale": 67,
    "pagine": [
     {
+     "path": "/eu-security",
+     "n": 30,
+     "titolo": "EU Security Mail Map",
+     "url": "https://mxmap.it/eu-security"
+    },
+    {
      "path": "/",
-     "n": 19,
+     "n": 22,
      "titolo": "Osservatorio Nazionale Sovranità Digitale — Posta elettronica della PA italiana",
      "url": "https://mxmap.it/"
     }
    ],
-   "pagine_altro": 14
+   "pagine_altro": 15
   },
   {
    "host": "osservatorio.mxmap.it",
@@ -107,16 +117,20 @@
     [
      "2026-11-26",
      0
+    ],
+    [
+     "2026-11-27",
+     1
     ]
    ],
-   "ultimi_7": 11,
-   "precedenti_7": 20,
-   "ultimi_30": 31,
-   "totale": 31,
+   "ultimi_7": 7,
+   "precedenti_7": 25,
+   "ultimi_30": 32,
+   "totale": 32,
    "pagine": [
     {
      "path": "/",
-     "n": 9,
+     "n": 10,
      "titolo": "Osservatorio Nazionale Sovranità Digitale",
      "url": "https://osservatorio.mxmap.it/"
     }
@@ -164,10 +178,14 @@
     [
      "2026-11-26",
      0
+    ],
+    [
+     "2026-11-27",
+     0
     ]
    ],
-   "ultimi_7": 8,
-   "precedenti_7": 2,
+   "ultimi_7": 4,
+   "precedenti_7": 6,
    "ultimi_30": 10,
    "totale": 10,
    "pagine": [],
@@ -179,30 +197,44 @@
   "voci": [
    {
     "nome": "diretto",
-    "n": 39
+    "n": 55
    },
    {
     "nome": "osservatorio.mxmap.it",
-    "n": 20
+    "n": 21
+   },
+   {
+    "nome": "linkedin.com",
+    "n": 18
    },
    {
     "nome": "mxmap.it",
-    "n": 7
+    "n": 8
    }
   ],
-  "altro": 9,
-  "totale": 75
+  "altro": 8,
+  "totale": 110
  },
  "paesi": {
   "voci": [
    {
     "nome": "Italia",
-    "n": 68,
+    "n": 72,
     "nome_en": "Italy"
+   },
+   {
+    "nome": "Finlandia",
+    "n": 8,
+    "nome_en": "Finland"
+   },
+   {
+    "nome": "Stati Uniti",
+    "n": 6,
+    "nome_en": "United States"
    }
   ],
-  "altro": 7,
-  "totale": 75
+  "altro": 24,
+  "totale": 110
  },
  "regioni_visitatori": {
   "voci": [],
@@ -213,63 +245,71 @@
   "voci": [
    {
     "nome": "telefono",
-    "n": 37,
+    "n": 58,
     "nome_en": "phone"
    },
    {
     "nome": "computer",
-    "n": 36,
+    "n": 48,
     "nome_en": "computer"
    }
   ],
-  "altro": 0,
-  "totale": 73
+  "altro": 2,
+  "totale": 108
  },
  "browser": {
   "voci": [
    {
     "nome": "Chrome",
-    "n": 51
+    "n": 65
    },
    {
     "nome": "Safari",
-    "n": 23
+    "n": 38
+   },
+   {
+    "nome": "Firefox",
+    "n": 5
    }
   ],
-  "altro": 1,
-  "totale": 75
+  "altro": 2,
+  "totale": 110
  },
  "sistemi": {
   "voci": [
    {
-    "nome": "Windows",
-    "n": 30
+    "nome": "iOS",
+    "n": 36
    },
    {
-    "nome": "iOS",
-    "n": 22
+    "nome": "Windows",
+    "n": 36
    },
    {
     "nome": "Android",
-    "n": 15
+    "n": 22
    },
    {
     "nome": "macOS",
-    "n": 5
+    "n": 10
+   },
+   {
+    "nome": "Linux",
+    "n": 6
    }
   ],
-  "altro": 3,
-  "totale": 75
+  "altro": 0,
+  "totale": 110
  },
  "mxmap": {
   "tipi_pagina": {
-   "mappa": 21,
-   "altre": 10,
+   "mappa": 24,
+   "altre": 41,
    "aree": 2
   },
   "visite_pagine_ente": 0,
   "enti_distinti": 0,
-  "enti_totali": 22930,
+  "enti_totali": 22931,
   "per_regione": [],
   "per_provincia": {
    "voci": [],
